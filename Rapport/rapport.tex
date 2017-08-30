@@ -162,7 +162,7 @@
 \selectlanguage{danish}
 		
 		\begin{center}
-				{\huge\bfseries Projekt AutoCar}\\
+				{\huge\bfseries Projekt Universal Actuator Drive}\\
 				\vspace{10pt}
 				
 				{\Huge\bfseries Rapport}\\
@@ -170,38 +170,21 @@
 				\vspace{20pt}
 				
 				{Diplomingeniør Elektronik}\\
-				{\large 4. Semesterprojekt forår 2016}\\
+				{\large Bachelorprojekt Efterår 2017}\\
 				
 				\vspace{10pt}
 				
 				Ingeniørhøjskolen Aarhus Universitet\\
-				Vejleder: Lars G. Johansen
+				Vejleder: Arne Justesen
 				\vspace{10pt}
 				
-				27. maj 2016
+				20. december 2017
 				\vspace{10pt}
 				\begin{figure}[H]
 					\centering
 					%\includegraphics[max width=0.9\linewidth]{forside.png}
 				\end{figure}
 				\vspace{50pt}
-				\begin{minipage}{0.25\linewidth}
-					\centering
-					\hrule
-					\vspace{12pt}
-					Jonas Baatrup\\
-					Studienr. 201405146
-				\end{minipage}
-				\hspace{10pt}
-				\begin{minipage}{0.25\linewidth}
-					\centering
-					\hrule
-					\vspace{12pt}
-					Troels Ringbøl Brahe\\
-					Studienr. 20095221
-				\end{minipage}
-				\hspace{10pt}
-				\vspace{20pt}
 				\begin{minipage}{0.25\linewidth}
 					\centering
 					\hrule
@@ -215,73 +198,23 @@
 					\hrule
 					\vspace{12pt}
 					Jesper Kloster\\
-					Studienr. 201404571
+					Studienr. 
 				\end{minipage}
 				\hspace{10pt}
-				\begin{minipage}{0.25\linewidth}
-					\centering
-					\hrule
-					\vspace{12pt}
-					Rasmus Harboe Platz\\
-					Studienr. 201408608
-				\end{minipage}
-				\hspace{10pt}
-				\vspace{20pt}
-				\begin{minipage}{0.25\linewidth}
-					\centering
-					\hrule
-					\vspace{12pt}
-					Nicolai Bonde\\
-					Studienr. 201404519
-				\end{minipage}
-				\begin{minipage}{0.25\linewidth}
-					\centering
-					\hrule
-					\vspace{12pt}
-					Emil Jepsen\\
-					Studienr. 20092013
-				\end{minipage}
+
+
 		\end{center}
-\clearpage
-			\noindent\textbf{Ansvarsområder}
-Tabellen nedenfor viser de primære ansvarsområder for hver af gruppens medlemmer.
-			\begin{table}[H]
-				\centering
-				\begin{tabular}{| c | c |}
-					\hline
-					\bfseries Navn & \bfseries Ansvarsområder \\ \hline
-					Jonas Baatrup & Motorstyring, Motor-design, Regulering\\ \hline
-					Nicolai Bonde &  RPi kode, Bil-design, Forsyning\\ \hline
-					Jesper Kloster &  Servo, Vejbanesensorer, Tachometer\\ \hline
-					Nicolai Fransen &  Servo, Vejbanesensorer, Tachometer\\ \hline
-					Troels Brahe &  Sonar, Regulering, RPi kode\\ \hline
-					Emil Jepsen &  Motorstyring. Regulering, SPI\\ \hline
-					Rasmus Platz & TCP, GUI  \\ \hline
-				\end{tabular}
-				\caption*{Tabel over ansvarsfordeling i projektet}
-			\end{table}
-		\end{titlingpage}
+
+\end{titlingpage}
 		
 		\selectlanguage{danish}
 		\begin{abstract}
-			Denne rapport beskriver udviklingen af et 4. semester-projekt på IHA. Problemstillingen omhandler design og implementering af en selvkørende bil, AutoCar. Auto\-Car har en DC-motor til fremdrift, en servo-motor til retningsstyring, en sonar-sensor til afstandsbedømmelse, en vejbanesensor i hver side til detektion af vejbanestriber, to batterisensorer til at vise batteriniveauerne, et tachometer til at finde AutoCar's fart, og intern logik, regulering, og kommunikation for at få det hele til at fungere sammen. 
-			Brugeren kan via interfacet starte og stoppe AutoCar, få udskrevet status fra sensorne, sætte farten og anmode om overhaling. AutoCar skal selv sørge for at køre inden for vejbanestriberne.
-			
-			AutoCar er udviklet med en PSoC 4 og en Raspberry Pi 2b, der tilsammen fungerer som kontrolenhed for AutoCar. GUI'et er designet med QT Creator i en Linux-terminal.
-			
-			Udviklingsprocessen har båret præg af iterative værktøjer som SCRUM og V-modellen, og med fokus på design fra bunden og op. ASE-modellen for projektudvikling er også benyttet i den tidsmæssige planlægning. Brugen af disse modeller har hjulpet i udviklingen af projekt. Projektprocessen er mundet ud i en prototype hvor størstedelen af funktionaliteten er implementeret.
 			
 		\end{abstract}
 		
-		\selectlanguage{english} %%FIXME
+		\selectlanguage{english} 
 		\begin{abstract}
-			This report describes the devleopment of a 4th semester project at IHA concerning the design and development of a self-driving car, AutoCar.
-			AutoCar has a DC-motor for propulsion, a servo for directional control, a sonar sensor used for ranging, a road sensor in each side to detect road markings, two battery sensors to detect and display battery levels, a tachometer to measure the speed of AutoCar, and a lot of internal logic, regulation, and communication to make it all work. 
-			The user can use the interface to start and stop AutoCar, print the status from the sensors, set the speed, and a request overtaking. AutoCar is itself responsible for driving within the road markings.
 			
-			AutoCar is developed with a PSoC 4 and a Raspberry Pi 2b, which collectively function as the control unit. The GUI is designed with QT Creator in a Linux terminal.
-			
-			The devleopment process has been influence by iterative tools such as SCRUM and the V model, and a strong focus on a bottom-up approach to the design process. The ASE Development Model has been used for chronological planning, and redmine along with SmartGit has been used to keep track of project files and resources. The use of these models and tools has ensured a competently devleloped system.
 		\end{abstract}
 		
 		\selectlanguage{danish}
