@@ -2,11 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2015/W32TeX)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: rapport.aux
 The style file: biblatex.bst
-I couldn't open database file ../referencer.bib
----line 22 of file rapport.aux
- : \bibdata{rapport-blx,../referencer
- :                                   }
-I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -19,13 +14,13 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: rapport-blx.bib
-Warning--I didn't find a database entry for "MoSCoW"
+Database file #2: ../referencer.bib
 Biblatex version: 3.0
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 You've used 1 entry,
             6047 wiz_defined-function locations,
-            1131 strings with 8103 characters,
+            1129 strings with 8091 characters,
 and the built_in function-call counts, 1306 in all, are:
 = -- 64
 > -- 58
@@ -64,4 +59,3 @@ warning$ -- 0
 while$ -- 50
 width$ -- 0
 write$ -- 20
-(There was 1 error message)

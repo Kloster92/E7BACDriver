@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  30 AUG 2017 10:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  30 AUG 2017 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3581,41 +3581,56 @@ been already used, duplicate ignored
 l.293 	\clearpage
                   [2
 
-] (./tex/krav.tex
+] (./tex/kravspecifikation.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
-
-
-LaTeX Warning: Citation 'MoSCoW' on page 3 undefined on input line 3.
-
-
-Overfull \hbox (11.42307pt too wide) in paragraph at lines 3--4
-\T1/ppl/m/n/10.95 Kravene til pro-duk-tet er ana-ly-se-ret vha. MoSCoW-metoden[
-[]]. MoSCoW-metoden
- []
-
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 38.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 46.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 38.
+(babel)             in language  on input line 46.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 48.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 50.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 53.
-[3
+(babel)             in language  on input line 60.
+ [3
 
 
-])
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 63.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 63.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 107.
+ [4
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 130.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 133.
+
+
+(c:/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+))
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -3624,54 +3639,46 @@ FiXme Summary: Number of notes: 0,
 (FiXme)        Total: 0.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 332.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 329.
-[4]
+(babel)             in language  on input line 332.
+[5]
 \tf@toc=\write7
 \openout7 = `rapport.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 329.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 329.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 329.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 329.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 3133695B68379312F8A53E7C1274DACD;145.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                rapport
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 0D920246D2A65206E36D48FEA1DBCB4B;297.
 Package logreq Info: Writing requests to 'rapport.run.xml'.
 \openout1 = `rapport.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 329.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 42002 strings out of 493042
- 780950 string characters out of 6138227
- 1202350 words of memory out of 5000000
- 44917 multiletter control sequences out of 15000+600000
- 34027 words of font info for 69 fonts, out of 8000000 for 9000
+ 41949 strings out of 493042
+ 779789 string characters out of 6138227
+ 1201350 words of memory out of 5000000
+ 44846 multiletter control sequences out of 15000+600000
+ 35274 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,11n,97p,10454b,2707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
-f-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/ty
-pe1/urw/palatino/uplr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatin
-o/uplr8a.pfb>
-Output written on rapport.pdf (6 pages, 64208 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fo
+nts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/p
+alatino/uplr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.
+pfb>
+Output written on rapport.pdf (7 pages, 74523 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

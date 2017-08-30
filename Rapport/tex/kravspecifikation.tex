@@ -1,0 +1,140 @@
+\chapter{Kravspecifikation}
+
+%\subsection{Prioritering / Afgrænsning} måske?
+%Moscow
+Kravene til produktet er prioriteret ved brug af MoSCoW metoden. Her er kravene for produktet inddelt i fire kategorier, hvor de vigtigste elementer er prioriteret højest. \textbf{Must} benævner de krav som er vigtigst at opfylde, og som er absolut nødvendigt for produktet. \textbf{Should} er de krav produktet bør opfylde. \textbf{Could} er kravene som produktet evt. kunne opfylde, hvis projektets tidsramme tillader det. \textbf{Won't} er krav som ikke vil blive opfyldt inden for projektets tidsrammer, men evt. kan tages med i senere iterationer.
+
+\noindent Følgende opdeling viser kravene udvalgt for dette projekt:
+\begin{itemize}
+	\item[\textbf{Must}]
+		\begin{itemize}
+			\item Holde konstant udgangsstrøm og -spænding
+			\item Have stabil regulering
+			\item Ikke påvirke andre moduler ved fejl
+			\item Konstrueres med EEE komponenter
+
+		\end{itemize}
+	\item[\textbf{Should}]
+		\begin{itemize}
+			\item Have programmerbar udgangsstrøm og -spænding
+
+		\end{itemize}
+	\item[\textbf{Could}] 
+		\begin{itemize}
+			\item Have overstrømsbeskyttelse på udgangen
+
+		\end{itemize}
+	\item[\textbf{Won't}]
+		\begin{itemize}
+			\item Indeholde galvanisk adskillelse
+		\end{itemize}
+\end{itemize}
+% De krav der er kritisk for selve funktionen af bilen, dvs. bevægelse / styring, er prioriteret højest. Herefter er krav, som afhænger af bla bla bla. Måske.
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics{tex/Kravspecifikation/Billeder/Aktor-kontekst_diagram_v0_1.pdf}
+%	\caption{Aktør-kontekst diagram}
+%\end{figure}
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics{tex/Kravspecifikation/Billeder/Usecase_diagram_v1_0.pdf}
+%	\caption{Use case diagram}
+%\end{figure}
+
+\section{Aktørbeskrivelse}
+I det følgende afsnit beskrives systemets aktører. Ved hver aktør angives typen, samt en kort beskrivelse af aktørens funktion og/eller hvordan de påvirker systemet.
+
+\begin{framed}
+	\subsection{Aktør: Bruger}
+	\subsubsection*{Type:}
+		Primær
+	
+	\subsubsection*{Beskrivelse:}
+		Brugeren interagerer med systemet via et interface.
+		
+		Han kan indstille den ønskede fart, samt kontrollere den nuværende fart og \indent spændingen på batterierne
+\end{framed}
+
+\clearpage
+
+
+\section{Fully dressed use cases}
+
+\begin{framed}
+	\subsection{Use case 1 - Start bil}
+	\subsubsection*{Mål:}
+		Initiere bilen så den er klar til kørsel og er klar til at modtage input
+		
+	\subsubsection*{Initiering:}
+		Brugeren
+	
+	\subsubsection*{Aktører:}
+		Brugeren (primær)
+	
+	\subsubsection*{Referencer:}
+		Ingen
+	
+	\subsubsection*{Samtidige forekomster:}
+		En
+	
+	\subsubsection*{Forudsætning:}
+		Bilen er slukket og der er forbindelse fra interface til bil
+	
+	\subsubsection*{Resultat:}
+		Bilens sensorer er tændt, motorer er klar, bilen holder stille
+	
+	\subsubsection*{Hovedscenarie:}
+		\begin{enumerate}
+			\item Brugeren vælger via interface ''Start bil''
+			\item Bilen monitorerer sensorinputs og rapporterer status 
+			\item Bilen udfører motortjek ved at køre bilen lidt frem og derefter tilbage
+			\item Bilen rapporterer status
+			\item Bilen tænder for- og baglys, blinker med blinklys hvis status er OK 
+			\begin{description}
+					\item[Extension 1:] Status ikke OK
+			\end{description}
+			\item Bilen afventer brugerinput
+		\end{enumerate}
+	
+	\subsubsection*{Extensions:}
+	\textbf{Extension 1:} Status ikke OK	% Fix layout
+		\begin{enumerate}
+			\item Bilen rapporterer fejl og forsøger at angive hvilken sensor og/eller motor der fejler
+		\end{enumerate}
+	
+\end{framed}
+	
+
+% Skabelon
+%\begin{framed}
+%\subsubsection{Mål:}
+%
+%\subsubsection{Initiering:}
+%
+%\subsubsection{Aktører:}
+%
+%\subsubsection{Referencer:}
+%
+%\subsubsection{Samtidige forekomster:}
+%
+%\subsubsection{Forudsætning:}
+%
+%\subsubsection{Resultat:}
+%
+%\subsubsection{Hovedscenarie:}
+%
+%\subsubsection{Extension:}
+
+\section{Ikke-funktionelle krav}
+I dette afsnit beskrives de ikke-funktionelle krav. Her opstilles f.eks. krav om præcision, brugervenlighed samt produktets dimensioner.
+\begin{itemize}
+			\item Bilens længde og bredde må ikke overskride 50cm x 30 cm
+			\item Brugeren skal have mulighed for at kommunikere med bilen via tekst-terminal og / eller grafisk brugergrænseflade
+			\item Bilen skal detektere objekter indenfor intervallet 20cm til 2,5m
+			\item Bilen skal kunne køre med en fart på 13 km/t$\pm$ 0,5 
+			\item Bilen skal have en maksimal vægt på 2kg
+			\item Bilen skal måle sin fart i intervallet 0-13 km/t$\pm$ 0,5
+			\item Bilen skal kunne indstille sin fart i intervallet 0-13 km/t med en opløsning på 0,5 km/t	
+\end{itemize}
