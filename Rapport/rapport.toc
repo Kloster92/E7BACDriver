@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {danish}
+\select@language {danish}
+\select@language {danish}
+\select@language {danish}
+\select@language {english}
+\select@language {danish}
+\contentsline {chapter}{Indhold}{2}{section*.3}
