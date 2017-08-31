@@ -1,0 +1,226 @@
+%%%% Semesterprojekt rapport gruppe 2 %%%%
+%%%% Elektronik Q1/Q2 2016 %%%%
+
+% Kan anvendes til journaler eller afleveringer
+\documentclass[11pt, a4paper, twoside, openany]{memoir}
+
+\usepackage[utf8]{inputenc}		% Dansk input encoding (tegn)
+\usepackage[danish]{babel}		% Danske formuleringer / orddeling
+\usepackage[T1]{fontenc}		% Output-indkodning af tegnsaet (T1)
+
+
+%%% Memoir indstillinger
+%% Afstand mellem afsnit og videre
+%% NIX PILLE - medmindre strengt nødvendigt
+\setaftersubsubsecskip{6pt}	
+\setbeforesubsubsecskip{6pt}
+%\setaftersubsecskip{6pt}
+%\setbeforesubsecskip{-\baselineskip}
+%\setaftersecskip{6pt}
+%\setbeforesecskip{-\baselineskip}
+%\setaftersecskip{1ex}
+
+\raggedbottom
+
+
+
+\chapterstyle{section}
+\usepackage{url}
+
+% ¤¤ Marginer ¤¤ %
+\setlrmarginsandblock{3.5cm}{2.5cm}{*}		% \setlrmarginsandblock{Indbinding}{Kant}{Ratio}
+\setulmarginsandblock{3.0cm}{2.5cm}{*}		% \setulmarginsandblock{Top}{Bund}{Ratio}
+\checkandfixthelayout
+
+%%% Font valg %%%
+\usepackage{mathpazo}	%Palatinofont - matematikformler
+\usepackage{eulervm}		%Palatinofont
+
+%%% FIGURER OG TABELLER %%%
+\usepackage{graphicx} 						% Haandtering af eksterne billeder (JPG, PNG, PDF)
+
+\usepackage[export]{adjustbox}
+
+\usepackage{multirow}                		% Fletning af raekker og kolonner (\multicolumn og \multirow)
+\usepackage{colortbl} 						% Farver i tabeller (fx \columncolor, \rowcolor og \cellcolor)
+\usepackage[dvipsnames]{xcolor}				% Definer farver med \definecolor. Se mere: http://en.wikibooks.org/wiki/LaTeX/Colors
+%\usepackage{flafter}						% Soerger for at floats ikke optraeder i teksten foer deres erence
+\usepackage{float}							% Muliggoer eksakt placering af floats, f.eks. \begin{figure}[H]
+\usepackage{multicol}         	        	% Muliggoer tekst i spalter
+%\usepackage{rotating}						% Rotation af tekst med \begin{sideways}...\end{sideways}
+\usepackage{booktabs}
+\usepackage{bigstrut}	% Excel2latex måskeh
+\usepackage{tabularx}
+\usepackage{subfig}
+
+%%% ¤¤ Matematik mm. %%%
+\usepackage{amsmath,amssymb,stmaryrd} 		% Avancerede matematik-udvidelser
+\usepackage{mathtools}						% Andre matematik- og tegnudvidelser
+\usepackage{textcomp}                 		% Symbol-udvidelser (f.eks. promille-tegn med \textperthousand )
+\usepackage{siunitx}						% Flot og konsistent praesentation af tal og enheder med \si{enhed} og \SI{tal}{enhed}
+\sisetup{output-decimal-marker = {,}}		% Opsaetning af \SI (DE for komma som decimalseparator) 
+\sisetup{exponent-product=\cdot, output-product=\cdot}	%Eksponent er gange tegn, output produkt er gange tegn
+\sisetup{digitsep = none}					%Almindeligt komma - ingen mellemrum aka. til eurokomma
+
+%%% REFERENCER %%%
+
+
+%%% MISC %%%
+\usepackage{listings}						% Placer kildekode i dokumentet med \begin{lstlisting}...\end{lstlisting}
+\definecolor{bg}{HTML}{F0F0F0}
+\lstset{language=C++,
+				showstringspaces = false,
+				backgroundcolor = \color{bg},
+                basicstyle=\ttfamily,
+                keywordstyle=\color{blue}\ttfamily,
+                stringstyle=\color{red}\ttfamily,
+                commentstyle=\color{green}\ttfamily,
+                morecomment=[l][\color{magenta}]{\#},
+                extendedchars=true,
+                numbers=left, numberstyle=\tiny,		% Linjenumre
+                columns=flexible,						% Kolonnejustering
+                breaklines, breakatwhitespace=true,		% Bryd lange linjer
+                literate=%
+                {æ}{{\ae}}1
+                {å}{{\aa}}1
+                {ø}{{\o}}1
+                {Æ}{{\AE}}1
+                {Å}{{\AA}}1
+                {Ø}{{\O}}1
+}
+
+
+\usepackage{lipsum}							% Dummy text \lipsum[..]
+\usepackage[shortlabels]{enumitem}			% Muliggoer enkelt konfiguration af lister
+\usepackage{pdfpages}						% Goer det muligt at inkludere pdf-dokumenter med kommandoen \includepdf[pages={x-y}]{fil.pdf}	
+\pdfoptionpdfminorversion=6					% Muliggoer inkludering af pdf dokumenter, af version 1.6 og hoejere
+
+%	¤¤ Afsnitsformatering ¤¤ %
+%\setlength{\parindent}{0mm}           		% Stoerrelse af indryk
+\setlength{\parskip}{1.5mm}          		% Afstand mellem afsnit ved brug af double Enter
+\linespread{1,1}							% Linie afstand
+
+\usepackage{tikz}
+
+
+% ¤¤ Visuelle  ¤¤ %
+\usepackage[colorlinks]{hyperref}			% Danner klikbare referencer (hyperlinks) i dokumentet.
+\hypersetup{colorlinks = true,				% Opsaetning af farvede hyperlinks (interne links, citeringer og URL)
+	linkcolor = black,
+	citecolor = black,
+	urlcolor = black
+}
+
+
+
+%%% Referencer / Bibliografi %%%
+\usepackage[backend=bibtex, sorting=none, style=numeric]{biblatex}
+\bibliography{../referencer.bib}
+
+
+\usepackage[draft, danish]{fixme}
+\fxsetup{layout=footnote}
+
+\graphicspath{{../fig/}{../fig}{./}}
+
+
+\usepackage{rotating}
+\usepackage{titlesec}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+%%%% Opsætning af dokument %%%%
+\newcommand{\forfatter}{Gruppe 2}
+\newcommand{\fag}{INDSÆT KURSUS HER}
+\newcommand{\titel}{Semesterprojekt 4 Dokumentation}
+\date{}
+
+\author{\forfatter}
+\title{\titel}
+
+\setlength{\beforechapskip}{10pt}
+\setlength{\afterchapskip}{10pt}
+% TODO: Skift kapitel header layout
+\begin{document}
+%\maketitle
+\begin{titlingpage}
+%\thispagestyle{title}
+		
+		\begin{center}
+				{\huge\bfseries Projekt Universal Actuator Drive}\\
+				\vspace{10pt}
+				
+				{\Huge\bfseries Dokumentation}\\
+				
+				\vspace{20pt}
+				
+				{Diplomingeniør Elektronik}\\
+				{\large Bachelorprojekt efterår 2017}\\
+				
+				\vspace{10pt}
+				
+				Ingeniørhøjskolen Aarhus Universitet\\
+				Vejleder: Arne Justesen
+				\vspace{10pt}
+				
+				19. december 2017
+				\vspace{10pt}
+
+				\vspace{50pt}
+				\begin{minipage}{0.25\linewidth}
+					\centering
+					\hrule
+					\vspace{12pt}
+					Nicolai H. Fransen\\
+					Studienr. 201404672
+				\end{minipage}
+				\hspace{10pt}
+				\begin{minipage}{0.25\linewidth}
+					\centering
+					\hrule
+					\vspace{12pt}
+					Jesper Kloster\\
+					Studienr. 
+				\end{minipage}
+				\hspace{10pt}
+		\end{center}
+		
+		\clearpage
+		
+	\setcounter{tocdepth}{2}
+	\tableofcontents
+	\clearpage
+	
+	%\include{tex/indledning/indledning}
+	
+	\include{tex//kravspecifikation}
+	
+	\include{tex//accepttest}
+	
+	%\include{tex/systemarkitektur/systemarkitektur}
+	
+	%\include{tex/design/design}
+
+	%\include{tex/Done_acceptest/Done_acceptest}
+	
+	%\include{<sti/filnavn.tex>}
+
+	
+	%%% Foreløbig disposition %%%
+	% Forord / indledning
+	% Kravspecifikation
+	% Systemarkitektur
+	%% HW
+	%% SW
+	% Accepttest
+	
+	\printbibliography[title={Litteraturliste}]
+	
+\end{titlingpage}
+\end{document}

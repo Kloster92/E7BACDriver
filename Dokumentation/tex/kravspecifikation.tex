@@ -1,0 +1,164 @@
+\chapter{Kravspecifikation}
+
+%\subsection{Prioritering / Afgrænsning} måske?
+%Moscow
+Kravene til produktet er prioriteret ved brug af MoSCoW metoden. Her er kravene for produktet inddelt i fire kategorier, hvor de vigtigste elementer er prioriteret højest. \textbf{Must} benævner de krav som er vigtigst at opfylde, og som er absolut nødvendigt for produktet. \textbf{Should} er de krav produktet bør opfylde. \textbf{Could} er kravene som produktet evt. kunne opfylde, hvis projektets tidsramme tillader det. \textbf{Won't} er krav som ikke vil blive opfyldt inden for projektets tidsrammer, men evt. kan tages med i senere iterationer.
+
+\noindent Følgende opdeling viser kravene udvalgt for dette projekt:
+\begin{itemize}
+	\item[\textbf{Must}]
+		\begin{itemize}
+			\item Holde konstant udgangsstrøm og -spænding
+			\item Have stabil regulering
+			\item Ikke påvirke andre moduler ved fejl
+			\item Konstrueres med EEE komponenter
+
+		\end{itemize}
+	\item[\textbf{Should}]
+		\begin{itemize}
+			\item Have programmerbar udgangsstrøm og -spænding
+
+		\end{itemize}
+	\item[\textbf{Could}] 
+		\begin{itemize}
+			\item Have overstrømsbeskyttelse på udgangen
+
+		\end{itemize}
+	\item[\textbf{Won't}]
+		\begin{itemize}
+			\item Indeholde galvanisk adskillelse
+		\end{itemize}
+\end{itemize}
+% De krav der er kritisk for selve funktionen af bilen, dvs. bevægelse / styring, er prioriteret højest. Herefter er krav, som afhænger af bla bla bla. Måske.
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics{tex/Kravspecifikation/Billeder/Aktor-kontekst_diagram_v0_1.pdf}
+%	\caption{Aktør-kontekst diagram}
+%\end{figure}
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics{tex/Kravspecifikation/Billeder/Usecase_diagram_v1_0.pdf}
+%	\caption{Use case diagram}
+%\end{figure}
+
+\section{Aktørbeskrivelse}
+I det følgende afsnit beskrives systemets aktører. Ved hver aktør angives typen, samt en kort beskrivelse af aktørens funktion og/eller hvordan de påvirker systemet.
+
+\begin{framed}
+	\subsection{Aktør: Bruger}
+	\subsubsection*{Type:}
+		Primær
+	
+	\subsubsection*{Beskrivelse:}
+		Brugeren interagerer med systemet, ved at indstille den ønskede load type.
+\end{framed}
+
+\begin{framed}
+	\subsection{Aktør: Thermal knife}
+	\subsubsection*{Type:}
+	Sekundær
+	
+	\subsubsection*{Beskrivelse:}
+	Thermal knife er en load type
+\end{framed}
+
+\begin{framed}
+	\subsection{Aktør: Pyro load}
+	\subsubsection*{Type:}
+	Sekundær
+	
+	\subsubsection*{Beskrivelse:}
+	Pyro-load er en load type
+\end{framed}
+
+\clearpage
+
+
+\section{Fully dressed use cases}
+
+\begin{framed}
+	\subsection{Use case 1 - Start bil}
+	\subsubsection*{Mål:}
+		Initiere bilen så den er klar til kørsel og er klar til at modtage input
+		
+	\subsubsection*{Initiering:}
+		Brugeren
+	
+	\subsubsection*{Aktører:}
+		Brugeren (primær)
+	
+	\subsubsection*{Referencer:}
+		Ingen
+	
+	\subsubsection*{Samtidige forekomster:}
+		En
+	
+	\subsubsection*{Forudsætning:}
+		Bilen er slukket og der er forbindelse fra interface til bil
+	
+	\subsubsection*{Resultat:}
+		Bilens sensorer er tændt, motorer er klar, bilen holder stille
+	
+	\subsubsection*{Hovedscenarie:}
+		\begin{enumerate}
+			\item Brugeren vælger via interface ''Start bil''
+			\item Bilen monitorerer sensorinputs og rapporterer status 
+			\item Bilen udfører motortjek ved at køre bilen lidt frem og derefter tilbage
+			\item Bilen rapporterer status
+			\item Bilen tænder for- og baglys, blinker med blinklys hvis status er OK 
+			\begin{description}
+					\item[Extension 1:] Status ikke OK
+			\end{description}
+			\item Bilen afventer brugerinput
+		\end{enumerate}
+	
+	\subsubsection*{Extensions:}
+	\textbf{Extension 1:} Status ikke OK	% Fix layout
+		\begin{enumerate}
+			\item Bilen rapporterer fejl og forsøger at angive hvilken sensor og/eller motor der fejler
+		\end{enumerate}
+	
+\end{framed}
+	
+
+% Skabelon
+%\begin{framed}
+%\subsubsection{Mål:}
+%
+%\subsubsection{Initiering:}
+%
+%\subsubsection{Aktører:}
+%
+%\subsubsection{Referencer:}
+%
+%\subsubsection{Samtidige forekomster:}
+%
+%\subsubsection{Forudsætning:}
+%
+%\subsubsection{Resultat:}
+%
+%\subsubsection{Hovedscenarie:}
+%
+%\subsubsection{Extension:}
+
+\section{Ikke-funktionelle krav}
+I dette afsnit beskrives de ikke-funktionelle krav. Her opstilles f.eks. krav om præcision, brugervenlighed samt produktets dimensioner.
+\begin{itemize}
+			\item Inputspændingen skal være mellem 26-100V
+			\item Der må maksimalt trækkes en peak-strøm fra inputkilden på 150\% af inputstrømmen
+			\item Skal opretholde en outputspænding på op til 21V ved 2,5A
+			\item Der må maksimalt være en ripple-spænding på 50mV pk-pk ved fundamental ripple frekvens, og switching spikes på 100mV pk-pk
+			\item Skal kunne omsætte op til 75W
+			\item Skal operere med et tab på maksimalt 5W %%FIXME
+			\item Skal implementeres i et volumen mindre end 17x75x100mm på forsiden af PCB, samt 3x75x100mm på bagsiden PCB'et
+			\item Skal kunne operere med en omgivelsestemperatur mellem -35\degreeCelsius  og 65\degreeCelsius
+			\item Skal have stabil regulering med 10dB gain og 50 graders fasemargin ved:
+				\begin{description}
+					\item 21V/2A ved høj og lav indgangsspænding
+					\item 5A/2\ohm ved høj og lav indgangsspænding
+				\end{description}
+			\item Reguleringen skal have en risetime på maksimalt 0,5ms uden overshoot
+					
+\end{itemize}
