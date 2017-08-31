@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  31 AUG 2017 10:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  31 AUG 2017 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3344,7 +3344,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=86, 459.21562pt 
+<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=83, 459.21562pt 
 x 255.65512pt>
 File: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf Graphic file (t
 ype pdf)
@@ -3358,7 +3358,7 @@ Overfull \hbox (33.2145pt too wide) in paragraph at lines 36--37
  []
 
 
-<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=87, 459.21562pt x 255.
+<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=84, 459.21562pt x 255.
 65512pt>
 File: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf Graphic file (type pd
 f)
@@ -3884,21 +3884,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
 (./tex/accepttest/accepttest.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
-
-
-Package rerunfilecheck Warning: File `dokumentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `dokumentation.out':
-(rerunfilecheck)             Before: E89AFD0017287FC91C775AF9564DFE82;890
-(rerunfilecheck)             After:  F38CF58F0D3B28E94F54C85BB8B4C7F2;882.
+Package rerunfilecheck Info: File `dokumentation.out' has not changed.
+(rerunfilecheck)             Checksum: F38CF58F0D3B28E94F54C85BB8B4C7F2;882.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
  37305 strings out of 493042
  699993 string characters out of 6138227
- 858671 words of memory out of 5000000
+ 854904 words of memory out of 5000000
  40216 multiletter control sequences out of 15000+600000
  37861 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3909,10 +3902,10 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (12 pages, 752701 bytes).
+Output written on dokumentation.pdf (12 pages, 751916 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 212 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
