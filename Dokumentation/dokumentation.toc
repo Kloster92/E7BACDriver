@@ -1,14 +1,19 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \select@language {danish}
 \contentsline {chapter}{Indhold}{2}{section*.1}
 \contentsline {chapter}{\chapternumberline {1}Kravspecifikation}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Akt\IeC {\o }rbeskrivelse}{4}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Akt\IeC {\o }r: Bruger}{4}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Akt\IeC {\o }r: Thermal knife}{4}{subsection.1.1.2}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {1.1.3}Akt\IeC {\o }r: Pyro load}{5}{subsection.1.1.3}
 \contentsline {section}{\numberline {1.2}Fully dressed use cases}{6}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Use case 1 - Start bil}{6}{subsection.1.2.1}
+=======
+\contentsline {subsection}{\numberline {1.1.3}Akt\IeC {\o }r: Pyro load}{4}{subsection.1.1.3}
+\contentsline {section}{\numberline {1.2}Fully dressed use cases}{5}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Use case 1 - Aktiver Thermal knife load}{5}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Use case 2 - Aktiver Pyro load}{6}{subsection.1.2.2}
+>>>>>>> dedeee859d0402a9fde91be1b01f2ae1878de577
 \contentsline {section}{\numberline {1.3}Ikke-funktionelle krav}{7}{section.1.3}
 \contentsline {chapter}{\chapternumberline {2}Accepttest}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Testudstyr}{8}{section.2.1}
