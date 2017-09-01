@@ -1,6 +1,6 @@
 \chapter{Kravspecifikation}
+% TODO: Find på flere underpunkter til moscow'en
 
-%\subsection{Prioritering / Afgrænsning} måske?
 %Moscow
 Kravene til produktet er prioriteret ved brug af MoSCoW metoden. Her er kravene for produktet inddelt i fire kategorier, hvor de vigtigste elementer er prioriteret højest. \textbf{Must} benævner de krav som er vigtigst at opfylde, og som er absolut nødvendigt for produktet. \textbf{Should} er de krav produktet bør opfylde. \textbf{Could} er kravene som produktet evt. kunne opfylde, hvis projektets tidsramme tillader det. \textbf{Won't} er krav som ikke vil blive opfyldt inden for projektets tidsrammer, men evt. kan tages med i senere iterationer.
 
@@ -8,15 +8,16 @@ Kravene til produktet er prioriteret ved brug af MoSCoW metoden. Her er kravene 
 \begin{itemize}
 	\item[\textbf{Must}]
 		\begin{itemize}
-			\item Holde konstant udgangsstrøm og -spænding
+			\item Holde konstant udgangsstrøm og -spænding alt efter load
 			\item Have stabil regulering
 			\item Ikke påvirke andre moduler ved fejl
-			\item Konstrueres med EEE komponenter
+
 
 		\end{itemize}
 	\item[\textbf{Should}]
 		\begin{itemize}
 			\item Have programmerbar udgangsstrøm og -spænding
+			\item Konstrueres med EEE komponenter
 
 		\end{itemize}
 	\item[\textbf{Could}] 
@@ -26,7 +27,10 @@ Kravene til produktet er prioriteret ved brug af MoSCoW metoden. Her er kravene 
 		\end{itemize}
 	\item[\textbf{Won't}]
 		\begin{itemize}
+			\item Have mulighed for brug til mere end to forskellige loads
 			\item Indeholde galvanisk adskillelse
+			\item Have feedback til brugeren når valgt load er aktiveret
+			
 		\end{itemize}
 \end{itemize}
 
@@ -55,6 +59,7 @@ I det følgende afsnit beskrives systemets aktører. Ved hver aktør angives typ
 		Brugeren interagerer med systemet, ved at indstille den ønskede load type.
 \end{framed}
 
+% TODO: Beskrivelse af de sekundære aktøres funktion
 \begin{framed}
 	\subsection{Aktør: Thermal Knife load}
 	\subsubsection*{Type:}
