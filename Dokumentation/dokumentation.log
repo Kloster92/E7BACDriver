@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  6 SEP 2017 11:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  6 SEP 2017 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3490,363 +3490,395 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 5.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 28.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 28.
+(babel)             in language  on input line 17.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/ppl/m/n/10.95 Brugeren
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 27--27
+\T1/ppl/m/n/10.95 væl-ger Ther-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+\T1/ppl/m/n/10.95 mal Kni-fe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/ppl/m/n/10.95 Reb bli-ver
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/ppl/m/n/10.95 Brugeren
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/ppl/m/n/10.95 væl-ger Py-ro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/ppl/m/n/10.95 Krudtladning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+\T1/ppl/m/n/10.95 bli-ver an-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []|\T1/ppl/b/n/10.95 Forventet
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Bilens læng-de
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Input-
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 ik-ke over-skri-
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 spændingen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 de 50cm x
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Indgangs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Længde og
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 spændingen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Længden og
+Underfull \hbox (badness 1796) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 må-les med et
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 bred-den over-
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Indgangs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 skri-der ik-ke
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 spændingen
  []
 
 
-Underfull \hbox (badness 4819) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Brugeren skal
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 er mel-lem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 ni-ke-re med
+Underfull \hbox (badness 2173) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Der må mak-
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 ter-mi-nal og /
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Udgangen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 el-ler gra-fisk
+Underfull \hbox (badness 1694) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 be-la-stes af en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 bru-ger-græn-se-
+Underfull \hbox (badness 3449) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 og der må-les
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Bilens skal
+Underfull \hbox (badness 1048) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 strøm på ind-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 de-tek-te-re ob-
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 gan-gen med
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 jek-ter på en
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 over-sti-ger ik-
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 2,5m i spring
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 ke 150% af
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Der pla-ce-res
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 ste-a-dy sta-te
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 for-an bi-len.
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Skal op-ret-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 Drifts-sta-tus
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 hol-de en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 væl-ges og
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 out-put-spæn-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 af-læ-ses via
+Underfull \hbox (badness 4205) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Der ind-sæt-tes
  []
 
 
-Underfull \hbox (badness 7631) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 in-ter-face. Ob-
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 og udgangs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 i en af-stand
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 strøm og
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 sta-tus væl-ges
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 -spænding
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]|\T1/ppl/m/n/10.95 Detektion i
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 må-les med
  []
 
 
-Underfull \hbox (badness 7685) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 in-ter-val-let fra
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Spændingen
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 20cm til 2,5m
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 lig-ger på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 vej-ba-ne-styk-ke
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 strøm-men på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 på 20m og
+Underfull \hbox (badness 2486) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Skal op-ret-hol-
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 et på 10m i
+Underfull \hbox (badness 1024) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 de en out-put-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 for-læn-gel-se
+Underfull \hbox (badness 4205) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Der ind-sæt-tes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 af hin-an-den.
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 og udgangs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 Der an-gi-ves
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 strøm og
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 en fart på 13
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 -spænding
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 km/t. Idet
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 må-les med
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 bi-len pas-se-rer
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]|\T1/ppl/m/n/10.95 Spændingen
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 de før-ste 20m
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 lig-ger på
  []
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 star-tes et sto-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/ppl/m/n/10.95 be-væ-get sig
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+\T1/ppl/m/n/10.95 strøm-men på
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 63.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
+(babel)             in language  on input line 63.
 [9
 
 
 
 ]
-Overfull \vbox (22.35323pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
-
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/ppl/b/n/10.95 Forventet
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 46--46
+Underfull \hbox (badness 1275) in paragraph at lines 63--63
 []|\T1/ppl/m/n/10.95 Bilen skal ha-
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 46--46
+Underfull \hbox (badness 4266) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 ve en mak-si-
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 46--46
+Underfull \hbox (badness 4713) in paragraph at lines 63--63
 []|\T1/ppl/m/n/10.95 Bilen pla-ce-res
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 sin fart med
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 en op-løs-ning
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 på 0,5 km/t
  []
 
 
-Underfull \hbox (badness 4556) in paragraph at lines 46--46
+Underfull \hbox (badness 4556) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 og bi-len skal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 op-løs-ning på
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 vej-ba-ne-styk-ke
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 på 20m og
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 46--46
+Underfull \hbox (badness 6510) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 et på 10m i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 for-læn-gel-se
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 af hin-an-den.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 til for-skel-li-ge
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 ha-stig-he-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 af 0,5 km/t.
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 46--46
+Underfull \hbox (badness 7362) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 pes idet den
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 har be-væ-get
  []
 
 
-Underfull \hbox (badness 6592) in paragraph at lines 46--46
+Underfull \hbox (badness 6592) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 sig yder-li-ge-re
  []
 
 
-Underfull \hbox (badness 6236) in paragraph at lines 46--46
+Underfull \hbox (badness 6236) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 10m. Der af-
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 46--46
+Underfull \hbox (badness 3668) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 læ-ses fart ud
  []
 
 
-Underfull \hbox (badness 3492) in paragraph at lines 46--46
+Underfull \hbox (badness 3492) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 i lø-bet af de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--46
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/ppl/m/n/10.95 op-løs-ning på
  []
 
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 46--47
+Overfull \hbox (17.0pt too wide) in paragraph at lines 63--64
 [][] 
  []
 
 )
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 204.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 204.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 204.
+ [10]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 204.
 Package babel Info: Redefining danish shorthand "~
@@ -3885,27 +3917,27 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: 440FBD72951FC684C902E4009B2DC216;882.
+(rerunfilecheck)             Checksum: E80C7DC13EE64FF7A9F361F509C98E73;877.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 37307 strings out of 493042
- 700005 string characters out of 6138227
- 854904 words of memory out of 5000000
- 40216 multiletter control sequences out of 15000+600000
+ 37311 strings out of 493042
+ 700061 string characters out of 6138227
+ 858904 words of memory out of 5000000
+ 40218 multiletter control sequences out of 15000+600000
  37861 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,12n,97p,10460b,1302s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,18n,97p,10460b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (12 pages, 752151 bytes).
+Output written on dokumentation.pdf (12 pages, 752133 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
