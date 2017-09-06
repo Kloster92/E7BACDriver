@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  5 SEP 2017 09:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  6 SEP 2017 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3350,122 +3350,122 @@ File: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf Graphic file (t
 ype pdf)
  <use tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf>
 Package pdftex.def Info: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.
-pdf used on input line 40.
+pdf used on input line 42.
 (pdftex.def)             Requested size: 459.2145pt x 255.65448pt.
 
-Overfull \hbox (33.2145pt too wide) in paragraph at lines 40--41
+Overfull \hbox (33.2145pt too wide) in paragraph at lines 42--43
  [][] 
  []
 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 45.
+[3
 
-<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=84, 459.21562pt x 255.
+
+
+]
+<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=88, 459.21562pt x 255.
 65512pt>
 File: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf Graphic file (type pd
 f)
  <use tex/Kravspecifikation/billeder/UseCasediagramV1.pdf>
 Package pdftex.def Info: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf us
-ed on input line 46.
+ed on input line 48.
 (pdftex.def)             Requested size: 459.2145pt x 255.65448pt.
 
-Overfull \hbox (33.2145pt too wide) in paragraph at lines 46--47
+Overfull \hbox (33.2145pt too wide) in paragraph at lines 48--49
  [][] 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
-[3
-
-
-
- <./tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 50.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 52.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 52.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 55.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 55.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 55.
+[4 <./tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf> <./tex/Kravspe
+cifikation/billeder/UseCasediagramV1.pdf
+
+pdfTeX warning: pdflatex.exe (file ./tex/Kravspecifikation/billeder/UseCasediag
+ramV1.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 54.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 56.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 54.
+(babel)             in language  on input line 56.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 66.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 70.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 70.
- [4 <./tex/Kravspecifikation/billeder/UseCasediagramV1.pdf>]
+(babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 73.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 83.
  [5]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 105.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 108.
+(babel)             in language  on input line 110.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 144.
  [6
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 147.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 143.
-
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
+(babel)             in language  on input line 147.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 174.
-[7
+(babel)             in language  on input line 180.
+ [7
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 176.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 176.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 179.
+(babel)             in language  on input line 182.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 185.
 
  (c:/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
@@ -3478,13 +3478,13 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 202.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 202.
- [8
+
+[8
 
 ]
 \openout2 = `tex/accepttest/accepttest.aux'.
 
-
-(./tex/accepttest/accepttest.tex
+ (./tex/accepttest/accepttest.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -3885,12 +3885,12 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: F38CF58F0D3B28E94F54C85BB8B4C7F2;882.
+(rerunfilecheck)             Checksum: 440FBD72951FC684C902E4009B2DC216;882.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
  ) 
 Here is how much of TeX's memory you used:
- 37305 strings out of 493042
- 699993 string characters out of 6138227
+ 37307 strings out of 493042
+ 700005 string characters out of 6138227
  854904 words of memory out of 5000000
  40216 multiletter control sequences out of 15000+600000
  37861 words of font info for 86 fonts, out of 8000000 for 9000
@@ -3902,10 +3902,10 @@ nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
 public/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/pa
 latino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
 fb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (12 pages, 752013 bytes).
+Output written on dokumentation.pdf (12 pages, 751891 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
