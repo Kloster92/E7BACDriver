@@ -1,15 +1,5 @@
 \chapter{Accepttest}
 
-Accepttesten udføres ved brug af en skaleret tosporet motorvej, i samme størrelsesforhold som bilen 1:10. Den konstrueres vha. hvid tape, som repræsenterer vejbanestriberne. Vejen skal være 35cm bred, derudover skal der laves et lige vejbanestykke på minimum 20m. Efter dette stykke konstrueres vejen således, at sving svarer til forholdene på en dansk motorvej
-
-\section{Testudstyr}
-\begin{itemize}
-	\item Hvid tape
-	\item Papkasse i samme størrelse som bil(benævnes som testobjekt)
-	\item Målebånd
-	\item Vægt
-\end{itemize}
-
 
 %% Skabelon
 %\begin{table}[H] 			
@@ -24,16 +14,43 @@ Accepttesten udføres ved brug af en skaleret tosporet motorvej, i samme større
 %		\caption{< Caption >}
 %\end{table}
 
+\section{Tests}
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|c|X|X|X|X|}
+		\hline
+		\bfseries Use case under test & \multicolumn{4}{|c|}{Use case 1 - Aktiver Thermal Knife load} \\ \hline
+		\bfseries Scenarie & \multicolumn{4}{| c |}{Hovedscenarie} \\ \hline
+		\bfseries Prækondition &  \multicolumn{4}{|c|}{Hverken Use case 1 eller Use case 2 er under udførelse} \\  \hline
+		\bfseries Step  & \bfseries Handling &  \bfseries Forventet & \bfseries Faktisk & \bfseries Vurdering \\ \hline 
+		1 & Brugeren vælger Thermal Knife load & Reb bliver brændt over & & \\ \hline
+	\end{tabularx}
+	\caption{Test for Use case 1 - Start bil - Hovedscenarie}
+\end{table}
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|c|X|X|X|X|}
+		\hline
+		\bfseries Use case under test & \multicolumn{4}{|c|}{Use case 2 - Aktiver Pyro load} \\ \hline
+		\bfseries Scenarie & \multicolumn{4}{| c |}{Hovedscenarie} \\ \hline
+		\bfseries Prækondition &  \multicolumn{4}{|c|}{Hverken Use case 1 eller Use case 2 er under udførelse} \\  \hline
+		\bfseries Step  & \bfseries Handling &  \bfseries Forventet & \bfseries Faktisk & \bfseries Vurdering \\ \hline 
+		1 & Brugeren vælger Pyro load & Krudtladning bliver antændt & & \\ \hline
+	\end{tabularx}
+	\caption{Test for Use case 1 - Start bil - Hovedscenarie}
+\end{table}
+
 
 \subsection{Test af ikke-funktionelle krav}
 
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Bilens længde og bredde må ikke overskride 50cm x 30cm & Længde og bredde måles & Længden og bredden overskrider ikke 50cm x 30cm & & \\ \hline
-	Brugeren skal have mulighed for at kommunikere med bilen via tekstterminal og / eller grafisk brugergrænseflade & & & & \\ \hline
-	Bilens skal detektere objekter på en afstand i intervallet 20cm til 2,5m i spring af 5cm & Der placeres et objekt 20cm foran bilen. Driftsstatus vælges og aflæses via interface. Objektet føres ud i en afstand 2,5m i skridt af 5cm og driftsstatus vælges og aflæses via interface. & Detektion i intervallet fra 20cm til 2,5m med opløsning på 5cm & & \\ \hline
-	Bilen skal kunne køre med en fart på mindst 13 km/t $\pm$ 0,5 & Der afmåles et vejbanestykke på 20m og et på 10m i forlængelse af hinanden. Der angives en fart på 13 km/t. Idet bilen passerer de første 20m startes et stopur og stoppes efter bilen har bevæget sig yderligere 10m  & Bilen kan køre 13 km/t $\pm$ 0,5 km/t & & \\ \hline
+	Input-spændingen skal være mellem 26-100V & Indgangs-spændingen måles med et voltmeter & Indgangs-spændingen er mellem 26-100V && \\ \hline
+	Der må maksimalt trækkes en peak-strøm fra inputkilden på 150\% af inputstrømmen & Udgangen belastes af en 3\ohm\ modstand, og der måles strøm på indgangen med oscilloskop & Peakstrømmen overstiger ikke 150\% af steady state strømmen & & \\ \hline
+	Skal opretholde en outputspænding på op til 21V $\pm$ 2\% ved 2,5A $\pm$ 5\% & Der indsættes en load på 5\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 12,5V $\pm$ 2\% og strømmen på 2,5A $\pm$ 5\% && \\ \hline
+	Skal opretholde en outputstrøm op til 5A $\pm$ 5\% ved 15V $\pm$ 2\% & Der indsættes en load på 5\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 15V $\pm$ 2\% og strømmen på 3A $\pm$ 5\% && \\ \hline
 \end{tabularx}
 
 
