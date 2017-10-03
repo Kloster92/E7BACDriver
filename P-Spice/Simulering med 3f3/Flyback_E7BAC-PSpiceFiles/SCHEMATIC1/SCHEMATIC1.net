@@ -1,0 +1,26 @@
+* source FLYBACK_E7BAC
+C_Co         0 OUT  10uF  TC=0,0 
+X_D1    N35476 OUT SCHEMATIC1_D1 
+X_S1    N35672 0 S 0 SCHEMATIC1_S1 
+V_Vd         D 0 {d}
+L_Ls         0 N35476  {Ns}  
+V_Vduty         N35672 0  
++PULSE 0V 1V 0 1ns 1ns {d*T} {T}
+Kn_K2         L_Lp L_Ls     1 RM8_ILP_3C90
+L_Lp         IN S  {Np}  
+V_Vi         IN 0 {Vi}
+R_Rload         0 OUT  {Rl} TC=0,0 
+.PARAM  vi=100v vo=21v po={vo**2/rl} k=1 rl=7r al=3.525u ns=5.628 d=
++ {(np/(ns*vi))*((2*po*al*fs)**(1/2))} t=10us np=9.38 fs={1/t}
+
+.subckt SCHEMATIC1_D1 1 2  
+S_D1         1 2 1 2 _D1
+RS_D1         1 2 1G
+.MODEL         _D1 VSWITCH Roff=1G Ron=1m Voff=0 Von=0.5
+.ends SCHEMATIC1_D1
+
+.subckt SCHEMATIC1_S1 1 2 3 4  
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=1G Ron=1.0m Voff=0.0V Von=1.0V
+.ends SCHEMATIC1_S1
