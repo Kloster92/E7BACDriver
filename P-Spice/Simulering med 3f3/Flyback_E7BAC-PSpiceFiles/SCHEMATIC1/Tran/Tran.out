@@ -1,0 +1,164 @@
+
+**** 10/02/17 13:19:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tran"  [ C:\Users\Nicolai Fransen\Desktop\Flyback_E7BAC-PSpiceFiles\SCHEMATIC1\Tran.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../flyback_e7bac-pspicefiles/flyback_e7bac.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
+
+*Analysis directives: 
+.TRAN  0 2ms 0 0.1u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FLYBACK_E7BAC
+C_Co         0 OUT  10uF  TC=0,0 
+X_D1    N35476 OUT SCHEMATIC1_D1 
+X_S1    N35672 0 S 0 SCHEMATIC1_S1 
+V_Vd         D 0 {d}
+L_Ls         0 N35476  {Ns}  
+V_Vduty         N35672 0  
++PULSE 0V 1V 0 1ns 1ns {d*T} {T}
+Kn_K2         L_Lp L_Ls     1 RM8_ILP_3C90
+L_Lp         IN S  {Np}  
+V_Vi         IN 0 {Vi}
+R_Rload         0 OUT  {Rl} TC=0,0 
+.PARAM  vi=100v vo=21v po={vo**2/rl} k=1 rl=7r al=3.525u ns=5.628 d=
++ {(np/(ns*vi))*((2*po*al*fs)**(1/2))} t=10us np=9.38 fs={1/t}
+
+.subckt SCHEMATIC1_D1 1 2  
+S_D1         1 2 1 2 _D1
+RS_D1         1 2 1G
+.MODEL         _D1 VSWITCH Roff=1G Ron=1m Voff=0 Von=0.5
+.ends SCHEMATIC1_D1
+
+.subckt SCHEMATIC1_S1 1 2 3 4  
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=1G Ron=1.0m Voff=0.0V Von=1.0V
+.ends SCHEMATIC1_S1
+
+**** RESUMING Tran.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file flyback_e7bac.ind for library file flyback_e7bac.lib.
+
+INFO(ORPSIM-15422): Making new index file flyback_e7bac.ind for library file flyback_e7bac.lib.
+
+Index has 1 entries from 1 file(s).
+
+**** 10/02/17 13:19:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tran"  [ C:\Users\Nicolai Fransen\Desktop\Flyback_E7BAC-PSpiceFiles\SCHEMATIC1\Tran.sim ] 
+
+
+ ****     Ferromagnetic Core MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               RM8_ILP_3C90    
+       LEVEL    2            
+        AREA     .63         
+        PATH    3.84         
+         GAP     .0488       
+          MS  390.890000E+03 
+           A   29.666        
+           C     .17883      
+           K   19.204        
+
+
+**** 10/02/17 13:19:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tran"  [ C:\Users\Nicolai Fransen\Desktop\Flyback_E7BAC-PSpiceFiles\SCHEMATIC1\Tran.sim ] 
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1._D1        X_S1._S1        
+         RON    1.000000E-03    1.000000E-03 
+        ROFF    1.000000E+09    1.000000E+09 
+         VON     .5             1            
+        VOFF    0               0            
+
+
+**** 10/02/17 13:19:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tran"  [ C:\Users\Nicolai Fransen\Desktop\Flyback_E7BAC-PSpiceFiles\SCHEMATIC1\Tran.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    D)     .1111  (    S)  100.0000  (   IN)  100.0000  (  OUT)    0.0000      
+
+(N35476)    0.0000 (N35672)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vd         0.000E+00
+    V_Vduty      0.000E+00
+    V_Vi        -1.000E-07
+
+    TOTAL POWER DISSIPATION   1.00E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/02/17 13:19:19 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Tran"  [ C:\Users\Nicolai Fransen\Desktop\Flyback_E7BAC-PSpiceFiles\SCHEMATIC1\Tran.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .55
+
