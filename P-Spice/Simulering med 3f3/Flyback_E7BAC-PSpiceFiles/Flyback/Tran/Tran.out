@@ -1,5 +1,5 @@
-
-**** 10/03/17 21:26:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 10/04/17 09:18:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -63,7 +63,7 @@ RS_S1         1 2 1G
 **** RESUMING Tran.cir ****
 .END
 
-**** 10/03/17 21:26:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/04/17 09:18:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -87,7 +87,7 @@ RS_S1         1 2 1G
            K   19.204        
 
 
-**** 10/03/17 21:26:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/04/17 09:18:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -107,7 +107,7 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 10/03/17 21:26:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/04/17 09:18:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -142,7 +142,7 @@ RS_S1         1 2 1G
 
           JOB CONCLUDED
 
-**** 10/03/17 21:26:07 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/04/17 09:18:17 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -154,5 +154,5 @@ RS_S1         1 2 1G
 
 
 
-  Total job time (using Solver 1)   =         .41
+  Total job time (using Solver 1)   =         .38
 

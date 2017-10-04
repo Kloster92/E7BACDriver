@@ -46,8 +46,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
-        (Scroll "0 0")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "71 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
