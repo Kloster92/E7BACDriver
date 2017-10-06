@@ -1,0 +1,26 @@
+* source FLYBACK_E7BAC
+X_D1    N31513 OUT Flyback_Linear_D1 
+Kn_K1         L_Lp L_Ls     1
+L_Ls         0 N31513  {Ns**2*Al}  
+R_Rload         0 OUT  {Rl} TC=0,0 
+V_Vduty         N31709 0  
++PULSE 0V 1V 0 1ns 1ns {d_dcm*T} {T}
+V_Vd         D 0 {d_dcm}
+L_Lp         IN S  {Np**2*Al}  
+C_Co         0 OUT  10uF  TC=0,0 
+X_S1    N31709 0 S 0 Flyback_Linear_S1 
+V_Vi         IN 0 {Vi}
+.PARAM  vi=100v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
++ {(vo**2)/rl} rl=7r al=8u ns=1 d={vo/(vi*ns/np+vo)} t=10us np=1 fs={1/t}
+
+.subckt Flyback_Linear_D1 1 2  
+S_D1         1 2 1 2 _D1
+RS_D1         1 2 1G
+.MODEL         _D1 VSWITCH Roff=1G Ron=1m Voff=0 Von=1m
+.ends Flyback_Linear_D1
+
+.subckt Flyback_Linear_S1 1 2 3 4  
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=1G Ron=1.0m Voff=0.0V Von=1.0V
+.ends Flyback_Linear_S1

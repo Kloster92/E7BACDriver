@@ -8,18 +8,25 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
   (Folder "Outputs"
     (File ".\flyback_e7bac-pspicefiles\schematic1\schematic1.net"
       (Type "Report"))
     (File ".\flyback_e7bac-pspicefiles\flyback\flyback.net"
+      (Type "Report"))
+    (File ".\flyback_e7bac-pspicefiles\flyback_linear\flyback_linear.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
-      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback\tran.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\flyback_e7bac-pspicefiles\flyback\tran.sim"
         (DisplayName "Flyback-Tran")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim"
+        (DisplayName "Flyback_Linear-Tran")
         (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
@@ -36,7 +43,12 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs"))
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
+         "Flyback"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -46,11 +58,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
-        (Scroll "71 0")
+        (Placement "44 2 3 -1 -1 -8 -31 130 1204 130 465")
+        (Scroll "0 10")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_E7BAC.DSN")
-      (Schematic "Flyback")
+      (Schematic "Flyback_Linear")
       (Page "PAGE1"))))

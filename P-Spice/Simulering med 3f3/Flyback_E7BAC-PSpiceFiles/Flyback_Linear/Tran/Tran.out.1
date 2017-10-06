@@ -1,0 +1,67 @@
+
+**** 10/06/17 09:56:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../flyback_e7bac-pspicefiles/flyback_e7bac.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
+
+*Analysis directives: 
+.TRAN  0 1.1m 1m 10n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Flyback_Linear.net" 
+
+
+
+**** INCLUDING Flyback_Linear.net ****
+* source FLYBACK_E7BAC
+X_D1    N31513 OUT Flyback_Linear_D1 
+Kn_K1         L_Lp L_Ls     1
+L_Ls         0 N31513  {Ns**2*Al}  
+R_Rload         0 OUT  {Rl} TC=0,0 
+V_Vduty         N31709 0  
++PULSE 0V 1V 0 1ns 1ns {d*T} {T}
+V_Vd         D 0 {d}
+L_Lp         IN S  {Np**2*Al}  
+C_Co         0 OUT  10uF  TC=0,0 
+X_S1    N31709 0 S 0 Flyback_Linear_S1 
+V_Vi         IN 0 {Vi}
+.PARAM  vi=26v vo=21v po={(v**2)/rl} rl=7r al=5u ns=1 d=
++ {(np/(ns*vi))*((2*po*al*fs)**(1/2))} t=10us np=1 fs={1/t}
+
+.subckt Flyback_Linear_D1 1 2  
+S_D1         1 2 1 2 _D1
+RS_D1         1 2 1G
+.MODEL         _D1 VSWITCH Roff=1G Ron=1m Voff=0 Von=1m
+.ends Flyback_Linear_D1
+
+.subckt Flyback_Linear_S1 1 2 3 4  
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=1G Ron=1.0m Voff=0.0V Von=1.0V
+.ends Flyback_Linear_S1
+
+**** RESUMING Tran.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: v.
+

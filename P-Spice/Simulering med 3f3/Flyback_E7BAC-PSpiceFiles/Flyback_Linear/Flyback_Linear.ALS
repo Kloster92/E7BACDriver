@@ -1,0 +1,16 @@
+.ALIASES
+X_D1    D1(1=N31513 2=OUT ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31485@SMPS.Diode-Ideal.Normal(chips)
+Kn_K1            K1() CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31597@ANALOG.K_Linear.Normal(chips)
+L_Ls            Ls(1=0 2=N31513 ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31563@ANALOG.L.Normal(chips)
+R_Rload          Rload(1=0 2=OUT ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31617@ANALOG.R.Normal(chips)
+V_Vduty          Vduty(+=N31709 -=0 ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31743@SOURCE.VPULSE.Normal(chips)
+V_Vd            Vd(+=D -=0 ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31877@SOURCE.VDC.Normal(chips)
+L_Lp            Lp(1=IN 2=S ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31543@ANALOG.L.Normal(chips)
+C_Co            Co(1=0 2=OUT ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31691@ANALOG.C.Normal(chips)
+X_S1    S1(1=N31709 2=0 3=S 4=0 ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31659@ANALOG.S.Normal(chips)
+V_Vi            Vi(+=IN -=0 ) CN @FLYBACK_E7BAC.Flyback_Linear(sch_1):INS31639@SOURCE.VDC.Normal(chips)
+_    _(d=D)
+_    _(In=IN)
+_    _(Out=OUT)
+_    _(s=S)
+.ENDALIASES
