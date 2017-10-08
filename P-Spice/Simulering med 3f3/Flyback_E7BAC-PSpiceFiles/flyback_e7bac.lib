@@ -1,5 +1,17 @@
 * PSpice Model Editor - Version 17.2.0
 *$
+* RM8_3D3 CORE model
+* updated using Model Editor release 9.1 on 07/29/99 at 11:38
+* Model Editor is a Cadence Design Systems product.
+.MODEL RM8_3D3 CORE
++ GAP=0.0270
++ MS=390.89E3
++ A=29.666
++ C=.17883
++ K=19.204
++ AREA=.63
++ PATH=3.84
+*$
 * RM8_ILP_3C90 CORE model
 * created using Model Editor release 9.1 on 07/14/99 at 10:48
 * Model Editor is a Cadence Design Systems product.

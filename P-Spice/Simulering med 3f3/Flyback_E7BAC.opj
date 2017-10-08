@@ -23,11 +23,11 @@
          ".\flyback_e7bac-pspicefiles\flyback\tran.sim"
         (DisplayName "Flyback-Tran")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim"
         (DisplayName "Flyback_Linear-Tran")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback\tran.sim"))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\flyback_e7bac-pspicefiles\flyback_e7bac.lib"
@@ -39,16 +39,27 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Nicolai Fransen")
-  (PartMRUSelector)
+  (PartMRUSelector
+    (RM8_3D3
+      (FullPartName "RM8_3D3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\MAGNETIC.OLB")
+      (DeviceIndex "0")))
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
          "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn")
-      (Path "Outputs")
-      (Select "Design Resources"
+      (Path "Design Resources"
          "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
-         "Flyback"))
+         "Flyback")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
+         "Flyback_Linear")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -59,9 +70,19 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 130 1204 130 465")
-        (Scroll "0 10")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_E7BAC.DSN")
+      (Schematic "Flyback")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "0 0")
+        (Zoom "100"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_E7BAC.DSN")
       (Schematic "Flyback_Linear")

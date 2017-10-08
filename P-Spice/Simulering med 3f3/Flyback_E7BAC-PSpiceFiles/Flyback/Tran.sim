@@ -3,7 +3,7 @@
 @Settings: 0 1
 @General:
 ProfileName= "Tran" 
-ProfileFile= "Tran.sim" 
+ProfileFile= "tran.sim" 
 Connectivity= "Flyback.net" 
 NetlistFile= "Tran.cir" 
 DataFile= "Tran.dat" 
@@ -14,9 +14,9 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "2ms" 
++0 "1.1ms" 
 +1 "" 
-+2 "0" 
++2 "0ms" 
 +3 "0.1u" 
 +4 "" 
 +5 "" 
