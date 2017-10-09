@@ -1,5 +1,5 @@
 
-**** 10/08/17 11:29:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/08/17 17:33:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -45,8 +45,8 @@ L_Lp         IN S  {Np}
 V_Vi         IN 0 {Vi}
 R_Rload         0 OUT  {Rl} TC=0,0 
 Kn_K1         L_Lp L_Ls     1 RM8_3D3
-.PARAM  vi=26v vo=21v po={(vo**2)/rl} k=1 rl=8.4r al=3.525u ns=16.5 d=
-+ {vo/(vi*ns/np+vo)} t=10us np=16.5 fs={1/t}
+.PARAM  vi=100v vo=21v po={(vo**2)/rl} k=1 rl=8.4r al=3.525u ns=17 d=
++ {vo/(vi*ns/np+vo)} t=10us np=17 fs={1/t}
 
 .subckt Flyback_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -63,7 +63,7 @@ RS_S1         1 2 1G
 **** RESUMING Tran.cir ****
 .END
 
-**** 10/08/17 11:29:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/08/17 17:33:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -87,7 +87,7 @@ RS_S1         1 2 1G
            K   19.204        
 
 
-**** 10/08/17 11:29:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/08/17 17:33:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -107,7 +107,7 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 10/08/17 11:29:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/08/17 17:33:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -122,7 +122,7 @@ RS_S1         1 2 1G
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(    D)     .4468  (    S)   26.0000  (   IN)   26.0000  (  OUT)    0.0000      
+(    D)     .1736  (    S)  100.0000  (   IN)  100.0000  (  OUT)    0.0000      
 
 (N35476)    0.0000 (N35672)    0.0000 
 
@@ -134,15 +134,15 @@ RS_S1         1 2 1G
 
     V_Vd         0.000E+00
     V_Vduty      0.000E+00
-    V_Vi        -2.600E-08
+    V_Vi        -1.000E-07
 
-    TOTAL POWER DISSIPATION   6.76E-07  WATTS
+    TOTAL POWER DISSIPATION   1.00E-05  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 10/08/17 11:29:01 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/08/17 17:33:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -154,5 +154,5 @@ RS_S1         1 2 1G
 
 
 
-  Total job time (using Solver 1)   =         .20
+  Total job time (using Solver 1)   =         .24
 

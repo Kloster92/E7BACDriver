@@ -1,0 +1,36 @@
+* PSpice Model Editor - Version 17.2.0
+*$
+*BeginSpec
+*HC: Initial Perm=1.0000E3
+*EndSpec
+
+*BeginTrace
+*HC: 0,0,-2,2,1,3,0,0,-1 (27)
+*EndTrace
+
+*BeginParam
+*LEVEL=2 (1,2,1)
+*GAP=48.800E-3 (0,1.0000E30,0)
+*MS=390.89E3 (1,1.0000E30,0)
+*A=29.666 (1,1.0000E30,0)
+*C=.17883 (10.000E-3,1.0000E30,0)
+*K=19.204 (1,1.0000E30,0)
+*AREA=.63 (1.0000E-6,1.0000E30,0)
+*PATH=3.8400 (1.0000E-6,1.0000E30,0)
+*PACK=1 (1.0000E-6,1.0000E30,0)
+*EndParam
+
+*DEVICE=RM8_3F3,CORE
+
+* RM8_3F3 CORE model
+* updated using Model Editor release 17.2.0 on 09/29/17 at 14:12
+* The Model Editor is a PSpice product.
+.MODEL RM8_3F3 CORE
++ GAP=48.800E-3
++ MS=390.89E3
++ A=29.666
++ C=.17883
++ K=19.204
++ AREA=.63
++ PATH=3.8400
+*$
