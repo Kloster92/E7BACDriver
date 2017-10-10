@@ -1,0 +1,16 @@
+.ALIASES
+C_Co            Co(1=0 2=OUT ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37629@ANALOG.C.Normal(chips)
+V_Vduty          Vduty(+=N37647 -=0 ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37687@SOURCE.VPULSE.Normal(chips)
+V_Vd            Vd(+=D -=0 ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37819@SOURCE.VDC.Normal(chips)
+L_Lp            Lp(1=IN 2=S ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37481@ANALOG.L.Normal(chips)
+X_D1    D1(1=N37451 2=OUT ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37417@SMPS.Diode-Ideal.Normal(chips)
+X_S1    S1(1=N37647 2=0 3=S 4=0 ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37577@ANALOG.S.Normal(chips)
+L_Ls            Ls(1=0 2=N37451 ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37501@ANALOG.L.Normal(chips)
+V_Vi            Vi(+=IN -=0 ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37521@SOURCE.VDC.Normal(chips)
+R_Rload          Rload(1=0 2=OUT ) CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37555@ANALOG.R.Normal(chips)
+Kn_K1            K1() CN @FLYBACK_E7BAC.Flyback DCM(sch_1):INS37609@MAGNETIC.RM8_3D3.Normal(chips)
+_    _(d=D)
+_    _(In=IN)
+_    _(Out=OUT)
+_    _(s=S)
+.ENDALIASES
