@@ -1,7 +1,7 @@
 
-**** 10/06/17 12:05:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
 
  ****     CIRCUIT DESCRIPTION
@@ -39,14 +39,14 @@ Kn_K1         L_Lp L_Ls     1
 L_Ls         0 N31513  {Ns**2*Al}  
 R_Rload         0 OUT  {Rl} TC=0,0 
 V_Vduty         N31709 0  
-+PULSE 0V 1V 0 1ns 1ns {d_dcm*T} {T}
-V_Vd         D 0 {d_dcm}
++PULSE 0V 1V 0 1ns 1ns {d*T} {T}
+V_Vd         D 0 {d}
 L_Lp         IN S  {Np**2*Al}  
 C_Co         0 OUT  10uF  TC=0,0 
 X_S1    N31709 0 S 0 Flyback_Linear_S1 
 V_Vi         IN 0 {Vi}
-.PARAM  vi=100v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
-+ {(vo**2)/rl} rl=7r al=8u ns=1 d={vo/(vi*ns/np+vo)} t=10us np=1 fs={1/t}
+.PARAM  vi=26v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
++ {(vo**2)/rl} al=91u rl=8.4r d={vo/(vi*ns/np+vo)} ns=1 t=10us np=1 fs={1/t}
 
 .subckt Flyback_Linear_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -63,9 +63,9 @@ RS_S1         1 2 1G
 **** RESUMING Tran.cir ****
 .END
 
-**** 10/06/17 12:05:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -83,9 +83,9 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 10/06/17 12:05:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -98,7 +98,7 @@ RS_S1         1 2 1G
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(    D)     .1004  (    S)  100.0000  (   IN)  100.0000  (  OUT)    0.0000      
+(    D)     .4468  (    S)   26.0000  (   IN)   26.0000  (  OUT)    0.0000      
 
 (N31513)    0.0000 (N31709)    0.0000 
 
@@ -110,21 +110,17 @@ RS_S1         1 2 1G
 
     V_Vduty      0.000E+00
     V_Vd         0.000E+00
-    V_Vi        -1.000E-07
+    V_Vi        -2.600E-08
 
-    TOTAL POWER DISSIPATION   1.00E-05  WATTS
+    TOTAL POWER DISSIPATION   6.76E-07  WATTS
 
-Reducing minimum delta to make the circuit converge.
-Reducing minimum delta to make the circuit converge.
-Reducing minimum delta to make the circuit converge.
-Reducing minimum delta to make the circuit converge.
 
 
           JOB CONCLUDED
 
-**** 10/06/17 12:05:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
 
  ****     JOB STATISTICS SUMMARY
@@ -134,5 +130,5 @@ Reducing minimum delta to make the circuit converge.
 
 
 
-  Total job time (using Solver 1)   =         .53
+  Total job time (using Solver 1)   =         .47
 

@@ -1,7 +1,7 @@
 
-**** 10/06/17 09:56:00 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 10/10/17 14:01:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_E7BAC-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
 
  ****     CIRCUIT DESCRIPTION
@@ -39,14 +39,14 @@ Kn_K1         L_Lp L_Ls     1
 L_Ls         0 N31513  {Ns**2*Al}  
 R_Rload         0 OUT  {Rl} TC=0,0 
 V_Vduty         N31709 0  
-+PULSE 0V 1V 0 1ns 1ns {d*T} {T}
-V_Vd         D 0 {d}
++PULSE 0V 1V 0 1ns 1ns {d_dcm*T} {T}
+V_Vd         D 0 {d_dcm}
 L_Lp         IN S  {Np**2*Al}  
 C_Co         0 OUT  10uF  TC=0,0 
 X_S1    N31709 0 S 0 Flyback_Linear_S1 
 V_Vi         IN 0 {Vi}
-.PARAM  vi=26v vo=21v po={(v**2)/rl} rl=7r al=5u ns=1 d=
-+ {(np/(ns*vi))*((2*po*al*fs)**(1/2))} t=10us np=1 fs={1/t}
+.PARAM  vi=26v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
++ {(vo**2)/rl} al=91u rl=8.4r d={vo/(vi*ns/np+vo)} ns=1 t=10us np=1 fs={1/t}
 
 .subckt Flyback_Linear_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -62,6 +62,142 @@ RS_S1         1 2 1G
 
 **** RESUMING Tran.cir ****
 .END
-
-ERROR(ORPSIM-15167): Undefined parameter: v.
 
+**** 10/10/17 14:01:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_D1._D1        X_S1._S1        
+         RON    1.000000E-03    1.000000E-03 
+        ROFF    1.000000E+09    1.000000E+09 
+         VON    1.000000E-03    1            
+        VOFF    0               0            
+
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_Vduty.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_Vduty.
+
+**** 10/10/17 14:01:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    D)    1.1889  (    S)   26.0000  (   IN)   26.0000  (  OUT)    0.0000      
+
+(N31513)    0.0000 (N31709)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vduty      0.000E+00
+    V_Vd         0.000E+00
+    V_Vi        -2.600E-08
+
+    TOTAL POWER DISSIPATION   6.76E-07  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.000E-03.
+         Time step =  189.7E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N31513)                 =    -31.72V  \    -25.72V
+
+  These supply currents failed to converge:
+
+    I(L_Ls)                   =   -63.46nA  \   -51.46nA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    D)    1.1889  (    S)     .2842  (   IN)   26.0000  (  OUT)-432.6E-09      
+
+(N31513)  -31.7160 (N31709)    1.0000 
+
+
+**** Interrupt ****
+**** Param: RELTOL = 0.001
+**** Param: ABSTOL = 1e-012
+**** Param: VNTOL = 1e-006
+**** Param: GMIN = 1e-012
+**** Param: TSTOP = 0.0011
+**** Param: TMAX = 1e-008
+**** Param: ITL1 = 150
+**** Param: ITL2 = 20
+**** Param: ITL4 = 100
+**** Param: AutoConverge = 0
+**** Param: AutoConverge.ITL1 = 1000
+**** Param: AutoConverge.ITL2 = 1000
+**** Param: AutoConverge.ITL4 = 1000
+**** Param: AutoConverge.RELTOL = 0.05
+**** Param: AutoConverge.ABSTOL = 0.001
+**** Param: AutoConverge.VNTOL = 0.001
+**** Param: AutoConverge.PIVTOL = 1e-010
+**** Param: ADVCONV = 1
+**** Param: Current_Simulation = 3
+**** Param: METHOD = 0
+**** Param: TRTOL = 7
+**** Param: STEPGMIN = 0
+**** Param: GMINSTEPS = 0
+**** Param: ITL6 = 0
+**** Param: NOSTEPDEP = 0
+**** Param: PTRANSTEP = 0
+**** Param: GMINSRC = 0
+**** Param: PSEUDOTRAN = 0
+**** Param: NOSTEPSRC = 0
+
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.000E-03.
+         Time step =  379.5E-21, minimum allowable step size =  1.000E-18
+
+  These voltages failed to converge:
+
+    V(N31513)                 =    -47.72V  \    -31.72V
+
+  These supply currents failed to converge:
+
+    I(L_Ls)                   =   -95.48nA  \   -63.46nA
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(    D)    1.1889  (    S)     .2842  (   IN)   26.0000  (  OUT)-432.6E-09      
+
+(N31513)  -47.7160 (N31709)    1.0000 
+
+
+**** Interrupt ****

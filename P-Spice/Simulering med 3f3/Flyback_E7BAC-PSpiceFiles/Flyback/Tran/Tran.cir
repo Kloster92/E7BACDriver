@@ -13,7 +13,7 @@
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.TRAN  0 1.1ms 0ms 0.1u 
+.TRAN  0 10ms 1ms 0.1u 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Flyback.net" 

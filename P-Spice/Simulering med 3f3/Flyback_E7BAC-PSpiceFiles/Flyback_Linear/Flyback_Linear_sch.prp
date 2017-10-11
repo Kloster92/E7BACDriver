@@ -240,17 +240,17 @@
             ("pspice_path"	"Kn_K1")
             ("level"	"0")
             ("model_params"
-                ("COUPLING"
-                    ("value"	"1")
-                    ("pspice_param"	"COUPLING")
+                ("L2"
+                    ("value"	"Ls")
+                    ("pspice_param"	"L2")
                 )
                 ("L1"
                     ("value"	"Lp")
                     ("pspice_param"	"L1")
                 )
-                ("L2"
-                    ("value"	"Ls")
-                    ("pspice_param"	"L2")
+                ("COUPLING"
+                    ("value"	"1")
+                    ("pspice_param"	"COUPLING")
                 )
                 ("L3"
                     ("value"	"")
@@ -385,7 +385,7 @@
             ("level"	"0")
             ("model_params"
                 ("PW"
-                    ("value"	"{d_dcm*T}")
+                    ("value"	"{d*T}")
                     ("pspice_param"	"PW")
                 )
                 ("TR"
@@ -432,7 +432,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"{d_dcm}")
+                    ("value"	"{d}")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
@@ -452,7 +452,7 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"0W")
+                    ("value"	"105.9e-24W")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("TC2"
@@ -569,17 +569,17 @@
             ("pspice_path"	"RS_S1")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"10.00uW")
-                    ("pspice_param"	"BiasValue Power")
+                ("ROFF"
+                    ("value"	"1G")
+                    ("pspice_param"	"ROFF")
                 )
                 ("RON"
                     ("value"	"1.0m")
                     ("pspice_param"	"RON")
                 )
-                ("ROFF"
-                    ("value"	"1G")
-                    ("pspice_param"	"ROFF")
+                ("BiasValue Power"
+                    ("value"	"676.0nW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("VON"
                     ("value"	"1.0V")
@@ -601,7 +601,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-10.00uW")
+                    ("value"	"-676.0nW")
                     ("pspice_param"	"BiasValue Power")
                 )
             )
@@ -612,7 +612,7 @@
             ("level"	"0")
             ("model_params"
                 ("vi"
-                    ("value"	"100v")
+                    ("value"	"26v")
                     ("pspice_param"	"vi")
                 )
                 ("vo"
@@ -627,21 +627,21 @@
                     ("value"	"{(vo**2)/rl}")
                     ("pspice_param"	"po")
                 )
-                ("rl"
-                    ("value"	"7r")
-                    ("pspice_param"	"rl")
-                )
                 ("al"
-                    ("value"	"8u")
+                    ("value"	"91u")
                     ("pspice_param"	"al")
                 )
-                ("ns"
-                    ("value"	"1")
-                    ("pspice_param"	"ns")
+                ("rl"
+                    ("value"	"8.4r")
+                    ("pspice_param"	"rl")
                 )
                 ("d"
                     ("value"	"{vo/(vi*ns/np+vo)}")
                     ("pspice_param"	"d")
+                )
+                ("ns"
+                    ("value"	"1")
+                    ("pspice_param"	"ns")
                 )
                 ("t"
                     ("value"	"10us")

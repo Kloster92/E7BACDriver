@@ -14,9 +14,9 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "1.1ms" 
++0 "10ms" 
 +1 "" 
-+2 "0ms" 
++2 "1ms" 
 +3 "0.1u" 
 +4 "" 
 +5 "" 

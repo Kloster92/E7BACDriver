@@ -280,13 +280,13 @@
             ("pspice_path"	"RS_D1")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
                 ("Von"
                     ("value"	"0.5")
                     ("pspice_param"	"Von")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("Roff"
                     ("value"	"1G")
@@ -307,17 +307,17 @@
             ("pspice_path"	"RS_S1")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"676.0nW")
-                    ("pspice_param"	"BiasValue Power")
+                ("RON"
+                    ("value"	"1.0m")
+                    ("pspice_param"	"RON")
                 )
                 ("ROFF"
                     ("value"	"1G")
                     ("pspice_param"	"ROFF")
                 )
-                ("RON"
-                    ("value"	"1.0m")
-                    ("pspice_param"	"RON")
+                ("BiasValue Power"
+                    ("value"	"676.0nW")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("VOFF"
                     ("value"	"0.0V")
@@ -405,37 +405,37 @@
             ("pspice_path"	"V_Vduty")
             ("level"	"0")
             ("model_params"
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PW"
-                    ("value"	"{d*T}")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"1ns")
-                    ("pspice_param"	"TR")
-                )
-                ("V2"
-                    ("value"	"1V")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"0V")
-                    ("pspice_param"	"V1")
-                )
-                ("TD"
-                    ("value"	"0")
-                    ("pspice_param"	"TD")
+                ("PER"
+                    ("value"	"{T}")
+                    ("pspice_param"	"PER")
                 )
                 ("TF"
                     ("value"	"1ns")
                     ("pspice_param"	"TF")
                 )
-                ("PER"
-                    ("value"	"{T}")
-                    ("pspice_param"	"PER")
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("V1"
+                    ("value"	"0V")
+                    ("pspice_param"	"V1")
+                )
+                ("V2"
+                    ("value"	"1V")
+                    ("pspice_param"	"V2")
+                )
+                ("TR"
+                    ("value"	"1ns")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"{d*T}")
+                    ("pspice_param"	"PW")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("AC"
                     ("value"	"")
@@ -612,43 +612,43 @@
             ("level"	"0")
             ("model_params"
                 ("vi"
-                    ("value"	"100v")
+                    ("value"	"26v")
                     ("pspice_param"	"vi")
                 )
                 ("vo"
                     ("value"	"21v")
                     ("pspice_param"	"vo")
                 )
-                ("po"
-                    ("value"	"{(vo**2)/rl}")
-                    ("pspice_param"	"po")
-                )
                 ("k"
                     ("value"	"1")
                     ("pspice_param"	"k")
                 )
-                ("rl"
-                    ("value"	"8.4r")
-                    ("pspice_param"	"rl")
+                ("po"
+                    ("value"	"{(vo**2)/rl}")
+                    ("pspice_param"	"po")
                 )
                 ("al"
                     ("value"	"3.525u")
                     ("pspice_param"	"al")
                 )
-                ("ns"
-                    ("value"	"17")
-                    ("pspice_param"	"ns")
+                ("rl"
+                    ("value"	"8.4r")
+                    ("pspice_param"	"rl")
                 )
                 ("d"
                     ("value"	"{vo/(vi*ns/np+vo)}")
                     ("pspice_param"	"d")
+                )
+                ("ns"
+                    ("value"	"18")
+                    ("pspice_param"	"ns")
                 )
                 ("t"
                     ("value"	"10us")
                     ("pspice_param"	"t")
                 )
                 ("np"
-                    ("value"	"17")
+                    ("value"	"18")
                     ("pspice_param"	"np")
                 )
                 ("fs"
