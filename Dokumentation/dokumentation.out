@@ -12,3 +12,7 @@
 \BOOKMARK [0][-]{chapter.2}{Accepttest}{}% 12
 \BOOKMARK [1][-]{section.2.1}{Tests}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.1.1}{Test af ikke-funktionelle krav}{section.2.1}% 14
+\BOOKMARK [0][-]{chapter.3}{Switch-Mode Power Supply}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Flyback Converter}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{Continuous Conduction Mode}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.2}{Discontinuous Conduction Mode}{section.3.1}% 18

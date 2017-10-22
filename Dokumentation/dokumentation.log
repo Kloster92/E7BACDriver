@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  7 SEP 2017 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  22 OCT 2017 20:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1981,7 +1981,8 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen360
 \titlewidthfirst=\dimen361
 )
-(./dokumentation.aux)
+(./dokumentation.aux (./tex/kravspecifikation/kravspecifikation.aux)
+(./tex/accepttest/accepttest.aux) (./tex/smps/smps.aux))
 \openout1 = `dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
@@ -1999,7 +2000,8 @@ LaTeX Font Info:    ... okay on input line 150.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 150.
 
- (c:/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(c:/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 150.
@@ -3318,10 +3320,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 198.
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+ (./dokumentation.toc
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
+)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining danish shorthand "~
@@ -3330,18 +3332,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 198.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 198.
-[2
+ [2
 
 ]
 \openout2 = `tex/kravspecifikation/kravspecifikation.aux'.
 
- (./tex/kravspecifikation/kravspecifikation.tex
+
+(./tex/kravspecifikation/kravspecifikation.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 38.
 Package babel Info: Redefining danish shorthand "~
@@ -3362,11 +3363,12 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
 
-<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=78, 459.21562pt 
-x 255.65512pt>
+<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=112, 459.21562pt
+ x 255.65512pt>
 File: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf Graphic file (t
 ype pdf)
- <use tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf>
+
+<use tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf>
 Package pdftex.def Info: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.
 pdf used on input line 46.
 (pdftex.def)             Requested size: 459.2145pt x 255.65448pt.
@@ -3376,8 +3378,8 @@ Overfull \hbox (33.2145pt too wide) in paragraph at lines 46--47
  []
 
 
-<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=79, 459.21562pt x 255.
-65512pt>
+<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=113, 459.21562pt x 255
+.65512pt>
 File: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf Graphic file (type pd
 f)
  <use tex/Kravspecifikation/billeder/UseCasediagramV1.pdf>
@@ -4582,6 +4584,73 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 204.
  [14]
+\openout2 = `tex/smps/smps.aux'.
+
+ (./tex/smps/smps.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 3.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 6.
+
+<.//tex/smps/billeder/flyback_ideal.PNG, id=219, 278.54062pt x 140.32425pt>
+File: .//tex/smps/billeder/flyback_ideal.PNG Graphic file (type png)
+
+<use .//tex/smps/billeder/flyback_ideal.PNG>
+Package pdftex.def Info: .//tex/smps/billeder/flyback_ideal.PNG used on input l
+ine 11.
+(pdftex.def)             Requested size: 278.53993pt x 140.3239pt.
+
+
+LaTeX Warning: Citation `SMPS-topologies' on page 15 undefined on input line 13
+.
+
+
+LaTeX Warning: Citation `SMPS-topologies' on page 15 undefined on input line 13
+.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+[15
+
+
+
+ <.//tex/smps/billeder/flyback_ideal.PNG>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 23.
+
+<.//tex/smps/billeder/CCM_transformer_current.PNG, id=232, 397.485pt x 183.3851
+3pt>
+File: .//tex/smps/billeder/CCM_transformer_current.PNG Graphic file (type png)
+ <use .//tex/smps/billeder/CCM_transformer_current.PNG>
+Package pdftex.def Info: .//tex/smps/billeder/CCM_transformer_current.PNG used 
+on input line 28.
+(pdftex.def)             Requested size: 397.48402pt x 183.38467pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 36.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 208.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 208.
+ [16 <.//tex/smps/billeder/CCM_transformer_current.PNG>]
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -4592,34 +4661,40 @@ FiXme Summary: Number of notes: 0,
 \tf@toc=\write6
 \openout6 = `dokumentation.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
 (./dokumentation.aux (./tex/kravspecifikation/kravspecifikation.aux)
-(./tex/accepttest/accepttest.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
+(./tex/accepttest/accepttest.aux) (./tex/smps/smps.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: AFC95FE6D234D7371136A392C0899D61;943.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+(rerunfilecheck)             Checksum: 179BA0A2F9E382E60C245A1244BE272B;1230.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 37307 strings out of 493042
- 699845 string characters out of 6138227
- 861238 words of memory out of 5000000
- 40217 multiletter control sequences out of 15000+600000
- 37861 words of font info for 86 fonts, out of 8000000 for 9000
+ 37360 strings out of 493042
+ 701045 string characters out of 6138227
+ 865432 words of memory out of 5000000
+ 40237 multiletter control sequences out of 15000+600000
+ 39114 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,97p,10460b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
-public/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/pa
-latino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
-fb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (14 pages, 754713 bytes).
+public/amsfonts/euler/eufm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfo
+nts/euler/eurm7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a
+.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texliv
+e/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on dokumentation.pdf (16 pages, 829419 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 
