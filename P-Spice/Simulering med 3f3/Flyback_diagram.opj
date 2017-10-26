@@ -19,6 +19,11 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
     (0
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
@@ -37,11 +42,6 @@
       (FullPartName "UCC381-3.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\VR.OLB")
-      (DeviceIndex "0"))
-    (R
-      (FullPartName "R.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (2N6758
       (FullPartName "2N6758.Normal")
@@ -80,8 +80,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
-        (Scroll "0 90")
-        (Zoom "100")
+        (Scroll "188 154")
+        (Zoom "105")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
