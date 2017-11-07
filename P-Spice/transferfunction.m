@@ -4,7 +4,7 @@ fBW = 4410;
 
 Nps = 1;
 Rout = 8.4;
-Rcs = 0.75;
+Rcs = 0.200;
 Acs = 1.65;
 D = 0.447;
 tL = 1.234;
@@ -47,9 +47,9 @@ margin(sys)
 figure(2)
 bode(sys1)
 margin(sys1)
-% 
-% figure(3)
-% step(sys1)
+
+figure(3)
+step(sys1)
 % 
 % figure(4)
 % bode(sys * Gain)

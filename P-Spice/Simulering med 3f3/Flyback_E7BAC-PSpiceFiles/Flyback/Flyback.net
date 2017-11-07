@@ -10,8 +10,8 @@ L_Lp         IN S  {Np}
 V_Vi         IN 0 {Vi}
 R_Rload         0 OUT  {Rl} TC=0,0 
 Kn_K1         L_Lp L_Ls     1 RM8_3D3
-.PARAM  vi=26v vo=21v k=1 po={(vo**2)/rl} al=3.525u rl=8.4r d=
-+ {vo/(vi*ns/np+vo)} ns=18 t=10us np=18 fs={1/t}
+.PARAM  vi=26v vo=21v po={(vo**2)/rl} k=1 rl=8.4r al=3.525u ns=18 d=
++ {vo/(vi*ns/np+vo)} t=10us np=18 fs={1/t}
 
 .subckt Flyback_D1 1 2  
 S_D1         1 2 1 2 _D1

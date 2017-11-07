@@ -1,5 +1,5 @@
-
-**** 10/11/17 09:31:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 11/07/17 15:22:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -45,8 +45,8 @@ L_Lp         IN S  {Np}
 V_Vi         IN 0 {Vi}
 R_Rload         0 OUT  {Rl} TC=0,0 
 Kn_K1         L_Lp L_Ls     1 RM8_3D3
-.PARAM  vi=26v vo=21v k=1 po={(vo**2)/rl} al=3.525u rl=8.4r d=
-+ {vo/(vi*ns/np+vo)} ns=18 t=10us np=18 fs={1/t}
+.PARAM  vi=26v vo=21v po={(vo**2)/rl} k=1 rl=8.4r al=3.525u ns=18 d=
++ {vo/(vi*ns/np+vo)} t=10us np=18 fs={1/t}
 
 .subckt Flyback_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -62,8 +62,16 @@ RS_S1         1 2 1G
 
 **** RESUMING Tran.cir ****
 .END
+
+WARNING(ORPSIM-15223): Library file "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicefiles\flyback_e7bac.lib" has changed since index file flyback_e7bac.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Tue Oct 10 14:49:46 2017 to Wed Oct 25 08:27:02 2017.
+
+INFO(ORPSIM-15422): Making new index file flyback_e7bac.ind for library file flyback_e7bac.lib.
+
+Index has 3 entries from 1 file(s).
 
-**** 10/11/17 09:31:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/07/17 15:22:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -87,7 +95,7 @@ RS_S1         1 2 1G
            K   19.204        
 
 
-**** 10/11/17 09:31:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/07/17 15:22:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -107,7 +115,7 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 10/11/17 09:31:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/07/17 15:22:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -142,7 +150,7 @@ RS_S1         1 2 1G
 
           JOB CONCLUDED
 
-**** 10/11/17 09:31:44 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/07/17 15:22:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicef
 
@@ -154,5 +162,5 @@ RS_S1         1 2 1G
 
 
 
-  Total job time (using Solver 1)   =        1.86
+  Total job time (using Solver 1)   =        1.52
 

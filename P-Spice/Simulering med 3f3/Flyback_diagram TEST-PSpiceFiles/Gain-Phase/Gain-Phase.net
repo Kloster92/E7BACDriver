@@ -1,0 +1,125 @@
+* source FLYBACK_DIAGRAM TEST
+V_Flyback_V1         Flyback_N15349 0 12V
+R_Flyback_R6         Flyback_N02226 Flyback_N12578  10k TC=0,0 
+C_Flyback_CT         0 Flyback_N14542  300p  TC=0,0 
+C_Flyback_Cout         0 N1354002  {56u*4}  TC=0,0 
+C_Flyback_Cref         0 Flyback_N14535  1u  TC=0,0 
+R_Flyback_RFB1         Flyback_N02226 Flyback_INJ  18.7k TC=0,0 
+C_Flyback_Cvcc         0 Flyback_N15349  1u  TC=0,0 
+R_Flyback_FLY_Rg         Flyback_FLY_N12134 Flyback_FLY_N13092  50R TC=0,0 
+Kn_Flyback_FLY_K1         L_Flyback_FLY_Lp L_Flyback_FLY_Ls     1
++  KRM8/i/AL160_3F3
+L_Flyback_FLY_Lp         Flyback_FLY_N12010 Flyback_FLY_N12076  {N}  
+R_Flyback_FLY_Rlp         Flyback_FLY_N12010 Flyback_N14138  {Rlp/3} TC=0,0 
+G_Flyback_FLY_UCC_UVR_G2         Flyback_N15349 0 Value = 
++ {if(V(Flyback_N15349)<2, V(Flyback_N15349)/(2/_Flyback_FLY_UCC_UVR_Idd0),
++  _Flyback_FLY_UCC_UVR_Idd0)}
+E_Flyback_FLY_UCC_UVR_ABM1         Flyback_FLY_UCC_UVR_N235159 0 VALUE {
++  if(V(Flyback_N15349)>_Flyback_FLY_UCC_UVR_Vth,1,
++  if(V(Flyback_N15349)<_Flyback_FLY_UCC_UVR_Vtl,0,
++  if(STATE(1,V(Flyback_FLY_UCC_UVR_N235159))>0,1,0)))    }
+X_Flyback_FLY_UCC_UVR_D1    Flyback_FLY_UCC_UVR_N235221 Flyback_N14535
++  UVLO_Vref_1845_Flyback_FLY_UCC_UVR_D1 
+X_Flyback_FLY_UCC_UVR_F1    Flyback_FLY_UCC_UVR_N235173
++  Flyback_FLY_UCC_UVR_N235221 Flyback_N15349 0
++  UVLO_Vref_1845_Flyback_FLY_UCC_UVR_F1 
+G_Flyback_FLY_UCC_UVR_G3         Flyback_N15349 0 Flyback_FLY_UCC_UVR_N235159 0
++  {_Flyback_FLY_UCC_UVR_Idd-_Flyback_FLY_UCC_UVR_Idd0}
+X_Flyback_FLY_UCC_UVR_S1    Flyback_FLY_UCC_UVR_N235173 0
++  Flyback_FLY_UCC_UVR_N235173 0 UVLO_Vref_1845_Flyback_FLY_UCC_UVR_S1 
+G_Flyback_FLY_UCC_UVR_G1         Flyback_FLY_UCC_UVR_N235173 0
++  Flyback_FLY_UCC_UVR_N235159 0 -100mA
+E_Flyback_FLY_UCC_ABM1         Flyback_FLY_UCC_N1359716 0 VALUE {
++  if(V(Flyback_N14338)>V(Flyback_FLY_UCC_N1359552),3,0)    }
+E_Flyback_FLY_UCC_Ao         Flyback_FLY_UCC_N1359348 0 VALUE {
++  if(V(Flyback_FLY_UCC_N1359394)>0.8V,V(Flyback_N15349),0)    }
+G_Flyback_FLY_UCC_Go         Flyback_N15349 0 Value = 
++ {if(I(E_Flyback_FLY_UCC_Ao)>0,I(E_Flyback_FLY_UCC_Ao),0)}
+X_Flyback_FLY_UCC_U3         0 0 Flyback_FLY_UCC_N1359656
++  Flyback_FLY_UCC_N1359206 M_UN0001 Flyback_FLY_UCC_N1359408 DFFRSH
+X_Flyback_FLY_UCC_U4         Flyback_FLY_UCC_N1359716 Flyback_FLY_UCC_N1359656
++  DELAY PARAMS:
++ DELAY=150ns TOL=10 IO_LEVEL=0 MNTYMXDLY=0
+X_Flyback_FLY_UCC_U5         Flyback_FLY_UCC_N1359366 Flyback_FLY_UCC_N1359206
++  BUF
+E_Flyback_FLY_UCC_ABM2         Flyback_N14542 0 VALUE {
++  if(V(Flyback_N14535)>3V,V(Flyback_FLY_UCC_N1359568),0)    }
+X_Flyback_FLY_UCC_U2         Flyback_FLY_UCC_N1359214 Flyback_FLY_UCC_N1359206
++  Flyback_FLY_UCC_N1359408 Flyback_FLY_UCC_N1359394 NOR3
+X_Flyback_FLY_UCC_EA_Dcl    Flyback_N12578 Flyback_FLY_UCC_EA_N410331
++  Error_Amplifier_1845_Flyback_FLY_UCC_EA_Dcl 
+E_Flyback_FLY_UCC_EA_E1         Flyback_FLY_UCC_EA_N410325 0
++  Flyback_FLY_UCC_EA_N410319 Flyback_N02226 1000
+E_Flyback_FLY_UCC_EA_GAIN1         Flyback_FLY_UCC_EA_N410319 0 VALUE {0.5 *
++  V(Flyback_N14535)}
+V_Flyback_FLY_UCC_EA_Vos         Flyback_FLY_UCC_EA_N410335 Flyback_N12578 
++ {-0.6*2}
+E_Flyback_FLY_UCC_EA_LIMIT1         Flyback_FLY_UCC_EA_N410331 0 VALUE 
++ {LIMIT(V(Flyback_FLY_UCC_EA_N410325),0.7,6)}
+I_Flyback_FLY_UCC_EA_Icomp         Flyback_FLY_UCC_EA_N410331 Flyback_N12578 DC
++  0.8mA  
+E_Flyback_FLY_UCC_EA_GAIN2         Flyback_FLY_UCC_EA_N410341 0 VALUE {1/3 *
++  V(Flyback_FLY_UCC_EA_N410335)}
+E_Flyback_FLY_UCC_EA_LIMIT2         Flyback_FLY_UCC_N1359552 0 VALUE 
++ {LIMIT(V(Flyback_FLY_UCC_EA_N410341),0,1)}
+X_Flyback_FLY_UCC_U1         Flyback_FLY_UCC_N1359166 Flyback_FLY_UCC_N1359206
++  Flyback_FLY_UCC_N1359250 M_UN0002 Flyback_FLY_UCC_N1359214 TFFR
+R_Flyback_FLY_UCC_Ro         Flyback_FLY_UCC_N1359348 Flyback_FLY_N13092  
++ {1.5V/200mA} TC=0,0 
+V_Flyback_FLY_UCC_Vramp         Flyback_FLY_UCC_N1359568 0  
++PULSE {_Flyback_FLY_UCC_RampValley} {_Flyback_FLY_UCC_RampPeak} 337ns 
++ {10us-337ns-1ns} 337ns 1ns 10us
+E_Flyback_FLY_UCC_U6A          Flyback_FLY_UCC_N1359250 0 VALUE 
++ {IF((V(Flyback_N14535) >= 4.8V),3.5, 0.4)}
+V_Flyback_FLY_UCC_Vclk         Flyback_FLY_UCC_N1359366 0  
++PULSE 0V 3V 0 1ns 1ns 337ns 10us
+X_Flyback_FLY_UCC_R1         Flyback_FLY_UCC_N1359166 PULLUP_1k PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+L_Flyback_FLY_Ls         0 Flyback_FLY_N12020  {N}  
+R_Flyback_FLY_Rls         Flyback_FLY_N12030 Flyback_FLY_N12020  {Rls/3} TC=0,0
++  
+X_Flyback_FLY_D1         Flyback_FLY_N12030 N1354002 awb1n5811 PARAMS:         
++        
+X_Flyback_FLY_M1         Flyback_FLY_N12076 Flyback_FLY_N12134 Flyback_N14259
++  IRFB31N20D
+R_Flyback_RFB2         0 Flyback_N02226  2.55k TC=0,0 
+R_Flyback_RT         Flyback_N14542 Flyback_N14535  50k TC=0,0 
+C_Flyback_IF_Cin1         0 Flyback_N14138  10u  TC=0,0 
+C_Flyback_IF_Cin2         0 Flyback_IF_N129151  40u  TC=0,0 
+L_Flyback_IF_Lin         N1353995 Flyback_N14138  3u  
+R_Flyback_IF_Rin         Flyback_IF_N129151 Flyback_N14138  800m TC=0,0 
+R_Flyback_Rcs         0 Flyback_N14259  200m TC=0,0 
+R_Flyback_Rcs1         Flyback_N14259 Flyback_N14338  3k TC=0,0 
+C_Flyback_CT1         0 Flyback_N14338  100p  TC=0,0 
+R_Flyback_RFB3         Flyback_INJ N1354002  51.1R TC=0,0 
+V_Vmb         N1353995 0  
++PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
+G_Gload         N1354002 0 Value = {Vout/Rload*Pscale}
+.PARAM  _flyback_fly_ucc_uvr_vref=5v pscale=1 iout=2.5a n=19
++  _flyback_fly_ucc_uvr_idd0=300ua _flyback_fly_ucc_rampvalley=1.5v rlp=160m
++  vout=21v _flyback_fly_ucc_uvr_idd=11ma rls=160m _flyback_fly_ucc_ramppeak=3.2v
++  rload={vout/iout} _flyback_fly_ucc_uvr_vtl=7.9v _flyback_fly_ucc_uvr_vth=8.5v
+
+.subckt UVLO_Vref_1845_Flyback_FLY_UCC_UVR_D1 1 2  
+S_Flyback_FLY_UCC_UVR_D1         1 2 1 2 _Flyback_FLY_UCC_UVR_D1
+RS_Flyback_FLY_UCC_UVR_D1         1 2 1G
+.MODEL         _Flyback_FLY_UCC_UVR_D1 VSWITCH Roff=1G Ron=1n Voff=0 Von=1m
+.ends UVLO_Vref_1845_Flyback_FLY_UCC_UVR_D1
+
+.subckt UVLO_Vref_1845_Flyback_FLY_UCC_UVR_F1 1 2 3 4  
+F_Flyback_FLY_UCC_UVR_F1         3 4 VF_Flyback_FLY_UCC_UVR_F1 1
+VF_Flyback_FLY_UCC_UVR_F1         1 2 0V
+.ends UVLO_Vref_1845_Flyback_FLY_UCC_UVR_F1
+
+.subckt UVLO_Vref_1845_Flyback_FLY_UCC_UVR_S1 1 2 3 4  
+S_Flyback_FLY_UCC_UVR_S1         3 4 1 2 _Flyback_FLY_UCC_UVR_S1
+RS_Flyback_FLY_UCC_UVR_S1         1 2 1G
+.MODEL         _Flyback_FLY_UCC_UVR_S1 VSWITCH Roff=1e6 Ron=1.0 Voff=
++ {_Flyback_FLY_UCC_UVR_Vref} Von={_Flyback_FLY_UCC_UVR_Vref+10mV}
+.ends UVLO_Vref_1845_Flyback_FLY_UCC_UVR_S1
+
+.subckt Error_Amplifier_1845_Flyback_FLY_UCC_EA_Dcl 1 2  
+S_Flyback_FLY_UCC_EA_Dcl         1 2 1 2 _Flyback_FLY_UCC_EA_Dcl
+RS_Flyback_FLY_UCC_EA_Dcl         1 2 1G
+.MODEL         _Flyback_FLY_UCC_EA_Dcl VSWITCH Roff=1G Ron=1n Voff=0 Von=1m
+.ends Error_Amplifier_1845_Flyback_FLY_UCC_EA_Dcl

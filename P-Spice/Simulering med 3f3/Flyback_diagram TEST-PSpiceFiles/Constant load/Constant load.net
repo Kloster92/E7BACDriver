@@ -1,0 +1,35 @@
+* source FLYBACK_DIAGRAM TEST
+V_Flyback_V1         Flyback_N15349 0 12V
+R_Flyback_R6         Flyback_N02226 Flyback_N12578  10k TC=0,0 
+C_Flyback_CT         0 Flyback_N14542  200p  TC=0,0 
+C_Flyback_Cout         0 N1354002  {56u*4}  TC=0,0 
+C_Flyback_Cref         0 Flyback_N14535  1u  TC=0,0 
+R_Flyback_RFB1         Flyback_N02226 Flyback_N17383  18.7k TC=0,0 
+C_Flyback_Cvcc         0 Flyback_N15349  1u  TC=0,0 
+R_Flyback_FLY_Rg         Flyback_FLY_N12134 Flyback_FLY_N13092  50R TC=0,0 
+Kn_Flyback_FLY_K1         L_Flyback_FLY_Lp L_Flyback_FLY_Ls     1
++  KRM8/i/AL160_3F3
+L_Flyback_FLY_Lp         Flyback_FLY_N12010 Flyback_FLY_N12076  {N}  
+R_Flyback_FLY_Rlp         Flyback_FLY_N12010 Flyback_N14138  {Rlp/3} TC=0,0 
+L_Flyback_FLY_Ls         0 Flyback_FLY_N12020  {N}  
+R_Flyback_FLY_Rls         Flyback_FLY_N12030 Flyback_FLY_N12020  {Rls/3} TC=0,0
++  
+X_Flyback_FLY_M1         Flyback_FLY_N12076 Flyback_FLY_N12134 Flyback_N14259
++  IRFB31N20D
+D_Flyback_FLY_D1         Flyback_FLY_N12030 N1354002 30LJQ150 
+X_Flyback_FLY_U1         Flyback_N12578 Flyback_N02226 Flyback_N14338
++  Flyback_N14542 0 Flyback_FLY_N13092 Flyback_N15349 Flyback_N14535 UCCx813-1
+R_Flyback_RFB2         0 Flyback_N02226  2.55k TC=0,0 
+R_Flyback_RT         Flyback_N14542 Flyback_N14535  33.2k TC=0,0 
+C_Flyback_IF_Cin1         0 Flyback_N14138  10u  TC=0,0 
+C_Flyback_IF_Cin2         0 Flyback_IF_N129151  40u  TC=0,0 
+L_Flyback_IF_Lin         N1353995 Flyback_N14138  3u  
+R_Flyback_IF_Rin         Flyback_IF_N129151 Flyback_N14138  800m TC=0,0 
+R_Flyback_Rcs         0 Flyback_N14259  200m TC=0,0 
+R_Flyback_Rcs1         Flyback_N14259 Flyback_N14338  4.64k TC=0,0 
+C_Flyback_CT1         0 Flyback_N14338  100p  TC=0,0 
+R_Flyback_RFB3         Flyback_N17383 N1354002  51.1R TC=0,0 
+V_Vmb         N1353995 0  
++PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
+G_Gload         N1354002 0 Value = {Vout/Rload*Pscale}
+.PARAM  iout=2.5a pscale=1 n=19 rlp=160m vout=21v rls=160m rload={vout/iout}

@@ -1,0 +1,137 @@
+(ExpressProject "Flyback_diagram TEST"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\flyback_diagram test.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\flyback_diagram test-pspicefiles\constant load\constant load.net"
+      (Type "Report"))
+    (File ".\flyback_diagram test-pspicefiles\gain-phase\gain-phase.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\flyback_diagram test-pspicefiles\constant load\tran.sim"
+        (DisplayName "Constant load-Tran")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\flyback_diagram test-pspicefiles\gain-phase\ac.sim"
+        (DisplayName "Gain-Phase-AC")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\flyback_diagram test-pspicefiles\constant load\tran.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\mosfet.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\mosfet.lib"))
+      (File ".\uccx813-1.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\uccx813-1.lib"))
+      (File "C:\Cadence\Library\Smps\PSpice\Ferrite.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "C:\Cadence\Library\Smps\PSpice\Ferrite.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (UCCx813-1
+      (FullPartName "UCCx813-1.Normal")
+      (LibraryName
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\UCCX813-1.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PHB23NQ15T/PLP
+      (FullPartName "PHB23NQ15T/PLP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\PHIL_FET.OLB")
+      (DeviceIndex "0"))
+    (30LJQ150
+      (FullPartName "30LJQ150.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0")))
+  (Folder "Referenced Projects"
+    (File ".\flyback_diagram.opj"
+      (Type "Orcad Project")))
+  (MPSSessionName "Nicolai Fransen")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
+         "Constant load")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Path "Referenced Projects")
+      (Select "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
+         "Constant load" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 638 78 413")
+        (Scroll "625 190")
+        (Zoom "172")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM TEST.DSN")
+      (Schematic "Constant load")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 895 78 413")
+        (Scroll "0 10")
+        (Zoom "100")
+        (Occurrence "/Flyback"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 104 921 104 439")
+        (Scroll "0 20")
+        (Zoom "100")
+        (Occurrence "/Flyback/FLY"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+      (Schematic "Flyback converter - rtm")
+      (Page "Flyback converter")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3"))

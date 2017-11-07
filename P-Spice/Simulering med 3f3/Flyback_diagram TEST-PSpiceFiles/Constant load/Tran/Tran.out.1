@@ -1,0 +1,694 @@
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Tran.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/Library/Smps/PSpice/MOSFET.lib" 
+.LIB "C:/Cadence/Library/Smps/PSpice/uccx813-1.lib" 
+.LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
+.lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
+
+*Analysis directives: 
+.TRAN/OP 10ns 6m 0 100ns 
+.OPTIONS ADVCONV
+.OPTIONS ABSTOL= 2.0u
+.OPTIONS VNTOL= 20.0u
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Constant load.net" 
+
+
+
+**** INCLUDING "Constant load.net" ****
+* source FLYBACK_DIAGRAM TEST
+V_Flyback_V1         Flyback_N15349 0 12V
+R_Flyback_R6         Flyback_N02226 Flyback_N12578  10k TC=0,0 
+C_Flyback_CT         0 Flyback_N14542  200p  TC=0,0 
+C_Flyback_Cout         0 N1354002  {56u*4}  TC=0,0 
+C_Flyback_Cref         0 Flyback_N14535  1u  TC=0,0 
+R_Flyback_RFB1         Flyback_N02226 Flyback_N17383  18.7k TC=0,0 
+C_Flyback_Cvcc         0 Flyback_N15349  1u  TC=0,0 
+R_Flyback_FLY_Rg         Flyback_FLY_N12134 Flyback_FLY_N13092  50R TC=0,0 
+Kn_Flyback_FLY_K1         L_Flyback_FLY_Lp L_Flyback_FLY_Ls     1
++  KRM8/i/AL160_3F3
+L_Flyback_FLY_Lp         Flyback_FLY_N12010 Flyback_FLY_N12076  {N}  
+R_Flyback_FLY_Rlp         Flyback_FLY_N12010 Flyback_N14138  {Rlp/3} TC=0,0 
+L_Flyback_FLY_Ls         0 Flyback_FLY_N12020  {N}  
+R_Flyback_FLY_Rls         Flyback_FLY_N12030 Flyback_FLY_N12020  {Rls/3} TC=0,0
++  
+X_Flyback_FLY_M1         Flyback_FLY_N12076 Flyback_FLY_N12134 Flyback_N14259
++  IRFB31N20D
+D_Flyback_FLY_D1         Flyback_FLY_N12030 N1354002 30LJQ150 
+X_Flyback_FLY_U1         Flyback_N12578 Flyback_N02226 Flyback_N14338
++  Flyback_N14542 0 Flyback_FLY_N13092 Flyback_N15349 Flyback_N14535 UCCX813-1
+R_Flyback_RFB2         0 Flyback_N02226  2.55k TC=0,0 
+R_Flyback_RT         Flyback_N14542 Flyback_N14535  33.2k TC=0,0 
+C_Flyback_IF_Cin1         0 Flyback_N14138  10u  TC=0,0 
+C_Flyback_IF_Cin2         0 Flyback_IF_N129151  40u  TC=0,0 
+L_Flyback_IF_Lin         N1353995 Flyback_N14138  3u  
+R_Flyback_IF_Rin         Flyback_IF_N129151 Flyback_N14138  800m TC=0,0 
+R_Flyback_Rcs         0 Flyback_N14259  200m TC=0,0 
+R_Flyback_Rcs1         Flyback_N14259 Flyback_N14338  4.64k TC=0,0 
+C_Flyback_CT1         0 Flyback_N14338  100p  TC=0,0 
+R_Flyback_RFB3         Flyback_N17383 N1354002  51.1R TC=0,0 
+V_Vmb         N1353995 0  
++PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
+G_Gload         N1354002 0 Value = {Vout/Rload*Pscale}
+.PARAM  iout=2.5a pscale=1 n=19 rlp=160m vout=21v rls=160m rload={vout/iout}
+
+**** RESUMING Tran.cir ****
+.END
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               30LJQ150        X_Flyback_FLY_M1.MD 
+          IS    4.793610E-06  236.535000E-12 
+           N    2               1.20814      
+          BV  150             200            
+         IBV  100.000000E-06  250.000000E-06 
+          RS     .010855        2.849690E-03 
+          TT                   19.415700E-06 
+         CJO  909.704000E-12    3.185100E-09 
+          VJ     .4              .734429     
+           M     .462283         .622172     
+          FC                     .1          
+          EG    1.3             1            
+         XTI     .502388        4            
+
+
+               X_Flyback_FLY_M1.MD1 
+          IS    0            
+           N   50            
+         CJO    1.823060E-09 
+          VJ     .680377     
+           M     .808769     
+          FC   10.000000E-09 
+
+
+               X_Flyback_FLY_M1.MD2 
+          IS  100.000000E-12 
+           N     .4          
+          RS    3.000000E-06 
+
+
+               X_Flyback_FLY_M1.MD3 
+          IS  100.000000E-12 
+           N     .4          
+
+
+               X_Flyback_FLY_U1._DCLAMP 
+          IS   10.000000E-15 
+           N     .01         
+
+
+               X_Flyback_FLY_U1._D 
+          IS   10.000000E-15 
+           N     .1          
+
+
+               X_Flyback_FLY_U1._D7_mod 
+          IS    1.000000E-06 
+           N     .1          
+          BV  100            
+          RS     .8          
+          TT    6.000000E-09 
+         CJO    4.000000E-12 
+          VJ     .6          
+           M     .45         
+
+
+               X_Flyback_FLY_U1.XVccZen.DZEN 
+          IS    1.000000E-09 
+           N    2            
+          BV   13.432        
+         IBV    9.259300E-03 
+          RS    7.3771       
+          TT   20.000000E-09 
+         CJO  620.010000E-12 
+
+
+               X_Flyback_FLY_U1.XEA.DCLAMP 
+          IS   10.000000E-15 
+          BV   10            
+         IBV     .01         
+          RS   10            
+
+
+               X_Flyback_FLY_U1.XEA.DMOD 
+          IS   10.000000E-15 
+          TT    1.000000E-09 
+         CJO   10.000000E-12 
+
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Flyback_FLY_U1.QN380x 
+               NPN             
+       LEVEL    1            
+          IS   15.200000E-15 
+          BF  105            
+          NF    1            
+         VAF   98.5          
+         IKF     .5          
+         ISE    8.200000E-12 
+          NE    2            
+          BR    4            
+          NR    1            
+         VAR   20            
+         IKR     .225        
+         ISS    0            
+          RB    1.49         
+          RE     .373        
+          RC     .149        
+         CJE   35.500000E-12 
+         VJE     .75         
+         CJC   12.200000E-12 
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          TF  500.000000E-12 
+          TR   85.000000E-09 
+         XTB    1.5          
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+               X_Flyback_FLY_U1._PNP 
+               PNP             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  500            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+               X_Flyback_FLY_U1.XEA.QPMOD 
+               PNP             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Flyback_FLY_M1.MM 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    5.2964       
+          KP    5.32061      
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA     .02477      
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   23.969800E-06 
+        CGDO   10.369600E-12 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_Flyback_FLY_U1.XDRIVE._NMOS 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    3            
+          KP    1            
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD   10            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ  101.851000E-09 
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+        NSUB    1.000000E+09 
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_Flyback_FLY_U1.XDRIVE._PMOS 
+               PMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO   -3            
+          KP    1            
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    5.5          
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ  101.851000E-09 
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+        NSUB    1.000000E+09 
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     Ferromagnetic Core MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               KRM8/i/AL160_3F3                K3F3            
+       LEVEL    2                               2            
+        AREA     .63                                         
+        PATH    3.84                                         
+         GAP     .0488                                       
+          MS  390.890000E+03                  390.890000E+03 
+           A   29.666                          29.666        
+           C     .17883                          .17883      
+           K   19.204                          19.204        
+
+
+**** 11/07/17 16:10:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Flyback_FLY_U1.SSWITCH 
+         RON  125            
+        ROFF   10.000000E+06 
+         VON    4            
+        VOFF    2            
+
+
+               X_Flyback_FLY_U1.XUV.SUVLO 
+         RON    1            
+        ROFF    1.000000E+06 
+          VT    8.4          
+          VH    1            
+          TD    0            
+
+
+Starting pseudo-transient algorithm.
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N1353995)    0.0000                  (N1354002)    -.8415                      
+
+(Flyback_N02226)     .8168            (Flyback_N12578)    4.9022                
+
+(Flyback_N14138)-404.9E-06            (Flyback_N14259)     .0149                
+
+(Flyback_N14338)     .0011            (Flyback_N14535)    5.0027                
+
+(Flyback_N14542)     .1607            (Flyback_N15349)   12.0000                
+
+(Flyback_N17383)    -.8370            (Flyback_FLY_N12010)     .0047            
+
+(Flyback_FLY_N12020)     .0082        (Flyback_FLY_N12030)    -.1303            
+
+(Flyback_FLY_N12076)     .0128        (Flyback_FLY_N12134)    1.7474            
+
+(Flyback_FLY_N13092)   10.2170        (Flyback_IF_N129151)-108.1E-06            
+
+(X_Flyback_FLY_M1.4)    0.0000        (X_Flyback_FLY_M1.5)    -.2370            
+
+(X_Flyback_FLY_M1.6)    -.2380        (X_Flyback_FLY_M1.7)    1.1389            
+
+(X_Flyback_FLY_M1.8)     .0152        (X_Flyback_FLY_M1.9)     .0157            
+
+(X_Flyback_FLY_U1.1)    2.5014        (X_Flyback_FLY_U1.3)    4.9756            
+
+(X_Flyback_FLY_U1.6)     .1000        (X_Flyback_FLY_M1.10)   -1.1232           
+
+(X_Flyback_FLY_M1.11)    -.2380       (X_Flyback_FLY_U1.11)    2.3029           
+
+(X_Flyback_FLY_U1.12)     .1000       (X_Flyback_FLY_U1.15)     .1000           
+
+(X_Flyback_FLY_U1.16)    5.0000       (X_Flyback_FLY_U1.17)     .1018           
+
+(X_Flyback_FLY_U1.18)   10.3530       (X_Flyback_FLY_U1.19)     .1000           
+
+(X_Flyback_FLY_U1.20)     .2000       (X_Flyback_FLY_U1.26)    5.0000           
+
+(X_Flyback_FLY_U1.27)    3.4992       (X_Flyback_FLY_U1.29)     .1000           
+
+(X_Flyback_FLY_U1.32)     .1000       (X_Flyback_FLY_U1.33)     .1000           
+
+(X_Flyback_FLY_U1.34)     .1000       (X_Flyback_FLY_U1.35)-232.1E-21           
+
+(X_Flyback_FLY_U1.36)    5.0000       (X_Flyback_FLY_U1.37)    5.0000           
+
+(X_Flyback_FLY_U1.38)     .1000       (X_Flyback_FLY_U1.39)    5.0000           
+
+(X_Flyback_FLY_U1.41)     .1000       (X_Flyback_FLY_U1.43)-22.10E-12           
+
+(X_Flyback_FLY_U1.44)    1.0000       (X_Flyback_FLY_U1.45)    2.5014           
+
+(X_Flyback_FLY_U1.46)     .0727       (X_Flyback_FLY_U1.47)   10.3730           
+
+(X_Flyback_FLY_U1.52)    5.0000       (X_Flyback_FLY_U1.53)    4.9950           
+
+(X_Flyback_FLY_U1.56)     .0999       (X_Flyback_FLY_U1.57)    5.0000           
+
+(X_Flyback_FLY_U1.59)    4.0000       (X_Flyback_FLY_U1.60)     .5000           
+
+(X_Flyback_FLY_U1.61)     .1000       (X_Flyback_FLY_U1.63)    5.0000           
+
+(X_Flyback_FLY_U1.64)    1.5000       (X_Flyback_FLY_U1.65)    0.0000           
+
+(X_Flyback_FLY_U1.66)    2.4500       (X_Flyback_FLY_U1.69)     .7800           
+
+(X_Flyback_FLY_U1.70)     .3012       (X_Flyback_FLY_U1.LEB)    0.0000          
+
+(X_Flyback_FLY_U1.Tog)    5.0000      (X_Flyback_FLY_U1.vss)    5.0086          
+
+(X_Flyback_FLY_U1.puls)    2.4166     (X_Flyback_FLY_U1.X1.4)    5.0000         
+
+(X_Flyback_FLY_U1.X3.4)     .1000     (X_Flyback_FLY_U1.X4.4)    5.0000         
+
+(X_Flyback_FLY_U1.X6.4)     .1000     (X_Flyback_FLY_U1.X7.4)    0.0000         
+
+(X_Flyback_FLY_U1.X8.4)     .1000     (X_Flyback_FLY_U1.CSLEB)    0.0000        
+
+(X_Flyback_FLY_U1.ctrst)    0.0000    (X_Flyback_FLY_U1.X10.4)    5.0000        
+
+(X_Flyback_FLY_U1.X12.4)     .1000    (X_Flyback_FLY_U1.X16.4)     .1000        
+
+(X_Flyback_FLY_U1.X17.4)    5.0000    (X_Flyback_FLY_U1.X18.4)     .1000        
+
+(X_Flyback_FLY_U1.X19.4)    5.0000    (X_Flyback_FLY_U1.X20.4)     .1000        
+
+(X_Flyback_FLY_U1.X21.4)    5.0000    (X_Flyback_FLY_U1.X29.6)    5.0000        
+
+(X_Flyback_FLY_U1.XEA.2)    9.8914    (X_Flyback_FLY_U1.XEA.7)    4.3086        
+
+(X_Flyback_FLY_U1.XHD.6)    5.0000    (X_Flyback_FLY_U1.XUV.3)   12.0000        
+
+(X_Flyback_FLY_U1.XUV.4)   12.0000    (X_Flyback_FLY_U1.ctimer)    5.0086       
+
+(X_Flyback_FLY_U1.oscout)    5.0000   (X_Flyback_FLY_U1.rstosc)     .1038       
+
+(X_Flyback_FLY_U1.uvlout)   10.3730   (X_Flyback_FLY_U1.X0DC.4)     .1000       
+
+(X_Flyback_FLY_U1.X13.10)    5.0000   (X_Flyback_FLY_U1.X13.20)     .1000       
+
+(X_Flyback_FLY_U1.X14.10)     .1000   (X_Flyback_FLY_U1.X14.20)    5.0000       
+
+(X_Flyback_FLY_U1.XEA.11)    9.8960   (X_Flyback_FLY_U1.XEA.13)    9.3274       
+
+(X_Flyback_FLY_U1.XEA.16)    4.9302   (X_Flyback_FLY_U1.XTFF.3)    5.0000       
+
+(X_Flyback_FLY_U1.XTFF.4)    5.0000   (X_Flyback_FLY_U1.XTFF.7)    3.5000       
+
+(X_Flyback_FLY_U1.XTFF.8)    3.4968   (X_Flyback_FLY_U1.XTFF.9)    3.5000       
+
+(X_Flyback_FLY_U1.XTog.4)    5.0000   (X_Flyback_FLY_U1.X18.HYS)     .5000      
+
+(X_Flyback_FLY_U1.X29.Sin)    0.0000  (X_Flyback_FLY_U1.X99DC.4)     .1000      
+
+(X_Flyback_FLY_U1.XEA.OUT)    9.8960  (X_Flyback_FLY_U1.XHD.Sin)    5.0000      
+
+(X_Flyback_FLY_U1.XLEBD.3)    5.0000  (X_Flyback_FLY_U1.XROSC.4)     .1000      
+
+(X_Flyback_FLY_U1.XTFF.10)     .3003  (X_Flyback_FLY_U1.X29.X1.5)    0.0000     
+
+(X_Flyback_FLY_U1.X29.X1.7)    5.0000 (X_Flyback_FLY_U1.X29.X2.4)    0.0000     
+
+(X_Flyback_FLY_U1.X29.X3.3)    5.0000 (X_Flyback_FLY_U1.XDRIVE.2)   15.2170     
+
+(X_Flyback_FLY_U1.XDRIVE.3)   15.1900 (X_Flyback_FLY_U1.XEA.OUT1)    9.8930     
+
+(X_Flyback_FLY_U1.XEA.OUT2)    9.8915 (X_Flyback_FLY_U1.XHD.X1.5)    0.0000     
+
+(X_Flyback_FLY_U1.XHD.X1.7)    5.0000 (X_Flyback_FLY_U1.XHD.X2.4)    5.0000     
+
+(X_Flyback_FLY_U1.XHD.X3.3)    5.0000 (X_Flyback_FLY_U1.XRstHD.4)     .1000     
+
+(X_Flyback_FLY_U1.XTFF.X1.5)    3.5000                                          
+
+(X_Flyback_FLY_U1.XTFF.X2.5)    3.5000                                          
+
+(X_Flyback_FLY_U1.XTFF.X3.5)    3.5000                                          
+
+(X_Flyback_FLY_U1.XTFF.X4.5)     .3000                                          
+
+(X_Flyback_FLY_U1.XTFF.X5.5)     .3000                                          
+
+(X_Flyback_FLY_U1.XTFF.X6.5)    3.5000                                          
+
+(X_Flyback_FLY_U1.XTFF.X7.4)    5.0000                                          
+
+(X_Flyback_FLY_U1.XTFF.X8.4)    5.0000                   
+
+
+  These voltages failed to converge:
+
+    V(Flyback_N02226)         =    -15.10V  \   816.81mV
+    V(Flyback_N12578)         =     11.27V  \     4.902V
+    V(Flyback_N14542)         =     11.88V  \   160.68mV
+    V(N1354002)               =   -175.59V  \  -841.48mV
+    V(Flyback_N14535)         =     12.00V  \     5.003V
+    V(Flyback_N17383)         =   -175.15V  \  -836.96mV
+    V(Flyback_FLY_N12134)     =    3.286mV  \     1.747V
+    V(Flyback_FLY_N13092)     =    3.286mV  \     10.22V
+    V(Flyback_FLY_N12010)     =   -29.64fV  \    4.650mV
+    V(Flyback_FLY_N12076)     =   -29.64fV  \    12.81mV
+    V(Flyback_N14138)         =         0V  \  -404.89uV
+    V(Flyback_FLY_N12020)     =         0V  \    8.157mV
+    V(Flyback_FLY_N12030)     =  -132.88mV  \  -130.35mV
+    V(Flyback_IF_N129151)     =         0V  \  -108.08uV
+    V(Flyback_N14259)         =   113.12fV  \    14.92mV
+    V(Flyback_N14338)         =   112.59fV  \    1.111mV
+    V(X_Flyback_FLY_M1.9)     =   -29.34fV  \    15.71mV
+    V(X_Flyback_FLY_M1.7)     =    3.286mV  \     1.139V
+    V(X_Flyback_FLY_M1.8)     =   113.12fV  \    15.15mV
+    V(X_Flyback_FLY_M1.5)     =   -3.286mV  \  -236.96mV
+    V(X_Flyback_FLY_M1.10)    =   -3.286mV  \    -1.123V
+    V(X_Flyback_FLY_M1.11)    =   -3.286mV  \  -238.00mV
+    V(X_Flyback_FLY_M1.6)     =   -3.286mV  \  -238.00mV
+    V(X_Flyback_FLY_U1.uvlout) =     12.00V  \     10.37V
+    V(X_Flyback_FLY_U1.1)     =     5.997V  \     2.501V
+    V(X_Flyback_FLY_U1.puls)  =   -1.000pV  \     2.417V
+    V(X_Flyback_FLY_U1.LEB)   =     5.000V  \         0V
+    V(X_Flyback_FLY_U1.45)    =     5.997V  \     2.501V
+    V(X_Flyback_FLY_U1.56)    =     5.000V  \    99.90mV
+    V(X_Flyback_FLY_U1.ctimer) =     12.00V  \     5.009V
+    V(X_Flyback_FLY_U1.vss)   =     12.00V  \     5.009V
+    V(X_Flyback_FLY_U1.47)    =     12.00V  \     10.37V
+    V(X_Flyback_FLY_U1.3)     =     5.000V  \     4.976V
+    V(X_Flyback_FLY_U1.46)    =     7.065V  \    72.71mV
+    V(X_Flyback_FLY_U1.18)    =     11.98V  \     10.35V
+    V(X_Flyback_FLY_U1.XDRIVE.3) =     5.003V  \     15.19V
+    V(X_Flyback_FLY_U1.XDRIVE.2) =     5.003V  \     15.22V
+    V(X_Flyback_FLY_U1.27)    =    17.50uV  \     3.499V
+    V(X_Flyback_FLY_U1.11)    =     5.000V  \     2.303V
+    V(X_Flyback_FLY_U1.17)    =   100.00mV  \   101.84mV
+    V(X_Flyback_FLY_U1.37)    =   100.10mV  \     5.000V
+    V(X_Flyback_FLY_U1.rstosc) =   100.00mV  \   103.75mV
+    V(X_Flyback_FLY_U1.XEA.11) =     10.21V  \      9.90V
+    V(X_Flyback_FLY_U1.XEA.OUT) =     10.21V  \      9.90V
+    V(X_Flyback_FLY_U1.XEA.OUT1) =     10.21V  \      9.89V
+    V(X_Flyback_FLY_U1.XEA.OUT2) =     10.21V  \      9.89V
+    V(X_Flyback_FLY_U1.XEA.2) =     10.21V  \      9.89V
+    V(X_Flyback_FLY_U1.XEA.13) =      9.65V  \     9.327V
+    V(X_Flyback_FLY_U1.XEA.16) =     11.30V  \     4.930V
+    V(X_Flyback_FLY_U1.XEA.7) =     11.30V  \     4.309V
+    V(X_Flyback_FLY_U1.XTFF.4) =     3.500V  \     5.000V
+    V(X_Flyback_FLY_U1.70)    =     3.500V  \   301.22mV
+    V(X_Flyback_FLY_U1.XTFF.8) =    17.50uV  \     3.497V
+    V(X_Flyback_FLY_U1.XTFF.3) =     3.500V  \     5.000V
+    V(X_Flyback_FLY_U1.XTFF.10) =    1.500uV  \   300.29mV
+    V(X_Flyback_FLY_U1.XTFF.9) =    17.50uV  \     3.500V
+
+  These supply currents failed to converge:
+
+    I(X_Flyback_FLY_M1.EV16)  =  -463.97nA  \     1.865A
+    I(X_Flyback_FLY_U1.EBEARef) =   -2.637uA  \  -210.57nA
+    I(X_Flyback_FLY_U1.XUV.EB1) =   -27.58uA  \   -16.28mA
+    I(X_Flyback_FLY_U1.XDRIVE.EB1) =  -500.32nA  \  -132.67uA
+    I(X_Flyback_FLY_U1.X1.EB1) =         0A  \   -26.97mA
+    I(X_Flyback_FLY_U1.X3.EB1) =         0A  \    18.41uA
+    I(X_Flyback_FLY_U1.XLEBD.e.T1.eB1) =    -5.000A  \         0A
+    I(X_Flyback_FLY_U1.X13.EBQB) =   -1.000nA  \   -49.95uA
+    I(X_Flyback_FLY_U1.X14.EBQB) =    49.00mA  \   -0.999uA
+    I(X_Flyback_FLY_U1.X14.EBQ) =   -49.00mA  \ -13.88e-18A
+    I(X_Flyback_FLY_U1.XROSC.EB1) =         0A  \    37.55uA
+    I(X_Flyback_FLY_U1.XEA.EB1) =   -2.637mA  \  -408.54uA
+    I(X_Flyback_FLY_U1.X29.X1.EB2) =         0A  \   -24.41mA
+    I(X_Flyback_FLY_U1.XTFF.X1.EB1) =   -8.750mA  \   -8.073uA
+    I(X_Flyback_FLY_U1.XTFF.X2.EB1) =   -8.750mA  \ -6.939e-18A
+    I(X_Flyback_FLY_U1.XTFF.X4.EB1) =  -750.00uA  \   731.77nA
+    I(X_Flyback_FLY_U1.XTFF.X5.EB1) =    8.000mA  \    3.044uA
+    I(X_Flyback_FLY_U1.XTFF.X6.EB1) =   -8.750mA  \   -1.966uA
+    I(X_Flyback_FLY_U1.XTFF.X7.EB1) =   -15.00mA  \ -13.88e-18A
+    I(X_Flyback_FLY_U1.XTFF.X8.EB1) =   -15.00mA  \ -13.88e-18A
+    I(L_Flyback_FLY_Lp)       =   555.72fA  \   -94.78mA
+    I(L_Flyback_FLY_Ls)       =     2.491A  \     2.597A
+    I(L_Flyback_IF_Lin)       =   555.72fA  \    3.370mA
+    IB(X_Flyback_FLY_U1.XLEBD.T1) =    -5.000A  \         0A
+    I(V_Flyback_V1)           =  -628.17uA  \  -185.00mA
+    I(V_Vmb)                  =  -555.72fA  \   -3.370mA
+    I(X_Flyback_FLY_M1.VFI2)  =   -3.286fA  \  -839.83uA
+    I(X_Flyback_FLY_M1.VFI1)  =         0A  \   -93.71mA
+    I(X_Flyback_FLY_U1.Vrout) =    19.76nA  \    16.16mA
+    I(X_Flyback_FLY_U1.VR2)   =    6.967uA  \    14.92mA
+
+  These devices failed to converge:
+    D_Flyback_FLY_D1 X_Flyback_FLY_U1.Drout X_Flyback_FLY_U1.Dreflo 
+    X_Flyback_FLY_U1.XEA.D12 X_Flyback_FLY_U1.XEA.D15 X_Flyback_FLY_U1.EBpul 
+    X_Flyback_FLY_U1.XTog.EB1 X_Flyback_FLY_U1.X1.EB1 X_Flyback_FLY_U1.X3.EB1 
+    X_Flyback_FLY_U1.X6.EB1 X_Flyback_FLY_U1.X14.EBQB 
+    X_Flyback_FLY_U1.XROSC.EB1 X_Flyback_FLY_U1.XTFF.X1.EB1 
+    X_Flyback_FLY_U1.XTFF.X4.EB1 X_Flyback_FLY_U1.XTFF.X5.EB1 Kn_Flyback_FLY_K1 
+    X_Flyback_FLY_U1.XDRIVE.M1 X_Flyback_FLY_U1.XEA.Q1 
+
+**** Interrupt ****
