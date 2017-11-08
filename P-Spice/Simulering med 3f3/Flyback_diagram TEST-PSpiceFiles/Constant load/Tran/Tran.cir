@@ -1,4 +1,4 @@
-** Profile: "Constant load-Tran"  [ c:\users\nicolai fransen\documents\github\e7bacdriver\p-spice\simulering med 3f3\flyback_diagram test-pspicefiles\constant load\tran.sim ] 
+** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-pspicefiles\constant load\tran.sim ] 
 
 ** Creating circuit file "Tran.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,8 +6,8 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-.LIB "../../../mosfet.lib" 
 .LIB "../../../uccx813-1.lib" 
+.LIB "../../../mosfet.lib" 
 .LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
@@ -15,10 +15,8 @@
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.TRAN/OP 10ns 6m 0 100ns 
+.TRAN/OP 10ns 10m 9m 1u SKIPBP 
 .OPTIONS ADVCONV
-.OPTIONS ABSTOL= 2.0u
-.OPTIONS VNTOL= 20.0u
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Constant load.net" 
 

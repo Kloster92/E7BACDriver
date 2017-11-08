@@ -13,11 +13,11 @@ Notes=
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
-+0 0 1 0 
-+0 "6m" 
++1 0 1 0 
++0 "10m" 
 +1 "10ns" 
-+2 "0" 
-+3 "100ns" 
++2 "9m" 
++3 "1u" 
 +4 "" 
 +5 "" 
 +6 "" 
@@ -110,8 +110,6 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 11 1
 + 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
-+ ABSTOL "2.0u"
-+ VNTOL "20.0u"
 + 0 0 0 0 0 0 0 0 0
 @End Analysis
 @Analysis: 12 1

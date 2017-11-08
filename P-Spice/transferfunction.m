@@ -18,6 +18,8 @@ R1 = 18000;
 R2 = 2400;
 
 R8 = 10000;
+C8 = 56*10^(-9);
+
 Rpar = 2200;
 Gain = R8/Rpar;
 
@@ -40,16 +42,19 @@ sys1 = sys * Gain;
 %sys2 = sys * Gs2;
 %sys3 = sys * Gs3;
 
+
+g = (s+1/(2*pi*R8*C8))/1;
+
 figure(1)
-bode(sys)
-margin(sys)
-
-figure(2)
-bode(sys1)
-margin(sys1)
-
-figure(3)
-step(sys1)
+bode(g)
+% margin(sys)
+% 
+% figure(2)
+% bode(sys1)
+% margin(sys1)
+% 
+% figure(3)
+% step(sys1)
 % 
 % figure(4)
 % bode(sys * Gain)
