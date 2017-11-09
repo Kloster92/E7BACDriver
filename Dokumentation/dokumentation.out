@@ -12,7 +12,15 @@
 \BOOKMARK [0][-]{chapter.2}{Accepttest}{}% 12
 \BOOKMARK [1][-]{section.2.1}{Tests}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.1.1}{Test af ikke-funktionelle krav}{section.2.1}% 14
-\BOOKMARK [0][-]{chapter.3}{Switch-Mode Power Supply}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Flyback Converter}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{Continuous Conduction Mode}{section.3.1}% 17
-\BOOKMARK [2][-]{subsection.3.1.2}{Discontinuous Conduction Mode}{section.3.1}% 18
+\BOOKMARK [0][-]{chapter.3}{Systemarkitektur}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Block Definitions Diagram}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Internal Block Diagram}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Signalbeskrivelse}{section.3.2}% 18
+\BOOKMARK [0][-]{chapter.4}{F\370rste Iteration}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Switch Mode Power-Supply}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Flyback Converter}{chapter.4}% 21
+\BOOKMARK [2][-]{subsection.4.2.1}{Continuous Conduction Mode}{section.4.2}% 22
+\BOOKMARK [2][-]{subsection.4.2.2}{Discontinuous Conduction Mode}{section.4.2}% 23
+\BOOKMARK [1][-]{section.4.3}{Ideel transformator}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Udgangskondensator}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{Simulering}{chapter.4}% 26

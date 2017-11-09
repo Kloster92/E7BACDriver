@@ -13,7 +13,15 @@
 \contentsline {chapter}{\chapternumberline {2}Accepttest}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Tests}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Test af ikke-funktionelle krav}{11}{subsection.2.1.1}
-\contentsline {chapter}{\chapternumberline {3}Switch-Mode Power Supply}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Flyback Converter}{15}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Continuous Conduction Mode}{16}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Discontinuous Conduction Mode}{16}{subsection.3.1.2}
+\contentsline {chapter}{\chapternumberline {3}Systemarkitektur}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}Block Definitions Diagram}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}Internal Block Diagram}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Signalbeskrivelse}{16}{subsection.3.2.1}
+\contentsline {chapter}{\chapternumberline {4}F\IeC {\o }rste Iteration}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Switch Mode Power-Supply}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Flyback Converter}{17}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Continuous Conduction Mode}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Discontinuous Conduction Mode}{19}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Ideel transformator}{19}{section.4.3}
+\contentsline {section}{\numberline {4.4}Udgangskondensator}{20}{section.4.4}
+\contentsline {section}{\numberline {4.5}Simulering}{20}{section.4.5}
