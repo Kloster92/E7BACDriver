@@ -123,41 +123,13 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
-         "Input-filter")
+         "c:\users\nicolai fransen\documents\github\e7bacdriver\p-spice\simulering med 3f3\flyback_diagram.dsn")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries")
-      (Select "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
-         "SCHEMATIC1"))
+      (Path "PSpice Resources" "Model Libraries"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 130 947 130 465")
-        (Scroll "232 115")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 895 78 413")
-        (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/FLY"))
-      (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
-      (Schematic "Flyback converter - rtm")
-      (Page "Flyback converter"))))
+        (Placement "44 0 1 -1 -1 -1 -1 0 204 0 506"))
+      (Tab 0))))
