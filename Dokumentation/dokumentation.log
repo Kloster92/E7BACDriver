@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  9 NOV 2017 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  13 NOV 2017 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1953,27 +1953,230 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2015/12/22 v3.2 programmable bibliographies (PK/JW/AB)
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/12/22 v3.2 programmable bibliographies (biber) (PK/JW/A
+B)
+
+(c:/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count332
+)
+(c:/texlive/2015/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count333
+
+(c:/texlive/2015/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count334
+\c@listtotal=\count335
+\c@listcount=\count336
+\c@liststart=\count337
+\c@liststop=\count338
+\c@citecount=\count339
+\c@citetotal=\count340
+\c@multicitecount=\count341
+\c@multicitetotal=\count342
+\c@instcount=\count343
+\c@maxnames=\count344
+\c@minnames=\count345
+\c@maxitems=\count346
+\c@minitems=\count347
+\c@citecounter=\count348
+\c@savedcitecounter=\count349
+\c@uniquelist=\count350
+\c@uniquename=\count351
+\c@refsection=\count352
+\c@refsegment=\count353
+\c@maxextratitle=\count354
+\c@maxextratitleyear=\count355
+\c@maxextrayear=\count356
+\c@maxextraalpha=\count357
+\c@abbrvpenalty=\count358
+\c@highnamepenalty=\count359
+\c@lownamepenalty=\count360
+\c@maxparens=\count361
+\c@parenlevel=\count362
+\blx@tempcnta=\count363
+\blx@tempcntb=\count364
+\blx@tempcntc=\count365
+\blx@maxsection=\count366
+\blx@maxsegment@0=\count367
+\blx@notetype=\count368
+\blx@parenlevel@text=\count369
+\blx@parenlevel@foot=\count370
+\blx@sectionciteorder@0=\count371
+\labelnumberwidth=\skip273
+\labelalphawidth=\skip274
+\biblabelsep=\skip275
+\bibnamesep=\skip276
+\bibinitsep=\skip277
+\bibparsep=\skip278
+\bibhang=\skip279
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\c@mincomprange=\count372
+\c@maxcomprange=\count373
+\c@mincompwidth=\count374
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count375
+\c@savedafterword=\count376
+\c@annotator=\count377
+\c@savedannotator=\count378
+\c@author=\count379
+\c@savedauthor=\count380
+\c@bookauthor=\count381
+\c@savedbookauthor=\count382
+\c@commentator=\count383
+\c@savedcommentator=\count384
+\c@editor=\count385
+\c@savededitor=\count386
+\c@editora=\count387
+\c@savededitora=\count388
+\c@editorb=\count389
+\c@savededitorb=\count390
+\c@editorc=\count391
+\c@savededitorc=\count392
+\c@foreword=\count393
+\c@savedforeword=\count394
+\c@holder=\count395
+\c@savedholder=\count396
+\c@introduction=\count397
+\c@savedintroduction=\count398
+\c@namea=\count399
+\c@savednamea=\count400
+\c@nameb=\count401
+\c@savednameb=\count402
+\c@namec=\count403
+\c@savednamec=\count404
+\c@translator=\count405
+\c@savedtranslator=\count406
+\c@shortauthor=\count407
+\c@savedshortauthor=\count408
+\c@shorteditor=\count409
+\c@savedshorteditor=\count410
+\c@labelname=\count411
+\c@savedlabelname=\count412
+\c@institution=\count413
+\c@savedinstitution=\count414
+\c@lista=\count415
+\c@savedlista=\count416
+\c@listb=\count417
+\c@savedlistb=\count418
+\c@listc=\count419
+\c@savedlistc=\count420
+\c@listd=\count421
+\c@savedlistd=\count422
+\c@liste=\count423
+\c@savedliste=\count424
+\c@listf=\count425
+\c@savedlistf=\count426
+\c@location=\count427
+\c@savedlocation=\count428
+\c@organization=\count429
+\c@savedorganization=\count430
+\c@origlocation=\count431
+\c@savedoriglocation=\count432
+\c@origpublisher=\count433
+\c@savedorigpublisher=\count434
+\c@publisher=\count435
+\c@savedpublisher=\count436
+\c@language=\count437
+\c@savedlanguage=\count438
+\c@pageref=\count439
+\c@savedpageref=\count440
+\shorthandwidth=\skip280
+\shortjournalwidth=\skip281
+\shortserieswidth=\skip282
+\shorttitlewidth=\skip283
+\shortauthorwidth=\skip284
+\shorteditorwidth=\skip285
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2015/12/22 v3.2 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count441
+\c@textcitetotal=\count442
+\c@textcitemaxnames=\count443
+\c@biburlnumpenalty=\count444
+\c@biburlucpenalty=\count445
+\c@biburllcpenalty=\count446
+\c@smartand=\count447
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count448
+\c@bbx:relatedtotal=\count449
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2015/12/22 v3.2 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)))
 (c:/texlive/2015/texmf-dist/tex/latex/fixme/fixme.sty
 Package: fixme 2013/01/28 v4.2 Collaborative annotations for LaTeX2e
-\c@fixmecount=\count332
-\c@fxnotecount=\count333
-\c@fxwarningcount=\count334
-\c@fxerrorcount=\count335
-\c@fxfatalcount=\count336
+\c@fixmecount=\count450
+\c@fxnotecount=\count451
+\c@fxwarningcount=\count452
+\c@fxerrorcount=\count453
+\c@fxfatalcount=\count454
 )
 (c:/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
-\c@r@tfl@t=\count337
-\rotFPtop=\skip273
-\rotFPbot=\skip274
+\c@r@tfl@t=\count455
+\rotFPtop=\skip286
+\rotFPbot=\skip287
 \rot@float@box=\box99
 \rot@mess@toks=\toks50
 )
 (c:/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box100
-\beforetitleunit=\skip275
-\aftertitleunit=\skip276
+\beforetitleunit=\skip288
+\aftertitleunit=\skip289
 \ttl@plus=\dimen357
 \ttl@minus=\dimen358
 \ttl@toksa=\toks51
@@ -1981,6 +2184,18 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen360
 \titlewidthfirst=\dimen361
 )
+Package biblatex Info: Trying to load language 'danish'...
+Package biblatex Info: ... file 'danish.lbx' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/danish.lbx
+File: danish.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
+)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count456
+\@quotereset=\count457
 (./dokumentation.aux (./tex/kravspecifikation/kravspecifikation.aux)
 (./tex/accepttest/accepttest.aux) (./tex/systemarkitektur/systemarkitektur.aux)
 (./tex/smps/smps.aux))
@@ -2014,16 +2229,16 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
+\scratchcounter=\count458
 \scratchdimen=\dimen362
 \scratchbox=\box101
-\nofMPsegments=\count339
-\nofMParguments=\count340
+\nofMPsegments=\count459
+\nofMParguments=\count460
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count341
+\MPscratchCnt=\count461
 \MPscratchDim=\dimen363
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
+\MPnumerator=\count462
+\makeMPintoPDFobject=\count463
 \everyMPtoPDFconversion=\toks53
 ) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -3229,7 +3444,7 @@ File: siunitx-abbreviations.cfg 2016/01/19 v2.6p siunitx: Abbreviated units
 . 
 . Defining command \ms with sig. '' on line 150.
 .................................................
-\c@lstlisting=\count344
+\c@lstlisting=\count464
 \AtBeginShipoutBox=\box102
 
 (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -3249,7 +3464,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count345
+\c@section@level=\count465
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -3258,10 +3473,20 @@ LaTeX Info: Redefining \ref on input line 150.
 LaTeX Info: Redefining \pageref on input line 150.
 LaTeX Info: Redefining \nameref on input line 150.
 (./dokumentation.out) (./dokumentation.out)
-\@outlinefile=\write5
-\openout5 = `dokumentation.out'.
+\@outlinefile=\write6
+\openout6 = `dokumentation.out'.
 
-\c__siunitx_mathsf_int=\count346
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout5 = `dokumentation.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'dokumentation.bbl' found.
+ (./dokumentation.bbl)
+Package biblatex Info: Reference section=0 on input line 150.
+Package biblatex Info: Reference segment=0 on input line 150.
+\c__siunitx_mathsf_int=\count466
 LaTeX Font Info:    Try loading font information for U+zeur on input line 150.
 
 (c:/texlive/2015/texmf-dist/tex/latex/eulervm/uzeur.fd
@@ -3294,7 +3519,7 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 150.
 (c:/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-\c__siunitx_mathtt_int=\count347
+\c__siunitx_mathtt_int=\count467
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 150.
 
 
@@ -3322,7 +3547,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 198.
  (./dokumentation.toc
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 4.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 198.
@@ -3363,7 +3588,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
 
-<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=152, 459.21562pt
+<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=154, 459.21562pt
  x 255.65512pt>
 File: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf Graphic file (t
 ype pdf)
@@ -3378,31 +3603,31 @@ Overfull \hbox (33.2145pt too wide) in paragraph at lines 46--47
  []
 
 
-<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=153, 459.21562pt x 255
+<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=155, 459.21562pt x 255
 .65512pt>
 File: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf Graphic file (type pd
 f)
  <use tex/Kravspecifikation/billeder/UseCasediagramV1.pdf>
 Package pdftex.def Info: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf us
-ed on input line 52.
+ed on input line 53.
 (pdftex.def)             Requested size: 459.2145pt x 255.65448pt.
 
-Overfull \hbox (33.2145pt too wide) in paragraph at lines 52--53
+Overfull \hbox (33.2145pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 59.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 64.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 62.
+(babel)             in language  on input line 64.
 [4
 
  <./tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf> <./tex/Kravspeci
@@ -3413,67 +3638,67 @@ ramV1.pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 63.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 65.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 63.
+(babel)             in language  on input line 65.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 91.
  [5]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 118.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 152.
  [6
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 153.
+(babel)             in language  on input line 155.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 188.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 188.
  [7
 
 ]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 188.
+(babel)             in language  on input line 190.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 188.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 191.
+(babel)             in language  on input line 190.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 193.
 
  (c:/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
@@ -4596,7 +4821,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 7.
 
-<tex/systemarkitektur/billeder/BDD.pdf, id=259, 532.99126pt x 284.56313pt>
+<tex/systemarkitektur/billeder/BDD.pdf, id=261, 532.99126pt x 284.56313pt>
 File: tex/systemarkitektur/billeder/BDD.pdf Graphic file (type pdf)
 
 <use tex/systemarkitektur/billeder/BDD.pdf>
@@ -4608,7 +4833,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 23.
 
-<tex/systemarkitektur/billeder/IBD.pdf, id=261, 601.04549pt x 286.36986pt>
+<tex/systemarkitektur/billeder/IBD.pdf, id=263, 601.04549pt x 286.36986pt>
 File: tex/systemarkitektur/billeder/IBD.pdf Graphic file (type pdf)
 
 <use tex/systemarkitektur/billeder/IBD.pdf>
@@ -4669,7 +4894,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
 
-<.//tex/smps/billeder/flyback_ideal.PNG, id=357, 278.54062pt x 140.32425pt>
+<.//tex/smps/billeder/flyback_ideal.PNG, id=359, 278.54062pt x 140.32425pt>
 File: .//tex/smps/billeder/flyback_ideal.PNG Graphic file (type png)
 
 <use .//tex/smps/billeder/flyback_ideal.PNG>
@@ -4678,11 +4903,11 @@ ine 21.
 (pdftex.def)             Requested size: 278.53993pt x 140.3239pt.
 
 
-LaTeX Warning: Citation `SMPS-topologies' on page 17 undefined on input line 23
+LaTeX Warning: Citation 'SMPS-topologies' on page 17 undefined on input line 23
 .
 
 
-LaTeX Warning: Citation `SMPS-topologies' on page 17 undefined on input line 23
+LaTeX Warning: Citation 'SMPS-topologies' on page 17 undefined on input line 23
 .
 
 Package babel Info: Redefining danish shorthand "|
@@ -4699,135 +4924,144 @@ Package babel Info: Redefining danish shorthand "~
 
  <.//tex/smps/billeder/flyback_ideal.PNG>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 33.
+(babel)             in language  on input line 31.
 
-<.//tex/smps/billeder/CCM_transformer_current.PNG, id=369, 397.485pt x 183.3851
+<.//tex/smps/billeder/CCM_transformer_current.PNG, id=371, 397.485pt x 183.3851
 3pt>
 File: .//tex/smps/billeder/CCM_transformer_current.PNG Graphic file (type png)
  <use .//tex/smps/billeder/CCM_transformer_current.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/CCM_transformer_current.PNG used 
-on input line 38.
+on input line 36.
 (pdftex.def)             Requested size: 397.48402pt x 183.38467pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 49.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 49.
- [18 <.//tex/smps/billeder/CCM_transformer_current.PNG>]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
 
-Overfull \hbox (5.56253pt too wide) in paragraph at lines 82--83
+
+LaTeX Warning: Citation 'SMPS-topologies' on page 18 undefined on input line 38
+.
+
+
+LaTeX Warning: Citation 'SMPS-topologies' on page 18 undefined on input line 38
+.
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 44.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 47.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 47.
+[18 <.//tex/smps/billeder/CCM_transformer_current.PNG>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 48.
+
+Overfull \hbox (5.56253pt too wide) in paragraph at lines 80--81
 []\T1/ppl/m/n/10.95 Induktansen i pri-mær-vik-lin-gen be-reg-nes ud fra den øn-
 ske-de rip-ple-strøm, samt switch-
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 91.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 93.
+(babel)             in language  on input line 91.
 [19]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 93.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 95.
+(babel)             in language  on input line 93.
 
-<.//tex/smps/billeder/flyback_ideal_diagram.PNG, id=392, 324.91388pt x 139.1197
+<.//tex/smps/billeder/flyback_ideal_diagram.PNG, id=394, 324.91388pt x 139.1197
 5pt>
 File: .//tex/smps/billeder/flyback_ideal_diagram.PNG Graphic file (type png)
  <use .//tex/smps/billeder/flyback_ideal_diagram.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/flyback_ideal_diagram.PNG used on
- input line 101.
+ input line 99.
 (pdftex.def)             Requested size: 324.91309pt x 139.1194pt.
 
-<.//tex/smps/billeder/26V_output.PNG, id=394, 610.38037pt x 414.95026pt>
+<.//tex/smps/billeder/26V_output.PNG, id=396, 610.38037pt x 414.95026pt>
 File: .//tex/smps/billeder/26V_output.PNG Graphic file (type png)
 
 <use .//tex/smps/billeder/26V_output.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/26V_output.PNG used on input line
- 110.
+ 108.
 (pdftex.def)             Requested size: 610.37888pt x 414.94923pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 112.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 112.
  [20 <.//tex/smps/billeder/flyback_ideal_diagram.PNG>]
-<.//tex/smps/billeder/100V_output.PNG, id=405, 609.77812pt x 402.00188pt>
+<.//tex/smps/billeder/100V_output.PNG, id=407, 609.77812pt x 402.00188pt>
 File: .//tex/smps/billeder/100V_output.PNG Graphic file (type png)
 
 <use .//tex/smps/billeder/100V_output.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/100V_output.PNG used on input lin
-e 120.
+e 118.
 (pdftex.def)             Requested size: 609.77663pt x 402.00089pt.
 
-Overfull \hbox (3.883pt too wide) in paragraph at lines 125--126
+Overfull \hbox (3.883pt too wide) in paragraph at lines 123--124
 \T1/ppl/m/n/10.95 I ta-bel [][]4.1[][] ses re-sul-ta-ter-ne for ana-ly-se(A) og
  si-mu-le-ring(S), af den ide-el-le con-ver-ter. Ripple-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []|\T1/ppl/b/n/10.95 Indgangs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []|\T1/ppl/b/n/10.95 RMS-strøm i
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--135
+Underfull \hbox (badness 10000) in paragraph at lines 133--133
 []|\T1/ppl/b/n/10.95 RMS-strøm i
  []
 
 
-<.//tex/smps/billeder/26V_transformer_current.PNG, id=410, 592.01175pt x 398.68
+<.//tex/smps/billeder/26V_transformer_current.PNG, id=412, 592.01175pt x 398.68
 95pt>
 File: .//tex/smps/billeder/26V_transformer_current.PNG Graphic file (type png)
  <use .//tex/smps/billeder/26V_transformer_current.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/26V_transformer_current.PNG used 
-on input line 142.
+on input line 140.
 (pdftex.def)             Requested size: 592.0103pt x 398.68852pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 144.
  [21 <.//tex/smps/billeder/26V_output.PNG> <.//tex/smps/billeder/100V_output.PN
 G>]
-<.//tex/smps/billeder/100V_transformer_current.PNG, id=421, 587.49487pt x 401.3
+<.//tex/smps/billeder/100V_transformer_current.PNG, id=423, 587.49487pt x 401.3
 9963pt>
 File: .//tex/smps/billeder/100V_transformer_current.PNG Graphic file (type png)
 
  <use .//tex/smps/billeder/100V_transformer_current.PNG>
 Package pdftex.def Info: .//tex/smps/billeder/100V_transformer_current.PNG used
- on input line 149.
+ on input line 147.
 (pdftex.def)             Requested size: 587.49342pt x 401.39865pt.
 )
 Package babel Info: Redefining danish shorthand "|
@@ -4841,38 +5075,49 @@ Package babel Info: Redefining danish shorthand "~
  [22 <.//tex/smps/billeder/26V_transformer_current.PNG> <.//tex/smps/billeder/1
 00V_transformer_current.PNG>]
 
+LaTeX Warning: Empty bibliography on input line 228.
+
+
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
 (FiXme)        Total: 0.
 
-\tf@toc=\write6
-\openout6 = `dokumentation.toc'.
+\tf@toc=\write7
+\openout7 = `dokumentation.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 231.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 231.
 (./dokumentation.aux (./tex/kravspecifikation/kravspecifikation.aux)
 (./tex/accepttest/accepttest.aux) (./tex/systemarkitektur/systemarkitektur.aux)
 (./tex/smps/smps.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 228.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 228.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: A8B43337CC6089FDB97DC28F0DBF9012;1748.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                dokumentation
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'dokumentation.run.xml'.
+\openout1 = `dokumentation.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 37475 strings out of 493042
- 703855 string characters out of 6138227
- 868041 words of memory out of 5000000
- 40300 multiletter control sequences out of 15000+600000
+ 42797 strings out of 493042
+ 799387 string characters out of 6138227
+ 1324125 words of memory out of 5000000
+ 45571 multiletter control sequences out of 15000+600000
  41130 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,18n,97p,10460b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,18n,97p,10460b,1830s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2015/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1
@@ -4883,10 +5128,10 @@ sfonts/euler/eufm10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
 10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texl
 ive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2015/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (22 pages, 1866907 bytes).
+Output written on dokumentation.pdf (22 pages, 1866684 bytes).
 PDF statistics:
- 483 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
+ 485 PDF objects out of 1000 (max. 8388607)
+ 350 compressed objects within 4 object streams
  80 named destinations out of 1000 (max. 500000)
  276 words of extra memory for PDF output out of 10000 (max. 10000000)
 

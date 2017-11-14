@@ -1,3 +1,5 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \select@language {danish}
 \contentsline {chapter}{Indhold}{2}{section*.1}
 \contentsline {chapter}{\chapternumberline {1}Kravspecifikation}{3}{chapter.1}
