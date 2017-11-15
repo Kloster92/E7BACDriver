@@ -1,7 +1,7 @@
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     CIRCUIT DESCRIPTION
@@ -18,10 +18,11 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
+.LIB "../../../ntsv30120ctg.lib" 
 .LIB "../../../uccx813-1.lib" 
 .LIB "../../../mosfet.lib" 
 .LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
-* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Jesper\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
@@ -39,7 +40,7 @@
 V_FB_V1         FB_N15349 0 12V
 R_FB_Rcomp         FB_N02226 FB_N19124  10k TC=0,0 
 C_FB_CT         0 FB_N14542  200p  TC=0,0 
-C_FB_Cout         0 OUT  {56u*4}  TC=0,0 
+C_FB_Cout         0 FB_N003311  {56u*4}  TC=0,0 
 C_FB_Cref         0 FB_N14535  1u  TC=0,0 
 R_FB_RFB1         FB_N02226 OUT  18.7k TC=0,0 
 C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
@@ -49,17 +50,16 @@ L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}
 R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
 L_FB_PS_Ls         0 FB_PS_N17058  {N}  
 R_FB_PS_Rls         FB_PS_N12030 FB_PS_N12024  {Rls/3} TC=0,0 
-D_FB_PS_D1         FB_PS_N12030 OUT 30LJQ150 
+D_FB_PS_D1         FB_PS_N12030 OUT Dntsv30120ctg 
 X_FB_PS_U1         FB_N19132 FB_N02226 FB_N14338 FB_N14542 0 FB_PS_N13092
 +  FB_N15349 FB_N14535 UCCx813-1
 L_FB_PS_Lmp         FB_PS_N16991 FB_PS_N16995  {Lm}  
 L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
-R_FB_PS_RsnubD         OUT FB_PS_N18140  46.8R TC=0,0 
-C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  900p  TC=0,0 
-R_FB_PS_RsnubM         FB_PS_N16995 FB_PS_N17896  46.8R TC=0,0 
-X_FB_PS_M1         FB_PS_N16995 FB_PS_N12134 FB_N14259 SUM23N15-73
-C_FB_PS_CsnubD         FB_PS_N12030 FB_PS_N18140  {170p*3}  TC=0,0 
-C_FB_PS_C1         FB_PS_N12030 OUT  80p  TC=0,0 
+R_FB_PS_RsnubD         OUT FB_PS_N18140  27.4 TC=0,0 
+C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  {267p*2}  TC=0,0 
+R_FB_PS_RsnubM         FB_PS_N16995 FB_PS_N17896  23.7R TC=0,0 
+C_FB_PS_CsnubD         FB_PS_N12030 FB_PS_N18140  {204p*2}  TC=0,0 
+X_FB_PS_M1         FB_PS_N16995 FB_PS_N12134 FB_N14259 IRF630
 R_FB_RFB2         0 FB_N02226  2.55k TC=0,0 
 R_FB_RT         FB_N14542 FB_N14535  33.2k TC=0,0 
 C_FB_IF_Cin1         0 FB_N14138  10u  TC=0,0 
@@ -70,18 +70,21 @@ R_FB_Rcs         0 FB_N14259  167m TC=0,0
 R_FB_Rlp         FB_N14259 FB_N14338  4.64k TC=0,0 
 C_FB_Clp         0 FB_N14338  100p  TC=0,0 
 C_FB_Ccomp         FB_N19132 FB_N19124  50n  TC=0,0 
+R_FB_R1         FB_N003311 FB_N21188  3.75m TC=0,0 
+L_FB_L1         OUT FB_N21188  9.3nH  
+C_FB_C1         0 OUT  100n  TC=0,0 
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
-.PARAM  iout=2.5a pscale=1 n=19 lm=372.5nh rlp=160m vout=21v rls=160m rload=
+.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload=
 + {13.75r}
 
 **** RESUMING Tran.cir ****
 .END
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     Diode MODEL PARAMETERS
@@ -92,28 +95,38 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
 
 
 
-               30LJQ150        X_FB_PS_U1._DCLAMP              X_FB_PS_U1._D   
-          IS    4.793610E-06   10.000000E-15                   10.000000E-15 
-           N    2                .01                             .1          
-          BV  150                            
+               Dntsv30120ctg   X_FB_PS_U1._DCLAMP              X_FB_PS_U1._D   
+          IS  344.126000E-06   10.000000E-15                   10.000000E-15 
+           N    1.966            .01                             .1          
+          BV    1.000000E+03                 
          IBV  100.000000E-06                 
-          RS     .010855                     
-         CJO  909.704000E-12                 
-          VJ     .4                          
-           M     .462283                     
-          EG    1.3                          
-         XTI     .502388                     
+          RS     .019557                     
+         CJO    1.169220E-09                 
+          VJ     .342533                     
+           M     .499105                     
+          EG     .612843                     
+         XTI    5                            
 
 
-               X_FB_PS_U1._D7_mod              X_FB_PS_M1.DBD  
-          IS    1.000000E-06                    1.000000E-12 
-           N     .1                                          
-          BV  100                             152            
-          RS     .8                              .1          
-          TT    6.000000E-09                   50.000000E-09 
-         CJO    4.000000E-12                  400.000000E-12 
-          VJ     .6                              .38         
-           M     .45                             .35         
+               X_FB_PS_U1._D7_mod              X_FB_PS_M1.MD   X_FB_PS_M1.MD1  
+          IS    1.000000E-06                    2.599550E-15    0            
+           N     .1                              .818263       50            
+          BV  100                             200                            
+         IBV  250.000000E-06                 
+          RS     .8                              .023224                     
+          TT    6.000000E-09                                                 
+         CJO    4.000000E-12                  635.847000E-12    1.281880E-09 
+          VJ     .6                             5               1.20026      
+           M     .45                             .772431         .9          
+          FC                   10.000000E-09 
+          EG    1                            
+         XTI    2.54918                      
+
+
+               X_FB_PS_M1.MD2  X_FB_PS_M1.MD3  
+          IS  100.000000E-12  100.000000E-12 
+           N     .413904         .413904     
+          RS    3.000000E-06                 
 
 
                X_FB_PS_U1.XVccZen.DZEN 
@@ -139,9 +152,9 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
          CJO   10.000000E-12 
 
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     BJT MODEL PARAMETERS
@@ -212,9 +225,9 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            D     .52         
 
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -225,36 +238,30 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
 
 
 
-               X_FB_PS_M1.NMOS X_FB_PS_M1.PMOS 
-               NMOS            PMOS            
-       LEVEL    3               3            
-         TPG                   -1            
+               X_FB_PS_M1.MM   X_FB_PS_U1.XDRIVE._NMOS 
+               NMOS            NMOS            
+       LEVEL    1               1            
            L  100.000000E-06  100.000000E-06 
            W  100.000000E-06  100.000000E-06 
-         VTO    6.9303         -2.217355     
-          KP   11.000000E-06   20.718860E-06 
-       GAMMA    7.646016        1.582876     
-         PHI     .852922         .689983     
+         VTO    3.90614         3            
+          KP    2.70091         1            
+       GAMMA    0               0            
+         PHI     .6              .6          
       LAMBDA    0               0            
-          RS    7.500000E-03                 
+          RD                   10            
           IS    0              10.000000E-15 
           JS    0               0            
           PB     .8              .8          
         PBSW     .8              .8          
-          CJ    1.475961E-03  305.552900E-06 
+          CJ    0             101.851000E-09 
         CJSW    0               0            
-        CGSO    0               0            
-        CGDO    0               0            
+        CGSO    7.258450E-06    0            
+        CGDO   10.000000E-12    0            
         CGBO    0               0            
-        NSUB  210.000000E+15    9.000000E+15 
-         NFS  800.000000E+09                 
-         TOX  100.000000E-09  100.000000E-09 
-          XJ  500.000000E-09    0            
-          UO  650                            
+        NSUB                    1.000000E+09 
+         TOX    0               0            
+          XJ    0               0            
        UCRIT   10.000000E+03   10.000000E+03 
-       DELTA     .1                          
-         ETA  100.000000E-06                 
-       KAPPA   25.000000E-06                 
       DIOMOD    1               1            
          VFB    0               0            
         LETA    0               0            
@@ -263,40 +270,6 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
         TEMP    0               0            
          VDD    5               5            
        XPART    0               0            
-
-
-               X_FB_PS_U1.XDRIVE._NMOS 
-               NMOS            
-       LEVEL    1            
-           L  100.000000E-06 
-           W  100.000000E-06 
-         VTO    3            
-          KP    1            
-       GAMMA    0            
-         PHI     .6          
-      LAMBDA    0            
-          RD   10            
-          IS   10.000000E-15 
-          JS    0            
-          PB     .8          
-        PBSW     .8          
-          CJ  101.851000E-09 
-        CJSW    0            
-        CGSO    0            
-        CGDO    0            
-        CGBO    0            
-        NSUB    1.000000E+09 
-         TOX    0            
-          XJ    0            
-       UCRIT   10.000000E+03 
-      DIOMOD    1            
-         VFB    0            
-        LETA    0            
-        WETA    0            
-          U0    0            
-        TEMP    0            
-         VDD    5            
-       XPART    0            
 
 
                X_FB_PS_U1.XDRIVE._PMOS 
@@ -333,28 +306,9 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
        XPART    0            
 
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
-
-
- ****     Resistor MODEL PARAMETERS
-
-
-******************************************************************************
-
-
-
-
-               X_FB_PS_M1.RTEMP 
-           R    1            
-         TC1    9.000000E-03 
-         TC2    5.500000E-06 
-
-
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
-
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     Ferromagnetic Core MODEL PARAMETERS
@@ -376,9 +330,9 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            K   19.204                          19.204        
 
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -409,18 +363,17 @@ Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 
-ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.102E-03.
-         Time step =  433.7E-21, minimum allowable step size =  1.000E-18
-
-  These voltages failed to converge:
-
-    V(FB_PS_N17058)           =   -55.96mV  \   -52.42mV
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E-03.
+         Time step =  403.0E-21, minimum allowable step size =  1.000E-18
 
   These supply currents failed to converge:
 
-    I(X_FB_PS_U1.XEA.EB1)     =   -41.74uA  \   -46.37uA
-    I(V_FB_V1)                =   -17.40mA  \   -15.56mA
-    I(X_FB_PS_U1.XEA.V4)      =   -2.436uA  \   -5.558uA
+    I(X_FB_PS_U1.XEA.EB1)     =   -25.96uA  \   -27.20uA
+    I(V_FB_V1)                =   -14.47mA  \   -15.58mA
+    I(X_FB_PS_U1.Vrout)       =    16.11mA  \    16.06mA
+    I(X_FB_PS_M1.VFI2)        =   241.81uA  \   239.91uA
+    I(X_FB_PS_M1.VFI1)        =    88.66mA  \    87.86mA
+    I(X_FB_PS_U1.XEA.V4)      =   -3.710uA  \    57.71nA
 
   These devices failed to converge:
     X_FB_PS_U1.XVccZen.D1 X_FB_PS_U1.Qtim 
@@ -432,141 +385,151 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.102E
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  OUT)     .0401  (N1353995)    2.6556                  (FB_N02226)     .1081  
+(  OUT)    4.3235  (N1353995)   18.1990                  (FB_N02226)     .5804  
 
-(FB_N14138)    2.5612                 (FB_N14259)    -.0104                     
+(FB_N14138)   17.8850                 (FB_N14259)     .6208                     
 
-(FB_N14338)     .0885                 (FB_N14535)    5.0027                     
+(FB_N14338)     .6079                 (FB_N14535)    5.0027                     
 
-(FB_N14542)     .1560                 (FB_N15349)   12.0000                     
+(FB_N14542)    1.4882                 (FB_N15349)   12.0000                     
 
-(FB_N19124)     .5653                 (FB_N19132)    1.0403                     
+(FB_N19124)     .8525                 (FB_N19132)    1.7885                     
 
-(FB_PS_N12010)    2.5698              (FB_PS_N12024)     .7193                  
+(FB_N21188)    4.2790                 (FB_N003311)    4.2792                    
 
-(FB_PS_N12030)     .6742              (FB_PS_N12134)     .8033                  
+(FB_PS_N12010)   17.6800              (FB_PS_N12024)  -15.5390                  
 
-(FB_PS_N13092)     .0865              (FB_PS_N16991)    2.5138                  
+(FB_PS_N12030)  -15.5400              (FB_PS_N12134)    6.0338                  
 
-(FB_PS_N16995)    1.7392              (FB_PS_N17058)    -.0560                  
+(FB_PS_N13092)     .6482              (FB_PS_N16991)    2.1809                  
 
-(FB_PS_N17896)    6.9953              (FB_PS_N18140)     .1091                  
+(FB_PS_N16995)    2.1998              (FB_PS_N17058)  -15.4990                  
 
-(X_FB_PS_M1.3)    1.7392              (X_FB_PS_U1.1)    2.5013                  
+(FB_PS_N17896)    1.9587              (FB_PS_N18140)    4.5291                  
 
-(X_FB_PS_U1.3) 135.7E-06              (X_FB_PS_U1.6)    5.0000                  
+(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    -.2630                  
 
-(FB_IF_N129151)    1.8303             (X_FB_PS_U1.11)    4.6807                 
+(X_FB_PS_M1.6)    -.2628              (X_FB_PS_M1.7)    6.4744                  
 
-(X_FB_PS_U1.12)     .1000             (X_FB_PS_U1.15)     .1000                 
+(X_FB_PS_M1.8)     .6212              (X_FB_PS_M1.9)    1.5518                  
 
-(X_FB_PS_U1.16)    5.0000             (X_FB_PS_U1.17)     .1000                 
+(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 26.82E-15                  
 
-(X_FB_PS_U1.18)   10.3530             (X_FB_PS_U1.19)     .1000                 
+(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)   17.3690                 
 
-(X_FB_PS_U1.20)     .2000             (X_FB_PS_U1.26)   -5.0000                 
+(X_FB_PS_M1.10)   -4.9226             (X_FB_PS_M1.11)    -.2628                 
 
-(X_FB_PS_U1.27)     .3000             (X_FB_PS_U1.29)     .1000                 
+(X_FB_PS_U1.11)     .1000             (X_FB_PS_U1.12)     .1000                 
 
-(X_FB_PS_U1.32)     .1000             (X_FB_PS_U1.33)     .1000                 
+(X_FB_PS_U1.15)    2.7207             (X_FB_PS_U1.16)    5.0000                 
 
-(X_FB_PS_U1.34)     .1000             (X_FB_PS_U1.35)    5.0000                 
+(X_FB_PS_U1.17)     .1000             (X_FB_PS_U1.18)   10.3530                 
 
-(X_FB_PS_U1.36)     .1000             (X_FB_PS_U1.37)     .1000                 
+(X_FB_PS_U1.19)    5.0000             (X_FB_PS_U1.20)     .2000                 
 
-(X_FB_PS_U1.38)     .1000             (X_FB_PS_U1.39)    5.0000                 
+(X_FB_PS_U1.26)   -5.0000             (X_FB_PS_U1.27)    3.5000                 
 
-(X_FB_PS_U1.41)     .1000             (X_FB_PS_U1.43)-93.88E-24                 
+(X_FB_PS_U1.29)     .1000             (X_FB_PS_U1.32)     .1000                 
 
-(X_FB_PS_U1.44)     .1562             (X_FB_PS_U1.45)    2.5013                 
+(X_FB_PS_U1.33)     .1000             (X_FB_PS_U1.34)     .1000                 
 
-(X_FB_PS_U1.46)     .0727             (X_FB_PS_U1.47)   10.3730                 
+(X_FB_PS_U1.35)    5.0000             (X_FB_PS_U1.36)     .1000                 
 
-(X_FB_PS_U1.52)     .1000             (X_FB_PS_U1.53)    4.9950                 
+(X_FB_PS_U1.37)     .1000             (X_FB_PS_U1.38)     .1000                 
 
-(X_FB_PS_U1.56)    4.9950             (X_FB_PS_U1.57)    5.0000                 
+(X_FB_PS_U1.39)-138.3E-18             (X_FB_PS_U1.41)     .1000                 
 
-(X_FB_PS_U1.59)    4.0000             (X_FB_PS_U1.60)     .5000                 
+(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .6051                 
 
-(X_FB_PS_U1.61)     .1001             (X_FB_PS_U1.63)    5.0000                 
+(X_FB_PS_U1.45)    2.5013             (X_FB_PS_U1.46)     .0727                 
 
-(X_FB_PS_U1.64)    1.5000             (X_FB_PS_U1.65)    0.0000                 
+(X_FB_PS_U1.47)   10.3730             (X_FB_PS_U1.52)     .1000                 
 
-(X_FB_PS_U1.66)    2.4500             (X_FB_PS_U1.69)     .7800                 
+(X_FB_PS_U1.53)    4.9950             (X_FB_PS_U1.56)    4.9950                 
 
-(X_FB_PS_U1.70)    3.5000             (X_FB_PS_U1.LEB) 2.500E-12                
+(X_FB_PS_U1.57)    5.0000             (X_FB_PS_U1.59)    4.0000                 
 
-(X_FB_PS_U1.Tog)     .1000            (X_FB_PS_U1.vss)    1.1056                
+(X_FB_PS_U1.60)     .5000             (X_FB_PS_U1.61)     .1001                 
 
-(X_FB_PS_U1.puls)    -.0058           (X_FB_PS_U1.X1.4)    5.0000               
+(X_FB_PS_U1.63)    5.0000             (X_FB_PS_U1.64)    1.5000                 
 
-(X_FB_PS_U1.X3.4)     .1000           (X_FB_PS_U1.X4.4)    5.0000               
+(X_FB_PS_U1.65)    0.0000             (X_FB_PS_U1.66)    2.4500                 
 
-(X_FB_PS_U1.X6.4)    5.0000           (X_FB_PS_U1.X7.4)    0.0000               
+(X_FB_PS_U1.69)     .7800             (X_FB_PS_U1.70)     .3000                 
 
-(X_FB_PS_U1.X8.4)     .1000           (X_FB_PS_U1.CSLEB)    0.0000              
+(X_FB_PS_U1.LEB)     .0033            (X_FB_PS_U1.Tog)    5.0000                
 
-(X_FB_PS_U1.ctrst)    0.0000          (X_FB_PS_U1.X10.4)     .1000              
+(X_FB_PS_U1.vss)    1.8528            (X_FB_PS_U1.puls)-2.655E-12               
 
-(X_FB_PS_U1.X12.4)     .1000          (X_FB_PS_U1.X16.4)     .1000              
+(X_FB_PS_U1.X1.4)     .1000           (X_FB_PS_U1.X3.4)     .1000               
 
-(X_FB_PS_U1.X17.4)     .1000          (X_FB_PS_U1.X18.4)     .1000              
+(X_FB_PS_U1.X4.4)    5.0000           (X_FB_PS_U1.X6.4)     .1000               
 
-(X_FB_PS_U1.X19.4)    5.0000          (X_FB_PS_U1.X20.4)     .1000              
+(X_FB_PS_U1.X7.4)    0.0000           (X_FB_PS_U1.X8.4)     .1000               
 
-(X_FB_PS_U1.X21.4)    5.0000          (X_FB_PS_U1.X29.6) 7.565E-18              
+(X_FB_PS_U1.CSLEB)    0.0000          (X_FB_PS_U1.ctrst)    0.0000              
 
-(X_FB_PS_U1.XEA.2)    9.9012          (X_FB_PS_U1.XEA.7)     .4056              
+(X_FB_PS_U1.X10.4)     .1000          (X_FB_PS_U1.X12.4)     .1000              
 
-(X_FB_PS_U1.XHD.6)    5.0000          (X_FB_PS_U1.XUV.3)   12.0000              
+(X_FB_PS_U1.X16.4)     .1000          (X_FB_PS_U1.X17.4)     .1000              
 
-(X_FB_PS_U1.XUV.4)   12.0000          (X_FB_PS_U1.ctimer)    1.1056             
+(X_FB_PS_U1.X18.4)     .1000          (X_FB_PS_U1.X19.4)    5.0000              
 
-(X_FB_PS_U1.oscout)     .1000         (X_FB_PS_U1.rstosc)     .1001             
+(X_FB_PS_U1.X20.4)     .1000          (X_FB_PS_U1.X21.4)    5.0000              
 
-(X_FB_PS_U1.uvlout)   10.3730         (X_FB_PS_U1.X0DC.4)     .1000             
+(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.8950              
 
-(X_FB_PS_U1.X13.10)    5.0000         (X_FB_PS_U1.X13.20)     .1000             
+(X_FB_PS_U1.XEA.7)    1.1528          (X_FB_PS_U1.XHD.6)    0.0000              
 
-(X_FB_PS_U1.X14.10)    5.0000         (X_FB_PS_U1.X14.20)     .1000             
+(X_FB_PS_U1.XUV.3)   12.0000          (X_FB_PS_U1.XUV.4)   12.0000              
 
-(X_FB_PS_U1.XEA.11)    9.9058         (X_FB_PS_U1.XEA.13)    9.3368             
+(X_FB_PS_U1.ctimer)    1.8528         (X_FB_PS_U1.oscout)     .1000             
 
-(X_FB_PS_U1.XEA.16)    1.0683         (X_FB_PS_U1.XTFF.3)    5.0000             
+(X_FB_PS_U1.rstosc)     .1000         (X_FB_PS_U1.uvlout)   10.3730             
 
-(X_FB_PS_U1.XTFF.4)    5.0000         (X_FB_PS_U1.XTFF.7)    3.1917             
+(X_FB_PS_U1.X0DC.4)     .1000         (X_FB_PS_U1.X13.10)    5.0000             
 
-(X_FB_PS_U1.XTFF.8)     .8101         (X_FB_PS_U1.XTFF.9)    2.0670             
+(X_FB_PS_U1.X13.20)     .1000         (X_FB_PS_U1.X14.10)    5.0000             
 
-(X_FB_PS_U1.XTog.4)     .1000         (X_FB_PS_U1.X18.HYS)     .5000            
+(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.8997             
 
-(X_FB_PS_U1.X29.Sin)    0.0000        (X_FB_PS_U1.X99DC.4)     .1000            
+(X_FB_PS_U1.XEA.13)    9.3306         (X_FB_PS_U1.XEA.16)    1.8165             
 
-(X_FB_PS_U1.XEA.OUT)    9.9058        (X_FB_PS_U1.XHD.Sin) 7.565E-18            
+(X_FB_PS_U1.XTFF.3)    5.0000         (X_FB_PS_U1.XTFF.4)    5.0000             
 
-(X_FB_PS_U1.XLEBD.3)    5.0000        (X_FB_PS_U1.XROSC.4)     .1000            
+(X_FB_PS_U1.XTFF.7)    3.5000         (X_FB_PS_U1.XTFF.8)    3.5000             
 
-(X_FB_PS_U1.XTFF.10)    3.5000        (X_FB_PS_U1.X29.X1.5)    5.0000           
+(X_FB_PS_U1.XTFF.9)     .3000         (X_FB_PS_U1.XTog.4)    5.0000             
 
-(X_FB_PS_U1.X29.X1.7)    0.0000       (X_FB_PS_U1.X29.X2.4)    0.0000           
+(X_FB_PS_U1.X18.HYS)     .5000        (X_FB_PS_U1.X29.Sin)    0.0000            
 
-(X_FB_PS_U1.X29.X3.3)    0.0000       (X_FB_PS_U1.XDRIVE.2)   -4.9135           
+(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.8997            
 
-(X_FB_PS_U1.XDRIVE.3)   -4.8986       (X_FB_PS_U1.XEA.OUT1)    9.9028           
+(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)-138.3E-18            
 
-(X_FB_PS_U1.XEA.OUT2)    9.9013       (X_FB_PS_U1.XHD.X1.5)    0.0000           
+(X_FB_PS_U1.XROSC.4)     .1000        (X_FB_PS_U1.XTFF.10)    3.5000            
 
-(X_FB_PS_U1.XHD.X1.7)    5.0000       (X_FB_PS_U1.XHD.X2.4)    0.0000           
+(X_FB_PS_U1.X29.X1.5)    5.0000       (X_FB_PS_U1.X29.X1.7)    0.0000           
 
-(X_FB_PS_U1.XHD.X3.3)    5.0000       (X_FB_PS_U1.XRstHD.4)     .1000           
+(X_FB_PS_U1.X29.X2.4)    0.0000       (X_FB_PS_U1.X29.X3.3)    5.0000           
 
-(X_FB_PS_U1.XTFF.X1.5)     .3000      (X_FB_PS_U1.XTFF.X2.5)    3.5000          
+(X_FB_PS_U1.XDRIVE.2)   -4.3518       (X_FB_PS_U1.XDRIVE.3)   -4.3312           
 
-(X_FB_PS_U1.XTFF.X3.5)    3.5000      (X_FB_PS_U1.XTFF.X4.5)    3.5000          
+(X_FB_PS_U1.XEA.OUT1)    9.8967       (X_FB_PS_U1.XEA.OUT2)    9.8952           
 
-(X_FB_PS_U1.XTFF.X5.5)    3.5000      (X_FB_PS_U1.XTFF.X6.5)     .3000          
+(X_FB_PS_U1.XHD.X1.5)    5.0000       (X_FB_PS_U1.XHD.X1.7)    0.0000           
 
-(X_FB_PS_U1.XTFF.X7.4)    5.0000      (X_FB_PS_U1.XTFF.X8.4)    5.0000      
+(X_FB_PS_U1.XHD.X2.4)    0.0000       (X_FB_PS_U1.XHD.X3.3)    0.0000           
+
+(X_FB_PS_U1.XRstHD.4)    5.0000       (X_FB_PS_U1.XTFF.X1.5)    3.5000          
+
+(X_FB_PS_U1.XTFF.X2.5)     .3000      (X_FB_PS_U1.XTFF.X3.5)    3.5000          
+
+(X_FB_PS_U1.XTFF.X4.5)    3.5000      (X_FB_PS_U1.XTFF.X5.5)     .3000          
+
+(X_FB_PS_U1.XTFF.X6.5)    3.5000      (X_FB_PS_U1.XTFF.X7.4)    5.0000          
+
+(X_FB_PS_U1.XTFF.X8.4)    5.0000      
 
 
 **** Interrupt ****
@@ -599,21 +562,25 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.102E
 **** Param: GMINSRC = 0
 **** Param: PSEUDOTRAN = 0
 **** Param: NOSTEPSRC = 0
-Convergence problem in transient analysis at Time =  1.102E-03
-         Time step =  433.7E-21, minimum allowable step size =  1.000E-18
+Convergence problem in transient analysis at Time =  1.700E-03
+         Time step =  193.1E-21, minimum allowable step size =  1.000E-18
 
   These voltages failed to converge:
 
-    V(FB_PS_N17058)           =   -55.96mV  \   -52.42mV
+    V(FB_PS_N16991)           =     2.166V  \     2.181V
+    V(FB_PS_N17058)           =    -15.48V  \    -15.50V
 
   These supply currents failed to converge:
 
-    I(X_FB_PS_U1.XEA.EB1)     =   -41.74uA  \   -46.37uA
-    I(V_FB_V1)                =   -17.40mA  \   -15.56mA
-    I(X_FB_PS_U1.XEA.V4)      =   -2.436uA  \   -5.558uA
+    I(X_FB_PS_U1.XEA.EB1)     =   -13.77uA  \   -25.87uA
+    I(V_FB_V1)                =   -11.11mA  \   -15.29mA
+    I(X_FB_PS_U1.Vrout)       =    16.60mA  \    15.87mA
+    I(X_FB_PS_M1.VFI2)        =   242.54uA  \   241.06uA
+    I(X_FB_PS_M1.VFI1)        =    89.03mA  \    88.35mA
+    I(X_FB_PS_U1.XEA.V4)      =    1.229uA  \    1.900uA
 
   These devices failed to converge:
-    X_FB_PS_U1.XVccZen.D1 X_FB_PS_U1.Qtim 
+    X_FB_PS_U1.Qtim 
 
 
 
@@ -622,310 +589,155 @@ Convergence problem in transient analysis at Time =  1.102E-03
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  OUT)     .0401  (N1353995)    2.6556                  (FB_N02226)     .1081  
+(  OUT)    4.3235  (N1353995)   18.1990                  (FB_N02226)     .5804  
 
-(FB_N14138)    2.5612                 (FB_N14259)    -.0104                     
+(FB_N14138)   17.8850                 (FB_N14259)     .6208                     
 
-(FB_N14338)     .0885                 (FB_N14535)    5.0027                     
+(FB_N14338)     .6079                 (FB_N14535)    5.0027                     
 
-(FB_N14542)     .1560                 (FB_N15349)   12.0000                     
+(FB_N14542)    1.4882                 (FB_N15349)   12.0000                     
 
-(FB_N19124)     .5653                 (FB_N19132)    1.0403                     
+(FB_N19124)     .8525                 (FB_N19132)    1.7885                     
 
-(FB_PS_N12010)    2.5698              (FB_PS_N12024)     .7193                  
+(FB_N21188)    4.2790                 (FB_N003311)    4.2792                    
 
-(FB_PS_N12030)     .6742              (FB_PS_N12134)     .8033                  
+(FB_PS_N12010)   17.6800              (FB_PS_N12024)  -15.5390                  
 
-(FB_PS_N13092)     .0865              (FB_PS_N16991)    2.5138                  
+(FB_PS_N12030)  -15.5400              (FB_PS_N12134)    6.0338                  
 
-(FB_PS_N16995)    1.7392              (FB_PS_N17058)    -.0560                  
+(FB_PS_N13092)     .6482              (FB_PS_N16991)    2.1662                  
 
-(FB_PS_N17896)    6.9953              (FB_PS_N18140)     .1091                  
+(FB_PS_N16995)    2.1999              (FB_PS_N17058)  -15.4830                  
 
-(X_FB_PS_M1.3)    1.7392              (X_FB_PS_U1.1)    2.5013                  
+(FB_PS_N17896)    1.9587              (FB_PS_N18140)    4.5291                  
 
-(X_FB_PS_U1.3) 135.7E-06              (X_FB_PS_U1.6)    5.0000                  
+(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    -.2630                  
 
-(FB_IF_N129151)    1.8303             (X_FB_PS_U1.11)    4.6807                 
+(X_FB_PS_M1.6)    -.2628              (X_FB_PS_M1.7)    6.4744                  
 
-(X_FB_PS_U1.12)     .1000             (X_FB_PS_U1.15)     .1000                 
+(X_FB_PS_M1.8)     .6212              (X_FB_PS_M1.9)    1.5518                  
 
-(X_FB_PS_U1.16)    5.0000             (X_FB_PS_U1.17)     .1000                 
+(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 26.82E-15                  
 
-(X_FB_PS_U1.18)   10.3530             (X_FB_PS_U1.19)     .1000                 
+(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)   17.3690                 
 
-(X_FB_PS_U1.20)     .2000             (X_FB_PS_U1.26)   -5.0000                 
+(X_FB_PS_M1.10)   -4.9226             (X_FB_PS_M1.11)    -.2628                 
 
-(X_FB_PS_U1.27)     .3000             (X_FB_PS_U1.29)     .1000                 
+(X_FB_PS_U1.11)     .1000             (X_FB_PS_U1.12)     .1000                 
 
-(X_FB_PS_U1.32)     .1000             (X_FB_PS_U1.33)     .1000                 
+(X_FB_PS_U1.15)    2.7207             (X_FB_PS_U1.16)    5.0000                 
 
-(X_FB_PS_U1.34)     .1000             (X_FB_PS_U1.35)    5.0000                 
+(X_FB_PS_U1.17)     .1000             (X_FB_PS_U1.18)   10.3530                 
 
-(X_FB_PS_U1.36)     .1000             (X_FB_PS_U1.37)     .1000                 
+(X_FB_PS_U1.19)    5.0000             (X_FB_PS_U1.20)     .2000                 
 
-(X_FB_PS_U1.38)     .1000             (X_FB_PS_U1.39)    5.0000                 
+(X_FB_PS_U1.26)   -5.0000             (X_FB_PS_U1.27)    3.5000                 
 
-(X_FB_PS_U1.41)     .1000             (X_FB_PS_U1.43)-93.88E-24                 
+(X_FB_PS_U1.29)     .1000             (X_FB_PS_U1.32)     .1000                 
 
-(X_FB_PS_U1.44)     .1562             (X_FB_PS_U1.45)    2.5013                 
+(X_FB_PS_U1.33)     .1000             (X_FB_PS_U1.34)     .1000                 
 
-(X_FB_PS_U1.46)     .0727             (X_FB_PS_U1.47)   10.3730                 
+(X_FB_PS_U1.35)    5.0000             (X_FB_PS_U1.36)     .1000                 
 
-(X_FB_PS_U1.52)     .1000             (X_FB_PS_U1.53)    4.9950                 
+(X_FB_PS_U1.37)     .1000             (X_FB_PS_U1.38)     .1000                 
 
-(X_FB_PS_U1.56)    4.9950             (X_FB_PS_U1.57)    5.0000                 
+(X_FB_PS_U1.39)-138.3E-18             (X_FB_PS_U1.41)     .1000                 
 
-(X_FB_PS_U1.59)    4.0000             (X_FB_PS_U1.60)     .5000                 
+(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .6051                 
 
-(X_FB_PS_U1.61)     .1001             (X_FB_PS_U1.63)    5.0000                 
+(X_FB_PS_U1.45)    2.5013             (X_FB_PS_U1.46)     .0727                 
 
-(X_FB_PS_U1.64)    1.5000             (X_FB_PS_U1.65)    0.0000                 
+(X_FB_PS_U1.47)   10.3730             (X_FB_PS_U1.52)     .1000                 
 
-(X_FB_PS_U1.66)    2.4500             (X_FB_PS_U1.69)     .7800                 
+(X_FB_PS_U1.53)    4.9950             (X_FB_PS_U1.56)    4.9950                 
 
-(X_FB_PS_U1.70)    3.5000             (X_FB_PS_U1.LEB) 2.500E-12                
+(X_FB_PS_U1.57)    5.0000             (X_FB_PS_U1.59)    4.0000                 
 
-(X_FB_PS_U1.Tog)     .1000            (X_FB_PS_U1.vss)    1.1056                
+(X_FB_PS_U1.60)     .5000             (X_FB_PS_U1.61)     .1001                 
 
-(X_FB_PS_U1.puls)    -.0058           (X_FB_PS_U1.X1.4)    5.0000               
+(X_FB_PS_U1.63)    5.0000             (X_FB_PS_U1.64)    1.5000                 
 
-(X_FB_PS_U1.X3.4)     .1000           (X_FB_PS_U1.X4.4)    5.0000               
+(X_FB_PS_U1.65)    0.0000             (X_FB_PS_U1.66)    2.4500                 
 
-(X_FB_PS_U1.X6.4)    5.0000           (X_FB_PS_U1.X7.4)    0.0000               
+(X_FB_PS_U1.69)     .7800             (X_FB_PS_U1.70)     .3000                 
 
-(X_FB_PS_U1.X8.4)     .1000           (X_FB_PS_U1.CSLEB)    0.0000              
+(X_FB_PS_U1.LEB)     .0033            (X_FB_PS_U1.Tog)    5.0000                
 
-(X_FB_PS_U1.ctrst)    0.0000          (X_FB_PS_U1.X10.4)     .1000              
+(X_FB_PS_U1.vss)    1.8528            (X_FB_PS_U1.puls)-2.655E-12               
 
-(X_FB_PS_U1.X12.4)     .1000          (X_FB_PS_U1.X16.4)     .1000              
+(X_FB_PS_U1.X1.4)     .1000           (X_FB_PS_U1.X3.4)     .1000               
 
-(X_FB_PS_U1.X17.4)     .1000          (X_FB_PS_U1.X18.4)     .1000              
+(X_FB_PS_U1.X4.4)    5.0000           (X_FB_PS_U1.X6.4)     .1000               
 
-(X_FB_PS_U1.X19.4)    5.0000          (X_FB_PS_U1.X20.4)     .1000              
+(X_FB_PS_U1.X7.4)    0.0000           (X_FB_PS_U1.X8.4)     .1000               
 
-(X_FB_PS_U1.X21.4)    5.0000          (X_FB_PS_U1.X29.6) 7.565E-18              
+(X_FB_PS_U1.CSLEB)    0.0000          (X_FB_PS_U1.ctrst)    0.0000              
 
-(X_FB_PS_U1.XEA.2)    9.9012          (X_FB_PS_U1.XEA.7)     .4056              
+(X_FB_PS_U1.X10.4)     .1000          (X_FB_PS_U1.X12.4)     .1000              
 
-(X_FB_PS_U1.XHD.6)    5.0000          (X_FB_PS_U1.XUV.3)   12.0000              
+(X_FB_PS_U1.X16.4)     .1000          (X_FB_PS_U1.X17.4)     .1000              
 
-(X_FB_PS_U1.XUV.4)   12.0000          (X_FB_PS_U1.ctimer)    1.1056             
+(X_FB_PS_U1.X18.4)     .1000          (X_FB_PS_U1.X19.4)    5.0000              
 
-(X_FB_PS_U1.oscout)     .1000         (X_FB_PS_U1.rstosc)     .1001             
+(X_FB_PS_U1.X20.4)     .1000          (X_FB_PS_U1.X21.4)    5.0000              
 
-(X_FB_PS_U1.uvlout)   10.3730         (X_FB_PS_U1.X0DC.4)     .1000             
+(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.8950              
 
-(X_FB_PS_U1.X13.10)    5.0000         (X_FB_PS_U1.X13.20)     .1000             
+(X_FB_PS_U1.XEA.7)    1.1528          (X_FB_PS_U1.XHD.6)    0.0000              
 
-(X_FB_PS_U1.X14.10)    5.0000         (X_FB_PS_U1.X14.20)     .1000             
+(X_FB_PS_U1.XUV.3)   12.0000          (X_FB_PS_U1.XUV.4)   12.0000              
 
-(X_FB_PS_U1.XEA.11)    9.9058         (X_FB_PS_U1.XEA.13)    9.3368             
+(X_FB_PS_U1.ctimer)    1.8528         (X_FB_PS_U1.oscout)     .1000             
 
-(X_FB_PS_U1.XEA.16)    1.0683         (X_FB_PS_U1.XTFF.3)    5.0000             
+(X_FB_PS_U1.rstosc)     .1000         (X_FB_PS_U1.uvlout)   10.3730             
 
-(X_FB_PS_U1.XTFF.4)    5.0000         (X_FB_PS_U1.XTFF.7)    3.1917             
+(X_FB_PS_U1.X0DC.4)     .1000         (X_FB_PS_U1.X13.10)    5.0000             
 
-(X_FB_PS_U1.XTFF.8)     .8101         (X_FB_PS_U1.XTFF.9)    2.0670             
+(X_FB_PS_U1.X13.20)     .1000         (X_FB_PS_U1.X14.10)    5.0000             
 
-(X_FB_PS_U1.XTog.4)     .1000         (X_FB_PS_U1.X18.HYS)     .5000            
+(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.8997             
 
-(X_FB_PS_U1.X29.Sin)    0.0000        (X_FB_PS_U1.X99DC.4)     .1000            
+(X_FB_PS_U1.XEA.13)    9.3306         (X_FB_PS_U1.XEA.16)    1.8165             
 
-(X_FB_PS_U1.XEA.OUT)    9.9058        (X_FB_PS_U1.XHD.Sin) 7.565E-18            
+(X_FB_PS_U1.XTFF.3)    5.0000         (X_FB_PS_U1.XTFF.4)    5.0000             
 
-(X_FB_PS_U1.XLEBD.3)    5.0000        (X_FB_PS_U1.XROSC.4)     .1000            
+(X_FB_PS_U1.XTFF.7)    3.5000         (X_FB_PS_U1.XTFF.8)    3.5000             
 
-(X_FB_PS_U1.XTFF.10)    3.5000        (X_FB_PS_U1.X29.X1.5)    5.0000           
+(X_FB_PS_U1.XTFF.9)     .3000         (X_FB_PS_U1.XTog.4)    5.0000             
 
-(X_FB_PS_U1.X29.X1.7)    0.0000       (X_FB_PS_U1.X29.X2.4)    0.0000           
+(X_FB_PS_U1.X18.HYS)     .5000        (X_FB_PS_U1.X29.Sin)    0.0000            
 
-(X_FB_PS_U1.X29.X3.3)    0.0000       (X_FB_PS_U1.XDRIVE.2)   -4.9135           
+(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.8997            
 
-(X_FB_PS_U1.XDRIVE.3)   -4.8986       (X_FB_PS_U1.XEA.OUT1)    9.9028           
+(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)-138.3E-18            
 
-(X_FB_PS_U1.XEA.OUT2)    9.9013       (X_FB_PS_U1.XHD.X1.5)    0.0000           
+(X_FB_PS_U1.XROSC.4)     .1000        (X_FB_PS_U1.XTFF.10)    3.5000            
 
-(X_FB_PS_U1.XHD.X1.7)    5.0000       (X_FB_PS_U1.XHD.X2.4)    0.0000           
+(X_FB_PS_U1.X29.X1.5)    5.0000       (X_FB_PS_U1.X29.X1.7)    0.0000           
 
-(X_FB_PS_U1.XHD.X3.3)    5.0000       (X_FB_PS_U1.XRstHD.4)     .1000           
+(X_FB_PS_U1.X29.X2.4)    0.0000       (X_FB_PS_U1.X29.X3.3)    5.0000           
 
-(X_FB_PS_U1.XTFF.X1.5)     .3000      (X_FB_PS_U1.XTFF.X2.5)    3.5000          
+(X_FB_PS_U1.XDRIVE.2)   -4.3518       (X_FB_PS_U1.XDRIVE.3)   -4.3312           
 
-(X_FB_PS_U1.XTFF.X3.5)    3.5000      (X_FB_PS_U1.XTFF.X4.5)    3.5000          
+(X_FB_PS_U1.XEA.OUT1)    9.8967       (X_FB_PS_U1.XEA.OUT2)    9.8952           
 
-(X_FB_PS_U1.XTFF.X5.5)    3.5000      (X_FB_PS_U1.XTFF.X6.5)     .3000          
+(X_FB_PS_U1.XHD.X1.5)    5.0000       (X_FB_PS_U1.XHD.X1.7)    0.0000           
 
-(X_FB_PS_U1.XTFF.X7.4)    5.0000      (X_FB_PS_U1.XTFF.X8.4)    5.0000      
+(X_FB_PS_U1.XHD.X2.4)    0.0000       (X_FB_PS_U1.XHD.X3.3)    0.0000           
+
+(X_FB_PS_U1.XRstHD.4)    5.0000       (X_FB_PS_U1.XTFF.X1.5)    3.5000          
+
+(X_FB_PS_U1.XTFF.X2.5)     .3000      (X_FB_PS_U1.XTFF.X3.5)    3.5000          
+
+(X_FB_PS_U1.XTFF.X4.5)    3.5000      (X_FB_PS_U1.XTFF.X5.5)     .3000          
+
+(X_FB_PS_U1.XTFF.X6.5)    3.5000      (X_FB_PS_U1.XTFF.X7.4)    5.0000          
+
+(X_FB_PS_U1.XTFF.X8.4)    5.0000      
 
 Resuming Simulation with the following settings
 ITL4 = 354
 ABSTOL = 1.41e-009
-
-Convergence problem in transient analysis at Time =  1.136E-03
-         Time step =  596.3E-21, minimum allowable step size =  1.000E-18
-
-  These voltages failed to converge:
-
-    V(FB_PS_N16991)           =     3.460V  \     3.465V
-    V(FB_PS_N17058)           =   -55.55mV  \   -50.37mV
-
-  These supply currents failed to converge:
-
-    I(X_FB_PS_U1.XEA.EB1)     =   -42.18uA  \   -45.72uA
-    I(V_FB_V1)                =   -17.58mA  \   -15.79mA
-    I(X_FB_PS_U1.Vrout)       =    15.63mA  \    15.87mA
-    I(X_FB_PS_U1.XEA.V4)      =    1.721uA  \  -474.98nA
-
-  These devices failed to converge:
-    X_FB_PS_U1.XVccZen.D1 X_FB_PS_U1.Qtim 
-
-
-
-  Last node voltages tried were:
-
- NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
-
-
-(  OUT)     .1142  (N1353995)    3.5372                  (FB_N02226)     .1174  
-
-(FB_N14138)    3.5007                 (FB_N14259)    -.0151                     
-
-(FB_N14338)     .1495                 (FB_N14535)    5.0027                     
-
-(FB_N14542)    1.6692                 (FB_N15349)   12.0000                     
-
-(FB_N19124)     .5765                 (FB_N19132)    1.0826                     
-
-(FB_PS_N12010)    3.5153              (FB_PS_N12024)     .8542                  
-
-(FB_PS_N12030)     .7799              (FB_PS_N12134)     .5566                  
-
-(FB_PS_N13092)     .0602              (FB_PS_N16991)    3.4597                  
-
-(FB_PS_N16995)    2.5604              (FB_PS_N17058)    -.0556                  
-
-(FB_PS_N17896)   11.5500              (FB_PS_N18140)     .2130                  
-
-(X_FB_PS_M1.3)    2.5604              (X_FB_PS_U1.1)    2.5013                  
-
-(X_FB_PS_U1.3) 829.3E-18              (X_FB_PS_U1.6)     .1000                  
-
-(FB_IF_N129151)    2.7043             (X_FB_PS_U1.11)     .1000                 
-
-(X_FB_PS_U1.12)     .1000             (X_FB_PS_U1.15)     .1000                 
-
-(X_FB_PS_U1.16)    5.0000             (X_FB_PS_U1.17)     .1000                 
-
-(X_FB_PS_U1.18)   10.3530             (X_FB_PS_U1.19)     .1000                 
-
-(X_FB_PS_U1.20)     .2000             (X_FB_PS_U1.26)   -5.0000                 
-
-(X_FB_PS_U1.27)    3.5000             (X_FB_PS_U1.29)     .1000                 
-
-(X_FB_PS_U1.32)     .1000             (X_FB_PS_U1.33)     .1000                 
-
-(X_FB_PS_U1.34)     .1000             (X_FB_PS_U1.35)    5.0000                 
-
-(X_FB_PS_U1.36)     .1000             (X_FB_PS_U1.37)     .1000                 
-
-(X_FB_PS_U1.38)     .1000             (X_FB_PS_U1.39)-29.89E-21                 
-
-(X_FB_PS_U1.41)     .1000             (X_FB_PS_U1.43)    5.0000                 
-
-(X_FB_PS_U1.44)     .1816             (X_FB_PS_U1.45)    2.5013                 
-
-(X_FB_PS_U1.46)     .0727             (X_FB_PS_U1.47)   10.3730                 
-
-(X_FB_PS_U1.52)     .1000             (X_FB_PS_U1.53)    4.9950                 
-
-(X_FB_PS_U1.56)    4.9950             (X_FB_PS_U1.57)    5.0000                 
-
-(X_FB_PS_U1.59)    4.0000             (X_FB_PS_U1.60)     .5000                 
-
-(X_FB_PS_U1.61)     .1001             (X_FB_PS_U1.63)    5.0000                 
-
-(X_FB_PS_U1.64)    1.5000             (X_FB_PS_U1.65)    0.0000                 
-
-(X_FB_PS_U1.66)    2.4500             (X_FB_PS_U1.69)     .7800                 
-
-(X_FB_PS_U1.70)     .3000             (X_FB_PS_U1.LEB) 2.559E-12                
-
-(X_FB_PS_U1.Tog)    5.0000            (X_FB_PS_U1.vss)    1.1479                
-
-(X_FB_PS_U1.puls)-82.11E-15           (X_FB_PS_U1.X1.4)     .1000               
-
-(X_FB_PS_U1.X3.4)     .1000           (X_FB_PS_U1.X4.4)    5.0000               
-
-(X_FB_PS_U1.X6.4)     .1000           (X_FB_PS_U1.X7.4)    0.0000               
-
-(X_FB_PS_U1.X8.4)     .1000           (X_FB_PS_U1.CSLEB)    0.0000              
-
-(X_FB_PS_U1.ctrst)    0.0000          (X_FB_PS_U1.X10.4)     .1000              
-
-(X_FB_PS_U1.X12.4)     .1000          (X_FB_PS_U1.X16.4)     .1000              
-
-(X_FB_PS_U1.X17.4)     .1000          (X_FB_PS_U1.X18.4)     .1000              
-
-(X_FB_PS_U1.X19.4)    5.0000          (X_FB_PS_U1.X20.4)     .1000              
-
-(X_FB_PS_U1.X21.4)    5.0000          (X_FB_PS_U1.X29.6)    5.0000              
-
-(X_FB_PS_U1.XEA.2)    9.9011          (X_FB_PS_U1.XEA.7)     .4479              
-
-(X_FB_PS_U1.XHD.6)    5.0000          (X_FB_PS_U1.XUV.3)   12.0000              
-
-(X_FB_PS_U1.XUV.4)   12.0000          (X_FB_PS_U1.ctimer)    1.1479             
-
-(X_FB_PS_U1.oscout)     .1000         (X_FB_PS_U1.rstosc)     .1000             
-
-(X_FB_PS_U1.uvlout)   10.3730         (X_FB_PS_U1.X0DC.4)     .1000             
-
-(X_FB_PS_U1.X13.10)    5.0000         (X_FB_PS_U1.X13.20)     .1000             
-
-(X_FB_PS_U1.X14.10)    5.0000         (X_FB_PS_U1.X14.20)     .1000             
-
-(X_FB_PS_U1.XEA.11)    9.9057         (X_FB_PS_U1.XEA.13)    9.3367             
-
-(X_FB_PS_U1.XEA.16)    1.1106         (X_FB_PS_U1.XTFF.3)    5.0000             
-
-(X_FB_PS_U1.XTFF.4)    5.0000         (X_FB_PS_U1.XTFF.7)    3.5000             
-
-(X_FB_PS_U1.XTFF.8)    3.5000         (X_FB_PS_U1.XTFF.9)     .3000             
-
-(X_FB_PS_U1.XTog.4)    5.0000         (X_FB_PS_U1.X18.HYS)     .5000            
-
-(X_FB_PS_U1.X29.Sin)    0.0000        (X_FB_PS_U1.X99DC.4)     .1000            
-
-(X_FB_PS_U1.XEA.OUT)    9.9057        (X_FB_PS_U1.XHD.Sin)    0.0000            
-
-(X_FB_PS_U1.XLEBD.3)-29.89E-21        (X_FB_PS_U1.XROSC.4)     .1000            
-
-(X_FB_PS_U1.XTFF.10)    3.5000        (X_FB_PS_U1.X29.X1.5)    5.0000           
-
-(X_FB_PS_U1.X29.X1.7)    0.0000       (X_FB_PS_U1.X29.X2.4)    0.0000           
-
-(X_FB_PS_U1.X29.X3.3)    5.0000       (X_FB_PS_U1.XDRIVE.2)   -4.9398           
-
-(X_FB_PS_U1.XDRIVE.3)   -4.9210       (X_FB_PS_U1.XEA.OUT1)    9.9027           
-
-(X_FB_PS_U1.XEA.OUT2)    9.9012       (X_FB_PS_U1.XHD.X1.5)    5.0000           
-
-(X_FB_PS_U1.XHD.X1.7)    0.0000       (X_FB_PS_U1.XHD.X2.4)    0.0000           
-
-(X_FB_PS_U1.XHD.X3.3)    5.0000       (X_FB_PS_U1.XRstHD.4)     .1000           
-
-(X_FB_PS_U1.XTFF.X1.5)    3.5000      (X_FB_PS_U1.XTFF.X2.5)     .3000          
-
-(X_FB_PS_U1.XTFF.X3.5)    3.5000      (X_FB_PS_U1.XTFF.X4.5)    3.5000          
-
-(X_FB_PS_U1.XTFF.X5.5)     .3000      (X_FB_PS_U1.XTFF.X6.5)    3.5000          
-
-(X_FB_PS_U1.XTFF.X7.4)    5.0000      (X_FB_PS_U1.XTFF.X8.4)    5.0000      
-
-Resuming Simulation with the following settings
-ITL4 = 354
-ABSTOL = 2e-006
 
 
 
@@ -935,13 +747,13 @@ ABSTOL = 2e-006
  ITL2 = 20
  ITL4 = 100
  RELTOL = 0.001
- ABSTOL = 1.99526e-006
+ ABSTOL = 1.41254e-009
  VNTOL = 1e-006
  PIVTOL = 1e-013
 
-**** 11/09/17 11:55:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/15/17 15:37:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
+ ** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-psp
 
 
  ****     JOB STATISTICS SUMMARY
@@ -951,5 +763,5 @@ ABSTOL = 2e-006
 
 
 
-  Total job time (using Solver 1)   =      164.59
+  Total job time (using Solver 1)   =      289.77
 

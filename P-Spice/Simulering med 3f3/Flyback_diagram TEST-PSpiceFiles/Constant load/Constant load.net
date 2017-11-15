@@ -2,7 +2,7 @@
 V_FB_V1         FB_N15349 0 12V
 R_FB_Rcomp         FB_N02226 FB_N19124  10k TC=0,0 
 C_FB_CT         0 FB_N14542  200p  TC=0,0 
-C_FB_Cout         0 OUT  {56u*4}  TC=0,0 
+C_FB_Cout         0 FB_N003311  {56u*4}  TC=0,0 
 C_FB_Cref         0 FB_N14535  1u  TC=0,0 
 R_FB_RFB1         FB_N02226 OUT  18.7k TC=0,0 
 C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
@@ -12,17 +12,16 @@ L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}
 R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
 L_FB_PS_Ls         0 FB_PS_N17058  {N}  
 R_FB_PS_Rls         FB_PS_N12030 FB_PS_N12024  {Rls/3} TC=0,0 
-D_FB_PS_D1         FB_PS_N12030 OUT 30LJQ150 
+D_FB_PS_D1         FB_PS_N12030 OUT Dntsv30120ctg 
 X_FB_PS_U1         FB_N19132 FB_N02226 FB_N14338 FB_N14542 0 FB_PS_N13092
 +  FB_N15349 FB_N14535 UCCx813-1
 L_FB_PS_Lmp         FB_PS_N16991 FB_PS_N16995  {Lm}  
 L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
-R_FB_PS_RsnubD         OUT FB_PS_N18140  46.8R TC=0,0 
-C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  900p  TC=0,0 
-R_FB_PS_RsnubM         FB_PS_N16995 FB_PS_N17896  46.8R TC=0,0 
-X_FB_PS_M1         FB_PS_N16995 FB_PS_N12134 FB_N14259 SUM23N15-73
-C_FB_PS_CsnubD         FB_PS_N12030 FB_PS_N18140  {170p*3}  TC=0,0 
-C_FB_PS_C1         FB_PS_N12030 OUT  80p  TC=0,0 
+R_FB_PS_RsnubD         OUT FB_PS_N18140  27.4 TC=0,0 
+C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  {267p*2}  TC=0,0 
+R_FB_PS_RsnubM         FB_PS_N16995 FB_PS_N17896  23.7R TC=0,0 
+C_FB_PS_CsnubD         FB_PS_N12030 FB_PS_N18140  {204p*2}  TC=0,0 
+X_FB_PS_M1         FB_PS_N16995 FB_PS_N12134 FB_N14259 IRF630
 R_FB_RFB2         0 FB_N02226  2.55k TC=0,0 
 R_FB_RT         FB_N14542 FB_N14535  33.2k TC=0,0 
 C_FB_IF_Cin1         0 FB_N14138  10u  TC=0,0 
@@ -33,8 +32,11 @@ R_FB_Rcs         0 FB_N14259  167m TC=0,0
 R_FB_Rlp         FB_N14259 FB_N14338  4.64k TC=0,0 
 C_FB_Clp         0 FB_N14338  100p  TC=0,0 
 C_FB_Ccomp         FB_N19132 FB_N19124  50n  TC=0,0 
+R_FB_R1         FB_N003311 FB_N21188  3.75m TC=0,0 
+L_FB_L1         OUT FB_N21188  9.3nH  
+C_FB_C1         0 OUT  100n  TC=0,0 
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
-.PARAM  iout=2.5a pscale=1 n=19 lm=372.5nh rlp=160m vout=21v rls=160m rload=
+.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload=
 + {13.75r}

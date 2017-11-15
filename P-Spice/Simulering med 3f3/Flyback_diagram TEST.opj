@@ -31,6 +31,9 @@
          ".\flyback_diagram test-pspicefiles\constant load\tran.sim"))
     (Folder "Model Libraries"
       (Sort User)
+      (File ".\ntsv30120ctg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\ntsv30120ctg.lib"))
       (File ".\uccx813-1.lib"
         (Type "PSpiceLibrary")
         (DisplayName ".\uccx813-1.lib"))
@@ -51,14 +54,23 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (0
+    (L
+      (FullPartName "L.Normal")
       (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (IRF630
+      (FullPartName "IRF630.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\IRF.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
     (UCCx813-1
       (FullPartName "UCCx813-1.Normal")
@@ -87,62 +99,56 @@
   (Folder "Referenced Projects"
     (File ".\flyback_diagram.opj"
       (Type "Orcad Project")))
-  (MPSSessionName "Nicolai Fransen")
+  (MPSSessionName "Jesper")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn")
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn")
       (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
          "Constant load")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
-         "Gain-Phase")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
-         "Load Step")
       (Path "Referenced Projects")
       (Select "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
          "Constant load" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 213 0 506"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 100 0 690"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 638 78 413")
-        (Scroll "565 207")
-        (Zoom "172")
+        (Placement "44 0 1 -1 -1 -8 -31 52 373 52 366")
+        (Scroll "206 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM TEST.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM TEST.DSN")
       (Schematic "Constant load")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 836 130 465")
-        (Scroll "305 30")
+        (Placement "44 0 1 -1 -1 -8 -31 130 451 130 444")
+        (Scroll "0 105")
         (Zoom "100")
         (Occurrence "/FB"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
       (Schematic "Flyback")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 888 0 335")
-        (Scroll "66 0")
+        (Placement "44 0 1 -1 -1 -8 -31 0 321 0 314")
+        (Scroll "19 0")
         (Zoom "100")
         (Occurrence "/FB/PS"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
       (Schematic "Flyback converter - rtm")
       (Page "Flyback converter")))
   (LastUsedLibraryBrowseDirectory

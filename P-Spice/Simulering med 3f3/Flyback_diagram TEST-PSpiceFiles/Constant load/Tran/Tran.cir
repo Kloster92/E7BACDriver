@@ -1,4 +1,4 @@
-** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-pspicefiles\constant load\tran.sim ] 
+** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-pspicefiles\constant load\tran.sim ] 
 
 ** Creating circuit file "Tran.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,10 +6,11 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
+.LIB "../../../ntsv30120ctg.lib" 
 .LIB "../../../uccx813-1.lib" 
 .LIB "../../../mosfet.lib" 
 .LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
-* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Jesper\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
