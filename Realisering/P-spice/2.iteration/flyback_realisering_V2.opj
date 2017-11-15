@@ -1,10 +1,10 @@
-(ExpressProject "Flyback_realisering"
+(ExpressProject "flyback_realisering_V2"
   (ProjectVersion "19981106")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
     (NoModify)
-    (File ".\flyback_realisering.dsn"
+    (File ".\flyback_realisering_v2.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x"))
@@ -18,12 +18,8 @@
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (PartMRUSelector
-    (SUM23N15-73
-      (FullPartName "SUM23N15-73.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
-      (DeviceIndex "0")))
+  (PartMRUSelector)
+  (MPSSessionName "Nicolai Fransen")
   (GlobalState
     (FileView
       (Path "Design Resources"))
@@ -36,12 +32,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 921 104 439")
-        (Scroll "-80 0")
-        (Zoom "43")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "665 187")
+        (Zoom "170")
         (Occurrence "/"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\FLYBACK_REALISERING.DSN")
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\2.ITERATION\FLYBACK_REALISERING_V2.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
-  (MPSSessionName "Nicolai Fransen"))
+      (Page "PAGE1"))))
