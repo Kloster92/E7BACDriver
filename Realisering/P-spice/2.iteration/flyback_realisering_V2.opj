@@ -22,17 +22,18 @@
   (MPSSessionName "Nicolai Fransen")
   (GlobalState
     (FileView
-      (Path "Design Resources"))
+      (Path "Design Resources")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 296"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 296"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
         (Scroll "665 187")
         (Zoom "170")
         (Occurrence "/"))

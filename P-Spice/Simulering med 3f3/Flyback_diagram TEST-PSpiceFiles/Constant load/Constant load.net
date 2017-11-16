@@ -6,7 +6,7 @@ C_FB_Cout         0 FB_N003311  {56u*4}  TC=0,0
 C_FB_Cref         0 FB_N14535  1u  TC=0,0 
 R_FB_RFB1         FB_N02226 OUT  18.7k TC=0,0 
 C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
-R_FB_PS_Rg         FB_PS_N12134 FB_PS_N13092  50R TC=0,0 
+R_FB_PS_Rg         FB_PS_N12134 FB_PS_N13092  10R TC=0,0 
 Kn_FB_PS_K1         L_FB_PS_Lp L_FB_PS_Ls     0.99 KRM8/i/AL160_3F3
 L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}  
 R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
@@ -34,7 +34,6 @@ C_FB_Clp         0 FB_N14338  100p  TC=0,0
 C_FB_Ccomp         FB_N19132 FB_N19124  50n  TC=0,0 
 R_FB_R1         FB_N003311 FB_N21188  3.75m TC=0,0 
 L_FB_L1         OUT FB_N21188  9.3nH  
-C_FB_C1         0 OUT  100n  TC=0,0 
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}

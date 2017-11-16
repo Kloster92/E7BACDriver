@@ -1,0 +1,69 @@
+.SUBCKT FDPF770N15A 2 1 3
++ params: tau=70 igain=700 fs=180
+******************************************************************
+**      Fairchild Discrete Modeling Group                       **
+******************************************************************
+**      Website         www.fairchildsemi.com\models            **
+******************************************************************
+**      (C) Copyright 2009 Fairchild Semiconductor Corporation  **
+**                      All rights reserved                     **
+**                                                              **
+**                     FDPF770N15A Spice model                  **
+**                    Revision RevB, Sep 18, 2013               **
+******************************************************************
+*Nom Temp 25 deg C
+Dbreak 5 11 DbreakMOD
+Lgate 1 9 5.517e-9
+Ldrain 2 5 0.1e-9
+Lsource 3 7 2.666e-9
+RLgate 1 9 55.17
+RLdrain 2 5 1
+RLsource 3 7 26.66
+Rgate 9 6 0.24
+*trr/qrr module
+H1      1161   1141 V_H1 {tau}
+V_H1 1151    7 0V
+V0      5         1161    0
+F1       7         1161 V_F1 {-igain}
+V_F1  1171   1141 0V
+D2      1151   1161 DbodyMOD_trr
+R9      1131   1171  {tau*fs}
+C2      1161   1131  1p
+.MODEL DbodyMOD_trr D (IS=34e-12 n=1.2 RS=9.2e-3 TRS1=2.8e-3 TRS2=1e-6
++ CJO=0.27e-9 M=0.65 TT=1e-9 XTI=2.75)
+*Shielded  Gate
+D_D1 100 5 D_SG_cap
+D_D2 100 101 D_SG_cap
+R_R1 101 7 0.55
+C_C1 6 101 115e-12
+.MODEL D_SG_cap D (IS=1e-9 n=1 RS=5e-3 CJO=0.62e-9 M=0.6 t_abs=25)
+It 7 17 1
+Ebreak 11 7 17 7 157
+Rbreak 17 7 RbreakMOD 1
+.MODEL RbreakMOD RES (TC1=0.75e-3 TC2=-1e-6)
+.MODEL DbreakMOD D (RS=8e-3 TRS1=1e-3 TRS2=1e-6 )
+Rsource 7a 7 2.942e-3
+Rdrain 5 16 RdrainMOD 48.6e-3
+.MODEL RdrainMOD RES (TC1=8.7e-3 TC2=26e-6)
+M_BSIM3 16 6 7a 7a Bsim3 W=1.24 L=1.2e-6 NRS=0 NRD=0
+.MODEL Bsim3 NMOS (LEVEL=7 VERSION=3.1 MOBMOD=3 CAPMOD=2 paramchk=1 NQSMOD=0
+*Process Parameters
++ TOX=1000e-10 ;Oxide thickness
++ XJ=0.54e-6 ;Channel depth
++ NCH=1.05e17 ;Channel concentration
+*Channel current
++ U0=600 VSAT=500000 DROUT=1.8
++ DELTA=0.2 PSCBE2=0 RSH=2.942e-3
+*Threshold voltage
++ VTH0=3.68
+*Sub-threshold characteristics
++ VOFF=-0.5 NFACTOR=1.3
+*Junction diodes and capacitance
++ LINT=0.19e-6 DLC=0.19e-6
++ CGSO=120e-12 CGSL=0 CGDO=0.2e-12 CGDL=150e-12
++ CJ=0 CF=0 CKAPPA=0.25
+* Temperature parameters
++ KT1=-1.85 KT2=0 UA1=0.1e-9
++ NJ=10)
+.ENDS FDPF770N15A
+

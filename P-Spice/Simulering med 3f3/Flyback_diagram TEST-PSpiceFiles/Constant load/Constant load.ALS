@@ -92,8 +92,6 @@ R_FB_R1          FB.R1(1=FB_N003311 2=FB_N21188 ) CN @FLYBACK_DIAGRAM TEST.Const
 +TEST.Flyback(sch_1):INS20795@ANALOG.R.Normal(chips)
 L_FB_L1          FB.L1(1=OUT 2=FB_N21188 ) CN @FLYBACK_DIAGRAM TEST.Constant load(sch_1):Flyback@FLYBACK_DIAGRAM
 +TEST.Flyback(sch_1):INS21161@ANALOG.L.Normal(chips)
-C_FB_C1          FB.C1(1=0 2=OUT ) CN @FLYBACK_DIAGRAM TEST.Constant load(sch_1):Flyback@FLYBACK_DIAGRAM
-+TEST.Flyback(sch_1):INS21223@ANALOG.C.Normal(chips)
 _    _(FB.Vin=N1353995)
 _    _(FB.Vout=OUT)
 V_Vmb           Vmb(+=N1353995 -=0 ) CN @FLYBACK_DIAGRAM TEST.Constant load(sch_1):INS1353899@SOURCE.VPULSE.Normal(chips)
