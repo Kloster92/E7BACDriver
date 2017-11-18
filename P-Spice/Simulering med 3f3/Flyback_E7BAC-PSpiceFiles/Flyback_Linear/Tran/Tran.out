@@ -1,5 +1,5 @@
 
-**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
@@ -46,7 +46,7 @@ C_Co         0 OUT  10uF  TC=0,0
 X_S1    N31709 0 S 0 Flyback_Linear_S1 
 V_Vi         IN 0 {Vi}
 .PARAM  vi=26v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
-+ {(vo**2)/rl} al=91u rl=8.4r d={vo/(vi*ns/np+vo)} ns=1 t=10us np=1 fs={1/t}
++ {(vo**2)/rl} al=57.76u rl=8.4r d={vo/(vi*ns/np+vo)} ns=1 t=10us np=1 fs={1/t}
 
 .subckt Flyback_Linear_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -63,7 +63,7 @@ RS_S1         1 2 1G
 **** RESUMING Tran.cir ****
 .END
 
-**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
@@ -83,7 +83,7 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
@@ -118,7 +118,7 @@ RS_S1         1 2 1G
 
           JOB CONCLUDED
 
-**** 10/10/17 14:01:59 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
 
@@ -130,5 +130,5 @@ RS_S1         1 2 1G
 
 
 
-  Total job time (using Solver 1)   =         .47
+  Total job time (using Solver 1)   =         .53
 

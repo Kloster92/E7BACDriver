@@ -35,7 +35,7 @@
          ".\flyback_e7bac-pspicefiles\flyback dcm\flyback dcm tran.sim"
         (DisplayName "Flyback DCM-Flyback DCM tran")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback\tran.sim"))
+      (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim"))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\flyback_e7bac-pspicefiles\flyback_e7bac.lib"
@@ -56,11 +56,21 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
+         "Flyback_Linear")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
+         "Flyback DCM")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Model Libraries")
       (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"))
+      (Select "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac.dsn"
+         "Flyback_Linear" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -70,11 +80,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 130 947 130 465")
-        (Scroll "248 0")
+        (Placement "44 2 3 -1 -1 -8 -31 26 843 26 361")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_E7BAC.DSN")
-      (Schematic "Flyback")
+      (Schematic "Flyback_Linear")
       (Page "PAGE1"))))

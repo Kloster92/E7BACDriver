@@ -1,0 +1,3 @@
+Nye billeder af current sense signal, efter støjvej fjernet.
+optimering af filter ved current sense siignal.
+optimering af rise/fall time for MOSFET gate.

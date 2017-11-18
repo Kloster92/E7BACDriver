@@ -1,5 +1,5 @@
-
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -45,7 +45,7 @@ C_FB_Cref         0 FB_N14535  1u  TC=0,0
 R_FB_RFB1         FB_N02226 OUT  18.7k TC=0,0 
 C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
 R_FB_PS_Rg         FB_PS_N12134 FB_PS_N13092  50R TC=0,0 
-Kn_FB_PS_K1         L_FB_PS_Lp L_FB_PS_Ls     0.99 KRM8/i/AL160_3F3
+Kn_FB_PS_K1         L_FB_PS_Lp L_FB_PS_Ls     0.99733 KRM8/i/AL160_3F3
 L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}  
 R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
 L_FB_PS_Ls         0 FB_PS_N17058  {N}  
@@ -55,7 +55,7 @@ X_FB_PS_U1         FB_N19132 FB_N02226 FB_N14338 FB_N14542 0 FB_PS_N13092
 +  FB_N15349 FB_N14535 UCCx813-1
 L_FB_PS_Lmp         FB_PS_N16991 FB_PS_N16995  {Lm}  
 L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
-R_FB_PS_RsnubD         OUT FB_PS_N18140  27.4 TC=0,0 
+R_FB_PS_RsnubD         OUT FB_PS_N18140  27.4R TC=0,0 
 C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  {267p*2}  TC=0,0 
 R_FB_PS_RsnubM         FB_PS_N16995 FB_PS_N17896  23.7R TC=0,0 
 C_FB_PS_CsnubD         FB_PS_N12030 FB_PS_N18140  {204p*2}  TC=0,0 
@@ -67,48 +67,20 @@ C_FB_IF_Cin2         0 FB_IF_N129151  40u  TC=0,0
 L_FB_IF_Lin         N1353995 FB_N14138  3u  
 R_FB_IF_Rin         FB_IF_N129151 FB_N14138  800m TC=0,0 
 R_FB_Rcs         0 FB_N14259  167m TC=0,0 
-R_FB_Rlp         FB_N14259 FB_N14338  4.64k TC=0,0 
+R_FB_Rlp         FB_N14259 FB_N14338  374R TC=0,0 
 C_FB_Clp         0 FB_N14338  100p  TC=0,0 
 C_FB_Ccomp         FB_N19132 FB_N19124  50n  TC=0,0 
 R_FB_R1         FB_N003311 FB_N21188  3.75m TC=0,0 
 L_FB_L1         OUT FB_N21188  9.3nH  
-C_FB_C1         0 OUT  100n  TC=0,0 
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
-.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload=
-+ {13.75r}
+.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}
 
 **** RESUMING Tran.cir ****
 .END
-
-WARNING(ORPSIM-15223): Library file "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\ntsv30120ctg.lib" has changed since index file ntsv30120ctg.ind was created.
-
-WARNING(ORPSIM-15227): The timestamp changed from Tue Nov 14 09:28:27 2017 to Wed Nov 15 22:34:05 2017.
-
-INFO(ORPSIM-15422): Making new index file ntsv30120ctg.ind for library file ntsv30120ctg.lib.
-
-Index has 1 entries from 1 file(s).
-
-
-WARNING(ORPSIM-15223): Library file "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\uccx813-1.lib" has changed since index file uccx813-1.ind was created.
-
-WARNING(ORPSIM-15227): The timestamp changed from Sat Nov 11 12:16:42 2017 to Tue Jan 31 17:19:34 2012.
-
-INFO(ORPSIM-15422): Making new index file uccx813-1.ind for library file uccx813-1.lib.
-
-Index has 47 entries from 1 file(s).
-
-
-WARNING(ORPSIM-15223): Library file "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\mosfet.lib" has changed since index file mosfet.ind was created.
-
-WARNING(ORPSIM-15227): The timestamp changed from Tue Nov 07 18:56:31 2017 to Thu Jul 01 11:46:42 2010.
-
-INFO(ORPSIM-15422): Making new index file mosfet.ind for library file mosfet.lib.
-
-Index has 1 entries from 1 file(s).
 
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -178,7 +150,7 @@ Index has 1 entries from 1 file(s).
          CJO   10.000000E-12 
 
 
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -251,7 +223,7 @@ Index has 1 entries from 1 file(s).
            D     .52         
 
 
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -332,7 +304,7 @@ Index has 1 entries from 1 file(s).
        XPART    0            
 
 
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -356,7 +328,7 @@ Index has 1 entries from 1 file(s).
            K   19.204                          19.204        
 
 
-**** 11/16/17 19:27:39 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/17/17 14:42:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -389,17 +361,15 @@ Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 
-ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E-03.
-         Time step =  403.0E-21, minimum allowable step size =  1.000E-18
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.372E-03.
+         Time step =  195.3E-21, minimum allowable step size =  1.000E-18
 
   These supply currents failed to converge:
 
-    I(X_FB_PS_U1.XEA.EB1)     =   -25.96uA  \   -27.20uA
-    I(V_FB_V1)                =   -14.47mA  \   -15.58mA
-    I(X_FB_PS_U1.Vrout)       =    16.11mA  \    16.06mA
-    I(X_FB_PS_M1.VFI2)        =   241.81uA  \   239.91uA
-    I(X_FB_PS_M1.VFI1)        =    88.66mA  \    87.86mA
-    I(X_FB_PS_U1.XEA.V4)      =   -3.710uA  \    57.71nA
+    I(X_FB_PS_U1.XEA.EB1)     =   -36.08uA  \   -43.89uA
+    I(V_FB_V1)                =   -15.07mA  \   -15.57mA
+    I(X_FB_PS_U1.Vrout)       =    15.63mA  \    16.05mA
+    I(X_FB_PS_U1.XEA.V4)      =   -2.660uA  \   -17.00nA
 
   These devices failed to converge:
     X_FB_PS_U1.XVccZen.D1 X_FB_PS_U1.Qtim 
@@ -411,47 +381,47 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  OUT)    4.3235  (N1353995)   18.1990                  (FB_N02226)     .5804  
+(  OUT)    1.0242  (N1353995)    9.6597                  (FB_N02226)     .2228  
 
-(FB_N14138)   17.8850                 (FB_N14259)     .6208                     
+(FB_N14138)    9.4841                 (FB_N14259)    -.0210                     
 
-(FB_N14338)     .6079                 (FB_N14535)    5.0027                     
+(FB_N14338)     .0755                 (FB_N14535)    5.0027                     
 
-(FB_N14542)    1.4882                 (FB_N15349)   12.0000                     
+(FB_N14542)    1.4206                 (FB_N15349)   12.0000                     
 
-(FB_N19124)     .8525                 (FB_N19132)    1.7885                     
+(FB_N19124)     .6649                 (FB_N19132)    1.3771                     
 
-(FB_N21188)    4.2790                 (FB_N003311)    4.2792                    
+(FB_N21188)    1.3310                 (FB_N003311)    1.3218                    
 
-(FB_PS_N12010)   17.6800              (FB_PS_N12024)  -15.5390                  
+(FB_PS_N12010)    9.5055              (FB_PS_N12024)    1.6654                  
 
-(FB_PS_N12030)  -15.5400              (FB_PS_N12134)    6.0338                  
+(FB_PS_N12030)    1.5282              (FB_PS_N12134)    -.1861                  
 
-(FB_PS_N13092)     .6482              (FB_PS_N16991)    2.1809                  
+(FB_PS_N13092)    -.0189              (FB_PS_N16991)    8.5477                  
 
-(FB_PS_N16995)    2.1998              (FB_PS_N17058)  -15.4990                  
+(FB_PS_N16995)    5.9186              (FB_PS_N17058)    -.9610                  
 
-(FB_PS_N17896)    1.9587              (FB_PS_N18140)    4.5291                  
+(FB_PS_N17896)   12.3810              (FB_PS_N18140)    1.0307                  
 
-(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    -.2630                  
+(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    6.1728                  
 
-(X_FB_PS_M1.6)    -.2628              (X_FB_PS_M1.7)    6.4744                  
+(X_FB_PS_M1.6)    6.1263              (X_FB_PS_M1.7)    -.1998                  
 
-(X_FB_PS_M1.8)     .6212              (X_FB_PS_M1.9)    1.5518                  
+(X_FB_PS_M1.8)    -.0210              (X_FB_PS_M1.9)    5.9265                  
 
-(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 26.82E-15                  
+(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 83.22E-15                  
 
-(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)   17.3690                 
+(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)    8.8280                 
 
-(X_FB_PS_M1.10)   -4.9226             (X_FB_PS_M1.11)    -.2628                 
+(X_FB_PS_M1.10)    6.1263             (X_FB_PS_M1.11)    6.1263                 
 
 (X_FB_PS_U1.11)     .1000             (X_FB_PS_U1.12)     .1000                 
 
-(X_FB_PS_U1.15)    2.7207             (X_FB_PS_U1.16)    5.0000                 
+(X_FB_PS_U1.15)     .1000             (X_FB_PS_U1.16)    5.0000                 
 
 (X_FB_PS_U1.17)     .1000             (X_FB_PS_U1.18)   10.3530                 
 
-(X_FB_PS_U1.19)    5.0000             (X_FB_PS_U1.20)     .2000                 
+(X_FB_PS_U1.19)     .1000             (X_FB_PS_U1.20)     .2000                 
 
 (X_FB_PS_U1.26)   -5.0000             (X_FB_PS_U1.27)    3.5000                 
 
@@ -463,9 +433,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.37)     .1000             (X_FB_PS_U1.38)     .1000                 
 
-(X_FB_PS_U1.39)-138.3E-18             (X_FB_PS_U1.41)     .1000                 
+(X_FB_PS_U1.39)    0.0000             (X_FB_PS_U1.41)     .1000                 
 
-(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .6051                 
+(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .3583                 
 
 (X_FB_PS_U1.45)    2.5013             (X_FB_PS_U1.46)     .0727                 
 
@@ -483,9 +453,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.69)     .7800             (X_FB_PS_U1.70)     .3000                 
 
-(X_FB_PS_U1.LEB)     .0033            (X_FB_PS_U1.Tog)    5.0000                
+(X_FB_PS_U1.LEB) 2.500E-12            (X_FB_PS_U1.Tog)    5.0000                
 
-(X_FB_PS_U1.vss)    1.8528            (X_FB_PS_U1.puls)-2.655E-12               
+(X_FB_PS_U1.vss)    1.4423            (X_FB_PS_U1.puls)-8.239E-12               
 
 (X_FB_PS_U1.X1.4)     .1000           (X_FB_PS_U1.X3.4)     .1000               
 
@@ -503,13 +473,13 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.X20.4)     .1000          (X_FB_PS_U1.X21.4)    5.0000              
 
-(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.8950              
+(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.8991              
 
-(X_FB_PS_U1.XEA.7)    1.1528          (X_FB_PS_U1.XHD.6)    0.0000              
+(X_FB_PS_U1.XEA.7)     .7423          (X_FB_PS_U1.XHD.6)    5.0000              
 
 (X_FB_PS_U1.XUV.3)   12.0000          (X_FB_PS_U1.XUV.4)   12.0000              
 
-(X_FB_PS_U1.ctimer)    1.8528         (X_FB_PS_U1.oscout)     .1000             
+(X_FB_PS_U1.ctimer)    1.4423         (X_FB_PS_U1.oscout)     .1000             
 
 (X_FB_PS_U1.rstosc)     .1000         (X_FB_PS_U1.uvlout)   10.3730             
 
@@ -517,9 +487,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.X13.20)     .1000         (X_FB_PS_U1.X14.10)    5.0000             
 
-(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.8997             
+(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.9044             
 
-(X_FB_PS_U1.XEA.13)    9.3306         (X_FB_PS_U1.XEA.16)    1.8165             
+(X_FB_PS_U1.XEA.13)    9.3347         (X_FB_PS_U1.XEA.16)    1.4051             
 
 (X_FB_PS_U1.XTFF.3)    5.0000         (X_FB_PS_U1.XTFF.4)    5.0000             
 
@@ -529,9 +499,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.X18.HYS)     .5000        (X_FB_PS_U1.X29.Sin)    0.0000            
 
-(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.8997            
+(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.9044            
 
-(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)-138.3E-18            
+(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)    0.0000            
 
 (X_FB_PS_U1.XROSC.4)     .1000        (X_FB_PS_U1.XTFF.10)    3.5000            
 
@@ -539,15 +509,15 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.700E
 
 (X_FB_PS_U1.X29.X2.4)    0.0000       (X_FB_PS_U1.X29.X3.3)    5.0000           
 
-(X_FB_PS_U1.XDRIVE.2)   -4.3518       (X_FB_PS_U1.XDRIVE.3)   -4.3312           
+(X_FB_PS_U1.XDRIVE.2)   -5.0189       (X_FB_PS_U1.XDRIVE.3)   -4.9774           
 
-(X_FB_PS_U1.XEA.OUT1)    9.8967       (X_FB_PS_U1.XEA.OUT2)    9.8952           
+(X_FB_PS_U1.XEA.OUT1)    9.9008       (X_FB_PS_U1.XEA.OUT2)    9.8992           
 
 (X_FB_PS_U1.XHD.X1.5)    5.0000       (X_FB_PS_U1.XHD.X1.7)    0.0000           
 
-(X_FB_PS_U1.XHD.X2.4)    0.0000       (X_FB_PS_U1.XHD.X3.3)    0.0000           
+(X_FB_PS_U1.XHD.X2.4)    0.0000       (X_FB_PS_U1.XHD.X3.3)    5.0000           
 
-(X_FB_PS_U1.XRstHD.4)    5.0000       (X_FB_PS_U1.XTFF.X1.5)    3.5000          
+(X_FB_PS_U1.XRstHD.4)     .1000       (X_FB_PS_U1.XTFF.X1.5)    3.5000          
 
 (X_FB_PS_U1.XTFF.X2.5)     .3000      (X_FB_PS_U1.XTFF.X3.5)    3.5000          
 

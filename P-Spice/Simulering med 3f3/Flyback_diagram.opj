@@ -122,14 +122,13 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "c:\users\nicolai fransen\documents\github\e7bacdriver\p-spice\simulering med 3f3\flyback_diagram.dsn")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries"))
+      (Path "PSpice Resources" "Model Libraries")
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 204 0 506"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
       (Tab 0))))

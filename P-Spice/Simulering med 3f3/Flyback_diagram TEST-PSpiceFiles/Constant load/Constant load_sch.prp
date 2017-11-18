@@ -895,7 +895,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"10R")
+                    ("value"	"50R")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -944,7 +944,7 @@
             ("level"	"0")
             ("model_params"
                 ("COUPLING"
-                    ("value"	"0.99")
+                    ("value"	"0.99733")
                     ("pspice_param"	"COUPLING")
                 )
                 ("L6"
@@ -1300,7 +1300,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"27.4")
+                    ("value"	"27.4R")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1919,7 +1919,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"4.64k")
+                    ("value"	"464R")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2202,37 +2202,37 @@
             ("pspice_path"	"V_Vmb")
             ("level"	"0")
             ("model_params"
-                ("PW"
-                    ("value"	"0.9s")
-                    ("pspice_param"	"PW")
-                )
-                ("TR"
-                    ("value"	"1ms")
-                    ("pspice_param"	"TR")
-                )
-                ("V1"
-                    ("value"	"0V")
-                    ("pspice_param"	"V1")
-                )
-                ("V2"
-                    ("value"	"26V")
-                    ("pspice_param"	"V2")
-                )
-                ("TD"
-                    ("value"	"1ms")
-                    ("pspice_param"	"TD")
-                )
-                ("TF"
-                    ("value"	"1ms")
-                    ("pspice_param"	"TF")
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("PER"
                     ("value"	"1s")
                     ("pspice_param"	"PER")
                 )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
+                ("TF"
+                    ("value"	"1ms")
+                    ("pspice_param"	"TF")
+                )
+                ("TD"
+                    ("value"	"1ms")
+                    ("pspice_param"	"TD")
+                )
+                ("V2"
+                    ("value"	"26V")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"0V")
+                    ("pspice_param"	"V1")
+                )
+                ("TR"
+                    ("value"	"1ms")
+                    ("pspice_param"	"TR")
+                )
+                ("PW"
+                    ("value"	"0.9s")
+                    ("pspice_param"	"PW")
                 )
                 ("AC"
                     ("value"	"")
@@ -2289,7 +2289,7 @@
                     ("pspice_param"	"rls")
                 )
                 ("rload"
-                    ("value"	"{13.75r}")
+                    ("value"	"{8.4r}")
                     ("pspice_param"	"rload")
                 )
             )

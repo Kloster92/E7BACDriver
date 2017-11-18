@@ -112,7 +112,7 @@
       (Path "PSpice Resources" "Simulation Profiles")
       (Path "Referenced Projects")
       (Select "PSpice Resources" "Simulation Profiles"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test-pspicefiles\constant load\tran.sim"))
+         ".\flyback_diagram test-pspicefiles\constant load\tran.sim"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -133,8 +133,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 895 78 413")
-        (Scroll "235 110")
+        (Placement "44 2 3 -1 -1 -8 -31 78 895 78 413")
+        (Scroll "230 315")
         (Zoom "100")
         (Occurrence "/FB"))
       (Path
@@ -144,8 +144,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 921 104 439")
-        (Scroll "0 0")
+        (Placement "44 0 1 -1 -1 -8 -31 104 921 104 439")
+        (Scroll "60 40")
         (Zoom "100")
         (Occurrence "/FB/PS"))
       (Path
