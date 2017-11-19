@@ -4,13 +4,13 @@ The top-level auxiliary file: dokumentation.aux
 A level-1 auxiliary file: tex/kravspecifikation/kravspecifikation.aux
 A level-1 auxiliary file: tex/accepttest/accepttest.aux
 A level-1 auxiliary file: tex/systemarkitektur/systemarkitektur.aux
-A level-1 auxiliary file: tex/smps/smps.aux
+A level-1 auxiliary file: tex/1iteration/1iteration.aux
 I found no \citation commands---while reading file dokumentation.aux
 I found no \bibdata command---while reading file dokumentation.aux
 I found no \bibstyle command---while reading file dokumentation.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            87 strings with 630 characters,
+            87 strings with 642 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

@@ -18,9 +18,12 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Signalbeskrivelse}{section.3.2}% 18
 \BOOKMARK [0][-]{chapter.4}{F\370rste Iteration}{}% 19
 \BOOKMARK [1][-]{section.4.1}{Switch Mode Power-Supply}{chapter.4}% 20
-\BOOKMARK [1][-]{section.4.2}{Flyback Converter}{chapter.4}% 21
-\BOOKMARK [2][-]{subsection.4.2.1}{Continuous Conduction Mode}{section.4.2}% 22
-\BOOKMARK [2][-]{subsection.4.2.2}{Discontinuous Conduction Mode}{section.4.2}% 23
-\BOOKMARK [1][-]{section.4.3}{Ideel transformator}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.4}{Udgangskondensator}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.5}{Simulering}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Buck Converter}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Flyback Converter}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.3.1}{Continuous Conduction Mode}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.2}{Discontinuous Conduction Mode}{section.4.3}% 24
+\BOOKMARK [1][-]{section.4.4}{Ideel transformator}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.4.1}{CCM}{section.4.4}% 26
+\BOOKMARK [2][-]{subsection.4.4.2}{DCM}{section.4.4}% 27
+\BOOKMARK [1][-]{section.4.5}{Udgangskondensator}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.6}{Simulering}{chapter.4}% 29

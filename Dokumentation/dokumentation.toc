@@ -21,9 +21,12 @@
 \contentsline {subsection}{\numberline {3.2.1}Signalbeskrivelse}{17}{subsection.3.2.1}
 \contentsline {chapter}{\chapternumberline {4}F\IeC {\o }rste Iteration}{18}{chapter.4}
 \contentsline {section}{\numberline {4.1}Switch Mode Power-Supply}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Flyback Converter}{18}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Continuous Conduction Mode}{19}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Discontinuous Conduction Mode}{20}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Ideel transformator}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Udgangskondensator}{21}{section.4.4}
-\contentsline {section}{\numberline {4.5}Simulering}{21}{section.4.5}
+\contentsline {section}{\numberline {4.2}Buck Converter}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}Flyback Converter}{19}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Continuous Conduction Mode}{20}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Discontinuous Conduction Mode}{21}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Ideel transformator}{22}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}CCM}{22}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}DCM}{23}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Udgangskondensator}{23}{section.4.5}
+\contentsline {section}{\numberline {4.6}Simulering}{23}{section.4.6}
