@@ -4,10 +4,10 @@ fBW = 4410;
 
 Nps = 1;
 Rout = 8.4;
-Rcs = 0.200;
+Rcs = 0.167;
 Acs = 1.65;
 D = 0.447;
-tL = 1.234;
+tL = 1.374;
 M = 0.808;
 
 Cz = 10*10^(-9);
@@ -29,29 +29,25 @@ G0 = ((Rout*Nps)/(Rcs*Acs))*(1/(((1-D)^2/tL) + (2*M)+1));
 %Gs2 = 2.839*((1+s/(4000))/(1+s/(3000)));
 %Gs3 = 5 * ((1+s/(700))/(1+s/(1700)));
 
-wesr = 70736;
-wrhpz = 17643;
+wesr = 189470;
+wrhpz = 15851;
 
-wp1 = 200.082;
+wp1 = 132.807;
 wp2 = 50000;
 
-QP = 1;
-
-sys = G0 * (((1+s/wesr)*(1-s/wrhpz))/(1+s/wp1)) * (1/(1+(s/(wp2*QP))+(s^2/wp2^2)));
-sys1 = sys * Gain;
+sys = G0 * (((1+s/wesr)*(1-s/wrhpz))/(1+s/wp1)) * (1/(1+(s/wp2)+(s^2/wp2^2)));
+sys1 = sys * (1 / (1+s/314)) * 4.45;
 %sys2 = sys * Gs2;
 %sys3 = sys * Gs3;
 
 
-g = (s+1/(2*pi*R8*C8))/1;
-
 figure(1)
-bode(g)
-% margin(sys)
-% 
-% figure(2)
-% bode(sys1)
-% margin(sys1)
+bode(sys)
+margin(sys)
+
+figure(2)
+bode(sys1)
+margin(sys1)
 % 
 % figure(3)
 % step(sys1)
