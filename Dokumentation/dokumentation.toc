@@ -34,3 +34,4 @@
 \contentsline {section}{\numberline {5.1}Transformator}{27}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Design}{28}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Simulering}{29}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Vikling af transformator}{32}{subsection.5.1.3}

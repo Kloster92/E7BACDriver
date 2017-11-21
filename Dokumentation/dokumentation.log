@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.30)  20 NOV 2017 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.30)  21 NOV 2017 13:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3666,7 +3666,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
-<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=190, pagebox=cro
+<tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf, id=195, pagebox=cro
 pbox, 459.21562pt x 255.65512pt>
 File: tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf Graphic file (t
 ype pdf)
@@ -3680,7 +3680,7 @@ Overfull \hbox (33.2145pt too wide) in paragraph at lines 46--47
  [][] 
  []
 
-<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=191, pagebox=cropbox, 
+<tex/Kravspecifikation/billeder/UseCasediagramV1.pdf, id=196, pagebox=cropbox, 
 459.21562pt x 255.65512pt>
 File: tex/Kravspecifikation/billeder/UseCasediagramV1.pdf Graphic file (type pd
 f)
@@ -4908,7 +4908,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 7.
-<tex/systemarkitektur/billeder/BDD.pdf, id=296, pagebox=cropbox, 511.31024pt x 
+<tex/systemarkitektur/billeder/BDD.pdf, id=301, pagebox=cropbox, 511.31024pt x 
 445.06274pt>
 File: tex/systemarkitektur/billeder/BDD.pdf Graphic file (type pdf)
 <use tex/systemarkitektur/billeder/BDD.pdf>
@@ -4933,7 +4933,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 23.
-<tex/systemarkitektur/billeder/IBD.pdf, id=303, pagebox=cropbox, 601.04549pt x 
+<tex/systemarkitektur/billeder/IBD.pdf, id=308, pagebox=cropbox, 601.04549pt x 
 286.36986pt>
 File: tex/systemarkitektur/billeder/IBD.pdf Graphic file (type pdf)
 <use tex/systemarkitektur/billeder/IBD.pdf>
@@ -4995,7 +4995,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 15.
-<.//tex/1iteration/billeder/Buck_converter_circuit.PNG, id=418, 433.62pt x 154.
+<.//tex/1iteration/billeder/Buck_converter_circuit.PNG, id=423, 433.62pt x 154.
 77824pt>
 File: .//tex/1iteration/billeder/Buck_converter_circuit.PNG Graphic file (type 
 png)
@@ -5025,7 +5025,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
  <.//tex/1iteration/billeder/Buck_converter_circuit.PNG>]
-<.//tex/1iteration/billeder/Buck_converter_current.PNG, id=430, 499.56638pt x 3
+<.//tex/1iteration/billeder/Buck_converter_current.PNG, id=435, 499.56638pt x 3
 73.99725pt>
 File: .//tex/1iteration/billeder/Buck_converter_current.PNG Graphic file (type 
 png)
@@ -5066,7 +5066,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 52.
 [19 <.//tex/1iteration/billeder/Buck_converter_current.PNG>]
-<.//tex/1iteration/billeder/flyback_ideal.PNG, id=440, 278.54062pt x 140.32425p
+<.//tex/1iteration/billeder/flyback_ideal.PNG, id=445, 278.54062pt x 140.32425p
 t>
 File: .//tex/1iteration/billeder/flyback_ideal.PNG Graphic file (type png)
 <use .//tex/1iteration/billeder/flyback_ideal.PNG>
@@ -5100,7 +5100,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 71.
 [20 <.//tex/1iteration/billeder/flyback_ideal.PNG>]
-<.//tex/1iteration/billeder/CCM_transformer_current.PNG, id=450, 397.485pt x 18
+<.//tex/1iteration/billeder/CCM_transformer_current.PNG, id=455, 397.485pt x 18
 3.38513pt>
 File: .//tex/1iteration/billeder/CCM_transformer_current.PNG Graphic file (type
  png)
@@ -5122,7 +5122,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 84.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 84.
-<.//tex/1iteration/billeder/DCM_transformer_current.PNG, id=452, 335.45325pt x 
+<.//tex/1iteration/billeder/DCM_transformer_current.PNG, id=457, 335.45325pt x 
 179.4705pt>
 File: .//tex/1iteration/billeder/DCM_transformer_current.PNG Graphic file (type
  png)
@@ -5193,7 +5193,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 170.
-<.//tex/1iteration/billeder/flyback_ideal_diagram.PNG, id=475, 324.91388pt x 13
+<.//tex/1iteration/billeder/flyback_ideal_diagram.PNG, id=480, 324.91388pt x 13
 9.11975pt>
 File: .//tex/1iteration/billeder/flyback_ideal_diagram.PNG Graphic file (type p
 ng)
@@ -5211,14 +5211,14 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 180.
  [23]
-<.//tex/1iteration/billeder/26V_output.PNG, id=490, 604.35788pt x 403.5075pt>
+<.//tex/1iteration/billeder/26V_output.PNG, id=495, 604.35788pt x 403.5075pt>
 File: .//tex/1iteration/billeder/26V_output.PNG Graphic file (type png)
 <use .//tex/1iteration/billeder/26V_output.PNG>
 Package pdftex.def Info: .//tex/1iteration/billeder/26V_output.PNG  used on inp
 ut line 185. on input line 185.
 Package pdftex.def Info: Requested size: 604.3564pt x 403.50652pt on input line
  185.
-<.//tex/1iteration/billeder/50V_output.PNG, id=492, 608.2725pt x 399.894pt>
+<.//tex/1iteration/billeder/50V_output.PNG, id=497, 608.2725pt x 399.894pt>
 File: .//tex/1iteration/billeder/50V_output.PNG Graphic file (type png)
 <use .//tex/1iteration/billeder/50V_output.PNG>
 Package pdftex.def Info: .//tex/1iteration/billeder/50V_output.PNG  used on inp
@@ -5255,7 +5255,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--210
 []|\T1/ppl/b/n/10.95 RMS-strøm i
  []
 
-<.//tex/1iteration/billeder/26V_transformer_current.PNG, id=504, 587.49487pt x 
+<.//tex/1iteration/billeder/26V_transformer_current.PNG, id=510, 587.49487pt x 
 403.5075pt>
 File: .//tex/1iteration/billeder/26V_transformer_current.PNG Graphic file (type
  png)
@@ -5264,7 +5264,7 @@ Package pdftex.def Info: .//tex/1iteration/billeder/26V_transformer_current.PNG
   used on input line 217. on input line 217.
 Package pdftex.def Info: Requested size: 587.49342pt x 403.50652pt on input lin
 e 217.
-<.//tex/1iteration/billeder/50V_transformer_current.PNG, id=505, 585.98924pt x 
+<.//tex/1iteration/billeder/50V_transformer_current.PNG, id=511, 585.98924pt x 
 400.19513pt>
 File: .//tex/1iteration/billeder/50V_transformer_current.PNG Graphic file (type
  png)
@@ -5303,7 +5303,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
-<.//tex/2iteration/billeder/Hysteresekurve.png, id=522, 593.21625pt x 517.18219
+<.//tex/2iteration/billeder/Hysteresekurve.png, id=527, 593.21625pt x 517.18219
 pt>
 File: .//tex/2iteration/billeder/Hysteresekurve.png Graphic file (type png)
 <use .//tex/2iteration/billeder/Hysteresekurve.png>
@@ -5341,6 +5341,96 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 68.
+<.//tex/2iteration/billeder/Kernemodel.png, id=539, 750.55406pt x 255.95625pt>
+File: .//tex/2iteration/billeder/Kernemodel.png Graphic file (type png)
+<use .//tex/2iteration/billeder/Kernemodel.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/Kernemodel.png  used on inp
+ut line 72. on input line 72.
+Package pdftex.def Info: Requested size: 750.55223pt x 255.95561pt on input lin
+e 72.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 76.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 76.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 76.
+ [29]
+<.//tex/2iteration/billeder/Strom_pri_sek.png, id=551, 741.52031pt x 473.14265p
+t>
+File: .//tex/2iteration/billeder/Strom_pri_sek.png Graphic file (type png)
+<use .//tex/2iteration/billeder/Strom_pri_sek.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/Strom_pri_sek.png  used on 
+input line 79. on input line 79.
+Package pdftex.def Info: Requested size: 741.5185pt x 473.1415pt on input line 
+79.
+<.//tex/2iteration/billeder/RMS_transformator.png, id=553, 741.1439pt x 472.389
+85pt>
+File: .//tex/2iteration/billeder/RMS_transformator.png Graphic file (type png)
+<use .//tex/2iteration/billeder/RMS_transformator.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/RMS_transformator.png  used
+ on input line 87. on input line 87.
+Package pdftex.def Info: Requested size: 741.14209pt x 472.38869pt on input lin
+e 87.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 91.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 91.
+ [30 <.//tex/2iteration/billeder/Kernemodel.png> <.//tex/2iteration/billeder/St
+rom_pri_sek.png>]
+<.//tex/2iteration/billeder/Hysterese_trans.png, id=562, 739.63828pt x 473.5190
+6pt>
+File: .//tex/2iteration/billeder/Hysterese_trans.png Graphic file (type png)
+<use .//tex/2iteration/billeder/Hysterese_trans.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/Hysterese_trans.png  used o
+n input line 97. on input line 97.
+Package pdftex.def Info: Requested size: 739.63646pt x 473.51788pt on input lin
+e 97.
+<.//tex/2iteration/billeder/tabkerne.png, id=563, 741.89671pt x 472.76625pt>
+File: .//tex/2iteration/billeder/tabkerne.png Graphic file (type png)
+<use .//tex/2iteration/billeder/tabkerne.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/tabkerne.png  used on input
+ line 105. on input line 105.
+Package pdftex.def Info: Requested size: 741.8949pt x 472.76509pt on input line
+ 105.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 109.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 109.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 109.
+ [31 <.//tex/2iteration/billeder/RMS_transformator.png> <.//tex/2iteration/bill
+eder/Hysterese_trans.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 111.
+
+
+LaTeX Warning: Command \r invalid in math mode on input line 115.
+
+<.//tex/2iteration/billeder/viklingsoverblik.png, id=572, 1154.81438pt x 376.40
+625pt>
+File: .//tex/2iteration/billeder/viklingsoverblik.png Graphic file (type png)
+<use .//tex/2iteration/billeder/viklingsoverblik.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/viklingsoverblik.png  used 
+on input line 120. on input line 120.
+Package pdftex.def Info: Requested size: 1154.81157pt x 376.40532pt on input li
+ne 120.
+
+Overfull \hbox (45.11955pt too wide) in paragraph at lines 116--123
+\T1/ppl/m/n/10.95 med gra-de 2, som gi-ver en di-a-me-ter på led-nin-gen eks-kl
+u-siv iso-le-ring på $0.425[]\U/zeur/m/n/10.95 m$\T1/ppl/m/n/10.95 .(HENVISNING
+)
+ []
+
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 210.
@@ -5350,22 +5440,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 210.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 210.
- [29]
+ [32 <.//tex/2iteration/billeder/tabkerne.png> <.//tex/2iteration/billeder/vikl
+ingsoverblik.png>]
 
 LaTeX Warning: Empty bibliography on input line 230.
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 232.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 232.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 232.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 232.
-[30
-
-
-]
 
 FiXme Summary: Number of notes: 0,
 (FiXme)        Number of warnings: 0,
@@ -5384,7 +5463,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
 Package rerunfilecheck Info: File `dokumentation.out' has not changed.
-(rerunfilecheck)             Checksum: 5CAF64875A03017A9CAA5D763FE2B461;2158.
+(rerunfilecheck)             Checksum: 712436110FA7FC2730B4258F12FCFD8B;2236.
 
 
 LaTeX Warning: There were undefined references.
@@ -5403,10 +5482,10 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
  ) 
 Here is how much of TeX's memory you used:
- 45257 strings out of 492990
- 842820 string characters out of 6136334
- 1393074 words of memory out of 5000000
- 47995 multiletter control sequences out of 15000+600000
+ 45305 strings out of 492990
+ 844382 string characters out of 6136334
+ 1393844 words of memory out of 5000000
+ 48027 multiletter control sequences out of 15000+600000
  567762 words of font info for 104 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,97p,10460b,1911s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5420,10 +5499,10 @@ sfonts/euler/eufm10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb><c:/texl
 ive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2017/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on dokumentation.pdf (30 pages, 2087650 bytes).
+Output written on dokumentation.pdf (32 pages, 3802759 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
- 115 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 463 compressed objects within 5 object streams
+ 125 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 

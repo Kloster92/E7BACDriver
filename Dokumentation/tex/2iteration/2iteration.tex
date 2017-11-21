@@ -66,3 +66,58 @@ I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{rippl
 \end{equation}
 
 \subsection{Simulering}
+I Pspice er kernen og materialet afprøvet, hvor resten af kredsløbet har været med ideele komponenter, for at kontrollere strømme og B-H kurve. Her ses den pspice-model af kernematerialet som bruges:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kernemodel.png}
+	\caption{Kernemodel for RM8 3f3}
+	\label{fig: Kernemodel}
+\end{figure}
+Kernemodellen for en 3f3 kerne er indsat, hvor det udregnede air gap også er indtastet. Derudover er der 19 vindinger på primær og sekundærspole. Ellers ingen ændringer i forhold til den rent ideele simulering. Først ses simuleringen af strømmene i transformatoren på primær og sekundær side.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Strom_pri_sek.png}
+	\caption{Strøm i primær- og sekundærvikling}
+	\label{fig: prisek_strom}
+\end{figure}
+Det ses tydeligt, at der som ventes køres i CCM, da ripplestrømmene ikke når ned til 0. Ripple- og peak strøm er, som det ses, ens for primær og sekundær, og aflæses til hhv. $2.27A$ og $5.69A$. Det passer fint med det udregnede på $2.24A$ og $5.64A$.
+På figur~\ref{fig: RMS_trans} ses RMS strømmene:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/RMS_transformator.png}
+	\caption{RMS strømme i transformator (blå=primær og gul=sekundær)}
+	\label{fig: RMS_trans}
+\end{figure}
+Her aflæses den primære til $3.01A$ og den sekundære til $3.33A$, hvilket igen stemmer godt overens med det beregnede på $3.02A$ og $3.36A$.
+
+
+\noindent Herefter kigges på hysteresekurven, og sikres at den ikke kommer langt over de $250\milli T$, som der er designet efter:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Hysterese_trans.png}
+	\caption{Hysteresekurve for transformatoren}
+	\label{fig: Hysterese_trans}
+\end{figure}
+Peak fluxen ligger på ca. $265mT$ hvilket igen passer fint med det der er designet efter. Yderligere ville man kunne se i toppen og bunden af kurven, hvis den gik i mætning, hvilket den ikke gør her.
+Tabet i selve kernen er simuleret ved at tage effekten ved den primære vikling i forhold til den sekundære vikling. Tages der i pspice en average af dette fås nedenstående kurve:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/tabkerne.png}
+	\caption{Simuleret kernetab i transformator}
+	\label{fig: Kernetab}
+\end{figure}
+Tabet er simuleret til at ligge ved ca. $310\milli W$
+
+\subsection{Vikling af transformator}
+Det er vigtigt at prøve at udnytte kernens mål fuldt ud når vindingerne vikles. Med RM8 kernen er der en bredde på $8.6\milli m$ og en højde på $3.475\milli m$. Ved 2. iteration forsøges de mål udnyttet bedst muligt.
+Først udregnes den nødvendige diameter af tråden, når der skal ligge 18 vindinger per lag. 
+\begin{equation} \label{d_trad}
+d_{tråd} = \frac{8.6\milli m}{18} = 0.478\milli m
+\end{equation}
+Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en isolering med grade 2, som giver en diameter på ledningen eksklusiv isolering på $0.425\milli m$.(HENVISNING) Transformeren er 1:1, så både primær og sekundær vikles med 18 vindinger per lag. Et lag af hver giver en højde på $0.956\milli m$. Altså ikke i nærheden af de $3.475\milli m$ i højden. Derfor vikles 2 ekstra viklinger i parallel for både primær- og sekundærsiden og får dermed den tredobbelte højde. Der indsættes tape mellem hver af de parallelle viklinger. Det giver samlet en højde på $2.867\milli m$ plus tape. Det giver i alt 6 lag, 3 for primær og 3 for sekundær. Overblikket over viklingen kan ses på nedenstående tegning:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/viklingsoverblik.png}
+	\caption{Overblik over viklingsantal og tykkelse}
+	\label{fig: viklingsoverblik}
+\end{figure}
