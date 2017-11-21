@@ -121,3 +121,88 @@ Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en is
 	\caption{Overblik over viklingsantal og tykkelse}
 	\label{fig: viklingsoverblik}
 \end{figure}
+\noindent Tegnes bunden af transformatoren fås der et overblik over, hvordan viklingerne vikles. Det ses, at primær begynder og slutter i samme sidde af transformatoren, mens sekundær vikles fra den anden side.  
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Viklingsbegyndelse.png}
+	\caption{Overblik over hvordan viklingerne vikles}
+	\label{fig: viklingsbegyndelse}
+\end{figure}
+\noindent Sidste billede viser hvilken retning der vikles. Her vil primær og sekundær vikles modsatte vej af hinanden, for at få den modsatte polaritet som ønsket.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Viklingsretning.png}
+	\caption{Begyndelses retning for primær og sekundær}
+	\label{fig: viklingsretning}
+\end{figure}
+
+\subsection{Realisering}
+Mangler billede af transformator. 
+På fig ses den viklede transformator. Ved viklingen måtte det erkendes, at der ikke kunne presses 18 vindinger ind, med en ledningstykkelse på $0.425\milli m$, som ellers i forvejen var mindre end den udregnede tykkelse på $0.478\milli m$. I stedet benyttes en tykkelse på $0.425\milli m$ og der tilføjes en ekstra vikling, så det totale antal vindinger ender på 19 per vikling. (ER VI SIKRE PÅ DET IKKE NETOP ER DEN TRÅD VI HAR FÅET?? At trådtykkelsen der står er uden isolering?)
+
+\noindent \textbf{Endelig induktans}
+
+
+\noindent Da vindingstallet blev 19 i stedet for de 18, er induktansen lidt højere end beregnet i første omgang. Den endelige induktans den viklede transformator beregnes til:
+\begin{equation} \label{L_2}
+L_2 = N^2 \cdot A_L = 57.76\micro H
+\end{equation}
+Det ændrer igen en smule på ripple- og peak strømmen i transformatoren:
+\begin{equation} \label{I_ripple_final}
+I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2*f_s} = 2.01A
+\end{equation}
+\begin{equation} \label{I_pk_final}
+I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{ripple}}{2} = 5.53A
+\end{equation}
+
+\subsection{Test af transformator}
+Transformatoren er testet ved at måle både selvinduktionen i primær- og sekundærviklingerne samt spredningsselvinduktionen. Til dette blev en impedansmåler brugt. 
+
+
+\noindent Til sådan en måling er det vigtigt, at gøre ledningerne så korte som muligt, da der vil skabes yderligere induktans i dem. Derfor ses på opstillingen på figur… de meget korte ledninger samt der bliver brugt en 4-wire teknik. Det vil sige to ledninger på hver side af det der måles på. Strømmen løber i den ene af ledningerne og??????
+
+\noindent Måleresultaterne tages ved USB ud af impedansmåleren og indsættes i et Excel ark.  
+
+\noindent Først blev en kalibreringsmåling lavet, hvor ledningerne alle målte samme sted. Offsettet herfra er i Excel trukket fra de efterfølgende målinger    
+
+\noindent Herefter måles der på de 2 sider af primærviklingen, mens sekundærsiden holdes åben. På denne måde fås induktansen i den primære vikling. Da transformatoren er 1:1 er det også induktansen i den sekundære vikling. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Primarinduktans.png}
+	\caption{Målt induktans i primær vikling}
+	\label{fig: Primarinduktans}
+\end{figure}
+\noindent Her er målingen plottet med et frekvenssweep fra $100Hz$ til $1\mega Hz$. Ved de meget høje frekvenser ses det, at kapacitive parasitter tager over. Den skal benyttes omkring 100kHz og her fås værdien i Excel til $57.7\micro H$, hvilket er præcis den induktans der skulle opnås. De præcise målinger kan ses i Excel dokumentet ”Inductance primærvikling” i bilagsmappen. 
+Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens der igen måles hen over den primære vikling. I en ideel transformator bør der her måles 0. Derfor vil induktansen målt her, svare til spredningsselvinduktionen. På samme måde som før er måleresultaterne sendt til Excel hvorudfra en graf kan tegnes. De præcise målinger kan ses i Excel dokumentet ”Spredningsselvinduktion” i bilagsmappen:
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Spredningsselvinduktion.png}
+	\caption{Målt spredningsselvinduktion i transformator}
+	\label{fig: leakageinductance}
+\end{figure}
+\noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
+
+\section{Tab}
+
+\subsection{Kernetab}
+Selve kernetabet afhænger af kernematerialet, induktans og strømmen der løber i viklingerne. Først udregnes delta B.
+\begin{equation} \label{DeltaB}
+\Delta B = \frac{L \cdot I_{pk21}}{N \cdot A_0} = 263.59\milli T
+\end{equation}
+For at få peak fluxen divideres med 2. Med den kan tabet i kernen per $\frac{\kilo W}{m^3}$
+\begin{equation} \label{B}
+B = \frac{\Delta B}{2} = 131.79\milli T
+\end{equation}
+Med den information kigges i databladet under kurven for power loss som funktion af peak flux density.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Powerloss.png}
+	\caption{Power loss som funktion af peak flux density}
+	\label{fig: Powerloss}
+\end{figure}
+Her ses på de $100\kilo Hz$ ved de ca. $132\milli T$. Det aflæses til et power loss på ca. $150\frac{\kilo W}{m^3}$.
+Det samlede kernetab fås med denne værdi ganget med den effektive volumen for RM8 kernen.
+\begin{equation} \label{DeltaB}
+P = P_V \cdot V_e = 366\milli W
+\end{equation}
+Dette passer forholdsvis pænt med det simulerede tab i kernen på $310\milli W$.
