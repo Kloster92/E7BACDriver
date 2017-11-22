@@ -7,37 +7,43 @@
     (File ".\flyback_realisering_v2.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
   (Folder "Outputs")
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles")
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector)
-  (MPSSessionName "Nicolai Fransen")
+  (MPSSessionName "Jesper")
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Select "Design Resources"))
+      (Path "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\2.iteration\flyback_realisering_v2.dsn")
+      (Path "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\2.iteration\flyback_realisering_v2.dsn"
+         "SCHEMATIC1")
+      (Select "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\2.iteration\flyback_realisering_v2.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 296"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 233 0 690"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
-        (Scroll "665 187")
-        (Zoom "170")
+        (Placement "44 0 1 -1 -1 -8 -31 0 1032 0 335")
+        (Scroll "0 0")
+        (Zoom "92")
         (Occurrence "/"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\2.ITERATION\FLYBACK_REALISERING_V2.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\2.ITERATION\FLYBACK_REALISERING_V2.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))))

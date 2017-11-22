@@ -2,35 +2,40 @@
 \defcounter {refsection}{0}\relax 
 \select@language {danish}
 \contentsline {chapter}{Indhold}{2}{section*.1}
-\contentsline {chapter}{\chapternumberline {1}Kravspecifikation}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Akt\IeC {\o }r diagrammer}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Akt\IeC {\o }rbeskrivelse}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Akt\IeC {\o }r: Bruger}{5}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Akt\IeC {\o }r: Thermal Knife load}{5}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Akt\IeC {\o }r: Pyro load}{5}{subsection.1.2.3}
-\contentsline {section}{\numberline {1.3}Fully dressed use cases}{6}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Use case 1 - Aktiver Thermal Knife load}{6}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Use case 2 - Aktiver Pyro load}{7}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Ikke-funktionelle krav}{8}{section.1.4}
-\contentsline {chapter}{\chapternumberline {2}Accepttest}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Tests}{9}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Test af ikke-funktionelle krav}{11}{subsection.2.1.1}
-\contentsline {chapter}{\chapternumberline {3}Systemarkitektur}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Block Definitions Diagram}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Internal Block Diagram}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Signalbeskrivelse}{17}{subsection.3.2.1}
-\contentsline {chapter}{\chapternumberline {4}F\IeC {\o }rste Iteration}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Switch Mode Power-Supply}{18}{section.4.1}
-\contentsline {section}{\numberline {4.2}Buck Converter}{18}{section.4.2}
-\contentsline {section}{\numberline {4.3}Flyback Converter}{19}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Continuous Conduction Mode}{20}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Discontinuous Conduction Mode}{21}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Ideel transformator}{22}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}CCM}{22}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}DCM}{23}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Udgangskondensator}{23}{section.4.5}
-\contentsline {section}{\numberline {4.6}Simulering}{23}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Anden Iteration}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Transformator}{27}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Design}{28}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Simulering}{29}{subsection.5.1.2}
+\contentsline {chapter}{\chapternumberline {1}Kravspecifikation}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Akt\IeC {\o }r diagrammer}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Akt\IeC {\o }rbeskrivelse}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Akt\IeC {\o }r: Bruger}{6}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Akt\IeC {\o }r: Thermal Knife load}{6}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Akt\IeC {\o }r: Pyro load}{6}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Fully dressed use cases}{7}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Use case 1 - Aktiver Thermal Knife load}{7}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Use case 2 - Aktiver Pyro load}{8}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Ikke-funktionelle krav}{9}{section.1.4}
+\contentsline {chapter}{\chapternumberline {2}Accepttest}{10}{chapter.2}
+\contentsline {section}{\numberline {2.1}Tests}{10}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Test af ikke-funktionelle krav}{12}{subsection.2.1.1}
+\contentsline {chapter}{\chapternumberline {3}Systemarkitektur}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Block Definitions Diagram}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Internal Block Diagram}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Signalbeskrivelse}{18}{subsection.3.2.1}
+\contentsline {chapter}{\chapternumberline {4}F\IeC {\o }rste Iteration}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Switch Mode Power-Supply}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Buck Converter}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Flyback Converter}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Continuous Conduction Mode}{21}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Discontinuous Conduction Mode}{22}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Ideel transformator}{23}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}CCM}{23}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}DCM}{24}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Udgangskondensator}{24}{section.4.5}
+\contentsline {section}{\numberline {4.6}Simulering}{24}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}Anden Iteration}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Transformator}{28}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Design}{29}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Simulering}{30}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Vikling af transformator}{33}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Realisering}{34}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Test af transformator}{35}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Tab}{36}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Kernetab}{36}{subsection.5.2.1}

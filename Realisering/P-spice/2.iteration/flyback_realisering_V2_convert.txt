@@ -1,0 +1,9 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/2.iteration
+    flyback_realisering_V2.opj
+    flyback_realisering_v2.dsn
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/2.iteration/flyback_realisering_V2-PSpiceFiles
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/2.iteration/flyback_realisering_V2-PSpiceFiles/SCHEMATIC1
