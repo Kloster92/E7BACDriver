@@ -228,5 +228,45 @@ Der er to scenarier der er relevante at kigge på, ved en indgangsspænding på 
 	\label{fig:50V_transformer_current}
 \end{figure}
 
+\section{Kobbertab}
+Kobbertabet i transformatoren opstår på grund af modstanden i de kobbertråde transformatoren er viklet med. Den modstand deles op i to bidrag - en DC-modstand og en AC-modstand. DC-modstanden bestemmes ud fra længden og tykkelsen af tråden. 
 
+\subsection{DC-modstand}
+For at beregne DC-modstanden, udregnes først omkredsen af kerneformen. Transformatoren er viklet på en RM8. Denne form har i følge databladet en indre diameter på $9.95mm$ og en ydre diameter på $16.9mm$. For at finde en gennemsnitslængde på tråden, beregnes et gennemsnit af formens diameter, for derefter at beregne omkredsen af formen.
+\begin{equation} \label{Diameter}
+D = \frac{9.95mm \cdot 16.9mm}{2} = 13.43mm
+\end{equation}
+\begin{equation} \label{Omkreds}
+O = D \cdot \pi = 4.23cm
+\end{equation}
+
+Ud fra omkredsen på kerneformen, kan længden af hver kobbertråd beregnes, ved at gange med antallet af vindinger for en vikling. For den viklede transformator er $N=19$.
+\begin{equation} \label{Lengde}
+l = O \cdot N = 80.13mm
+\end{equation}
+
+Diameteren på kobbertråden er valgt til $0.425mm$. Denne diameter er inkl. lakering. Ud fra et tabelopslag ved Grade 2\cite{wire-diameter}, aflæses den nominelle kobberdiameter af denne tråd $0.375mm$.
+Ud fra denne diameter beregnes trådens tværsnitsareal.
+\begin{equation} \label{kobber-areal}
+A_{cu} = \frac{0.375mm}{2}^2 \cdot \pi = 0.11mm^2
+\end{equation}
+
+For at beregne DC-modstanden bruges kobbers resistivitet ved $100\degreeCelsius$, for at regne worst case. Denne opslås til $\rho=2.204\cdot 10^{-8}\ohm \cdot m$. Nu kan hver enkelt tråds DC-modstand bregnes ud fra trådens længde, samt tværsnitsareal.
+\begin{equation} \label{dc1-modstand}
+R_{DC1} = \frac{l \cdot \rho}{A_{cu}} = 159.91\milli\ohm
+\end{equation}
+
+Transformatoren er viklet med tre tråde i parallel ved både primær- og sekundærviklingen. Derfor beregnes den samlede modstand, ved at regne parallelmodstanden:
+\begin{equation} \label{dc-modstand}
+R_{DC} = ((R_{DC1})^{-1} \cdot 3)^{-1} = 53.3\milli\ohm
+\end{equation}
+
+Kobbertabet i transformatoren, kan nu beregnes ved RMS-strømmene i primær- og sekundærviklingerne. Hvor $I_{RMSp} = 3.02A$ og $I_{RMSs} = 3.36A$.
+\begin{equation} \label{dc-tab-pri}
+P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
+\end{equation}
+
+\begin{equation} \label{dc-tab-sek}
+P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
+\end{equation}
 
