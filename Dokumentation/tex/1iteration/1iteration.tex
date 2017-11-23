@@ -107,7 +107,7 @@ Der regnes strømme i transformatoren for både CCM og DCM, for derefter, at vur
 
 Der tages udgangspunkt i en converter der, ved en input spænding på $26V-50V$, skal kunne opretholde en udgang på $21V$ og $2.5A$. Derudover antages det at transformatoren har et omsætningsforhold på 1.
 
-\subsection{CCM}
+\subsection{CCM} \label{maksimum_duty_cycle}
 Først beregnes den maksimale og minimale duty-cycle:
 \begin{equation} \label{D_maks_CCM}
 D_{maks} = \frac{V_{out}}{V_{inmin} + V_{out}} = 0.447
@@ -229,7 +229,23 @@ Der er to scenarier der er relevante at kigge på, ved en indgangsspænding på 
 \end{figure}
 
 \section{Kobbertab}
-Kobbertabet i transformatoren opstår på grund af modstanden i de kobbertråde transformatoren er viklet med. Den modstand deles op i to bidrag - en DC-modstand og en AC-modstand. DC-modstanden bestemmes ud fra længden og tykkelsen af tråden. 
+Kobbertabet i transformatoren opstår på grund af modstanden i de kobbertråde den er viklet med. Den modstand deles op i to bidrag - en DC-modstand og en AC-modstand. DC-modstanden bestemmes ud fra længden og tykkelsen af tråden, mens AC-modstanden afhænger af indtrængningsdybden og trådens diameter. 
+
+\subsection{AC-modstand}
+AC-modstanden i viklingerne opstår på grund af, det magnetfelt kobbertrådene ligger i. Magnetfeltet skaber en hvirvelstrøm der løber i trådene. Hvirvelstrømmen vil derfor være et ekstra bidrag, til den driftsstrøm der bliver sendt ind i transformatoren. Dette vil komme til udtryk, som et ekstra bidrag til den samlede modstand i viklingerne. 
+
+AC-modstanden afhænger af indtrængningsdybden og trådens diameter. Hvis diameteren er tilpas lille i forhold til indtrængningsdybden, vil  hvirvelstrømmene i tråden udligne sig selv, og derved ikke bidrage til tabet. Er tråden til gengæld for tyk i forhold til indtrængningsdybden, vil det resultere i en hvirvelstrøm, der løber i hele trådens længde. 
+
+Måden man bestemmer AC-modstanden, er ud fra princippet \textit{Eddy Current Losses}. Det siger at forholdet mellem AC- og DC-modstanden, kan bestemmes ud fra forholdet mellem trådens diameter og indtrængningsdybden. Disse forhold er skitseret på figur~\ref{fig:Eddy_current_losses}\cite{eddy_current_losses}. Her ses det også, at AC-modstanden afhænger af hvor mange lag man vikler på transformatoren. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Eddy_current_losses.PNG}
+	\caption{Eddy Current Losses}
+	\label{fig:Eddy_current_losses}
+\end{figure}
+
+Dette er kompliceret at regne for en flyback transformator, og vil derfor ikke blive gjort i dette projekt. Derfor vil kobbertabet i transformatoren, kun være en estimering af det samlede kobbertab.
 
 \subsection{DC-modstand}
 For at beregne DC-modstanden, udregnes først omkredsen af kerneformen. Transformatoren er viklet på en RM8. Denne form har i følge databladet en indre diameter på $9.95mm$ og en ydre diameter på $16.9mm$. For at finde en gennemsnitslængde på tråden, beregnes et gennemsnit af formens diameter, for derefter at beregne omkredsen af formen.
@@ -269,4 +285,27 @@ P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
 \begin{equation} \label{dc-tab-sek}
 P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
 \end{equation}
+
+
+
+\section{PWM-controller}
+PWM-controlleren er en vigtig del af en SMPS. Det er den der står for tilpasningen af switch-signalets duty-cycle, således udgangen holdes stabilt, når inputtet påvirkes eller ændres. Det er vigtigt at vælge PWM-controller ud fra kravene til converteren. PWM-controllere er ofte begrænset til en maksimal duty-cycle på enten $50\percent$ eller $100\percent$. Derudover skal der vælges, hvilken form for regulering af converterens udgangstrin der ønskes da controlleren skal understøtte dette. 
+
+Ud fra beregningerne af den maksimale duty-cycle i afsnit~\ref{maksimum_duty_cycle}, vælges det at PWM-controlleren maksimalt skal have en duty-cycle på $50\percent$. For at kunne opnå en mere præcis regulering, vælges det at bruge peak-current regulering. Denne form for regulering, regulerer efter peak-strømmen i transformatorens primærvikling. Da den regulere efter dette, opnår man også en strømbegrænser i regulerings-loopet. Ud fra disse krav vælges en PWM-controller af typen UCC1801\cite{UCC1801}. Det er en controller Terma har erfaring med, og derfor også nemt kan udskiftes med en space-godkendt controller.
+
+\subsection{Funktionalitet}
+På figur~\ref{fig:PWM_block_diagram} ses et funktionelt blok diagram over UCC1801. Det indeholder controllerens overordnede komponenter, og giver et overblik over dens funktionalitet. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/PWM_block_diagram.PNG}
+	\caption{UCC1801 - Funktionelt Block Diagram}
+	\label{fig:PWM_block_diagram}
+\end{figure}
+
+\subsection{Under Voltage LockOut}
+UCC1801 indeholder en Under Voltage LockOut (UVLO) beskyttelse. Dette betyder at forsyningsspændingen skal være et bestemt niveau, før controlleren starter. Som en konsekvens af dette vil både outputtet og referencespændingen holdes lav, indtil grænseværdien er nået. For at have en hysteresemargin, har den både et turn ON og et turn OFF niveau. Ved UCC1801 er disse niveauer $V_{ton}=9.4V$ og $V_{toff}=7.4V$. Da amplituden af output-signalet er lig VCC, vil controlleren ikke prøve at drive MOSFET'en før $V_{CC}=9.4V$. Da en MOSFET typisk har en $V_{gs,th}=4V$, vil man ikke opnå et stadie hvor MOSFET'en kun er delvist ON.
+
+
+
 
