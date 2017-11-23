@@ -294,7 +294,7 @@ PWM-controlleren er en vigtig del af en SMPS. Det er den der står for tilpasnin
 Ud fra beregningerne af den maksimale duty-cycle i afsnit~\ref{maksimum_duty_cycle}, vælges det at PWM-controlleren maksimalt skal have en duty-cycle på $50\percent$. For at kunne opnå en mere præcis regulering, vælges det at bruge peak-current regulering. Denne form for regulering, regulerer efter peak-strømmen i transformatorens primærvikling. Da den regulere efter dette, opnår man også en strømbegrænser i regulerings-loopet. Ud fra disse krav vælges en PWM-controller af typen UCC1801\cite{UCC1801}. Det er en controller Terma har erfaring med, og derfor også nemt kan udskiftes med en space-godkendt controller.
 
 \subsection{Funktionalitet}
-På figur~\ref{fig:PWM_block_diagram} ses et funktionelt blok diagram over UCC1801. Det indeholder controllerens overordnede komponenter, og giver et overblik over dens funktionalitet. 
+På figur~\ref{fig:PWM_block_diagram} ses et funktionelt block diagram over UCC1801. Det indeholder controllerens overordnede komponenter, og giver et overblik over dens funktionalitet. 
 
 \begin{figure}[H]
 	\center
@@ -304,7 +304,26 @@ På figur~\ref{fig:PWM_block_diagram} ses et funktionelt blok diagram over UCC18
 \end{figure}
 
 \subsection{Under Voltage LockOut}
-UCC1801 indeholder en Under Voltage LockOut (UVLO) beskyttelse. Dette betyder at forsyningsspændingen skal være et bestemt niveau, før controlleren starter. Som en konsekvens af dette vil både outputtet og referencespændingen holdes lav, indtil grænseværdien er nået. For at have en hysteresemargin, har den både et turn ON og et turn OFF niveau. Ved UCC1801 er disse niveauer $V_{ton}=9.4V$ og $V_{toff}=7.4V$. Da amplituden af output-signalet er lig VCC, vil controlleren ikke prøve at drive MOSFET'en før $V_{CC}=9.4V$. Da en MOSFET typisk har en $V_{gs,th}=4V$, vil man ikke opnå et stadie hvor MOSFET'en kun er delvist ON.
+UCC1801 indeholder en Under Voltage LockOut (UVLO) beskyttelse. Dette betyder at forsyningsspændingen skal være et bestemt niveau, før controlleren starter. Som en konsekvens af dette vil både outputtet og referencespændingen holdes lav, indtil grænseværdien er nået. For at have en hysteresemargin, har den både et turn ON og et turn OFF niveau. Ved UCC1801 er disse niveauer $V_{ton}=9.4V$ og $V_{toff}=7.4V$. Da amplituden af output-signalet er lig VCC, vil controlleren ikke prøve at drive MOSFET'en før $V_{CC}=9.4V$. Da en MOSFET typisk har en $V_{gs,th}=4V$, vil man ikke opnå et stadie hvor MOSFET'en kun er delvist ON. Dette ses også på referencespændingen, da den først bliver $5V$ når $V_{CC}\geqslant 9.4V$.
+
+\subsection{Switch-frekvens}
+Controllerens switch-frekvens af oscillator blokken i block diagrammet. Den genererer en savtand-spænding, som trigger efterfølgende latch. Dette giver et PWM-signal, da den skifter mellem høj og lav.
+Stigetiden for savtand spændingen bliver bestemt af tidskonstanten for et eksternt RC kredsløb. Faldetiden for signalet bliver bestemt af den eksterne kondensator, samt ON-modstanden i en intern transistor. On-modstanden er opgivet til ca. $130\ohm$. Denne faldetid vil begrænse den maksimale duty-cycle, da outputtet vil være lavt i løbet af faldetiden. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/PWM_oscillator_diagram.PNG}
+	\caption{Oscillator diagram}
+	\label{fig:PWM_oscillator_diagram}
+\end{figure}
+
+Figur~\ref{fig:PWM_oscillator_diagram} viser et ækvivalent diagram for oscillator blokken. Komponenterne $R_T$ og $C_T$ er det eksterne RC kredsløb, mens resten er interne komponenter. På diagrammet ses det at operationsforstærkerne er koblet til henholdsvis $0.2V$ og $2.65V$. Dette sætter maksimum og minimum for savtand spændingen. 
+
+Da der skal komme en flanke på output-signalet hver gang savtand spændingen rammer maksimum, skal frekvensen af savtand spændingen være den dobbelte af den ønskede switch-frekvens. Der ønskes en switch-frekvens på $100k\hertz$, derfor sættes savtand frekvensen til $f_{osc}=200k\hertz$. I databladet er det anbefalet at $R_T$ er mellem $10k\ohm$ og $200k\ohm$, mens det anbefales at $C_T$ er mellem $100p\farad$ og $1000p\farad$. Formel~\ref{f_osc} er opgivet i databladet og bruges til estimere RC komponenterne. $C_T$ sættes til $200p\farad$, og $R_T$ beregnes:
+\begin{equation} \label{f_osc}
+f_{osc} = \frac{1.5}{R_T\cdot C_T} = \frac{1.5}{f_osc \cdot C_T} = 37.5k\ohm
+\end{equation}
+Ved et opslag i databladet ses det, at med en $C_T=200p\farad$ kan der maksimalt opnås en duty-cycle på ca. $48.9\percent$. Da converteren maksimalt skal opererer med en duty-cycle på $44.7\percent$, godtages dette.
 
 
 
