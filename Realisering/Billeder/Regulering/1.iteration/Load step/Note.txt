@@ -1,0 +1,2 @@
+Load step foretaget med to 20 ohms modstande i parallel.
+Switch sat til en puls på ca. 10 ms.
