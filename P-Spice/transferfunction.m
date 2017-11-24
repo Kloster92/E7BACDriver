@@ -43,22 +43,30 @@ Gcomp1 = Gain * (1+s/wpole)/(1+s/wzero);
 Gcomp2 = Gain * (1+s/wzero)/(1+s/wpole);
 
 sys = G0 * (((1+s/wesr)*(1-s/wrhpz))/(1+s/wp1)) * (1/(1+(s/wp2)+(s^2/wp2^2)));
-sys1 = sys * (1 / (1+s/314)) * 4.45;
-sys2 = sys * Gcomp1;
-sys3 = sys * Gcomp2;
-
+sys1 = sys * ((1+1320.807/s)/(s*(1+s/15850)));
+sys2 = (5300/s+1)*0.535;
+sys3 = (sys * (132.8/s+1))*2.674;
+sys4 = sys*3.548*((1+s/132.807)/(s*(1+s/15850)));
+sys5 = (132.8/s+1)*2.228;
 
 figure(1)
 bode(sys)
 margin(sys)
  
 figure(2)
-bode(sys1)
-margin(sys1)
+bode(sys5)
+margin(sys5)
 
 figure(3)
 bode(sys3)
 margin(sys3)
+
+%figure(4)
+%bode(sys1)
+%margin(sys1)
 % 
-% figure(7)
-% step(sys3)
+figure(4)
+step(sys)
+
+figure(5)
+step(sys3)
