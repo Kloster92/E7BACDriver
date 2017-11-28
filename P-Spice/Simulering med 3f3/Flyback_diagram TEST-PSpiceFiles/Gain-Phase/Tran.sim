@@ -1,55 +1,55 @@
 @OrCAD Simulation Server Version: 1.0
 
-@Settings: 2 1
+@Settings: 3 1
 @General:
-ProfileName= "AC" 
-ProfileFile= "AC.sim" 
+ProfileName= "Tran" 
+ProfileFile= "Tran.sim" 
 Connectivity= "Gain-Phase.net" 
-NetlistFile= "AC.cir" 
-DataFile= "AC.dat" 
-OutFile= "AC.out" 
+NetlistFile= "Tran.cir" 
+DataFile= "Tran.dat" 
+OutFile= "Tran.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 0
-+0 0 1 0 
-+0 "10ms" 
-+1 "0" 
++0 0 0 0 
++0 "1000ns" 
++1 "" 
 +2 "0" 
-+3 "1u" 
++3 "" 
 +4 "" 
 +5 "" 
 +6 "" 
 @End Analysis
-@Analysis: 1 1
+@Analysis: 1 0
 +2 0 0
-+0 "1000" 
-+1 "10" 
-+2 "100k" 
++0 "" 
++1 "" 
++2 "" 
 +3 "" 
 +4 "" 
 +5 "" 
 @End Analysis
 @Analysis: 2 0
-+0 2
-+0 "Pscale" 
-+1 "Pscale" 
++0 0
++0 "" 
++1 "" 
 +2 "" 
 +3 "" 
-+4 "1" 
-+5 "0" 
-+6 "-0.01" 
++4 "" 
++5 "" 
++6 "" 
 +7 "" 
 @End Analysis
-@Analysis: 3 0
+@Analysis: 3 1
 +0 0 0
 +0 "" 
 +1 "" 
 +2 "" 
 @End Analysis
 @Analysis: 4 0
-+0 1 0 0 0 0 2 0 0 0 1
++0 0 1 0 0 0 3 0 0 0 1
 +0 "" 
 +1 "" 
 +2 "" 
@@ -61,23 +61,23 @@ Notes=
 LoadFile 0 "" 
 SaveFile 0 "" 
 @End Analysis
-@Analysis: 5 1
-+3 2
-+0 "Vmb" 
-+1 "Pscale" 
+@Analysis: 5 0
++0 0
++0 "" 
++1 "" 
 +2 "" 
 +3 "" 
 +4 "" 
 +5 "" 
 +6 "" 
-+7 "0.1 1" 
++7 "" 
 @End Analysis
 @Analysis: 6 0
 +1 
-+0 "-35 25 75" 
++0 "" 
 @End Analysis
 @Analysis: 7 0
-+1 0
++0 0
 +0 "" 
 +1 "" 
 +2 "" 
@@ -98,7 +98,7 @@ SaveFile 0 ""
 +0 "" 
 @End Analysis
 @Analysis: 10 0
-+1 4
++0 0
 +0 "" 
 +1 "" 
 +2 "" 
@@ -109,15 +109,14 @@ SaveFile 0 ""
 +7 "" 
 @End Analysis
 @Analysis: 11 1
-+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 
-+ METHOD "Default"
++ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
 + 0 0 0 0 0 0 0 0 0
 @End Analysis
-@Analysis: 12 1
-+1118480 0 1
+@Analysis: 12 0
++2236960 0 1
 @End Analysis
 @Analysis: 13 1
-+1 1 0 1
++0 1 1 0
 @End Analysis
 @Analysis: 14 1
 +1 1 1 "*" 

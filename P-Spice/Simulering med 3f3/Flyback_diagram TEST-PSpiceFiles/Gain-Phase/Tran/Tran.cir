@@ -1,11 +1,14 @@
-** Profile: "Gain-Phase-AC"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\Flyback_diagram TEST-PSpiceFiles\Gain-Phase\AC.sim ] 
+** Profile: "Gain-Phase-Tran"  [ c:\users\nicolai fransen\documents\github\e7bacdriver\p-spice\simulering med 3f3\flyback_diagram test-pspicefiles\gain-phase\tran.sim ] 
 
-** Creating circuit file "AC.cir" 
+** Creating circuit file "Tran.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
+.LIB "../../../ntsv30120ctg.lib" 
+.LIB "../../../uccx813-1.lib" 
+.LIB "../../../mosfet.lib" 
 .LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
@@ -13,12 +16,8 @@
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.AC DEC 1000 10 100k
-.STEP PARAM Pscale LIST 0.1 1 
 .OPTIONS ADVCONV
-.OPTIONS CONVAID
-.OPTIONS METHOD= Default
-.PROBE64 V(*) I(*) W(*) D(*) NOISE(*) 
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Gain-Phase.net" 
 
 

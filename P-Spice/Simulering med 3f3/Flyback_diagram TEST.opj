@@ -23,12 +23,11 @@
          ".\flyback_diagram test-pspicefiles\constant load\tran.sim"
         (DisplayName "Constant load-Tran")
         (Type "PSpice Profile"))
+      (ActiveProfile ".\flyback_diagram test-pspicefiles\gain-phase\tran.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\flyback_diagram test-pspicefiles\gain-phase\ac.sim"
-        (DisplayName "Gain-Phase-AC")
-        (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\flyback_diagram test-pspicefiles\constant load\tran.sim"))
+         ".\flyback_diagram test-pspicefiles\gain-phase\tran.sim"
+        (DisplayName "Gain-Phase-Tran")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User)
       (File ".\ntsv30120ctg.lib"
@@ -103,16 +102,10 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram test.dsn"
-         "Constant load")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Path "Referenced Projects")
-      (Select "PSpice Resources" "Simulation Profiles"
-         ".\flyback_diagram test-pspicefiles\constant load\tran.sim"))
+      (Select "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -122,19 +115,19 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 613 104 439")
-        (Scroll "253 0")
+        (Placement "44 0 1 -1 -1 -8 -31 130 947 130 465")
+        (Scroll "50 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM TEST.DSN")
-      (Schematic "Constant load")
+      (Schematic "Gain-Phase")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 895 78 413")
-        (Scroll "230 315")
+        (Placement "44 2 3 -1 -1 -8 -31 0 817 0 335")
+        (Scroll "400 90")
         (Zoom "100")
         (Occurrence "/FB"))
       (Path
@@ -144,8 +137,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 921 104 439")
-        (Scroll "60 40")
+        (Placement "44 0 1 -1 -1 -8 -31 26 843 26 361")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/FB/PS"))
       (Path

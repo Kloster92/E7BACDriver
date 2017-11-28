@@ -1,5 +1,5 @@
-
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -75,12 +75,12 @@ L_FB_L1         OUT FB_N21188  9.3nH
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
-.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}
+.PARAM  iout=2.5a pscale=1 n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}
 
 **** RESUMING Tran.cir ****
 .END
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -150,7 +150,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
          CJO   10.000000E-12 
 
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -223,7 +223,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            D     .52         
 
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -304,7 +304,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
        XPART    0            
 
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -328,7 +328,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            K   19.204                          19.204        
 
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -361,10 +361,9 @@ Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 
-
-          JOB CONCLUDED
+          JOB ABORTED
 
-**** 11/17/17 14:51:15 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 11/25/17 13:22:26 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -376,5 +375,5 @@ Reducing minimum delta to make the circuit converge.
 
 
 
-  Total job time (using Solver 1)   =      195.14
+  Total job time (using Solver 1)   =       36.09
 

@@ -1,0 +1,3 @@
+Load step foretaget ved to 20 ohm i parallel.
+start up er foretaget ved fuld belastning med 26V input.
+Der skal laves start up måling ved gammelt kredsløb igen...
