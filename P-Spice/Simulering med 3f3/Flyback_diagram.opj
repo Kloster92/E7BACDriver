@@ -31,11 +31,21 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (PORTRIGHT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (PORTLEFT-L
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
     (Kmodel
       (FullPartName "Kmodel.Normal")
@@ -67,11 +77,6 @@
     (0
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (PARAM
-      (FullPartName "PARAM.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
       (DeviceIndex "0"))
     (1N5811
       (FullPartName "1N5811.Normal")
@@ -107,11 +112,6 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\MFN.OLB")
       (DeviceIndex "0"))
-    (L
-      (FullPartName "L.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
     (RM8_3D3
       (FullPartName "RM8_3D3.Normal")
       (LibraryName
@@ -122,13 +122,56 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
+         "Flyback")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
+         "Input-filter")
+      (Path "Design Resources"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
+         "Output-filter")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries")
-      (Select "Design Resources"))
+      (Path "PSpice Resources" "Model Libraries"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
-      (Tab 0))))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 895 78 413")
+        (Scroll "200 70")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+      (Schematic "Flyback")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 947 130 465")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/IF"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+      (Schematic "Input-filter")
+      (Page "Input-filter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 26 843 26 361")
+        (Scroll "150 0")
+        (Zoom "100")
+        (Occurrence "/OF"))
+      (Path
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+      (Schematic "Output-filter")
+      (Page "Output-filter"))))
