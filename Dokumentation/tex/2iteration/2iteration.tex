@@ -194,11 +194,80 @@ Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens d
 \end{figure}
 \noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
 
+\section{Diode}
+For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er den maksimale indgangsspændingen plus udgangsspændingen. Faktoren på $1.3$, der ganges på, er en sikkerhedsmargin på $30\percent$:
+\begin{equation} \label{Vd_break}
+Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
+\end{equation}
+Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
+Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
+
+\section{MOSFET}
+MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Derudover er der lagt en margin på $30\percent$ oveni ligesom ved dioden. Det er for at tage højde for de peakspændinger, spredningsselvinduktionen giver anledning til. Det sikrer også mod andre ringninger, der kommer af designets parasitter.  
+\begin{equation} \label{Vds_break}
+Vds_{break} = (V_{inmax}+(V_{out}+V_D)) \cdot 1.3 = 92.95
+\end{equation}
+Yderligere skal den valgte MOSFET kunne holde til RMS strømmen i primærviklingen på $3.02A$ samt peakstrømmen på $5.64A$.
+Til 2. iteration er IRFB23N15 valgt.(datasheet henvisning) Den kan holde til Vds på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en Rds(on) modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
+
+Det er en MOSFET, som vil kunne fungere i designet, men som også kan optimeres på on modstand og kapacitet på et senere tidspunkt, hvis tabet ender med at være for stort. 
+
+\section{Udgangskondensator}
+Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kondensator_equivalent.png}
+	\caption{Ækvivalentdiagram for kondensatorer}
+	\label{fig: con_equi}
+\end{figure}
+I nogle datablade kan disse parasitkomponenter slås op, det er dog ikke tilfældet for denne kondensator. Med hensyn til ESR modstanden, bliver denne af og til ikke oplyst for film kondensatorer, da den er lav ved denne type, i forhold til for eksempel en elektrolyt. 
+Med hensyn til induktansen kan den estimeres ved en hovedregel, der siger, $1\nano H$ per $\milli m$. Denne kondensator har $4\centi m$ lang og induktansen estimeres dermed til $40\nano F$. Med 4 kondensatorer i parrallel giver det dermed en samlet induktans for udgangskondensatoren på:
+\begin{equation} \label{ESL}
+C_{ESL} = ((40\nano F)^{-1} \cdot 4)^{-1} = 10\nano F
+\end{equation}
+
+\subsection{Test af kondensator}
+
+For at få ESR modstanden og den præcise ESL induktans, måles disse med impedansmåleren, som også blev benyttet til måling af transformatoren. Opstillingen ses på figur~\ref{fig: cap}, men er den samme som tidligere, hvor transformatoren er skiftet ud med en af kondensatorerne. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Udgangskondensator_impedansmaling.jpg}
+	\caption{Test af udgangskondensator}
+	\label{fig: cap}
+\end{figure}
+Ligesom ved transformatoren benyttes 4-wire teknikken, for at undgå ekstra parasitter. På figur~\ref{fig: captest} ses grafen der er tegnet ud fra målingen. De enkelte målepunkter kan findes i Excel dokumentet \cite{Kondensator_impedans.xlsx}
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.9\linewidth]{/tex/2iteration/billeder/Kondensatortest.png}
+	\caption{Kapacitet og impedans for udgangskondensator}
+	\label{fig: captest}
+\end{figure}
+Det ses tydeligt at resonantfrekvensen for det induktive og kapacitive i kondensatoren ligger lidt over de $100\kilo \hertz$, mere præcis ved $108\kilo \hertz$. 
+
+
+\noindent Da der i projektet bruges en switchfrekvens på $100\kilo \hertz$, er en resonantfrekvens på $108\kilo \hertz$ ikke helt optimal. Det betyder, at der ved de $100\kilo \hertz$, formodentligt ikke vil være præcis den kapacitet der forventes. Det er dog stadig denne kondensator, der benyttes i 2. iteration. Skal der senere optimeres på dette, kan resonantfrekvensen rykkes længere op i frekvens. Det kan enten gøres ved at finde en lignende kondensator med mindre ESL induktans eller finde en kondensator med lavere kapacitet og sætte flere i parrallel end de nuværende 4.
+
+
+\noindent Ved resonantfrekvensen kan ESR modstanden nogenlunde aflæses, da det kapacitive og induktive her udligner hinanden. Det vil sige, at kun ESR modstanden står tilbage, hvilket i dette tilfælde aflæses til ca. $10\milli \ohm$. 
+ESL modstanden kan udregnes ud fra resonantfrekvensen og kapaciteten på de $56\micro F$:
+\begin{equation} \label{CESL}
+C_{ESL} = \frac{1}{4 \cdot \pi^{2} \cdot {f_{res}}^{2} \cdot C_{out}} = 38.78\nano H
+\end{equation}
+Hvilket stemmer meget godt overens med det estimerede på de $40\nano F$.
+Det betyder, at der med de 4 kondensatorer i parallel vil være en samlet ESL induktans på: 
+\begin{equation} \label{CESLtot}
+C_{ESLtot} = ((38.78\nano F)^{-1} \cdot 4)^{-1} = 9.70\nano F
+\end{equation}
+Samt en samlet ESR modstand på:
+\begin{equation} \label{CSRtot}
+C_{ESRtot} = ((10\milli \ohm)^{-1} \cdot 4)^{-1} = 2.5\milli \ohm
+\end{equation}
+
 \section{Tab}
 Her vil tabene for komponenterne i 2. iteration blive udregnet
 
 \subsection{Transformatortab}
-Transformatortabet kan deles op i 2 dele. Et kernetab og et kobbertab. De Beregnes herunder
+Transformatortabet kan deles op i 2 dele. Et kernetab og et kobbertab. Det beregnes herunder
 
 \subsubsection{Kernetab}
 Selve kernetabet afhænger af kernematerialet, induktans og strømmen der løber i viklingerne. Først udregnes delta B.
