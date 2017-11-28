@@ -228,66 +228,6 @@ Der er to scenarier der er relevante at kigge på, ved en indgangsspænding på 
 	\label{fig:50V_transformer_current}
 \end{figure}
 
-\section{Kobbertab}
-Kobbertabet i transformatoren opstår på grund af modstanden i de kobbertråde den er viklet med. Den modstand deles op i to bidrag - en DC-modstand og en AC-modstand. DC-modstanden bestemmes ud fra længden og tykkelsen af tråden, mens AC-modstanden afhænger af indtrængningsdybden og trådens diameter. 
-
-\subsection{AC-modstand}
-AC-modstanden i viklingerne opstår på grund af, det magnetfelt kobbertrådene ligger i. Magnetfeltet skaber en hvirvelstrøm der løber i trådene. Hvirvelstrømmen vil derfor være et ekstra bidrag, til den driftsstrøm der bliver sendt ind i transformatoren. Dette vil komme til udtryk, som et ekstra bidrag til den samlede modstand i viklingerne. 
-
-AC-modstanden afhænger af indtrængningsdybden og trådens diameter. Hvis diameteren er tilpas lille i forhold til indtrængningsdybden, vil  hvirvelstrømmene i tråden udligne sig selv, og derved ikke bidrage til tabet. Er tråden til gengæld for tyk i forhold til indtrængningsdybden, vil det resultere i en hvirvelstrøm, der løber i hele trådens længde. 
-
-Måden man bestemmer AC-modstanden, er ud fra princippet \textit{Eddy Current Losses}. Det siger at forholdet mellem AC- og DC-modstanden, kan bestemmes ud fra forholdet mellem trådens diameter og indtrængningsdybden. Disse forhold er skitseret på figur~\ref{fig:Eddy_current_losses}\cite{eddy_current_losses}. Her ses det også, at AC-modstanden afhænger af hvor mange lag man vikler på transformatoren. 
-
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Eddy_current_losses.PNG}
-	\caption{Eddy Current Losses}
-	\label{fig:Eddy_current_losses}
-\end{figure}
-
-Dette er kompliceret at regne for en flyback transformator, og vil derfor ikke blive gjort i dette projekt. Derfor vil kobbertabet i transformatoren, kun være en estimering af det samlede kobbertab.
-
-\subsection{DC-modstand}
-For at beregne DC-modstanden, udregnes først omkredsen af kerneformen. Transformatoren er viklet på en RM8. Denne form har i følge databladet en indre diameter på $9.95mm$ og en ydre diameter på $16.9mm$. For at finde en gennemsnitslængde på tråden, beregnes et gennemsnit af formens diameter, for derefter at beregne omkredsen af formen.
-\begin{equation} \label{Diameter}
-D = \frac{9.95mm \cdot 16.9mm}{2} = 13.43mm
-\end{equation}
-\begin{equation} \label{Omkreds}
-O = D \cdot \pi = 4.23cm
-\end{equation}
-
-Ud fra omkredsen på kerneformen, kan længden af hver kobbertråd beregnes, ved at gange med antallet af vindinger for en vikling. For den viklede transformator er $N=19$.
-\begin{equation} \label{Lengde}
-l = O \cdot N = 80.13mm
-\end{equation}
-
-Diameteren på kobbertråden er valgt til $0.425mm$. Denne diameter er inkl. lakering. Ud fra et tabelopslag ved Grade 2\cite{wire-diameter}, aflæses den nominelle kobberdiameter af denne tråd $0.375mm$.
-Ud fra denne diameter beregnes trådens tværsnitsareal.
-\begin{equation} \label{kobber-areal}
-A_{cu} = \frac{0.375mm}{2}^2 \cdot \pi = 0.11mm^2
-\end{equation}
-
-For at beregne DC-modstanden bruges kobbers resistivitet ved $100\degreeCelsius$, for at regne worst case. Denne opslås til $\rho=2.204\cdot 10^{-8}\ohm \cdot m$. Nu kan hver enkelt tråds DC-modstand bregnes ud fra trådens længde, samt tværsnitsareal.
-\begin{equation} \label{dc1-modstand}
-R_{DC1} = \frac{l \cdot \rho}{A_{cu}} = 159.91\milli\ohm
-\end{equation}
-
-Transformatoren er viklet med tre tråde i parallel ved både primær- og sekundærviklingen. Derfor beregnes den samlede modstand, ved at regne parallelmodstanden:
-\begin{equation} \label{dc-modstand}
-R_{DC} = ((R_{DC1})^{-1} \cdot 3)^{-1} = 53.3\milli\ohm
-\end{equation}
-
-Kobbertabet i transformatoren, kan nu beregnes ved RMS-strømmene i primær- og sekundærviklingerne. Hvor $I_{RMSp} = 3.02A$ og $I_{RMSs} = 3.36A$.
-\begin{equation} \label{dc-tab-pri}
-P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
-\end{equation}
-
-\begin{equation} \label{dc-tab-sek}
-P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
-\end{equation}
-
-
-
 \section{PWM-controller}
 PWM-controlleren er en vigtig del af en SMPS. Det er den der står for tilpasningen af switch-signalets duty-cycle, således udgangen holdes stabilt, når inputtet påvirkes eller ændres. Det er vigtigt at vælge PWM-controller ud fra kravene til converteren. PWM-controllere er ofte begrænset til en maksimal duty-cycle på enten $50\percent$ eller $100\percent$. Derudover skal der vælges, hvilken form for regulering af converterens udgangstrin der ønskes da controlleren skal understøtte dette. 
 

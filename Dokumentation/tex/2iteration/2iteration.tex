@@ -137,8 +137,13 @@ Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en is
 \end{figure}
 
 \subsection{Realisering}
-Mangler billede af transformator. 
-På fig ses den viklede transformator. Ved viklingen måtte det erkendes, at der ikke kunne presses 18 vindinger ind, med en ledningstykkelse på $0.425\milli m$, som ellers i forvejen var mindre end den udregnede tykkelse på $0.478\milli m$. I stedet benyttes en tykkelse på $0.425\milli m$ og der tilføjes en ekstra vikling, så det totale antal vindinger ender på 19 per vikling. (ER VI SIKRE PÅ DET IKKE NETOP ER DEN TRÅD VI HAR FÅET?? At trådtykkelsen der står er uden isolering?)
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Viklet_transformator.PNG}
+	\caption{Viklet transformator}
+	\label{fig: Viklettrans}
+\end{figure}
+På figur~\ref{fig: Viklettrans} ses den viklede transformator. Ved viklingen måtte det erkendes, at der ikke kunne presses 18 vindinger ind, med en ledningstykkelse på $0.450\milli m$, som ellers i forvejen var mindre end den udregnede tykkelse på $0.478\milli m$. I stedet benyttes en tykkelse på $0.425\milli m$ og der tilføjes en ekstra vikling, så det totale antal vindinger ender på 19 per vikling. (ER VI SIKRE PÅ DET IKKE NETOP ER DEN TRÅD VI HAR FÅET?? At trådtykkelsen der står er uden isolering?)
 
 \noindent \textbf{Endelig induktans}
 
@@ -159,13 +164,20 @@ I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{rippl
 Transformatoren er testet ved at måle både selvinduktionen i primær- og sekundærviklingerne samt spredningsselvinduktionen. Til dette blev en impedansmåler brugt. 
 
 
-\noindent Til sådan en måling er det vigtigt, at gøre ledningerne så korte som muligt, da der vil skabes yderligere induktans i dem. Derfor ses på opstillingen på figur… de meget korte ledninger samt der bliver brugt en 4-wire teknik. Det vil sige to ledninger på hver side af det der måles på. Strømmen løber i den ene af ledningerne og??????
+\noindent Til sådan en måling er det vigtigt, at gøre ledningerne så korte som muligt, da der vil skabes yderligere induktans i dem. Derfor ses ved opstillingen på figur~\ref{fig: Transopstilling} de meget korte ledninger samt at der bliver brugt en 4-wire teknik. Det vil sige to ledninger på hver side af det der måles på. Det gør at strømmen kan sendes igennem det ene sæt ledninger, mens der måles med det andet sæt. Da der ikke sendes en strøm igennem det sæt der måles på, undgås den induktive fejlmåling, der ellers vil komme fra ledningerne. 
 
-\noindent Måleresultaterne tages ved USB ud af impedansmåleren og indsættes i et Excel ark.  
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Samlet_transformatortest_opstilling.PNG}
+	\caption{Samlet transformatortest opstilling}
+	\label{fig: Transopstilling}
+\end{figure}
 
-\noindent Først blev en kalibreringsmåling lavet, hvor ledningerne alle målte samme sted. Offsettet herfra er i Excel trukket fra de efterfølgende målinger    
+\noindent Måleresultaterne tages med USB ud af impedansmåleren og indsættes i et Excel ark.  
 
-\noindent Herefter måles der på de 2 sider af primærviklingen, mens sekundærsiden holdes åben. På denne måde fås induktansen i den primære vikling. Da transformatoren er 1:1 er det også induktansen i den sekundære vikling. 
+\noindent Selve impedansmåleren havde et lille offset på målingerne. Derfor blev der først lavet en kalibreringsmåling, hvor ledningerne alle målte samme sted. Offsettet herfra er i Excel trukket fra de efterfølgende målinger.    
+
+\noindent Herefter måles der på de 2 sider af primærviklingen, mens sekundærsiden holdes åben. På denne måde fås induktansen i den primære vikling. Da transformatoren er 1:1, er det også induktansen i den sekundære vikling. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Primarinduktans.png}
@@ -183,8 +195,12 @@ Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens d
 \noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
 
 \section{Tab}
+Her vil tabene for komponenterne i 2. iteration blive udregnet
 
-\subsection{Kernetab}
+\subsection{Transformatortab}
+Transformatortabet kan deles op i 2 dele. Et kernetab og et kobbertab. De Beregnes herunder
+
+\subsubsection{Kernetab}
 Selve kernetabet afhænger af kernematerialet, induktans og strømmen der løber i viklingerne. Først udregnes delta B.
 \begin{equation} \label{DeltaB}
 \Delta B = \frac{L \cdot I_{pk21}}{N \cdot A_0} = 263.59\milli T
@@ -206,3 +222,61 @@ Det samlede kernetab fås med denne værdi ganget med den effektive volumen for 
 P = P_V \cdot V_e = 366\milli W
 \end{equation}
 Dette passer forholdsvis pænt med det simulerede tab i kernen på $310\milli W$.
+
+\subsubsection{Kobbertab}
+Kobbertabet i transformatoren opstår på grund af modstanden i de kobbertråde den er viklet med. Den modstand deles op i to bidrag - en DC-modstand og en AC-modstand. DC-modstanden bestemmes ud fra længden og tykkelsen af tråden, mens AC-modstanden afhænger af indtrængningsdybden og trådens diameter. 
+
+\paragraph{AC-modstand}
+AC-modstanden i viklingerne opstår på grund af, det magnetfelt kobbertrådene ligger i. Magnetfeltet skaber en hvirvelstrøm der løber i trådene. Hvirvelstrømmen vil derfor være et ekstra bidrag, til den driftsstrøm der bliver sendt ind i transformatoren. Dette vil komme til udtryk, som et ekstra bidrag til den samlede modstand i viklingerne. 
+
+AC-modstanden afhænger af indtrængningsdybden og trådens diameter. Hvis diameteren er tilpas lille i forhold til indtrængningsdybden, vil  hvirvelstrømmene i tråden udligne sig selv, og derved ikke bidrage til tabet. Er tråden til gengæld for tyk i forhold til indtrængningsdybden, vil det resultere i en hvirvelstrøm, der løber i hele trådens længde. 
+
+Måden man bestemmer AC-modstanden, er ud fra princippet \textit{Eddy Current Losses}. Det siger at forholdet mellem AC- og DC-modstanden, kan bestemmes ud fra forholdet mellem trådens diameter og indtrængningsdybden. Disse forhold er skitseret på figur~\ref{fig:Eddy_current_losses}\cite{eddy_current_losses}. Her ses det også, at AC-modstanden afhænger af hvor mange lag man vikler på transformatoren. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Eddy_current_losses.PNG}
+	\caption{Eddy Current Losses}
+	\label{fig:Eddy_current_losses}
+\end{figure}
+
+Dette er kompliceret at regne for en flyback transformator, og vil derfor ikke blive gjort i dette projekt. Derfor vil kobbertabet i transformatoren, kun være en estimering af det samlede kobbertab.
+
+\paragraph{DC-modstand}
+For at beregne DC-modstanden, udregnes først omkredsen af kerneformen. Transformatoren er viklet på en RM8. Denne form har i følge databladet en indre diameter på $9.95mm$ og en ydre diameter på $16.9mm$. For at finde en gennemsnitslængde på tråden, beregnes et gennemsnit af formens diameter, for derefter at beregne omkredsen af formen.
+\begin{equation} \label{Diameter}
+D = \frac{9.95mm \cdot 16.9mm}{2} = 13.43mm
+\end{equation}
+\begin{equation} \label{Omkreds}
+O = D \cdot \pi = 4.23cm
+\end{equation}
+
+Ud fra omkredsen på kerneformen, kan længden af hver kobbertråd beregnes, ved at gange med antallet af vindinger for en vikling. For den viklede transformator er $N=19$.
+\begin{equation} \label{Lengde}
+l = O \cdot N = 80.13mm
+\end{equation}
+
+Diameteren på kobbertråden er valgt til $0.425mm$. Denne diameter er inkl. lakering. Ud fra et tabelopslag ved Grade 2\cite{wire-diameter}, aflæses den nominelle kobberdiameter af denne tråd $0.375mm$.
+Ud fra denne diameter beregnes trådens tværsnitsareal.
+\begin{equation} \label{kobber-areal}
+A_{cu} = \frac{0.375mm}{2}^2 \cdot \pi = 0.11mm^2
+\end{equation}
+
+For at beregne DC-modstanden bruges kobbers resistivitet ved $100\degreeCelsius$, for at regne worst case. Denne opslås til $\rho=2.204\cdot 10^{-8}\ohm \cdot m$. Nu kan hver enkelt tråds DC-modstand bregnes ud fra trådens længde, samt tværsnitsareal.
+\begin{equation} \label{dc1-modstand}
+R_{DC1} = \frac{l \cdot \rho}{A_{cu}} = 159.91\milli\ohm
+\end{equation}
+
+Transformatoren er viklet med tre tråde i parallel ved både primær- og sekundærviklingen. Derfor beregnes den samlede modstand, ved at regne parallelmodstanden:
+\begin{equation} \label{dc-modstand}
+R_{DC} = ((R_{DC1})^{-1} \cdot 3)^{-1} = 53.3\milli\ohm
+\end{equation}
+
+Kobbertabet i transformatoren, kan nu beregnes ved RMS-strømmene i primær- og sekundærviklingerne. Hvor $I_{RMSp} = 3.02A$ og $I_{RMSs} = 3.36A$.
+\begin{equation} \label{dc-tab-pri}
+P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
+\end{equation}
+
+\begin{equation} \label{dc-tab-sek}
+P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
+\end{equation}
