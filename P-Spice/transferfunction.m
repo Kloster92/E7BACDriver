@@ -33,11 +33,11 @@ G0 = ((Rout*Nps)/(Rcs*Acs))*(1/(((1-D)^2/tL) + (2*M)+1));
 %Gs2 = 2.839*((1+s/(4000))/(1+s/(3000)));
 %Gs3 = 5 * ((1+s/(700))/(1+s/(1700)));
 
-wesr = 189470;
-wrhpz = 15851;
+wesr = 189470 * 2*pi;
+wrhpz = 15851 * 2*pi;
 
-wp1 = 132.807;
-wp2 = 50000;
+wp1 = 132.807 * 2*pi;
+wp2 = 50000 * 2*pi;
 
 Gcomp1 = Gain * (1+s/wpole)/(1+s/wzero);
 Gcomp2 = Gain * (1+s/wzero)/(1+s/wpole);
