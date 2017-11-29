@@ -1,0 +1,123 @@
+(ExpressProject "Flyback_2iteration_TEST"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\flyback_2iteration_test.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File
+       ".\flyback_2iteration_test-pspicefiles\constant load\constant load.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\flyback_2iteration_test-pspicefiles\constant load\tran.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\flyback_2iteration_test-pspicefiles\constant load\tran.sim"
+        (DisplayName "Constant load-Tran")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+         "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName
+           "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"))
+      (File "..\uccx813-1.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\uccx813-1.lib"))
+      (File "..\ntsv30120ctg.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\ntsv30120ctg.lib"))
+      (File "..\fdpf770n15a.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName "..\fdpf770n15a.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "Jesper")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn")
+      (Path "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
+         "Constant load")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
+         "Constant load" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 129 0 643"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1420 52 387")
+        (Scroll "-9 45")
+        (Zoom "92")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
+      (Schematic "Constant load")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1189 78 413")
+        (Scroll "398 122")
+        (Zoom "104")
+        (Occurrence "/FB"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+      (Schematic "Flyback")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1215 104 439")
+        (Scroll "48 0")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+      (Schematic "Output-filter")
+      (Page "Output-filter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 130 984 130 465")
+        (Scroll "276 52")
+        (Zoom "116")
+        (Occurrence "/FB/PS"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+      (Schematic "Flyback converter - rtm")
+      (Page "Flyback converter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1388 156 491")
+        (Scroll "167 0")
+        (Zoom "100")
+        (Occurrence "/FB/IF"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+      (Schematic "Input-filter")
+      (Page "Input-filter"))))
