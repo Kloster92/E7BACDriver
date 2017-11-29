@@ -117,61 +117,47 @@
       (LibraryName
          "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\MAGNETIC.OLB")
       (DeviceIndex "0")))
-  (MPSSessionName "Nicolai Fransen")
+  (MPSSessionName "Jesper")
   (LastUsedLibraryBrowseDirectory "C:\Cadence\Library\Smps\PSpice")
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn")
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn")
       (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
          "Flyback")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
-         "Input-filter")
-      (Path "Design Resources"
-         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
-         "Output-filter")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Model Libraries"))
+      (Path "PSpice Resources" "Model Libraries")
+      (Select "Design Resources"
+         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram.dsn"
+         "Flyback" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 690"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 895 78 413")
-        (Scroll "200 70")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1163 52 387")
+        (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
       (Schematic "Flyback")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 947 130 465")
+        (Placement "44 2 3 -1 -1 -8 -31 78 1189 78 413")
         (Scroll "0 0")
-        (Zoom "100")
-        (Occurrence "/IF"))
-      (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
-      (Schematic "Input-filter")
-      (Page "Input-filter"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 843 26 361")
-        (Scroll "150 0")
         (Zoom "100")
         (Occurrence "/OF"))
       (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_DIAGRAM.DSN")
       (Schematic "Output-filter")
       (Page "Output-filter"))))
