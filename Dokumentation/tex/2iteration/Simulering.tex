@@ -53,3 +53,13 @@ På figur~\ref{fig: simMOSdio} ses en spændingsperiode for drain benet på MOSF
 Det ses, at når transistoren (rød kurve) går off så kommer den tidligere omtalte peakspænding samt den svinger, inden den går til en stationær værdi på ca. 48V, inden MOSFET'en switches on igen. Dette stemmer fint overens med analysen hvor den stationær værdi bør ligge på 21V+26V=47V.
 Peak'en er ca. 93V.
 Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V.
+
+\subsection{Load step}
+Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. Den eneste ændring i schematic'et fra før, ligger i toplaget, som ses på figur~\ref{fig: simloadtop}  
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simloadtop.png}
+	\caption{Toplaget for simulering af load step}
+	\label{fig: simloadtop}
+\end{figure}
+Resten af simuleringsblokkene er der ikke ændret ved. Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Det gør, at når switchen er off er loaden på $20\ohm$, men når switchen er on er det parallel modstanden af de 2, som vil være 10\ohm. De 2 switches er sat op således, at     
