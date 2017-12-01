@@ -229,10 +229,56 @@ Konsekvensen af højre-halvplans nulpunktet ses også tydeligt på figur~\ref{fi
 I denne iteration designes der et kompensationsnetværk der vil sikre et stabilt system, med en lav båndbredde. Dette vil blive optimeret i en senere iteration. 
 Da der ønskes en lavere båndbredde, end det converteren har i forvejen, indsættes et RC-led i serie som kompensationsnetværk. Ved at bruge et RC-led, vil kondensatoren bestemme forstærkningen ved lave frekvenser, fordi impedansen her er stor. Mens modstanden vil bestemme forstærkningen ved høje frekvenser, fordi kondensatoren vil blive set som en kortslutning. 
 
-Den endelige båndbredde af systemet ønskes på ca. $800\hertz$. Det vil sikre at systemet ikke bliver ustabilt. For at opnå den båndbredde ses det ud fra bode plottet på figur~\ref{fig:MATLAB_power_module}, at forstærkningen skal mindskes med ca. $5.4\decibel$, eller ca. $0.535GG$, ved frekvenser over $800\hertz$. Den samlede forstærkning af reguleringsløkken, bestemmes af produktet mellem forstærkningen i spændingsdeleren og forstærkningen i fejlforstærkeren. 
-%TODO: Beskriv samlet forstærkning i regulering mm.
+Den endelige båndbredde af systemet ønskes på ca. $800\hertz$. Det vil sikre at systemet ikke bliver ustabilt. For at opnå den båndbredde ses det ud fra bode plottet på figur~\ref{fig:MATLAB_power_module}, at forstærkningen skal mindskes med ca. $5.4\decibel$, eller ca. $0.535GG$, ved frekvenser over $800\hertz$. Den samlede forstærkning af reguleringsløkken, bestemmes af produktet mellem forstærkningen i spændingsdeleren og forstærkningen i fejlforstærkeren. Forstærkningen i spændingsdeleren regnes ved ligning~\ref{voltagedivider_gain}.
+\begin{equation} \label{voltagedivider_gain}
+g_{FB} = \frac{R_{FB2}}{R_{FB1}+R_{FB2}} = 0.12
+\end{equation}
 
-For at sikre en lav båndbredde, sættes knækfrekvensen på integratoren til $f_0=300\hertz$. 
+\noindent Nu kan feedback modstanden i fejlforstærkeren regnes ved ligning~\ref{error_opamp_gain}. 
+\begin{equation} \label{error_opamp_gain}
+g_{tot} = \frac{R_{comp}}{R_{par}} \cdot g_{FB}
+\end{equation}
+
+\noindent Hvor:
+\newline \noindent $g_{err}$ er det ønskede gain i fejlforstærkeren, som er $g_{err}=0.535GG$.
+\newline \noindent $R_{comp}$ er feedback modstanden i fejlforstærkeren, som ønskes dimensioneret.
+\newline \noindent $R_{par}$ er parallelmodstanden mellem $R_{FB1}$ og $R_{FB2}$. Den regnes til $R_{par}=2.244k\ohm$.
+
+\noindent De kendte værdier indsættes og ligningen løses for $R_{comp}$. Den fås til $R_{comp}\approx 10k\ohm$.
+
+
+\noindent For at sikre en den lave båndbredde, sættes knækfrekvensen på integratoren til $f_0=300\hertz$. Dermed sikres det, at fejlforstærkeren dæmper signalet ved den ønskede båndbredde på $800\hertz$. Nu den tilhørende kapacitet regnes, ud fra $R_{comp}$ og $f_0$.
+\begin{equation} \label{c_comp}
+c_{comp} = \frac{1}{2\cdot \pi \cdot R_{comp} \cdot f_0} \approx 50nF
+\end{equation}
+
+\noindent Med afrundede komponentværdier, regnes den nye knækfrekvens for fejlforstærkeren.
+\begin{equation} \label{f_0}
+f_0 = \frac{1}{2\cdot \pi \cdot R_{comp}} \cdot c_{comp} = 318.3\hertz
+\end{equation}
+
+\noindent Overføringsfunktionen for fejlforstærkeren kan nu opskrives ved ligning~\ref{H_err}.
+\begin{equation} \label{H_err}
+H_{err}(s) = (\frac{318.3\hertz \cdot 2\cdot\pi}{s} + 1) \cdot 0.535
+\end{equation}
+
+\noindent Den plottes i MATLAB, som et bode plot på figur~\ref{fig:MATLAB_error_op_amp_2}. Her ses det, at den ønskede funktion af integratoren er opnået. På grund af kondensatoren, har den et stort gain ved lave frekvenser. Mens forstærkningen ligger konstant ved ca. $-5.4\decibel$, efter den ønskede knækfrekvens på ca. $318\hertz$.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/MATLAB_error_op_amp.PNG}
+	\caption{Bode plot for fejlforstærker}
+	\label{fig:MATLAB_error_op_amp_2}
+\end{figure}
+
+De to overføringsfunktioner ganges sammen for, at bestemme den samlede overføringsfunktion for converteren. Figur~\ref{fig:MATLAB_total_2} viser et bode plot af det. Det at der er converteren vil have en båndbredde på $810\hertz$. Derudover aflæses fase-margin til $74.3^\circ$, og en gain-margin til $24\decibel$.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/MATLAB_total.PNG}
+	\caption{Bode plot for converteren}
+	\label{fig:MATLAB_total_2}
+\end{figure} 
 
 % Generelt om controllerens funktion
 % Valg af UCC1801

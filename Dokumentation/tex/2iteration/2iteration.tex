@@ -23,11 +23,11 @@ Transformeren fungerer anderledes ved en flyback end ved de fleste andre SMPS, h
 
 \subsection{Design}
 Først og fremmest findes ripplestrømmen, som skal løbe i transformatoren. Her er der taget udgangspunkt i, at designe den efter $60\percent$ af udgangsstrømmen. Dette er et tradeoff mellem størrelsen på ripplen og hvor høj en induktans vi får i viklingerne. Større induktans kræver flere vindinger og giver dermed mere tab.
-\begin{equation} \label{I_ripple_CCM}
+\begin{equation}
 I_{ripple} = 0.6 \cdot \frac{V_{out} \cdot I_{out}}{V_{inmaks} \cdot   D_{min}} = 2.13A
 \end{equation}
 Den nødvendige induktans det kræver for at transformatoren kan rampe op til den nødvendige strøm inden for dutycyclen, udregnes på følgende måde:
-\begin{equation} \label{L_CCM}
+\begin{equation}
 L = \frac{V_{inmin} \cdot D_{min}}{I_{ripple} \cdot f_s} = 69.43\micro H
 \end{equation}
 Som beskrevet tidligere skal kernen kunne opbevare den energi som kommer fra primær viklingen, når transistoren er on, for at undgå mætning. Mængden af energi i primærviklingen udregnes ved:
@@ -46,7 +46,7 @@ Det er tydeligt at den nødvendige energi på ingen måde kan opbevares i kernen
 l_g = \frac{L \cdot {I_{pk}}^2 \cdot \micro_0}{B^2 \cdot A_0} = 690.98\micro m
 \end{equation}
 Med den ripplestrøm der i første omgang er benyttet, skal der bruges et air gap på ca. $691\micro m$. Den nærmeste air gaps værdi for 3f3 ligger på $488\micro m$ hvilket giver en Al på $160\nano H$. (Dette er ikke databladets værdi, men en værdi der er blevet givet fra Terma, som har testet databladets værdier til ikke at være korrekte.) Det vil ikke fungere, derfor udregnes en induktans, der passer til det air gap i stedet: 
-\begin{equation} \label{L1}
+\begin{equation}
 L_1 = \frac{l_g \cdot B^2 \cdot A_0}{{I_{pk}}^2 \cdot \micro_0} = 49.035\micro H
 \end{equation}
 Med kendt Al og induktans kan vindingstallet beregnes. Da der i 2. iteration bruges en 1:1 transformator er dette både for primær og sekundær vikling:
@@ -58,10 +58,10 @@ Det passer fint med 18 viklinger på hver side, hvor induktansen igen bliver lid
 L_2 = N^2 \cdot A_L = 57.76 \micro H
 \end{equation}
 Med fastlagt induktans kan ny ripple- og peak strøm beregnes.
-\begin{equation} \label{I_ripple_CCM}
+\begin{equation}
 I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2*f_s} = 2.24A
 \end{equation}
-\begin{equation} \label{I_pk_CCM}
+\begin{equation}
 I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{ripple}}{2} = 5.64A
 \end{equation}
 
