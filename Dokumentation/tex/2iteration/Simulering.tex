@@ -33,8 +33,8 @@ Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \c
 Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind.
 
 \subsection{Constant load}
-Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang.
-Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her bde strøm og spænding på udgangen.
+Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
+Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her ses både strøm og spænding på udgangen.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simudgang.png}
@@ -42,3 +42,24 @@ Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her bde str
 	\label{fig: simudgang}
 \end{figure}
 Her ses det at spændingen V(out) ligger på 21V, dog med svingninger hver gang der switches. Det ser altså ud til at switching transienter fra MOSFET og diode kommer til syne på udgangen. Det er samme billede for strømmen I(Gload), der ellers ligger på de forventede 2.5A.
+
+På figur~\ref{fig: simMOSdio} ses en spændingsperiode for drain benet på MOSFET'en samt dioden. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SIMMOSFETdiode.png}
+	\caption{Simulering af spænding over diode og drain ben på MOSFET}
+	\label{fig: simMOSdio}
+\end{figure}
+Det ses, at når transistoren (rød kurve) går off så kommer den tidligere omtalte peakspænding samt den svinger, inden den går til en stationær værdi på ca. 48V, inden MOSFET'en switches on igen. Dette stemmer fint overens med analysen hvor den stationær værdi bør ligge på 21V+26V=47V.
+Peak'en er ca. 93V.
+Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V.
+
+\subsection{Load step}
+Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. Den eneste ændring i schematic'et fra før, ligger i toplaget, som ses på figur~\ref{fig: simloadtop}  
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simloadtop.png}
+	\caption{Toplaget for simulering af load step}
+	\label{fig: simloadtop}
+\end{figure}
+Resten af simuleringsblokkene er der ikke ændret ved. Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Det gør, at når switchen er off er loaden på $20\ohm$, men når switchen er on er det parallel modstanden af de 2, som vil være 10\ohm. De 2 switches er sat op således, at     

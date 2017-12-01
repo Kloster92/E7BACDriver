@@ -195,6 +195,8 @@ Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens d
 \noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
 
 \input{tex/2iteration/PWM-controller}
+<<<<<<< HEAD
+=======
 
 \section{Diode}
 For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er den maksimale indgangsspændingen plus udgangsspændingen. Faktoren på $1.3$, der ganges på, er en sikkerhedsmargin på $30\percent$:
@@ -203,9 +205,14 @@ Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
 \end{equation}
 Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
 Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
+>>>>>>> c2a744e3a54742ae7689fa63cbb3692dd6281371
 
 \section{MOSFET}
-MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Derudover er der lagt en margin på $30\percent$ oveni ligesom ved dioden. Det er for at tage højde for de peakspændinger, spredningsselvinduktionen giver anledning til. Det sikrer også mod andre ringninger, der kommer af designets parasitter.  
+MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Det vil ideelt set betyde, at MOSFET'en skal kunne holde til:
+\begin{equation} \label{Vds_breakideel}
+Vds_{breakideel} = (V_{inmax}+(V_{out}+V_D))= 71.5
+\end{equation}
+Der bør istedet ganges en sikkerhedsmargin oveni på $30\percent$. Det er til for at tage højde for de peakspændinger, der vil komme når der switches. De skyldes kombinationen af spredningsselvinduktionen og kapaciteterne fra MOSFET og diode. Derudover vil der også være kapacitet grundet transformatorens kobling. Typisk vil MOSFET og diodens kapaciteter være større og dermed dominerende. Tages der højde for disse spændingstransienter skal MOSFET'en minimum kunne holde til en spænding på: 
 \begin{equation} \label{Vds_break}
 Vds_{break} = (V_{inmax}+(V_{out}+V_D)) \cdot 1.3 = 92.95
 \end{equation}
@@ -213,6 +220,18 @@ Yderligere skal den valgte MOSFET kunne holde til RMS strømmen i primærvikling
 Til 2. iteration er IRFB23N15 valgt.(datasheet henvisning) Den kan holde til Vds på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en Rds(on) modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
 
 Det er en MOSFET, som vil kunne fungere i designet, men som også kan optimeres på on modstand og kapacitet på et senere tidspunkt, hvis tabet ender med at være for stort. 
+
+\section{Diode}
+For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er ideelt se den maksimale indgangsspændingen plus udgangsspændingen.
+\begin{equation} \label{Vd_breakideel}
+Vd_{breakideel} = (V_{out}+V_{inmax}) = 71V
+\end{equation}
+Igen skal der i realiteten tages højde for peakspændinger ligesom ved MOSFET'en. Der ganges derfor igen en faktor 1.3 på, og dioden skal dermed kunne holde til spændingen:
+\begin{equation} \label{Vd_break}
+Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
+\end{equation}
+Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
+Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
 
 \section{Udgangskondensator}
 Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
