@@ -37,7 +37,7 @@ w = \frac{1} {2} \cdot L \cdot {I_{pk}}^2 = 1.083\milli J
 For at beregne den tilladelige mængde energi i transformatoren, skal kernen og kernematerialet kendes. Valget er her faldet på en RM8 kerne og materialet 3f3. RM8 kernens mål gør, at den lige akkurat kan være på printet højdemæssigt. Derudover har Terma tidligere brugt RM8 kerner med 3f3 og har nogle mere præcise mål på AL og air gaps, end der er på datasheets’ne. (Kræver det flere argumenter?)
 
 
-\noindent Den effektive volumen Ve aflæses for RM8. På databladet for 3f3 aflæses et maks peak af B-feltet til omkring $250\milli T$. Hvis der designes efter, at transformatoren vil operere med et højere B-felt, vil man altså risikere at kernen går i mætning. Yderligere findes permeabiliteten for 3f3 materialet uden luftgap. Med disse oplysninger vil transformatoren kunne opbevare følgende energi:
+\noindent Den effektive volumen Ve aflæses for RM8. På databladet for 3f3 aflæses et maks peak af B-feltet til omkring $250\milli T$. Hvis der designes efter, at transformatoren vil operere med et højere B-felt, vil det risikeres at kernen går i mætning. Yderligere findes permeabiliteten for 3f3 materialet uden luftgab. Med disse oplysninger vil transformatoren kunne opbevare følgende energi:
 \begin{equation} \label{Energy_no_gap}
 w_{kerne} = \frac{1} {2} \cdot \frac{1}{\micro_e} \cdot B^2 \cdot V_e = 53\pico J
 \end{equation}
@@ -98,7 +98,7 @@ Her aflæses den primære til $3.01A$ og den sekundære til $3.33A$, hvilket ige
 	\caption{Hysteresekurve for transformatoren}
 	\label{fig: Hysterese_trans}
 \end{figure}
-Peak fluxen ligger på ca. $265mT$ hvilket igen passer fint med det der er designet efter. Yderligere ville man kunne se i toppen og bunden af kurven, hvis den gik i mætning, hvilket den ikke gør her.
+Peak fluxen ligger på ca. $265mT$ hvilket igen passer fint med det der er designet efter. Yderligere ville det kunne ses i toppen og bunden af kurven, hvis den gik i mætning, hvilket den ikke gør her.
 Tabet i selve kernen er simuleret ved at tage effekten ved den primære vikling i forhold til den sekundære vikling. Tages der i pspice en average af dette fås nedenstående kurve:
 \begin{figure}[H]
 	\center
@@ -287,7 +287,7 @@ C_{ESRtot} = ((10\milli \ohm)^{-1} \cdot 4)^{-1} = 2.5\milli \ohm
 \input{tex/2iteration/Inputfilter}
 
 \section{Tab}
-Her vil tabene for komponenterne i 2. iteration blive udregnet
+Her vil tabene for komponenterne i 2. iteration blive udregnet. 
 
 \subsection{Transformatortab}
 Transformatortabet kan deles op i 2 dele. Et kernetab og et kobbertab. Det beregnes herunder
@@ -323,7 +323,7 @@ AC-modstanden i viklingerne opstår på grund af, det magnetfelt kobbertrådene 
 
 AC-modstanden afhænger af indtrængningsdybden og trådens diameter. Hvis diameteren er tilpas lille i forhold til indtrængningsdybden, vil  hvirvelstrømmene i tråden udligne sig selv, og derved ikke bidrage til tabet. Er tråden til gengæld for tyk i forhold til indtrængningsdybden, vil det resultere i en hvirvelstrøm, der løber i hele trådens længde. 
 
-Måden man bestemmer AC-modstanden, er ud fra princippet \textit{Eddy Current Losses}. Det siger at forholdet mellem AC- og DC-modstanden, kan bestemmes ud fra forholdet mellem trådens diameter og indtrængningsdybden. Disse forhold er skitseret på figur~\ref{fig:Eddy_current_losses}\cite{eddy_current_losses}. Her ses det også, at AC-modstanden afhænger af hvor mange lag man vikler på transformatoren. 
+Måden AC-modstanden bestemmes, er vha. princippet \textit{Eddy Current Losses}. Det siger at forholdet mellem AC- og DC-modstanden, kan bestemmes ud fra forholdet mellem trådens diameter og indtrængningsdybden. Disse forhold er skitseret på figur~\ref{fig:Eddy_current_losses}\cite{eddyCurrentLosses}. Her ses det også, at AC-modstanden afhænger af hvor mange lag der er vikler på transformatoren. 
 
 \begin{figure}[H]
 	\center
@@ -332,7 +332,7 @@ Måden man bestemmer AC-modstanden, er ud fra princippet \textit{Eddy Current Lo
 	\label{fig:Eddy_current_losses}
 \end{figure}
 
-Dette er kompliceret at regne for en flyback transformator, og vil derfor ikke blive gjort i dette projekt. Derfor vil kobbertabet i transformatoren, kun være en estimering af det samlede kobbertab.
+Det er valgt at se bort fra AC-modstanden, når kobbertabet regnes. Derfor vil det, kun være en estimering af det samlede kobbertab i transformatoren. 
 
 \paragraph{DC-modstand}
 For at beregne DC-modstanden, udregnes først omkredsen af kerneformen. Transformatoren er viklet på en RM8. Denne form har i følge databladet en indre diameter på $9.95mm$ og en ydre diameter på $16.9mm$. For at finde en gennemsnitslængde på tråden, beregnes et gennemsnit af formens diameter, for derefter at beregne omkredsen af formen.
@@ -374,3 +374,17 @@ P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
 \end{equation}
 
 \input{tex/2iteration/Simulering}
+
+\section{Realisering}
+I dette afsnit implementeres, og testes, den designede converter i anden iteration. Implementeringen sker på et Mini-Mount, som består af et stort ground plan. Selve banerne består af små PCB-stykker der klistres ovenpå, hvor komponenterne loddes på. Ground plannet giver optimale forhold for både strømveje og afkobling. Da det er essentielt at holde banerne til ground på det minimale, giver ground planet de bedst mulige betingelser for converteren. 
+
+Mini-Mount'et ses på figur~\ref{fig:Mini_Mount}. Inputspændingen til converteren er placeret i midten til højre, inputspændingen til PWM-controlleren er placeret nederst til højre, og udgangen til loaden er placeret øverst til venstre. Med mindre andet er beskrevet testes der med fuld belastning ved $8.4\ohm$.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth, angle=-90]{/tex/2iteration/billeder/Realisering/Print.JPG}
+	\caption{Mini-Mount af converter}
+	\label{fig:Mini_Mount}
+\end{figure}
+
+\input{tex/2iteration/Realisering-PWM}
