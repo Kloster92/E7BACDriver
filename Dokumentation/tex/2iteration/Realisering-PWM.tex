@@ -94,7 +94,120 @@ Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren,
 	\label{tab:resultat_voltage_divider}
 \end{table}
 
-\subsubsection{Gain-fase måling}
+\subsubsection{Constant load}
+Ligesom ved simuleringsafsnittet ~\ref{constant} ses der på spænding på både udgang og begge sider af transformatoren. Der er brugt en indgangsspænding på 26V og en load på $8.4\ohm$. 
+Først er scoopets proper sat henover udgangen og resultatet af dette se på figur~\ref{fig: Out26V}
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Output_filtreret_26V.png}
+	\caption{Spændingsoutput ved 26V}
+	\label{fig: Out26V}
+\end{figure}
+Det ses at spændingen ligger på 20.97V, altså de forventede 21V. Der kan dog identificeres nogle ret store spikes. På figur~\ref{fig: Out26Vzoom} er der zoomet ind på disse.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Outputspike_zoom.png}
+	\caption{Zoomet på outputspike}
+	\label{fig: Out26Vzoom}
+\end{figure}
+Her ses det, at spiken når helt op på en peak af 4,5V. Disse peaks skyldes switching transienter og ved figur~\ref{fig: Out26V} kan det også ses, at det sker hver gang transistoren går on eller off.
+
+Disse transienter er endnu tydeligere ved transformatorens primær- og sekundærvikling. Først ses på figur~\ref{fig: privolt} spændingen ved den primærevikling. Det svarer til spændingen over drain på MOSFET'en. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Transformator_Primar.png}
+	\caption{Primær spænding}
+	\label{fig: privolt}
+\end{figure}
+Det ses, at spændingen stiger med et stort peak på 80V, når transistoren går off, og ligger sig stationært på ca. 47V og falder til 0V igen, når transistoren går on. På figur~\ref{fig: prizoom} zoomes der ind på spiken.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Transformator_Primarzoom.png}
+	\caption{Zoomet på primær peak}
+	\label{fig: prizoom}
+\end{figure}
+Udover peaken ses det, at spændingen svinger inden den ligger sig på den stationære værdi. Ses der på 2. svingningsperiode, aflæses svingningen for en periode til 40ns. Det betyder at frekvensen der ses ligger på ca:
+\begin{equation} \label{svingpri}
+f_{oscpri} = \frac{1}{40ns} = 25MHz
+\end{equation}
+
+På samme måde ses der på figur~\ref{fig:sek} på spændingen over den sekundære vikling. Det svarer også til spændingen på anoden af dioden. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Transformator_sekundar.png}
+	\caption{Sekundær spænding}
+	\label{fig:sek}
+\end{figure}
+Her falder spændingen, når transistoren går on, og falder i første omgang med ca. 60V. Herefter ligger den på ca. 45V indtil transistoren går off og spændingen ligger sig på 20V med et mindre peak. På figur~\ref{fig:sekzoom} zoomes der ind på peaken hvor transistoren går on.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.png}
+	\caption{Zoomet på sekundær peak}
+	\label{fig:sekzoom}
+\end{figure}
+Igen observeres det, at spændingen svinger indtil den når sin stationære værdi. Her aflæses svingningen til at være 35ns, og derfor lidt kortere end ved primærviklingen. Det giver en frekvens på:
+\begin{equation} \label{svingsek}
+f_{oscsek} = \frac{1}{35ns} = 28.6MHz
+\end{equation}
+
+I tabellen nedenfor ses en oversigt over analyse, simulering og realisering for Drain spændingen på MOSFET'en samt anoden på dioden. I analysen er der udregnet worstcase peakspændinger, og de er derfor ikke skrevet ind her. 
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|c|c|c|c}
+		\hline
+		 & \multicolumn{2}{|X|}{\textbf{Analyse}} & \multicolumn{2}{|X|}{\textbf{Simulering}} & \multicolumn{2}{|X|}{\textbf{Realisering}} \\ \hline
+		& MOSFET & Diode & MOSFET & Diode & MOSFET & Diode \\ \hline
+		Stationær spænding & $47V$ & $47V$ & $48V$ & $46V$ & $47V$ & $45V$ \\ \hline
+		Peakspænding &  &  & $93V$ & $80V$ & $80V$ & $60V$ \\ \hline
+	\end{tabularx}
+	\caption{Analyse, simulering og realisering af spændinger over MOSFET og diode}
+	\label{tab:MOSDIODE}
+\end{table}
+
+\subsubsection{Load step}
+Load steppet er realiseret på samme måde som det blev simuleret tidligere. Med 2 $20\ohm$ modstande i parallel. Den ene med en switch, så når switchen er off består loaden af en $20\ohm$ modstand, men når switchen går on er loaden $10\ohm$. Switchen blev indstillet til at sende en puls på 10ms. Oscilloskop propperne blev sat til at måle over udgangen, og resultatet af dette ses På figur~\ref{fig:belastning_samlet} 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningsamlet.png}
+	\caption{Realisering af load step}
+	\label{fig:belastningsamlet}
+\end{figure}
+Det ses hvordan spændingen falder først hvor belastningen stiger til $10\ohm$ og efter 10ms stiger spændingen, hvor belastningen kommer tilbage tl de $20\ohm$. På figur~\ref{fig:belastning_10ohm} er der zoomet ind på dykket ved de 10 ohm. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png}
+	\caption{Zoom på dyk ved 10ohm}
+	\label{fig:belastning_10ohm}
+\end{figure}
+Det kan aflæses at spændingen når at falde med ca. $700mV$ og det tager ca. $1.5ms$ at regulere tilbage igen.
+
+På samme måde ses stigningen ved de $20\ohm$ på figur~\ref{fig:belastning_20ohm}
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png}
+	\caption{Zoom på stigning ved 20ohm}
+	\label{fig:belastning_20ohm}
+\end{figure}
+Her stiger spændingen med ca. $600mV$ og bruger også omkring $1.5ms$ på at regulere ind igen. 
+
+Nedenfor ses et overblik over simuleringen af load steppet i forhold til realiseringen. 
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|l|l|l|l|}
+		\hline
+		& \multicolumn{2}{|l|}{\textbf{Simulering}} & \multicolumn{2}{|l|}{\textbf{Realisering}} \\ \hline
+		\textbf{Belastning} & $10\ohm$ & $20\ohm$ & $10\ohm$ & $20\ohm$ \\ \hline
+		Overshoot & $650mV$ & $700mV$ & $700mV$ & $600mV$  \\ \hline
+		Reguleringstid & $1.6ms$ & $1.6ms$ & $1.5ms$ & $1.5ms$ \\ \hline
+	\end{tabularx}
+	\caption{Simulering og realisering af load step}
+	\label{tab:Loadstep}
+\end{table}
+Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan dette usikkerheden ved det skyldes den lille afvigelse.
+
+\subsection{Gain-fase måling}
 Gain-fase målingen deles op i tre, ligesom ved analysen og simuleringen. Der måles overføringsfunktion for power modulet, fejlforstærkeren, og for det samlede system. Målingerne foretages vha. en Network Analyzer af typen HP4194A. Den måler overføringsfunktionen ved at indførere et fejlsignal i tilbagekoblingen, og måle hvordan udgange ændre sig. Derved opnås åbensløjfe overføringsfunktionen. Som ved simuleringen indføres fejlsignalet over en $51.1\ohm$ modstand, placeret i serie med den første modstand i spændingsdeleren. 
 
 Amplituden af fejlsignalet vælges til $30mV$. Ved for lille en amplitude kan signal/støj forholdet blive for småt ved lave frekvenser, mens en stor amplitude kan overstyre fejlforstærkeren. Ud fra Termas erfaringer er $30mV$ et fint udgangspunkt, men den skal muligvis justeres senere. For frekvens-sweepet vælges der et logaritmisk sweep, mens startfrekvensen vælges til $10\hertz$, og slutfrekvensen vælges til $100k\hertz$. 

@@ -32,9 +32,13 @@ Desuden ses output kondensatoren med de udregnede parasitter også.
 Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \cite{??}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
 Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind.
 
+<<<<<<< HEAD
 \input{tex/2iteration/Simulering-PWM}
 
 \subsection{Constant load}
+=======
+\subsection{Constant load} \label{constant}
+>>>>>>> 961c22aefac5926beb873cc8a6870e590842c21a
 Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
 Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her ses både strøm og spænding på udgangen.
 \begin{figure}[H]
@@ -57,15 +61,28 @@ Peak'en er ca. 93V.
 Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V.
 
 \subsection{Load step}
-Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. Den eneste ændring i schematic'et fra før, ligger i toplaget, som ses på figur~\ref{fig: simloadtop}  
+Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. I forhold til før, er der sket en ændring i toplaget i schematic, som ses på figur~\ref{fig: simloadtop}  
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simloadtop.png}
 	\caption{Toplaget for simulering af load step}
 	\label{fig: simloadtop}
 \end{figure}
-Resten af simuleringsblokkene er der ikke ændret ved. Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Det gør, at når switchen er off er loaden på $20\ohm$, men når switchen er on er det parallel modstanden af de 2, som vil være 10\ohm. De 2 switches er sat op således, at   
+Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Switchen U1 åbner efter 21ms hvor begge switches vil være on. Her er loaden parallelmodstanden af Rload1 og Rload2 og dermed $10\ohm$. Dette sker i 4ms, indtil switch U2 lukker og loaden igen består af de $20\ohm$ fra Rload1.
 
+\noindent Udover dette er der en yderligere ændring. Ved denne simulering er parasit spolen fjernet fra udgangskondensatoren. Dette er gjort, da spolen som før set, giver anledning til en del svingninger. Det er ikke den del, der her i load steppet er interessant, og derfor ses der bort fra den. Det vigtige er istedet hvor hurtigt der bliver reguleret og hvor stort et overshoot der fås. Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Load_step_simulering.png}
+	\caption{Simulering af load step}
+	\label{fig: simloadstep}
+\end{figure}
+
+Det ses, at så snart switch U1 går on falder spændingen fra $21V$ til ca. $20.35V$ og det tager systemet ca. 1.6ms at regulere tilbage igen. Da U2 går off stiger spændingen fra 21V til 21.7V og bruger igen 1.6ms, på at regulere spændingen tilbage til de 21V. 
+
+\subsection{Startup}
+Ved startup er schematic sat op på præcis samme måde som ved Constant load. Forskellen er her, at der ved simuleringen ses fra 0ms til 20ms. På den måde ses det hvordan systemet starter op, og hvor hurtigt der reguleres ind på de 21V. Da der er koblet en direkte spændingskilde på 12V ind på VCC for PWM controlleren, får man ikke det endelige billede af, hvordan det færdige vil se ud. Det bruges istedet for til at se, hvor hurtigt der reguleres ind, og om der sker nogle uforudsete ting under simuleringsstarten.
+ Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
 
 \input{tex/2iteration/Simulering-regulering}  

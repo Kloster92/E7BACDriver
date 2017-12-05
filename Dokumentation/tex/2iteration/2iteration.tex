@@ -198,7 +198,7 @@ Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens d
 
 
 
-\section{MOSFET}
+\section{MOSFET} \label{MOSFET}
 MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Det vil ideelt set betyde, at MOSFET'en skal kunne holde til:
 \begin{equation} \label{Vds_breakideel}
 Vds_{breakideel} = (V_{inmax}+(V_{out}+V_D))= 71.5
@@ -237,7 +237,11 @@ Igen skal der i realiteten tages højde for peakspændinger ligesom ved MOSFET'e
 Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
 \end{equation}
 Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
+<<<<<<< HEAD
 Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
+=======
+Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.45V$ ved $125\degreeCelsius$ og $2.5A$. 
+>>>>>>> 961c22aefac5926beb873cc8a6870e590842c21a
 
 \section{Udgangskondensator}
 Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
@@ -379,7 +383,64 @@ P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
 P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
 \end{equation}
 
+\subsection{MOSFET}
+Tabet i MOSFET'en kan deles op i 2 dele. Den har et conduction tab og et switchtab. 
+
+\subsubsection{Conduction tab}
+Til at beregne conduction tab i MOSFET'en benyttes RMS strømmen i den primære vikling som i 1. iteration blev udregnet til 3.09A. RMS strømmen i anden ganget med MOSFET'ens on modstand, som er $113\milli \ohm$, giver et tab på:
+\begin{equation} \label{P_con}
+P_{cond} = (I_{RMSp})^2 \cdot R_{on} = 1.06\watt
+\end{equation}
+
+\subsubsection{Switchtab}
+Switchtabet i MOSFET'en opstår som konsekvens af de effekttrekanter, der blev omtalt i MOSFET afsnittet ~\ref{MOSFET}. I denne udregning tages peak strømmen som peakaverage og der estimeres derved ved at lave effekttrekanterne lige store. Selve udregningen kommer af arealet af en trekant hvor peakaverage strøm ganget med max spænding er højden på trekanten. Længden af de 2 trekanter tilsammen ganges også på, og kommer af tr og tf tilsammen, som hver især i 2. iteration er designet til 150ns. Det giver et switchtab i MOSFET'en på:
+ \begin{equation} \label{P_switch}
+ P_{switch} = \frac{1}{2} \cdot I_{pkavg21} \cdot (V_{inmax}+V_{out21}) \cdot \frac{(t_r+t_f)}{T}= 4.859\watt
+ \end{equation} 
+Kapaciteten $C_{oss}$ i MOSFET'en giver også anledning til et tab. Det er dog så småt i forhold til resten af switchtabet, at det ikke er taget med i udregningen her. 
+
+\subsection{Diode}
+For at udregne tabet i dioden kigges der på strømmen i den samt spændingsfaldet over den. I diode afsnittet blev spændingsfaldet fastlagt ved $125\degreeCelsius$ til $0.45\ohm$. Ved strømmen ses på peakaverage strømmen på sekundærsiden, som udregnes ved:
+\begin{equation} \label{I_pk_avg}
+I_{pkavg} = \frac{I_{out}}{1-D_{maks}} = \frac{2.5A}{0.548} = 4.56A
+\end{equation}
+
+Disse 2 tal ganges sammen ligesom D for sekundærsiden ganges på. Dette giver et tab i dioden på:
+
+\begin{equation} \label{diodetab}
+P_D = I_{pkavg} \cdot V_D \cdot (1-D_{max21}) = 4.56A \cdot 0.45 \cdot 0.56 = 1.125W 
+\end{equation}  
+Kigges der nærmere på de 2 formler svarer udregninger til, at gange udgangsstrømmen med spændingsfaldet, da $1-D_{max21}$ vil gå ud med hinanden.
+
+Da der i dette projekt benyttes en schottky diode, har den ikke nogen reverse recovery tid. Det betyder, at der ikke vil være noget nævneværdigt switchtab i dioden. 
+
+\subsection{Oversigt over analyseret tab}
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|}
+		\hline
+		\textbf{\large Komponent} & {\textbf{\large Tab}} \\ \hline
+		& 	\\ \hline
+		\textbf{Transformator samlet} & $2.04\watt$ \\ \hline 
+		Kernetab & $366m\watt$ \\ \hline
+		Kobbertab & $1.09\watt$ \\ \hline
+		& 	\\ \hline
+		\textbf{MOSFET samlet} & $5.92\watt$ \\ \hline
+		Conductiontab & $1.06\watt$ \\ \hline
+		Switchtab & $4.86\watt$ \\ \hline
+		& 	\\ \hline
+		\textbf{Diode} & $1.13\watt$ \\ \hline
+		& 	\\ \hline
+		\textbf{Total tab} & $9.09\watt$ \\ \hline
+	\end{tabularx}
+	\caption{Oversigt over analyseret tab}
+	\label{tab:analyseret}
+\end{table}
+
 \input{tex/2iteration/Simulering}
+
+\clearpage 
 
 \section{Realisering}
 I dette afsnit implementeres, og testes, den designede converter i anden iteration. Implementeringen sker på et Mini-Mount, som består af et stort ground plan. Selve banerne består af små PCB-stykker der klistres ovenpå, hvor komponenterne loddes på. Ground plannet giver optimale forhold for både strømveje og afkobling. Da det er essentielt at holde banerne til ground på det minimale, giver ground planet de bedst mulige betingelser for converteren. 
