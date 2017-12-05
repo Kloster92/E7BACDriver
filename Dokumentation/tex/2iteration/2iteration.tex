@@ -237,11 +237,10 @@ Igen skal der i realiteten tages højde for peakspændinger ligesom ved MOSFET'e
 Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
 \end{equation}
 Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
-<<<<<<< HEAD
+
 Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
-=======
+
 Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.45V$ ved $125\degreeCelsius$ og $2.5A$. 
->>>>>>> 961c22aefac5926beb873cc8a6870e590842c21a
 
 \section{Udgangskondensator}
 Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
