@@ -195,17 +195,8 @@ Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens d
 \noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
 
 \input{tex/2iteration/PWM-controller}
-<<<<<<< HEAD
-=======
 
-\section{Diode}
-For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er den maksimale indgangsspændingen plus udgangsspændingen. Faktoren på $1.3$, der ganges på, er en sikkerhedsmargin på $30\percent$:
-\begin{equation} \label{Vd_break}
-Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
-\end{equation}
-Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
-Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
->>>>>>> c2a744e3a54742ae7689fa63cbb3692dd6281371
+
 
 \section{MOSFET}
 MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Det vil ideelt set betyde, at MOSFET'en skal kunne holde til:
@@ -217,9 +208,24 @@ Der bør istedet ganges en sikkerhedsmargin oveni på $30\percent$. Det er til f
 Vds_{break} = (V_{inmax}+(V_{out}+V_D)) \cdot 1.3 = 92.95
 \end{equation}
 Yderligere skal den valgte MOSFET kunne holde til RMS strømmen i primærviklingen på $3.02A$ samt peakstrømmen på $5.64A$.
-Til 2. iteration er IRFB23N15 valgt.(datasheet henvisning) Den kan holde til Vds på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en Rds(on) modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
+Til 2. iteration er IRFB23N15 valgt\cite{IRFB23N15}. Den kan holde til Vds på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en Rds(on) modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
 
-Det er en MOSFET, som vil kunne fungere i designet, men som også kan optimeres på on modstand og kapacitet på et senere tidspunkt, hvis tabet ender med at være for stort. 
+\subsection{Switch-tid}
+MOSFET'ens switch-tid bestemmes af den strøm der løber i gaten. MOSFet'en indeholder flere parasitiske kapaciteter, mellem gate-drain og gate-source. Hvor opladningen af gate-drain, også kaldet Miller kapaciteten, bestemmer hvor hurtigt MOSFET'en kan skifte tilstand fra OFF til ON. I switch-tiden vil der både løbe en strøm i MOSFET'en og ligge en spænding over den. Dette vil give anledning til et tab kaldet switch-tab. Princippet i tabet er skitseret på figur~\ref{fig:MOSFET_switch_tid}. Her ses det, at når gate spændingen går høj, skifter MOSFET'en ikke momentant. Det er først når strømmen er rampet op, spændingen begynder at falde. Da effekten er produktet mellem strøm og spænding, vil dette skabe energitrekanter, hvor længden af dem er lig switch-tiden. Den tid ønskes derfor kort, for at mindske switch-tabet. 
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/MOSFET_switch_tid.png}
+	\caption{Effekttrekanter for MOSFET}
+	\label{fig:MOSFET_switch_tid}
+\end{figure}
+
+Gate modstanden regnes ved at løse ligning~\ref{R_g_2}. Her er $T_{ch}$ den ønskede switch-tid, som sættes til ca. $150ns$. $Q_{gd}$ er gate-drain ladningen, som afhænger af Miller kapaciteten, den aflæses i databladet til $19nC$. $V_{DD}$ er forsyningsspændingen til PWM-controlleren på $12V$, og dermed også den maksimale spænding af udgangssignalet. $V_{gs}$ er spændingsfaldet fra gate til source for MOSFET'en. Med en drain strøm på $3A$ bliver $V_{gs}\approx 5V$. Dette indsætte og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=55.3\ohm$. Der vælges en modstand på $51.1\ohm$. Med den valgte modstand korrigeres switch-tiden til $138.7ns$.
+
+\begin{equation} \label{R_g_2}
+T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}}
+\end{equation}
 
 \section{Diode}
 For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er ideelt se den maksimale indgangsspændingen plus udgangsspændingen.
@@ -231,7 +237,7 @@ Igen skal der i realiteten tages højde for peakspændinger ligesom ved MOSFET'e
 Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
 \end{equation}
 Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
-Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
+Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
 
 \section{Udgangskondensator}
 Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
@@ -378,12 +384,12 @@ P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
 \section{Realisering}
 I dette afsnit implementeres, og testes, den designede converter i anden iteration. Implementeringen sker på et Mini-Mount, som består af et stort ground plan. Selve banerne består af små PCB-stykker der klistres ovenpå, hvor komponenterne loddes på. Ground plannet giver optimale forhold for både strømveje og afkobling. Da det er essentielt at holde banerne til ground på det minimale, giver ground planet de bedst mulige betingelser for converteren. 
 
-Mini-Mount'et ses på figur~\ref{fig:Mini_Mount}. Inputspændingen til converteren er placeret i midten til højre, inputspændingen til PWM-controlleren er placeret nederst til højre, og udgangen til loaden er placeret øverst til venstre. Med mindre andet er beskrevet testes der med fuld belastning ved $8.4\ohm$.
+Implementeringen af converteren ses på figur~\ref{fig:Mini_Mount}. Inputspændingen er placeret i midten til højre, inputspændingen til PWM-controlleren er placeret nederst til højre, og udgangen til loaden er placeret øverst til venstre. Med mindre andet er beskrevet testes der med fuld belastning ved ca. $8.4\ohm$.
 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth, angle=-90]{/tex/2iteration/billeder/Realisering/Print.JPG}
-	\caption{Mini-Mount af converter}
+	\caption{Implementering af converter}
 	\label{fig:Mini_Mount}
 \end{figure}
 

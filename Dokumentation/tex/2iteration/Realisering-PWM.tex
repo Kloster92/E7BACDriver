@@ -1,10 +1,25 @@
 %%% Realisering af PWM controller %%%
 
 \subsection{PWM-controller}
-I det følgende afsnit testes implementeringen af PWM-controlleren. Her måles frekvensen af savtandspændingen og selve switch-frekvensen, signalet over current-sense modstanden både før og efter filteret, til sidst lave der en gain-fase karakteristik af systemet.
+I det følgende afsnit testes implementeringen af PWM-controlleren. Her måles frekvensen af savtandspændingen og selve switch-frekvensen, samt signalet over current-sense modstanden både før og efter filteret.
 
 \subsubsection{Switch-frekvens}
-Først måles frekvensen af savtandspændingen. Denne frekvens måles til $160k\hertz$, hvor der ønskes $200k\hertz$. Da switch-frekvensen af indflydelse på mange ting i converteren, ændres modstanden således der opnås en frekvens på ca. $200k\hertz$. Der vælges en modstand på $33.2k\ohm$. På figur~\ref{fig:Savtand} og \ref{fig:Udgang_PWM} ses henholdsvis målingen af savtandspændingen og udgangen af PWM-controlleren. Her ses det, at der er opnået en frekvens for savtandspændingen på $192k\hertz$, og en frekvens for udgangssignalet på $102.6k\hertz$. Med et udgangspunkt på $100k\hertz$, godtages denne afvigelse.
+Først måles frekvensen af savtandspændingen. Denne frekvens måles til $160k\hertz$, hvor der ønskes $200k\hertz$. Da switch-frekvensen af indflydelse på mange ting i converteren, ændres modstanden således der opnås en frekvens på ca. $200k\hertz$. Der vælges en modstand på $33.2k\ohm$. På figur~\ref{fig:Savtand} og \ref{fig:Udgang_PWM} ses henholdsvis målingen af savtandspændingen og udgangen af PWM-controlleren. Her ses det, at der er opnået en frekvens for savtandspændingen på $192k\hertz$, og en frekvens for udgangssignalet på $102.6k\hertz$. Med et udgangspunkt på $100k\hertz$, godtages denne afvigelse. Resultaterne for analyse, simulering og realisering indføres i tabel~\ref{tab:resultat_switch_frekvens}.
+
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|}
+		\hline
+		\textbf{Frekvens} & \multicolumn{3}{|c|}{\textbf{Oscillator frekvens}} 										\\ \hline
+		& A & S & R 									\\ \hline
+		$f_{osc}$ & $200k\hertz$ & $199.6k\hertz$ & $192k\hertz$ 									\\ \hline 
+		$f_s$ & $100k\hertz$ & $99.01k\hertz$ & $102.6k\hertz$ 									\\ \hline
+	\end{tabularx}
+	\caption{Resultater for analyse, simulering og realisering af switch-frekvens}
+	\label{tab:resultat_switch_frekvens}
+\end{table}
+
 
 \begin{figure}[H]
 	\center
@@ -19,6 +34,31 @@ Først måles frekvensen af savtandspændingen. Denne frekvens måles til $160k\
 	\caption{Udgang af PWM-controller}
 	\label{fig:Udgang_PWM}
 \end{figure} 
+
+\subsubsection{Switch-tid}
+Målingen af switch-tiden er vist på figur~\ref{fig:Realisering_MOSFET_switch_tid_2}. Figuren viser MOSFET'ens drain på kannal 1, og MOSFET'ens gate på kannal 2. Her aflæses switch-tiden i MOSFET'en som længden af plateauet på gate signalet, og aflæses til ca. $120ns$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultat_switch_tid_2}. Her er simuleringen dog foretaget med en anden MOSFET.
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|}
+		\hline
+		\textbf{Tid} & \multicolumn{3}{|c|}{\textbf{Switch-tid}} 										\\ \hline
+		& A & S & R 									\\ \hline
+		$T_{ch}$ & $138.7ns$ & $103ns$ & $120ns$ 									\\ \hline 
+		
+	\end{tabularx}
+	\caption{Resultater for analyse, simulering og realisering af switch-tid}
+	\label{tab:resultat_switch_tid_2}
+\end{table}
+
+ 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png}
+	\caption{Switch-tid for MOSFET'en}
+	\label{fig:Realisering_MOSFET_switch_tid_2}
+\end{figure} 
+
 
 \subsubsection{Current-sense kredsløb}
 Current-sense signalet måles både før og efter filteret. Signalet før filteret ses på figur~\ref{fig:CS_U_filter}. Her ses tydeligt de spikes der ønskes filtreret væk, da de overstiger den egentlige peak på signalet. Figur~\ref{fig:CS_M_filter} viser signalet efter filteret. Her ses det at de spikes der var på signalet er blevet filtreret væk. Til gengælder ses det at signalet er blevet langsommere, ved de afrundede hjørner. Dette er ikke optimalt ved lavere duty-cycles, da det som nævnt i afsnit~\ref{CS_protection} vil påvirke systemets I/V-karakteristik. Derfor vil stige tiden af filteret blive optimeret i tredje iteration. 
@@ -39,7 +79,20 @@ Current-sense signalet måles både før og efter filteret. Signalet før filter
 
 
 \subsubsection{Spændingsdeler}
-Spændingsdeleren testes ved at 
+Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren, når udgangsspændingen er $21V$. Dette er gjort på figur. Spændingen er målt til $2.5V$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{label}.
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|}
+		\hline
+		\textbf{Spænding} & \multicolumn{3}{|c|}{\textbf{Resultater}} 		\\ \hline
+		& A & S & R 									\\ \hline
+		$V_{FB}$ & $2.5V$ & $103ns$ & $120ns$ 									\\ \hline 
+		
+	\end{tabularx}
+	\caption{Resultater for analyse, simulering og realisering af switch-tid}
+	\label{tab:resultat_voltage_divider}
+\end{table}
 
 \subsubsection{Gain-fase måling}
 Gain-fase målingen deles op i tre, ligesom ved analysen og simuleringen. Der måles overføringsfunktion for power modulet, fejlforstærkeren, og for det samlede system. Målingerne foretages vha. en Network Analyzer af typen HP4194A. Den måler overføringsfunktionen ved at indførere et fejlsignal i tilbagekoblingen, og måle hvordan udgange ændre sig. Derved opnås åbensløjfe overføringsfunktionen. Som ved simuleringen indføres fejlsignalet over en $51.1\ohm$ modstand, placeret i serie med den første modstand i spændingsdeleren. 

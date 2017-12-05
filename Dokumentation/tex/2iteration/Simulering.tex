@@ -29,8 +29,10 @@ Desuden ses output kondensatoren med de udregnede parasitter også.
 	\caption{Flyback converter blok}
 	\label{fig: simflycon}
 \end{figure}
-Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \cite{??}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den. \cite{IRF630MOSFET} 
+Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \cite{??}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
 Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind.
+
+\input{tex/2iteration/Simulering-PWM}
 
 \subsection{Constant load}
 Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
@@ -66,4 +68,4 @@ Resten af simuleringsblokkene er der ikke ændret ved. Den eneste forskel er i u
 
 
 
-\input{tex/2iteration/Simulering-PWM}  
+\input{tex/2iteration/Simulering-regulering}  

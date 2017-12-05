@@ -38,51 +38,19 @@ Produktets krav er prioriteret ved brug af MoSCoW metoden. Her er kravene inddel
 \clearpage
 
 
+\section{Load beskrivelse} \label{load_types}
+I det følgende afsnit beskrives systemets to loads. Hver beskrivelse indeholder en kort beskrivelse af aktørens funktionalitet.
 
-\section{Aktør diagrammer}
-I det følgende afsnit vises systemets aktører, i et aktør-kontekst diagram, figur~\ref{fig: Aktor_kontekst}. Her er primære aktøre vist til venstre, og sekundære aktøre vist til højre. Desuden gives et mere uddybende indblik i aktørernes interaktion med systemets use-cases, i et use-case diagram, figur~\ref{fig: use_case_diagram}.
-\begin{figure}[H]
-	\centering
-	\includegraphics{tex/Kravspecifikation/billeder/AktorkontekstdiagramV1.pdf}
-	\caption{Aktør-kontekst diagram}
-	\label{fig: Aktor_kontekst}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics{tex/Kravspecifikation/billeder/UseCasediagramV1.pdf}
-	\caption{Use case diagram}
-	\label{fig: use_case_diagram}
-\end{figure}
-
-
-
-
-\section{Aktørbeskrivelse}
-I det følgende afsnit beskrives systemets aktører. Hver beskrivelse indeholder angivelse af aktør typen, samt en kort beskrivelse af aktørens funktionalitet.
 
 \begin{framed}
-	\subsection{Aktør: Bruger}
-	\subsubsection*{Type:}
-		Primær
-	
-	\subsubsection*{Beskrivelse:}
-		Brugeren interagerer med systemet, ved at indstille den ønskede load type.
-\end{framed}
+	\subsection{Thermal Knife load}
 
-\begin{framed}
-	\subsection{Aktør: Thermal Knife load}
-	\subsubsection*{Type:}
-	Sekundær
-	
 	\subsubsection*{Beskrivelse:}
 	Thermal Knife load er en load type, hvor et varmelegeme opvarmes langsomt. \indent Denne type bruges til at skære reb over, og derved udløse diverse bevægelige \indent dele.
 \end{framed}
 
 \begin{framed}
-	\subsection{Aktør: Pyro load}
-	\subsubsection*{Type:}
-	Sekundær
+	\subsection{Pyro load}
 	
 	\subsubsection*{Beskrivelse:}
 	Pyro load er en load type, hvor en glødetråd opvarmes hurtigt. Denne type bru- \indent ges til at detonere en krudtladning, og derved sprænge en bolt af, som frigør \indent diverse bevægelige dele.
@@ -90,100 +58,17 @@ I det følgende afsnit beskrives systemets aktører. Hver beskrivelse indeholder
 
 \clearpage
 
-	
+\section{Flow diagram}
+I dette afsnit beskrives flowet i systemet vha. et flow diagram. Det opstilles for at give et overblik over systemets flow, og hvilke scenarier der kan påvirke det. 
 
-% Skabelon
-%\begin{framed}
-%\subsubsection{Mål:}
-%
-%\subsubsection{Initiering:}
-%
-%\subsubsection{Aktører:}
-%
-%\subsubsection{Referencer:}
-%
-%\subsubsection{Samtidige forekomster:}
-%
-%\subsubsection{Forudsætning:}
-%
-%\subsubsection{Resultat:}
-%
-%\subsubsection{Hovedscenarie:}
-%
-%\subsubsection{Extension:}
+Starten initieres ved der vælges load type. Som udgangspunkt vælges der mellem Pyro load og Thermal Knife load, som begge er beskrevet i afsnit~\ref{load_types}. Her kan der tilføjes flere loads, hvis systemet ønskes tilpasset til flere typer. Hvis der ikke vælges en load type, skal systemet, som default, indstilles til Thermal Knife load. Nu bliver systemet initieret, ved at aktivere loaden. Dette starter de to reguleringssløjfer - spændingsreguleringen og strømreguleringen. Begge sløjfer tilpasser PWM-signalets duty-cycle, hvis det faktiske output ikke er lig det ønskede. Til sidst kontrolleres det om loaden skal deaktiveres, eller reguleringen skal fortsætte.
 
-\section{Fully dressed use cases}
-
-\begin{framed}
-	\subsection{Use case 1 - Aktiver Thermal Knife load}
-	\subsubsection*{Mål:}
-	At aktivere Thermal Knife load
-	
-	\subsubsection*{Initiering:}
-	Brugeren
-	
-	\subsubsection*{Aktører:}
-	Brugeren (Primær)\\ \indent
-	Thermal Knife load (Sekundær)
-	
-	\subsubsection*{Referencer:}
-	Ingen
-	
-	\subsubsection*{Samtidige forekomster:}
-	En
-	
-	\subsubsection*{Forudsætning:}
-	Hverken Use case 1 eller Use case 2 er under udførelse
-	
-	
-	\subsubsection*{Resultat:}
-	Thermal knife load er aktiveret
-	
-	
-	\subsubsection*{Hovedscenarie:}
-	\begin{enumerate}
-		\item Brugeren vælger Thermal knife load
-		\item Systemet indstiller strøm og spænding til Thermal Knife load
-		\item Systemet aktiverer Thermal knife load
-	\end{enumerate}
-	
-\end{framed}
-
-\clearpage
-
-\begin{framed}
-	\subsection{Use case 2 - Aktiver Pyro load}
-	
-	\subsubsection*{Mål:}
-	Aktiver Pyro load
-	
-	\subsubsection*{Initiering:}
-	Bruger
-	
-	\subsubsection*{Aktører:}
-	Bruger (Primær)\\ \indent
-	Pyro load (Sekundær)
-	
-	\subsubsection*{Referencer:}
-	Ingen
-	
-	\subsubsection*{Samtidige forekomster:}
-	En
-	
-	\subsubsection*{Forudsætning:}
-	Hverken Use case 1 eller Use case 2 er under udførelse
-	
-	\subsubsection*{Resultat:}
-	Pyro load er aktiveret
-	
-	\subsubsection*{Hovedscenarie:}
-	\begin{enumerate}
-		\item Brugeren vælger Pyro load
-		\item Systemet indstiller strøm og spænding til Pyro load %TODO Sammenhæng accepttest
-		\item Systemet aktiverer Pyro load
-	\end{enumerate}
-
-\end{framed}
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/kravspecifikation/billeder/Flow_diagram.pdf}
+	\caption{Flow diagram over systemet}
+	\label{fig:flow_diagram}
+\end{figure}
 
 \clearpage
 
@@ -200,10 +85,10 @@ I dette afsnit beskrives produktets ikke-funktionelle krav. Her opstilles f.eks.
 			\item Converteren skal operere med et tab på maksimalt 5W %TODO Specificer tab nærmere
 			\item Converteren skal implementeres i et volumen mindre end 17x75x100mm på forsiden af PCB'et, samt 3x75x100mm på bagsiden af PCB'et
 			\item Converteren skal kunne operere med en omgivelsestemperatur mellem -35\degreeCelsius\  og 65\degreeCelsius\
-			\item Converteren skal have stabil regulering med 10dB gain margin og 50 graders fasemargin ved:
+			\item Converteren skal have stabil regulering med minimum 10dB gain margin og 50 graders fasemargin ved:
 				\begin{description}
-					\item 21V/2,5A ved 50V og 26V inputspænding
-					\item 5A/3\ohm\ ved 50V og 26V indgangsspænding
+					\item 21V/2,5A ved 26V og 50V inputspænding
+					\item 5A/3\ohm\ ved 26V og 50V indgangsspænding
 				\end{description}
 			\item Reguleringen skal have en risetime på maksimalt 0,5ms
 			\item Reguleringen skal have et overshoot på maksimalt 5\% %TODO Specificer overshoot nærmere

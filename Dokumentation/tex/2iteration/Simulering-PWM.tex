@@ -1,58 +1,57 @@
-%%% Simulering af gain-fase for 2. iteration
+%%% Simulering af PWM-controller for 2. iteration
 
-\subsection{Gain-fase}
-Simuleringsdiagrammet for gain-fase, ses på figur~\ref{fig:sim_gain_fase_top}. For at lave simuleringen, indføres der et fejl signal i tilbage koblingen til fejlforstærkeren. Det gøres ved at indsætte en ekstra modstand inden spændingsdeleren, som ses på figur~\ref{fig:sim_gain_fase_2iteration}. Impedansen af denne modstand vælges til $51.1\ohm$, for at tilpasning til den network analyzer der bruges i realiseringen. Derudover vil modstanden ikke påvirke spændingsdeleren, da den er meget lille ift. $RFB1$. Da der indføres et fejlsignal på indgangen, mens ændringen på udgangen monitoreres, er det åbensløjfen der simuleres. 
+\subsection{PWM-controller}
+I det følgende afsnit simuleres funktionaliteterne omkring PWM-controlleren. Her simuleres frekvensen af savtandspændingen og selve switch-frekvensen, samt signalet over current-sense modstanden både før og efter filteret.
+
+\subsubsection{Switch-frekvens}
+Først simuleres frekvensen af savtandspændingen. Dette er gjort på figur~\ref{fig:Simulering_PWM_savtand}. Periodetiden af savtandspændingen aflæses til $5.01\micro s$. Omregnet til en frekvens giver det: $f_{osc}=\frac{1}{5.01\micro s}=199.6k\hertz$. Derudover aflæses signalets minimumsspænding til ca. $138mV$, og maksimum- til ca. $2.5V$. I følge teorien burde spændingen ligge mellem $200mV$ og $2.65V$.
 
 \begin{figure}[H]
 	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_gain_fase_top.png}
-	\caption{Gain-fase simuleringsdiagram}
-	\label{fig:sim_gain_fase_top}
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_PWM_savtand.png}
+	\caption{Simulering af savtandspændingen}
+	\label{fig:Simulering_PWM_savtand}
+\end{figure}
+
+Nu simuleres selve switch-frekvensen. Dette er gjort på figur~\ref{fig:Simulering_PWM_switch_frekvens}, hvor der måles på udgangen af PWM-controlleren. Her måles periodetiden til $10.1\micro s$, eller en frekvens på $f_s=99.01k\hertz$. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_PWM_switch_frekvens.png}
+	\caption{Simulering af switch-frekvens}
+	\label{fig:Simulering_PWM_switch_frekvens}
+\end{figure}
+
+\subsubsection{Switch-tid}
+Simuleringen af switch-tiden i MOSFET'en er vist på figur~\ref{fig:Simulering_MOSFET_switch_tid}. Figuren viser et zoom af MOSFET'ens gate signal. Switch-tiden kan aflæses som tiden af signalets plateau. Det aflæses til ca. $103ns$. Grunden til dette afviger meget fra analysen, er modellen for den MOSFET der bruges i simuleringen. Som nævnt bruges en anden MOSFET i simuleringen, end der er regnet med i analysen. En af de specifikationer de afviger mellem de to MOSFETs er \textit{Miller} ladningen, der bruges til at regne switch-tiden. I databladet for IRF630\cite{IRF630}, aflæses den til $15nC$. Regnes switch-tiden ud fra det, fås $107.1ns$, hvilket stemmer med det simulerede. 
+\begin{equation} 
+T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}} = \frac{15nC \cdot 50\ohm}{12V-5V} = 107.1ns
+\end{equation}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_MOSFET_switch_tid.png}
+	\caption{Simulering af switch-tid i MOSFET}
+	\label{fig:Simulering_MOSFET_switch_tid}
+\end{figure}
+
+
+\subsubsection{Current-sense}
+Current-sense signalet måles både før og efter filtreringen. Signalet før filteret ses på figur~\ref{fig:Simulering_PWM_current_sense_U}. Her ses de spikes på signalet, der kan give anledning til en forkert duty-cycle. Figur~\ref{fig:Simulering_PWM_current_sense_M} viser simuleringen for signalet efter filtreringen. Her ses det at spikesene er blevet filtreret væk, dog med den konsekvens at signalet har fået en langsommere stigetid. Stigetiden aflæses til ca. $280ns$. Ifølge teorien burde PWM-controllerens udgangssignal skifte, når current-sense signalet er lig $1V$. På figur~\ref{fig:Simulering_PWM_current_sense_M}, ses det, at dette også er tilfældet for p-spice modellen for UCC1801. 
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_PWM_current_sense_U.png}
+	\caption{Simulering af current-sense signal før filtrering}
+	\label{fig:Simulering_PWM_current_sense_U}
 \end{figure}
 
 \begin{figure}[H]
 	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_gain_fase_2iteration_flyback.png}
-	\caption{Flyback blok - Gain-fase simulering}
-	\label{fig:sim_gain_fase_2iteration}
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_PWM_current_sense_M.png}
+	\caption{Simulering af current-sense signal efter filtrering}
+	\label{fig:Simulering_PWM_current_sense_M}
 \end{figure}
-
-For at lave gain-fase simuleringen skal der foretages et frekvens-sweep af fejlsignalet. Derfor skal der laves en AC-simulering af kredsløbet. Det er dog ikke muligt med det bibliotek der bruges af UCC1801. Derfor foretages der en transient simulering, hvor frekvensen af fejlkilden løbende hæves. Dette giver en fil, med en simulering af alle ønskede frekvenser. Ud fra denne fil kan p-spice generere den tilhørende AC-fil, hvor gain-fase af systemet kan plottes. 
-
-For at sætte simuleringen op i p-spice, indsættes tekstblokken \textit{@PSpice:}. Den ses på figur~\ref{fig:sim_gain_fase_top}. I den vælges længden på simuleringerne og frekvens-sweep'et. På første linje defineres længden af hver simulering. Den første og den sidste($0$ og $SSD$) del af linjen definerer opstarten, hvor $SSD=15ms$. Ved kommandoen \textit{Skipbp}, vælges det at se bort fra opstarten, og dermed kun se steady-state. Den midterste del af linjen($5/Freq+SSD$) definerer hvor langt selve signalet skal være. Hvor Freq er den variable frekvens. $5/Freq$ bestemmer at der simuleres fem perioder, og $+SSD$ tager højde for at opstarten ikke medtages. 
-
-Anden linje definerer om der ønskes et lineært eller et logaritmisk sweep. Ved at bruge kommandoen \textit{dec}, for deacde, vælges et logaritmisk sweep. Derudover vælges start- og stopfrekvens, samt hvor mange simuleringer der skal foretages i hver dekade. Her vælges en startfrekvens på $100\hertz$, en slutfrekvens på $100k\hertz$, og 10 simuleringer per dekade. Da systemets dominerende pol ligger ved $132\hertz$, ville det være optimalt at have en startfrekvens på $10\hertz$. Dette var dog ikke muligt pga. simuleringstid og filstørrelse. De sidste to linjer fortæller p-spice, at det er Freq der er variabel. 
-
-Opsætningen af indgangskilden og udgangsloaden, gøres på samme måde som ved Constant Load. Amplituden af fejlkilden, opsættes således amplituden falder når frekvensen stiger. Dette sikre at systemet ikke overstyres ved høje frekvenser. 
-
-Simulering af gain-fase for selve power modulet er vist på figur~\ref{fig:sim_gain_fase_power}. Her er gain grøn og fasen er rød. Der er målt mellem udgangen af fejlforstærkeren og udgangen af converteren. Det ses at når frekvensen nærmer sig $10k\hertz$, bliver simuleringen usikker. Derfor vil det primært være analysen der bruges til sammenligning med realiseringen. Båndbredden kan dog aflæses til ca. $1200\hertz$, hvilket stemmer nogenlunde overens med analysen, som blev aflæst til ca. $1430\hertz$. Derudover aflæses gain ved en frekvens på $100\hertz$ til ca. $17.4\decibel$. Ved analysen blev dette aflæst til ca. $18\decibel$. Ud fra disse punkter kan det ses at simulering passer nogenlunde ved de lavere frekvenser. 
-
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_gain_fase_power.png}
-	\caption{Gain-fase simulering for power modul}
-	\label{fig:sim_gain_fase_power}
-\end{figure}
-
-Simuleringen af gain-fase for fejlforstærkeren er vist på figur~\ref{fig:sim_gain_fase_2iteration_opamp}. Der er målt mellem indgangen til spændingsdeleren og udgangen af fejlforstærkeren. Det ses at den ønskede funktionalitet af fejlforstærkeren er opnået. Ved frekvenser over knækfrekvensen på ca. $300\hertz$, har fejlforstærkeren et konstant gain på ca. $-5.3\decibel$. Mens forstærkningen stiger ved lavere frekvenser. Derudover ses det at fejlforstærkeren tilførere et faseløft på $90^\circ$, da der indføres en pol.
-
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_gain_fase_2iteration_opamp.png}
-	\caption{Gain-fase simulering for fejlforstærker}
-	\label{fig:sim_gain_fase_2iteration_opamp}
-\end{figure}
-
-
-Simuleringen af gain-fase for det samlede system er vist på figur~\ref{fig:sim_gain_fase_2iteration_tot}. Der er målt over den modstand hvor fejlsignalet indføres. Det svarer også til indgangen af spændingsdeleren og udgangen af converteren. Her ses det samme, som ved power modulet, at simuleringen ved de høje frekvenser bliver usikker. Indførelsen af fejlforstærkeren ses, ved båndbredden er blevet begrænset til ca. $700\hertz$. Der er designet efter en båndbredde på ca. $800\hertz$. 
-
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_gain_fase_2iteration_tot.png}
-	\caption{Gain-fase simulering for det samlede system}
-	\label{fig:sim_gain_fase_2iteration_tot}
-\end{figure}
-
-
 
 
