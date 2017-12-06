@@ -147,21 +147,22 @@ Her falder spændingen, når transistoren går on, og falder i første omgang me
 \end{figure}
 Igen observeres det, at spændingen svinger indtil den når sin stationære værdi. Her aflæses svingningen til at være 35ns, og derfor lidt kortere end ved primærviklingen. Det giver en frekvens på:
 \begin{equation} \label{svingsek}
-f_{oscsek} = \frac{1}{35ns} = 28.6MHz
+f_{oscsek} = \frac{1}{35ns} = 28.57MHz
 \end{equation}
 
-I tabellen nedenfor ses en oversigt over analyse, simulering og realisering for Drain spændingen på MOSFET'en samt anoden på dioden. I analysen er der udregnet worstcase peakspændinger, og de er derfor ikke skrevet ind her. 
+I tabellen nedenfor ses en oversigt over simulering og realisering for drain spændingen på MOSFET'en samt anoden på dioden.
 
 \begin{table}[H] 			
 	\centering
-	\begin{tabularx}{\textwidth}{|X|c|c|c|c|c|c|c}
+	\begin{tabularx}{\textwidth}{|X|l|l|l|l|}
 		\hline
-		 & \multicolumn{2}{|X|}{\textbf{Analyse}} & \multicolumn{2}{|X|}{\textbf{Simulering}} & \multicolumn{2}{|X|}{\textbf{Realisering}} \\ \hline
-		& MOSFET & Diode & MOSFET & Diode & MOSFET & Diode \\ \hline
-		Stationær spænding & $47V$ & $47V$ & $48V$ & $46V$ & $47V$ & $45V$ \\ \hline
-		Peakspænding &  &  & $93V$ & $80V$ & $80V$ & $60V$ \\ \hline
+		 & \multicolumn{2}{|X|}{\textbf{Simulering}} & \multicolumn{2}{|X|}{\textbf{Realisering}} \\ \hline
+		 & MOSFET & Diode & MOSFET & Diode \\ \hline
+		Stationær spænding & $48V$ & $46V$ & $47V$ & $45V$ \\ \hline
+		Peakspænding & $93V$ & $80V$ & $80V$ & $60V$ \\ \hline
+		Svingningsfrekvens & $29.41M\hertz$ & $33.33M\hertz$ & $25.00M\hertz$ & $28.57M\hertz$ \\ \hline
 	\end{tabularx}
-	\caption{Analyse, simulering og realisering af spændinger over MOSFET og diode}
+	\caption{Simulering og realisering af spændinger over MOSFET og diode}
 	\label{tab:MOSDIODE}
 \end{table}
 
@@ -205,7 +206,7 @@ Nedenfor ses et overblik over simuleringen af load steppet i forhold til realise
 	\caption{Simulering og realisering af load step}
 	\label{tab:Loadstep}
 \end{table}
-Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan dette usikkerheden ved det skyldes den lille afvigelse.
+Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan usikkerheden ved det skyldes den lille afvigelse.
 
 \subsection{Gain-fase måling} \label{gain_fase_2}
 Gain-fase målingen deles op i tre, ligesom ved analysen og simuleringen. Der måles overføringsfunktion for power modulet, fejlforstærkeren, og for det samlede system. Målingerne foretages vha. en Network Analyzer af typen HP4194A. Den måler overføringsfunktionen ved at indførere et fejlsignal i tilbagekoblingen, og måle hvordan udgange ændre sig. Derved opnås åbensløjfe overføringsfunktionen. Som ved simuleringen indføres fejlsignalet over en $51.1\ohm$ modstand, placeret i serie med den første modstand i spændingsdeleren. 

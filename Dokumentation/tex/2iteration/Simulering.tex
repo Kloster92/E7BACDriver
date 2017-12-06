@@ -32,13 +32,9 @@ Desuden ses output kondensatoren med de udregnede parasitter også.
 Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \cite{??}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
 Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind.
 
-<<<<<<< HEAD
 \input{tex/2iteration/Simulering-PWM}
 
-\subsection{Constant load}
-=======
 \subsection{Constant load} \label{constant}
->>>>>>> 961c22aefac5926beb873cc8a6870e590842c21a
 Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
 Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her ses både strøm og spænding på udgangen.
 \begin{figure}[H]
@@ -58,7 +54,25 @@ På figur~\ref{fig: simMOSdio} ses en spændingsperiode for drain benet på MOSF
 \end{figure}
 Det ses, at når transistoren (rød kurve) går off så kommer den tidligere omtalte peakspænding samt den svinger, inden den går til en stationær værdi på ca. 48V, inden MOSFET'en switches on igen. Dette stemmer fint overens med analysen hvor den stationær værdi bør ligge på 21V+26V=47V.
 Peak'en er ca. 93V.
-Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V.
+Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V. 
+
+På figur~\ref{fig: simMOSzoom} zoomes der ind på svingningerne på MOSFET'ens drain.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png}
+	\caption{Zoomet simulering af svingninger fra MOSFET}
+	\label{fig: simMOSzoom}
+\end{figure}
+Her kan svingningernes frekvens aflæses. Det gøres ved, at aflæse længden på en svingning. Her er anden svingning aflæst til 34ns. Det giver en frekvens på 29.41MHz.
+
+Det samme gøres for det zoomede billede af svingningerne i dioden som ses på figur~\ref{fig: simdiodezoom} 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_diode_anode_zoom.png}
+	\caption{Zoomet simulering af svingninger fra diode}
+	\label{fig: simdiodezoom}
+\end{figure}
+Anden svingning er her aflæst til 30ns. Det giver en frekvens på $33.33M\hertz$
 
 \subsection{Load step}
 Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. I forhold til før, er der sket en ændring i toplaget i schematic, som ses på figur~\ref{fig: simloadtop}  
@@ -86,3 +100,39 @@ Ved startup er schematic sat op på præcis samme måde som ved Constant load. F
  Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
 
 \input{tex/2iteration/Simulering-regulering}  
+
+\subsection{Tab}
+Her er tabene for de forskellige komponenter simuleret, ligesom de blev analyseret tidligere.
+
+\subsubsection{Transformator}
+Kernetabet i transformatoren er simuleret tidligere ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere det analyserede kobbertab. På figur~\ref{fig: simloadstep} ses det simulerede kobbertab. Her er der lavet en average på de 2 kobbermodstande lagt sammen. 
+Dt ekstra tab der er simuleret i forhold til analysen kommer af at spredningsselvinduktionen er indsat i simuleringsprofilen. Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi????
+\subsubsection{MOSFET}
+Conduction og switchtab er her simuleret. figur~\ref{fig: simloadstep} ses tabet for hver periode. Det ses at der kommer de førnævnte effekttrekanter når der switches. Det er det simulerede switchtab. Offsettet imellem disse effekttrekanter er conduction tabet.
+På figur~\ref{fig: simloadstep} er der lavet en average af simuleringen. Det giver det samlede tab for både conduction og switchtab. Det aflæses til at ligge på. Tabet her ligger lidt under det analyserede. Det skyldes at modellen der er brugt i simuleringen, ikke er den samme som bruges i analyse og realisering. Samtidig er analysen et estimat af tabet, hvor der foreksempel regnes med at effekttrekanterne er lige store. Begge dele kan være fejlkilder der gør, at de to tab ikke stemmer helt overens.  
+
+\subsubsection{Diode}
+Diodens tab er simuleret på figur~\ref{fig: simloadstep}. Tabet aflæses til .. Grunden til det ikke stemmer så godt overens med det analyserede skyldes at modellen regner med et spændingsfald på $0.6V$, hvor der i analysen er brugt $0.45V$. Dette kommer af at simuleringsmodellen ikke tager højde for at spændingsfaldet ændrer sig med strømmen og temperaturen. 
+
+\subsubsection{Samlet tab}
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|l|l|}
+		\hline
+		\textbf{\large Komponent} & \multicolumn{2}{|X|}{\textbf{\large Tab}} \\ \hline
+		& A & S	\\ \hline
+		\textbf{Transformator samlet} & $2.04\watt$ & \\ \hline 
+		Kernetab & $366m\watt$ & $311m\watt$ \\ \hline
+		Kobbertab & $1.09\watt$ & \\ \hline
+		& &	\\ \hline
+		\textbf{MOSFET samlet} & $5.55\watt$ & \\ \hline
+		Conductiontab & $1.06\watt$ & \\ \hline
+		Switchtab & $4.49\watt$ & \\ \hline
+		& &	\\ \hline
+		\textbf{Diode} & $1.13\watt$ & \\ \hline
+		& &	\\ \hline
+		\textbf{Total tab} & $8.72\watt$ & \\ \hline
+	\end{tabularx}
+	\caption{Oversigt over analyseret og simuleret tab}
+	\label{tab:anasim}
+\end{table}

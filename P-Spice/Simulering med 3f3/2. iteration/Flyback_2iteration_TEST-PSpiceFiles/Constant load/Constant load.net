@@ -23,25 +23,15 @@ D_FB_PS_D1         FB_PS_ANODE OUT Dntsv30120ctg
 L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
 R_FB_RFB21         0 FB_N02226  2.55k TC=0,0 
 R_FB_RT         FB_N14542 FB_N14535  37.5k TC=0,0 
-L_FB_OF_Lesl4         OUT FB_OF_N24054  {Lesl}  
-C_FB_OF_Cout2         0 FB_OF_N23941  {Cout}  TC=0,0 
-R_FB_OF_Resr4         FB_OF_N24074 FB_OF_N24054  {Resr} TC=0,0 
-L_FB_OF_Lesl2         OUT FB_OF_N23789  {Lesl}  
-C_FB_OF_Cout3         0 FB_OF_N24074  {Cout}  TC=0,0 
-L_FB_OF_Lesl1         OUT FB_OF_N23692  {Lesl}  
-R_FB_OF_Resr2         FB_OF_N23809 FB_OF_N23789  {Resr} TC=0,0 
-L_FB_OF_Lesl3         OUT FB_OF_N23921  {Lesl}  
-R_FB_OF_Resr1         FB_OF_N23621 FB_OF_N23692  {Resr} TC=0,0 
-C_FB_OF_Cout1         0 FB_OF_N23809  {Cout}  TC=0,0 
-R_FB_OF_Resr3         FB_OF_N23941 FB_OF_N23921  {Resr} TC=0,0 
-C_FB_OF_Cout         0 FB_OF_N23621  {Cout}  TC=0,0 
 C_FB_IF_Cin1         0 FB_N14138  10u  TC=0,0 
 C_FB_IF_Cin2         0 FB_IF_N129151  40u  TC=0,0 
 L_FB_IF_Lin         N1356384 FB_N14138  3u  
 R_FB_IF_Rin         FB_IF_N129151 FB_N14138  800m TC=0,0 
 R_FB_Rcs         0 FB_N14259  167m TC=0,0 
 R_FB_RFB22         0 FB_N02226  280k TC=0,0 
+C_FB_Cout         0 FB_N1359989  224uF  TC=0,0 
+L_FB_Lesl1         OUT FB_N1359969  9.7nH  
+R_FB_Resr1         FB_N1359989 FB_N1359969  2.5m TC=0,0 
 V_Vmb         N1356384 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
-.PARAM  resr=10m pscale=1 iout=2.5a n=19 lm=76nh cout=56uf rlp=160m vout=21v
-+  rls=160m lesl=38.78nh rload={8.4r}
+.PARAM  iout=2.5a pscale=1 n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}

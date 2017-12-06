@@ -10,7 +10,8 @@
     (CompileFileAddedOrDeleted "x")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
-    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Board_sim_option "VHDL_flow"))
   (Folder "Outputs"
     (File
        ".\flyback_2iteration_test-pspicefiles\constant load\constant load.net"
@@ -23,24 +24,26 @@
          ".\flyback_2iteration_test-pspicefiles\constant load\tran.sim"
         (DisplayName "Constant load-Tran")
         (Type "PSpice Profile")))
-    (Folder "Stimulus Files")
-    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Model Libraries"
+      (Sort User)
       (File "..\uccx813-1.lib"
-        (DisplayName "..\uccx813-1.lib")
-        (Type "PSpiceLibrary"))
+        (Type "PSpiceLibrary")
+        (DisplayName "..\uccx813-1.lib"))
       (File "..\ntsv30120ctg.lib"
-        (DisplayName "..\ntsv30120ctg.lib")
-        (Type "PSpiceLibrary"))
+        (Type "PSpiceLibrary")
+        (DisplayName "..\ntsv30120ctg.lib"))
       (File "..\fdpf770n15a.lib"
-        (DisplayName "..\fdpf770n15a.lib")
-        (Type "PSpiceLibrary"))
+        (Type "PSpiceLibrary")
+        (DisplayName "..\fdpf770n15a.lib"))
       (File
          "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"
+        (Type "PSpiceLibrary")
         (DisplayName
-           "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib")
-        (Type "PSpiceLibrary"))
-      (Sort User)))
+           "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Jesper")
   (PartMRUSelector)
@@ -66,7 +69,7 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 183 0 690"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 145 0 690"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
@@ -83,7 +86,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 78 1111 78 413")
-        (Scroll "0 0")
+        (Scroll "30 0")
         (Zoom "100"))
       (Path
          "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
@@ -92,8 +95,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 999 78 413")
-        (Scroll "0 0")
+        (Placement "44 2 3 -1 -1 -8 -31 104 425 104 418")
+        (Scroll "64 140")
         (Zoom "100")
         (Occurrence "/FB"))
       (Path
@@ -103,11 +106,22 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 1025 104 439")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -31 130 451 130 444")
+        (Scroll "0 16")
+        (Zoom "82")
         (Occurrence "/FB/PS"))
       (Path
          "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
       (Schematic "Flyback converter - rtm")
-      (Page "Flyback converter"))))
+      (Page "Flyback converter"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 352 78 392")
+        (Scroll "64 0")
+        (Zoom "100")
+        (Occurrence "/FB/IF"))
+      (Path
+         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+      (Schematic "Input-filter")
+      (Page "Input-filter"))))
