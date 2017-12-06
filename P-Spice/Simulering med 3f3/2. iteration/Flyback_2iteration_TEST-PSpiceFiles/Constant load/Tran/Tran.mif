@@ -1,6 +1,6 @@
- lib="C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib", offset=2577, size=71
  lib="C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\uccx813-1.lib", offset=2510, size=2913
  lib="C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\ntsv30120ctg.lib", offset=497, size=167
+ lib="C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib", offset=2577, size=71
  lib=c:\cadence\spb_17.2\tools\PSpice\Library\irf.lib, offset=165136, size=1723
  lib="C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib", offset=4123, size=963
  lib="C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\uccx813-1.lib", offset=5424, size=269

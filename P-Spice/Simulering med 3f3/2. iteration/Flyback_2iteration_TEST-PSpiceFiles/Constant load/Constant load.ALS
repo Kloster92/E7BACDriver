@@ -72,34 +72,6 @@ R_FB_RFB21          FB.RFB21(1=0 2=FB_N02226 ) CN @FLYBACK_2ITERATION_TEST.Const
 +load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS2193@ANALOG.R.Normal(chips)
 R_FB_RT          FB.RT(1=FB_N14542 2=FB_N14535 ) CN @FLYBACK_2ITERATION_TEST.Constant
 +load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS14515@ANALOG.R.Normal(chips)
-_    FB.OF(Out=OUT In=OUT ) CN 
-+@FLYBACK_2ITERATION_TEST.Constant load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1)
-L_FB_OF_Lesl4          FB.OF.Lesl4(1=OUT 2=FB_OF_N24054 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS24036@ANALOG.L.Normal(chips)
-C_FB_OF_Cout2          FB.OF.Cout2(1=0 2=FB_OF_N23941 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23943@ANALOG.C.Normal(chips)
-R_FB_OF_Resr4          FB.OF.Resr4(1=FB_OF_N24074 2=FB_OF_N24054 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS24056@ANALOG.R.Normal(chips)
-L_FB_OF_Lesl2          FB.OF.Lesl2(1=OUT 2=FB_OF_N23789 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23771@ANALOG.L.Normal(chips)
-C_FB_OF_Cout3          FB.OF.Cout3(1=0 2=FB_OF_N24074 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS24076@ANALOG.C.Normal(chips)
-L_FB_OF_Lesl1          FB.OF.Lesl1(1=OUT 2=FB_OF_N23692 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23674@ANALOG.L.Normal(chips)
-R_FB_OF_Resr2          FB.OF.Resr2(1=FB_OF_N23809 2=FB_OF_N23789 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23791@ANALOG.R.Normal(chips)
-L_FB_OF_Lesl3          FB.OF.Lesl3(1=OUT 2=FB_OF_N23921 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23903@ANALOG.L.Normal(chips)
-R_FB_OF_Resr1          FB.OF.Resr1(1=FB_OF_N23621 2=FB_OF_N23692 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23603@ANALOG.R.Normal(chips)
-C_FB_OF_Cout1          FB.OF.Cout1(1=0 2=FB_OF_N23809 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23811@ANALOG.C.Normal(chips)
-R_FB_OF_Resr3          FB.OF.Resr3(1=FB_OF_N23941 2=FB_OF_N23921 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23923@ANALOG.R.Normal(chips)
-C_FB_OF_Cout          FB.OF.Cout(1=0 2=FB_OF_N23621 ) CN @FLYBACK_2ITERATION_TEST.Constant
-+load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):OF@FLYBACK_2ITERATION_TEST.Output-filter(sch_1):INS23623@ANALOG.C.Normal(chips)
-_    _(FB.OF.In=OUT)
-_    _(FB.OF.Out=OUT)
 _    FB.IF(In=N1356384 Out=FB_N14138 ) CN 
 +@FLYBACK_2ITERATION_TEST.Constant load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):IF@FLYBACK_2ITERATION_TEST.Input-filter(sch_1)
 C_FB_IF_Cin1          FB.IF.Cin1(1=0 2=FB_N14138 ) CN @FLYBACK_2ITERATION_TEST.Constant
@@ -116,6 +88,12 @@ R_FB_Rcs          FB.Rcs(1=0 2=FB_N14259 ) CN @FLYBACK_2ITERATION_TEST.Constant
 +load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS794@ANALOG.R.Normal(chips)
 R_FB_RFB22          FB.RFB22(1=0 2=FB_N02226 ) CN @FLYBACK_2ITERATION_TEST.Constant
 +load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS1359686@ANALOG.R.Normal(chips)
+C_FB_Cout          FB.Cout(1=0 2=FB_N1359989 ) CN @FLYBACK_2ITERATION_TEST.Constant
++load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS1359991@ANALOG.C.Normal(chips)
+L_FB_Lesl1          FB.Lesl1(1=OUT 2=FB_N1359969 ) CN @FLYBACK_2ITERATION_TEST.Constant
++load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS1359951@ANALOG.L.Normal(chips)
+R_FB_Resr1          FB.Resr1(1=FB_N1359989 2=FB_N1359969 ) CN @FLYBACK_2ITERATION_TEST.Constant
++load(sch_1):Flyback@FLYBACK_2ITERATION_TEST.Flyback(sch_1):INS1359971@ANALOG.R.Normal(chips)
 _    _(FB.Vin=N1356384)
 _    _(FB.Vout=OUT)
 V_Vmb           Vmb(+=N1356384 -=0 ) CN @FLYBACK_2ITERATION_TEST.Constant load(sch_1):INS1356426@SOURCE.VPULSE.Normal(chips)

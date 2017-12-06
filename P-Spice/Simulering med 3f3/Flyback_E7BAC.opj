@@ -36,14 +36,12 @@
         (DisplayName "Flyback DCM-Flyback DCM tran")
         (Type "PSpice Profile"))
       (ActiveProfile ".\flyback_e7bac-pspicefiles\flyback_linear\tran.sim"))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Model Libraries"
-      (Sort User)
       (File ".\flyback_e7bac-pspicefiles\flyback_e7bac.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\flyback_e7bac-pspicefiles\flyback_e7bac.lib")))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
+        (DisplayName ".\flyback_e7bac-pspicefiles\flyback_e7bac.lib")
+        (Type "PSpiceLibrary"))
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Nicolai Fransen")

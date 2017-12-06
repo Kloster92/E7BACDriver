@@ -1,0 +1,10 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/1
+    Flyback_realisering.opj
+    flyback_realisering.dsn
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/1/Flyback_realisering-PSpiceFiles
+C:/Users/Jesper/Documents/GitHub/E7BACDriver/Realisering/P-spice/1/Flyback_realisering-PSpiceFiles/SCHEMATIC1
+    SCHEMATIC1-default.mrk

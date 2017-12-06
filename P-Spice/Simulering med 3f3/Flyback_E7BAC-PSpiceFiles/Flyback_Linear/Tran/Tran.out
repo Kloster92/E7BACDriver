@@ -1,7 +1,7 @@
 
-**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/06/17 16:41:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicefil
 
 
  ****     CIRCUIT DESCRIPTION
@@ -19,13 +19,13 @@
 * Profile Libraries :
 * Local Libraries :
 .LIB "../../../flyback_e7bac-pspicefiles/flyback_e7bac.lib" 
-* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+* From [PSPICE NETLIST] section of C:\Users\Jesper\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 .lib "nom.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.TRAN  0 1.1m 1m 10n 
+.TRAN  0 5m 1m 10n 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Flyback_Linear.net" 
@@ -46,7 +46,7 @@ C_Co         0 OUT  10uF  TC=0,0
 X_S1    N31709 0 S 0 Flyback_Linear_S1 
 V_Vi         IN 0 {Vi}
 .PARAM  vi=26v vo=21v d_dcm={(np/(ns*vi))*((2*po*al*fs)**(1/2))} po=
-+ {(vo**2)/rl} al=57.76u rl=8.4r d={vo/(vi*ns/np+vo)} ns=1 t=10us np=1 fs={1/t}
++ {(vo**2)/rl} rl=8.4r al=57.76u ns=1 d={vo/(vi*ns/np+vo)} t=10us np=1 fs={1/t}
 
 .subckt Flyback_Linear_D1 1 2  
 S_D1         1 2 1 2 _D1
@@ -63,9 +63,9 @@ RS_S1         1 2 1G
 **** RESUMING Tran.cir ****
 .END
 
-**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/06/17 16:41:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicefil
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -83,9 +83,9 @@ RS_S1         1 2 1G
         VOFF    0               0            
 
 
-**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/06/17 16:41:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicefil
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -118,9 +118,9 @@ RS_S1         1 2 1G
 
           JOB CONCLUDED
 
-**** 11/17/17 08:52:18 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/06/17 16:41:02 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
- ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-
+ ** Profile: "Flyback_Linear-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_e7bac-pspicefil
 
 
  ****     JOB STATISTICS SUMMARY
@@ -130,5 +130,5 @@ RS_S1         1 2 1G
 
 
 
-  Total job time (using Solver 1)   =         .53
+  Total job time (using Solver 1)   =       18.00
 
