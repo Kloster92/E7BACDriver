@@ -24,12 +24,12 @@ sys2 = (sys * ((318*2*pi)/s+1))*0.535;
 sys3 = ((132.8*2*pi)/s+1)*2.674;
 sys4 = (sys * ((132.8*2*pi)/s+1))*2.674;
 
-w = bode(sys);
-w_v = logspace(0,5,150)*2*pi;
-% 
-% figure(1)
-% bode(sys)
-% margin(sys)
+% w = bode(sys);
+% w_v = logspace(0,5,150)*2*pi;
+
+figure(1)
+bode(sys)
+margin(sys)
 % 
 % figure(2)
 % bode(sys1)
@@ -38,18 +38,18 @@ w_v = logspace(0,5,150)*2*pi;
 % bode(sys2)
 % margin(sys2)
 % 
-% figure(4)
-% bode(sys3,w_v)
+figure(4)
+bode(sys3)
+
+figure(5)
+bode(sys4)
+margin(sys4)
+
+
+% [mag,phs,RadianFrequency] = bode(sys3,w_v);
+% Magnitude = squeeze(mag);
+% Phase = squeeze(phs);
+% Frequency = RadianFrequency/(2*pi);
+% T = table(Frequency,Magnitude,Phase);
 % 
-% figure(5)
-% bode(sys4)
-% margin(sys4)
-
-
-[mag,phs,RadianFrequency] = bode(sys3,w_v);
-Magnitude = squeeze(mag);
-Phase = squeeze(phs);
-Frequency = RadianFrequency/(2*pi);
-T = table(Frequency,Magnitude,Phase);
-
-writetable(T, 'gain-fase-opamp - Analyse.xlsx')
+% writetable(T, 'gain-fase-opamp - Analyse.xlsx')
