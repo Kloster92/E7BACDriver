@@ -221,7 +221,7 @@ MOSFET'ens switch-tid bestemmes af den strøm der løber i gaten. MOSFet'en inde
 	\label{fig:MOSFET_switch_tid}
 \end{figure}
 
-Gate modstanden regnes ved at løse ligning~\ref{R_g_2}. Her er $T_{ch}$ den ønskede switch-tid, som sættes til ca. $150ns$. $Q_{gd}$ er gate-drain ladningen, som afhænger af Miller kapaciteten, den aflæses i databladet til $19nC$. $V_{DD}$ er forsyningsspændingen til PWM-controlleren på $12V$, og dermed også den maksimale spænding af udgangssignalet. $V_{gs}$ er spændingsfaldet fra gate til source for MOSFET'en. Med en drain strøm på $3A$ bliver $V_{gs}\approx 5V$. Dette indsætte og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=55.3\ohm$. Der vælges en modstand på $51.1\ohm$. Med den valgte modstand korrigeres switch-tiden til $138.7ns$.
+Gate modstanden regnes ved at løse ligning~\ref{R_g_2}\cite{gate_res}. Her er $T_{ch}$ den ønskede switch-tid, som sættes til ca. $150ns$. $Q_{gd}$ er gate-drain ladningen, som afhænger af Miller kapaciteten, den aflæses i databladet til typisk $19nC$. $V_{DD}$ er forsyningsspændingen til PWM-controlleren på $12V$, og dermed også den maksimale spænding af udgangssignalet. $V_{gs}$ er spændingsfaldet fra gate til source for MOSFET'en. Med en drain strøm på $3A$ bliver $V_{gs}\approx 5V$. Dette indsætte og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=55.3\ohm$. Der vælges en modstand på $51.1\ohm$. Med den valgte modstand korrigeres switch-tiden til $138.7ns$.
 
 \begin{equation} \label{R_g_2}
 T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}}

@@ -97,7 +97,9 @@ Current sense kredsløbet består, som minimum, af en current sense modstand. De
 R_{cs} = \frac{1V}{5.53A} = 0.181\ohm
 \end{equation}
 
-Da den mindste modstandsværdi der er til rådighed er på $1\ohm$, vil der blive brugt $6\cdot 1\ohm$ i parallel. Dette vli give en modstandsværdi på $0.167\ohm$. 
+Da den mindste modstandsværdi der er til rådighed er på $1\ohm$, vil der blive brugt $6\cdot 1\ohm$ i parallel. Dette vil give en modstandsværdi på $0.167\ohm$. Med dette vil strømmen blive delt i de seks modstande, som derved dele den samlede effekt mellem sig. Da der kan kun skaffes $0,5W$ modstande, vil dette gøre at de ikke brænder af. 
+
+Når current-sense modstanden vælges mindre end den ideelle værdi, vil det tillade en større peak-strøm i primærviklingen. Det regnes ud fra ovenstående forhold til ca. $6A$. 
 
 
 
@@ -125,7 +127,7 @@ BW \approx \frac{0.34}{t_r} \approx 1.133M\hertz
 R_f = \frac{1}{2 \cdot \pi \cdot BW \cdot C_f} = 1.4k\ohm
 \end{equation}
 
-Med det designede filter vil stige tiden af current sense signalet, nu blive begrænset af filteret. Derfor vil den første de af signalet nu ligne et første ordens system, der stiger indtil spændingen når det niveau der svarer til strømmen i primærviklingen. Derefter vil signalet stige som en ret linje, ligesom strømmen. Dette ses på figur~\ref{fig:ucc1801_CS_filter}, hvor det øverste signal er før filteret, og det nederste er efter.
+Med det designede filter vil stige tiden af current sense signalet, nu blive begrænset af filteret. Derfor vil den første del af signalet nu ligne et første ordens system, der stiger indtil spændingen når det niveau der svarer til strømmen i primærviklingen. Derefter vil signalet stige som en ret linje, ligesom strømmen. Dette ses på figur~\ref{fig:ucc1801_CS_filter}, hvor det øverste signal er før filteret, og det nederste er efter.
 
 \begin{figure}[H]
 	\center
@@ -150,6 +152,15 @@ Da det er nødvendigt at filtrere current sense signalet, men samtidig påvirker
 
 \subsection{Spændingsregulering} \label{V_loop}
 I dette afsnit beskrives spændingssløjfen. Den består hovedsageligt af to dele: en spændingsdeler og en fejlforstærker. Spændingsdeleren deler udgangsspændingen ned, så den ønskede udgangsspænding er lig en intern reference i IC'en. Fejlforstærkeren står for selve reguleringen. Den inverterende indgang og udgangen på fejlforstærkeren er ført ud, således det er muligt at indsætte et kompenseringsnetværk.
+
+Figur~\ref{fig:regulerings_blokdiagram} viser et blok diagram over reguleringssløjfen. Det viser de to overføringsfunktioner der bruges til at modulere systemet. Forstærkningen i fejlforstærkeren er trukket ud af blokken for overføringsfunktionen, da det er produktet mellem forstærkningen i spændingsdeleren og fejlforstærkeren, der giver reguleringssløjens samlede forstærkning. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Regulerings_blokdiagram.pdf}
+	\caption{Reguleringsblokdiagram}
+	\label{fig:regulerings_blokdiagram}
+\end{figure}
 
 \subsubsection{Spændingsdeler}
 Den ikke inverterende indgang på den indbyggede fejlforstærker i UCC1801, er forbundet til den halve reference spænding, dvs. $2.5V$. Derfor skal der designes en spændingsdeler, der deler den ønskede udgangsspænding på $21V$ ned til $2.5V$. Figur~\ref{fig:Voltagedivider_ideal} viser kredsløbet for spændingsdeleren. 

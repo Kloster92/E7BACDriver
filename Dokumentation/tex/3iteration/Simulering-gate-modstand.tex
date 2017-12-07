@@ -1,0 +1,14 @@
+%%% Simulering for optimering af gate-modstand %%%
+
+\subsubsection{Switch-tid}
+Den optimerede switch-tid simuleres ved at måle spændingen på MOSFET'ens gate. Det signal er vist på figur~\ref{fig:switch_tid_3}. Her aflæses switch-tiden til ca. $29ns$. Denne værdi afviger af samme grund som ved 2. iteration. Da der jo er brugt en anden model i p-spice ende den tiltænkte, passer \textit{Miller} ladningen ikke. Ved 2. iteration blev den aflæst til ca. $15nC$, og regnes den switch-tiden ved denne ladning bliver det:
+\begin{equation} 
+T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}} = \frac{15nC \cdot 13.7\ohm}{12V-5V} = 29.4ns
+\end{equation}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/3iteration/billeder/Simulering/Simulering_switch_tid.png}
+	\caption{Switch-tid for MOSFET - 3. iteration}
+	\label{fig:switch_tid_3}
+\end{figure}

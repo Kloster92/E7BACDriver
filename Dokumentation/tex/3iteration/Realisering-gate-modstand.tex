@@ -1,0 +1,25 @@
+%%% Realisering for optimering af gate-modstand %%%
+
+
+\subsection{Switch-tid}
+Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens gate signal. Det signal er vist på figur~\ref{fig:realisering_switch_tid_3}, hvor kanal 1 er MOSFET'ens drain, og kanal 2 er MOSFET'ens gate. Her aflæses switch-tiden til ca. $40ns$. Resultaterne fo analysen, simulering og realiseringen indføres i tabel~\ref{tab:resultat_switch_tid_3}. Her er simuleringen dog foretaget med en anden MOSFET.
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|}
+		\hline
+		\textbf{Tid} & \multicolumn{3}{|c|}{\textbf{Switch-tid}} 										\\ \hline
+		& A & S & R 									\\ \hline
+		$T_{ch}$ & $37.2ns$ & $29.4ns$ & $40ns$ 											\\ \hline 
+		
+	\end{tabularx}
+	\caption{Resultater for analyse, simulering og realisering af switch-tid}
+	\label{tab:resultat_switch_tid_3}
+\end{table}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/3iteration/billeder/Realisering/Realisering_switch_tid.png}
+	\caption{Realisering af switch-tid for MOSFET - 3. iteration}
+	\label{fig:realisering_switch_tid_3}
+\end{figure}

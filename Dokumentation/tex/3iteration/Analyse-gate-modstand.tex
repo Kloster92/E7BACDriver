@@ -1,6 +1,12 @@
 %%% Analyse for optimering af gate-modstand %%%
 
-\subsection{switch-tid}
-Optimeringen af switch-tiden gøres for at optimere switch-tabet i MOSFET'en. Måden switch-tiden forkortes på, er ved at mindske gate-modstanden. Dette vil gøre, at strømmen i gaten bliver større, og dermed drives MOSFET'en hurtigere. 
+\section{switch-tid}
+Optimeringen af switch-tiden gøres for at optimere switch-tabet i MOSFET'en. Måden switch-tiden forkortes på, er ved at mindske gate-modstanden. Dette vil gøre, at strømmen i gaten bliver større, og dermed drives MOSFET'en hurtigere. En hurtigere switch-tid, vil dog også give en større peak-spænding over transistoren. Det skal der derfor tages højde for i valget af MOSFET. Den valgte MOSFET kan holde til en $V_{ds}$ på $150V$, hvilket er en god margin ift. de ca. $80V$ der måles ved 2. iteration. Der vælges at designe gate modstanden efter en switch-tid på ca. $40ns$. Dette er ca. en tredjedel af den oprindelige switch-tid, hvilket dermed også vil mindske switch-tabet betydeligt. 
+
+Gate modstanden regnes ved ligning~\ref{R_g_3}\cite{gate_res}. Her bruges samme værdier, som i 2. iteration, dog ændres den ønskede switch-tid til $40ns$. Dette indsætte og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=14.7\ohm$. Der vælges en modstand på $13.7\ohm$. Med den valgte modstand korrigeres switch-tiden til $37.2ns$.
+
+\begin{equation} \label{R_g_3}
+T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}}
+\end{equation}
 
  
