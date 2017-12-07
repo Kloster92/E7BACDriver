@@ -375,11 +375,11 @@ R_{DC} = ((R_{DC1})^{-1} \cdot 3)^{-1} = 53.3\milli\ohm
 
 Kobbertabet i transformatoren, kan nu beregnes ved RMS-strømmene i primær- og sekundærviklingerne. Hvor $I_{RMSp} = 3.02A$ og $I_{RMSs} = 3.36A$.
 \begin{equation} \label{dc-tab-pri}
-P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\milli\watt
+P_{cuP} = (I_{RMSp})^2 \cdot R_{DC} = 0.486\watt
 \end{equation}
 
 \begin{equation} \label{dc-tab-sek}
-P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\milli\watt
+P_{cuS} = (I_{RMSs})^2 \cdot R_{DC} = 0.602\watt
 \end{equation}
 
 \subsection{MOSFET}
@@ -407,11 +407,30 @@ I_{pkavg} = \frac{I_{out}}{1-D_{maks}} = \frac{2.5A}{0.548} = 4.56A
 Disse 2 tal ganges sammen ligesom D for sekundærsiden ganges på. Dette giver et tab i dioden på:
 
 \begin{equation} \label{diodetab}
-P_D = I_{pkavg} \cdot V_D \cdot (1-D_{max21}) = 4.56A \cdot 0.45 \cdot 0.56 = 1.125W 
+P_D = I_{pkavg} \cdot V_D \cdot (1-D_{max21}) = 4.56A \cdot 0.45V \cdot 0.56 = 1.125W 
 \end{equation}  
 Kigges der nærmere på de 2 formler svarer udregninger til, at gange udgangsstrømmen med spændingsfaldet, da $1-D_{max21}$ vil gå ud med hinanden.
 
 Da der i dette projekt benyttes en schottky diode, har den ikke nogen reverse recovery tid. Det betyder, at der ikke vil være noget nævneværdigt switchtab i dioden. 
+
+\subsubsection{Kondensator}
+Med ESR modstanden i kondensatoren giver det anledning til et tab pga. den RMS strøm der ligger over den.  RMS strømmen i kondensatoren kan beregnes med ligningen nedenfor. 
+\begin{equation} \label{kondensatorrms}
+I_{C rms} = \sqrt{I_o^{2}\cdot D_{max}+(I_{pkavg}\cdot {D_{max})}^{2}\cdot (1-D_{max})} = 2.247A
+\end{equation}  
+For at estimere strømmen der løber i kondensatoren bruges udgangsstrømmen sammen med averagestrømmen på sekundærsiden. Desuden ganges dutycyclen for sekundærsiden på til sidst, da det er sekundærsiden kondensatoren sidder på.
+Med RMS strømmen igennem kondensatoren kan tabet i ESR modstanden beregnes.
+\begin{equation} \label{kondensatortab}
+P_{Cesr} = (I_{C rms})^2 \cdot C_{esrtot} = 12.62\milli\watt
+\end{equation}
+Det ses, at tabet i kondensatoren i forhold til de resterende tab i converteren er ubetydeligt. 
+\fxnote{Bør udregne RMS på samme måde tidligere}
+
+\subsubsection{CS modstands tab}
+Strømmen der løber i current sense modstanden er den samme, som den der løber i transformatorens primærvikling. Derfor bruges den udregnede RMS strøm i denne til at finde tabet i modstanden
+\begin{equation} \label{kondensatortab}
+P_{CS} = (I_{prirms})^2 \cdot R_{sense} = 1.524\watt
+\end{equation}
 
 \subsection{Oversigt over analyseret tab}
 
@@ -421,7 +440,7 @@ Da der i dette projekt benyttes en schottky diode, har den ikke nogen reverse re
 		\hline
 		\textbf{\large Komponent} & {\textbf{\large Tab}} \\ \hline
 		& 	\\ \hline
-		\textbf{Transformator samlet} & $2.04\watt$ \\ \hline 
+		\textbf{Transformator samlet} & $1.46\watt$ \\ \hline 
 		Kernetab & $366m\watt$ \\ \hline
 		Kobbertab & $1.09\watt$ \\ \hline
 		& 	\\ \hline
@@ -431,7 +450,11 @@ Da der i dette projekt benyttes en schottky diode, har den ikke nogen reverse re
 		& 	\\ \hline
 		\textbf{Diode} & $1.13\watt$ \\ \hline
 		& 	\\ \hline
-		\textbf{Total tab} & $8.72\watt$ \\ \hline
+		\textbf{Kondensator} & $12.62\milli\watt$ \\ \hline
+		& 	\\ \hline
+			\textbf{Current sense} & $1.52\milli\watt$ \\ \hline
+		& 	\\ \hline
+		\textbf{Total tab} & $9.672\watt$ \\ \hline
 	\end{tabularx}
 	\caption{Oversigt over analyseret tab}
 	\label{tab:analyseret}

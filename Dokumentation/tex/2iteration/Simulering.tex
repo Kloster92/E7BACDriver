@@ -105,14 +105,51 @@ Ved startup er schematic sat op på præcis samme måde som ved Constant load. F
 Her er tabene for de forskellige komponenter simuleret, ligesom de blev analyseret tidligere.
 
 \subsubsection{Transformator}
-Kernetabet i transformatoren er simuleret tidligere ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere det analyserede kobbertab. På figur~\ref{fig: simloadstep} ses det simulerede kobbertab. Her er der lavet en average på de 2 kobbermodstande lagt sammen. 
-Dt ekstra tab der er simuleret i forhold til analysen kommer af at spredningsselvinduktionen er indsat i simuleringsprofilen. Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi????
+Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere det analyserede kobbertab. På figur~\ref{fig: simkobbertab} ses det simulerede kobbertab. Her er der lavet en average på de 2 kobbermodstande lagt sammen. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simkobbertab.png}
+	\caption{Simulering af kobbertab i transformator}
+	\label{fig: Simkobbertab}
+\end{figure}
+Tabet aflæses til $1.31\watt$. Det ekstra tab der er simuleret i forhold til analysen kommer af, at current sense modstanden er designet efter en peakstrøm på ca. 6A.Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi.
 \subsubsection{MOSFET}
-Conduction og switchtab er her simuleret. figur~\ref{fig: simloadstep} ses tabet for hver periode. Det ses at der kommer de førnævnte effekttrekanter når der switches. Det er det simulerede switchtab. Offsettet imellem disse effekttrekanter er conduction tabet.
-På figur~\ref{fig: simloadstep} er der lavet en average af simuleringen. Det giver det samlede tab for både conduction og switchtab. Det aflæses til at ligge på. Tabet her ligger lidt under det analyserede. Det skyldes at modellen der er brugt i simuleringen, ikke er den samme som bruges i analyse og realisering. Samtidig er analysen et estimat af tabet, hvor der foreksempel regnes med at effekttrekanterne er lige store. Begge dele kan være fejlkilder der gør, at de to tab ikke stemmer helt overens.  
+Conduction og switchtab er her simuleret. På figur~\ref{fig: SimdMOStab} ses tabet for hver periode.
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOStab.png}
+	\caption{Simulering af tab i MOSFET (periodeoverblik)}
+	\label{fig: SimMOStab}
+\end{figure} 
+Det ses, at der kommer de førnævnte effekttrekanter når der switches. Det er det simulerede switchtab. Offsettet imellem disse effekttrekanter er conduction tabet.
+På figur~\ref{fig: simloadstep} er der lavet en average af simuleringen. Det giver det samlede tab for både conduction og switchtab. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOSavg.png}
+	\caption{Simulering af average tab i MOSFET}
+	\label{fig: SimMOSavg}
+\end{figure} 
+Det aflæses til at ligge på 4.45W. Tabet her ligger en del  under det analyserede. Det skyldes, at modellen der er brugt i simuleringen, ikke er den samme som bruges i analyse og realisering. Samtidig er analysen et estimat af tabet, hvor der foreksempel regnes med at effekttrekanterne er lige store. Begge dele kan være fejlkilder der gør, at de to tab ikke stemmer helt overens.  
 
 \subsubsection{Diode}
-Diodens tab er simuleret på figur~\ref{fig: simloadstep}. Tabet aflæses til .. Grunden til det ikke stemmer så godt overens med det analyserede skyldes at modellen regner med et spændingsfald på $0.6V$, hvor der i analysen er brugt $0.45V$. Dette kommer af at simuleringsmodellen ikke tager højde for at spændingsfaldet ændrer sig med strømmen og temperaturen. 
+Diodens tab er simuleret på figur~\ref{fig: simdiodetab}. 
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simdiodetab.png}
+	\caption{Simulering af tab i diode}
+	\label{fig: simdiodetab}
+\end{figure}
+Tabet aflæses til 1.47W. Grunden til det ikke stemmer så godt overens med det analyserede, skyldes at modellen regner med et spændingsfald på $0.6V$, hvor der i analysen er brugt $0.45V$. Dette kommer af at simuleringsmodellen ikke tager højde for at spændingsfaldet ændrer sig med strømmen og temperaturen. 
+
+\subsubsection{CS modstands tab}
+Tabet i current sense modstanden ses på figur~\ref{fig: simdCStab}
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimCStab.png}
+	\caption{Simulering af tab current sense modstand}
+	\label{fig: simCStab}
+\end{figure}
+Tabet kan aflæses til 2.03W. Igen er tabet noget større end beregnet, og skyldes den forstørrede RMS strøm der løber i modstanden.
 
 \subsubsection{Samlet tab}
 \begin{table}[H] 			
@@ -121,17 +158,19 @@ Diodens tab er simuleret på figur~\ref{fig: simloadstep}. Tabet aflæses til ..
 		\hline
 		\textbf{\large Komponent} & \multicolumn{2}{|X|}{\textbf{\large Tab}} \\ \hline
 		& A & S	\\ \hline
-		\textbf{Transformator samlet} & $2.04\watt$ & \\ \hline 
+		\textbf{Transformator samlet} & $1.46\watt$ & $1.62\watt$ \\ \hline 
 		Kernetab & $366m\watt$ & $311m\watt$ \\ \hline
-		Kobbertab & $1.09\watt$ & \\ \hline
+		Kobbertab & $1.09\watt$ & $1.31\watt$ \\ \hline
 		& &	\\ \hline
-		\textbf{MOSFET samlet} & $5.55\watt$ & \\ \hline
+		\textbf{MOSFET samlet} & $5.55\watt$ & $4.45\watt$ \\ \hline
 		Conductiontab & $1.06\watt$ & \\ \hline
 		Switchtab & $4.49\watt$ & \\ \hline
 		& &	\\ \hline
-		\textbf{Diode} & $1.13\watt$ & \\ \hline
+		\textbf{Diode} & $1.13\watt$ & $1.47\watt$ \\ \hline
 		& &	\\ \hline
-		\textbf{Total tab} & $8.72\watt$ & \\ \hline
+		\textbf{CS modstands tab} & $1.52\watt$ & $2.03\watt$ \\ \hline
+		& &	\\ \hline
+		\textbf{Total tab} & $9.67\watt$ & $9.57\watt$ \\ \hline
 	\end{tabularx}
 	\caption{Oversigt over analyseret og simuleret tab}
 	\label{tab:anasim}
