@@ -1,5 +1,17 @@
 %%% Simulering af gain-fase for 2. iteration
 
+\subsection{Spændingsdeler}
+Simulering af spændingsdeleren ses på figur~\ref{fig:simulering_voltage_divider}. Her er der målt et gennemsnit af den spænding der ligger over $R_{FB2}$, og dermed den spænding der ligger på indgangen af fejlforstærkeren. Spændingen aflæses til $2.499V$, hvilket blev designet efter $2.5V$.
+
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_voltage_divider.png}
+	\caption{Simulering spændingsdeler}
+	\label{fig:simulering_voltage_divider}
+\end{figure}
+
+
 \subsection{Gain-fase}
 Simuleringsdiagrammet for gain-fase, ses på figur~\ref{fig:sim_gain_fase_top}. For at lave simuleringen, indføres der et fejl signal i tilbage koblingen til fejlforstærkeren. Det gøres ved at indsætte en ekstra modstand inden spændingsdeleren, som ses på figur~\ref{fig:sim_gain_fase_2iteration}. Impedansen af denne modstand vælges til $51.1\ohm$, for at tilpasning til den network analyzer der bruges i realiseringen. Derudover vil modstanden ikke påvirke spændingsdeleren, da den er meget lille ift. $RFB1$. Da der indføres et fejlsignal på indgangen, mens ændringen på udgangen monitoreres, er det åbensløjfen der simuleres. 
 

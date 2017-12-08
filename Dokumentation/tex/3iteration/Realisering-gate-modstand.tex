@@ -2,15 +2,16 @@
 
 
 \subsection{Switch-tid}
-Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens gate signal. Det signal er vist på figur~\ref{fig:realisering_switch_tid_3}, hvor kanal 1 er MOSFET'ens drain, og kanal 2 er MOSFET'ens gate. Her aflæses switch-tiden til ca. $40ns$. Resultaterne fo analysen, simulering og realiseringen indføres i tabel~\ref{tab:resultat_switch_tid_3}. Her er simuleringen dog foretaget med en anden MOSFET.
+Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens gate signal. Det signal er vist på figur~\ref{fig:realisering_switch_tid_3}, hvor kanal 1 er MOSFET'ens drain, og kanal 2 er MOSFET'ens gate. Her aflæses switch-tiden til ca. $40ns$. Derudover kan peak-spændingen over MOSFET'en aflæses til ca. $90V$, hvilket er med en margin på $40\percent$ til dens breakdown spænding. Resultaterne fo analysen, simulering og realiseringen indføres i tabel~\ref{tab:resultat_switch_tid_3}. Her er simuleringen dog foretaget med en anden MOSFET.
 
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|c|c|c|}
 		\hline
-		\textbf{Tid} & \multicolumn{3}{|c|}{\textbf{Switch-tid}} 										\\ \hline
+		\textbf{Tid} & \multicolumn{3}{|c|}{\textbf{Resultater}} 										\\ \hline
 		& A & S & R 									\\ \hline
-		$T_{ch}$ & $37.2ns$ & $29.4ns$ & $40ns$ 											\\ \hline 
+		$T_{ch}$    & $37.2ns$ & $29.4ns$ & $40ns$ 											\\ \hline 
+		$V_{ds,pk}$ &          & $110V$   & $90V$		\\ \hline 
 		
 	\end{tabularx}
 	\caption{Resultater for analyse, simulering og realisering af switch-tid}

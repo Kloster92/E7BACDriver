@@ -124,7 +124,7 @@ BW \approx \frac{0.34}{t_r} \approx 1.133M\hertz
 
 \noindent Der vælges en kondensator på $C_f=100pF$. Ud fra kondensatoren og den ønskede båndbredde i filteret, regnes modstanden.
 \begin{equation} \label{filter_R}
-R_f = \frac{1}{2 \cdot \pi \cdot BW \cdot C_f} = 1.4k\ohm
+R_f = \frac{1}{2 \cdot \pi \cdot BW \cdot C_f} = \frac{1}{2 \cdot \pi \cdot 1.133M\hertz \cdot 100pF} = 1.4k\ohm
 \end{equation}
 
 Med det designede filter vil stige tiden af current sense signalet, nu blive begrænset af filteret. Derfor vil den første del af signalet nu ligne et første ordens system, der stiger indtil spændingen når det niveau der svarer til strømmen i primærviklingen. Derefter vil signalet stige som en ret linje, ligesom strømmen. Dette ses på figur~\ref{fig:ucc1801_CS_filter}, hvor det øverste signal er før filteret, og det nederste er efter.

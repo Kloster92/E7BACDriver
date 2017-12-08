@@ -61,9 +61,23 @@ Målingen af switch-tiden er vist på figur~\ref{fig:Realisering_MOSFET_switch_t
 
 
 \subsubsection{Current-sense kredsløb}
-Current-sense signalet måles både før og efter filteret. Signalet før filteret ses på figur~\ref{fig:CS_U_filter}. Her ses tydeligt de spikes der ønskes filtreret væk, da de overstiger den egentlige peak på signalet. Figur~\ref{fig:CS_M_filter} viser signalet efter filteret. Her ses det at de spikes der var på signalet er blevet filtreret væk. Til gengæld ses det også at signalet er blevet langsommere, ved de afrundede hjørner. Dette er ikke optimalt ved lavere duty-cycles, da det som nævnt i afsnit~\ref{CS_protection} vil påvirke systemets I/V-karakteristik. Derfor vil stige tiden af filteret blive optimeret i tredje iteration. 
+Current-sense signalet måles både før og efter filteret. Signalet før filteret ses på figur~\ref{fig:CS_U_filter}. Her ses tydeligt de spikes der ønskes filtreret, da de overstiger den egentlige peak på signalet. Figur~\ref{fig:CS_M_filter} viser signalet efter filteret. Her ses det, at de spikes der var på signalet er blevet filtreret væk. Til gengæld ses det også at signalet er blevet langsommere, ved de afrundede hjørner. Den egentlige stigetid er svær at aflæse, men det gøres den til $350ns$. Dette er ikke optimalt ved lavere duty-cycles, da det som nævnt i afsnit~\ref{CS_protection} vil påvirke systemets I/V-karakteristik. Derfor vil stige tiden af filteret blive optimeret i tredje iteration.
 
-%TODO: Indsæt tabel med resultater - Nicolai
+\noindent Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultater_cs_filter_2}.
+
+
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|c|c|c|}
+		\hline
+		\textbf{Tid} & \multicolumn{3}{|c|}{\textbf{Stigetid}} 										\\ \hline
+		& A & S & R 									\\ \hline
+		$T_{r}$ & $300ns$ & $280ns$ & $350ns$ 									\\ \hline 
+		
+	\end{tabularx}
+	\caption{Resultater for analyse, simulering og realisering af switch-tid}
+	\label{tab:resultater_cs_filter_2}
+\end{table}
 
 \begin{figure}[H]
 	\center
@@ -81,9 +95,9 @@ Current-sense signalet måles både før og efter filteret. Signalet før filter
 
 
 \subsubsection{Spændingsdeler}
-Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren, når udgangsspændingen er $21V$. Dette er gjort på figur. Spændingen er målt til $2.5V$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{label}.
+Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren, når udgangsspændingen er $21V$. Dette er gjort på figur~\ref{label}. Spændingen er målt til $2.5V$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultat_voltage_divider}.
 
-%TODO: Skal laves, simulering og realisering mangler - Nicolai
+%TODO: Skal laves, realisering mangler - Nicolai
 
 \begin{table}[H] 			
 	\centering
@@ -91,7 +105,7 @@ Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren,
 		\hline
 		\textbf{Spænding} & \multicolumn{3}{|c|}{\textbf{Resultater}} 		\\ \hline
 		& A & S & R 									\\ \hline
-		$V_{FB}$ & $2.5V$ & $103ns$ & $120ns$ 									\\ \hline 
+		$V_{FB}$ & $2.5V$ & $2.499V$ & $??$ 									\\ \hline 
 		
 	\end{tabularx}
 	\caption{Resultater for analyse, simulering og realisering af switch-tid}
