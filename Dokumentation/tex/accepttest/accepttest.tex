@@ -20,12 +20,10 @@
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Converterens inputspændingen skal være mellem 26-50V & Indgangs-spændingen måles med et voltmeter & Indgangs-spændingen er mellem 26-50V && \\ \hline
-	Converteren må maksimalt trække en peak-strøm fra inputkilden på 150\% af DC inputstrømmen & Udgangen belastes af en 3\ohm\ modstand, og der måles strøm på indgangen med oscilloskop & Peak-strømmen overstiger ikke 150\% af DC strømmen & & \\ \hline
-	Converteren skal opretholde en outputspænding på 21V $\pm$2\% ved 2,5A $\pm$5\% & Der indsættes en load på 5\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 12,5V $\pm$2\% og strømmen på 2,5A $\pm$5\% && \\ \hline
-	Converteren skal opretholde en outputstrøm op til 5A $\pm$5\% ved 15V $\pm$2\% & Der indsættes en load på 5\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 15V $\pm$2\% og strømmen på 3A $\pm$5\% && \\ \hline
-	Converteren må maksimalt have en output ripple-spænding på 50mV pk-pk & Der indsættes en load på 3\ohm\ og pk-pk måles med oscilloskop & Ripple-spændingen er under 50mV pk-pk && \\ \hline
-	Converteren må maksimalt have switching spikes på 100mV pk-pk &  &  && \\ \hline
+	Converteren skal kunne operere med en inputspænding mellem 26-50V & Indgangs-spændingen måles med et voltmeter med en load på $8.4\ohm$ Der indsættes voltmeter og amperemeter på udgangen & Indgangs-spændingen er mellem 26-50V og outputspænding ligger på 21V med en strøm på 2.5A & & \\ \hline
+	Converteren skal opretholde en outputspænding på 21V $\pm$2\% ved 2,5A $\pm$5\% & Der indsættes en load på 8.4\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 21V $\pm$2\% og strømmen på 2,5A $\pm$5\% && \\ \hline
+	Converteren skal opretholde en outputstrøm op til 5A $\pm$5\% ved 15V $\pm$2\% & Der indsættes en load på 3\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 15V $\pm$2\% og strømmen på 3A $\pm$5\% && \\ \hline
+	Converteren må maksimalt have en output ripple-spænding på 50mV pk-pk & Der indsættes en load på 8.4\ohm\ og pk-pk ripple spænding aflæses med oscilloskop over udgangsloaden & Ripple-spændingen på udgangen er under 50mV pk-pk && \\ \hline
 \end{tabularx}
 
 
@@ -33,26 +31,29 @@
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
+	Converteren må maksimalt have switching spikes på 100mV pk-pk & Der indsættes en load på 8.4\ohm\ og pk-pk switching spikes aflæses med oscilloskop over udgangsloaden & Switching spikes aflæses til maksimum 100mV pk-pk && \\ \hline
 	Converteren skal kunne omsætte op til 75W & Der indsættes en load på 3\ohm\ og der måles på oscilloskopet om der holdes en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% & Der måles en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% hvilket giver 75W && \\ \hline
 	Converteren skal operere med et tab på maksimalt 5W & Der indsættes en load på 8.4\ohm\ Indgangs-spænding og strøm måles og omregnes til effekt. Det samme gøres for udgangs-spænding og -strøm. & De 2 effekter trukket fra hinanden giver maksimalt 5W && \\ \hline 
 	Converteren skal implementeres i et volumen mindre end 17x75x100mm på forsiden af PCB'et, samt 3x75x100mm på bagsiden af PCB'et & Med målebånd måles dimensionerne af PCB'et først på forsiden og derefter på bagsiden. & Dimensionerne overskrider ikke 17x75x100mm på forsiden af PCB'et og 3x75x100mm på bagsiden af PCB'et && \\ \hline
+
+\end{tabularx}
+
+
+
+\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+	\hline
+	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
 	Converteren skal kunne operere med en omgivelsestemperatur mellem -35\degreeCelsius\ og 65\degreeCelsius\ & Der indsættes en load på 3\ohm\ og der måles på oscilloskopet om der holdes en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\%. Først testes ved -35\degreeCelsius\ og derefter ved 65\degreeCelsius\ & Der måles en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% hvilket giver 75W ved begge temperature && \\ \hline
-
-\end{tabularx}
-
-
-
-\begin{tabularx}{\textwidth}{|X|X|X|X|X|}
-	\hline
-	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 21V/2,5A ved en indgangsspænding på 26V og 100V & Først indstilles indgangsspændingen til 26V og vha. en network analyser genereres et bode plot ved at måle over loaden. Dette gentages med en indgangsspænding på 50V & På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for både 26V og 50V && \\ \hline
-	Converteren skal have stabil regulering med 10dB gain og 50 graders fasemargin ved 5A/3\ohm\ ved en indgangsspænding på 26V og 50V & Først indstilles indgangsspændingen til 26V og vha. en network analyser genereres et bode plot ved at måle over loaden. Dette gentages med en indgangsspænding på 50V & På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for både 26V og 50V && \\ \hline
-	Reguleringen skal have en risetime på maksimalt 0,5ms & Ved en load på 3\ohm, udgangsstrøm på 5A $\pm$5\% og udgangsspænding på 15V $\pm$2\% måles risetime med et oscilloskop på udgangen ved et step på indgangen & Der måles en risetime på maksimalt 0,5ms && \\ \hline
+	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 21V/2,5A ved en indgangsspænding på 26V & Indgangs-spændingen indstilles til 26V og vha. en network analyser genereres et bodeplot ved at måle over loaden.& På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 26V && \\ \hline
+	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 21V/2,5A ved en indgangsspænding på 50V & Indgangs-spændingen indstilles til 50V og vha. en network analyser genereres et bode plot ved at måle over loaden. & På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 50V && \\ \hline
+	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 5A/3\ohm ved en indgangsspænding på 26V & Indgangs-spændingen indstilles til 26V og vha. en network analyser genereres et bodeplot ved at måle over loaden.& På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 26V && \\ \hline		
 \end{tabularx}
 
 
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Reguleringen skal have et overshoot på maksimalt 5\% & Ved en load på 3\ohm, udgangsstrøm på 5A $\pm$5\% og udgangsspænding på 15V $\pm$2\% måles overshoot med et oscilloskop på udgangen ved et step på indgangen & Der måles et overshoot på maksimalt 5\% && \\ \hline
+	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 5A/3\ohm ved en indgangsspænding på 50V & Indgangs-spændingen indstilles til 50V og vha. en network analyser genereres et bodeplot ved at måle over loaden.& På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 50V && \\ \hline
+	Reguleringen skal have en risetime på maksimalt 0,5ms & Ved en load på 8.4\ohm, udgangsstrøm på 2.5A $\pm$5\% og udgangs-spænding på 21V $\pm$2\% måles risetime med et oscilloskop på udgangen ved et step på indgangen & Der måles en risetime på maksimalt 0,5ms && \\ \hline
+	Reguleringen skal have et overshoot på maksimalt 5\% & Ved en load på 8.4\ohm, udgangsstrøm på 2.5A $\pm$5\% og udgangs-spænding på 21V $\pm$2\% måles overshoot med et oscilloskop på udgangen ved et step på indgangen & Der måles et overshoot på maksimalt 5\% && \\ \hline
 \end{tabularx}
