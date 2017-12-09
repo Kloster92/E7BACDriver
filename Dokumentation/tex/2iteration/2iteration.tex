@@ -391,7 +391,7 @@ Til at beregne conduction tab i MOSFET'en benyttes RMS strømmen i den primære 
 P_{cond} = (I_{RMSp})^2 \cdot R_{on} = 1.06\watt
 \end{equation}
 
-\subsubsection{Switchtab}
+\subsubsection{Switchtab} \label{switchtab2}
 Switchtabet i MOSFET'en opstår som konsekvens af de effekttrekanter, der blev omtalt i MOSFET afsnittet ~\ref{MOSFET}. I denne udregning tages peak strømmen som peakaverage og der estimeres derved ved at lave effekttrekanterne lige store. Selve udregningen kommer af arealet af en trekant hvor peakaverage strøm ganget med max spænding er højden på trekanten. Længden af de 2 trekanter tilsammen ganges også på, og kommer af tr og tf tilsammen, som hver især i 2. iteration er designet til 138.7ns. Det giver et switchtab i MOSFET'en på:
  \begin{equation} \label{P_switch}
  P_{switch} = \frac{1}{2} \cdot I_{pkavg21} \cdot (V_{inmax}+V_{out21}) \cdot \frac{(t_r+t_f)}{T}= 4.493\watt
