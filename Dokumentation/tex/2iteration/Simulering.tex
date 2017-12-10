@@ -32,7 +32,6 @@ Desuden ses output kondensatoren med de udregnede parasitter også.
 Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for\cite{ucc1801-pspice}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
 Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind. Derudover er koblingen i transformatoren regnet til $99.73\percent$, ud fra forholdet mellem selvinduktionen og spredningsselvinduktionen.
 
-\input{tex/2iteration/Simulering-PWM}
 
 \subsection{Constant load} \label{constant}
 Ved constant load simuleringen simuleres  der med en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
@@ -74,6 +73,11 @@ Her kan svingningernes frekvens aflæses. Det gøres ved, at aflæse længden p�
 \end{figure}
 \noindent Anden svingning er her aflæst til 30ns. Det giver en frekvens på $33.33M\hertz$.
 
+\input{tex/2iteration/Simulering-PWM}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{tex/2iteration/Simulering-regulering}  
+
 \subsection{Load step} \label{loadstep2ite}
 Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret udgangsspændingen, efter en pludselig ændring af loaden. I forhold til før, er der sket en ændring i toplaget i schematic, som ses på figur~\ref{fig: simloadtop}  
 \begin{figure}[H]
@@ -95,13 +99,13 @@ Udover dette er der en yderligere ændring. Ved denne simulering er parasit spol
 
 Det ses, at så snart switch U1 går ON falder spændingen fra $21V$ til ca. $20.35V$ og det tager systemet ca. 1.6ms at regulere tilbage igen. Da U2 går OFF stiger spændingen fra 21V til 21.7V og bruger igen 1.6ms, på at regulere spændingen tilbage til de 21V. 
 
-\input{tex/2iteration/Simulering-regulering}  
+
 
 \subsection{Tab}
 Her er tabene for de forskellige komponenter simuleret, ligesom de blev analyseret tidligere. Her er der igen givet et overblik over det samlede tab til sidst i afsnittet.
 
 \subsubsection{Transformator}
-Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere kobbertabet i trådene. På figur~\ref{fig: simkobbertab} ses det simulerede kobbertab. Her er der taget et gennemsnit af effektafsættelserne i de to kobbermodstande lagt sammen. 
+Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere kobbertabet i trådene. På figur~\ref{fig: Simkobbertab} ses det simulerede kobbertab. Her er der taget et gennemsnit af effektafsættelserne i de to kobbermodstande lagt sammen. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simkobbertab.png}
@@ -112,11 +116,8 @@ Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab}
 Tabet aflæses til $1.31\watt$. Det ekstra tab der er simuleret i forhold til analysen kommer af, at current-sense modstanden er designet efter en peakstrøm på ca. 6A. Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi.
 
 \subsubsection{MOSFET} \label{MOSFETsimtab}
-<<<<<<< HEAD
-\noindent Conduction- og switch-tabene er her simuleret. På figur~\ref{fig: SimdMOStab} ses tabet for hver periode.
-=======
-Conduction og switchtab er her simuleret. På figur~\ref{fig: SimMOStab} ses tabet for hver periode.
->>>>>>> cb6df400270d78ad0bd7dffb8e66a322604760ea
+\noindent Conduction- og switch-tabene er her simuleret. På figur~\ref{fig: SimMOStab} ses tabet for hver periode.
+
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOStab.png}
@@ -180,16 +181,13 @@ Tabet kan aflæses til $2.03W$. Igen er tabet noget større end beregnet, og sky
 	\label{tab:anasim}
 \end{table}
 
-For at få det samlede simulerede tab i converteren, tages der på figur~\ref{fig: samletsimtab} et gennemsnit af den effekt der trækkes fra indgangsspændingskilden, i forhold til den belastning loaden trækker på udgangen. Differensen herimellem er det samlede simulerede tab.
+For at få det samlede simulerede tab i converteren, tages der på figur~\ref{fig: samletsimtab} et gennemsnit af den effekt der trækkes fra indgangskilden, i forhold til den belastning loaden trækker på udgangen. Differensen herimellem er det samlede simulerede tab.
 \begin{figure}[H]
  	\center
  	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Samletsimtab.png}
  	\caption{Simulering af watt på indgangen og i loaden}
  	\label{fig: samletsimtab}
 \end{figure}
-<<<<<<< HEAD
 
-Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{anasim}. Det betyder, at der er taget højde for de vigtigste tab i converteren. 
-=======
-Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{tab:anasim}. Det må betyde, at der er taget højde til de vigtigste tab i converteren. 
->>>>>>> cb6df400270d78ad0bd7dffb8e66a322604760ea
+Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{tab:anasim}. Det betyder, at der er taget højde for de vigtigste tab i converteren. 
+

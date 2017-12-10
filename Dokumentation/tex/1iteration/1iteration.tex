@@ -9,7 +9,14 @@ I dette projekt vælges der at tage udgangspunkt i Switch Mode Power-Supply (SMP
 	\eta = \frac{75W}{75W + 5W} \cdot 100 = 93.75\percent
 \end{equation}
 
-I en lineær converter vil effektiviteten falde hvis udgangsspænding i forhold til indgangsspænding er lav. Med udgangsspænding på 15V ud og 50V ind vil forholdet være 0.3. Det kan aflæses til en effektivitet på maksimum $30\percent$ på ~\ref{fig...}. Da dette ikke vil kunne efterleve kravet på $93.75\percent$, udelukkes de lineære convertere. Dette kan til gengæld tilnærmes ved brug af en SMPS. Ved optimering af tabene i converteren, kan man opnå en effektivitet på mere end $90\percent$\cite{smps}.
+I en lineær converter vil effektiviteten falde hvis udgangsspænding i forhold til indgangsspænding er lav. Med udgangsspænding på 15V ud og 50V ind vil forholdet være 0.3. Det kan aflæses til en effektivitet på maksimum $30\percent$ på ~\ref{fig:linear_regulator_eff}. Da dette ikke vil kunne efterleve kravet på $93.75\percent$, udelukkes de lineære convertere. Dette kan til gengæld tilnærmes ved brug af en SMPS. Ved optimering af tabene i converteren, kan man opnå en effektivitet på mere end $90\percent$\cite{linear-regulator}.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/1iteration/billeder/linear_regulator_eff.PNG}
+	\caption{Maksimal effektivitet fo lineære regulatorer}
+	\label{fig:linear_regulator_eff}
+\end{figure}
 
 \section{Buck Converter}
 En simpel converter der bruges til nedregulering af en spænding, er buck converteren. Den består af en transistor, der er placeret i serie med et lavpas filter, i form af et LC-filter. Derudover er der placeret en diode før filteret, således strømmen i spolen har en løbevej, når transistoren går OFF. Det overordnede kredsløb for en buck converter er vist på figur~\ref{fig:buck_converter_circuit}.
@@ -36,7 +43,7 @@ I transistorens ON tid, vil strømmen i spolen, og dermed også strømmen i tran
 \end{figure}
 
 
-Da strømmen i spolen aldrig når $0A$, kaldes denne form for operation Continuous Conduction Mode, eller CCM. Overføringsfunktionen for en buck converter i CCM er\cite{SMPS-topologies}:
+Da strømmen i spolen aldrig når $0A$, kaldes denne form for operation Continuous Conduction Mode, eller CCM. Overføringsfunktionen for en buck converter i CCM er\cite{SMPS-topologies2}:
 \begin{equation} \label{buck_converter_overforinsfunktion}
 V_{out} = D\cdot V_{in}
 \end{equation}
@@ -66,7 +73,7 @@ Flyback converteren kan overordnet drives på to forskellige måder, Continuous 
 \subsection{Continuous Conduction Mode}
 Forkellen ved CCM og DCM ligger i hvordan strømmen løber i transformatoren. Ved CCM vil der altid løbe en strøm i transformatoren, som der også ligger i navnet. Dog vil strømmene individuelt i viklingerne være diskontinuerte. Strømmen er skitseret på figur \ref{fig:CCM_transformer_current}. Skal man have den samlede strøm i transformatoren, skal de to kurver for primær- og sekundærviklingen samles. Dette er fordi der kun løber en strøm i primærviklingen når transistoren er ON, og en strøm i sekundærviklingen når transistoren er OFF. 
 
-\noindent Overføringsfunktionen for en flyback converter i CCM er\cite{SMPS-topologies}:
+\noindent Overføringsfunktionen for en flyback converter i CCM er\cite{SMPS-topologies2}:
 \begin{equation} \label{flyback_converter_CCM_overforinsfunktion}
 V_{out} = \frac{N_S}{N_P} \cdot \frac{D}{1-D} \cdot V_{in}
 \end{equation}
@@ -75,8 +82,7 @@ Ud fra overføringsfunktionen ses det, at udgangsspændingen både afhænger af 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/1iteration/billeder/CCM_transformer_current.PNG}
-	\caption{CCM transformator strømme
-	\cite{SMPS-topologies}}
+	\caption{CCM transformator strømme}
 	\label{fig:CCM_transformer_current}
 \end{figure}
 
@@ -95,12 +101,6 @@ Fordelen ved at $di$ bliver større, er at induktansen i viklingerne bliver mind
 	\label{fig:DCM_transformer_current}
 \end{figure}
 
-Overføringsfunktionen for flyback converteren i DCM er\cite{SMPS-topologies}:
-\begin{equation} \label{flyback_converter_DCM_overforinsfunktion}
-V_{out} = \frac{N_S}{N_P} \cdot \frac{D}{1-D} \cdot V_{in}
-\end{equation}
-
-
 
 \section{Ideel transformator}
 Der vælges at arbejde videre med en flyback converteren, pga. komplikationerne ifm. switchingen af MOSFET'en ved buck converteren.
@@ -117,11 +117,11 @@ D_{maks} = \frac{V_{out}}{V_{inmin} + V_{out}} = 0.447
 D_{min} = \frac{V_{out}}{V_{inmaks} + V_{out}} = 0.296
 \end{equation}
 
-Herefter findes ripplestrømmen, som skal løbe i transformatoren. Her er der taget udgangspunkt i, at designe den efter $60\percent$ af udgangsstrømmen. Dette er et tradeoff mellem størrelsen på ripplen og hvor høj en induktans der fås i viklingerne. Større induktans kræver flere vindinger og giver dermed mere tab.
+Herefter findes ripplestrømmen, som skal løbe i transformatoren. Her er der taget udgangspunkt i, at designe den efter $60\percent$ af udgangsstrømmen\cite{flyback-formler}. Dette er et tradeoff mellem størrelsen på ripplen og hvor høj en induktans der fås i viklingerne. Større induktans kræver flere vindinger og giver dermed mere tab.
 \begin{equation}
 I_{ripple} = 0.6 \cdot \frac{V_{out} \cdot I_{out}}{V_{inmaks} \cdot   D_{min}} = 2.13A
 \end{equation}
-Den nødvendige induktans det kræver for at transformatoren kan rampe op til den nødvendige strøm inden for dutycyclen, udregnes herunder. Med i udregningen er switchfrekvensen, som her er valgt til $100kHz$. Da omsætningsforholdet i transformatoren er sat til 1, betyder det at $L_p = L_s$.
+Den nødvendige induktans det kræver for at transformatoren kan rampe op til den nødvendige strøm inden for dutycyclen, udregnes herunder\cite{flyback-formler}. Med i udregningen er switchfrekvensen, som her er valgt til $100kHz$. Da omsætningsforholdet i transformatoren er sat til 1, betyder det at $L_p = L_s$.
 \begin{equation}
 L = \frac{V_{inmin} \cdot D_{min}}{I_{ripple} \cdot f_s} = 69.43\micro H
 \end{equation}
@@ -139,7 +139,7 @@ Da ripplen er kendt, må peaken kunne findes ved at den halve ripple bliver lagt
 I_{pk} = I_{pkavg} + \frac{I_{ripple}}{2} = 5.58A
 \end{equation}
 
-\noindent Nu beregnes RMS-strømmene i både primær- og sekundærviklingerne. Her bruges peak average strømmen i anden ganget med dutycyclen. 
+\noindent Nu beregnes RMS-strømmene i både primær- og sekundærviklingerne. Her bruges peak average strømmen i anden ganget med dutycyclen\cite{transformator-design}. 
 \begin{equation} \label{I_p_RMS_CCM}
 I_{RMSp} = \sqrt{D_{maks} \cdot (I_{pkavg})^2} = 3.02A
 \end{equation}
@@ -169,7 +169,7 @@ L = \frac{V_{inmin} \cdot D_{min}}{I_{ripple} \cdot f_s} = 12.85\micro H
 
 
 \section{Udgangskondensator}
-I en flyback converter bruges udgangskondensatoren primært til at mindske ripplespændingen på load'en. Formlen for at beregne minimumskapaciteten ses nedenfor. Her bruges kravet til 50mV pk-pk som output spændingsripple.
+I en flyback converter bruges udgangskondensatoren primært til at mindske ripplespændingen på load'en. Formlen for at beregne minimumskapaciteten ses nedenfor. Her bruges kravet til 50mV pk-pk som output spændingsripple\cite{flyback-formler}.
 \begin{equation} \label{udgangskondensator}
 C_{out} \geqslant \frac{I_{out} \cdot D_{maks}}{V_{ripple} \cdot f_s} \geqslant 223.4 \micro F
 \end{equation}
