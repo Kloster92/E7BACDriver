@@ -95,10 +95,6 @@ Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i
 
 Det ses, at så snart switch U1 går on falder spændingen fra $21V$ til ca. $20.35V$ og det tager systemet ca. 1.6ms at regulere tilbage igen. Da U2 går off stiger spændingen fra 21V til 21.7V og bruger igen 1.6ms, på at regulere spændingen tilbage til de 21V. 
 
-\subsection{Startup}
-Ved startup er schematic sat op på præcis samme måde som ved Constant load. Forskellen er her, at der ved simuleringen ses fra 0ms til 20ms. På den måde ses det hvordan systemet starter op, og hvor hurtigt der reguleres ind på de 21V. Da der er koblet en direkte spændingskilde på 12V ind på VCC for PWM controlleren, får man ikke det endelige billede af, hvordan det færdige vil se ud. Det bruges istedet for til at se, hvor hurtigt der reguleres ind, og om der sker nogle uforudsete ting under simuleringsstarten.
- Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
-
 \input{tex/2iteration/Simulering-regulering}  
 
 \subsection{Tab}

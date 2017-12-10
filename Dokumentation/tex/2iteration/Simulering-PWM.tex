@@ -4,7 +4,7 @@
 I det følgende afsnit simuleres funktionaliteterne omkring PWM-controlleren. Her simuleres frekvensen af savtandspændingen og selve switch-frekvensen, samt signalet over current-sense modstanden både før og efter filteret.
 
 \subsubsection{Switch-frekvens}
-Først simuleres frekvensen af savtandspændingen. Dette er gjort på figur~\ref{fig:Simulering_PWM_savtand}. Periodetiden af savtandspændingen aflæses til $5.01\micro s$. Omregnet til en frekvens giver det: $f_{osc}=\frac{1}{5.01\micro s}=199.6k\hertz$. Derudover aflæses signalets minimumsspænding til ca. $138mV$, og maksimum- til ca. $2.5V$. I følge teorien burde spændingen ligge mellem $200mV$ og $2.65V$.
+\noindent Først simuleres frekvensen af savtandspændingen. Dette er gjort på figur~\ref{fig:Simulering_PWM_savtand}. Periodetiden af savtandspændingen aflæses til $5.01\micro s$. Omregnet til en frekvens giver det: $f_{osc}=\frac{1}{5.01\micro s}=199.6k\hertz$. Derudover aflæses signalets minimumsspænding til ca. $138mV$, og maksimum- til ca. $2.5V$. I følge teorien burde spændingen ligge mellem $200mV$ og $2.65V$.
 
 \begin{figure}[H]
 	\center
@@ -13,7 +13,7 @@ Først simuleres frekvensen af savtandspændingen. Dette er gjort på figur~\ref
 	\label{fig:Simulering_PWM_savtand}
 \end{figure}
 
-Nu simuleres selve switch-frekvensen. Dette er gjort på figur~\ref{fig:Simulering_PWM_switch_frekvens}, hvor der måles på udgangen af PWM-controlleren. Her måles periodetiden til $10.1\micro s$, eller en frekvens på $f_s=99.01k\hertz$. 
+\noindent Nu simuleres selve switch-frekvensen. Dette er gjort på figur~\ref{fig:Simulering_PWM_switch_frekvens}, hvor der måles på udgangen af PWM-controlleren. Her måles periodetiden til $10.1\micro s$, eller en frekvens på $f_s=99.01k\hertz$. 
 
 \begin{figure}[H]
 	\center
@@ -23,7 +23,7 @@ Nu simuleres selve switch-frekvensen. Dette er gjort på figur~\ref{fig:Simuleri
 \end{figure}
 
 \subsubsection{Switch-tid}
-Simuleringen af switch-tiden i MOSFET'en er vist på figur~\ref{fig:Simulering_MOSFET_switch_tid}. Figuren viser et zoom af MOSFET'ens gate signal. Switch-tiden kan aflæses som tiden af signalets plateau. Det aflæses til ca. $103ns$. Grunden til dette afviger meget fra analysen, er modellen for den MOSFET der bruges i simuleringen. Som nævnt bruges en anden MOSFET i simuleringen, end der er regnet med i analysen. En af de specifikationer de afviger mellem de to MOSFETs er \textit{Miller} ladningen, der bruges til at regne switch-tiden. I databladet for IRF630\cite{IRF630}, aflæses den til $15nC$. Regnes switch-tiden ud fra det, fås $107.1ns$, hvilket stemmer med det simulerede. 
+\noindent Simuleringen af switch-tiden i MOSFET'en er vist på figur~\ref{fig:Simulering_MOSFET_switch_tid}. Figuren viser et zoom af MOSFET'ens gate signal. Switch-tiden kan aflæses som tiden af signalets plateau. Det aflæses til ca. $103ns$. Grunden til dette afviger meget fra analysen, er modellen for den MOSFET der bruges i simuleringen. Som nævnt bruges en anden MOSFET i simuleringen, end der er regnet med i analysen. En af de specifikationer de afviger mellem de to MOSFETs er \textit{Miller} ladningen, der bruges til at regne switch-tiden. I databladet for IRF630\cite{IRF630}, aflæses den til $15nC$. Regnes switch-tiden ud fra det, fås $107.1ns$, hvilket stemmer med det simulerede. 
 \begin{equation} 
 T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}} = \frac{15nC \cdot 50\ohm}{12V-5V} = 107.1ns
 \end{equation}
@@ -37,7 +37,7 @@ T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}} = \frac{15nC \cdot 50\ohm}{12V
 
 
 \subsubsection{Current-sense}
-Current-sense signalet måles både før og efter filtreringen. Signalet før filteret ses på figur~\ref{fig:Simulering_PWM_current_sense_U}. Her ses de spikes på signalet, der kan give anledning til en forkert duty-cycle. Figur~\ref{fig:Simulering_PWM_current_sense_M} viser simuleringen for signalet efter filtreringen. Her ses det at spikesene er blevet filtreret væk, dog med den konsekvens at signalet har fået en langsommere stigetid. Stigetiden aflæses til ca. $280ns$. Ifølge teorien burde PWM-controllerens udgangssignal skifte, når current-sense signalet er lig $1V$. På figur~\ref{fig:Simulering_PWM_current_sense_M}, ses det, at dette også er tilfældet for p-spice modellen for UCC1801. 
+\noindent Current-sense signalet måles både før og efter filtreringen. Signalet før filteret ses på figur~\ref{fig:Simulering_PWM_current_sense_U}. Her ses de spikes på signalet, der kan give anledning til en forkert duty-cycle. Figur~\ref{fig:Simulering_PWM_current_sense_M} viser simuleringen for signalet efter filtreringen. Her ses det, at spikesene er blevet filtreret væk, dog med den konsekvens at signalet har fået en langsommere stigetid. Stigetiden aflæses til ca. $280ns$. Ifølge teorien burde PWM-controllerens udgangssignal skifte, når current-sense signalet er lig $1V$. På figur~\ref{fig:Simulering_PWM_current_sense_M}, ses det, at dette også er tilfældet for p-spice modellen for UCC1801. 
 
 
 \begin{figure}[H]
