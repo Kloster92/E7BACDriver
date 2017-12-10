@@ -4,19 +4,17 @@
 Det kan efter 3. iteration konkluderes, at flere funktionaliteter i converteren er blevet enten udviklet eller optimeret. I dette afsnit vil disse funktionaliteter blive opsummeret. 
 
 \subsection{Switch-tid}
-Der er opnået en switch-tid i MOSFET'en på $40ns$. Det medfører et switch-tab i den på $\cdots$, hvilket er $\cdots$ mindre end ved anden iteration. Samtidig er det kun $\cdots$ mere end conduction tabet i MOSFET'en, der er på $\cdots$. Hvilket er acceptabelt og vil ikke yderligere blive optimeret. 
+Der er opnået en switch-tid i MOSFET'en på $40ns$. Det medfører et switch-tab i den på $1.48W$, hvilket er $3W$ mindre end ved anden iteration. Samtidig er det kun $0.42W$ mere end conduction tabet i MOSFET'en, der er på $1.06W$. Dette er acceptabelt for nu og vil ikke yderligere blive optimeret. 
 
-%TODO: Indsæt tab når de er udregnet.
-
-En konsekvens af den hurtigere switc-tid, er større spændings-peaks over MOSFET'en. De er målt til ca. $90V$, ift. ca. $80V$ ved switch-tiden i 2. iteration. Da MOSFET'en har en breakdown spænding på $150V$, accepteres denne stigning og der vil derfor ikke gøres mere ved dette.
+En konsekvens af den hurtigere switch-tid, er der kommet større spændings-peaks over MOSFET'en. De er målt til ca. $90V$, ift. ca. $80V$ ved switch-tiden i 2. iteration. Da MOSFET'en har en breakdown spænding på $150V$, accepteres denne stigning og der vil derfor ikke gøres mere ved dette.
 
 
 \subsection{Current-sense filter}
-Der er realiseret et lav-pas filter med en stigetid på $100ns$. Det giver et cuurent-sense signal med stort set rette flanker, ved både stige- og faldetid. Det vil give den mindst mulige indvirkning på converterens I/V-karakteristik. Det kan dog observeres, at signalet har et lille overshoot. Det kommer ved, at filteret kun lige akkurat filtrer nok, for at fjerne spike'en. Da dette overshoot ikke er ret stort accepteres dette, og derfor vil det ikke blive yderligere optimeret.
+Der er realiseret et lav-pas filter med en stigetid på $100ns$. Det giver et curent-sense signal med stort set rette flanker, ved både stige- og faldetid. Det vil give den mindst mulige indvirkning på converterens I/V-karakteristik. Det kan dog observeres, at signalet har et lille overshoot. Det kommer ved, at filteret kun lige akkurat filtrerer nok, for at fjerne spike'en. Da dette overshoot ikke er ret stort accepteres dette, og derfor vil det ikke blive yderligere optimeret.
 
 
 \subsection{Snubber-kredsløb}
-Snubber-kredsløbene er blevet realiseret for, at fjerne svingninger på MOSFET'ens drain-spænding og diodens anode spænding. De er blevet implementeret således der kommer en enkelt svingning, og derefter ligger spændingen sig på det forventede stabile niveau. 
+Snubber-kredsløbene er blevet realiseret for, at fjerne svingninger på MOSFET'ens drain-spænding og diodens anode-spænding. De er blevet implementeret således der kommer en enkelt svingning, og derefter ligger spændingen sig på det forventede stabile niveau. 
 
 
 \subsection{Udgangsfilter}
@@ -28,7 +26,7 @@ Det kan konkluderes ud fra impedans målingen af udgangskondensatoren, at den ha
 
 
 \subsection{Regulering}
-Reguleringen af converteren er blevet optimeret, for at opnå en større båndbredde. Der er opstillet et krav til gain-maring på $10\decibel$ og en fasemargin på $50^\circ$, og derfor er der blevet designet efter dette. Ved en indgangsspænding på 26V, er der opnået en gain-margin på $14.5\decibel$, en fasemargin på $69.8^\circ$, og en båndbredde på $3.86k\hertz$. Derudover er der ved en indgangsspænding på 50V, opnået en gain-margin på $14.3\decibel$, en fasemargin på $76.3^\circ$, og en båndbredde på $5.7k\hertz$. Derfor kan der stadig opnås en større båndbredde, og det vil optimeres yderligere i en senere iteration.
+Reguleringen af converteren er blevet optimeret, for at opnå en større båndbredde. Der er opstillet et krav til gain-maring på $10\decibel$ og en fasemargin på $50^\circ$, og derfor er der blevet designet efter dette. Ved en indgangsspænding på 26V, er der opnået en gain-margin på $14.5\decibel$, en fasemargin på $69.8^\circ$, og en båndbredde på $3.86k\hertz$. Derudover er der ved en indgangsspænding på 50V, opnået en gain-margin på $14.3\decibel$, en fasemargin på $76.3^\circ$, og en båndbredde på $5.7k\hertz$. Derfor kan der stadig opnås en større båndbredde, og det er noget der kan optimeres yderligere på i en senere iteration, hvis det bliver nødvendigt.
 
 
 \subsection{Tab}
@@ -36,7 +34,7 @@ TODO later
 
 
 \subsection{Videreudvikling}
-Funktionaliteten af converteren er blevet så tilfredsstillende, at 4. iteration vil blive, udvikling af converteren således udgangen kan tilpasses til $15V$ og $5A$.Derudover skal der udvikles en $12V$ regulator til forsyning PWM-controlleren. Det vil dog ikke gøres i dette projekt pga. tidsmangel. 
+Funktionaliteten af converteren er blevet så tilfredsstillende, at 4. iteration vil blive udvikling af converteren således udgangen kan tilpasses til $15V$ og $5A$.Derudover skal der udvikles en $12V$ regulator til forsyning af PWM-controlleren. Yderligere bør der foretages en undersøgelse af inputfiltret, da det ikke er testet eller analyseret på, mere end det Terma har givet forinden. Her tænkes på stabilitet og tab. Det vil dog ikke gøres i dette projekt pga. tidsmangel. 
 
 
 

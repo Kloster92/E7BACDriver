@@ -112,7 +112,11 @@ Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab}
 Tabet aflæses til $1.31\watt$. Det ekstra tab der er simuleret i forhold til analysen kommer af, at current-sense modstanden er designet efter en peakstrøm på ca. 6A. Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi.
 
 \subsubsection{MOSFET} \label{MOSFETsimtab}
+<<<<<<< HEAD
 \noindent Conduction- og switch-tabene er her simuleret. På figur~\ref{fig: SimdMOStab} ses tabet for hver periode.
+=======
+Conduction og switchtab er her simuleret. På figur~\ref{fig: SimMOStab} ses tabet for hver periode.
+>>>>>>> cb6df400270d78ad0bd7dffb8e66a322604760ea
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOStab.png}
@@ -147,7 +151,7 @@ Tabet aflæses til $1.47W$. Grunden til det ikke stemmer så godt overens med de
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimCStab.png}
 	\caption{Simulering af tab current sense modstand}
-	\label{fig: simCStab}
+	\label{fig: simdCStab}
 \end{figure}
 Tabet kan aflæses til $2.03W$. Igen er tabet noget større end beregnet, og skyldes den forstørrede RMS strøm der løber i modstanden.
 
@@ -183,5 +187,9 @@ For at få det samlede simulerede tab i converteren, tages der på figur~\ref{fi
  	\caption{Simulering af watt på indgangen og i loaden}
  	\label{fig: samletsimtab}
 \end{figure}
+<<<<<<< HEAD
 
 Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{anasim}. Det betyder, at der er taget højde for de vigtigste tab i converteren. 
+=======
+Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{tab:anasim}. Det må betyde, at der er taget højde til de vigtigste tab i converteren. 
+>>>>>>> cb6df400270d78ad0bd7dffb8e66a322604760ea

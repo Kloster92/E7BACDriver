@@ -13,7 +13,7 @@ Simulering af spændingsdeleren ses på figur~\ref{fig:simulering_voltage_divide
 
 
 \subsection{Gain-fase}
-Simuleringsdiagrammet for gain-fase, ses på figur~\ref{fig:sim_gain_fase_top}. For at lave simuleringen, indføres der et fejl signal i tilbage koblingen til fejlforstærkeren. Det gøres ved at indsætte en ekstra modstand inden spændingsdeleren, som ses på figur~\ref{fig:sim_gain_fase_2iteration}. Impedansen af denne modstand vælges til $51.1\ohm$, for at tilpasning til den network analyzer der bruges i realiseringen. Derudover vil modstanden ikke påvirke spændingsdeleren, da den er meget lille ift. $RFB1$. Da der indføres et fejlsignal på indgangen, mens ændringen på udgangen monitoreres, er det åbensløjfen der simuleres. 
+Simuleringsdiagrammet for gain-fase, ses på figur~\ref{fig:sim_gain_fase_top}. For at lave simuleringen, indføres der et fejlsignal i tilbagekoblingen til fejlforstærkeren. Det gøres ved at indsætte en ekstra modstand inden spændingsdeleren, som ses på figur~\ref{fig:sim_gain_fase_2iteration}. Impedansen af denne modstand vælges til $51.1\ohm$, for at tilpasning til den network analyzer der bruges i realiseringen. Derudover vil modstanden ikke påvirke spændingsdeleren, da den er meget lille ift. $RFB1$. Da der indføres et fejlsignal på indgangen, mens ændringen på udgangen monitoreres, er det åbensløjfen der simuleres. 
 
 \begin{figure}[H]
 	\center
@@ -35,7 +35,7 @@ For at sætte simuleringen op i p-spice, indsættes tekstblokken \textit{@PSpice
 
 Anden linje definerer om der ønskes et lineært eller et logaritmisk sweep. Ved at bruge kommandoen \textit{dec}, for deacde, vælges et logaritmisk sweep. Derudover vælges start- og stopfrekvens, samt hvor mange simuleringer der skal foretages i hver dekade. Her vælges en startfrekvens på $100\hertz$, en slutfrekvens på $100k\hertz$, og 10 simuleringer per dekade. Da systemets dominerende pol ligger ved $132\hertz$, ville det være optimalt at have en startfrekvens på $10\hertz$. Dette var dog ikke muligt pga. simuleringstid og filstørrelse. De sidste to linjer fortæller p-spice, at det er Freq der er variabel. 
 
-Opsætningen af indgangskilden og udgangsloaden, gøres på samme måde som ved Constant Load. Amplituden af fejlkilden, opsættes således amplituden falder når frekvensen stiger. Dette sikre at systemet ikke overstyres ved høje frekvenser. 
+Opsætningen af indgangskilden og udgangsloaden, gøres på samme måde som ved Constant Load. Amplituden af fejlkilden, opsættes således amplituden falder når frekvensen stiger. Dette sikrer at systemet ikke overstyres ved høje frekvenser. Samtidig sikres på den måde at have en lidt højere amplitude ved de lavere frekvenser. Det hjælper til signalstøjforholdet, som er mest kritisk ved de lavere frekvenser, da gain her er høj\cite{evalgp}.
 
 Simulering af gain-fase for selve power modulet er vist på figur~\ref{fig:sim_gain_fase_power}. Her er gain grøn og fasen er rød. Der er målt mellem udgangen af fejlforstærkeren og udgangen af converteren. Det ses at når frekvensen nærmer sig $10k\hertz$, bliver simuleringen usikker. Derfor vil det primært være analysen der bruges til sammenligning med realiseringen. Båndbredden kan dog aflæses til ca. $1200\hertz$, hvilket stemmer nogenlunde overens med analysen, som blev aflæst til ca. $1430\hertz$. Derudover aflæses gain ved en frekvens på $100\hertz$ til ca. $17.4\decibel$. Ved analysen blev dette aflæst til ca. $18\decibel$. Ud fra disse punkter kan det ses at simulering passer nogenlunde ved de lavere frekvenser. 
 
@@ -46,7 +46,7 @@ Simulering af gain-fase for selve power modulet er vist på figur~\ref{fig:sim_g
 	\label{fig:sim_gain_fase_power}
 \end{figure}
 
-Simuleringen af gain-fase for fejlforstærkeren er vist på figur~\ref{fig:sim_gain_fase_2iteration_opamp}. Der er målt mellem indgangen til spændingsdeleren og udgangen af fejlforstærkeren. Det ses at den ønskede funktionalitet af fejlforstærkeren er opnået. Ved frekvenser over knækfrekvensen på ca. $300\hertz$, har fejlforstærkeren et konstant gain på ca. $-5.3\decibel$. Mens forstærkningen stiger ved lavere frekvenser. Derudover ses det at fejlforstærkeren tilførere et faseløft på $90^\circ$, da der indføres en pol.
+\noindent Simuleringen af gain-fase for fejlforstærkeren er vist på figur~\ref{fig:sim_gain_fase_2iteration_opamp}. Der er målt mellem indgangen til spændingsdeleren og udgangen af fejlforstærkeren. Det ses, at den ønskede funktionalitet af fejlforstærkeren er opnået. Ved frekvenser over knækfrekvensen på ca. $300\hertz$, har fejlforstærkeren et konstant gain på ca. $-5.3\decibel$. Mens forstærkningen stiger ved lavere frekvenser. Derudover ses det at fejlforstærkeren tilfører et faseløft på $90^\circ$, da der indføres en pol.
 
 \begin{figure}[H]
 	\center
@@ -56,7 +56,7 @@ Simuleringen af gain-fase for fejlforstærkeren er vist på figur~\ref{fig:sim_g
 \end{figure}
 
 
-Simuleringen af gain-fase for det samlede system er vist på figur~\ref{fig:sim_gain_fase_2iteration_tot}. Der er målt over den modstand hvor fejlsignalet indføres. Det svarer også til indgangen af spændingsdeleren og udgangen af converteren. Her ses det samme, som ved power modulet, at simuleringen ved de høje frekvenser bliver usikker. Indførelsen af fejlforstærkeren ses, ved båndbredden er blevet begrænset til ca. $700\hertz$. Der er designet efter en båndbredde på ca. $800\hertz$. 
+\noindent Simuleringen af gain-fase for det samlede system er vist på figur~\ref{fig:sim_gain_fase_2iteration_tot}. Der er målt over den modstand hvor fejlsignalet indføres. Det svarer også til indgangen af spændingsdeleren og udgangen af converteren. Her ses det samme, som ved power modulet, at simuleringen ved de høje frekvenser bliver usikker. Indførelsen af fejlforstærkeren ses, ved båndbredden er blevet begrænset til ca. $700\hertz$. Der er designet efter en båndbredde på ca. $800\hertz$. Gain-marginen kan ikke rigtig aflæses her, da simuleringen bliver ustabil inden fasen krydser $0^\circ$. Til gengæld kan fase-marginen aflæses til ca. $75^\circ$, hvilket i analysen blev designet til $74.3^\circ$. 
 
 \begin{figure}[H]
 	\center
