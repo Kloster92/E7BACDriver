@@ -2,15 +2,15 @@
 Som konsekvens af optimeringerne, har tabet ændret sig i systemet. I denne sektion gennemgås de steder hvor tabet har ændret sig, hvorefter det samlede tab i converteren regnes igen.
 
 \subsubsection{MOSFET}
-Switchtabet i MOSFET'en er ændret idet gate-modstanden er gjort mindre. Det har givet en fornyet switch tid på 37.2ns. Dette tab udregnes på samme måde som i sektion ~\ref{switchtab2}. Med ligningen derfra fås et fornyet switch tab på:
+\noindent Switchtabet i MOSFET'en er ændret idet gate-modstanden er gjort mindre. Det har givet en fornyet switch tid på 37.2ns. Dette tab udregnes på samme måde som i sektion ~\ref{switchtab2}. Med ligningen derfra fås et fornyet switch tab på:
 \begin{equation}
 P_{switch} = \frac{1}{2} \cdot I_{pkavg21} \cdot (V_{inmax}+V_{out21}) \cdot \frac{(t_r+t_f)}{T}= 1.48\watt
 \end{equation} 
 Der er altså et switchtab på $3\watt$ mindre efter switchtiden er blevet ændret. Det ændrer det samlede tab i MOSFET'en til $2.54\watt$
 
 \subsubsection{Snubber-kredsløb}
-Ulempen ved at indsætte snubber-kredsløbene er det ekstra tab der kommer i modstandene. Tabet i modstanden findes ved at tage kapaciteten i kondensatoren ganget med spændingen over modstanden i anden og switchfrekvensen\cite{snubber_power}.
-Det giver følgende snubber tab ved henholdsvis MOSFET og diode.
+\noindent Ulempen ved at indsætte snubber-kredsløbene er det ekstra tab, der kommer i modstandene. Tabet i modstanden findes ved at tage kapaciteten i kondensatoren ganget med spændingen over modstanden i anden og switchfrekvensen\cite{snubber_power}.
+Det giver følgende snubbertab ved henholdsvis MOSFET og diode.
 \begin{equation}
 P_{snubM} = C_{snubM}\cdot V_{ds} \cdot f_s = 600pF \cdot {47V}^2 \cdot 100k\hertz = 132.5m\watt
 \end{equation} 

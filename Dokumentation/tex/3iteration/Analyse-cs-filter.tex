@@ -1,7 +1,7 @@
 %%% Analyse for optimering af Current-sense filter %%%
 
 \section{Current-sense filter}
-Optimeringen af current-sense filteret sker for, at optimere converterens I/V-karakteristik. Som nævnt i afsnit~\ref{CS_protection}, vil en langsom stigetid af current-sense signalet, gøre at PWM-controlleren måler en forkert strøm ift. det der faktisk er. Det oprindelige, ufiltrerede current-sense signal er vist på figur~\ref{fig:CS_U_filter}. Her aflæses signalets spike til ca. at være $100ns$ langt, derfor vælges der en stigetid for det nye filter på $100ns$. Det vil medføre at steady-state tiden for filteret bliver en smule længere, og dermed vil filtreringen stadig bidrage med mere end det indbyggede, digitale filter i controlleren.
+Optimeringen af current-sense filteret sker for, at optimere converterens I/V-karakteristik. Som nævnt i afsnit~\ref{CS_protection}, vil en langsom stigetid af current-sense signalet gøre, at PWM-controlleren måler en forkert strøm ift. det der faktisk er. Det oprindelige, ufiltrerede current-sense signal er vist på figur~\ref{fig:CS_U_filter}. Her aflæses signalets spike til ca. at være $100ns$ langt, derfor vælges der en stigetid for det nye filter på $100ns$. Det vil medføre at steady-state tiden for filteret bliver en smule længere, og dermed vil filtreringen stadig bidrage med mere end det indbyggede digitale filter i controlleren.
 
 \begin{figure}[H]
 	\center

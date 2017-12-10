@@ -1,7 +1,7 @@
 %%% Simulering for optimering af Current-sense filter %%%
 
 \subsection{Current-sense filter}
-Simuleringen af current-sense filteret sker ved, at måle current-sense signalet både før og efter filteret. Figur~\ref{fig:Simulering_PWM_current_sense_U_3} viser det ufiltrerede signal. Her ses stadig de forventede switching-spikes. Figur~\ref{fig:Simulering_PWM_current_sense_M_3} viser det filtrerede signal. Her aflæses stigetiden til ca. $85ns$, og derfor en hurtigere stigetid end det analyserede. Den hurtigere stigetid godtages, da switching-spikes'ene stadig er blevet filtreret væk. Det ses dog, at der kommer et lille overshoot på signalet. Det betyder at filterets stigetid kun lige præcis er lang nok til, at filtrer spikes'ene. 
+Simuleringen af current-sense filteret sker ved, at måle current-sense signalet både før og efter filteret. Figur~\ref{fig:Simulering_PWM_current_sense_U_3} viser det ufiltrerede signal. Her ses stadig de forventede switching-spikes. Figur~\ref{fig:Simulering_PWM_current_sense_M_3} viser det filtrerede signal. Her aflæses stigetiden til ca. $85ns$, og derfor en hurtigere stigetid end det analyserede. Den hurtigere stigetid godtages, da switching-spikes'ene stadig er blevet filtreret væk. Det ses dog, at der kommer et lille overshoot på signalet. Det betyder at filterets stigetid kun lige præcis er lang nok til, at filtrere spikes'ene, men det er samtidig også denne balancegang, der er designet efter. 
 
 \begin{figure}[H]
 	\center
