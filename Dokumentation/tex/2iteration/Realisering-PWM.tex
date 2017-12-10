@@ -185,32 +185,34 @@ I tabellen nedenfor ses en oversigt over simulering og realisering for drain sp�
 \end{table}
 
 \subsubsection{Load step} \label{loadsteprea}
-Load steppet er realiseret på samme måde som det blev simuleret tidligere. Med 2 $20\ohm$ modstande i parallel. Den ene med en switch, så når switchen er off består loaden af en $20\ohm$ modstand, men når switchen går on er loaden $10\ohm$. Switchen blev indstillet til at sende en puls på 10ms. Oscilloskop propperne blev sat til at måle over udgangen, og resultatet af dette ses På figur~\ref{fig:belastning_samlet} 
+\noindent Load steppet er realiseret på samme måde som det blev simuleret tidligere. Med 2 $20\ohm$ modstande i parallel. Den ene med en switch, så når switchen er OFF består loaden af en $20\ohm$ modstand, men når switchen går ON er loaden $10\ohm$. Switchen blev indstillet til at sende en puls på 10ms. Oscilloskop proberne blev sat til at måle over udgangen, og resultatet af dette ses På figur~\ref{fig:belastning_samlet} 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningsamlet.png}
 	\caption{Realisering af load step}
 	\label{fig:belastningsamlet}
 \end{figure}
-Det ses hvordan spændingen falder først hvor belastningen stiger til $10\ohm$ og efter 10ms stiger spændingen, hvor belastningen kommer tilbage tl de $20\ohm$. På figur~\ref{fig:belastning_10ohm} er der zoomet ind på dykket ved de 10 ohm. 
+
+Det ses hvordan spændingen falder, hvor belastningen stiger til $10\ohm$ og efter 10ms stiger spændingen, hvor belastningen igen er $20\ohm$. På figur~\ref{fig:belastning_10ohm} er der zoomet ind på dykket ved de $10\ohm$. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png}
 	\caption{Zoom på dyk ved 10ohm}
 	\label{fig:belastning_10ohm}
 \end{figure}
-Det kan aflæses at spændingen når at falde med ca. $700mV$ og det tager ca. $1.5ms$ at regulere tilbage igen.
 
-På samme måde ses stigningen ved de $20\ohm$ på figur~\ref{fig:belastning_20ohm}
+\noindent Det kan aflæses at spændingen når at falde med ca. $700mV$ og det tager ca. $1.5ms$ at regulere tilbage igen.
+
+\noindent På samme måde ses stigningen ved de $20\ohm$ på figur~\ref{fig:belastning_20ohm}
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png}
 	\caption{Zoom på stigning ved 20ohm}
 	\label{fig:belastning_20ohm}
 \end{figure}
-Her stiger spændingen med ca. $600mV$ og bruger også omkring $1.5ms$ på at regulere ind igen. 
+\noindent Her stiger spændingen med ca. $600mV$ og bruger også omkring $1.5ms$ på at regulere ind igen. 
 
-Nedenfor ses et overblik over simuleringen af load steppet i forhold til realiseringen. 
+\noindent Nedenfor ses et overblik over simuleringen af load steppet i forhold til realiseringen. 
 
 \begin{table}[H] 			
 	\centering
@@ -224,7 +226,7 @@ Nedenfor ses et overblik over simuleringen af load steppet i forhold til realise
 	\caption{Simulering og realisering af load step}
 	\label{tab:Loadstep}
 \end{table}
-Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan usikkerheden ved det skyldes den lille afvigelse.
+\noindent Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan usikkerheden ved det skyldes den lille afvigelse.
 
 \subsection{Gain-fase måling} \label{gain_fase_2}
 Gain-fase målingen deles op i tre, ligesom ved analysen og simuleringen. Der måles overføringsfunktion for power modulet, fejlforstærkeren, og for det samlede system. Målingerne foretages vha. en Network Analyzer af typen HP4194A. Den måler overføringsfunktionen ved at indførere et fejlsignal i tilbagekoblingen, og måle hvordan udgange ændre sig. Derved opnås åbensløjfe overføringsfunktionen. Som ved simuleringen indføres fejlsignalet over en $51.1\ohm$ modstand, placeret i serie med den første modstand i spændingsdeleren. 

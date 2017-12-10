@@ -45,83 +45,48 @@
         (DisplayName
            "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (MPSSessionName "Jesper")
+  (MPSSessionName "Nicolai Fransen")
   (PartMRUSelector)
   (GlobalState
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn")
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn")
       (Path "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
          "Constant load")
-      (Path "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
-         "Load step")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Model Libraries")
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test.dsn"
          "Constant load" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 145 0 690"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 250 0 506"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1420 52 387")
-        (Scroll "-9 0")
-        (Zoom "92")
+        (Placement "44 0 1 -1 -1 -8 -31 52 869 52 387")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
       (Schematic "Constant load")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1111 78 413")
-        (Scroll "30 0")
-        (Zoom "100"))
-      (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
-      (Schematic "Load step")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 425 104 418")
-        (Scroll "64 140")
+        (Placement "44 0 1 -1 -1 -8 -31 78 895 78 413")
+        (Scroll "171 110")
         (Zoom "100")
         (Occurrence "/FB"))
       (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
       (Schematic "Flyback")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 451 130 444")
-        (Scroll "0 16")
-        (Zoom "82")
-        (Occurrence "/FB/PS"))
-      (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
-      (Schematic "Flyback converter - rtm")
-      (Page "Flyback converter"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 352 78 392")
-        (Scroll "64 0")
-        (Zoom "100")
-        (Occurrence "/FB/IF"))
-      (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
-      (Schematic "Input-filter")
-      (Page "Input-filter"))))
+      (Page "PAGE1"))))

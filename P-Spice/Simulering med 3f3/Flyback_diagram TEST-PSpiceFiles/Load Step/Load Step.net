@@ -1,0 +1,45 @@
+* source FLYBACK_DIAGRAM TEST
+X_U2         N8193128 N8193124 Sw_tOpen PARAMS: tOpen=25ms ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+R_Rload2         0 N8193128  20R TC=0,0 
+R_Rload1         0 N8193117  20R TC=0,0 
+X_U1         N8193124 N8193117 Sw_tClose PARAMS: tClose=21ms ttran=1u
++  Rclosed=0.01 Ropen=1Meg
+C_FB_Cref         0 FB_N14535  1u  TC=0,0 
+R_FB_RFB1         FB_N02226 N8193117  18.7k TC=0,0 
+R_FB_Rcomp         FB_N02226 FB_N19124  49.9k TC=0,0 
+C_FB_Clp         0 FB_N14338  100p  TC=0,0 
+Kn_FB_PS_K1         L_FB_PS_Lp L_FB_PS_Ls     0.99733 KRM8/i/AL160_3F3
+R_FB_PS_Rg         FB_PS_GATE FB_PS_N15331  13.7R TC=0,0 
+X_FB_PS_U1         FB_N19132 FB_N02226 FB_N14338 FB_N14542 0 FB_PS_N15331
++  FB_N15349 FB_N14535 UCCx813-1
+R_FB_PS_RsnubD         N8193117 FB_PS_N18140  27.4R TC=0,0 
+R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
+D_FB_PS_D1         FB_PS_ANODE N8193117 Dntsv30120ctg 
+C_FB_PS_CsnubD         FB_PS_ANODE FB_PS_N18140  400p  TC=0,0 
+X_FB_PS_M1         FB_PS_N16995 FB_PS_GATE FB_N14259 IRF630
+L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}  
+R_FB_PS_Rls         FB_PS_ANODE FB_PS_N12024  {Rls/3} TC=0,0 
+C_FB_PS_CsnubM         FB_PS_N16995 FB_PS_N22303  600p  TC=0,0 
+L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
+L_FB_PS_Ls         0 FB_PS_N17058  {N}  
+R_FB_PS_RsnubM         0 FB_PS_N22303  23.7R TC=0,0 
+L_FB_PS_Lmp         FB_PS_N16991 FB_PS_N16995  {Lm}  
+R_FB_OF_Resr1         FB_OF_N23621 N8193117  {Resr} TC=0,0 
+C_FB_OF_Cout         0 FB_OF_N23621  {Cout}  TC=0,0 
+C_FB_CT         0 FB_N14542  200p  TC=0,0 
+R_FB_Rcs         0 FB_N14259  167m TC=0,0 
+R_FB_RFB22         0 FB_N02226  280k TC=0,0 
+R_FB_RT         FB_N14542 FB_N14535  37.5k TC=0,0 
+C_FB_Ccomp         FB_N19132 FB_N19124  24.2nF  TC=0,0 
+R_FB_RFB21         0 FB_N02226  2.55k TC=0,0 
+C_FB_IF_Cin1         0 FB_N14138  10u  TC=0,0 
+C_FB_IF_Cin2         0 FB_IF_N129151  40u  TC=0,0 
+L_FB_IF_Lin         N8193106 FB_N14138  3u  
+R_FB_IF_Rin         FB_IF_N129151 FB_N14138  800m TC=0,0 
+C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
+R_FB_Rlp         FB_N14259 FB_N14338  464R TC=0,0 
+V_FB_V1         FB_N15349 0 12V
+V_Vmb         N8193106 0  
++PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
+.PARAM  resr={10m/4} n=19 lm=76nh cout={56uf*4} rlp=160m rls=160m lesl=38.78nh

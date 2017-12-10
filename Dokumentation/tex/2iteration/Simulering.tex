@@ -4,21 +4,21 @@ I dette afsnit laves simuleringen for det samlede kredsløb i 2. iteration.
 Selve simuleringsdokumentet er delt op i blokke for at gøre det mere overskueligt. 
 
 
-\noindent Kigges der på det yderste trin på figur~\ref{fig: simtop}, ses blot indgangsspændingen på 26V og udgangsloaden, der er sat op til $8.4\ohm$.
+\noindent Kigges der på det yderste trin på figur~\ref{fig: simtop}, ses blot indgangsspændingen på 26V og udgangsloaden, der er sat op til $8.4\ohm$. Loaden er sat op som en strømkilde, der vil trække en strøm på $2.5A$ fra converteren.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_2iteration_top.png}
 	\caption{Yderste blok af simulering}
 	\label{fig: simtop}
 \end{figure}
-Imellem er blokken "Flyback". Heri er selve kredsløbet. Dykkes der ind i denne blok fås det der ses på figur~\ref{fig: simfly} 
+Imellem er blokken "Flyback". Heri er selve kredsløbet. Dykkes der ind i denne blok fås det der ses på figur~\ref{fig: simfly}. 
 \begin{figure}[H]
 	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_2iteration_flyback.png}
+	\includegraphics[max width=0.9\linewidth]{/tex/2iteration/billeder/Simulering_2iteration_flyback.png}
 	\caption{Flyback blok}
 	\label{fig: simfly}
 \end{figure}
-Her ses yderligere 2 blokke hhv. Inputfilter og flyback converter. Ud over disse blokke ses de komponenter, der er brugt til at få PWM controlleren til at køre efter hensigten. Selve controlleren ligger inde i flyback converter blokken. Værdierne og forklaringen af komponenterne blev gennemgået i analyse afsnittet om PWM controlleren??
+Her ses yderligere 2 blokke hhv. Inputfilter og flyback converter. Ud over disse blokke ses de komponenter, der er brugt til at få PWM controlleren til at køre efter hensigten. Selve PWM-controlleren ligger inde i flyback converter blokken. Værdierne og forklaringen af komponenterne blev gennemgået i analyse afsnittet om PWM controlleren.
 Desuden ses output kondensatoren med de udregnede parasitter også.
 
 
@@ -29,13 +29,13 @@ Desuden ses output kondensatoren med de udregnede parasitter også.
 	\caption{Flyback converter blok}
 	\label{fig: simflycon}
 \end{figure}
-Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for. \cite{??}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
-Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind.
+Heri ses selve PWM controlleren UCC1801, som der er trukket en model ind for\cite{ucc1801-pspice}. Også MOSFET'en og Dioden er der trukket modeller ind for. Ved MOSFET'en har det ikke været muligt at finde den præcise model. Derfor er IRF630 modellen istedet brugt, da det er vurderet, at den minder en del om den\cite{IRF630}. 
+Yderligere ses transformatoren, hvor både spredningsselvinduktion og kobbermodstanden i ledningerne er tegnet med samt kernemodellen for 3F3 er trukket ind. Derudover er koblingen i transformatoren regnet til $99.73\percent$, ud fra forholdet mellem selvinduktionen og spredningsselvinduktionen.
 
 \input{tex/2iteration/Simulering-PWM}
 
 \subsection{Constant load} \label{constant}
-Ved constant load simuleringen simuleres ved en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
+Ved constant load simuleringen simuleres  der med en load på $8.4\ohm$, efter $20ms$ så det sikres, at der ses på den stationære udgang. Indgangsspændingen er sat til 26V.
 Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her ses både strøm og spænding på udgangen.
 \begin{figure}[H]
 	\center
@@ -45,18 +45,18 @@ Første plot af denne simulering ses på figur~\ref{fig: simflycon}. Her ses bå
 \end{figure}
 Her ses det at spændingen V(out) ligger på 21V, dog med svingninger hver gang der switches. Det ser altså ud til at switching transienter fra MOSFET og diode kommer til syne på udgangen. Det er samme billede for strømmen I(Gload), der ellers ligger på de forventede 2.5A.
 
-På figur~\ref{fig: simMOSdio} ses en spændingsperiode for drain benet på MOSFET'en samt dioden. 
+\noindent På figur~\ref{fig: simMOSdio} ses en spændingsperiode for drain benet på MOSFET'en samt dioden. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SIMMOSFETdiode.png}
 	\caption{Simulering af spænding over diode og drain ben på MOSFET}
 	\label{fig: simMOSdio}
 \end{figure}
-Det ses, at når transistoren (rød kurve) går off så kommer den tidligere omtalte peakspænding samt den svinger, inden den går til en stationær værdi på ca. 48V, inden MOSFET'en switches on igen. Dette stemmer fint overens med analysen hvor den stationær værdi bør ligge på 21V+26V=47V.
-Peak'en er ca. 93V.
-Det samme ses for dioden (grøn kurve) at når transistoren er on, vil dioden ikke være i lederetningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V. 
+Det ses, at når transistoren (rød) går OFF så kommer den tidligere omtalte peakspænding samt den svinger, inden den falder mod en stationær værdi på ca. 48V, inden MOSFET'en switches ON igen. Dette stemmer fint overens med analysen hvor den stationær værdi bør ligge på $21V+26V=47V$. Den ekstra spænding over MOSFET'en, er bl.a. et bidrag fra spændingsfaldet over dioden.
+Peak'en aflæses ca. 93V.
+Det samme ses for dioden (grøn) at når MOSFET'en er ON, vil dioden forspændt i spærreretningen, og skal derfor kunne holde til den peak på ca. 80V der ses på grafen. Derudover lægger den sig på en stationær værdi på ca. 46V, hvilket igen stemmer pænt overens med de 47V. 
 
-På figur~\ref{fig: simMOSzoom} zoomes der ind på svingningerne på MOSFET'ens drain.
+\noindent På figur~\ref{fig: simMOSzoom} zoomes der ind på svingningerne på MOSFET'ens drain.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png}
@@ -65,26 +65,26 @@ På figur~\ref{fig: simMOSzoom} zoomes der ind på svingningerne på MOSFET'ens 
 \end{figure}
 Her kan svingningernes frekvens aflæses. Det gøres ved, at aflæse længden på en svingning. Her er anden svingning aflæst til 34ns. Det giver en frekvens på 29.41MHz.
 
-Det samme gøres for det zoomede billede af svingningerne i dioden som ses på figur~\ref{fig: simdiodezoom} 
+\noindent Det samme gøres for det zoomede billede af svingningerne i dioden som ses på figur~\ref{fig: simdiodezoom}. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simulering_diode_anode_zoom.png}
 	\caption{Zoomet simulering af svingninger fra diode}
 	\label{fig: simdiodezoom}
 \end{figure}
-Anden svingning er her aflæst til 30ns. Det giver en frekvens på $33.33M\hertz$
+\noindent Anden svingning er her aflæst til 30ns. Det giver en frekvens på $33.33M\hertz$.
 
 \subsection{Load step} \label{loadstep2ite}
-Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret ind efter en ny load. I forhold til før, er der sket en ændring i toplaget i schematic, som ses på figur~\ref{fig: simloadtop}  
+Ved load steppet kontrolleres det, hvor hurtigt systemet får reguleret udgangsspændingen, efter en pludselig ændring af loaden. I forhold til før, er der sket en ændring i toplaget i schematic, som ses på figur~\ref{fig: simloadtop}  
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simloadtop.png}
 	\caption{Toplaget for simulering af load step}
 	\label{fig: simloadtop}
 \end{figure}
-Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Switchen U1 åbner efter 21ms hvor begge switches vil være on. Her er loaden parallelmodstanden af Rload1 og Rload2 og dermed $10\ohm$. Dette sker i 4ms, indtil switch U2 lukker og loaden igen består af de $20\ohm$ fra Rload1.
+Den eneste forskel er i udgangsloaden. Som her består af to $20\ohm$ modstande i parallel, hvor den ene sidder for enden af 2 switches. Switchen U1 lukker efter $6ms$ hvorefter begge switches vil være ON. Her er loaden parallelmodstanden af Rload1 og Rload2 og dermed $10\ohm$. Dette er tilfældet i 4ms, indtil switch U2 åbner og loaden igen består af de $20\ohm$ fra Rload1.
 
-\noindent Udover dette er der en yderligere ændring. Ved denne simulering er parasit spolen fjernet fra udgangskondensatoren. Dette er gjort, da spolen som før set, giver anledning til en del svingninger. Det er ikke den del, der her i load steppet er interessant, og derfor ses der bort fra den. Det vigtige er istedet hvor hurtigt der bliver reguleret og hvor stort et overshoot der fås. Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
+Udover dette er der en yderligere ændring. Ved denne simulering er parasit spolen fjernet fra udgangskondensatoren. Dette er gjort, da spolen som før set, giver anledning til en del svingninger. Det er ikke den del, der her i load steppet er interessant, og derfor ses der bort fra den. Det vigtige er i stedet hvor hurtigt der bliver reguleret og hvor stort et overshoot der fås. Simuleringsresultatet ses på figur~\ref{fig: simloadstep} 
 
 \begin{figure}[H]
 	\center
@@ -93,66 +93,70 @@ Den eneste forskel er i udgangsloaden. Som her består af 2 $20\ohm$ modstande i
 	\label{fig: simloadstep}
 \end{figure}
 
-Det ses, at så snart switch U1 går on falder spændingen fra $21V$ til ca. $20.35V$ og det tager systemet ca. 1.6ms at regulere tilbage igen. Da U2 går off stiger spændingen fra 21V til 21.7V og bruger igen 1.6ms, på at regulere spændingen tilbage til de 21V. 
+Det ses, at så snart switch U1 går ON falder spændingen fra $21V$ til ca. $20.35V$ og det tager systemet ca. 1.6ms at regulere tilbage igen. Da U2 går OFF stiger spændingen fra 21V til 21.7V og bruger igen 1.6ms, på at regulere spændingen tilbage til de 21V. 
 
 \input{tex/2iteration/Simulering-regulering}  
 
 \subsection{Tab}
-Her er tabene for de forskellige komponenter simuleret, ligesom de blev analyseret tidligere.
+Her er tabene for de forskellige komponenter simuleret, ligesom de blev analyseret tidligere. Her er der igen givet et overblik over det samlede tab til sidst i afsnittet.
 
 \subsubsection{Transformator}
-Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere det analyserede kobbertab. På figur~\ref{fig: simkobbertab} ses det simulerede kobbertab. Her er der lavet en average på de 2 kobbermodstande lagt sammen. 
+Kernetabet i transformatoren er simuleret tidligere i sektion ~\ref{Simkernetab} til $311m\watt$. Der er indsat modstande på $53.33\ohm$ på både primær- og sekundærsiden af transformatoren for at simulere kobbertabet i trådene. På figur~\ref{fig: simkobbertab} ses det simulerede kobbertab. Her er der taget et gennemsnit af effektafsættelserne i de to kobbermodstande lagt sammen. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simkobbertab.png}
 	\caption{Simulering af kobbertab i transformator}
 	\label{fig: Simkobbertab}
 \end{figure}
-Tabet aflæses til $1.31\watt$. Det ekstra tab der er simuleret i forhold til analysen kommer af, at current sense modstanden er designet efter en peakstrøm på ca. 6A.Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi.
+
+Tabet aflæses til $1.31\watt$. Det ekstra tab der er simuleret i forhold til analysen kommer af, at current-sense modstanden er designet efter en peakstrøm på ca. 6A. Det får RMS strømmen på primær og sekundær til at stige, og ligger dermed på et højere niveau end den analyserede værdi.
+
 \subsubsection{MOSFET} \label{MOSFETsimtab}
-Conduction og switchtab er her simuleret. På figur~\ref{fig: SimdMOStab} ses tabet for hver periode.
+\noindent Conduction- og switch-tabene er her simuleret. På figur~\ref{fig: SimdMOStab} ses tabet for hver periode.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOStab.png}
 	\caption{Simulering af tab i MOSFET (periodeoverblik)}
 	\label{fig: SimMOStab}
 \end{figure} 
-Det ses, at der kommer de førnævnte effekttrekanter når der switches. Det er det simulerede switchtab. Offsettet imellem disse effekttrekanter er conduction tabet.
-På figur~\ref{fig: simloadstep} er der lavet en average af simuleringen. Det giver det samlede tab for både conduction og switchtab. 
+
+Det ses, at der kommer de førnævnte effekttrekanter når der switches. Det er det simulerede switchtab. Offsettet i tiden mellem disse effekttrekanter er conduction tabet.
+På figur~\ref{fig: simloadstep} er der taget et gennemsnit af simuleringen. Det giver det samlede tab for både conduction og switch-tabet. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimMOSavg.png}
 	\caption{Simulering af average tab i MOSFET}
 	\label{fig: SimMOSavg}
 \end{figure} 
+
 Det aflæses til at ligge på 4.45W. Tabet her ligger en del  under det analyserede. Det skyldes, at modellen der er brugt i simuleringen, ikke er den samme som bruges i analyse og realisering. Samtidig er analysen et estimat af tabet, hvor der foreksempel regnes med at effekttrekanterne er lige store. Begge dele kan være fejlkilder der gør, at de to tab ikke stemmer helt overens.  
 
 \subsubsection{Diode}
-Diodens tab er simuleret på figur~\ref{fig: simdiodetab}. 
+\noindent Diodens tab er simuleret på figur~\ref{fig: simdiodetab}. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Simdiodetab.png}
 	\caption{Simulering af tab i diode}
 	\label{fig: simdiodetab}
 \end{figure}
-Tabet aflæses til 1.47W. Grunden til det ikke stemmer så godt overens med det analyserede, skyldes at modellen regner med et spændingsfald på $0.6V$, hvor der i analysen er brugt $0.45V$. Dette kommer af at simuleringsmodellen ikke tager højde for at spændingsfaldet ændrer sig med strømmen og temperaturen. 
+Tabet aflæses til $1.47W$. Grunden til det ikke stemmer så godt overens med det analyserede, skyldes at modellen regner med et spændingsfald på $0.6V$, hvor der i analysen er brugt $0.45V$. Dette kommer af, at simuleringsmodellen ikke tager højde for at spændingsfaldet ændrer sig med strømmen og temperaturen. 
 
 \subsubsection{CS modstands tab}
-Tabet i current sense modstanden ses på figur~\ref{fig: simdCStab}
+\noindent Tabet i current sense modstanden ses på figur~\ref{fig: simdCStab}
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/SimCStab.png}
 	\caption{Simulering af tab current sense modstand}
 	\label{fig: simCStab}
 \end{figure}
-Tabet kan aflæses til 2.03W. Igen er tabet noget større end beregnet, og skyldes den forstørrede RMS strøm der løber i modstanden.
+Tabet kan aflæses til $2.03W$. Igen er tabet noget større end beregnet, og skyldes den forstørrede RMS strøm der løber i modstanden.
 
 \subsubsection{Samlet tab}
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|l|l|}
 		\hline
-		\textbf{\large Komponent} & \multicolumn{2}{|X|}{\textbf{\large Tab}} \\ \hline
+		\textbf{\large Komponent} & \multicolumn{2}{|l|}{\textbf{\large Tab}} \\ \hline
 		& A & S	\\ \hline
 		\textbf{Transformator samlet} & $1.46\watt$ & $1.62\watt$ \\ \hline 
 		Kernetab & $366m\watt$ & $311m\watt$ \\ \hline
@@ -172,11 +176,12 @@ Tabet kan aflæses til 2.03W. Igen er tabet noget større end beregnet, og skyld
 	\label{tab:anasim}
 \end{table}
 
-For præcis at få det samlede simulerede tab i converteren tages der på figur~\ref{fig: samletsimtab} en average af den power der sendes ud af indgangsspændingskilden i forhold til det antal watt loaden udsættes for på udgangen. Differensen herimellem er det samlede simulerede tab.
+For at få det samlede simulerede tab i converteren, tages der på figur~\ref{fig: samletsimtab} et gennemsnit af den effekt der trækkes fra indgangsspændingskilden, i forhold til den belastning loaden trækker på udgangen. Differensen herimellem er det samlede simulerede tab.
 \begin{figure}[H]
  	\center
  	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Samletsimtab.png}
  	\caption{Simulering af watt på indgangen og i loaden}
  	\label{fig: samletsimtab}
 \end{figure}
-Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{anasim}. Det må betyde, at der er taget højde til de vigtigste tab i converteren. 
+
+Indgangseffekten aflæses til ca. $62.75\watt$ og loadens effekt til $53.25\watt$. Det giver et samlet simuleret tab på $9.5\watt$. Det minder meget om resultatet i tabel ~\ref{anasim}. Det betyder, at der er taget højde for de vigtigste tab i converteren. 
