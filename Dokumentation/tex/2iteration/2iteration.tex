@@ -2,16 +2,16 @@
 I dette afsnit beskrives 2. iteration af design- og implementeringsfasen. Den indebærer design og vikling af transformator samt valg af resterende komponenter i kredsløbet. Yderligere realiseres og testes hele kredsløbet for første gang i 2. iteration.
 
 \section{Transformator}
-Transformeren fungerer anderledes ved en flyback end ved de fleste andre SMPS, hvor der løber en strøm i de primære og sekundære viklinger på samme tid. Det er ikke tilfældet ved en flyback konstruktion. Her løber strømmen kun i en vikling af gangen. Når MOSFET’en er on, vil strømmen igennem den primære vikling rampe op i forhold til indgangsspændingen og induktansen i viklingen. Pga. dioden og polariteten af den sekundære vikling, vil der på dette tidspunkt, ikke løbe en strøm i den vikling. Når transistoren går off falder strømmen i den primære vikling til 0, som får spændingerne over viklingerne til at skifte polaritet. Med en modsat polaritet på sekundærsiden, kan der nu løbe en strøm gennem dioden. 
+Transformeren fungerer anderledes ved en flyback end ved de fleste andre SMPS, hvor der løber en strøm i de primære og sekundære viklinger på samme tid. Det er ikke tilfældet ved en flyback konstruktion. Her løber strømmen kun i en vikling af gangen. Når MOSFET’en er ON, vil strømmen igennem den primære vikling rampe op i forhold til indgangsspændingen og induktansen i viklingen. Pga. dioden og polariteten af den sekundære vikling, vil der på dette tidspunkt, ikke løbe en strøm i viklingen. Når transistoren går OFF falder strømmen i den primære vikling til 0, som får spændingerne over viklingerne til at skifte polaritet. Med en modsat polaritet på sekundærsiden, kan der nu løbe en strøm gennem dioden. 
 
 
-\noindent Normalt kan energien fra den primære vikling transformeres direkte over i den sekundære vikling, da der løber en strøm på samme tid. Da det ikke er tilfældet ved flyback, kræver konstruktionen, at transformeren kan opbevare energien fra den primære vikling, indtil det kan transformeres over i den sekundære vikling. Det gør at der i transformeren er behov for et air gap, for at transformeren ikke skal gå i mætning. 
+Normalt kan energien fra den primære vikling transformeres direkte over i den sekundære vikling, da der løber en strøm på samme tid. Da det ikke er tilfældet ved flyback, kræver konstruktionen, at transformatoren kan opbevare energien fra den primære vikling, indtil det kan transformeres over i den sekundære vikling. Det gør, at der i transformatoren er behov for et luftgab i kernen, for transformatoren ikke skal gå i mætning. Luftgabet vil generere en større magnetisk modstand i kernen. Når den magnetiske modstand stiger, vil det blive muligt at opbevare en større energi i kernen, uden den går i mætning. 
 
 
-\noindent Det er fluxændringen i kernen, der sørger for, at der induceres spænding over i den sekundære vikling. Det vil sige, at der er behov for at fluxen i kernen ændrer sig forholdsvis lineært, hvilket sker når der ligger en konstant spænding over viklingen. Kernen siges at have nået mætning, når en ændring i H-feltet ikke længere ændrer lineært på fluxen. 
+Det er flux-ændringen i kernen, der sørger for, at der induceres en spænding over i den sekundære vikling. Det vil sige, at der er behov for at fluxen i kernen ændrer sig forholdsvis lineært, hvilket sker når der ligger en konstant spænding over viklingen. Kernen siges at have nået mætning, når en ændring i H-feltet ikke længere ændrer lineært på fluxen. 
 
 
-\noindent For at sikre ens transformatoren ikke går i mætning bruges hysteresekurven (ses på figur~\ref{fig: Hysteresekurve}) som plotter H-feltet på x aksen og B-feltet op ad y aksen. Her skal det undgås at transformatoren kommer til at blive vandret i top eller bund, da det er her, at transformatoren går i mætning. Yderligere fås et overblik over selve transformatortabet ud fra samme kurve. Det areal, som kurven indeholder, er nemlig tabet i transformatoren per switchperiode. Det betyder ligeledes, at kernetabet bliver større jo højere switch frekvens der benyttes. 
+For at sikre transformatoren ikke går i mætning, bruges hysteresekurven (ses på figur~\ref{fig: Hysteresekurve}) som plotter H-feltet på x-aksen og B-feltet op ad y-aksen. Her skal det undgås at transformatoren kommer til at blive vandret i top og/eller bund, da det er her, at transformatoren går i mætning. Yderligere fås et overblik over selve transformatortabet ud fra samme kurve. Det areal, som kurven indeholder, er nemlig tabet i transformatoren per switch-periode. Det betyder ligeledes, at kernetabet bliver større, jo højere switch frekvens der benyttes. 
 
 \begin{figure}[H]
 	\center
@@ -19,68 +19,73 @@ Transformeren fungerer anderledes ved en flyback end ved de fleste andre SMPS, h
 	\caption{Hysteresekurve}
 	\label{fig: Hysteresekurve}
 \end{figure}
-\textbf{Tænker teorien her er lidt tynd, eller er det nok??}
+
+
+Effektiviteten i transformatoren betegens, ved koblingen mellem primær- og sekundærviklingerne. Den manglende kobling skyldes, det ikke er hele magnetfeltet der vil blive induceret i kernen. Det vil i stedet blive spredt ud i luften, og bliver derfor betegnet som spredningsselvinduktionen i transformatoren. Spredningsselvinduktionen er unik for transformatoren, og afhænger meget af hvordan den vikles. 
+
 
 \subsection{Design}
-Først og fremmest findes ripplestrømmen, som skal løbe i transformatoren. Her er der taget udgangspunkt i, at designe den efter $60\percent$ af udgangsstrømmen. Dette er et tradeoff mellem størrelsen på ripplen og hvor høj en induktans vi får i viklingerne. Større induktans kræver flere vindinger og giver dermed mere tab.
-\begin{equation}
-I_{ripple} = 0.6 \cdot \frac{V_{out} \cdot I_{out}}{V_{inmaks} \cdot   D_{min}} = 2.13A
-\end{equation}
-Den nødvendige induktans det kræver for at transformatoren kan rampe op til den nødvendige strøm inden for dutycyclen, udregnes på følgende måde:
-\begin{equation}
-L = \frac{V_{inmin} \cdot D_{min}}{I_{ripple} \cdot f_s} = 69.43\micro H
-\end{equation}
+Først og fremmest skal ripplestrømmen, som der løber i transformatoren bestemmes. Dette er gjort i 1. iteration, hvor ripplestrømmen blev bestemt til $I_{ripple} = 2.13A$.
+
+Dernæst skal den nødvendige induktion det kræver for, at transformatoren kan rampe op til den nødvendige strøm, inden for duty-cyclen udregnes. Dette er også gjort i 1. iteration hvor $L=69.43\micro H$.
+
 Som beskrevet tidligere skal kernen kunne opbevare den energi som kommer fra primær viklingen, når transistoren er on, for at undgå mætning. Mængden af energi i primærviklingen udregnes ved:
 \begin{equation} \label{Primary_energy}
-w = \frac{1} {2} \cdot L \cdot {I_{pk}}^2 = 1.083\milli J
+E = \frac{1} {2} \cdot L \cdot {I_{pk}}^2 = 1.083\milli J
 \end{equation}
-For at beregne den tilladelige mængde energi i transformatoren, skal kernen og kernematerialet kendes. Valget er her faldet på en RM8 kerne og materialet 3f3. RM8 kernens mål gør, at den lige akkurat kan være på printet højdemæssigt. Derudover har Terma tidligere brugt RM8 kerner med 3f3 og har nogle mere præcise mål på AL og air gaps, end der er på datasheets’ne. (Kræver det flere argumenter?)
+
+For at beregne den tilladelige mængde energi der kan oplagres i transformatoren, skal kernen og kernematerialet kendes. Valget er her faldet på en RM8 kerne\cite{RM8} og materialet 3f3\cite{3f3}. RM8 kernens mål gør, at den lige akkurat kan være på printet højdemæssigt. Derudover har Terma tidligere brugt RM8 kerner med 3f3 og har nogle mere præcise mål på $A_L$ og luftgab, end det oplyste i datasheets’ne. Det er essentielt for præcisionen af en fremtidig simulering, at det korrekte luftgab bruges, for at kunne sammenholde simulering og realisering.
 
 
-\noindent Den effektive volumen Ve aflæses for RM8. På databladet for 3f3 aflæses et maks peak af B-feltet til omkring $250\milli T$. Hvis der designes efter, at transformatoren vil operere med et højere B-felt, vil det risikeres at kernen går i mætning. Yderligere findes permeabiliteten for 3f3 materialet uden luftgab. Med disse oplysninger vil transformatoren kunne opbevare følgende energi:
+Den effektive volumen, $V_e$, aflæses for RM8. På databladet for 3f3 aflæses et maks peak af B-feltet til lidt over $300\milli T$. Hvis der designes efter, at transformatoren vil operere med et højere B-felt, vil det risikeres at kernen går i mætning. Derfor vælges det, at designe med en $B_{maks}=250mT$, da det vil sikre en god margin til mætning. Yderligere findes permeabiliteten for 3f3 materialet uden luftgab. Med disse oplysninger vil transformatoren kunne opbevare følgende energi:
 \begin{equation} \label{Energy_no_gap}
 w_{kerne} = \frac{1} {2} \cdot \frac{1}{\micro_e} \cdot B^2 \cdot V_e = 53\pico J
 \end{equation}
-Det er tydeligt at den nødvendige energi på ingen måde kan opbevares i kernen. Da ferrit kan opbevare så lidt energi som det er tilfældet, kan det estimeres at al energien vil blive opbevaret i det luftgap, der designes. Derfor kan permeabiliteten ses som $\micro_0$ i den nye beregning. Den effektive volumen deles op i luftgap og $Al$, så luftgapet kan isoleres. Med dette kan luftgapet beregnes: 
+
+Det er tydeligt at den nødvendige energi på ingen måde kan opbevares i kernen. Da ferrit kan opbevare så lidt energi som det er tilfældet, kan det estimeres at al energien vil blive opbevaret i det luftgap, der designes. Derfor kan permeabiliteten ses som $\micro_0$ i den nye beregning. Den effektive volumen deles op i luftgab og $A_L$, så luftgabet kan isoleres. Med dette kan luftgabet beregnes: 
 \begin{equation} \label{Airgap}
 l_g = \frac{L \cdot {I_{pk}}^2 \cdot \micro_0}{B^2 \cdot A_0} = 690.98\micro m
 \end{equation}
-Med den ripplestrøm der i første omgang er benyttet, skal der bruges et air gap på ca. $691\micro m$. Den nærmeste air gaps værdi for 3f3 ligger på $488\micro m$ hvilket giver en Al på $160\nano H$. (Dette er ikke databladets værdi, men en værdi der er blevet givet fra Terma, som har testet databladets værdier til ikke at være korrekte.) Det vil ikke fungere, derfor udregnes en induktans, der passer til det air gap i stedet: 
+
+Med den ripplestrøm der i første omgang er benyttet, skal der bruges et luftgab på ca. $691\micro m$. Den nærmeste luftgab værdi for 3f3 ligger på $488\micro m$ hvilket giver en $A_L$ på $160\nano H$. (Dette er ikke databladets værdi, men en værdi der er blevet givet fra Terma, som har testet databladets værdier til ikke at være korrekte.) Med det udregnede luftgab, beregnes den tilhørende induktion i transformatoren. 
 \begin{equation}
 L_1 = \frac{l_g \cdot B^2 \cdot A_0}{{I_{pk}}^2 \cdot \micro_0} = 49.035\micro H
 \end{equation}
-Med kendt Al og induktans kan vindingstallet beregnes. Da der i 2. iteration bruges en 1:1 transformator er dette både for primær og sekundær vikling:
+
+\noindent Med kendt $A_L$ og induktion kan vindingstallet beregnes. Da der i 2. iteration bruges en 1:1 transformator er dette både for primær- og sekundærvikling:
 \begin{equation} \label{N}
 N = \sqrt{\frac{L_1}{A_L}} = 17.5 \approx 18
 \end{equation}
 Det passer fint med 18 viklinger på hver side, hvor induktansen igen bliver lidt anderledes når vindingstallet rundes op. 
 \begin{equation} \label{L1}
-L_2 = N^2 \cdot A_L = 57.76 \micro H
+L_2 = N^2 \cdot A_L = 51.84 \micro H
 \end{equation}
 Med fastlagt induktans kan ny ripple- og peak strøm beregnes.
 \begin{equation}
-I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2*f_s} = 2.24A
+I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2 \cdot f_s} = 2.24A
 \end{equation}
 \begin{equation}
 I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{ripple}}{2} = 5.64A
 \end{equation}
 
 \subsection{Simulering} \label{Simkernetab}
-I Pspice er kernen og materialet afprøvet, hvor resten af kredsløbet har været med ideele komponenter, for at kontrollere strømme og B-H kurve. Her ses den pspice-model af kernematerialet som bruges:
+I Pspice er kernen og materialet simuleret, hvor resten af kredsløbet har været med ideelle komponenter, for at kontrollere strømme og B-H kurve. Her ses den pspice-model af kernematerialet som bruges:
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kernemodel.png}
 	\caption{Kernemodel for RM8 3f3}
 	\label{fig: Kernemodel}
 \end{figure}
-Kernemodellen for en 3f3 kerne er indsat, hvor det udregnede air gap også er indtastet. Derudover er der 19 vindinger på primær og sekundærspole. Ellers ingen ændringer i forhold til den rent ideele simulering. Først ses simuleringen af strømmene i transformatoren på primær og sekundær side.
+
+
+Kernemodellen for en 3f3 kerne er indsat, hvor det udregnede luftgab også er indtastet. Derudover er der 18 vindinger på primær og sekundærspole. Ellers ingen ændringer i forhold til den rent ideele simulering. Først ses simuleringen af strømmene i transformatoren på primær og sekundær side.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Strom_pri_sek.png}
 	\caption{Strøm i primær- og sekundærvikling}
 	\label{fig: prisek_strom}
 \end{figure}
-Det ses tydeligt, at der som ventes køres i CCM, da ripplestrømmene ikke når ned til 0. Ripple- og peak strøm er, som det ses, ens for primær og sekundær, og aflæses til hhv. $2.27A$ og $5.69A$. Det passer fint med det udregnede på $2.24A$ og $5.64A$.
+Det ses tydeligt, at der som ventes køres i CCM, da ripplestrømmene ikke når ned til 0. Ripple- og peak strøm er, som det ses, ens for primær og sekundær, og aflæses til hhv. $2.1A$ og $5.5A$. Det passer fint med det udregnede på $2.24A$ og $5.64A$.
 På figur~\ref{fig: RMS_trans} ses RMS strømmene:
 \begin{figure}[H]
 	\center
@@ -88,7 +93,8 @@ På figur~\ref{fig: RMS_trans} ses RMS strømmene:
 	\caption{RMS strømme i transformator (blå=primær og gul=sekundær)}
 	\label{fig: RMS_trans}
 \end{figure}
-Her aflæses den primære til $3.01A$ og den sekundære til $3.33A$, hvilket igen stemmer godt overens med det beregnede på $3.02A$ og $3.36A$.
+
+Her aflæses den RMS-strømmen i primærviklingen til $3.01A$ og i sekundærviklingen til $3.33A$, hvilket igen stemmer godt overens med det beregnede på $3.02A$ og $3.36A$.
 
 
 \noindent Herefter kigges på hysteresekurven, og sikres at den ikke kommer langt over de $250\milli T$, som der er designet efter:
@@ -98,7 +104,7 @@ Her aflæses den primære til $3.01A$ og den sekundære til $3.33A$, hvilket ige
 	\caption{Hysteresekurve for transformatoren}
 	\label{fig: Hysterese_trans}
 \end{figure}
-Peak fluxen ligger på ca. $265mT$ hvilket igen passer fint med det der er designet efter. Yderligere ville det kunne ses i toppen og bunden af kurven, hvis den gik i mætning, hvilket den ikke gør her.
+Peak fluxen ligger på ca. $265mT$ hvilket igen passer fint med det der er designet efter. Da induktansen er blevet rundet ned ved valg af luftgab, vil peak-fluxen stige en smule. Yderligere ville det kunne ses i toppen og bunden af kurven, hvis den gik i mætning, hvilket den ikke gør her.
 Tabet i selve kernen er simuleret ved at tage effekten ved den primære vikling i forhold til den sekundære vikling. Tages der i pspice en average af dette fås nedenstående kurve:
 \begin{figure}[H]
 	\center
@@ -106,28 +112,31 @@ Tabet i selve kernen er simuleret ved at tage effekten ved den primære vikling 
 	\caption{Simuleret kernetab i transformator}
 	\label{fig: Kernetab}
 \end{figure}
-Tabet er simuleret til at ligge ved ca. $310\milli W$
+\noindent Tabet er simuleret til at ligge ved ca. $310\milli W$
 
 \subsection{Vikling af transformator}
-Det er vigtigt at prøve at udnytte kernens mål fuldt ud når vindingerne vikles. Med RM8 kernen er der en bredde på $8.6\milli m$ og en højde på $3.475\milli m$. Ved 2. iteration forsøges de mål udnyttet bedst muligt.
+Det er vigtigt, at udnytte kernens mål fuldt ud når vindingerne vikles. Med RM8 kernen er der en bredde på $8.6\milli m$ og en højde på $3.475\milli m$. Ved 2. iteration forsøges de mål udnyttet bedst muligt.
 Først udregnes den nødvendige diameter af tråden, når der skal ligge 18 vindinger per lag. 
 \begin{equation} \label{d_trad}
 d_{tråd} = \frac{8.6\milli m}{18} = 0.478\milli m
 \end{equation}
-Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en isolering med grade 2, som giver en diameter på ledningen eksklusiv isolering på $0.425\milli m$.(HENVISNING) Transformeren er 1:1, så både primær og sekundær vikles med 18 vindinger per lag. Et lag af hver giver en højde på $0.956\milli m$. Altså ikke i nærheden af de $3.475\milli m$ i højden. Derfor vikles 2 ekstra viklinger i parallel for både primær- og sekundærsiden og får dermed den tredobbelte højde. Der indsættes tape mellem hver af de parallelle viklinger. Det giver samlet en højde på $2.867\milli m$ plus tape. Det giver i alt 6 lag, 3 for primær og 3 for sekundær. Overblikket over viklingen kan ses på nedenstående tegning:
+
+Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en isolering med grade 2, som giver en diameter på ledningen eksklusiv isolering på $0.425\milli m$\cite{wire-diameter}. Transformeren er 1:1, så både primær og sekundær vikles med 18 vindinger per lag. Et lag af hver giver en højde på $0.956\milli m$. Altså ikke i nærheden af de $3.475\milli m$ i højden. Derfor vikles 2 ekstra viklinger i parallel for både primær- og sekundærsiden og får dermed den tredobbelte højde. Der indsættes tape mellem hver af de parallelle viklinger, for at sikre viklingerne ikke rykker sig under viklingen af transformatoren. Det giver samlet en højde på $2.867\milli m$ eksklusiv tape. Det giver i alt 6 lag, 3 for primær og 3 for sekundær. Overblikket over viklingen kan ses på figur~\ref{fig: viklingsoverblik}:
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/viklingsoverblik.png}
 	\caption{Overblik over viklingsantal og tykkelse}
 	\label{fig: viklingsoverblik}
 \end{figure}
-\noindent Tegnes bunden af transformatoren fås der et overblik over, hvordan viklingerne vikles. Det ses, at primær begynder og slutter i samme sidde af transformatoren, mens sekundær vikles fra den anden side.  
+
+\noindent Tegnes bunden af transformatoren fås der et overblik over, hvordan viklingerne vikles. Det ses, at primær begynder og slutter i samme sidde af transformatoren, mens sekundær vikles fra den anden side. Ved at trække viklingerne ud på samme side, sikres det der altid vikles med hele vindinger.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Viklingsbegyndelse.png}
 	\caption{Overblik over hvordan viklingerne vikles}
 	\label{fig: viklingsbegyndelse}
 \end{figure}
+
 \noindent Sidste billede viser hvilken retning der vikles. Her vil primær og sekundær vikles modsatte vej af hinanden, for at få den modsatte polaritet som ønsket.
 \begin{figure}[H]
 	\center
@@ -137,24 +146,24 @@ Dette er dog den samlede diameter, altså inklusiv isolering. Der benyttes en is
 \end{figure}
 
 \subsection{Realisering}
+På figur~\ref{fig: Viklettrans} ses den viklede transformator. Ved viklingen måtte det erkendes, at der ikke kunne realiseres 18 vindinger ind, med en ledningstykkelse på $0.450\milli m$, som ellers i forvejen var mindre end den udregnede tykkelse på $0.478\milli m$. I stedet benyttes en tykkelse på $0.425\milli m$ og der tilføjes en ekstra vikling, så det totale antal vindinger ender på 19 per vikling. 
+
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.5\linewidth]{/tex/2iteration/billeder/Viklet_transformator.PNG}
 	\caption{Viklet transformator}
 	\label{fig: Viklettrans}
 \end{figure}
-På figur~\ref{fig: Viklettrans} ses den viklede transformator. Ved viklingen måtte det erkendes, at der ikke kunne presses 18 vindinger ind, med en ledningstykkelse på $0.450\milli m$, som ellers i forvejen var mindre end den udregnede tykkelse på $0.478\milli m$. I stedet benyttes en tykkelse på $0.425\milli m$ og der tilføjes en ekstra vikling, så det totale antal vindinger ender på 19 per vikling. (ER VI SIKRE PÅ DET IKKE NETOP ER DEN TRÅD VI HAR FÅET?? At trådtykkelsen der står er uden isolering?)
-
-\noindent \textbf{Endelig induktans}
 
 
-\noindent Da vindingstallet blev 19 i stedet for de 18, er induktansen lidt højere end beregnet i første omgang. Den endelige induktans den viklede transformator beregnes til:
+\subsubsection{Endelig induktans}
+Da vindingstallet blev korrigeret til 19, er induktansen lidt højere end beregnet i første omgang. Den endelige induktans i den viklede transformator beregnes til:
 \begin{equation} \label{L_2}
 L_2 = N^2 \cdot A_L = 57.76\micro H
 \end{equation}
 Det ændrer igen en smule på ripple- og peak strømmen i transformatoren:
 \begin{equation} \label{I_ripple_final}
-I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2*f_s} = 2.01A
+I_{ripple} = \frac{V_{inmin} \cdot D_{max}}{L_2 \cdot f_s} = 2.01A
 \end{equation}
 \begin{equation} \label{I_pk_final}
 I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{ripple}}{2} = 5.53A
@@ -164,7 +173,7 @@ I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{rippl
 Transformatoren er testet ved at måle både selvinduktionen i primær- og sekundærviklingerne samt spredningsselvinduktionen. Til dette blev en impedansmåler brugt. 
 
 
-\noindent Til sådan en måling er det vigtigt, at gøre ledningerne så korte som muligt, da der vil skabes yderligere induktans i dem. Derfor ses ved opstillingen på figur~\ref{fig: Transopstilling} de meget korte ledninger samt at der bliver brugt en 4-wire teknik. Det vil sige to ledninger på hver side af det der måles på. Det gør at strømmen kan sendes igennem det ene sæt ledninger, mens der måles med det andet sæt. Da der ikke sendes en strøm igennem det sæt der måles på, undgås den induktive fejlmåling, der ellers vil komme fra ledningerne. 
+Til sådan en måling er det vigtigt, at gøre ledningerne så korte som muligt, da der vil skabes yderligere induktans i dem. Derfor ses ved opstillingen på figur~\ref{fig: Transopstilling} de meget korte ledninger samt at der bliver brugt en 4-wire teknik. Det vil sige to ledninger på hver side af det der måles på. Det gør at strømmen kan sendes igennem det ene sæt ledninger, mens der måles med det andet sæt. Da der ikke løber en strøm i måleledningerne, undgås der en fejlmåling, der ellers vil komme fra ledningerne. 
 
 \begin{figure}[H]
 	\center
@@ -173,7 +182,7 @@ Transformatoren er testet ved at måle både selvinduktionen i primær- og sekun
 	\label{fig: Transopstilling}
 \end{figure}
 
-\noindent Måleresultaterne tages med USB ud af impedansmåleren og indsættes i et Excel ark.  
+\noindent Måleresultaterne tages med USB ud af impedansmåleren og indsættes i et Excel ark.
 
 \noindent Selve impedansmåleren havde et lille offset på målingerne. Derfor blev der først lavet en kalibreringsmåling, hvor ledningerne alle målte samme sted. Offsettet herfra er i Excel trukket fra de efterfølgende målinger.    
 
@@ -184,34 +193,37 @@ Transformatoren er testet ved at måle både selvinduktionen i primær- og sekun
 	\caption{Målt induktans i primær vikling}
 	\label{fig: Primarinduktans}
 \end{figure}
-\noindent Her er målingen plottet med et frekvenssweep fra $100Hz$ til $1\mega Hz$. Ved de meget høje frekvenser ses det, at kapacitive parasitter tager over. Den skal benyttes omkring 100kHz og her fås værdien i Excel til $57.7\micro H$, hvilket er præcis den induktans der skulle opnås. De præcise målinger kan ses i Excel dokumentet ”Inductance primærvikling” i bilagsmappen. 
-Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens der igen måles hen over den primære vikling. I en ideel transformator bør der her måles 0. Derfor vil induktansen målt her, svare til spredningsselvinduktionen. På samme måde som før er måleresultaterne sendt til Excel hvorudfra en graf kan tegnes. De præcise målinger kan ses i Excel dokumentet ”Spredningsselvinduktion” i bilagsmappen:
+\noindent Her er målingen plottet med et frekvenssweep fra $100Hz$ til $1\mega Hz$. Ved de meget høje frekvenser ses det, at kapacitive parasitter tager over. Den skal benyttes ved en switch-frekvens omkring 100kHz og her fås værdien i Excel til $57.7\micro H$, hvilket er præcis den induktans der skulle opnås. Målingerne kan ses i Excel dokumentet ”Inductance primærvikling” i bilagsmappen. 
+
+Spredningsselvinduktionen fås ved, at kortslutte den sekundære vikling, mens der igen måles over den primære vikling. I en ideel transformator bør der her måles 0. Derfor vil induktansen målt her, svare til spredningsselvinduktionen. På samme måde som før er måleresultaterne sendt til Excel hvorudfra en graf kan tegnes. De præcise målinger kan ses i Excel dokumentet ”Spredningsselvinduktion” i bilagsmappen:
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Spredningsselvinduktion.png}
 	\caption{Målt spredningsselvinduktion i transformator}
 	\label{fig: leakageinductance}
 \end{figure}
-\noindent Denne graf er fået ud fra et frekvenssweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
+
+\noindent Denne graf er fået ud fra et frekvens-sweep fra 1kHz til $100\kilo Hz$. Ved de $100\kilo Hz$ er spredningsselvinduktionen på $152\nano H$, hvilket er den værdi der bruges. 
 
 \input{tex/2iteration/PWM-controller}
 
 
 
 \section{MOSFET} \label{MOSFET}
-MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er off. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Det vil ideelt set betyde, at MOSFET'en skal kunne holde til:
+MOSFET'en skal først og fremmest kunne holde til den spænding, der vil ligge over drain-source, når den er OFF. Ved en flyback er det den maksimale indgangsspænding plus den spænding der bliver reflekteret tilbage til primærviklingen fra sekundærviklingen. Det vil sige udgangsspændingen samt diodens spændingsfald. Den reflekterede spænding skal ganges med omsætningsforholdet i transformatoren, som i dette tilfælde er 1. Det vil ideelt set betyde, at MOSFET'en skal kunne holde til:
 \begin{equation} \label{Vds_breakideel}
-Vds_{breakideel} = (V_{inmax}+(V_{out}+V_D))= 71.5
+Vds_{breakideel} = (V_{inmax}+(V_{out}+V_D))= 71.5V
 \end{equation}
-Der bør istedet ganges en sikkerhedsmargin oveni på $30\percent$. Det er til for at tage højde for de peakspændinger, der vil komme når der switches. De skyldes kombinationen af spredningsselvinduktionen og kapaciteterne fra MOSFET og diode. Derudover vil der også være kapacitet grundet transformatorens kobling. Typisk vil MOSFET og diodens kapaciteter være større og dermed dominerende. Tages der højde for disse spændingstransienter skal MOSFET'en minimum kunne holde til en spænding på: 
+Der bør medtages en sikkerhedsmargin på $30\percent$, for at tage højde for de peakspændinger, der vil komme når der switches. De skyldes kombinationen af spredningsselvinduktionen og kapaciteterne fra MOSFET og diode. Derudover vil der også være kapacitet grundet transformatorens kobling. Typisk vil MOSFET og diodens kapaciteter være større og dermed dominerende. Tages der højde for disse spændingstransienter skal MOSFET'en minimum kunne holde til en spænding på: 
 \begin{equation} \label{Vds_break}
-Vds_{break} = (V_{inmax}+(V_{out}+V_D)) \cdot 1.3 = 92.95
+Vds_{break} = (V_{inmax}+(V_{out}+V_D)) \cdot 1.3 = 92.95V
 \end{equation}
+
 Yderligere skal den valgte MOSFET kunne holde til RMS strømmen i primærviklingen på $3.02A$ samt peakstrømmen på $5.64A$.
-Til 2. iteration er IRFB23N15 valgt\cite{IRFB23N15}. Den kan holde til Vds på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en Rds(on) modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
+Til 2. iteration er IRFB23N15 valgt\cite{IRFB23N15}. Den kan holde til $V_{ds}$ på $150V$ og en continous drain strøm på $17A$ samt en peak på $92A$, hvilket er rigeligt. Derudover en $R_{ds(on)}$ modstand på ca. $113\milli \ohm$ ved $50\degreeCelsius$. 
 
 \subsection{Switch-tid}
-MOSFET'ens switch-tid bestemmes af den strøm der løber i gaten. MOSFet'en indeholder flere parasitiske kapaciteter, mellem gate-drain og gate-source. Hvor opladningen af gate-drain, også kaldet Miller kapaciteten, bestemmer hvor hurtigt MOSFET'en kan skifte tilstand fra OFF til ON. I switch-tiden vil der både løbe en strøm i MOSFET'en og ligge en spænding over den. Dette vil give anledning til et tab kaldet switch-tab. Princippet i tabet er skitseret på figur~\ref{fig:MOSFET_switch_tid}. Her ses det, at når gate spændingen går høj, skifter MOSFET'en ikke momentant. Det er først når strømmen er rampet op, spændingen begynder at falde. Da effekten er produktet mellem strøm og spænding, vil dette skabe energitrekanter, hvor længden af dem er lig switch-tiden. Den tid ønskes derfor kort, for at mindske switch-tabet. 
+MOSFET'ens switch-tid bestemmes af den strøm der løber i gaten. MOSFET'en indeholder flere parasitiske kapaciteter, mellem gate-drain og gate-source. Hvor opladningen af gate-drain, også kaldet \textit{Miller} kapaciteten, bestemmer hvor hurtigt MOSFET'en kan skifte tilstand fra OFF til ON. I switch-tiden vil der både løbe en strøm i MOSFET'en og ligge en spænding over den. Dette vil give anledning til et tab kaldet switch-tab. Princippet i tabet er skitseret på figur~\ref{fig:MOSFET_switch_tid}. Her ses det, at når gate spændingen går høj, skifter MOSFET'en ikke momentant. Det er først når strømmen er rampet op, spændingen begynder at falde. Da effekten er produktet mellem strøm og spænding, vil dette skabe energitrekanter, hvor længden af dem er lig switch-tiden. Den tid ønskes derfor kort, for at mindske switch-tabet. 
 
 
 \begin{figure}[H]
@@ -221,14 +233,14 @@ MOSFET'ens switch-tid bestemmes af den strøm der løber i gaten. MOSFet'en inde
 	\label{fig:MOSFET_switch_tid}
 \end{figure}
 
-Gate modstanden regnes ved at løse ligning~\ref{R_g_2}\cite{gate_res}. Her er $T_{ch}$ den ønskede switch-tid, som sættes til ca. $150ns$. $Q_{gd}$ er gate-drain ladningen, som afhænger af Miller kapaciteten, den aflæses i databladet til typisk $19nC$. $V_{DD}$ er forsyningsspændingen til PWM-controlleren på $12V$, og dermed også den maksimale spænding af udgangssignalet. $V_{gs}$ er spændingsfaldet fra gate til source for MOSFET'en. Med en drain strøm på $3A$ bliver $V_{gs}\approx 5V$. Dette indsætte og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=55.3\ohm$. Der vælges en modstand på $51.1\ohm$. Med den valgte modstand korrigeres switch-tiden til $138.7ns$.
+Gate modstanden regnes ved at løse ligning~\ref{R_g_2}\cite{gate_res}. Her er $T_{ch}$ den ønskede switch-tid, som sættes til ca. $150ns$. $Q_{gd}$ er gate-drain ladningen, som afhænger af Miller kapaciteten, den aflæses i databladet til typisk $19nC$. $V_{DD}$ er forsyningsspændingen til PWM-controlleren på $12V$, og dermed også den maksimale spænding af udgangssignalet. $V_{gs}$ er spændingsfaldet fra gate til source for MOSFET'en. Med en drain strøm på $3A$ bliver $V_{gs}\approx 5V$. Dette indsættes og ligningen løses med hensyn til $R_{g}$, som fås til $R_{g}=55.3\ohm$. Der vælges en modstand på $51.1\ohm$. Med den valgte modstand korrigeres switch-tiden til $138.7ns$.
 
 \begin{equation} \label{R_g_2}
 T_{ch} = \frac{Q_{gd} \cdot R_{g}}{V_{DD}-V_{gs}}
 \end{equation}
 
 \section{Diode}
-For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er on. Denne breakdown voltage er ideelt se den maksimale indgangsspændingen plus udgangsspændingen.
+For at mindske tabet i konverteren skal spændingsfaldet over dioden helst være så lille som muligt. Der skal dog sørges for, at dioden kan holde til den spænding, der ligger over den, når transistoren er ON. Denne breakdown voltage er ideelt se den maksimale indgangsspændingen plus udgangsspændingen.
 \begin{equation} \label{Vd_breakideel}
 Vd_{breakideel} = (V_{out}+V_{inmax}) = 71V
 \end{equation}
@@ -238,12 +250,12 @@ Vd_{break} = (V_{out}+V_{inmax}) \cdot 1.3 = 92.3V
 \end{equation}
 Yderligere skal dioden kunne holde til RMS strømmen på udgangen på de $3.36A$ og en peakstrøm på $5.53A$.
 
-Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.5V$ ved $125\degreeCelsius$ og $3.36A$. 
+Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm på $5A$ og en peakstrøm på $30A$ per device. Hele pakken er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.45V$ ved $125\degreeCelsius$ og $2.5A$. 
 
-Schottky dioden NTSV30120CT er valgt til 2. iteration med en breakdown voltage på $120V$. Dioden kan klare en continuos strøm $5A$ og en peakstrøm på $30A$ per device. Hele devicet er med 2 dioder, og da der her kun benyttes én af dem, er det i stedet en peakstrøm på $15A$, der er maksimum. Derudover kan dens spændingsfald aflæses i databladet til ca. $0.45V$ ved $125\degreeCelsius$ og $2.5A$. 
 
 \section{Udgangskondensator} \label{output_cap}
-Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen .. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
+Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen . Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
+%TODO: Indsæt kondensator type, og reference til datablad
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kondensator_equivalent.png}
@@ -251,7 +263,7 @@ Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\m
 	\label{fig: con_equi}
 \end{figure}
 I nogle datablade kan disse parasitkomponenter slås op, det er dog ikke tilfældet for denne kondensator. Med hensyn til ESR modstanden, bliver denne af og til ikke oplyst for film kondensatorer, da den er lav ved denne type, i forhold til for eksempel en elektrolyt. 
-Med hensyn til induktansen kan den estimeres ved en hovedregel, der siger, $1\nano H$ per $\milli m$. Denne kondensator har $4\centi m$ lang og induktansen estimeres dermed til $40\nano F$. Med 4 kondensatorer i parrallel giver det dermed en samlet induktans for udgangskondensatoren på:
+Med hensyn til induktansen kan den estimeres ved en hovedregel, der siger, $1\nano H$ per $\milli m$\cite[p.~38]{rule_of_thumb}. Den valgte kondensator er ca. $4\centi m$ lang og induktansen estimeres dermed til $40\nano F$. Med 4 kondensatorer i parrallel giver det dermed en samlet induktans for udgangskondensatoren på:
 \begin{equation} \label{ESL}
 C_{ESL} = ((40\nano F)^{-1} \cdot 4)^{-1} = 10\nano F
 \end{equation}
@@ -265,17 +277,17 @@ For at få ESR modstanden og den præcise ESL induktans, måles disse med impeda
 	\caption{Test af udgangskondensator}
 	\label{fig: cap}
 \end{figure}
-Ligesom ved transformatoren benyttes 4-wire teknikken, for at undgå ekstra parasitter. På figur~\ref{fig: captest} ses grafen der er tegnet ud fra målingen. De enkelte målepunkter kan findes i Excel dokumentet \cite{Kondensator_impedans.xlsx}
+Ligesom ved transformatoren benyttes 4-wire teknikken, for at undgå ekstra parasitter. På figur~\ref{fig: captest} ses grafen der er tegnet ud fra målingen. De enkelte målepunkter kan findes i Excel dokumentet "Kondensator impedans.xlsx"
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.9\linewidth]{/tex/2iteration/billeder/Kondensatortest.png}
 	\caption{Kapacitet og impedans for udgangskondensator}
 	\label{fig: captest}
 \end{figure}
-Det ses tydeligt at resonantfrekvensen for det induktive og kapacitive i kondensatoren ligger lidt over de $100\kilo \hertz$, mere præcis ved $108\kilo \hertz$. 
+Det ses tydeligt at resonans frekvensen for det induktive og kapacitive i kondensatoren ligger ved $108\kilo \hertz$. 
 
 
-\noindent Da der i projektet bruges en switchfrekvens på $100\kilo \hertz$, er en resonantfrekvens på $108\kilo \hertz$ ikke helt optimal. Det betyder, at der ved de $100\kilo \hertz$, formodentligt ikke vil være præcis den kapacitet der forventes. Det er dog stadig denne kondensator, der benyttes i 2. iteration. Skal der senere optimeres på dette, kan resonantfrekvensen rykkes længere op i frekvens. Det kan enten gøres ved at finde en lignende kondensator med mindre ESL induktans eller finde en kondensator med lavere kapacitet og sætte flere i parrallel end de nuværende 4.
+Da der i projektet bruges en switch-frekvens på $100\kilo \hertz$, er en resonans frekvens på $108\kilo \hertz$ ikke optimal. Det betyder, at der ved de $100\kilo \hertz$, formodentligt ikke vil være præcis den kapacitet der forventes. Det er dog stadig denne kondensator, der benyttes i 2. iteration. Skal der senere optimeres på dette, kan resonans frekvensen rykkes længere op i frekvens. Det kan enten gøres ved at finde en lignende kondensator med mindre ESL induktans, eller finde en kondensator med lavere kapacitet og sætte flere i parrallel end de nuværende 4.
 
 
 \noindent Ved resonantfrekvensen kan ESR modstanden nogenlunde aflæses, da det kapacitive og induktive her udligner hinanden. Det vil sige, at kun ESR modstanden står tilbage, hvilket i dette tilfælde aflæses til ca. $10\milli \ohm$. 

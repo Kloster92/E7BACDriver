@@ -16,7 +16,7 @@
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.TRAN/OP 10ns 20m 19.9m 1u SKIPBP 
+.TRAN/OP 10ns 20m 10m 1u SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Constant load.net" 

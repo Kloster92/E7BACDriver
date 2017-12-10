@@ -1,5 +1,5 @@
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -28,7 +28,7 @@
 .lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
 
 *Analysis directives: 
-.TRAN/OP 10ns 20m 19.9m 1u SKIPBP 
+.TRAN/OP 10ns 20m 10m 1u SKIPBP 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\Constant load.net" 
@@ -41,26 +41,26 @@ V_FB_V1         FB_N15349 0 12V
 R_FB_Rcomp         FB_N02226 FB_N19124  49.9k TC=0,0 
 C_FB_CT         0 FB_N14542  200p  TC=0,0 
 C_FB_Cref         0 FB_N14535  1u  TC=0,0 
-R_FB_RFB1         FB_N02226 N1356267  18.7k TC=0,0 
+R_FB_RFB1         FB_N02226 FB_N08381  18.7k TC=0,0 
 C_FB_Cvcc         0 FB_N15349  1u  TC=0,0 
-R_FB_PS_Rg         FB_PS_GATE FB_PS_N15331  50R TC=0,0 
+R_FB_PS_Rg         FB_PS_GATE FB_PS_N15331  13.7R TC=0,0 
 Kn_FB_PS_K1         L_FB_PS_Lp L_FB_PS_Ls     0.99733 KRM8/i/AL160_3F3
 L_FB_PS_Lp         FB_PS_N12010 FB_PS_N16991  {N}  
 R_FB_PS_Rlp         FB_PS_N12010 FB_N14138  {Rlp/3} TC=0,0 
 L_FB_PS_Ls         0 FB_PS_N17058  {N}  
 R_FB_PS_Rls         FB_PS_ANODE FB_PS_N12024  {Rls/3} TC=0,0 
-D_FB_PS_D1         FB_PS_ANODE N1356267 Dntsv30120ctg 
+D_FB_PS_D1         FB_PS_ANODE FB_N08381 Dntsv30120ctg 
 X_FB_PS_U1         FB_N19132 FB_N02226 FB_N14338 FB_N14542 0 FB_PS_N15331
 +  FB_N15349 FB_N14535 UCCx813-1
-L_FB_PS_Lmp         FB_PS_N16991 FB_PS_DRAIN  {Lm}  
+L_FB_PS_Lmp         FB_PS_N16991 FB_PS_N16995  {Lm}  
 L_FB_PS_Lms         FB_PS_N17058 FB_PS_N12024  {Lm}  
-R_FB_PS_RsnubD         N1356267 FB_PS_N18140  27.4R TC=0,0 
-C_FB_PS_CsnubM         FB_N14138 FB_PS_N17896  {267p*2}  TC=0,0 
-R_FB_PS_RsnubM         FB_PS_DRAIN FB_PS_N17896  23.7R TC=0,0 
-C_FB_PS_CsnubD         FB_PS_ANODE FB_PS_N18140  {204p*2}  TC=0,0 
-X_FB_PS_M1         FB_PS_DRAIN FB_PS_GATE FB_N14259 IRF630
-R_FB_RFB2         0 FB_N02226  2.55k TC=0,0 
-R_FB_RT         FB_N14542 FB_N14535  33.2k TC=0,0 
+R_FB_PS_RsnubD         FB_N08381 FB_PS_N18140  27.4R TC=0,0 
+C_FB_PS_CsnubD         FB_PS_ANODE FB_PS_N18140  400p  TC=0,0 
+X_FB_PS_M1         FB_PS_N16995 FB_PS_GATE FB_N14259 IRF630
+R_FB_PS_RsnubM         0 FB_PS_N22303  23.7R TC=0,0 
+C_FB_PS_CsnubM         FB_PS_N16995 FB_PS_N22303  600p  TC=0,0 
+R_FB_RFB21         0 FB_N02226  2.55k TC=0,0 
+R_FB_RT         FB_N14542 FB_N14535  37.5k TC=0,0 
 C_FB_IF_Cin1         0 FB_N14138  10u  TC=0,0 
 C_FB_IF_Cin2         0 FB_IF_N129151  40u  TC=0,0 
 L_FB_IF_Lin         N1353995 FB_N14138  3u  
@@ -69,9 +69,8 @@ R_FB_Rcs         0 FB_N14259  167m TC=0,0
 R_FB_Rlp         FB_N14259 FB_N14338  464R TC=0,0 
 C_FB_Clp         0 FB_N14338  100p  TC=0,0 
 C_FB_Ccomp         FB_N19132 FB_N19124  24.2nF  TC=0,0 
-R_FB_RFB3         N1356267 N1356267  51.1R TC=0,0 
 L_FB_OF_Lesl4         OUT FB_OF_N24054  {Lesl}  
-L_FB_OF_L1         N1356267 FB_OF_N24235  30nH  
+L_FB_OF_L1         FB_N08381 FB_OF_N24235  30nH  
 C_FB_OF_Cout2         0 FB_OF_N23941  {Cout}  TC=0,0 
 R_FB_OF_Resr4         FB_OF_N24074 FB_OF_N24054  {Resr} TC=0,0 
 L_FB_OF_L2         FB_OF_N24235 FB_OF_N24253  30nH  
@@ -86,16 +85,17 @@ C_FB_OF_Cout1         0 FB_OF_N23809  {Cout}  TC=0,0
 L_FB_OF_L4         FB_OF_N24257 OUT  30nH  
 R_FB_OF_Resr3         FB_OF_N23941 FB_OF_N23921  {Resr} TC=0,0 
 C_FB_OF_Cout         0 FB_OF_N23621  {Cout}  TC=0,0 
+R_FB_RFB22         0 FB_N02226  280k TC=0,0 
 V_Vmb         N1353995 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
 G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
-.PARAM  resr=10m pscale=1 iout=2.5a n=19 lm=76nh cout=56uf rlp=160m vout=21v
+.PARAM  resr=10m iout=2.5a pscale=1 n=19 lm=76nh cout=56uf rlp=160m vout=21v
 +  rls=160m lesl=38.78nh rload={8.4r}
 
 **** RESUMING Tran.cir ****
 .END
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -165,7 +165,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
          CJO   10.000000E-12 
 
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -238,7 +238,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            D     .52         
 
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -319,7 +319,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
        XPART    0            
 
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -343,7 +343,7 @@ G_Gload         OUT 0 Value = {V(Out)/Rload*Pscale}
            K   19.204                          19.204        
 
 
-**** 11/28/17 10:17:29 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+**** 12/09/17 12:00:21 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
 
  ** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\flyback_diagram
 
@@ -376,24 +376,24 @@ Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
 
-ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E-03.
-         Time step =  819.9E-21, minimum allowable step size =  1.000E-18
+ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.127E-03.
+         Time step =  737.8E-21, minimum allowable step size =  1.000E-18
 
   These voltages failed to converge:
 
-    V(FB_N02226)              =   128.09mV  \   128.35mV
-    V(N1356267)               =   744.34mV  \   746.63mV
-    V(FB_PS_N17058)           =   -87.40mV  \   -85.05mV
-    V(FB_PS_ANODE)            =     1.270V  \     1.272V
-    V(FB_PS_N12024)           =     1.438V  \     1.440V
-    V(FB_PS_N18140)           =   768.38mV  \   770.67mV
+    V(FB_N02226)              =   -23.17mV  \   -23.14mV
+    V(FB_PS_N16991)           =     2.478V  \     2.456V
+    V(FB_PS_N17058)           =  -816.06mV  \  -838.41mV
+    V(FB_PS_ANODE)            =   -47.39mV  \   -47.11mV
+    V(FB_PS_N12024)           =    29.51mV  \    29.78mV
+    V(FB_OF_N24253)           =    4.297mV  \    4.345mV
 
   These supply currents failed to converge:
 
-    I(X_FB_PS_U1.XEA.EB1)     =   -17.53uA  \   -17.01uA
-    I(V_FB_V1)                =   -15.24mA  \   -15.57mA
+    I(X_FB_PS_U1.XEA.EB1)     =   -16.24uA  \   -16.02uA
+    I(V_FB_V1)                =   -15.95mA  \   -15.66mA
     I(X_FB_PS_U1.Vrout)       =    15.99mA  \    16.05mA
-    I(X_FB_PS_U1.XEA.V4)      =    1.585uA  \  -165.54nA
+    I(X_FB_PS_U1.XEA.V4)      =   185.33nA  \   644.48nA
 
   These devices failed to converge:
     X_FB_PS_U1.XVccZen.D1 X_FB_PS_U1.Qtim 
@@ -405,49 +405,49 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(  OUT)    1.7803  (N1353995)   11.4550                  (N1356267)     .7443   
+(  OUT)     .0970  (N1353995)    3.3021                  (FB_N02226)    -.0232  
 
-(FB_N02226)     .1281                 (FB_N14138)   11.2510                     
+(FB_N08381)    -.4997                 (FB_N14138)    3.2738                     
 
-(FB_N14259)    -.0434                 (FB_N14338)     .1371                     
+(FB_N14259)    -.0268                 (FB_N14338)     .0298                     
 
-(FB_N14535)    5.0027                 (FB_N14542)    1.4415                     
+(FB_N14535)    5.0027                 (FB_N14542)    1.4327                     
 
-(FB_N15349)   12.0000                 (FB_N19124)     .9754                     
+(FB_N15349)   12.0000                 (FB_N19124)     .7751                     
 
-(FB_N19132)    1.4649                 (FB_PS_GATE)     .0230                    
+(FB_N19132)    1.0731                 (FB_PS_GATE)    -.8220                    
 
-(FB_PS_ANODE)    1.2699               (FB_PS_DRAIN)    9.6757                   
+(FB_PS_ANODE)    -.0474               (FB_OF_N23621)     .1029                  
 
-(FB_OF_N23621)    1.7744              (FB_OF_N23692)    1.7869                  
+(FB_OF_N23692)     .1089              (FB_OF_N23789)     .1171                  
 
-(FB_OF_N23789)    1.8022              (FB_OF_N23809)    1.7958                  
+(FB_OF_N23809)     .1142              (FB_OF_N23921)     .1184                  
 
-(FB_OF_N23921)    1.8063              (FB_OF_N23941)    1.8009                  
+(FB_OF_N23941)     .1157              (FB_OF_N24054)     .1173                  
 
-(FB_OF_N24054)    1.8066              (FB_OF_N24074)    1.8015                  
+(FB_OF_N24074)     .1147              (FB_OF_N24235)    -.1482                  
 
-(FB_OF_N24235)    1.3476              (FB_OF_N24253)    1.6110                  
+(FB_OF_N24253)     .0043              (FB_OF_N24257)     .0696                  
 
-(FB_OF_N24257)    1.7265              (FB_PS_N12010)   11.2860                  
+(FB_PS_N12010)    3.2944              (FB_PS_N12024)     .0295                  
 
-(FB_PS_N12024)    1.4380              (FB_PS_N15331)     .0041                  
+(FB_PS_N15331)    -.2492              (FB_PS_N16991)    2.4777                  
 
-(FB_PS_N16991)   11.2010              (FB_PS_N17058)    -.0874                  
+(FB_PS_N16995)    1.5416              (FB_PS_N17058)    -.8161                  
 
-(FB_PS_N17896)   19.1410              (FB_PS_N18140)     .7684                  
+(FB_PS_N18140)    -.4883              (FB_PS_N22303)   -4.3493                  
 
-(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    9.7545                  
+(X_FB_PS_M1.4)    0.0000              (X_FB_PS_M1.5)    2.6287                  
 
-(X_FB_PS_M1.6)    9.6661              (X_FB_PS_M1.7)     .0246                  
+(X_FB_PS_M1.6)    2.5482              (X_FB_PS_M1.7)    -.9930                  
 
-(X_FB_PS_M1.8)    -.0434              (X_FB_PS_M1.9)    9.6907                  
+(X_FB_PS_M1.8)    -.0268              (X_FB_PS_M1.9)    1.5552                  
 
-(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 55.82E-15                  
+(X_FB_PS_U1.1)    2.5013              (X_FB_PS_U1.3) 3.592E-15                  
 
-(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)   10.6230                 
+(X_FB_PS_U1.6)     .1000              (FB_IF_N129151)    2.4789                 
 
-(X_FB_PS_M1.10)    9.6661             (X_FB_PS_M1.11)    9.6661                 
+(X_FB_PS_M1.10)    2.5482             (X_FB_PS_M1.11)    2.5482                 
 
 (X_FB_PS_U1.11)     .1000             (X_FB_PS_U1.12)     .1000                 
 
@@ -467,9 +467,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.37)     .1000             (X_FB_PS_U1.38)     .1000                 
 
-(X_FB_PS_U1.39)    0.0000             (X_FB_PS_U1.41)     .1000                 
+(X_FB_PS_U1.39)-42.05E-24             (X_FB_PS_U1.41)     .1000                 
 
-(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .4109                 
+(X_FB_PS_U1.43)    5.0000             (X_FB_PS_U1.44)     .1759                 
 
 (X_FB_PS_U1.45)    2.5013             (X_FB_PS_U1.46)     .0727                 
 
@@ -487,9 +487,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.69)     .7800             (X_FB_PS_U1.70)     .3000                 
 
-(X_FB_PS_U1.LEB) 1.993E-12            (X_FB_PS_U1.Tog)    5.0000                
+(X_FB_PS_U1.LEB) 612.1E-12            (X_FB_PS_U1.Tog)    5.0000                
 
-(X_FB_PS_U1.vss)    1.5286            (X_FB_PS_U1.puls)-5.527E-12               
+(X_FB_PS_U1.vss)    1.1368            (X_FB_PS_U1.puls)-355.7E-15               
 
 (X_FB_PS_U1.X1.4)     .1000           (X_FB_PS_U1.X3.4)     .1000               
 
@@ -507,13 +507,13 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.X20.4)     .1000          (X_FB_PS_U1.X21.4)    5.0000              
 
-(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.8963              
+(X_FB_PS_U1.X29.6)    5.0000          (X_FB_PS_U1.XEA.2)    9.9007              
 
-(X_FB_PS_U1.XEA.7)     .8286          (X_FB_PS_U1.XHD.6)    5.0000              
+(X_FB_PS_U1.XEA.7)     .4368          (X_FB_PS_U1.XHD.6)    5.0000              
 
 (X_FB_PS_U1.XUV.3)   12.0000          (X_FB_PS_U1.XUV.4)   12.0000              
 
-(X_FB_PS_U1.ctimer)    1.5286         (X_FB_PS_U1.oscout)     .1000             
+(X_FB_PS_U1.ctimer)    1.1368         (X_FB_PS_U1.oscout)     .1000             
 
 (X_FB_PS_U1.rstosc)     .1000         (X_FB_PS_U1.uvlout)   10.3730             
 
@@ -521,9 +521,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.X13.20)     .1000         (X_FB_PS_U1.X14.10)    5.0000             
 
-(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.9054             
+(X_FB_PS_U1.X14.20)     .1000         (X_FB_PS_U1.XEA.11)    9.9073             
 
-(X_FB_PS_U1.XEA.13)    9.3319         (X_FB_PS_U1.XEA.16)    1.4929             
+(X_FB_PS_U1.XEA.13)    9.3363         (X_FB_PS_U1.XEA.16)    1.1011             
 
 (X_FB_PS_U1.XTFF.3)    5.0000         (X_FB_PS_U1.XTFF.4)    5.0000             
 
@@ -533,9 +533,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.X18.HYS)     .5000        (X_FB_PS_U1.X29.Sin)    0.0000            
 
-(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.9054            
+(X_FB_PS_U1.X99DC.4)     .1000        (X_FB_PS_U1.XEA.OUT)    9.9073            
 
-(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)    0.0000            
+(X_FB_PS_U1.XHD.Sin)    0.0000        (X_FB_PS_U1.XLEBD.3)-42.05E-24            
 
 (X_FB_PS_U1.XROSC.4)     .1000        (X_FB_PS_U1.XTFF.10)    3.5000            
 
@@ -543,9 +543,9 @@ ERROR(ORPSIM-15138): Convergence problem in Transient Analysis at Time =  1.441E
 
 (X_FB_PS_U1.X29.X2.4)    0.0000       (X_FB_PS_U1.X29.X3.3)    5.0000           
 
-(X_FB_PS_U1.XDRIVE.2)   -4.9959       (X_FB_PS_U1.XDRIVE.3)   -4.9357           
+(X_FB_PS_U1.XDRIVE.2)   -5.2492       (X_FB_PS_U1.XDRIVE.3)   -5.1711           
 
-(X_FB_PS_U1.XEA.OUT1)    9.8983       (X_FB_PS_U1.XEA.OUT2)    9.8964           
+(X_FB_PS_U1.XEA.OUT1)    9.9025       (X_FB_PS_U1.XEA.OUT2)    9.9008           
 
 (X_FB_PS_U1.XHD.X1.5)    5.0000       (X_FB_PS_U1.XHD.X1.7)    0.0000           
 
