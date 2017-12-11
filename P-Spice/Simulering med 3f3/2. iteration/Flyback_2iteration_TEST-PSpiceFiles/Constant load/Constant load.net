@@ -34,4 +34,4 @@ L_FB_Lesl1         OUT FB_N1359969  9.7nH
 R_FB_Resr1         FB_N1359989 FB_N1359969  2.5m TC=0,0 
 V_Vmb         N1356384 0  
 +PULSE 0V 26V 1ms 1ms 1ms 0.9s 1s
-.PARAM  iout=2.5a pscale=1 n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}
+.PARAM  pscale=1 iout=2.5a n=19 lm=76nh rlp=160m vout=21v rls=160m rload={8.4r}

@@ -68,8 +68,8 @@ R_FB_OF_Resr1          FB.OF.Resr1(1=FB_OF_N23621 2=N8193117 ) CN @FLYBACK_DIAGR
 +TEST.Flyback(sch_1):OF@FLYBACK_DIAGRAM TEST.Output-filter(sch_1):INS23603@ANALOG.R.Normal(chips)
 C_FB_OF_Cout          FB.OF.Cout(1=0 2=FB_OF_N23621 ) CN @FLYBACK_DIAGRAM TEST.Load Step(sch_1):Flyback1@FLYBACK_DIAGRAM
 +TEST.Flyback(sch_1):OF@FLYBACK_DIAGRAM TEST.Output-filter(sch_1):INS23623@ANALOG.C.Normal(chips)
-_    _(FB.OF.Out=N8193117)
 _    _(FB.OF.In=N8193117)
+_    _(FB.OF.Out=N8193117)
 C_FB_CT          FB.CT(1=0 2=FB_N14542 ) CN @FLYBACK_DIAGRAM TEST.Load Step(sch_1):Flyback1@FLYBACK_DIAGRAM
 +TEST.Flyback(sch_1):INS14649@ANALOG.C.Normal(chips)
 R_FB_Rcs          FB.Rcs(1=0 2=FB_N14259 ) CN @FLYBACK_DIAGRAM TEST.Load Step(sch_1):Flyback1@FLYBACK_DIAGRAM

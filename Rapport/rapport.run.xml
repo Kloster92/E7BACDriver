@@ -44,13 +44,13 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>rapport.aux</file>
-      <file>rapport-blx.bib</file>
+      <file>rapport.bcf</file>
     </provides>
     <requires type="dynamic">
       <file>rapport.bbl</file>
     </requires>
     <requires type="static">
+      <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
       <file>numeric.bbx</file>
@@ -62,14 +62,13 @@
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
-    <generic>bibtex</generic>
+    <generic>biber</generic>
     <cmdline>
-      <binary>bibtex</binary>
-      <option>-min-crossrefs 2</option>
+      <binary>biber</binary>
       <infile>rapport</infile>
     </cmdline>
     <input>
-      <file>rapport.aux</file>
+      <file>rapport.bcf</file>
     </input>
     <output>
       <file>rapport.bbl</file>
@@ -78,14 +77,10 @@
       <file>rapport.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>rapport.aux</file>
-      <file>rapport-blx.bib</file>
+      <file>rapport.bcf</file>
     </requires>
     <requires type="editable">
       <file>../referencer.bib</file>
-    </requires>
-    <requires type="static">
-      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>

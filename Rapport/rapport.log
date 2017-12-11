@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  30 AUG 2017 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  11 DEC 2017 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1962,9 +1962,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 113.
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2015/12/22 v3.2 programmable bibliographies (PK/JW/AB)
 
-(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex1.sty
-Package: biblatex1 2015/12/22 v3.2 programmable bibliographies (bibtex) (PK/JW/
-AB)
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2015/12/22 v3.2 programmable bibliographies (biber) (PK/JW/A
+B)
 
 (c:/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
@@ -1997,100 +1997,116 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \c@uniquename=\count351
 \c@refsection=\count352
 \c@refsegment=\count353
-\c@maxextrayear=\count354
-\c@maxextraalpha=\count355
-\c@abbrvpenalty=\count356
-\c@highnamepenalty=\count357
-\c@lownamepenalty=\count358
-\c@maxparens=\count359
-\c@parenlevel=\count360
-\blx@tempcnta=\count361
-\blx@tempcntb=\count362
-\blx@tempcntc=\count363
-\blx@maxsection=\count364
-\blx@maxsegment=\count365
-\blx@notetype=\count366
-\blx@parenlevel@text=\count367
-\blx@parenlevel@foot=\count368
+\c@maxextratitle=\count354
+\c@maxextratitleyear=\count355
+\c@maxextrayear=\count356
+\c@maxextraalpha=\count357
+\c@abbrvpenalty=\count358
+\c@highnamepenalty=\count359
+\c@lownamepenalty=\count360
+\c@maxparens=\count361
+\c@parenlevel=\count362
+\blx@tempcnta=\count363
+\blx@tempcntb=\count364
+\blx@tempcntc=\count365
+\blx@maxsection=\count366
+\blx@maxsegment@0=\count367
+\blx@notetype=\count368
+\blx@parenlevel@text=\count369
+\blx@parenlevel@foot=\count370
+\blx@sectionciteorder@0=\count371
 \labelnumberwidth=\skip273
 \labelalphawidth=\skip274
-\shorthandwidth=\skip275
-\biblabelsep=\skip276
-\bibnamesep=\skip277
-\bibinitsep=\skip278
-\bibparsep=\skip279
-\bibhang=\skip280
-\blx@auxin=\read4
-\blx@auxout=\write5
-\c@mincomprange=\count369
-\c@maxcomprange=\count370
-\c@mincompwidth=\count371
-\c@labelname=\count372
-\c@savedlabelname=\count373
-\c@author=\count374
-\c@savedauthor=\count375
-\c@shortauthor=\count376
-\c@savedshortauthor=\count377
-\c@editor=\count378
-\c@savededitor=\count379
-\c@editora=\count380
-\c@savededitora=\count381
-\c@editorb=\count382
-\c@savededitorb=\count383
-\c@editorc=\count384
-\c@savededitorc=\count385
-\c@shorteditor=\count386
-\c@savedshorteditor=\count387
-\c@bookauthor=\count388
-\c@savedbookauthor=\count389
-\c@translator=\count390
-\c@savedtranslator=\count391
-\c@annotator=\count392
-\c@savedannotator=\count393
-\c@commentator=\count394
-\c@savedcommentator=\count395
-\c@introduction=\count396
-\c@savedintroduction=\count397
-\c@foreword=\count398
-\c@savedforeword=\count399
-\c@afterword=\count400
-\c@savedafterword=\count401
-\c@holder=\count402
-\c@savedholder=\count403
-\c@namea=\count404
-\c@savednamea=\count405
-\c@nameb=\count406
-\c@savednameb=\count407
-\c@namec=\count408
-\c@savednamec=\count409
-\c@institution=\count410
-\c@savedinstitution=\count411
-\c@language=\count412
-\c@savedlanguage=\count413
-\c@location=\count414
-\c@savedlocation=\count415
-\c@organization=\count416
-\c@savedorganization=\count417
-\c@origlocation=\count418
-\c@savedoriglocation=\count419
-\c@origpublisher=\count420
-\c@savedorigpublisher=\count421
-\c@pageref=\count422
-\c@savedpageref=\count423
-\c@publisher=\count424
-\c@savedpublisher=\count425
-\c@lista=\count426
-\c@savedlista=\count427
-\c@listb=\count428
-\c@savedlistb=\count429
-\c@listc=\count430
-\c@savedlistc=\count431
-\c@listd=\count432
-\c@savedlistd=\count433
-\c@liste=\count434
-\c@savedliste=\count435
-\c@listf=\count436
-\c@savedlistf=\count437
+\biblabelsep=\skip275
+\bibnamesep=\skip276
+\bibinitsep=\skip277
+\bibparsep=\skip278
+\bibhang=\skip279
+\blx@bcfin=\read4
+\blx@bcfout=\write5
+\c@mincomprange=\count372
+\c@maxcomprange=\count373
+\c@mincompwidth=\count374
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count375
+\c@savedafterword=\count376
+\c@annotator=\count377
+\c@savedannotator=\count378
+\c@author=\count379
+\c@savedauthor=\count380
+\c@bookauthor=\count381
+\c@savedbookauthor=\count382
+\c@commentator=\count383
+\c@savedcommentator=\count384
+\c@editor=\count385
+\c@savededitor=\count386
+\c@editora=\count387
+\c@savededitora=\count388
+\c@editorb=\count389
+\c@savededitorb=\count390
+\c@editorc=\count391
+\c@savededitorc=\count392
+\c@foreword=\count393
+\c@savedforeword=\count394
+\c@holder=\count395
+\c@savedholder=\count396
+\c@introduction=\count397
+\c@savedintroduction=\count398
+\c@namea=\count399
+\c@savednamea=\count400
+\c@nameb=\count401
+\c@savednameb=\count402
+\c@namec=\count403
+\c@savednamec=\count404
+\c@translator=\count405
+\c@savedtranslator=\count406
+\c@shortauthor=\count407
+\c@savedshortauthor=\count408
+\c@shorteditor=\count409
+\c@savedshorteditor=\count410
+\c@labelname=\count411
+\c@savedlabelname=\count412
+\c@institution=\count413
+\c@savedinstitution=\count414
+\c@lista=\count415
+\c@savedlista=\count416
+\c@listb=\count417
+\c@savedlistb=\count418
+\c@listc=\count419
+\c@savedlistc=\count420
+\c@listd=\count421
+\c@savedlistd=\count422
+\c@liste=\count423
+\c@savedliste=\count424
+\c@listf=\count425
+\c@savedlistf=\count426
+\c@location=\count427
+\c@savedlocation=\count428
+\c@organization=\count429
+\c@savedorganization=\count430
+\c@origlocation=\count431
+\c@savedoriglocation=\count432
+\c@origpublisher=\count433
+\c@savedorigpublisher=\count434
+\c@publisher=\count435
+\c@savedpublisher=\count436
+\c@language=\count437
+\c@savedlanguage=\count438
+\c@pageref=\count439
+\c@savedpageref=\count440
+\shorthandwidth=\skip280
+\shortjournalwidth=\skip281
+\shortserieswidth=\skip282
+\shorttitlewidth=\skip283
+\shortauthorwidth=\skip284
+\shorteditorwidth=\skip285
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -2102,13 +2118,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count438
-\c@textcitetotal=\count439
-\c@textcitemaxnames=\count440
-\c@biburlnumpenalty=\count441
-\c@biburlucpenalty=\count442
-\c@biburllcpenalty=\count443
-\c@smartand=\count444
+\c@textcitecount=\count441
+\c@textcitetotal=\count442
+\c@textcitemaxnames=\count443
+\c@biburlnumpenalty=\count444
+\c@biburlucpenalty=\count445
+\c@biburllcpenalty=\count446
+\c@smartand=\count447
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -2120,8 +2136,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2015/12/22 v3.2 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count445
-\c@bbx:relatedtotal=\count446
+\c@bbx:relatedcount=\count448
+\c@bbx:relatedtotal=\count449
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -2148,17 +2164,17 @@ File: biblatex.cfg
 )))
 (c:/texlive/2015/texmf-dist/tex/latex/fixme/fixme.sty
 Package: fixme 2013/01/28 v4.2 Collaborative annotations for LaTeX2e
-\c@fixmecount=\count447
-\c@fxnotecount=\count448
-\c@fxwarningcount=\count449
-\c@fxerrorcount=\count450
-\c@fxfatalcount=\count451
+\c@fixmecount=\count450
+\c@fxnotecount=\count451
+\c@fxwarningcount=\count452
+\c@fxerrorcount=\count453
+\c@fxfatalcount=\count454
 )
 (c:/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box99
-\beforetitleunit=\skip281
-\aftertitleunit=\skip282
+\beforetitleunit=\skip286
+\aftertitleunit=\skip287
 \ttl@plus=\dimen357
 \ttl@minus=\dimen358
 \ttl@toksa=\toks50
@@ -2172,18 +2188,22 @@ Package biblatex Info: ... file 'danish.lbx' found.
 (c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/danish.lbx
 File: danish.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
 )
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
+)
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count452
-\@quotereset=\count453
-(./rapport.aux
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
- (c:/texlive/2015/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2015/12/22 v3.2 biblatex localization (PK/JW/AB)
-))
+\@quotelevel=\count455
+\@quotereset=\count456
+(./rapport.aux (./tex/Indledning/Indledning.aux)
+(./tex/Opgaveformulering/Opgaveformulering.aux)
+(./tex/Projektafgraensning/Projektafgraensning.aux)
+(./tex/Systembeskrivelse/Systembeskrivelse.aux) (./tex/Krav/Krav.aux))
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
@@ -2201,6 +2221,7 @@ LaTeX Font Info:    ... okay on input line 158.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 158.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 158.
 
+
 (c:/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -2214,16 +2235,16 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 (c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count454
+\scratchcounter=\count457
 \scratchdimen=\dimen362
 \scratchbox=\box100
-\nofMPsegments=\count455
-\nofMParguments=\count456
+\nofMPsegments=\count458
+\nofMParguments=\count459
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count457
+\MPscratchCnt=\count460
 \MPscratchDim=\dimen363
-\MPnumerator=\count458
-\makeMPintoPDFobject=\count459
+\MPnumerator=\count461
+\makeMPintoPDFobject=\count462
 \everyMPtoPDFconversion=\toks52
 ) (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -3429,7 +3450,7 @@ File: siunitx-abbreviations.cfg 2016/01/19 v2.6p siunitx: Abbreviated units
 . 
 . Defining command \ms with sig. '' on line 158.
 .................................................
-\c@lstlisting=\count460
+\c@lstlisting=\count463
 \AtBeginShipoutBox=\box101
 
 (c:/texlive/2015/texmf-dist/tex/latex/oberdiek/pdflscape.sty
@@ -3449,7 +3470,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count461
+\c@section@level=\count464
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -3464,21 +3485,17 @@ LaTeX Info: Redefining \nameref on input line 158.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-
-
-Package biblatex Warning: Data encoding is 'utf8'.
-(biblatex)                Use backend=biber.
-
-\openout5 = `rapport-blx.bib'.
+\openout5 = `rapport.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'rapport.bbl' found.
-(./rapport.bbl)
+ (./rapport.bbl)
 Package biblatex Info: Reference section=0 on input line 158.
 Package biblatex Info: Reference segment=0 on input line 158.
-\c__siunitx_mathsf_int=\count462
+\c__siunitx_mathsf_int=\count465
 LaTeX Font Info:    Try loading font information for U+zeur on input line 158.
- (c:/texlive/2015/texmf-dist/tex/latex/eulervm/uzeur.fd
+
+(c:/texlive/2015/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Try loading font information for U+zeus on input line 158.
@@ -3508,7 +3525,7 @@ LaTeX Font Info:    Try loading font information for T1+cmss on input line 158.
 (c:/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-\c__siunitx_mathtt_int=\count463
+\c__siunitx_mathtt_int=\count466
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 158.
 
 
@@ -3580,113 +3597,216 @@ been already used, duplicate ignored
 l.226 	\clearpage
                   [2
 
-] (./tex/kravspecifikation.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 46.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 46.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 46.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 50.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 67.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 67.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 67.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 67.
- [3
-
-
 ]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 78.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 78.
- [4]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 81.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 125.
- [5
+\openout2 = `tex/Indledning/Indledning.aux'.
 
-]
+ (./tex/Indledning/Indledning.tex
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 148.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 151.
-
+(babel)             in language  on input line 5.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 13.
 
 (c:/texlive/2015/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 ))
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 262.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 262.
+ [3
 
-FiXme Summary: Number of notes: 0,
+
+
+]
+\openout2 = `tex/Opgaveformulering/Opgaveformulering.aux'.
+
+
+(./tex/Opgaveformulering/Opgaveformulering.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 3.
+
+Overfull \hbox (5.62573pt too wide) in paragraph at lines 4--5
+\T1/ppl/m/n/10.95 gangs-spæn-din-gen. Der skal im-ple-men-te-res en overstrøms-
+ og overspændings-beskyttelse,
+ []
+
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 264.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 264.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 264.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 264.
+ [4
+
+
+
+]
+\openout2 = `tex/Projektafgraensning/Projektafgraensning.aux'.
+
+ (./tex/Projektafgraensning/Projektafgraensning.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 2.
+Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
+line 3.
+FiXme Note: 'Inds\IeC {\ae }t reference til fremtidigt arbejde n\IeC {\r a}r de
+t er skrevet' on input line 3.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 266.
+ [5
+
+
+
+]
+\openout2 = `tex/Systembeskrivelse/Systembeskrivelse.aux'.
+
+
+(./tex/Systembeskrivelse/Systembeskrivelse.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 2.
+
+<../Dokumentation/tex/kravspecifikation/billeder/Flow_diagram.pdf, id=86, 486.6
+1798pt x 826.28702pt>
+File: ../Dokumentation/tex/kravspecifikation/billeder/Flow_diagram.pdf Graphic 
+file (type pdf)
+
+<use ../Dokumentation/tex/kravspecifikation/billeder/Flow_diagram.pdf>
+Package pdftex.def Info: ../Dokumentation/tex/kravspecifikation/billeder/Flow_d
+iagram.pdf used on input line 11.
+(pdftex.def)             Requested size: 298.1987pt x 506.36685pt.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 268.
+
+[6
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 268.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 268.
+ [7 <../Dokumentation/tex/kravspecifikation/billeder/Flow_diagram.pdf>]
+\openout2 = `tex/Krav/Krav.aux'.
+
+
+(./tex/Krav/Krav.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 2.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 36.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 36.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 270.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 270.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 270.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 270.
+ [8
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 273.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 273.
+
+
+FiXme Summary: Number of notes: 1,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
-(FiXme)        Total: 0.
+(FiXme)        Total: 1.
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 265.
-[6]
+(babel)             in language  on input line 275.
+[9
+
+
+]
 \tf@toc=\write7
 \openout7 = `rapport.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
- (./rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 265.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 265.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+ (./rapport.aux (./tex/Indledning/Indledning.aux)
+(./tex/Opgaveformulering/Opgaveformulering.aux)
+(./tex/Projektafgraensning/Projektafgraensning.aux)
+(./tex/Systembeskrivelse/Systembeskrivelse.aux) (./tex/Krav/Krav.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 96BB1C0FFCF0F9286AA4D1C0A36DCCCA;297.
+(rerunfilecheck)             Checksum: 20649FC57557799BC7DFEF7E387FF606;401.
 Package logreq Info: Writing requests to 'rapport.run.xml'.
 \openout1 = `rapport.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
  ) 
 Here is how much of TeX's memory you used:
- 41964 strings out of 493042
- 779912 string characters out of 6138227
- 1200350 words of memory out of 5000000
- 44850 multiletter control sequences out of 15000+600000
- 39805 words of font info for 87 fonts, out of 8000000 for 9000
+ 42643 strings out of 493042
+ 796480 string characters out of 6138227
+ 1323443 words of memory out of 5000000
+ 45480 multiletter control sequences out of 15000+600000
+ 50244 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,11n,97p,10454b,2707s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fon
-ts/type1/public/amsfonts/euler/eurm10.pfb><c:/texlive/2015/texmf-dist/fonts/typ
-e1/urw/palatino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino
-/uplr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on rapport.pdf (8 pages, 73761 bytes).
+ 64i,11n,97p,10454b,2260s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
+ive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
+public/cm-super/sfss0900.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-
+super/sftt1095.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplb8a.
+pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive
+/2015/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on rapport.pdf (11 pages, 494220 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 

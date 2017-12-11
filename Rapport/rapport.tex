@@ -13,7 +13,7 @@
 %% Afstand mellem afsnit og videre
 %% NIX PILLE - medmindre strengt nødvendigt
 \setaftersubsubsecskip{6pt}	
-\setbeforesubsubsecskip{ 6pt}
+\setbeforesubsubsecskip{6pt}
 %\setaftersubsecskip{6pt}
 %\setbeforesubsecskip{-\baselineskip}
 %\setaftersecskip{6pt}
@@ -120,7 +120,7 @@
 
 
 %%% Referencer / Bibliografi %%%
-\usepackage[backend=bibtex, sorting=none, style=numeric]{biblatex}
+\usepackage[backend=biber, sorting=none, style=numeric]{biblatex}
 \bibliography{../referencer.bib}
 
 
@@ -257,9 +257,19 @@
 	% Referencer
 	
 	%\include{<sti/filnavn>}
-	\input{tex/kravspecifikation}
 	
 	
-	%\printbibliography[title={Litteraturliste}]
+	\include{tex/Indledning/Indledning}
+	
+	\include{tex/Opgaveformulering/Opgaveformulering}
+	
+	\include{tex/Projektafgraensning/Projektafgraensning}
+	
+	\include{tex/Systembeskrivelse/Systembeskrivelse}
+	
+	\include{tex/Krav/Krav}
+	
+	
+	\printbibliography[title={Litteraturliste}]
 
 \end{document}

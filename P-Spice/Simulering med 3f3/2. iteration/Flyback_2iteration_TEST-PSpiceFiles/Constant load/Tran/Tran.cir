@@ -1,4 +1,4 @@
-** Profile: "Constant load-Tran"  [ C:\Users\Jesper\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test-pspicefiles\constant load\tran.sim ] 
+** Profile: "Constant load-Tran"  [ C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\P-Spice\Simulering med 3f3\2. iteration\flyback_2iteration_test-pspicefiles\constant load\tran.sim ] 
 
 ** Creating circuit file "Tran.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -6,14 +6,14 @@
 *Libraries: 
 * Profile Libraries :
 * Local Libraries :
-.LIB "C:/Users/Jesper/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/uccx813-1.lib" 
-.LIB "C:/Users/Jesper/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/ntsv30120ctg.lib" 
-.LIB "C:/Users/Jesper/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/fdpf770n15a.lib" 
+.LIB "C:/Cadence/SPB_17.2/tools/pspice/library/nom.lib" 
+.LIB "C:/Cadence/Company/OrCAD_PSpice/Models/sample_models.lib" 
+.LIB "C:/Cadence/Company/OrCAD_PSpice/Models/pspice_demokit.lib" 
+.LIB "C:/Users/Nicolai Fransen/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/uccx813-1.lib" 
+.LIB "C:/Users/Nicolai Fransen/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/ntsv30120ctg.lib" 
+.LIB "C:/Users/Nicolai Fransen/Documents/GitHub/E7BACDriver/P-Spice/Simulering med 3f3/fdpf770n15a.lib" 
 .LIB "C:/Cadence/SMPS PSpice Kursus/PSpice Files/Library/Smps/PSpice/Ferrite.lib" 
-* From [PSPICE NETLIST] section of C:\Users\Jesper\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nom.lib" 
-.lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
-.lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
 
 *Analysis directives: 
 .TRAN/OP 10ns 10m 5m 1u SKIPBP 

@@ -1,0 +1,414 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{linear-regulator}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7815b752ccbb7c090ede5e1735d80962}{Devices}{D\bibinitperiod}{Analog}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{7815b752ccbb7c090ede5e1735d80962}
+      \strng{fullhash}{7815b752ccbb7c090ede5e1735d80962}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Basic Concepts of Linear Regulator and Switching Mode Power Supplies.pdf}
+      \field{year}{2013}
+    \endentry
+    \entry{buck-converter}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebbc247abc12b8e770d40008618ffc04}{Team}{T\bibinitperiod}{Editorial}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ebbc247abc12b8e770d40008618ffc04}
+      \strng{fullhash}{ebbc247abc12b8e770d40008618ffc04}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{journaltitle}{All About Circuits}
+      \field{month}{06}
+      \field{title}{Discontinuous Conduction Mode of Simple Converters}
+      \field{urlday}{19}
+      \field{urlmonth}{11}
+      \field{urlyear}{2017}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.allaboutcircuits.com/technical-articles/discontinuous-conduction-mode-of-simple-converters/
+      \endverb
+    \endentry
+    \entry{SMPS-topologies2}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5998bf99c9f587bb0118404bcf82b0b7}{Technology}{T\bibinitperiod}{Microchip}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5998bf99c9f587bb0118404bcf82b0b7}
+      \strng{fullhash}{5998bf99c9f587bb0118404bcf82b0b7}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Switch Mode Power Supplies(SMPS) Topologies.pdf}
+      \field{year}{2007}
+    \endentry
+    \entry{SMPS-topologies}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=d0e85d1b5d6d8716747a84cabe81511f}{Wuidart}{W\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{d0e85d1b5d6d8716747a84cabe81511f}
+      \strng{fullhash}{d0e85d1b5d6d8716747a84cabe81511f}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Topologies for Switch Mode Power Supplies.pdf}
+      \field{urlday}{18}
+      \field{urlmonth}{10}
+      \field{urlyear}{2017}
+    \endentry
+    \entry{flyback-formler}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Isolated Continuous Conduction Mode Flyback.pdf}
+      \field{year}{2013}
+    \endentry
+    \entry{transformator-design}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Transformer Design.pdf}
+      \field{year}{2001}
+    \endentry
+    \entry{RM8}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=ad611a3893edcf12cf994a51128e2584}{Ferroxcube}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ad611a3893edcf12cf994a51128e2584}
+      \strng{fullhash}{ad611a3893edcf12cf994a51128e2584}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{rm8i.pdf}
+      \field{year}{2008}
+    \endentry
+    \entry{3f3}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=ad611a3893edcf12cf994a51128e2584}{Ferroxcube}{F\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ad611a3893edcf12cf994a51128e2584}
+      \strng{fullhash}{ad611a3893edcf12cf994a51128e2584}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{3f3.pdf}
+      \field{year}{2008}
+    \endentry
+    \entry{wire-diameter}{article}{}
+      \name{author}{1}{}{%
+        {{hash=bbe08d1f552d9230329b5218c9c27cc8}{http://www.elektrisola.com}{h\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{bbe08d1f552d9230329b5218c9c27cc8}
+      \strng{fullhash}{bbe08d1f552d9230329b5218c9c27cc8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Technical Data for Enamelled Copper Wire by Size acc. to IEC 60317}
+      \field{urlday}{21}
+      \field{urlmonth}{11}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.elektrisola.com/enamelled-wire/technical-data-by-size/iec-60-317.html
+      \endverb
+    \endentry
+    \entry{UCC1801}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ucc1801.pdf}
+      \field{year}{2016}
+    \endentry
+    \entry{risetime}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rise time}
+      \field{urlday}{09}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Rise_time
+      \endverb
+    \endentry
+    \entry{IRFB23N15}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=5745774cc9fc64cc054d1af58afa7c87}{Rectifier}{R\bibinitperiod}{International}{I\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5745774cc9fc64cc054d1af58afa7c87}
+      \strng{fullhash}{5745774cc9fc64cc054d1af58afa7c87}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IRFB23N15.pdf}
+      \field{year}{2000}
+    \endentry
+    \entry{RMS-current}{article}{}
+      \name{author}{1}{}{%
+        {{hash=92ba0fa30f41adfe896d061879563abd}{Justesen}{J\bibinitperiod}{Arne}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{92ba0fa30f41adfe896d061879563abd}
+      \strng{fullhash}{92ba0fa30f41adfe896d061879563abd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EETEFE Lektion 20170131.pdf}
+      \field{year}{2017}
+    \endentry
+    \entry{gate_res}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5f197ca358d7f91c0cb6161ea942a052}{Dinwoodie}{D\bibinitperiod}{Lisa}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{5f197ca358d7f91c0cb6161ea942a052}
+      \strng{fullhash}{5f197ca358d7f91c0cb6161ea942a052}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Application note U-165.pdf}
+      \field{year}{1999}
+    \endentry
+    \entry{NTSV30120}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=f50ffd6a590ec3946c122f340c694e54}{Semiconductor}{S\bibinitperiod}{ON}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f50ffd6a590ec3946c122f340c694e54}
+      \strng{fullhash}{f50ffd6a590ec3946c122f340c694e54}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{NTSV30120CT-D.pdf}
+      \field{year}{2014}
+    \endentry
+    \entry{ESR}{article}{}
+      \name{author}{1}{}{%
+        {{hash=da4ef9d35250f6dfeea290773346db3b}{Yuden}{Y\bibinitperiod}{Taiyo}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{da4ef9d35250f6dfeea290773346db3b}
+      \strng{fullhash}{da4ef9d35250f6dfeea290773346db3b}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is ESR/ESL of capacitors}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb https://www.yuden.co.jp/ut/product/support/faq/q007.html
+      \endverb
+    \endentry
+    \entry{rule_of_thumb}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0ea138b81cd15c0a1081231fedfaf445}{Dally}{D\bibinitperiod}{William\bibnamedelima J.}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=e2e3e6bb1c0cc5f2237a12bb3bae683c}{Poulton}{P\bibinitperiod}{John\bibnamedelima W.}{J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{8dc987ba1fba07888304460a7bee0eee}
+      \strng{fullhash}{8dc987ba1fba07888304460a7bee0eee}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Digital Systems Engineering}
+      \field{year}{1998}
+    \endentry
+    \entry{inputfilter}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e6b9b34639b303e1df059b0dc5058d65}{Sclocchi}{S\bibinitperiod}{Michele}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e6b9b34639b303e1df059b0dc5058d65}
+      \strng{fullhash}{e6b9b34639b303e1df059b0dc5058d65}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Input Filter Design for Switching Power Supplies.pdf}
+      \field{year}{2010}
+    \endentry
+    \entry{core-loss}{article}{}
+      \name{author}{1}{}{%
+        {{hash=92ba0fa30f41adfe896d061879563abd}{Justesen}{J\bibinitperiod}{Arne}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{92ba0fa30f41adfe896d061879563abd}
+      \strng{fullhash}{92ba0fa30f41adfe896d061879563abd}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{ETEFE Practical Transformer design.pdf}
+      \field{year}{2009}
+    \endentry
+    \entry{eddyCurrentLosses}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e91bb8c4b0610eaeb094afe652c4d8a3}{Lloyd\bibnamedelimb H.\bibnamedelimi Dixon}{L\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim D\bibinitperiod}{Jr.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e91bb8c4b0610eaeb094afe652c4d8a3}
+      \strng{fullhash}{e91bb8c4b0610eaeb094afe652c4d8a3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Eddy Current Losses in Transformer Windings and Circuit Wiring.pdf}
+      \field{year}{2003}
+    \endentry
+    \entry{mosfet-switch2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4e9e95c26a021d9ec1d0e053d445453d}{Markowski}{M\bibinitperiod}{Peter}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{4e9e95c26a021d9ec1d0e053d445453d}
+      \strng{fullhash}{4e9e95c26a021d9ec1d0e053d445453d}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{journaltitle}{EETimes}
+      \field{month}{11}
+      \field{title}{Estimating MOSFET switching losses means higher performance buck converters}
+      \field{year}{2002}
+      \verb{url}
+      \verb http://www.eetimes.com/document.asp?doc_id=1225701
+      \endverb
+    \endentry
+    \entry{ucc1801-pspice}{article}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{UCCx801 and UCCx813-1 Unencrypted PSpice Transient Model}
+      \field{urlday}{10}
+      \field{urlmonth}{12}
+      \field{urlyear}{2017}
+      \verb{url}
+      \verb http://www.ti.com/product/UCC1801/toolssoftware
+      \endverb
+    \endentry
+    \entry{IRF630}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=90b7e016a2343d3ec0e768ad50fdcea0}{Vishay}{V\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{90b7e016a2343d3ec0e768ad50fdcea0}
+      \strng{fullhash}{90b7e016a2343d3ec0e768ad50fdcea0}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IRF630.pdf}
+      \field{year}{2011}
+    \endentry
+    \entry{evalgp}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=53db971e8574a8fca5f4bfc3675960b3}{Technologies}{T\bibinitperiod}{Keysight}{K\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{53db971e8574a8fca5f4bfc3675960b3}
+      \strng{fullhash}{53db971e8574a8fca5f4bfc3675960b3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EvaluatingDC-DC Converters.pdf}
+      \field{year}{2014}
+    \endentry
+    \entry{snubber_parasit}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a5086171c16431aa3477a8bad9109a20}{Koo}{K\bibinitperiod}{Gwan-Bon}{G\bibinithyphendelim B\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a5086171c16431aa3477a8bad9109a20}
+      \strng{fullhash}{a5086171c16431aa3477a8bad9109a20}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design Guidelines for RCD Snubber of Flyback Converters.pdf}
+      \field{year}{2006}
+    \endentry
+    \entry{snubber_design}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f50ffd6a590ec3946c122f340c694e54}{Semiconductor}{S\bibinitperiod}{ON}{O\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{f50ffd6a590ec3946c122f340c694e54}
+      \strng{fullhash}{f50ffd6a590ec3946c122f340c694e54}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design Guideline for Flyback Charger Using FAN104WMX.pdf}
+      \field{year}{2012}
+    \endentry
+    \entry{snubber_power}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9f73fec6aa951e3c8788638758936c19}{Ridley}{R\bibinitperiod}{Dr.\bibnamedelimi Ray}{D\bibinitperiod\bibinitdelim R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9f73fec6aa951e3c8788638758936c19}
+      \strng{fullhash}{9f73fec6aa951e3c8788638758936c19}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Flyback snubber design.pdf}
+      \field{year}{2005}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

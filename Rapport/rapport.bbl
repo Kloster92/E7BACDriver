@@ -1,10 +1,10 @@
 % $ biblatex auxiliary file $
-% $ biblatex version 2.5 $
+% $ biblatex bbl format version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated as
-% required.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
 %
 \begingroup
 \makeatletter
@@ -16,7 +16,41 @@
   {}
 \endgroup
 
-\lossort
-\endlossort
 
+\refsection{0}
+  \sortlist{none}{none}
+    \entry{projekt-oplag}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b9da99b828982a11646f808757334224}{Jensen}{J\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b9da99b828982a11646f808757334224}
+      \strng{fullhash}{b9da99b828982a11646f808757334224}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Universal Actuator Drive.pdf}
+      \field{year}{2017}
+    \endentry
+    \entry{MoSCoW}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7da7354b731c67017fe190f1f25245b6}{DSDM}{D\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{7da7354b731c67017fe190f1f25245b6}
+      \strng{fullhash}{7da7354b731c67017fe190f1f25245b6}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{05}
+      \field{title}{MoSCoW Prioritisation}
+      \field{year}{2016}
+      \verb{url}
+      \verb https://www.dsdm.org/content/moscow-prioritisation
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
 \endinput
+

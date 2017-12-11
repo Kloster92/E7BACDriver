@@ -1,0 +1,48 @@
+
+\chapter{Krav}
+Projektets krav er specificeret, og prioriteret, vha. MoSCoW-metoden\cite{MoSCoW}. Metoden deler kravene til produktet op i fire kategorier - Must, Should, Could og Won't.
+
+\begin{itemize}
+	\item[\textbf{Must}]
+	\begin{itemize}
+		\item Have et funktionsdygtigt power-modul
+		\item Have stabil regulering
+		\item Underbygges med en P-Spice model
+		
+	\end{itemize}
+	\item[\textbf{Should}]
+	\begin{itemize}
+		\item Have et termisk design, kompatibelt med vakuum
+		\item Have overstrømsbeskyttelse på udgangen
+		\item Have overspændingsbeskyttelse på udgangen
+		\item Ikke påvirke andre moduler ved fejl
+		
+	\end{itemize}
+	\item[\textbf{Could}] 
+	\begin{itemize}
+		\item Have programmerbar udgangsstrøm og -spænding
+		\item Konstrueres med EEE komponenter
+		
+	\end{itemize}
+	\item[\textbf{Won't}]
+	\begin{itemize}
+		\item Have mulighed for brug til mere end to forskellige typer loads
+		\item Have feedback til brugeren når valgt load er aktiveret
+		\item Have galvanisk adskillelse
+		
+	\end{itemize}
+\end{itemize}
+
+\section{Kravspecifikation}
+Kravene til produktet er opstillet som ikke-funktionelle krav. Det er krav der fortæller noget om kvaliteten af converteren. Det kan være krav til indgangsspændingen, præcision af udgangen og og det maksimale effekttab i converteren. I dette afsnit er de mest essentielle ikke-funktionelle krav blevet opstillet, mens resten er beskrevet i dokumentationen, afsnit 1.3.
+
+\begin{itemize}
+	\item Converteren skal kunne operere med en inputspænding mellem 26-50V
+	\item Converteren skal opretholde en outputspænding på 21V, $\pm$2\% ved 2,5A $\pm$5\%
+	\item Converteren må maksimalt have en output ripple-spænding på 50mV pk-pk
+	\item Converteren skal operere med et tab på maksimalt 5W %TODO Specificer tab nærmere
+	\item Converteren skal have stabil regulering med minimum 10dB gain margin og 50 graders fasemargin ved:
+	\begin{description}
+		\item 21V/2.5A ved 26V og 50V inputspænding
+	\end{description}
+\end{itemize}

@@ -24,26 +24,34 @@
          ".\flyback_2iteration_test-pspicefiles\constant load\tran.sim"
         (DisplayName "Constant load-Tran")
         (Type "PSpice Profile")))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User))
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Model Libraries"
-      (Sort User)
+      (File "C:\Cadence\SPB_17.2\tools\pspice\library\nom.lib"
+        (DisplayName "C:\Cadence\SPB_17.2\tools\pspice\library\nom.lib")
+        (Type "PSpiceLibrary"))
+      (File "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib"
+        (DisplayName "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib")
+        (Type "PSpiceLibrary"))
+      (File "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib"
+        (DisplayName
+           "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib")
+        (Type "PSpiceLibrary"))
       (File "..\uccx813-1.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\uccx813-1.lib"))
+        (DisplayName "..\uccx813-1.lib")
+        (Type "PSpiceLibrary"))
       (File "..\ntsv30120ctg.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\ntsv30120ctg.lib"))
+        (DisplayName "..\ntsv30120ctg.lib")
+        (Type "PSpiceLibrary"))
       (File "..\fdpf770n15a.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\fdpf770n15a.lib"))
+        (DisplayName "..\fdpf770n15a.lib")
+        (Type "PSpiceLibrary"))
       (File
          "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"
-        (Type "PSpiceLibrary")
         (DisplayName
-           "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib"))))
+           "C:\Cadence\SMPS PSpice Kursus\PSpice Files\Library\Smps\PSpice\Ferrite.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (MPSSessionName "Nicolai Fransen")
   (PartMRUSelector)
@@ -71,22 +79,11 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 869 52 387")
+        (Placement "44 2 3 -1 -1 -8 -31 52 869 52 387")
         (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION_TEST.DSN")
       (Schematic "Constant load")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 895 78 413")
-        (Scroll "171 110")
-        (Zoom "100")
-        (Occurrence "/FB"))
-      (Path
-         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\2. ITERATION\FLYBACK_2ITERATION.DSN")
-      (Schematic "Flyback")
       (Page "PAGE1"))))

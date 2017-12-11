@@ -11,9 +11,7 @@
 .LIB "../../../mosfet.lib" 
 .LIB "C:/Cadence/Library/Smps/PSpice/Ferrite.lib" 
 * From [PSPICE NETLIST] section of C:\Cadence\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
-.lib "nom.lib" 
-.lib "C:\Cadence\Company\OrCAD_PSpice\Models\pspice_demokit.lib" 
-.lib "C:\Cadence\Company\OrCAD_PSpice\Models\sample_models.lib" 
+.lib "C:\Cadence\SPB_17.2\tools\pspice\library\nom.lib" 
 
 *Analysis directives: 
 .TRAN/OP 10ns 20m 10m 1u SKIPBP 

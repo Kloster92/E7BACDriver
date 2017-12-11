@@ -126,26 +126,12 @@ SaveFile 0 ""
 @Analysis: 16 0
 +0 "0" 
 +1 "0" 
++2 "chkpt_default, , ," 
 @End Analysis
 @Analysis: 17 0
 +0 "-1" 
 +1 "-1" 
-+2 "0" 
++2 "-1" 
 +3 "-1" 
-+4 "1" 
-@End Analysis
-@Analysis: 18 0
-+0 "" 
-+1 "0.1" 
-+2 "0.001" 
-+3 "1" 
-+4 "2" 
-+5 "" 
-@End Analysis
-@Analysis: 19 0
-+0 "0" 
-+1 "1" 
-+2 "0" 
-+3 "0" 
 +4 "1" 
 @End Analysis
