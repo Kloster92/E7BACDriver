@@ -69,7 +69,7 @@ I_{pk} = \frac{V_{out} \cdot I_{out}}{V_{inmin} \cdot D_{maks}} + \frac{I_{rippl
 \end{equation}
 
 \subsection{Simulering} \label{Simkernetab}
-I Pspice er kernen og materialet simuleret, hvor resten af kredsløbet har været med ideelle komponenter, for at kontrollere strømme og B-H kurve. Her ses den pspice-model af kernematerialet som bruges:
+I p-spice er kernen og materialet simuleret, hvor resten af kredsløbet har været med ideelle komponenter, for at kontrollere strømme og B-H kurve. Her ses den pspice-model af kernematerialet som bruges:
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kernemodel.png}
@@ -254,8 +254,7 @@ Schottky dioden NTSV30120CT\cite{NTSV30120} er valgt til 2. iteration med en bre
 
 
 \section{Udgangskondensator} \label{output_cap}
-Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen . Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
-%TODO: Indsæt kondensator type, og reference til datablad
+Som udgangskondensator er valget faldet på 4 parallelle kondensatorer på $56\micro F$ af typen PET B32526\cite{Kondensator}. Dette var den film kondensator med højest kapacitet Terma havde til rådighed. Det vigtige her, er at det er en film kondensator, da de typisk har ret præcise kapaciteter samt en lav ESR modstand. Når kondensatorer ikke længere anses som ideele, vil der i virkeligheden både være en ESL induktans og en ESR modstand. Ækvivalentdiagrammet for en kondensator vil derfor se ud som på figur~\ref{fig: con_equi} 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Kondensator_equivalent.png}

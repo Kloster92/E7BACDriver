@@ -5,17 +5,57 @@
 {\let\clearpage\relax \chapter{Indledning}}
 Til rumfart anvendes flere forskellige mekanismer, til frigørelse af udvendige, bevægelige dele. Det indebærer bl.a. solpaneler, antenner, varmeskjold og mange andre. Disse mekanismer har indtil nu typisk haft brug for hver deres unikke aktiveringskredsløb. Ved udvikling af et universelt aktiveringskredsløb, kan det derfor opnås en effektivisering af pladsforbruget for aktiveringskredsløbene. Derudover vil det også skabe et mere overskueligt system, fra forsyningskilde til udgangsbelastning. Fordi aktiveringskredsløbet skal bruges til rumfart, hvor afledning af varme er begrænset, er effektiviteten af effektoverførelsen fra kilde til belastning essentielt. Denne effektivitet skal optimeres for opnåelse af minimal afkølingstid, og dermed også spildtid, for effektivisering af udfoldelse af de udvendige mekanismer\cite{projekt-oplag}. 
 
-Målet for dette bachelorprojekt er at udvikle en DC/DC converter, der kan programmeres til to forskellige foruddefinerede udgangsbelastninger. Som et fremadrettet mål, ønskes det at udgangen skal kunne programmeres til enhver ønsket belastning, indenfor en hvis grænse. 
+Målet for dette bachelorprojekt er at udvikle en DC/DC converter, der kan programmeres til to forskellige foruddefinerede udgangsbelastninger. Som et fremadrettet mål, ønskes det at udgangen skal kunne programmeres til enhver ønsket belastning, indenfor en vis grænse. 
 
 \noindent
 Hele aktiveringskredsløbet består af fire overordnede funktionaliteter. Hvor dette projekt kun omfatter selve aktuator modulet.
 \begin{itemize}
 	\item Armeringskredsløb, der fungerer som en hovedafbryder
 	\item Aktuator modul
-	\item Aktuator-vælger, der besår af et switch array til aktivering af aktuatoren
+	\item Aktuator-vælger, der består af et switch array til aktivering af aktuatoren
 	\item CM bus interface, Der er et digitalt og analogt kommando interface
 \end{itemize}
 
 Projektet er udarbejdet som en iterativ udviklingsproces, hvor der hele tiden vurderes på funktionaliteten af det udviklede, og nødvendigheden for optimering. I projektet er der gennemført tre iterationer, men flere er planlagt for fremtidig videreudvikling. 
 
 Kilder er refereret som en numerisk reference indrammet af firkantede parenteser, f.eks. [8]. Listen over kilder der refereres til, er samlet under afsnittet \textit{Litteraturliste}, hvor \textit{forfatter}, \textit{titel}, \textit{årstal}, og evt. \textit{link} er angivet. Refereres der til en bestemt side, anføres det ved [8, p.32]. Referencer internet i projektrapporten er anvist som \textit{Type af reference} + \textit{afsnit.nummer}, f.eks. \textit{figur 8.32}. Henvisninger til projektdokumentationen er gøres ved  angivelsen \textit{ses i dokumentationen, afsnit...}, samt angivelse af afsnittets navn. 
+
+\input{tex/Indledning/Opgaveformulering}
+
+\clearpage
+
+\section{Ordliste}
+I nedenstående tabel ses en ordliste, der forklarer begreber og forkortelser, som bliver brugt i dokumentationen og rapporten.
+\begin{table}[H] 			
+	\centering
+	\begin{tabularx}{\textwidth}{|X|l|} 
+		\hline
+		\textbf{Begreber} & \textbf{Forklaring} \\ \hline
+		3f3 & Kernemateriale for transformator \\ \hline
+		BDD & Block Definition Diagram \\ \hline
+		B-felt & Magnetisk fluxtæthed \\ \hline
+		CCM & Continious conduction mode \\ \hline
+		DCM & Discontinoius conduction mode \\ \hline
+		EEE komponenter & Komponenter der er testet og verificeret til brug i rummet \\ \hline
+		EMI & Elektromagnetisk interferens \\ \hline
+		H-felt & Magnetisk feltstyrke \\ \hline
+		IBD & Internal Block Diagram \\ \hline
+		MATLAB & Matematisk analyse- og simuleringsværktøj \\ \hline
+		Mini-Mount & ?? \\ \hline
+		MoSCoW & En måde at opstille og prioritere krav på \\ \hline
+		PCB & Printed circuit board \\ \hline
+		PWM & Pulsbreddemodulation \\ \hline
+		P-spice & Simuleringsværktøj fra Orcad \\ \hline
+		REF & reference \\ \hline
+		RM8 & Kernetype \\ \hline
+		RMS & Root Mean Square \\ \hline
+		SMPS & Switch Mode Power-Supply \\ \hline
+		Terma & Dansk rumteknologi-firma  \\ \hline
+		UCC1801 & PWM-controller \\ \hline
+		UVLO & Under Voltage LockOut \\ \hline
+	\end{tabularx}
+	
+	\caption{Relevante specifikationer for UCC1801}
+	\label{tab:ucc1801_specs}
+\end{table}
+
