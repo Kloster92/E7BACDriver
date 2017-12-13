@@ -499,7 +499,9 @@ I dette afsnit implementeres, og testes, den designede converter i 2. iteration.
 
 \input{tex/2iteration/Realisering-PWM}
 
-\section{Opsummering/del konklusion}
+\input{tex/2iteration/tab}
+
+\section{Opsummering}
 Det kan efter 2. iteration konkluderes, at der er realiseret en converter, som fungerer til en udgangsspænding på 21V og udgangsstrøm 2.5A.
 
 \subsection{Transformator}
@@ -514,7 +516,7 @@ Derudover blev der set på primær- og sekundærsidernes spikes. Det er forvente
 \subsection{PWM controller} 
 PWM controlleren er testet. Efter at have ændret den analyserede modstand ved oscillator netværket, er der her opnået en savtandspænding på 192kHz og en frekvens på udgangssignalet på 102,6kHz, hvilket er acceptabelt.
 
-Derudover er der målt en switchtid på 120ns. Denne resulterer i et stort switch tab i MOSFET'en på $4.49W$, der svarer til $51.5\percent$ af det samlede tab for converteren. \fxnote{Det er det analyserede tab. VI skal bruge et realiseret} Det vil derfor blive forsøgt at optimere på det i 3. iteration. 
+Derudover er der målt en switchtid på 120ns. Denne resulterer i et stort switch tab i MOSFET'en på $4.49W$, der svarer til $52.2\percent$ af det samlede tab for converteren. Det vil derfor blive forsøgt at optimere på det i 3. iteration. 
 
 Current-sense kredsløbet er testet og det kan konkluderes , at det indsatte filter får dæmpet spikes'ne som ønsket. Det kan dog observeres, at det er overdimensioneret, da stigetiden er langsom. For at forbedre converterens I/V-karakteristik vil dette blive optimeret i 3. iteration. 
 
@@ -526,4 +528,4 @@ Ved load steppet stemmer simulering og realisering igen fint overens. Der ses et
  
   
 \subsection{Tab}
-Samlet tab for 2. iteration.
+Det samlede tab i converteren blev målt til $8.6W$, hvilket gav en effektivitet på $85.87\percent$. Dette tab er forstort ift. kravene. Her er det især tabet i MOSFET'en der begrænser converterens effektivitet, med et samlet tab på $5.03W$. Fra analysen ses det, at switch-tabet består af $4.49W$, ud af det samlede MOSFET tab. Derfor vælges det, at mindske switch-tabet i 3. iteration. 

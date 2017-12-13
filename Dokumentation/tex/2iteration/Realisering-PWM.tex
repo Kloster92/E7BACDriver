@@ -5,18 +5,13 @@
 Først er oscilloskopets prober sat henover udgangen og resultatet af dette se på figur~\ref{fig: Out26V}
 \begin{figure}[H]
 	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Output_filtreret_26V.png}
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/udgang_f_filter_2iteration.png}
 	\caption{Spændingsoutput ved 26V}
 	\label{fig: Out26V}
 \end{figure}
-\noindent Det ses at spændingen ligger på 20.97V, altså de forventede 21V. Der kan dog identificeres nogle ret store spikes. På figur~\ref{fig: Out26Vzoom} er der zoomet ind på disse.
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Outputspike_zoom.png}
-	\caption{Zoomet på outputspike}
-	\label{fig: Out26Vzoom}
-\end{figure}
-\noindent Her ses det, at spiken når helt op på en peak af 4,5V. Disse peaks skyldes switching transienter og ved figur~\ref{fig: Out26V} kan det også ses, at det sker hver gang transistoren går on eller off.
+\noindent Det ses at spændingen ligger på 20.97V, altså de forventede 21V. Der kan dog identificeres nogle ret store spikes. 
+
+\noindent Her ses det, at spiken når op imod en pk-pk på $3.5V$. Disse peaks skyldes switching transienter og ved figur~\ref{fig: Out26V} kan det også ses, at det sker hver gang transistoren går ON eller OFF.
 
 \noindent Disse transienter er endnu tydeligere ved transformatorens primære- og sekundærevikling. Først ses på figur~\ref{fig: privolt} spændingen ved den primærevikling. Det svarer til spændingen over drain på MOSFET'en. 
 \begin{figure}[H]
@@ -273,6 +268,7 @@ Det ses hvordan spændingen falder, hvor belastningen stiger til $10\ohm$ og eft
 	\label{tab:Loadstep}
 \end{table}
 \noindent Det ses at simulering og realisering stemmer godt overens. Da der både ved simulering og realisering aflæses på kurver, kan usikkerheden ved det skyldes den lille afvigelse.
+
 
 
 

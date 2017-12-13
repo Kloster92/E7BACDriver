@@ -2,7 +2,9 @@
 
 
 \subsection{Switch-tid}
-Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens gate signal. Det signal er vist på figur~\ref{fig:realisering_switch_tid_3}, hvor kanal 1 er MOSFET'ens drain, og kanal 2 er MOSFET'ens gate. Her aflæses switch-tiden til ca. $40ns$. Derudover kan peak-spændingen over MOSFET'en aflæses til ca. $90V$, hvilket er med en margin på $40\percent$ til dens breakdown spænding. Resultaterne for analysen, simuleringen og realiseringen indføres i tabel~\ref{tab:resultat_switch_tid_3}. Her er simuleringen dog foretaget med en anden MOSFET.
+Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens gate signal. Det signal er vist på figur~\ref{fig:realisering_switch_tid_3}, hvor kanal 1 er current-sense signalet, som giver et billede af MOSFET'ens strøm, og kanal 2 er MOSFET'ens gate. Her aflæses switch-tiden til ca. $40ns$. Det kan dog ses der fremstår to plateauer på gate-signalet, hvilket ikke kan forklares. Det vurderes dog, at det andet plateau ikke vil have indflydelse på tabet i MOSFET'en, da strømmen er mindre end 0 på det pågældende tidspunkt.
+
+Derudover kan peak-spændingen over MOSFET'en aflæses på figur~\ref{fig:realisering_switch_tid_drain_3} til ca. $90V$.hvilket er med en margin på $40\percent$ til dens breakdown spænding. Resultaterne for analysen, simuleringen og realiseringen indføres i tabel~\ref{tab:resultat_switch_tid_3}. Her er simuleringen dog foretaget med en anden MOSFET.
 
 \begin{table}[H] 			
 	\centering
@@ -20,7 +22,14 @@ Implementeringen af den optimerede switch-tid testes ved, at måle MOSFET'ens ga
 
 \begin{figure}[H]
 	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/3iteration/billeder/Realisering/Realisering_switch_tid.png}
+	\includegraphics[max width=0.7\linewidth]{/tex/3iteration/billeder/Realisering/Gate_vs_cs.png}
 	\caption{Realisering af switch-tid for MOSFET - 3. iteration}
 	\label{fig:realisering_switch_tid_3}
+\end{figure}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/3iteration/billeder/Realisering/Realisering_switch_tid.png}
+	\caption{Realisering af switch-tid for MOSFET - 3. iteration}
+	\label{fig:realisering_switch_tid_drain_3}
 \end{figure}
