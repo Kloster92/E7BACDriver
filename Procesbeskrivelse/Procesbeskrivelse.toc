@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {danish}
+\contentsline {chapter}{Indhold}{2}{section*.1}
+\contentsline {chapter}{\chapternumberline {1}Indledning}{3}{chapter.1}
+\contentsline {chapter}{\chapternumberline {2}Gruppedannelse}{4}{chapter.2}
+\contentsline {chapter}{\chapternumberline {3}Samarbejdskontrakt}{5}{chapter.3}
+\contentsline {chapter}{\chapternumberline {4}Udviklingsforl\IeC {\o }b}{6}{chapter.4}
+\contentsline {chapter}{Litteraturliste}{9}{section*.6}
