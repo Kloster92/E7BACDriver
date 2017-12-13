@@ -1,16 +1,30 @@
 
 
 \section{Opgaveformulering}
-I projektet skal der udvikles en DC/DC converter, som del af et universelt aktiveringskredsløb. Converteren skal kunne operere kontinuerligt i vakuum uden overophedning. Det skal være muligt, at programmere converterens udgangsbelastning med to analoge signaler, som skal være en angivelse af henholdsvis udgangsspænding og -strøm. Converteren skal kunne holde udgangen stabil indenfor et foruddefineret interval for indgangsspændingen. Der skal implementeres en overstrøms- og overspændings-beskyttelse, der sikrer beskyttelse af converteren ved kortslutning af udgangen. 
+I projektet skal der udvikles en DC/DC converter, som del af et universelt aktiveringskredsløb.   
 
 \noindent Følgende punkter skal indgå i produktet:
 \begin{itemize}
-	\item Holde stabil udgangsspænding, ved ændring af indspænding
-	\item Præcis regulering af udgangen, efter både udgangsspænding og -strøm
-	\item Programmering af udgangsbelastningen, ved to analoge spændinger
-	\item Stabil regulering af udgangen, ved både laveste og højeste indgangsspænding
+	\item Converteren kan holde en stabil udgangsspænding, ved ændring af indspænding
+	\item Converteren indeholder en præcis regulering af udgangen, efter både udgangsspænding og -strøm
+	\item Converteren kan programmeres til forskellige udgangsbelastninger, ved to analoge spændinger
+	\item Converteren indeholder stabil regulering af udgangen, ved både laveste og højeste indgangsspænding
 	\item Termisk design der er funktionsdygtigt i vakuum 
 \end{itemize}
-\fxnote{Kunne bruge illustration af samlet system for at uddybe funktionalitet}
-\fxnote{Ordliste?}
+
+\subsubsection*{Indgangsspænding}
+\noindent Terma's kunder har ofte forskellige krav til converterens indgangsspænding. Derfor skal converteren designes til operation med stor variation i indgangsspændingen. Det vil fremtidssikre produktet, sikre en lav tilpasningsmængde ved salg til forskellige kunder.  
+
+\subsubsection*{Udgangsspænding}
+\noindent Converteren skal indgå i et universelt aktiveringskredsløb. Derfor skal det være muligt at programmere udgangsspændingen, således den tilpasses den ønskede load type. Til dette er der stillet to analoge signaler tilrådighed. 
+
+\subsubsection*{Overspænding- og overstrømsbeskyttelse}
+\noindent Flere af de ønskede load typer består af en glødetråd i en metallisk beholder. Glødetråden vil brænde over, og derfor muligvis skabe en kortslutning ud til den metalliske beholder. Derfor skal converteren indeholde en overspænding- og overstrømsbeskyttelse. Det vil samtidig sikre en optimal beskyttelse af converteren mod fejl.
+
+\subsubsection*{Hurtig og præcis regulering}
+\noindent Princippet i flere af load typerne er pyro teknik. For at sikre en sikker og pålidelig antændelse af krudtladningen, skal converteren indeholde en hurtig og præcis regulering af udgangen ved aktivering. 
+
+\subsubsection*{Termisk design}
+\noindent Ved rumfart er varmeafledning begrænset. For at sikre tilstrækkelig levetid på converteren, skal den kunne operere kontinuerligt i vakuum uden overophedning. Derfor skal converteren have en stor effektivitet af effektoverførsel fra indgangskilde til load. 
+
 \fxnote{Oversigt over ansvarsområder}
