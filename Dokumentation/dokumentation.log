@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  11 DEC 2017 09:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  12 DEC 2017 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3645,7 +3645,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 61.
 
-<.//tex/kravspecifikation/billeder/Flow_diagram.pdf, id=554, 486.61798pt x 826.
+<.//tex/kravspecifikation/billeder/Flow_diagram.pdf, id=559, 486.61798pt x 826.
 28702pt>
 File: .//tex/kravspecifikation/billeder/Flow_diagram.pdf Graphic file (type pdf
 )
@@ -5028,7 +5028,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 7.
 
-<tex/systemarkitektur/billeder/BDD.pdf, id=630, 511.31024pt x 293.59688pt>
+<tex/systemarkitektur/billeder/BDD.pdf, id=635, 511.31024pt x 293.59688pt>
 File: tex/systemarkitektur/billeder/BDD.pdf Graphic file (type pdf)
 
 <use tex/systemarkitektur/billeder/BDD.pdf>
@@ -5040,7 +5040,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 23.
 
-<tex/systemarkitektur/billeder/IBD.pdf, id=632, 601.04549pt x 286.36986pt>
+<tex/systemarkitektur/billeder/IBD.pdf, id=637, 601.04549pt x 286.36986pt>
 File: tex/systemarkitektur/billeder/IBD.pdf Graphic file (type pdf)
 
 <use tex/systemarkitektur/billeder/IBD.pdf>
@@ -5098,7 +5098,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
 
-<.//tex/1iteration/billeder/linear_regulator_eff.PNG, id=729, 286.06876pt x 277
+<.//tex/1iteration/billeder/linear_regulator_eff.PNG, id=734, 286.06876pt x 277
 .33612pt>
 File: .//tex/1iteration/billeder/linear_regulator_eff.PNG Graphic file (type pn
 g)
@@ -5123,7 +5123,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
  <.//tex/1iteration/billeder/linear_regulator_eff.PNG>]
-<.//tex/1iteration/billeder/Buck_converter_circuit.PNG, id=741, 433.62pt x 154.
+<.//tex/1iteration/billeder/Buck_converter_circuit.PNG, id=746, 433.62pt x 154.
 77824pt>
 File: .//tex/1iteration/billeder/Buck_converter_circuit.PNG Graphic file (type 
 png)
@@ -5132,7 +5132,7 @@ Package pdftex.def Info: .//tex/1iteration/billeder/Buck_converter_circuit.PNG
 used on input line 27.
 (pdftex.def)             Requested size: 433.61894pt x 154.77786pt.
 
-<.//tex/1iteration/billeder/Buck_converter_current.PNG, id=745, 499.56638pt x 3
+<.//tex/1iteration/billeder/Buck_converter_current.PNG, id=750, 499.56638pt x 3
 73.99725pt>
 File: .//tex/1iteration/billeder/Buck_converter_current.PNG Graphic file (type 
 png)
@@ -5156,7 +5156,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 56.
 
-<.//tex/1iteration/billeder/flyback_ideal.PNG, id=760, 278.54062pt x 140.32425p
+<.//tex/1iteration/billeder/flyback_ideal.PNG, id=765, 278.54062pt x 140.32425p
 t>
 File: .//tex/1iteration/billeder/flyback_ideal.PNG Graphic file (type png)
  <use .//tex/1iteration/billeder/flyback_ideal.PNG>
@@ -5177,7 +5177,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 73.
 
-<.//tex/1iteration/billeder/CCM_transformer_current.PNG, id=775, 397.485pt x 18
+<.//tex/1iteration/billeder/CCM_transformer_current.PNG, id=780, 397.485pt x 18
 3.38513pt>
 File: .//tex/1iteration/billeder/CCM_transformer_current.PNG Graphic file (type
  png)
@@ -5200,7 +5200,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 91.
 
-<.//tex/1iteration/billeder/DCM_transformer_current.PNG, id=784, 335.45325pt x 
+<.//tex/1iteration/billeder/DCM_transformer_current.PNG, id=789, 335.45325pt x 
 179.4705pt>
 File: .//tex/1iteration/billeder/DCM_transformer_current.PNG Graphic file (type
  png)
@@ -5248,7 +5248,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 179.
 
-<.//tex/1iteration/billeder/flyback_ideal_diagram.PNG, id=816, 324.91388pt x 13
+<.//tex/1iteration/billeder/flyback_ideal_diagram.PNG, id=821, 324.91388pt x 13
 9.11975pt>
 File: .//tex/1iteration/billeder/flyback_ideal_diagram.PNG Graphic file (type p
 ng)
@@ -5265,7 +5265,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 189.
  [22]
-<.//tex/1iteration/billeder/26V_output.PNG, id=828, 604.35788pt x 403.5075pt>
+<.//tex/1iteration/billeder/26V_output.PNG, id=833, 604.35788pt x 403.5075pt>
 File: .//tex/1iteration/billeder/26V_output.PNG Graphic file (type png)
 
 <use .//tex/1iteration/billeder/26V_output.PNG>
@@ -5273,7 +5273,7 @@ Package pdftex.def Info: .//tex/1iteration/billeder/26V_output.PNG used on inpu
 t line 194.
 (pdftex.def)             Requested size: 604.3564pt x 403.50652pt.
 
-<.//tex/1iteration/billeder/50V_output.PNG, id=830, 608.2725pt x 399.894pt>
+<.//tex/1iteration/billeder/50V_output.PNG, id=835, 608.2725pt x 399.894pt>
 File: .//tex/1iteration/billeder/50V_output.PNG Graphic file (type png)
 
 <use .//tex/1iteration/billeder/50V_output.PNG>
@@ -5311,7 +5311,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--219
  []
 
 
-<.//tex/1iteration/billeder/26V_transformer_current.PNG, id=842, 587.49487pt x 
+<.//tex/1iteration/billeder/26V_transformer_current.PNG, id=847, 587.49487pt x 
 403.5075pt>
 File: .//tex/1iteration/billeder/26V_transformer_current.PNG Graphic file (type
  png)
@@ -5320,7 +5320,7 @@ Package pdftex.def Info: .//tex/1iteration/billeder/26V_transformer_current.PNG
  used on input line 226.
 (pdftex.def)             Requested size: 587.49342pt x 403.50652pt.
 
-<.//tex/1iteration/billeder/50V_transformer_current.PNG, id=843, 585.98924pt x 
+<.//tex/1iteration/billeder/50V_transformer_current.PNG, id=848, 585.98924pt x 
 400.19513pt>
 File: .//tex/1iteration/billeder/50V_transformer_current.PNG Graphic file (type
  png)
@@ -5365,7 +5365,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
 
-<.//tex/2iteration/billeder/Hysteresekurve.png, id=861, 593.21625pt x 517.18219
+<.//tex/2iteration/billeder/Hysteresekurve.png, id=866, 593.21625pt x 517.18219
 pt>
 File: .//tex/2iteration/billeder/Hysteresekurve.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Hysteresekurve.png>
@@ -5403,7 +5403,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 71.
 
-<.//tex/2iteration/billeder/Kernemodel.png, id=876, 750.55406pt x 255.95625pt>
+<.//tex/2iteration/billeder/Kernemodel.png, id=881, 750.55406pt x 255.95625pt>
 File: .//tex/2iteration/billeder/Kernemodel.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/Kernemodel.png>
@@ -5419,7 +5419,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 79.
  [28]
-<.//tex/2iteration/billeder/Strom_pri_sek.png, id=888, 741.52031pt x 473.14265p
+<.//tex/2iteration/billeder/Strom_pri_sek.png, id=893, 741.52031pt x 473.14265p
 t>
 File: .//tex/2iteration/billeder/Strom_pri_sek.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Strom_pri_sek.png>
@@ -5427,7 +5427,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Strom_pri_sek.png used on i
 nput line 84.
 (pdftex.def)             Requested size: 741.5185pt x 473.1415pt.
 
-<.//tex/2iteration/billeder/RMS_transformator.png, id=890, 741.1439pt x 472.389
+<.//tex/2iteration/billeder/RMS_transformator.png, id=895, 741.1439pt x 472.389
 85pt>
 File: .//tex/2iteration/billeder/RMS_transformator.png Graphic file (type png)
  <use .//tex/2iteration/billeder/RMS_transformator.png>
@@ -5444,7 +5444,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 96.
  [29 <.//tex/2iteration/billeder/Kernemodel.png> <.//tex/2iteration/billeder/St
 rom_pri_sek.png>]
-<.//tex/2iteration/billeder/Hysterese_trans.png, id=899, 739.63828pt x 473.5190
+<.//tex/2iteration/billeder/Hysterese_trans.png, id=904, 739.63828pt x 473.5190
 6pt>
 File: .//tex/2iteration/billeder/Hysterese_trans.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Hysterese_trans.png>
@@ -5452,7 +5452,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Hysterese_trans.png used on
  input line 103.
 (pdftex.def)             Requested size: 739.63646pt x 473.51788pt.
 
-<.//tex/2iteration/billeder/tabkerne.png, id=900, 741.89671pt x 472.76625pt>
+<.//tex/2iteration/billeder/tabkerne.png, id=905, 741.89671pt x 472.76625pt>
 File: .//tex/2iteration/billeder/tabkerne.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/tabkerne.png>
@@ -5478,7 +5478,7 @@ Package babel Info: Redefining danish shorthand "~
 LaTeX Warning: Command \r invalid in math mode on input line 121.
 
 
-<.//tex/2iteration/billeder/viklingsoverblik.png, id=910, 1154.81438pt x 376.40
+<.//tex/2iteration/billeder/viklingsoverblik.png, id=915, 1154.81438pt x 376.40
 625pt>
 File: .//tex/2iteration/billeder/viklingsoverblik.png Graphic file (type png)
  <use .//tex/2iteration/billeder/viklingsoverblik.png>
@@ -5486,7 +5486,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/viklingsoverblik.png used o
 n input line 127.
 (pdftex.def)             Requested size: 1154.81157pt x 376.40532pt.
 
-<.//tex/2iteration/billeder/Viklingsbegyndelse.png, id=911, 714.41907pt x 565.3
+<.//tex/2iteration/billeder/Viklingsbegyndelse.png, id=916, 714.41907pt x 565.3
 6218pt>
 File: .//tex/2iteration/billeder/Viklingsbegyndelse.png Graphic file (type png)
 
@@ -5504,7 +5504,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 138.
  [31 <.//tex/2iteration/billeder/tabkerne.png> <.//tex/2iteration/billeder/vikl
 ingsoverblik.png>]
-<.//tex/2iteration/billeder/Viklingsretning.png, id=922, 998.22937pt x 535.2497
+<.//tex/2iteration/billeder/Viklingsretning.png, id=927, 998.22937pt x 535.2497
 pt>
 File: .//tex/2iteration/billeder/Viklingsretning.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Viklingsretning.png>
@@ -5516,7 +5516,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 148.
 
-<.//tex/2iteration/billeder/Viklet_transformator.PNG, id=924, 296.60812pt x 265
+<.//tex/2iteration/billeder/Viklet_transformator.PNG, id=929, 296.60812pt x 265
 .36641pt>
 File: .//tex/2iteration/billeder/Viklet_transformator.PNG Graphic file (type pn
 g)
@@ -5539,7 +5539,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 172.
 
-<.//tex/2iteration/billeder/Samlet_transformatortest_opstilling.PNG, id=933, 32
+<.//tex/2iteration/billeder/Samlet_transformatortest_opstilling.PNG, id=938, 32
 4.08578pt x 411.78844pt>
 File: .//tex/2iteration/billeder/Samlet_transformatortest_opstilling.PNG Graphi
 c file (type png)
@@ -5558,7 +5558,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 184.
 
 [33 <.//tex/2iteration/billeder/Viklet_transformator.PNG>]
-<.//tex/2iteration/billeder/Primarinduktans.png, id=944, 842.39719pt x 545.7890
+<.//tex/2iteration/billeder/Primarinduktans.png, id=949, 842.39719pt x 545.7890
 6pt>
 File: .//tex/2iteration/billeder/Primarinduktans.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Primarinduktans.png>
@@ -5574,7 +5574,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 196.
  [34 <.//tex/2iteration/billeder/Samlet_transformatortest_opstilling.PNG>]
-<.//tex/2iteration/billeder/Spredningsselvinduktion.png, id=950, 1070.49937pt x
+<.//tex/2iteration/billeder/Spredningsselvinduktion.png, id=955, 1070.49937pt x
  704.6325pt>
 File: .//tex/2iteration/billeder/Spredningsselvinduktion.png Graphic file (type
  png)
@@ -5598,7 +5598,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
  [35 <.//tex/2iteration/billeder/Primarinduktans.png> <.//tex/2iteration/billed
 er/Spredningsselvinduktion.png>]
-<.//tex/2iteration/billeder/PWM_block_diagram.PNG, id=960, 390.86024pt x 186.09
+<.//tex/2iteration/billeder/PWM_block_diagram.PNG, id=965, 390.86024pt x 186.09
 525pt>
 File: .//tex/2iteration/billeder/PWM_block_diagram.PNG Graphic file (type png)
  <use .//tex/2iteration/billeder/PWM_block_diagram.PNG>
@@ -5614,7 +5614,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
  [36 <.//tex/2iteration/billeder/PWM_block_diagram.PNG>]
-<.//tex/2iteration/billeder/ucc1801_pin_overview.PNG, id=972, 198.14024pt x 132
+<.//tex/2iteration/billeder/ucc1801_pin_overview.PNG, id=977, 198.14024pt x 132
 .19388pt>
 File: .//tex/2iteration/billeder/ucc1801_pin_overview.PNG Graphic file (type pn
 g)
@@ -5640,7 +5640,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 70.
 
-<.//tex/2iteration/billeder/PWM_oscillator_diagram.PNG, id=981, 348.1005pt x 23
+<.//tex/2iteration/billeder/PWM_oscillator_diagram.PNG, id=987, 348.1005pt x 23
 3.97412pt>
 File: .//tex/2iteration/billeder/PWM_oscillator_diagram.PNG Graphic file (type 
 png)
@@ -5662,7 +5662,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 89.
 
-<.//tex/2iteration/billeder/ucc1801_leading_edge.PNG, id=994, 314.67563pt x 110
+<.//tex/2iteration/billeder/ucc1801_leading_edge.PNG, id=999, 314.67563pt x 110
 .51288pt>
 File: .//tex/2iteration/billeder/ucc1801_leading_edge.PNG Graphic file (type pn
 g)
@@ -5679,7 +5679,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 114.
  [39]
-<.//tex/2iteration/billeder/ucc1801_CS_filter.PNG, id=1005, 292.39238pt x 198.4
+<.//tex/2iteration/billeder/ucc1801_CS_filter.PNG, id=1010, 292.39238pt x 198.4
 4138pt>
 File: .//tex/2iteration/billeder/ucc1801_CS_filter.PNG Graphic file (type png)
  <use .//tex/2iteration/billeder/ucc1801_CS_filter.PNG>
@@ -5696,7 +5696,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 138.
  [40 <.//tex/2iteration/billeder/ucc1801_leading_edge.PNG> <.//tex/2iteration/b
 illeder/ucc1801_CS_filter.PNG>]
-<.//tex/2iteration/billeder/I-V_karakteristik.PNG, id=1018, 195.129pt x 94.8543
+<.//tex/2iteration/billeder/I-V_karakteristik.PNG, id=1023, 195.129pt x 94.8543
 7pt>
 File: .//tex/2iteration/billeder/I-V_karakteristik.PNG Graphic file (type png)
  <use .//tex/2iteration/billeder/I-V_karakteristik.PNG>
@@ -5708,7 +5708,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 150.
 
-<.//tex/2iteration/billeder/Regulerings_blokdiagram.pdf, id=1020, 568.82513pt x
+<.//tex/2iteration/billeder/Regulerings_blokdiagram.pdf, id=1025, 568.82513pt x
  168.02774pt>
 File: .//tex/2iteration/billeder/Regulerings_blokdiagram.pdf Graphic file (type
  pdf)
@@ -5727,7 +5727,7 @@ Package babel Info: Redefining danish shorthand "~
 
 [41 <.//tex/2iteration/billeder/I-V_karakteristik.PNG> <.//tex/2iteration/bille
 der/Regulerings_blokdiagram.pdf>]
-<.//tex/2iteration/billeder/Voltagedivider_ideal.PNG, id=1061, 138.21637pt x 30
+<.//tex/2iteration/billeder/Voltagedivider_ideal.PNG, id=1066, 138.21637pt x 30
 0.22162pt>
 File: .//tex/2iteration/billeder/Voltagedivider_ideal.PNG Graphic file (type pn
 g)
@@ -5753,7 +5753,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 230.
  [43]
-<.//tex/2iteration/billeder/MATLAB_power_module.PNG, id=1099, 1042.64531pt x 75
+<.//tex/2iteration/billeder/MATLAB_power_module.PNG, id=1104, 1042.64531pt x 75
 6.57657pt>
 File: .//tex/2iteration/billeder/MATLAB_power_module.PNG Graphic file (type png
 )
@@ -5770,7 +5770,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 247.
  [44 <.//tex/2iteration/billeder/MATLAB_power_module.PNG (PNG copy)>]
-<.//tex/2iteration/billeder/MATLAB_error_op_amp.PNG, id=1113, 1042.64531pt x 75
+<.//tex/2iteration/billeder/MATLAB_error_op_amp.PNG, id=1118, 1042.64531pt x 75
 6.57657pt>
 File: .//tex/2iteration/billeder/MATLAB_error_op_amp.PNG Graphic file (type png
 )
@@ -5787,7 +5787,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 287.
  [45]
-<.//tex/2iteration/billeder/MATLAB_total.PNG, id=1125, 1042.64531pt x 756.57657
+<.//tex/2iteration/billeder/MATLAB_total.PNG, id=1130, 1042.64531pt x 756.57657
 pt>
 File: .//tex/2iteration/billeder/MATLAB_total.PNG Graphic file (type png)
  <use .//tex/2iteration/billeder/MATLAB_total.PNG>
@@ -5814,7 +5814,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 225.
 
-<.//tex/2iteration/billeder/MOSFET_switch_tid.png, id=1134, 262.27988pt x 281.2
+<.//tex/2iteration/billeder/MOSFET_switch_tid.png, id=1140, 262.27988pt x 281.2
 5075pt>
 File: .//tex/2iteration/billeder/MOSFET_switch_tid.png Graphic file (type png)
  <use .//tex/2iteration/billeder/MOSFET_switch_tid.png>
@@ -5848,7 +5848,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 256.
 
-<.//tex/2iteration/billeder/Kondensator_equivalent.png, id=1158, 164.48953pt x 
+<.//tex/2iteration/billeder/Kondensator_equivalent.png, id=1163, 164.48953pt x 
 70.38797pt>
 File: .//tex/2iteration/billeder/Kondensator_equivalent.png Graphic file (type 
 png)
@@ -5861,7 +5861,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 272.
 
-<.//tex/2iteration/billeder/Udgangskondensator_impedansmaling.jpg, id=1163, 303
+<.//tex/2iteration/billeder/Udgangskondensator_impedansmaling.jpg, id=1168, 303
 5.34pt x 4047.12pt>
 File: .//tex/2iteration/billeder/Udgangskondensator_impedansmaling.jpg Graphic 
 file (type jpg)
@@ -5879,7 +5879,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 281.
  [49 <.//tex/2iteration/billeder/Kondensator_equivalent.png>]
-<.//tex/2iteration/billeder/Kondensatortest.png, id=1177, 767.11594pt x 453.569
+<.//tex/2iteration/billeder/Kondensatortest.png, id=1182, 767.11594pt x 453.569
 53pt>
 File: .//tex/2iteration/billeder/Kondensatortest.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Kondensatortest.png>
@@ -5909,7 +5909,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
  [51 <.//tex/2iteration/billeder/Kondensatortest.png>]
-<.//tex/2iteration/billeder/Inputfilter_bodeplot.png, id=1193, 452.28975pt x 25
+<.//tex/2iteration/billeder/Inputfilter_bodeplot.png, id=1198, 452.28975pt x 25
 6.85962pt>
 File: .//tex/2iteration/billeder/Inputfilter_bodeplot.png Graphic file (type pn
 g)
@@ -5918,7 +5918,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Inputfilter_bodeplot.png us
 ed on input line 14.
 (pdftex.def)             Requested size: 452.28865pt x 256.85898pt.
 
-<.//tex/2iteration/billeder/Inputfilter.png, id=1195, 272.51813pt x 140.77594pt
+<.//tex/2iteration/billeder/Inputfilter.png, id=1200, 272.51813pt x 140.77594pt
 >
 File: .//tex/2iteration/billeder/Inputfilter.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Inputfilter.png>
@@ -5951,7 +5951,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 325.
  [53 <.//tex/2iteration/billeder/Inputfilter.png>]
-<.//tex/2iteration/billeder/Powerloss.png, id=1215, 353.52075pt x 344.487pt>
+<.//tex/2iteration/billeder/Powerloss.png, id=1220, 353.52075pt x 344.487pt>
 File: .//tex/2iteration/billeder/Powerloss.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/Powerloss.png>
@@ -5973,7 +5973,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 346.
 [54 <.//tex/2iteration/billeder/Powerloss.png>]
-<.//tex/2iteration/billeder/Eddy_current_losses.PNG, id=1228, 335.15213pt x 248
+<.//tex/2iteration/billeder/Eddy_current_losses.PNG, id=1233, 335.15213pt x 248
 .127pt>
 File: .//tex/2iteration/billeder/Eddy_current_losses.PNG Graphic file (type png
 )
@@ -6026,7 +6026,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<.//tex/2iteration/billeder/Simulering_2iteration_top.png, id=1272, 325.215pt x
+<.//tex/2iteration/billeder/Simulering_2iteration_top.png, id=1277, 325.215pt x
  139.27031pt>
 File: .//tex/2iteration/billeder/Simulering_2iteration_top.png Graphic file (ty
 pe png)
@@ -6035,7 +6035,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_2iteration_top.p
 ng used on input line 10.
 (pdftex.def)             Requested size: 325.2142pt x 139.26996pt.
 
-<.//tex/2iteration/billeder/Simulering_2iteration_flyback.png, id=1274, 624.533
+<.//tex/2iteration/billeder/Simulering_2iteration_flyback.png, id=1279, 624.533
 25pt x 312.26663pt>
 File: .//tex/2iteration/billeder/Simulering_2iteration_flyback.png Graphic file
  (type png)
@@ -6053,7 +6053,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
  [58 <.//tex/2iteration/billeder/Simulering_2iteration_top.png>]
-<.//tex/2iteration/billeder/Simulering_2iteration_flycon.png, id=1284, 703.8796
+<.//tex/2iteration/billeder/Simulering_2iteration_flycon.png, id=1289, 703.8796
 8pt x 263.86078pt>
 File: .//tex/2iteration/billeder/Simulering_2iteration_flycon.png Graphic file 
 (type png)
@@ -6067,7 +6067,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 36.
 
-<.//tex/2iteration/billeder/Simudgang.png, id=1288, 746.41359pt x 476.53032pt>
+<.//tex/2iteration/billeder/Simudgang.png, id=1293, 746.41359pt x 476.53032pt>
 File: .//tex/2iteration/billeder/Simudgang.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/Simudgang.png>
@@ -6084,7 +6084,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 44.
  [59 <.//tex/2iteration/billeder/Simulering_2iteration_flyback.png> <.//tex/2it
 eration/billeder/Simulering_2iteration_flycon.png>]
-<.//tex/2iteration/billeder/SIMMOSFETdiode.png, id=1299, 740.7675pt x 473.89546
+<.//tex/2iteration/billeder/SIMMOSFETdiode.png, id=1304, 740.7675pt x 473.89546
 pt>
 File: .//tex/2iteration/billeder/SIMMOSFETdiode.png Graphic file (type png)
  <use .//tex/2iteration/billeder/SIMMOSFETdiode.png>
@@ -6101,7 +6101,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 58.
  [60 <.//tex/2iteration/billeder/Simudgang.png> <.//tex/2iteration/billeder/SIM
 MOSFETdiode.png>]
-<.//tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png, id=1309, 579.0633
+<.//tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png, id=1314, 579.0633
 7pt x 389.35463pt>
 File: .//tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png Graphic file 
 (type png)
@@ -6111,7 +6111,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_MOSFET_drain_zoo
 m.png used on input line 61.
 (pdftex.def)             Requested size: 579.06195pt x 389.35368pt.
 
-<.//tex/2iteration/billeder/Simulering_diode_anode_zoom.png, id=1311, 574.5465p
+<.//tex/2iteration/billeder/Simulering_diode_anode_zoom.png, id=1316, 574.5465p
 t x 393.26926pt>
 File: .//tex/2iteration/billeder/Simulering_diode_anode_zoom.png Graphic file (
 type png)
@@ -6136,7 +6136,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 6.
  [61 <.//tex/2iteration/billeder/Simulering_MOSFET_drain_zoom.png> <.//tex/2ite
 ration/billeder/Simulering_diode_anode_zoom.png>]
-<.//tex/2iteration/billeder/Simulering_PWM_savtand.png, id=1322, 579.3645pt x 3
+<.//tex/2iteration/billeder/Simulering_PWM_savtand.png, id=1327, 579.3645pt x 3
 96.58162pt>
 File: .//tex/2iteration/billeder/Simulering_PWM_savtand.png Graphic file (type 
 png)
@@ -6145,7 +6145,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_PWM_savtand.png
 used on input line 11.
 (pdftex.def)             Requested size: 579.36308pt x 396.58064pt.
 
-<.//tex/2iteration/billeder/Simulering_PWM_switch_frekvens.png, id=1324, 586.59
+<.//tex/2iteration/billeder/Simulering_PWM_switch_frekvens.png, id=1329, 586.59
 15pt x 393.26926pt>
 File: .//tex/2iteration/billeder/Simulering_PWM_switch_frekvens.png Graphic fil
 e (type png)
@@ -6164,7 +6164,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
  [62 <.//tex/2iteration/billeder/Simulering_PWM_savtand.png> <.//tex/2iteration
 /billeder/Simulering_PWM_switch_frekvens.png>]
-<.//tex/2iteration/billeder/Simulering_MOSFET_switch_tid.png, id=1337, 579.6656
+<.//tex/2iteration/billeder/Simulering_MOSFET_switch_tid.png, id=1342, 579.6656
 2pt x 392.06474pt>
 File: .//tex/2iteration/billeder/Simulering_MOSFET_switch_tid.png Graphic file 
 (type png)
@@ -6174,7 +6174,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_MOSFET_switch_ti
 d.png used on input line 33.
 (pdftex.def)             Requested size: 579.6642pt x 392.06378pt.
 
-<.//tex/2iteration/billeder/Simulering_PWM_current_sense_U.png, id=1341, 573.64
+<.//tex/2iteration/billeder/Simulering_PWM_current_sense_U.png, id=1346, 573.64
 313pt x 395.076pt>
 File: .//tex/2iteration/billeder/Simulering_PWM_current_sense_U.png Graphic fil
 e (type png)
@@ -6192,7 +6192,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 49.
  [63 <.//tex/2iteration/billeder/Simulering_MOSFET_switch_tid.png>]
-<.//tex/2iteration/billeder/Simulering_PWM_current_sense_M.png, id=1352, 579.96
+<.//tex/2iteration/billeder/Simulering_PWM_current_sense_M.png, id=1357, 579.96
 675pt x 389.65575pt>
 File: .//tex/2iteration/billeder/Simulering_PWM_current_sense_M.png Graphic fil
 e (type png)
@@ -6208,7 +6208,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/2iteration/billeder/Simulering_voltage_divider.png, id=1354, 577.55775p
+<.//tex/2iteration/billeder/Simulering_voltage_divider.png, id=1359, 577.55775p
 t x 392.667pt>
 File: .//tex/2iteration/billeder/Simulering_voltage_divider.png Graphic file (t
 ype png)
@@ -6232,7 +6232,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 15.
 
-<.//tex/2iteration/billeder/Simulering_gain_fase_top.png, id=1364, 506.19113pt 
+<.//tex/2iteration/billeder/Simulering_gain_fase_top.png, id=1369, 506.19113pt 
 x 168.63pt>
 File: .//tex/2iteration/billeder/Simulering_gain_fase_top.png Graphic file (typ
 e png)
@@ -6241,8 +6241,8 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_gain_fase_top.pn
 g used on input line 20.
 (pdftex.def)             Requested size: 506.1899pt x 168.62958pt.
 
-<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_flyback.png, id=136
-5, 630.55576pt x 310.45987pt>
+<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_flyback.png, id=137
+0, 630.55576pt x 310.45987pt>
 File: .//tex/2iteration/billeder/Simulering_gain_fase_2iteration_flyback.png Gr
 aphic file (type png)
 
@@ -6270,7 +6270,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 41.
  [66 <.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_flyback.png>]
-<.//tex/2iteration/billeder/Simulering_gain_fase_power.png, id=1384, 567.62062p
+<.//tex/2iteration/billeder/Simulering_gain_fase_power.png, id=1389, 567.62062p
 t x 392.06474pt>
 File: .//tex/2iteration/billeder/Simulering_gain_fase_power.png Graphic file (t
 ype png)
@@ -6280,7 +6280,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Simulering_gain_fase_power.
 png used on input line 44.
 (pdftex.def)             Requested size: 567.61922pt x 392.06378pt.
 
-<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_opamp.png, id=1386,
+<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_opamp.png, id=1391,
  569.12625pt x 394.47375pt>
 File: .//tex/2iteration/billeder/Simulering_gain_fase_2iteration_opamp.png Grap
 hic file (type png)
@@ -6300,7 +6300,7 @@ Package babel Info: Redefining danish shorthand "~
 
 [67 <.//tex/2iteration/billeder/Simulering_gain_fase_power.png> <.//tex/2iterat
 ion/billeder/Simulering_gain_fase_2iteration_opamp.png>]
-<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_tot.png, id=1397, 5
+<.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_tot.png, id=1402, 5
 66.115pt x 390.86024pt>
 File: .//tex/2iteration/billeder/Simulering_gain_fase_2iteration_tot.png Graphi
 c file (type png)
@@ -6315,7 +6315,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 81.
 
-<.//tex/2iteration/billeder/Simloadtop.png, id=1399, 315.579pt x 224.33812pt>
+<.//tex/2iteration/billeder/Simloadtop.png, id=1404, 315.579pt x 224.33812pt>
 File: .//tex/2iteration/billeder/Simloadtop.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/Simloadtop.png>
@@ -6332,7 +6332,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 90.
  [68 <.//tex/2iteration/billeder/Simulering_gain_fase_2iteration_tot.png> <.//t
 ex/2iteration/billeder/Simloadtop.png>]
-<.//tex/2iteration/billeder/Load_step_simulering.png, id=1408, 582.67688pt x 39
+<.//tex/2iteration/billeder/Load_step_simulering.png, id=1413, 582.67688pt x 39
 9.894pt>
 File: .//tex/2iteration/billeder/Load_step_simulering.png Graphic file (type pn
 g)
@@ -6345,7 +6345,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 104.
 
-<.//tex/2iteration/billeder/Simkobbertab.png, id=1411, 491.58656pt x 318.06328p
+<.//tex/2iteration/billeder/Simkobbertab.png, id=1416, 491.58656pt x 318.06328p
 t>
 File: .//tex/2iteration/billeder/Simkobbertab.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Simkobbertab.png>
@@ -6361,7 +6361,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 115.
  [69 <.//tex/2iteration/billeder/Load_step_simulering.png>]
-<.//tex/2iteration/billeder/SimMOStab.png, id=1422, 500.99672pt x 316.55766pt>
+<.//tex/2iteration/billeder/SimMOStab.png, id=1427, 500.99672pt x 316.55766pt>
 File: .//tex/2iteration/billeder/SimMOStab.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/SimMOStab.png>
@@ -6369,7 +6369,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/SimMOStab.png used on input
  line 123.
 (pdftex.def)             Requested size: 500.99548pt x 316.55688pt.
 
-<.//tex/2iteration/billeder/SimMOSavg.png, id=1424, 493.4686pt x 318.43968pt>
+<.//tex/2iteration/billeder/SimMOSavg.png, id=1429, 493.4686pt x 318.43968pt>
 File: .//tex/2iteration/billeder/SimMOSavg.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/SimMOSavg.png>
@@ -6386,14 +6386,14 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 136.
  [70 <.//tex/2iteration/billeder/Simkobbertab.png> <.//tex/2iteration/billeder/
 SimMOStab.png>]
-<.//tex/2iteration/billeder/Simdiodetab.png, id=1434, 493.0922pt x 317.68687pt>
+<.//tex/2iteration/billeder/Simdiodetab.png, id=1439, 493.0922pt x 317.68687pt>
 File: .//tex/2iteration/billeder/Simdiodetab.png Graphic file (type png)
 <use .//tex/2iteration/billeder/Simdiodetab.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Simdiodetab.png used on inp
 ut line 143.
 (pdftex.def)             Requested size: 493.09099pt x 317.68608pt.
 
-<.//tex/2iteration/billeder/SimCStab.png, id=1436, 491.96297pt x 316.18124pt>
+<.//tex/2iteration/billeder/SimCStab.png, id=1441, 491.96297pt x 316.18124pt>
 File: .//tex/2iteration/billeder/SimCStab.png Graphic file (type png)
 
 <use .//tex/2iteration/billeder/SimCStab.png>
@@ -6410,7 +6410,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 156.
  [71 <.//tex/2iteration/billeder/SimMOSavg.png> <.//tex/2iteration/billeder/Sim
 diodetab.png>]
-<.//tex/2iteration/billeder/Samletsimtab.png, id=1448, 492.71577pt x 317.68687p
+<.//tex/2iteration/billeder/Samletsimtab.png, id=1453, 492.71577pt x 317.68687p
 t>
 File: .//tex/2iteration/billeder/Samletsimtab.png Graphic file (type png)
  <use .//tex/2iteration/billeder/Samletsimtab.png>
@@ -6440,7 +6440,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 480.
 
-<.//tex/2iteration/billeder/Schemaricoverview_2iteration.png, id=1466, 963.6pt 
+<.//tex/2iteration/billeder/Schemaricoverview_2iteration.png, id=1471, 963.6pt 
 x 431.73798pt>
 File: .//tex/2iteration/billeder/Schemaricoverview_2iteration.png Graphic file 
 (type png)
@@ -6460,7 +6460,7 @@ Package babel Info: Redefining danish shorthand "~
  [74
 
  <.//tex/2iteration/billeder/Schemaricoverview_2iteration.png>]
-<.//tex/2iteration/billeder/Realisering/Print.JPG, id=1474, 4047.12pt x 3035.34
+<.//tex/2iteration/billeder/Realisering/Print.JPG, id=1479, 4047.12pt x 3035.34
 pt>
 File: .//tex/2iteration/billeder/Realisering/Print.JPG Graphic file (type jpg)
  <use .//tex/2iteration/billeder/Realisering/Print.JPG>
@@ -6474,7 +6474,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/2iteration/billeder/Realisering/Output_filtreret_26V.png, id=1477, 481.
+<.//tex/2iteration/billeder/Realisering/Output_filtreret_26V.png, id=1482, 481.
 8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Output_filtreret_26V.png Graphic f
 ile (type png)
@@ -6492,7 +6492,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
  [75 <.//tex/2iteration/billeder/Realisering/Print.JPG>]
-<.//tex/2iteration/billeder/Realisering/Outputspike_zoom.png, id=1485, 481.8pt 
+<.//tex/2iteration/billeder/Realisering/Outputspike_zoom.png, id=1490, 481.8pt 
 x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Outputspike_zoom.png Graphic file 
 (type png)
@@ -6501,7 +6501,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Outputspike_zoo
 m.png used on input line 15.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/2iteration/billeder/Realisering/Transformator_Primar.png, id=1488, 481.
+<.//tex/2iteration/billeder/Realisering/Transformator_Primar.png, id=1493, 481.
 8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_Primar.png Graphic f
 ile (type png)
@@ -6520,7 +6520,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 28.
  [76 <.//tex/2iteration/billeder/Realisering/Output_filtreret_26V.png> <.//tex/
 2iteration/billeder/Realisering/Outputspike_zoom.png>]
-<.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.png, id=1496, 
+<.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.png, id=1501, 
 481.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.png Graph
 ic file (type png)
@@ -6530,7 +6530,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Transformator_P
 rimarzoom.png used on input line 31.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/2iteration/billeder/Realisering/Transformator_sekundar.png, id=1498, 48
+<.//tex/2iteration/billeder/Realisering/Transformator_sekundar.png, id=1503, 48
 1.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_sekundar.png Graphic
  file (type png)
@@ -6551,7 +6551,7 @@ Package babel Info: Redefining danish shorthand "~
 [77 <.//tex/2iteration/billeder/Realisering/Transformator_Primar.png> <.//tex/2
 iteration/billeder/Realisering/Transformator_Primarzoom.png>]
 <.//tex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.png, id=
-1507, 481.8pt x 361.35pt>
+1512, 481.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.png
  Graphic file (type png)
 
@@ -6573,180 +6573,209 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 76.
-Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
-line 80.
-FiXme Note: 'Mangler et realiseret billede af forkert frkvens' on input line 80
-.
 
-<.//tex/2iteration/billeder/Realisering/Savtand.png, id=1518, 481.8pt x 361.35p
+<.//tex/2iteration/billeder/Realisering/savtand_lav_frekvens.png, id=1520, 481.
+8pt x 361.35pt>
+File: .//tex/2iteration/billeder/Realisering/savtand_lav_frekvens.png Graphic f
+ile (type png)
+
+<use .//tex/2iteration/billeder/Realisering/savtand_lav_frekvens.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/savtand_lav_fre
+kvens.png used on input line 84.
+(pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
+
+Overfull \hbox (6.2294pt too wide) in paragraph at lines 89--90
+\T1/ppl/m/n/10.95 controlleren. Her ses det, at der er op-nå-et en fre-kvens fo
+r sav-tand-s-pæn-din-gen på $192.3\U/zeur/m/n/10.95 k[]$\T1/ppl/m/n/10.95 ,
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 90.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 90.
+[79 <.//tex/2iteration/billeder/Realisering/savtand_lav_frekvens.png>]
+<.//tex/2iteration/billeder/Realisering/Savtand.png, id=1532, 481.8pt x 361.35p
 t>
 File: .//tex/2iteration/billeder/Realisering/Savtand.png Graphic file (type png
 )
  <use .//tex/2iteration/billeder/Realisering/Savtand.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Savtand.png use
-d on input line 98.
+d on input line 107.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 102.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 102.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 102.
- [79]
-<.//tex/2iteration/billeder/Realisering/Udgang_PWM.png, id=1531, 481.8pt x 361.
-35pt>
-File: .//tex/2iteration/billeder/Realisering/Udgang_PWM.png Graphic file (type 
-png)
- <use .//tex/2iteration/billeder/Realisering/Udgang_PWM.png>
-Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Udgang_PWM.png 
-used on input line 105.
-(pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 125.
- [80 <.//tex/2iteration/billeder/Realisering/Savtand.png> <.//tex/2iteration/bi
-lleder/Realisering/Udgang_PWM.png>]
-<.//tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png, id=1541, 481.8pt
+
+<.//tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png, id=1535, 481.8pt
  x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png Graphic file
  (type png)
 
 <use .//tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/MOSFET_switch_t
-id.png used on input line 129.
+id.png used on input line 132.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
-
-<.//tex/2iteration/billeder/Realisering/CS_U_filter.png, id=1546, 481.8pt x 361
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 136.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 136.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 136.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 136.
+ [80 <.//tex/2iteration/billeder/Realisering/Savtand.png>]
+<.//tex/2iteration/billeder/Realisering/CS_U_filter.png, id=1548, 481.8pt x 361
 .35pt>
 File: .//tex/2iteration/billeder/Realisering/CS_U_filter.png Graphic file (type
  png)
  <use .//tex/2iteration/billeder/Realisering/CS_U_filter.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/CS_U_filter.png
- used on input line 156.
+ used on input line 159.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 163.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 163.
  [81 <.//tex/2iteration/billeder/Realisering/MOSFET_switch_tid.png>]
-<.//tex/2iteration/billeder/Realisering/CS_M_filter.png, id=1556, 481.8pt x 361
+<.//tex/2iteration/billeder/Realisering/CS_M_filter.png, id=1558, 481.8pt x 361
 .35pt>
 File: .//tex/2iteration/billeder/Realisering/CS_M_filter.png Graphic file (type
  png)
  <use .//tex/2iteration/billeder/Realisering/CS_M_filter.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/CS_M_filter.png
- used on input line 163.
+ used on input line 166.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 169.
+(babel)             in language  on input line 172.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 169.
+(babel)             in language  on input line 172.
 
+<.//tex/2iteration/billeder/Realisering/voltage_divider.png, id=1561, 481.8pt x
+ 361.35pt>
+File: .//tex/2iteration/billeder/Realisering/voltage_divider.png Graphic file (
+type png)
+ <use .//tex/2iteration/billeder/Realisering/voltage_divider.png>
+Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/voltage_divider
+.png used on input line 191.
+(pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 195.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 195.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 195.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 195.
 
-LaTeX Warning: Reference `label' on page 82 undefined on input line 170.
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 187.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 187.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 189.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 189.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 189.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 189.
 [82 <.//tex/2iteration/billeder/Realisering/CS_U_filter.png> <.//tex/2iteration
 /billeder/Realisering/CS_M_filter.png>]
-<.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png, id=156
-5, 500.77087pt x 285.4665pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 196.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 196.
+
+<.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png, id=157
+0, 500.77087pt x 285.4665pt>
 File: .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png Gr
 aphic file (type png)
 
 <use .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Realisering_gai
-n_fase_power.png used on input line 196.
+n_fase_power.png used on input line 205.
 (pdftex.def)             Requested size: 500.76965pt x 285.46579pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 209.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 209.
 
-<.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png, id=1568,
+[83 <.//tex/2iteration/billeder/Realisering/voltage_divider.png>]
+<.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_op_amp.PNG, id=15
+77, 602.25pt x 342.37912pt>
+File: .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_op_amp.PNG G
+raphic file (type png)
+
+<use .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_op_amp.PNG>
+Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Realisering_gai
+n_fase_op_amp.PNG used on input line 214.
+(pdftex.def)             Requested size: 602.24852pt x 342.37828pt.
+
+<.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png, id=1580,
  593.51738pt x 338.76563pt>
 File: .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png Grap
 hic file (type png)
 
 <use .//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Realisering_gai
-n_fase_tot.png used on input line 208.
+n_fase_tot.png used on input line 225.
 (pdftex.def)             Requested size: 593.51593pt x 338.76479pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 229.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 229.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 229.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 229.
 
-[83 <.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png>]
-<.//tex/2iteration/billeder/Realisering/belastningsamlet.png, id=1577, 481.8pt 
+[84 <.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_power.png> <.
+//tex/2iteration/billeder/Realisering/Realisering_gain_fase_op_amp.PNG>]
+<.//tex/2iteration/billeder/Realisering/belastningsamlet.png, id=1590, 481.8pt 
 x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/belastningsamlet.png Graphic file 
 (type png)
  <use .//tex/2iteration/billeder/Realisering/belastningsamlet.png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/belastningsamle
-t.png used on input line 220.
+t.png used on input line 237.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png, id=1579, 4
+<.//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png, id=1592, 4
 81.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png Graphi
 c file (type png)
 
 <use .//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/belastningstige
-r(10ohm).png used on input line 228.
+r(10ohm).png used on input line 245.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 249.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 232.
+(babel)             in language  on input line 249.
 
-[84 <.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png> <.//
+[85 <.//tex/2iteration/billeder/Realisering/Realisering_gain_fase_tot.png> <.//
 tex/2iteration/billeder/Realisering/belastningsamlet.png>]
-<.//tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png, id=1589, 4
+<.//tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png, id=1603, 4
 81.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png Graphi
 c file (type png)
 
 <use .//tex/2iteration/billeder/Realisering/belastningfalder(20ohm).png>
 Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/belastningfalde
-r(20ohm).png used on input line 238.
+r(20ohm).png used on input line 255.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 275.
 
-[85 <.//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png> <.//te
+[86 <.//tex/2iteration/billeder/Realisering/belastningstiger(10ohm).png> <.//te
 x/2iteration/billeder/Realisering/belastningfalder(20ohm).png>])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 502.
@@ -6764,6 +6793,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 514.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 514.
+Package hyperref Info: bookmark level for unknown fixme defaults to 0 on input 
+line 517.
 FiXme Note: 'Det er det analyserede tab. VI skal bruge et realiseret' on input 
 line 517.
 Package babel Info: Redefining danish shorthand "|
@@ -6774,7 +6805,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 520.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 520.
- [86]
+ [87]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 521.
 Package babel Info: Redefining danish shorthand "~
@@ -6796,7 +6827,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 210.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 210.
- [87]
+ [88]
 \openout2 = `tex/3iteration/3iteration.aux'.
 
 
@@ -6836,7 +6867,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
- [88
+ [89
 
 
 
@@ -6847,7 +6878,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.PNG, id=1618, 
+<.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.PNG, id=1632, 
 481.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.PNG Graph
 ic file (type png)
@@ -6865,9 +6896,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
 
-[89]
+[90]
 <.//tex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.PNG, id=
-1627, 481.8pt x 361.35pt>
+1641, 481.8pt x 361.35pt>
 File: .//tex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.PNG
  Graphic file (type png)
 
@@ -6876,7 +6907,7 @@ Package pdftex.def Info: .//tex/2iteration/billeder/Realisering/Transformator_s
 ekundarzoomrise.PNG used on input line 15.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/3iteration/billeder/Analyse/snubber_parasit.PNG, id=1630, 262.581pt x 1
+<.//tex/3iteration/billeder/Analyse/snubber_parasit.PNG, id=1644, 262.581pt x 1
 92.11775pt>
 File: .//tex/3iteration/billeder/Analyse/snubber_parasit.PNG Graphic file (type
  png)
@@ -6893,7 +6924,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
 
-[90 <.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.PNG> <.//t
+[91 <.//tex/2iteration/billeder/Realisering/Transformator_Primarzoom.PNG> <.//t
 ex/2iteration/billeder/Realisering/Transformator_sekundarzoomrise.PNG>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 54.
@@ -6904,14 +6935,14 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 54.
 
-[91 <.//tex/3iteration/billeder/Analyse/snubber_parasit.PNG>])
+[92 <.//tex/3iteration/billeder/Analyse/snubber_parasit.PNG>])
 (./tex/3iteration/Analyse-udgangsfilter.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/3iteration/billeder/Analyse/Udgangsfilter_2iteration.png, id=1650, 476.
+<.//tex/3iteration/billeder/Analyse/Udgangsfilter_2iteration.png, id=1664, 476.
 68088pt x 376.40625pt>
 File: .//tex/3iteration/billeder/Analyse/Udgangsfilter_2iteration.png Graphic f
 ile (type png)
@@ -6921,7 +6952,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Analyse/Udgangsfilter_2iter
 ation.png used on input line 9.
 (pdftex.def)             Requested size: 476.67972pt x 376.40532pt.
 
-<.//tex/2iteration/billeder/Realisering/Output_26V.png, id=1653, 481.8pt x 361.
+<.//tex/2iteration/billeder/Realisering/Output_26V.png, id=1667, 481.8pt x 361.
 35pt>
 File: .//tex/2iteration/billeder/Realisering/Output_26V.png Graphic file (type 
 png)
@@ -6937,7 +6968,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 23.
- [92 <.//tex/3iteration/billeder/Analyse/Udgangsfilter_2iteration.png>])
+ [93 <.//tex/3iteration/billeder/Analyse/Udgangsfilter_2iteration.png>])
 (./tex/3iteration/Analyse-regulering.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 4.
@@ -6958,7 +6989,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 14.
- [93 <.//tex/2iteration/billeder/Realisering/Output_26V.png>]
+ [94 <.//tex/2iteration/billeder/Realisering/Output_26V.png>]
 Overfull \hbox (45.11165pt too wide) in paragraph at lines 22--27
 \U/zeur/m/n/10.95 g[]$ \T1/ppl/m/n/10.95 er den øn-ske-de for-stærk-ning i fejl
 -for-stær-ke-ren. Der øn-skes en for-stærk-ning på $\U/zeur/m/n/10.95 g[]\T1/pp
@@ -6973,8 +7004,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 41.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 41.
-[94]
-<.//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp.PNG, id=1685, 1042.6453
+[95]
+<.//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp.PNG, id=1699, 1042.6453
 1pt x 756.57657pt>
 File: .//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp.PNG Graphic file (
 type png)
@@ -6984,7 +7015,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp
 .PNG used on input line 44.
 (pdftex.def)             Requested size: 1042.64276pt x 756.57472pt.
 
-<.//tex/3iteration/billeder/Analyse/MATLAB_total.PNG, id=1687, 1042.64531pt x 7
+<.//tex/3iteration/billeder/Analyse/MATLAB_total.PNG, id=1701, 1042.64531pt x 7
 56.57657pt>
 File: .//tex/3iteration/billeder/Analyse/MATLAB_total.PNG Graphic file (type pn
 g)
@@ -7006,7 +7037,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
- [95 <.//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp.PNG (PNG copy)> <.
+ [96 <.//tex/3iteration/billeder/Analyse/MATLAB_error_op_amp.PNG (PNG copy)> <.
 //tex/3iteration/billeder/Analyse/MATLAB_total.PNG (PNG copy)>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 4.
@@ -7028,7 +7059,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 50.
- [96])
+ [97])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
@@ -7037,7 +7068,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [97]
+ [98]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
@@ -7048,7 +7079,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_switch_tid.png, id=1711, 574.
+<.//tex/3iteration/billeder/Simulering/Simulering_switch_tid.png, id=1725, 574.
 84763pt x 393.8715pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_switch_tid.png Graphic f
 ile (type png)
@@ -7058,7 +7089,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Simulering/Simulering_switc
 h_tid.png used on input line 11.
 (pdftex.def)             Requested size: 574.84622pt x 393.87053pt.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_switch_tid_peak.png, id=1714,
+<.//tex/3iteration/billeder/Simulering/Simulering_switch_tid_peak.png, id=1728,
  576.9555pt x 398.38838pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_switch_tid_peak.png Grap
 hic file (type png)
@@ -7077,7 +7108,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 22.
 
-[98
+[99
 
  <.//tex/3iteration/billeder/Simulering/Simulering_switch_tid.png>]
 (./tex/3iteration/Simulering-cs-filter.tex
@@ -7092,7 +7123,7 @@ Overfull \hbox (2.65086pt too wide) in paragraph at lines 4--5
  []
 
 
-<.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_U.png, id=1725, 576
+<.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_U.png, id=1739, 576
 .35326pt x 393.57037pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_cs_filter_U.png Graphic 
 file (type png)
@@ -7102,7 +7133,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Simulering/Simulering_cs_fi
 lter_U.png used on input line 8.
 (pdftex.def)             Requested size: 576.35185pt x 393.56941pt.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_M.png, id=1726, 579
+<.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_M.png, id=1740, 579
 .96675pt x 392.96812pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_cs_filter_M.png Graphic 
 file (type png)
@@ -7121,8 +7152,8 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 24.
 
-[99 <.//tex/3iteration/billeder/Simulering/Simulering_switch_tid_peak.png> <.//
-tex/3iteration/billeder/Simulering/Simulering_cs_filter_U.png>]
+[100 <.//tex/3iteration/billeder/Simulering/Simulering_switch_tid_peak.png> <./
+/tex/3iteration/billeder/Simulering/Simulering_cs_filter_U.png>]
 (./tex/3iteration/Simulering-snubber.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
@@ -7130,7 +7161,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 FiXme Note: 'Snubber skal placeres over MOSFET'en' on input line 5.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_power_diagram.PNG, id=1737, 6
+<.//tex/3iteration/billeder/Simulering/Simulering_power_diagram.PNG, id=1751, 6
 07.068pt x 280.94963pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_power_diagram.PNG Graphi
 c file (type png)
@@ -7140,7 +7171,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Simulering/Simulering_power
 _diagram.PNG used on input line 8.
 (pdftex.def)             Requested size: 607.06651pt x 280.94894pt.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_snubber_MOSFET.PNG, id=1739, 
+<.//tex/3iteration/billeder/Simulering/Simulering_snubber_MOSFET.PNG, id=1753, 
 580.26787pt x 393.57037pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_snubber_MOSFET.PNG Graph
 ic file (type png)
@@ -7158,9 +7189,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
 
-[100 <.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_M.png> <.//tex
+[101 <.//tex/3iteration/billeder/Simulering/Simulering_cs_filter_M.png> <.//tex
 /3iteration/billeder/Simulering/Simulering_power_diagram.PNG>]
-<.//tex/3iteration/billeder/Simulering/Simulering_snubber_diode.PNG, id=1750, 5
+<.//tex/3iteration/billeder/Simulering/Simulering_snubber_diode.PNG, id=1764, 5
 76.65437pt x 393.57037pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_snubber_diode.PNG Graphi
 c file (type png)
@@ -7176,7 +7207,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/3iteration/billeder/Simulering/diagram_udgangsfilter.png, id=1752, 538.
+<.//tex/3iteration/billeder/Simulering/diagram_udgangsfilter.png, id=1766, 538.
 4115pt x 248.72925pt>
 File: .//tex/3iteration/billeder/Simulering/diagram_udgangsfilter.png Graphic f
 ile (type png)
@@ -7193,9 +7224,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 12.
- [101 <.//tex/3iteration/billeder/Simulering/Simulering_snubber_MOSFET.PNG> <./
+ [102 <.//tex/3iteration/billeder/Simulering/Simulering_snubber_MOSFET.PNG> <./
 /tex/3iteration/billeder/Simulering/Simulering_snubber_diode.PNG>]
-<.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_U.png, id=1765,
+<.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_U.png, id=1779,
  579.96675pt x 398.38838pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_U.png Grap
 hic file (type png)
@@ -7205,7 +7236,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Simulering/Simulering_udgan
 gsfilter_U.png used on input line 17.
 (pdftex.def)             Requested size: 579.96533pt x 398.38739pt.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_M.png, id=1766,
+<.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_M.png, id=1780,
  582.07463pt x 398.6895pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_M.png Grap
 hic file (type png)
@@ -7224,7 +7255,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 28.
 
-[102 <.//tex/3iteration/billeder/Simulering/diagram_udgangsfilter.png> <.//tex/
+[103 <.//tex/3iteration/billeder/Simulering/diagram_udgangsfilter.png> <.//tex/
 3iteration/billeder/Simulering/Simulering_udgangsfilter_U.png>]
 (./tex/3iteration/Simulering-regulering.tex
 Package babel Info: Redefining danish shorthand "|
@@ -7232,7 +7263,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 3.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_error_op_amp.PNG, id=1776, 56
+<.//tex/3iteration/billeder/Simulering/Simulering_error_op_amp.PNG, id=1791, 56
 4.60938pt x 399.894pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_error_op_amp.PNG Graphic
  file (type png)
@@ -7242,7 +7273,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Simulering/Simulering_error
 _op_amp.PNG used on input line 8.
 (pdftex.def)             Requested size: 564.60799pt x 399.893pt.
 
-<.//tex/3iteration/billeder/Simulering/Simulering_total.PNG, id=1778, 568.524pt
+<.//tex/3iteration/billeder/Simulering/Simulering_total.PNG, id=1793, 568.524pt
  x 400.49625pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_total.PNG Graphic file (
 type png)
@@ -7259,7 +7290,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 20.
- [103 <.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_M.png> <.
+ [104 <.//tex/3iteration/billeder/Simulering/Simulering_udgangsfilter_M.png> <.
 //tex/3iteration/billeder/Simulering/Simulering_error_op_amp.PNG>])
 (./tex/3iteration/Simulering-loadstep.tex
 Package babel Info: Redefining danish shorthand "|
@@ -7267,7 +7298,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<.//tex/3iteration/billeder/simulering/Loadstep.PNG, id=1790, 578.16pt x 390.86
+<.//tex/3iteration/billeder/simulering/Loadstep.PNG, id=1804, 578.16pt x 390.86
 024pt>
 File: .//tex/3iteration/billeder/simulering/Loadstep.PNG Graphic file (type png
 )
@@ -7289,9 +7320,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
- [104 <.//tex/3iteration/billeder/Simulering/Simulering_total.PNG> <.//tex/3ite
+ [105 <.//tex/3iteration/billeder/Simulering/Simulering_total.PNG> <.//tex/3ite
 ration/billeder/simulering/Loadstep.PNG>]
-<.//tex/3iteration/billeder/Simulering/simulering_power_MOSFET.png, id=1800, 57
+<.//tex/3iteration/billeder/Simulering/simulering_power_MOSFET.png, id=1815, 57
 6.65437pt x 392.36588pt>
 File: .//tex/3iteration/billeder/Simulering/simulering_power_MOSFET.png Graphic
  file (type png)
@@ -7302,7 +7333,7 @@ _MOSFET.png used on input line 8.
 (pdftex.def)             Requested size: 576.65295pt x 392.36491pt.
 
 <.//tex/3iteration/billeder/Simulering/simulering_snubber_power_MOSFET.png, id=
-1803, 577.85887pt x 398.08725pt>
+1818, 577.85887pt x 398.08725pt>
 File: .//tex/3iteration/billeder/Simulering/simulering_snubber_power_MOSFET.png
  Graphic file (type png)
 
@@ -7312,7 +7343,7 @@ er_power_MOSFET.png used on input line 18.
 (pdftex.def)             Requested size: 577.85745pt x 398.08627pt.
 
 <.//tex/3iteration/billeder/Simulering/Simulering_snubber_power_diode.png, id=1
-804, 579.06337pt x 392.667pt>
+819, 579.06337pt x 392.667pt>
 File: .//tex/3iteration/billeder/Simulering/Simulering_snubber_power_diode.png 
 Graphic file (type png)
 
@@ -7329,9 +7360,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 29.
 
-[105 <.//tex/3iteration/billeder/Simulering/simulering_power_MOSFET.png> <.//te
+[106 <.//tex/3iteration/billeder/Simulering/simulering_power_MOSFET.png> <.//te
 x/3iteration/billeder/Simulering/simulering_snubber_power_MOSFET.png>]
-<.//tex/3iteration/billeder/Simulering/simulering_samlet_tab.png, id=1818, 582.
+<.//tex/3iteration/billeder/Simulering/simulering_samlet_tab.png, id=1832, 582.
 67688pt x 392.06474pt>
 File: .//tex/3iteration/billeder/Simulering/simulering_samlet_tab.png Graphic f
 ile (type png)
@@ -7349,7 +7380,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 34.
- [106 <.//tex/3iteration/billeder/Simulering/Simulering_snubber_power_diode.png
+ [107 <.//tex/3iteration/billeder/Simulering/Simulering_snubber_power_diode.png
 >]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 35.
@@ -7360,7 +7391,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 35.
 
-[107 <.//tex/3iteration/billeder/Simulering/simulering_samlet_tab.png>]
+[108 <.//tex/3iteration/billeder/Simulering/simulering_samlet_tab.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 37.
 Package babel Info: Redefining danish shorthand "~
@@ -7372,7 +7403,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 4.
 
-<.//tex/3iteration/billeder/Realisering/Realisering_switch_tid.png, id=1834, 48
+<.//tex/3iteration/billeder/Realisering/Realisering_switch_tid.png, id=1848, 48
 1.8pt x 361.35pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_switch_tid.png Graphic
  file (type png)
@@ -7395,10 +7426,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 17.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 17.
- [108
+ [109
 
  <.//tex/3iteration/billeder/Realisering/Realisering_switch_tid.png>]
-<.//tex/3iteration/billeder/Realisering/Realisering_cs_M.png, id=1847, 481.8pt 
+<.//tex/3iteration/billeder/Realisering/Realisering_cs_M.png, id=1862, 481.8pt 
 x 361.35pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_cs_M.png Graphic file 
 (type png)
@@ -7407,7 +7438,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Realisering/Realisering_cs_
 M.png used on input line 21.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/3iteration/billeder/Realisering/Realisering_cs_M_zoom.png, id=1848, 481
+<.//tex/3iteration/billeder/Realisering/Realisering_cs_M_zoom.png, id=1863, 481
 .8pt x 361.35pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_cs_M_zoom.png Graphic 
 file (type png)
@@ -7430,9 +7461,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
- [109 <.//tex/3iteration/billeder/Realisering/Realisering_cs_M.png> <.//tex/3it
+ [110 <.//tex/3iteration/billeder/Realisering/Realisering_cs_M.png> <.//tex/3it
 eration/billeder/Realisering/Realisering_cs_M_zoom.png>]
-<.//tex/3iteration/billeder/Realisering/Realisering_snubber_MOSFET.PNG, id=1857
+<.//tex/3iteration/billeder/Realisering/Realisering_snubber_MOSFET.PNG, id=1871
 , 481.8pt x 361.35pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_snubber_MOSFET.PNG Gra
 phic file (type png)
@@ -7442,7 +7473,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Realisering/Realisering_snu
 bber_MOSFET.PNG used on input line 8.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/3iteration/billeder/Realisering/Realisering_snubber_diode.PNG, id=1858,
+<.//tex/3iteration/billeder/Realisering/Realisering_snubber_diode.PNG, id=1872,
  481.8pt x 361.35pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_snubber_diode.PNG Grap
 hic file (type png)
@@ -7471,10 +7502,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 5.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 5.
- [110 <.//tex/3iteration/billeder/Realisering/Realisering_snubber_MOSFET.PNG> <
+ [111 <.//tex/3iteration/billeder/Realisering/Realisering_snubber_MOSFET.PNG> <
 .//tex/3iteration/billeder/Realisering/Realisering_snubber_diode.PNG>]
-<.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_opamp.PNG, id=186
-6, 601.0455pt x 342.37912pt>
+<.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_opamp.PNG, id=188
+0, 601.0455pt x 342.37912pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_gain_fase_opamp.PNG Gr
 aphic file (type png)
 
@@ -7483,8 +7514,8 @@ Package pdftex.def Info: .//tex/3iteration/billeder/Realisering/Realisering_gai
 n_fase_opamp.PNG used on input line 8.
 (pdftex.def)             Requested size: 601.04402pt x 342.37828pt.
 
-<.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total.PNG, id=186
-8, 599.53987pt x 340.27126pt>
+<.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total.PNG, id=188
+2, 599.53987pt x 340.27126pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total.PNG Gr
 aphic file (type png)
 
@@ -7501,9 +7532,9 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
 
-[111 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_opamp.PNG>]
+[112 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_opamp.PNG>]
 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total_50V.PNG, id
-=1877, 603.4545pt x 342.68025pt>
+=1891, 603.4545pt x 342.68025pt>
 File: .//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total_50V.PN
 G Graphic file (type png)
 
@@ -7518,7 +7549,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-<.//tex/3iteration/billeder/realisering/Loadstep.PNG, id=1880, 481.8pt x 361.35
+<.//tex/3iteration/billeder/realisering/Loadstep.PNG, id=1894, 481.8pt x 361.35
 pt>
 File: .//tex/3iteration/billeder/realisering/Loadstep.PNG Graphic file (type pn
 g)
@@ -7534,9 +7565,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 9.
- [112 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total.PNG> 
+ [113 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total.PNG> 
 <.//tex/3iteration/billeder/Realisering/Realisering_gain_fase_total_50V.PNG>]
-<.//tex/3iteration/billeder/realisering/Loadsteprise.PNG, id=1890, 481.8pt x 36
+<.//tex/3iteration/billeder/realisering/Loadsteprise.PNG, id=1904, 481.8pt x 36
 1.35pt>
 File: .//tex/3iteration/billeder/realisering/Loadsteprise.PNG Graphic file (typ
 e png)
@@ -7545,7 +7576,7 @@ Package pdftex.def Info: .//tex/3iteration/billeder/realisering/Loadsteprise.PN
 G used on input line 12.
 (pdftex.def)             Requested size: 481.79881pt x 361.34912pt.
 
-<.//tex/3iteration/billeder/realisering/Loadstepfall.PNG, id=1892, 481.8pt x 36
+<.//tex/3iteration/billeder/realisering/Loadstepfall.PNG, id=1906, 481.8pt x 36
 1.35pt>
 File: .//tex/3iteration/billeder/realisering/Loadstepfall.PNG Graphic file (typ
 e png)
@@ -7561,7 +7592,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 24.
- [113 <.//tex/3iteration/billeder/realisering/Loadstep.PNG> <.//tex/3iteration/
+ [114 <.//tex/3iteration/billeder/realisering/Loadstep.PNG> <.//tex/3iteration/
 billeder/realisering/Loadsteprise.PNG>]) (./tex/3iteration/Realisering-tab.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
@@ -7576,7 +7607,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 53.
- [114 <.//tex/3iteration/billeder/realisering/Loadstepfall.PNG>]
+ [115 <.//tex/3iteration/billeder/realisering/Loadstepfall.PNG>]
 (./tex/3iteration/Konklusion.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 3.
@@ -7610,7 +7641,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 30.
- [115
+ [116
 
 ]
 Package babel Info: Redefining danish shorthand "|
@@ -7630,7 +7661,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 212.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 212.
- [116]
+ [117]
 \openout2 = `tex/accepttest/Doneacceptest.aux'.
 
 
@@ -8336,7 +8367,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 34.
-[117
+[118
 
 
 
@@ -8763,7 +8794,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 43.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
-[118]
+[119]
 Overfull \vbox (38.94365pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining danish shorthand "|
@@ -8775,7 +8806,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 43.
 
-[119]
+[120]
 Underfull \hbox (badness 10000) in paragraph at lines 43--43
 []|\T1/ppl/b/n/10.95 Forventet
  []
@@ -9068,7 +9099,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 214.
-[120]
+[121]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 230.
 Package babel Info: Redefining danish shorthand "~
@@ -9088,7 +9119,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 230.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 230.
-[121
+[122
 
 
 ]
@@ -9105,13 +9136,24 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 233.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 233.
-[122]
+[123]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 233.
+ [124
 
-FiXme Summary: Number of notes: 3,
+]
+
+FiXme Summary: Number of notes: 2,
 (FiXme)        Number of warnings: 0,
 (FiXme)        Number of errors: 0,
 (FiXme)        Number of fatal errors: 0,
-(FiXme)        Total: 3.
+(FiXme)        Total: 2.
 
 \tf@toc=\write7
 \openout7 = `dokumentation.toc'.
@@ -9124,17 +9166,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
 (./tex/3iteration/3iteration.aux) (./tex/accepttest/Doneacceptest.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
-
-
-Package rerunfilecheck Warning: File `dokumentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `dokumentation.out':
-(rerunfilecheck)             Before: 50E1C2C4A93E795556237B1836DCF3A9;6681
-(rerunfilecheck)             After:  FD06D244E3424B10E831B21CF6DB891A;6736.
-
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Info: File `dokumentation.out' has not changed.
+(rerunfilecheck)             Checksum: DC4401E21B62DBC61E4B8048156DDBA6;6736.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -9145,11 +9178,11 @@ Package logreq Info: Writing requests to 'dokumentation.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
  ) 
 Here is how much of TeX's memory you used:
- 44393 strings out of 493042
- 850208 string characters out of 6138227
- 1356300 words of memory out of 5000000
- 46459 multiletter control sequences out of 15000+600000
- 55689 words of font info for 127 fonts, out of 8000000 for 9000
+ 44407 strings out of 493042
+ 850981 string characters out of 6138227
+ 1356630 words of memory out of 5000000
+ 46469 multiletter control sequences out of 15000+600000
+ 55389 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,21n,97p,10460b,3045s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
@@ -9166,10 +9199,10 @@ mf-dist/fonts/type1/public/cm-super/sftt1095.pfb><c:/texlive/2015/texmf-dist/fo
 nts/type1/urw/palatino/uplb8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/p
 alatino/uplr8a.pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplr8a.
 pfb><c:/texlive/2015/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dokumentation.pdf (122 pages, 24870018 bytes).
+Output written on dokumentation.pdf (124 pages, 24949218 bytes).
 PDF statistics:
- 2116 PDF objects out of 2487 (max. 8388607)
- 1640 compressed objects within 17 object streams
- 528 named destinations out of 1000 (max. 500000)
- 1462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2134 PDF objects out of 2487 (max. 8388607)
+ 1653 compressed objects within 17 object streams
+ 531 named destinations out of 1000 (max. 500000)
+ 1480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

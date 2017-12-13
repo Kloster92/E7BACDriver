@@ -28,28 +28,28 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn")
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn")
       (Path "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn"
          "SCHEMATIC1")
       (Select "Design Resources"
-         "C:\Users\Jesper\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn"
+         "C:\Users\Nicolai Fransen\Documents\GitHub\E7BACDriver\Realisering\P-spice\flyback_realisering.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 -29 171 15 311"))
+        (Placement "44 0 1 -1 -1 -8 -31 -29 171 15 311"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 104 1215 104 439")
-        (Scroll "0 120")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "122 108")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\USERS\JESPER\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\FLYBACK_REALISERING.DSN")
+         "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\FLYBACK_REALISERING.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1")))
-  (MPSSessionName "Jesper"))
+  (MPSSessionName "Nicolai Fransen"))

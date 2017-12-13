@@ -77,16 +77,25 @@ f_{oscsek} = \frac{1}{35ns} = 28.57MHz
 \noindent I det følgende afsnit testes implementeringen af PWM-controlleren. Her måles frekvensen af savtandspændingen og selve switch-frekvensen samt signalet over current-sense modstanden både før og efter filteret.
 
 \subsubsection{Switch-frekvens}
-\noindent Først måles frekvensen af savtandspændingen. Denne frekvens måles til $160k\hertz$, hvor der ønskes $200k\hertz$. Da switch-frekvensen har indflydelse på mange ting i converteren, ændres modstanden således der opnås en frekvens på ca. $200k\hertz$. \fxnote{Mangler et realiseret billede af forkert frkvens} Der vælges en modstand på $33.2k\ohm$. På figur~\ref{fig:Savtand} og \ref{fig:Udgang_PWM} ses henholdsvis målingen af savtandspændingen og udgangen af PWM-controlleren. Her ses det, at der er opnået en frekvens for savtandspændingen på $192k\hertz$, og en frekvens for udgangssignalet på $102.6k\hertz$. Med et udgangspunkt på $100k\hertz$, godtages denne afvigelse. Resultaterne for analyse, simulering og realisering indføres i tabel~\ref{tab:resultat_switch_frekvens}. Dette er dog med den ændrede modstand i realiseringen.
+\noindent Først måles frekvensen af savtandspændingen og PWM-signalet. Målingen ses på figur~\ref{fig:Savtand_lav_frekvens}. Her aflæses frekvensen af savtandsignalet til $170k\hertz$, hvor der var designet efter $200k\hertz$. På samme figur aflæses frekvensen af PWM-signalet til $85.5k\hertz$. Her var der designet efter $100k\hertz$.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/savtand_lav_frekvens.png}
+	\caption{Måling af switch-frekvens med regnet modstand}
+	\label{fig:Savtand_lav_frekvens}
+\end{figure} 
+
+Da switch-frekvensen har indflydelse på mange ting i converteren, tilpasses modstanden således der opnås en switch-frekvens på ca. $100k\hertz$. Der vælges en modstand på $33.2k\ohm$. På figur~\ref{fig:Savtand} ses målingen af savtandspændingen og udgangen af PWM-controlleren. Her ses det, at der er opnået en frekvens for savtandspændingen på $192.3k\hertz$, og en frekvens for udgangssignalet på $95.8k\hertz$. Med et udgangspunkt på $100k\hertz$, godtages denne afvigelse. Resultaterne for analyse, simulering og realisering indføres i tabel~\ref{tab:resultat_switch_frekvens}. Dette er dog med den ændrede modstand i realiseringen.
 
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|c|c|c|}
 		\hline
-		\textbf{Frekvens} & \multicolumn{3}{|c|}{\textbf{Oscillator frekvens}} 										\\ \hline
+		\textbf{Frekvens} & \multicolumn{3}{|c|}{\textbf{Resultat}} 		\\ \hline
 		& A & S & R 									\\ \hline
-		$f_{osc}$ & $200k\hertz$ & $199.6k\hertz$ & $192k\hertz$ 									\\ \hline 
-		$f_s$ & $100k\hertz$ & $99.01k\hertz$ & $102.6k\hertz$ 									\\ \hline
+		$f_{osc}$ & $200k\hertz$ & $199.6k\hertz$ & $192.3k\hertz$ 									\\ \hline 
+		$f_s$ & $100k\hertz$ & $99.01k\hertz$ & $95.8k\hertz$ 									\\ \hline
 	\end{tabularx}
 	\caption{Resultater for analyse, simulering og realisering af switch-frekvens}
 	\label{tab:resultat_switch_frekvens}
@@ -96,16 +105,10 @@ f_{oscsek} = \frac{1}{35ns} = 28.57MHz
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Savtand.png}
-	\caption{Måling af savtandspænding}
+	\caption{Måling af switch-frekvens med tilpasset modstand}
 	\label{fig:Savtand}
 \end{figure} 
-
-\begin{figure}[H]
-	\center
-	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Udgang_PWM.png}
-	\caption{Udgang af PWM-controller}
-	\label{fig:Udgang_PWM}
-\end{figure} 
+ 
 
 \subsubsection{Switch-tid}
 \noindent Målingen af switch-tiden er vist på figur~\ref{fig:Realisering_MOSFET_switch_tid_2}. Figuren viser MOSFET'ens drain på kanal 1, og MOSFET'ens gate på kanal 2. Her aflæses switch-tiden i MOSFET'en som længden af plateauet på gate signalet, og aflæses til ca. $120ns$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultat_switch_tid_2}. Her er simuleringen dog foretaget med en anden MOSFET.
@@ -167,9 +170,8 @@ f_{oscsek} = \frac{1}{35ns} = 28.57MHz
 
 
 \subsection{Spændingsdeler}
-\noindent Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren, når udgangsspændingen er $21V$. Dette er gjort på figur~\ref{label}. Spændingen er målt til $2.5V$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultat_voltage_divider}.
+\noindent Spændingsdeleren testes ved at måle indgangsspændingen til fejlforstærkeren, når converterens udgangsspænding er $21V$. Dette er gjort på figur~\ref{fig:voltage_divider_realisering}. Her aflæses spændingen til $2.5V$. Resultaterne for analyse, simulering og realisering er indført i tabel~\ref{tab:resultat_voltage_divider}.
 
-%TODO: Skal laves, realisering mangler - Nicolai
 
 \begin{table}[H] 			
 	\centering
@@ -177,12 +179,19 @@ f_{oscsek} = \frac{1}{35ns} = 28.57MHz
 		\hline
 		\textbf{Spænding} & \multicolumn{3}{|c|}{\textbf{Resultater}} 		\\ \hline
 		& A & S & R 									\\ \hline
-		$V_{FB}$ & $2.5V$ & $2.499V$ & $??$ 									\\ \hline 
+		$V_{FB}$ & $2.5V$ & $2.499V$ & $2.5V$ 									\\ \hline 
 		
 	\end{tabularx}
 	\caption{Resultater for analyse, simulering og realisering af switch-tid}
 	\label{tab:resultat_voltage_divider}
 \end{table}
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/voltage_divider.png}
+	\caption{Måling af spænding i spændingsdeler}
+	\label{fig:voltage_divider_realisering}
+\end{figure}
 
 \subsection{Gain-fase måling} \label{gain_fase_2}
 Gain-fase målingen deles op i tre, ligesom ved analysen og simuleringen. Der måles overføringsfunktion for powermodulet, fejlforstærkeren, og for det samlede system. Målingerne foretages vha. en Network Analyzer af typen HP4194A. Den måler overføringsfunktionen ved at indførere et fejlsignal i tilbagekoblingen, og måle hvordan udgangen ændrer sig. Som ved simuleringen indføres fejlsignalet over en $51.1\ohm$ modstand, placeret i serie med den første modstand i spændingsdeleren. 
@@ -198,10 +207,18 @@ Først måles gain-fase for selve powermodulet. Det gøres ved at måle mellem u
 	\label{fig:realisering_gain_fase_power}
 \end{figure}
 
-%TODO: Beskriv fejlforstærker når målinger hentes ved Terma
+Bode plot for fejlforstærkeren er vist på figur~\ref{fig:Realisering_error_op_amp_2}, hvor der er målt over indgangen til fejlforstærkeren, og udgangen af den. Den målte forstærkning vises med blå, den målte fase er den røde, den analyserede forstærkning er den stiplede grønne, og den analyserede fase er den stiplede lilla. Det ses, at den ønskede funktionalitet af fejlforstærkeren er opnået da, henholdsvis forstærkning og fase, ligger oven i hinanden. Det betyder den ønskede forstærkning på ca. $-5.4\decibel$, ved frekvenser over $318\hertz$ er opnået. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.7\linewidth]{/tex/2iteration/billeder/Realisering/Realisering_gain_fase_op_amp.PNG}
+	\caption{Realisering af fejlforstærkeren}
+	\label{fig:Realisering_error_op_amp_2}
+\end{figure}
 
 
-\noindent Til sidst måles den samlede overføringsfunktion for systemet. Her måles der over den modstand, hvor fejlsignalet indføres. Det svarer til at måle fra indgangen af fejlforstærkeren til udgangen af converteren. Bodeplottet for både analyse og realiseringen er vist på figur~\ref{fig:realisering_gain_fase_tot}. Gain for realiseringen er den blå, mens gain for analysen er den grønne stiplede. Fasen for realiseringen er er den røde, mens fasen for analysen er den stiplede lilla. På bodeplottet ses det, at der er en smule større afvigelse, både ved gain og fasen. På trods af afvigelsen aflæses båndbredden dog nogenlunde til det samme på ca. $900\hertz$. Fase-marginen aflæses til ca. $62^\circ$, og gain-margin aflæses til ca. $24\decibel$. Holdt op mod analysen var det forventet at opnå en fase-margin på $74.3^\circ$ og en gain-margin på $24\decibel$. Afvigelsen i fase-margin ses på figur~\ref{fig:realisering_gain_fase_tot}, da den faktiske fase ligger under den analyserede. 
+
+Til sidst måles den samlede overføringsfunktion for systemet. Her måles der over den modstand, hvor fejlsignalet indføres. Det svarer til at måle fra indgangen af fejlforstærkeren til udgangen af converteren. Bodeplottet for både analyse og realiseringen er vist på figur~\ref{fig:realisering_gain_fase_tot}. Gain for realiseringen er den blå, mens gain for analysen er den grønne stiplede. Fasen for realiseringen er er den røde, mens fasen for analysen er den stiplede lilla. På bodeplottet ses det, at der er en smule større afvigelse, både ved gain og fasen. På trods af afvigelsen aflæses båndbredden dog nogenlunde til det samme på ca. $900\hertz$. Fase-marginen aflæses til ca. $62^\circ$, og gain-margin aflæses til ca. $24\decibel$. Holdt op mod analysen var det forventet at opnå en fase-margin på $74.3^\circ$ og en gain-margin på $24\decibel$. Afvigelsen i fase-margin ses på figur~\ref{fig:realisering_gain_fase_tot}, da den faktiske fase ligger under den analyserede. 
 
 \begin{figure}[H]
 	\center
