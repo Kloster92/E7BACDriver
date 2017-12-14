@@ -2,17 +2,21 @@
 \chapter{Projektafgrænsning}
 I dette afsnit er der beskrevet en afgrænsning af projektets indhold. Her er der taget udgangspunkt i det den ønskede funktionalitet af produktet, som sammenholdes med den egentlige opnåede funktionalitet. Elementer af projektet der er specificeret, men ikke implementeret er angivet i dette afsnit og uddybet i afsnit\fxnote{Indsæt reference til fremtidigt arbejde når det er skrevet}. 
 
-Produktets kernefunktionaliteter er prioriteret under udviklingen. Her er især prioriteret efter elementer, som kræves udviklet, før andre elementer kan udvikles. Her er udviklet en base for produktet, hvorpå flere krav og funktionaliteter skal kunne påføres.
+Produktets kernefunktionaliteter er prioriteret under udviklingen. Her er især prioriteret efter elementer, som kræves funktionsdygtige, før andre elementer kan udvikles. Her er udviklet en base for produktet, hvorpå flere krav og funktionaliteter skal kunne påføres.
 
-Der blev valgt, at tage udgangspunkt i en converter med en statisk udgang. Dette ville skabe et udgangspunkt, og generer en erfaring, der ville give grobund for en videreudvikling til en dynamisk udgang af converteren. Den dynamiske udgang er ikke blevet implementeret i projektets forløb.
+Der blev valgt, at tage udgangspunkt i en converter med en statisk udgang. Dette ville skabe et udgangspunkt, og genere en erfaring, der ville give grobund for en videreudvikling til en dynamisk udgang af converteren. Den dynamiske udgang er ikke blevet implementeret i projektets forløb. Ved udvikling af et funktionsdygtigt power-modul, er der dog opnået en base for converteren, hvor det er muligt tilføje yderligere funktionaliteter. 
 
-Det er valgt, at vikling transformatoren sker af gruppen selv. Dette vil give en erfaring inden for området, der giver indsigt hvad der er realistisk at designe efter. Derudover vil det også give et indblik i problematikkerne i vikling af en transformator.
+Det er valgt, at vikling af transformatoren sker af gruppen selv. Dette vil give en erfaring inden for området, der giver indsigt i hvad der er realistisk at designe efter. Derudover vil det også give et indblik i problematikkerne i vikling af en transformator. 
 
-Til regulering af converteren, er der brugt peak-current regulering. Dette sikre til dels en overstrømsbeskyttelse. Funktionaliteten er dog begrænset da I/V karakteristikken ikke vil blive fuldstændig firkantet. Derfor er der brug for et yderligere kredsløb til overstrømsbeskyttelse. Dette er dog ikke blevet implementeret i projektet. 
+Til regulering af converteren, er der brugt peak-current regulering. Dette sikre til dels en overstrømsbeskyttelse. Funktionaliteten er dog begrænset da I/V karakteristikken ikke vil blive fuldstændig firkantet. Derfor er der brug for et yderligere kredsløb til overstrømsbeskyttelse. Her vil det derfor blive nødvendigt, at udtænke en mere robust og pålidelig løsning. 
 
-Converteren er blevet designet efter termisk optimering. Her er der opnået en høj effektivitet ved den valgte belastning. Hvis belastningen øges, vil det dog blive nødvendigt udtænke en mere effektiv løsning, for at opnå den ønskede effektivitet. 
+Converteren er forsøgt designet efter termisk optimering, desuden er dette blevet optimeret løbende gennem projektets forløb. Her er der opnået en høj effektivitet ved den valgte belastning. Hvis belastningen øges, vil det dog blive nødvendigt udtænke en mere effektiv løsning, for at opnå den ønskede effektivitet. 
 
-Det blev specificeret at converteren skulle kunne opererer ved et specifikt temperaturinterval. Ved valg af komponenter er denne specifikation blevet overvejet, men på grund af tidsnød er testen af dette blevet nedprioriteret, og derfor ikke blevet testet.
+Ved udvikling af elektroniske produkter til rumfart, kræves det udviklet med EEE-komponenter. Disse komponenter er meget omkostningsfulde, og er derfor ikke blevet brugt i projektet. Til gengælde er der brugt Terma-godkendte komponenter. Med disse komponenter har Terma en erfaring med, at opsætte disse til EEE-komponenter.  
+
+Det blev specificeret at converteren skulle kunne opererer ved et specifikt temperaturinterval. Ved valg af komponenter er denne specifikation blevet overvejet, men på grund af tidsnød er testen af dette blevet nedprioriteret, og derfor ikke blevet udført.
+
+For at sikre en stabil indgangsspænding på converteren er det nødvendigt at implementere et indgangsfilter. Dette filter er blevet stillet tilrådighed af Terma, da det blev besluttet at fokusere andetsteds. Dette filter vil ikke blive beskrevet i denne rapport, men funktionaliteten af det er beskrevet i dokumentationen.
 
 
 

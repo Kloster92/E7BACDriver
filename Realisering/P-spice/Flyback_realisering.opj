@@ -39,14 +39,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 -29 171 15 311"))
+        (Placement "44 2 3 -1 -1 -8 -31 -29 171 15 311"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1126 52 387")
-        (Scroll "122 108")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1126 52 387")
+        (Scroll "48 44")
+        (Zoom "87")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\REALISERING\P-SPICE\FLYBACK_REALISERING.DSN")

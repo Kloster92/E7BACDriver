@@ -1,0 +1,47 @@
+
+\chapter{Analyse}
+I dette afsnit beskrives de betragtninger og valg, der er blevet foretaget i løbet af produktudviklingen. Der er blevet vurderet på hvilke elementer der er nødvendige for realisering af produktet. Ved hvert af disse elementer er der foretaget en vurdering af hvilke muligheder og alternativer elementerne har. Der er også foretaget et vurdering på fordele og ulemper samtlige alternativer, der er blevet undersøgt i projektet. Ud fra disse vurderinger er der valget af de brugte teknologier blevet foretaget. 
+
+\section{Converter topologi}
+Converter topologien er en essentiel del af converterens endelige funktionalitet. Derfor er der undersøgt fordele og ulemper ved flere forskellige converter topologier. Converteren skal kunne konvertere indgangsspændingen til en mindre udgangsspænding, derfor er der udelukkende undersøgt topologier med denne funktionalitet. De undersøgte topologier er buck converteren, push-pull converteren og flyback converteren, som kan drives i både CCM og DCM. Disse convertere er yderligere beskrevet i dokumentationens afsnit 4.
+
+\subsection{Buck converter}
+Buck converteren er en af mere simple converter topologier, da den består af relativt få komponenter. sammen med dette er en af fordelene ved en buck converter, at der altid vil løbe en strøm i spolen. Det vil genere en minimal ripple-spænding på udganen, og derfor også et lille tab i udgangsfilteret. 
+
+En stor ulempe ved buck converteren er at switch-komponenten, ofte en MOSFET, er placeret i den positive forsyningslinje. Det giver komplikationer ift. at drive MOSFET'en. Det vil kræve flere komponenter, og derfor også et mere kompliceret kredsløb. Af denne grund er buck converteren blevet fravalgt\cite{buck-converter}.
+
+\subsection{Push-pull converter}
+
+\subsection{Flyback converter}
+Flyback converteren er en videreudvikling af buck converteren. Det er en transformator baseret topologi, som derfor giver et ekstra mulighed for effektoverførsel. Transformatoren erstatter spolen i buck converteren og derfor består de af det samme antal komponenter. Transformatoren giver desuden muligheden for sikre galvanisk adskillelse mellem indgangen og udgangen. 
+
+En ulempe ved flyback converteren er en diskontinuert strømform i transformatoren, da der ikke løber strøm primær- og sekundærviklingen på samme tid. Det vil skabe større ripple- og RMS-strømme, og derved også genere et større tab i komponenterne\cite{SMPS-topologies}. 
+
+En flyback converter kan drives på to overordnede måder - CCM og DCM. De to metoder bidrager yderligere med hver deres fordele og ulemper, som også vil blive beskrevet. 
+
+Forskellen på de to metoder ligger i kurveformen for den strøm der løber i transformatorviklingerne. Ved CCM vil der altid løbe en strøm i enten den ene, eller den anden vikling. I modsætning til DCM hvor strømmen vil have en dødtid i løbet af en switch-periode. For at DCM skal kunne opretholde den samme udgangsstrøm som CCM, vil det betyde at peak- og RMS-strømmene ved DCM bliver større. Det giver derved anledning til et større effekttab. 
+
+Fordelen ved at operere i DCM er primært en simplificering af reguleringssløjfen. CCM indeholder et dominerende nulpunkt langt nede i frekvens, der kan gøre systemet ustabilt, hvis der ikke tages højde for dette. Nulpunktet begrænser samtidig båndbredden, og dermed også systemets responstid. 
+
+Ud fra disse undersøgelser er det blevet valgt, at arbejde videre med en flyback converter opereret i CCM. Dette vil sikre en converter hvor det er muligt, at holde effekttabet og kompleksiteten i converteren på et acceptabelt niveau. 
+
+\section{Reguleringsmetode}
+Der er to overordnede reguleringsmetoder der bruges til regulering i en DC/DC converter - Voltage controle og peak-current controle. Ved spændingsregulering vil reguleringen udelukkende ske på baggrund af et spændingsfeedback til reguleringssløjfen. Ved peak-current regulering, reguleres der både efter strømmen og spændingen på udgangen. Det sikre en overstrømsbeskyttelse for converteren. Den ekstra reguleringsløkke vil samtidig simplificere reguleringen af en flyback converter i CCM. 
+
+\noindent Derfor vælges det, at implementere en peak-current regulering i converteren. 
+
+\section{PWM-controller}
+PWM-controlleren er en central del af en DC/DC converter. Det er denne controller der står for at generere switch-signalet til converterens switch-element. Af denne grund er der mange krav PWM-controlleren skal leve op til. Den skal først og fremmest understøtte den valgt reguleringsmetode. Den skal kunne generere den maksimale duty-cycle der vil kunne fremstå i converterens switch-signal. Den skal kunne opretholde den valgte switch-frekvens. Derudover skal den også kunne generere et switch-signal med en amplitude der er høj nok, til at kunne drive den valgte MOSFET.
+
+Ud fra disse krav, er det valgt at bruge en PWM-controller af typen UCC1801\cite{UCC1801}. Denne controller lever op til de førnævnte krav, og desuden understøtter den peak-current regulering. Den har indbyggede reguleringssløjfer, således nødvendigheden for eksterne komponenter mindskes. Derudover indeholder den flere sikkerhedsfunktioner ved opstart. Det er også en controller Terma har erfaringer med, og ved den kan omsættes til en lignende komponent der er godkendt til rumfart. 
+
+\section{Transformator}
+Størrelsen på transformatoren betyder meget ift. temperaturstigningen, som en konsekvens af effektafsættelsen i transformatoren. Den termiske modstand i den er afhængig af størrelsen\cite{epcos-cores}. Derfor er det valgt at bruge en RM8\cite{RM8} som er den største kerne, der stadig overholder kravene for dimensionerne. Desuden er det valgt at bruge kernematerialet 3f3\cite{3f3}.
+
+%%% Converter topologi
+	% Buck
+	% Push-pull
+	% Flyback CCM og DCM
+%%% Reguleringsmetode
+%%% PWM-controller
+%%% Transformator

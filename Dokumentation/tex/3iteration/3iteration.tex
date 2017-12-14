@@ -18,6 +18,7 @@ I projektets 3. iteration vil der primært blive optimeret på allerede udvikled
 \clearpage
 
 \section{Simulering}
+I dette afsnit laves simuleringer for optimerede, og nye kredsløb for 3. iteration. Her der er to større ændring ift. 2. iteration - indsat snubber-kredsløb på både primær- og sekundærsiden, samt en mere præcis modulering af udgangsfilteret. Derudover er der ændret komponentværdier ifm. optimering af allerede udviklede kredsløb. Disse ændringer vil blive beskrevet nærmere med diagram tegninger i de relevante afsnit. 
 
 \input{tex/3iteration/Simulering-gate-modstand}
 
@@ -36,6 +37,15 @@ I projektets 3. iteration vil der primært blive optimeret på allerede udvikled
 \clearpage
 
 \section{Realisering}
+I det følgende afsnit vil de optimerede, og nye kredsløb realiseres. Det indebærer en optimering af switch-tiden og current-sense filteret, samt udvikling af snubber-kredsløb til både primær og sekundær siden af transformatoren. Det nye diagram for 3. iteration ses på figur~\ref{fig:samlet_opstilling}. Her er den største ændring ift. 2. iteration, der er indsat snubber-kredsløb over MOSFET og diode.
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=1.2\linewidth, angle=-90]{/tex/3iteration/billeder/Realisering/samlet_opstilling.png}
+	\caption{Schematic overblik for 3. iteration}
+	\label{fig:samlet_opstilling}
+\end{figure}
+
 
 \input{tex/3iteration/Realisering-gate-modstand}
 

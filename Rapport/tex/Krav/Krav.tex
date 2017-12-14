@@ -1,6 +1,6 @@
 
 \chapter{Krav}
-Projektets krav er specificeret, og prioriteret, vha. MoSCoW-metoden\cite{MoSCoW}. Metoden deler kravene til produktet op i fire kategorier - Must, Should, Could og Won't.
+Projektets krav er specificeret, og prioriteret, vha. MoSCoW-metoden\cite{MoSCoW}. Metoden deler kravene til produktet op i fire kategorier - Must, Should, Could og Won't. Her er der prioriteret den grundlæggende funktionalitet, ved at udvikle en funktionsdygtig converter med en stationær udgang. Med dette udgangspunkt er yderligere funktionaliteter blevet ned prioriteret, og placeret i \textit{Should} og i \textit{Could}. 
 
 \begin{itemize}
 	\item[\textbf{Must}]
@@ -34,15 +34,5 @@ Projektets krav er specificeret, og prioriteret, vha. MoSCoW-metoden\cite{MoSCoW
 \end{itemize}
 
 \section{Kravspecifikation}
-Kravene til produktet er opstillet som ikke-funktionelle krav. Det er krav der fortæller noget om kvaliteten af converteren. Det kan være krav til indgangsspændingen, præcision af udgangen og og det maksimale effekttab i converteren. I dette afsnit er de mest essentielle ikke-funktionelle krav blevet opstillet, mens resten er beskrevet i dokumentationen, afsnit 1.3.
+Kravene til produktet er opstillet som ikke-funktionelle krav. Det er krav der fortæller noget om kvaliteten af converteren. Det kan være krav til indgangsspændingen, præcision af udgangen og det maksimale effekttab i converteren. Der er også stillet krav til operation ved to forskellige loads, med præcision og stabilitet ved begge load typer. I dette afsnit er de mest essentielle ikke-funktionelle krav blevet nævnt, mens resten er beskrevet i dokumentationen, afsnit 1.3. Dette afsnit indeholder ligeledes de faktiske krav produktet skal overholde.
 
-\begin{itemize}
-	\item Converteren skal kunne operere med en inputspænding mellem 26-50V
-	\item Converteren skal opretholde en outputspænding på 21V, $\pm$2\% ved 2,5A $\pm$5\%
-	\item Converteren må maksimalt have en output ripple-spænding på 50mV pk-pk
-	\item Converteren skal operere med et tab på maksimalt 5W %TODO Specificer tab nærmere
-	\item Converteren skal have stabil regulering med minimum 10dB gain margin og 50 graders fasemargin ved:
-	\begin{description}
-		\item 21V/2.5A ved 26V og 50V inputspænding
-	\end{description}
-\end{itemize}
