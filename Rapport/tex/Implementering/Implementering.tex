@@ -1,17 +1,12 @@
-\chapter{Design, Implementering og test}
+\chapter{Design, implementering og test}
 I det følgende afsnit vil der blive gjort redde for designprocessen i projektforløbet. Her vil de meste essentielle dele for produktet blive beskrevet, mens resten kan findes i dokumentationens afsnit 4-6.
 
 Designprocessen blev delt op i tre overordnede iteration. I det følgende afsnit vil det derfor tydeliggøres, hvad der blev designet i den gældende iteration. 
 
-<<<<<<< HEAD
-\section{Første Iteration}
-Målet med første iteration var undersøgelse og valg af converter topologi. Herefter blev der opstillet en ideel simuleringsmodel for converteren, således analyse og simulering kunne sammenholdes. 
-=======
 \section{Første iteration}
-Første iteration blev hovedsageligt brugt på, at undersøge mulige converter topologier. Her vil flyback converterens funktionalitet blive beskrevet. 
->>>>>>> ae0636983c77876a6412832acac46881f4d92c01
+Målet med 1. iteration var undersøgelse og valg af converter topologi. Herefter blev der opstillet en ideel simuleringsmodel for converteren, således analyse og simulering kunne sammenholdes. 
+Kravet for at gå videre til 2. iteration, var opnåelse af en simulering der stemte overens med teorien. 
 
-\fxnote{Hvad er målet for denne itearation, og hvad skal som minimum opnås, før næste iteration påbegyndes?}
 
 \input{tex/Implementering/1iteration/converter}
 
@@ -20,11 +15,25 @@ Målet for 2. iteration var, at indsætte ikke-ideele komponenter ind i modellen
 Kravet for at gå videre til 3. iteration var en funktionsdygtig implementeret converter. 
 I dette afsnit beskrives hvordan nøglekomponenterne i konverteren er designet, og første implementering af converteren.
 
-\input{tex/Implementering/2iteration/Transformator}
+\input{tex/Implementering/2iteration/Transformer}
+
+\input{tex/Implementering/2iteration/PWM-controller}
+
+\input{tex/Implementering/2iteration/Regulering}
 
 \section{Tredje iteration}
+Målet for 3. iteration var, at optimere på converterens effekttab, båndbredde og udgangsens switching-spikes. Desuden blev det prioriteret at fjerne ringninger på drain- og anode spændinger, ifm. switching.
+Kravet for at gå videre til 4. iteration var opnåelse af et tilfredsstillende resultat ifm. disse optimeringer.
 
+\input{tex/Implementering/3iteration/MOSFET_gate}
 
+\input{tex/Implementering/3iteration/cs-filter}
+
+\input{tex/Implementering/3iteration/Snubber}
+
+\input{tex/Implementering/3iteration/Udgangsfilter}
+
+\input{tex/Implementering/3iteration/Regulering}
 
 
 
@@ -38,9 +47,11 @@ I dette afsnit beskrives hvordan nøglekomponenterne i konverteren er designet, 
 	% PWM controller
 	% MOSFET, diode og udgangsfilter
 	% Regulering
+	% Tab
 	
 %%% Tredje iteration
 	% Snubber
 	% Switch-tid
 	% Udgangsfilter
 	% Regulering
+	% Tab
