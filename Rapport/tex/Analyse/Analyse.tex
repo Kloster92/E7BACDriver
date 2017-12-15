@@ -35,7 +35,7 @@ PWM-controlleren er en central del af en DC/DC converter. Det er denne controlle
 
 Ud fra disse krav, er det valgt at bruge en PWM-controller af typen UCC1801\cite{UCC1801}. Denne controller lever op til de førnævnte krav, og desuden understøtter den peak-current regulering. Den har indbyggede reguleringssløjfer, således nødvendigheden for eksterne komponenter mindskes. Derudover indeholder den flere sikkerhedsfunktioner ved opstart. Det er også en controller Terma har erfaringer med, og ved den kan omsættes til en lignende komponent der er godkendt til rumfart. 
 
-\section{Transformator}
+\section{Transformator} \label{Transana}
 Størrelsen på transformatoren betyder meget ift. temperaturstigningen, som en konsekvens af effektafsættelsen i transformatoren. Den termiske modstand i den er afhængig af størrelsen\cite{epcos-cores}. Derfor er det valgt at bruge en RM8\cite{RM8} som er den største kerne, der stadig overholder kravene for dimensionerne. Desuden er det valgt at bruge kernematerialet 3f3\cite{3f3}.
 
 %%% Converter topologi
