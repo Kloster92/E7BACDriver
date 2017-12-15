@@ -29,7 +29,7 @@ Ud fra disse undersøgelser er det blevet valgt, at arbejde videre med en flybac
 Der er to overordnede reguleringsmetoder der bruges til regulering i en DC/DC converter - Voltage controle og peak-current controle. Ved spændingsregulering vil reguleringen udelukkende ske på baggrund af et spændingsfeedback til reguleringssløjfen. Ved peak-current regulering, reguleres der både efter strømmen og spændingen på udgangen. Det sikre en overstrømsbeskyttelse for converteren. Den ekstra reguleringsløkke vil samtidig simplificere reguleringen af en flyback converter i CCM. 
 
 \noindent Derfor vælges det, at implementere en peak-current regulering i converteren. 
-
+\fxnote{De overordnede er vel med current control og ikke peak current specifikt}
 \section{PWM-controller}
 PWM-controlleren er en central del af en DC/DC converter. Det er denne controller der står for at generere switch-signalet til converterens switch-element. Af denne grund er der mange krav PWM-controlleren skal leve op til. Den skal først og fremmest understøtte den valgt reguleringsmetode. Den skal kunne generere den maksimale duty-cycle der vil kunne fremstå i converterens switch-signal. Den skal kunne opretholde den valgte switch-frekvens. Derudover skal den også kunne generere et switch-signal med en amplitude der er høj nok, til at kunne drive den valgte MOSFET.
 
