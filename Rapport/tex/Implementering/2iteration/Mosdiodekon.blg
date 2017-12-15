@@ -1,0 +1,5 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[1] Config.pm:305> INFO - Logfile is 'Mosdiodekon.blg'
+[101] biber-MSWIN32:313> INFO - === 
+[1274] Utils.pm:185> ERROR - Cannot find control file 'Mosdiodekon.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[1274] Biber.pm:114> INFO - ERRORS: 1

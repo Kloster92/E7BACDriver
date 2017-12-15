@@ -1,0 +1,33 @@
+\section{Tab}
+Dette afsnit omhandler de overvejelser, der er gjort omkring tab i 2. iteration. Her omtales hvilke bidrag, der er taget højde for, til udberegninger af tab for de enkelte komponenter. Udregningerne og yderligere forklaring af disse, kan findes dokumentationen afsnit 5.7.
+
+\subsubsection{Transformator}
+Tabet i transformatoren er set som to dele. Et kernetab og et kobbertab. Kernetabet afhænger af  kernematerialet, selvinduktionen og strømmen i viklingerne. Disse bruges til at udregne fluxen i kernen. Med denne værdi og databladskurven for det specifikke tab som funktion af maks flux massefylden, er kernetabet blevet estimeret. 
+
+Kobbertabet kommer af modstanden, der er i kobbertrådene, som er viklet om kernen. Dette indebærer både bidrag fra en DC modstand og en AC modstand. DC modstanden er udregnet ud fra længden og tykkelsen af kobbertrådene. AC modstanden opstår på grund af magnetfeltet kobbertrådene ligger i. AC modstandens del af kobbertabet er der i dette projket ikke valgt at tage højde for.
+
+Det samlede tab for transformatoren er testet, ved at måle temperaturen på kernen efter converteren har været i gang over længere tid. Med en datablads værdi af den termiske modstand for en RM8 kerne er tabet herefter udregnet.   
+
+\subsubsection{MOSFET}
+MOSFET'ens tab kan ligeledes deles op i to centrale bidrag; 
+
+conduction tab og switchtab. Conduction tabet kommer af RMS strømmen der løber i MOSFET'ens ON modstand. 
+
+Switchtabet kommer som konsekvens af effekttrekanterne, der opstår, imellem MOSFET'ens ON og OFF perioder. Effekttrekanterne er i dette projekt estimeret ved at udregne dem som arealet af to lige store trekanter. Højden på trekanten er peakaverage strømmen ganget med den maksimale spænding der vil ligge over MOSFET'en. Længden af trekanten fås af den samlede switch-tid i forhold til den samlede switch periode. 
+
+Det samlede tab i MOSFET'en er testet ved at måle temperaturen på kølepladen efter converteren har været i gang over længere tid. Denne temperaturstigning ganget med køle-koefficienten for kølepladen giver tabet. 
+
+\subsubsection{Diode}
+Tabet i dioden er udregnet ved, at kigge på spændingsfaldet over dioden ganget udgangsstrømmen. Som nævnt benyttes en schottky diode, og der har derfor ikke været behov for betragtninger af switch-tabet i dioden. 
+
+Tabet for dioden er fundet ved at måle temperaturen af kølepladen ligesom ved MOSFET'en ovenfor.   
+
+\subsubsection{Kondensator}
+Med en kendt ESR modstand for kondensatoren, har det været muligt at beregne tabet i denne. Da modstanden er så lille, er tabet dog uden betydning for det samlede tab.
+
+\subsubsection{Current-sence tab}
+Tabet i current-sence modstanden er udregnet ved modstandsværdien ganget med RMS strømmen i anden. Strømmen i igennem modstanden er den samme som løber i den primære vikling. 
+
+\subsubsection{Samlet tab}
+De ovenstående tab er alle analyseret og simuleret. Derudover er der lavet test af de tab, hvor det var muligt. Resultatet af dette ses i resultatafsnittet \fxnote{indsæt resultatafsnit for tab}.
+Det samlede tab for converteren i 2. iteration er i analyse og simulering fundet ved at lægge de fundne tab sammen. I testen er der set på den effekt der sendes ind i converteren og trukket udgangseffekten fra denne.
