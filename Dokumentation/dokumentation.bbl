@@ -235,6 +235,19 @@
       \field{title}{NTSV30120CT-D.pdf}
       \field{year}{2014}
     \endentry
+    \entry{Kondensator}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=45b2032ba698ea2dbd06517108fe399a}{TDK}{T\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{45b2032ba698ea2dbd06517108fe399a}
+      \strng{fullhash}{45b2032ba698ea2dbd06517108fe399a}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PET-B32526-56uF.pdf}
+      \field{year}{2015}
+    \endentry
     \entry{ESR}{article}{}
       \name{author}{1}{}{%
         {{hash=da4ef9d35250f6dfeea290773346db3b}{Yuden}{Y\bibinitperiod}{Taiyo}{T\bibinitperiod}{}{}{}{}}%
@@ -269,10 +282,10 @@
     \endentry
     \entry{inputfilter}{article}{}
       \name{author}{1}{}{%
-        {{hash=e6b9b34639b303e1df059b0dc5058d65}{Sclocchi}{S\bibinitperiod}{Michele}{M\bibinitperiod}{}{}{}{}}%
+        {{hash=21ab21acb4a3467896a5e43413adad2b}{Sclocchi}{S\bibinitperiod}{Michelle}{M\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{e6b9b34639b303e1df059b0dc5058d65}
-      \strng{fullhash}{e6b9b34639b303e1df059b0dc5058d65}
+      \strng{namehash}{21ab21acb4a3467896a5e43413adad2b}
+      \strng{fullhash}{21ab21acb4a3467896a5e43413adad2b}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -295,10 +308,10 @@
     \endentry
     \entry{eddyCurrentLosses}{article}{}
       \name{author}{1}{}{%
-        {{hash=e91bb8c4b0610eaeb094afe652c4d8a3}{Lloyd\bibnamedelimb H.\bibnamedelimi Dixon}{L\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim D\bibinitperiod}{Jr.}{J\bibinitperiod}{}{}{}{}}%
+        {{hash=998d4b288f171af391b84b2c8358dd59}{Dixon}{D\bibinitperiod}{Lloyd\bibnamedelima H.}{L\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{e91bb8c4b0610eaeb094afe652c4d8a3}
-      \strng{fullhash}{e91bb8c4b0610eaeb094afe652c4d8a3}
+      \strng{namehash}{998d4b288f171af391b84b2c8358dd59}
+      \strng{fullhash}{998d4b288f171af391b84b2c8358dd59}
       \field{sortinit}{0}
       \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
@@ -368,6 +381,37 @@
       \field{labeltitlesource}{title}
       \field{title}{EvaluatingDC-DC Converters.pdf}
       \field{year}{2014}
+    \endentry
+    \entry{Heatsink}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ea4e9831aad2576d44836da0919cc4db}{Elextra.dk}{E\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{ea4e9831aad2576d44836da0919cc4db}
+      \strng{fullhash}{ea4e9831aad2576d44836da0919cc4db}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{month}{12}
+      \field{title}{Heatsink.pdf}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.elextra.dk/details/H16848/koeleplade-40mm-1-x-to3-95c-w
+      \endverb
+    \endentry
+    \entry{epcos-cores}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=00531de2c9f2752cf536aad51b8a23b8}{EPCOS}{E\bibinitperiod}{}{}{}{}{}{}}%
+      }
+      \strng{namehash}{00531de2c9f2752cf536aad51b8a23b8}
+      \strng{fullhash}{00531de2c9f2752cf536aad51b8a23b8}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{EPCOS kerner.pdf}
+      \field{year}{2006}
     \endentry
     \entry{snubber_parasit}{article}{}
       \name{author}{1}{}{%
