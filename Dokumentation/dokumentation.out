@@ -22,7 +22,7 @@
 \BOOKMARK [2][-]{subsection.4.4.2}{DCM}{section.4.4}% 22
 \BOOKMARK [1][-]{section.4.5}{Udgangskondensator}{chapter.4}% 23
 \BOOKMARK [1][-]{section.4.6}{Simulering}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.7}{Opsummering}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.7}{Opsummering/Delkonklusion}{chapter.4}% 25
 \BOOKMARK [0][-]{chapter.5}{Anden Iteration}{}% 26
 \BOOKMARK [1][-]{section.5.1}{Transformator}{chapter.5}% 27
 \BOOKMARK [2][-]{subsection.5.1.1}{Design}{section.5.1}% 28
@@ -58,48 +58,47 @@
 \BOOKMARK [2][-]{subsection.5.9.2}{PWM-controller}{section.5.9}% 58
 \BOOKMARK [2][-]{subsection.5.9.3}{Sp\346ndingsdeler}{section.5.9}% 59
 \BOOKMARK [2][-]{subsection.5.9.4}{Gain-fase m\345ling}{section.5.9}% 60
-\BOOKMARK [2][-]{subsection.5.9.5}{Tab}{section.5.9}% 61
-\BOOKMARK [1][-]{section.5.10}{Opsummering}{chapter.5}% 62
-\BOOKMARK [2][-]{subsection.5.10.1}{Transformator}{section.5.10}% 63
-\BOOKMARK [2][-]{subsection.5.10.2}{Constant load}{section.5.10}% 64
-\BOOKMARK [2][-]{subsection.5.10.3}{PWM controller}{section.5.10}% 65
-\BOOKMARK [2][-]{subsection.5.10.4}{Gain-fase}{section.5.10}% 66
-\BOOKMARK [2][-]{subsection.5.10.5}{Load step}{section.5.10}% 67
-\BOOKMARK [2][-]{subsection.5.10.6}{Tab}{section.5.10}% 68
-\BOOKMARK [0][-]{chapter.6}{Tredje Iteration}{}% 69
-\BOOKMARK [1][-]{section.6.1}{Switch-tid}{chapter.6}% 70
-\BOOKMARK [1][-]{section.6.2}{Current-sense filter}{chapter.6}% 71
-\BOOKMARK [1][-]{section.6.3}{Snubber-kredsl\370b}{chapter.6}% 72
-\BOOKMARK [1][-]{section.6.4}{Udgangsfilter}{chapter.6}% 73
-\BOOKMARK [1][-]{section.6.5}{Gain-fase}{chapter.6}% 74
-\BOOKMARK [1][-]{section.6.6}{Tab}{chapter.6}% 75
-\BOOKMARK [2][-]{subsection.6.6.1}{MOSFET}{section.6.6}% 76
-\BOOKMARK [2][-]{subsection.6.6.2}{Snubber-kredsl\370b}{section.6.6}% 77
-\BOOKMARK [2][-]{subsection.6.6.3}{Oversigt over simuleret tab}{section.6.6}% 78
-\BOOKMARK [1][-]{section.6.7}{Simulering}{chapter.6}% 79
-\BOOKMARK [2][-]{subsection.6.7.1}{Switch-tid}{section.6.7}% 80
-\BOOKMARK [2][-]{subsection.6.7.2}{Current-sense filter}{section.6.7}% 81
-\BOOKMARK [2][-]{subsection.6.7.3}{Snubber-kredsl\370b}{section.6.7}% 82
-\BOOKMARK [2][-]{subsection.6.7.4}{Udgangsfilter}{section.6.7}% 83
-\BOOKMARK [2][-]{subsection.6.7.5}{Gain-fase}{section.6.7}% 84
-\BOOKMARK [2][-]{subsection.6.7.6}{Load step}{section.6.7}% 85
-\BOOKMARK [2][-]{subsection.6.7.7}{Tab}{section.6.7}% 86
-\BOOKMARK [1][-]{section.6.8}{Realisering}{chapter.6}% 87
-\BOOKMARK [2][-]{subsection.6.8.1}{Switch-tid}{section.6.8}% 88
-\BOOKMARK [2][-]{subsection.6.8.2}{Current-sense filter}{section.6.8}% 89
-\BOOKMARK [2][-]{subsection.6.8.3}{Snubber-kredsl\370b}{section.6.8}% 90
-\BOOKMARK [2][-]{subsection.6.8.4}{Udgangsfilter}{section.6.8}% 91
-\BOOKMARK [2][-]{subsection.6.8.5}{Gain-fase}{section.6.8}% 92
-\BOOKMARK [2][-]{subsection.6.8.6}{Load step}{section.6.8}% 93
-\BOOKMARK [2][-]{subsection.6.8.7}{Tab}{section.6.8}% 94
-\BOOKMARK [1][-]{section.6.9}{Opsummering}{chapter.6}% 95
-\BOOKMARK [2][-]{subsection.6.9.1}{Switch-tid}{section.6.9}% 96
-\BOOKMARK [2][-]{subsection.6.9.2}{Current-sense filter}{section.6.9}% 97
-\BOOKMARK [2][-]{subsection.6.9.3}{Snubber-kredsl\370b}{section.6.9}% 98
-\BOOKMARK [2][-]{subsection.6.9.4}{Udgangsfilter}{section.6.9}% 99
-\BOOKMARK [2][-]{subsection.6.9.5}{Regulering}{section.6.9}% 100
-\BOOKMARK [2][-]{subsection.6.9.6}{Tab}{section.6.9}% 101
-\BOOKMARK [2][-]{subsection.6.9.7}{Videreudvikling}{section.6.9}% 102
-\BOOKMARK [0][-]{chapter.7}{Udf\370rt accepttest}{}% 103
-\BOOKMARK [1][-]{section.7.1}{Test af ikke-funktionelle krav}{chapter.7}% 104
-\BOOKMARK [0][-]{section*.158}{Litteraturliste}{}% 105
+\BOOKMARK [1][-]{section.5.10}{Opsummering/del konklusion}{chapter.5}% 61
+\BOOKMARK [2][-]{subsection.5.10.1}{Transformator}{section.5.10}% 62
+\BOOKMARK [2][-]{subsection.5.10.2}{Constant load}{section.5.10}% 63
+\BOOKMARK [2][-]{subsection.5.10.3}{PWM controller}{section.5.10}% 64
+\BOOKMARK [2][-]{subsection.5.10.4}{Gain-fase}{section.5.10}% 65
+\BOOKMARK [2][-]{subsection.5.10.5}{Load step}{section.5.10}% 66
+\BOOKMARK [2][-]{subsection.5.10.6}{Tab}{section.5.10}% 67
+\BOOKMARK [0][-]{chapter.6}{Tredje Iteration}{}% 68
+\BOOKMARK [1][-]{section.6.1}{Switch-tid}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.2}{Current-sense filter}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.3}{Snubber-kredsl\370b}{chapter.6}% 71
+\BOOKMARK [1][-]{section.6.4}{Udgangsfilter}{chapter.6}% 72
+\BOOKMARK [1][-]{section.6.5}{Gain-fase}{chapter.6}% 73
+\BOOKMARK [1][-]{section.6.6}{Tab}{chapter.6}% 74
+\BOOKMARK [2][-]{subsection.6.6.1}{MOSFET}{section.6.6}% 75
+\BOOKMARK [2][-]{subsection.6.6.2}{Snubber-kredsl\370b}{section.6.6}% 76
+\BOOKMARK [2][-]{subsection.6.6.3}{Oversigt over simuleret tab}{section.6.6}% 77
+\BOOKMARK [1][-]{section.6.7}{Simulering}{chapter.6}% 78
+\BOOKMARK [2][-]{subsection.6.7.1}{Switch-tid}{section.6.7}% 79
+\BOOKMARK [2][-]{subsection.6.7.2}{Current-sense filter}{section.6.7}% 80
+\BOOKMARK [2][-]{subsection.6.7.3}{Snubber-kredsl\370b}{section.6.7}% 81
+\BOOKMARK [2][-]{subsection.6.7.4}{Udgangsfilter}{section.6.7}% 82
+\BOOKMARK [2][-]{subsection.6.7.5}{Gain-fase}{section.6.7}% 83
+\BOOKMARK [2][-]{subsection.6.7.6}{Load step}{section.6.7}% 84
+\BOOKMARK [2][-]{subsection.6.7.7}{Tab}{section.6.7}% 85
+\BOOKMARK [1][-]{section.6.8}{Realisering}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.8.1}{Switch-tid}{section.6.8}% 87
+\BOOKMARK [2][-]{subsection.6.8.2}{Current-sense filter}{section.6.8}% 88
+\BOOKMARK [2][-]{subsection.6.8.3}{Snubber-kredsl\370b}{section.6.8}% 89
+\BOOKMARK [2][-]{subsection.6.8.4}{Udgangsfilter}{section.6.8}% 90
+\BOOKMARK [2][-]{subsection.6.8.5}{Gain-fase}{section.6.8}% 91
+\BOOKMARK [2][-]{subsection.6.8.6}{Load step}{section.6.8}% 92
+\BOOKMARK [2][-]{subsection.6.8.7}{Tab}{section.6.8}% 93
+\BOOKMARK [1][-]{section.6.9}{Opsummering/Delkonklusion}{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.9.1}{Switch-tid}{section.6.9}% 95
+\BOOKMARK [2][-]{subsection.6.9.2}{Current-sense filter}{section.6.9}% 96
+\BOOKMARK [2][-]{subsection.6.9.3}{Snubber-kredsl\370b}{section.6.9}% 97
+\BOOKMARK [2][-]{subsection.6.9.4}{Udgangsfilter}{section.6.9}% 98
+\BOOKMARK [2][-]{subsection.6.9.5}{Regulering}{section.6.9}% 99
+\BOOKMARK [2][-]{subsection.6.9.6}{Tab}{section.6.9}% 100
+\BOOKMARK [2][-]{subsection.6.9.7}{Videreudvikling}{section.6.9}% 101
+\BOOKMARK [0][-]{chapter.7}{Udf\370rt accepttest}{}% 102
+\BOOKMARK [1][-]{section.7.1}{Test af ikke-funktionelle krav}{chapter.7}% 103
+\BOOKMARK [0][-]{section*.148}{Litteraturliste}{}% 104

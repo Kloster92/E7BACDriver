@@ -2240,27 +2240,24 @@
     <bcf:citekey order="23">RMS-current</bcf:citekey>
     <bcf:citekey order="24">gate_res</bcf:citekey>
     <bcf:citekey order="25">NTSV30120</bcf:citekey>
-    <bcf:citekey order="26">Kondensator</bcf:citekey>
+    <bcf:citekey order="26">ESR</bcf:citekey>
     <bcf:citekey order="27">ESR</bcf:citekey>
-    <bcf:citekey order="28">ESR</bcf:citekey>
-    <bcf:citekey order="29">rule_of_thumb</bcf:citekey>
-    <bcf:citekey order="30">inputfilter</bcf:citekey>
-    <bcf:citekey order="31">core-loss</bcf:citekey>
-    <bcf:citekey order="32">eddyCurrentLosses</bcf:citekey>
-    <bcf:citekey order="33">wire-diameter</bcf:citekey>
-    <bcf:citekey order="34">mosfet-switch2</bcf:citekey>
-    <bcf:citekey order="35">RMS-current</bcf:citekey>
-    <bcf:citekey order="36">ucc1801-pspice</bcf:citekey>
+    <bcf:citekey order="28">rule_of_thumb</bcf:citekey>
+    <bcf:citekey order="29">inputfilter</bcf:citekey>
+    <bcf:citekey order="30">core-loss</bcf:citekey>
+    <bcf:citekey order="31">eddyCurrentLosses</bcf:citekey>
+    <bcf:citekey order="32">wire-diameter</bcf:citekey>
+    <bcf:citekey order="33">mosfet-switch2</bcf:citekey>
+    <bcf:citekey order="34">RMS-current</bcf:citekey>
+    <bcf:citekey order="35">ucc1801-pspice</bcf:citekey>
+    <bcf:citekey order="36">IRF630</bcf:citekey>
     <bcf:citekey order="37">IRF630</bcf:citekey>
-    <bcf:citekey order="38">IRF630</bcf:citekey>
-    <bcf:citekey order="39">evalgp</bcf:citekey>
-    <bcf:citekey order="40">Heatsink</bcf:citekey>
-    <bcf:citekey order="41">epcos-cores</bcf:citekey>
-    <bcf:citekey order="42">gate_res</bcf:citekey>
-    <bcf:citekey order="43">snubber_parasit</bcf:citekey>
-    <bcf:citekey order="44">snubber_design</bcf:citekey>
-    <bcf:citekey order="45">snubber_design</bcf:citekey>
-    <bcf:citekey order="46">snubber_power</bcf:citekey>
+    <bcf:citekey order="38">evalgp</bcf:citekey>
+    <bcf:citekey order="39">gate_res</bcf:citekey>
+    <bcf:citekey order="40">snubber_parasit</bcf:citekey>
+    <bcf:citekey order="41">snubber_design</bcf:citekey>
+    <bcf:citekey order="42">snubber_design</bcf:citekey>
+    <bcf:citekey order="43">snubber_power</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>
