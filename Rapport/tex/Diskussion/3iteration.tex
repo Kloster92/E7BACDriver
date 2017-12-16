@@ -1,0 +1,18 @@
+
+\section{Tredje iteration}
+I 3. iteration blev den anden version af converteren implementeret. Her blev der især lagt vægt på manglerne fundet efter 2. iteration. 
+
+Efter udgangen blev flyttet, blev der målt switching-spikes på udgangssignalet op mod $920mV$ pk-pk. Det er stadig større end kravet på $100mV$ pk-pk, og det skal derfor optimeres yderligere i en senere iteration. Ripple-spændingen på udgangssignalet blev målt til $50mV$ pk-pk, hvilket overholder kravet, og derfor godtages.
+
+Efter tilføjelse af snubber-kredsløb, blev det observeret at svingningerne efter spændings-peaken er blevet fjernet. Desuden blev tabet i de to kredsløb vurderet minimalt ift. de dominerende tab. Derfor blev de implementerede snubbere godtaget.
+
+Switch-tiden i MOSFET'en blev målt til $40ns$, hvor der var designet efter $37.2ns$. Denne switch tid medførte et nyt samlet tab i MOSFET'en på $2.3W$. Det er stadig en stor del af det samlede tab, og skal derfor overvejes andre muligheder fremadrettet. Stigetiden i current-sense filteret blev målt til $100ns$, hvilket der også blev designet efter. Den hurtigere stigetid medførte nogle hurtige flanker på current-sense signalet, som kan godkendes.
+
+Converterens båndbredde blev målt til $3.86k\hertz$, ved en gain-margin på $14.5\decibel$ og en fasemargin på $69.8^\circ$. Dette er stadig med en margin til de opstillede krav, men det blev valgt, at der ikke vil blive optimeret yderligere på båndbredden. 
+
+Ved et load-step på converterens udgang, blev der målt et udfald på udgangsspændingen på op til $300mV$, før den blev reguleret tilbage til udgangspunktet. Her er der opnået en hurtigere responstid i reguleringen. Den samlede reguleringstid blev målt til $2ms$, hvilket er lidt langsommere ift. 2. iteration. 
+
+Det samlede tab i converteren blev målt til $5.9W$. Det var stadig større end kravet på et maksimalt effekttab på $5W$. Derfor blev det valgt, at undersøge yderligere metoder til optimering af effekttabet, for opnåelse af kravet. 
+
+Desuden er der blevet opstillet en tilfredsstillende p-spice model for converteren. Denne model kan bruges til en præcis efterligning af den endelige converters funktionalitet. Der er dog nogle simuleringsresultater der ikke er som forventet, da der ikke kunne skaffes en model for den ønskede MOSFET. 
+
