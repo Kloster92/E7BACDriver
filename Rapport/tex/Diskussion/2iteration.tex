@@ -1,0 +1,13 @@
+
+\section{Anden iteration}
+I 2. iteration blev den første version af converteren implementeret.
+
+Der blev viklet en transformator med en selvinduktion på $57.7\micro H$, hvor der blev designet efter en induktion på $57.76\micro H$. Denne afvigelse vurderes ubetydelig, og derfor godtages dette. Yderligere blev spredningsselvinduktionen målt til $152nH$. Dette giver en kobling i transformatoren på $99.73\percent$. Denne kobling vurderes tilfredsstillende, og derfor vurderes transformatoren samlet som godkendt. 
+
+På udgangen af converteren blev en DC-spænding på $20.97V$. Dette er indenfor kravet for en afvigelse på $21V \pm2\percent$, derfor godkendes dette. Der blev tilgengæld målt switching-spikes på udgangen på omkring $3.5V$ pk-pk. Dette opfylder ikke kravet på $100mV$ pk-pk, og derfor blev dette optimeret i 3. iteration. 
+
+Den stationære drain-spænding over MOSFET'en blev målt til lidt over $47V$. Med en indgangsspænding på $26V$ og en udgangsspænding på $21V$, var dette som analyseret. Desuden blev der målt peak-spændinger op mod $80V$. For at tage højde for disse spikes blev der valgt en MOSFET med en breakdown spænding på $150V$. Samme måling blev foretaget for dioden. Her blev der målt en stationær spænding over den på $45V$, med spikes op mod $67V$. Her blev der valgt en diode med en breakdown spænding på $120V$. Da der ved begge komponenter er en stor margin til de respektive breakdown spændinger godtages disse komponentvalg.
+
+Der blev dog målt observeret, at der blev anslået svingninger på spændingerne over MOSFET og diode. Derfor blev det valgt at udvikle snubber-kredsløb, til dæmpning af disse svingninger. 
+
+ 
