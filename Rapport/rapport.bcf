@@ -2217,6 +2217,29 @@
   <bcf:section number="0">
     <bcf:citekey order="1">projekt-oplag</bcf:citekey>
     <bcf:citekey order="2">MoSCoW</bcf:citekey>
+    <bcf:citekey order="3">udviklingsproces</bcf:citekey>
+    <bcf:citekey order="4">Scrum</bcf:citekey>
+    <bcf:citekey order="5">Github</bcf:citekey>
+    <bcf:citekey order="6">Latex</bcf:citekey>
+    <bcf:citekey order="7">buck-converter</bcf:citekey>
+    <bcf:citekey order="8">SMPS-topologies</bcf:citekey>
+    <bcf:citekey order="9">UCC1801</bcf:citekey>
+    <bcf:citekey order="10">epcos-cores</bcf:citekey>
+    <bcf:citekey order="11">RM8</bcf:citekey>
+    <bcf:citekey order="12">3f3</bcf:citekey>
+    <bcf:citekey order="13">SMPS-topologies</bcf:citekey>
+    <bcf:citekey order="14">SMPS-topologies</bcf:citekey>
+    <bcf:citekey order="15">SMPS-topologies2</bcf:citekey>
+    <bcf:citekey order="16">flyback-formler</bcf:citekey>
+    <bcf:citekey order="17">UCC1801</bcf:citekey>
+    <bcf:citekey order="18">ucc1801-pspice</bcf:citekey>
+    <bcf:citekey order="19">UCC1801</bcf:citekey>
+    <bcf:citekey order="20">IRFB23N15</bcf:citekey>
+    <bcf:citekey order="21">NTSV30120</bcf:citekey>
+    <bcf:citekey order="22">Kondensator</bcf:citekey>
+    <bcf:citekey order="23">hp4194</bcf:citekey>
+    <bcf:citekey order="24">snubber_design</bcf:citekey>
+    <bcf:citekey order="25">rule_of_thumb</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="none" type="entry" sortscheme="none">
   <bcf:sorting>

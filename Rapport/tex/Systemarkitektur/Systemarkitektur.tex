@@ -14,11 +14,11 @@ Figur~\ref{fig:BDD} viser et BDD for det samlede system. Det giver et overblik o
 	\label{fig:BDD}
 \end{figure}
 
-Universal Actuator Drive består af fire overordnede blokke - et Power-modul, et Input-filter, en PWM-forsyning og et PWM-modul. Power-modulet indebærer selve effektoverførelsen fra indgang til udgang. Det er i dette modul de dominerende effektafsættelser sker, og derfor også her det termiske design skal optimeres. 
+\noindent Universal Actuator Drive består af fire overordnede blokke - et Power-modul, et Input-filter, en PWM-forsyning og et PWM-modul. Power-modulet indebærer selve effektoverførelsen fra indgang til udgang. Det er i dette modul de dominerende effektafsættelser sker, og derfor også her det termiske design skal optimeres. 
 
-Input-filteret indebærer det filter der skal sikre en stabilt indgangsspænding til Power-modulet. Derudover skal det fjerne højfrekvent ripple-spændinger fra indgangssignalet. 
+Input-filteret indebærer det filter der sikre en stabil indgangsspænding til Power-modulet. Derudover skal det fjerne højfrekvent ripple-spændinger fra indgangssignalet. 
 
-PWM-forsyningen indebærer en regulator til regulering af PWM-modulets forsyningsspænding. Her vil der udvikles en metode der forsyner regulatoren fra indgangskilden under opstart, og udgangen når denne er stabil.
+\noindent PWM-forsyningen indebærer en regulator til regulering af PWM-modulets forsyningsspænding. Her vil der udvikles en metode der forsyner regulatoren fra indgangskilden under opstart, og udgangen når denne er stabil.
 
 PWM-modulet indebærer PWM-controlleren der skal regulere udgangen til den ønskede belastning. Dette sker ved tilpasning af switch-signalet, samt strøm- og spændingsregulering af udgangen.
 

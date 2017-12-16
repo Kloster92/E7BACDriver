@@ -1,8 +1,35 @@
 \BOOKMARK [0][-]{section*.2}{Indhold}{}% 1
 \BOOKMARK [0][-]{chapter.1}{Indledning}{}% 2
-\BOOKMARK [0][-]{chapter.2}{Opgaveformulering}{}% 3
-\BOOKMARK [0][-]{chapter.3}{Projektafgr\346nsning}{}% 4
-\BOOKMARK [0][-]{chapter.4}{Systembeskrivelse}{}% 5
-\BOOKMARK [0][-]{chapter.5}{Krav}{}% 6
-\BOOKMARK [1][-]{section.5.1}{Kravspecifikation}{chapter.5}% 7
-\BOOKMARK [0][-]{section*.6}{Litteraturliste}{}% 8
+\BOOKMARK [1][-]{section.1.1}{Opgaveformulering}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Ordliste}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Krav}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Kravspecifikation}{chapter.2}% 6
+\BOOKMARK [0][-]{chapter.3}{Systembeskrivelse}{}% 7
+\BOOKMARK [0][-]{chapter.4}{Projektafgr\346nsning}{}% 8
+\BOOKMARK [0][-]{chapter.5}{Metode og proces}{}% 9
+\BOOKMARK [1][-]{section.5.1}{Metoder}{chapter.5}% 10
+\BOOKMARK [1][-]{section.5.2}{Proces}{chapter.5}% 11
+\BOOKMARK [0][-]{chapter.6}{Analyse}{}% 12
+\BOOKMARK [1][-]{section.6.1}{Converter topologi}{chapter.6}% 13
+\BOOKMARK [1][-]{section.6.2}{Reguleringsmetode}{chapter.6}% 14
+\BOOKMARK [1][-]{section.6.3}{PWM-controller}{chapter.6}% 15
+\BOOKMARK [1][-]{section.6.4}{Transformator}{chapter.6}% 16
+\BOOKMARK [0][-]{chapter.7}{Systemarkitektur}{}% 17
+\BOOKMARK [1][-]{section.7.1}{Block Definition Diagram}{chapter.7}% 18
+\BOOKMARK [1][-]{section.7.2}{Internal Block Diagram}{chapter.7}% 19
+\BOOKMARK [0][-]{chapter.8}{Design, implementering og test}{}% 20
+\BOOKMARK [1][-]{section.8.1}{F\370rste iteration}{chapter.8}% 21
+\BOOKMARK [1][-]{section.8.2}{Anden iteration}{chapter.8}% 22
+\BOOKMARK [1][-]{section.8.3}{Integrationstest}{chapter.8}% 23
+\BOOKMARK [1][-]{section.8.4}{Tredje iteration}{chapter.8}% 24
+\BOOKMARK [0][-]{chapter.9}{Resultater}{}% 25
+\BOOKMARK [1][-]{section.9.1}{F\370rste iteration}{chapter.9}% 26
+\BOOKMARK [1][-]{section.9.2}{Anden iteration}{chapter.9}% 27
+\BOOKMARK [1][-]{section.9.3}{Tredje iteration}{chapter.9}% 28
+\BOOKMARK [0][-]{chapter.10}{Diskussion af resultater}{}% 29
+\BOOKMARK [1][-]{section.10.1}{F\370rste iteration}{chapter.10}% 30
+\BOOKMARK [1][-]{section.10.2}{Anden iteration}{chapter.10}% 31
+\BOOKMARK [1][-]{section.10.3}{Tredje iteration}{chapter.10}% 32
+\BOOKMARK [0][-]{chapter.11}{Fremtidig arbejde}{}% 33
+\BOOKMARK [0][-]{chapter.12}{Konklusion}{}% 34
+\BOOKMARK [0][-]{section*.46}{Litteraturliste}{}% 35

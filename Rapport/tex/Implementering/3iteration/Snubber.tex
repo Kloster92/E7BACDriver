@@ -1,6 +1,6 @@
 
 \subsection{Snubber-kredsløb}
-Der blev designet to snubber-kredsløb for, at fjerne ringninger på spændingen over både MOSFET og diode. De blev anslået som en konsekvens af at spredningsselvinduktionen fremstår som en serie forbindelse med kapaciteten over henholdsvis MOSFET'en, dioden og den kapacitive kobling mellem transformatorens viklinger.  
+Der blev designet to snubber-kredsløb for, at fjerne ringninger på spændingen over både MOSFET og diode. De blev anslået som en konsekvens af, at spredningsselvinduktionen fremstår som en serie forbindelse med kapaciteten over henholdsvis MOSFET'en, dioden og den kapacitive kobling mellem transformatorens viklinger.  
 
 Det blev valgt at implementere RC-snubbere til både primær- og sekundærsiden. De består af en modstand i serie med en kondensator, som skal placeres over henholdsvis MOSFET og diode. 
 
@@ -10,9 +10,9 @@ Figur~\ref{fig:snubber_diagram} viser implementeringen af de to snubber kredslø
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{/tex/Implementering/3iteration/Billeder/Snubber_diagram.png}
+	\includegraphics[width=0.4\linewidth]{/tex/Implementering/3iteration/Billeder/Snubber_diagram.png}
 	\caption{P-spice diagram for snubber-kredsløb}
 	\label{fig:snubber_diagram}
 \end{figure}
 
-Designmetoden for snubber-kredsløbet på sekundærsiden er den samme. Der findes en detaljeret gennemgang af designproceduren og en argumentation for valg snubber type i dokumentationens afsnit 6.3.
+\noindent Designmetoden for snubber-kredsløbet på sekundærsiden er den samme. Der findes en detaljeret gennemgang af designproceduren og en argumentation for valg snubber-type i dokumentationens afsnit 6.3.

@@ -1,6 +1,7 @@
 \chapter{Metode og proces}
 
 \section{Metoder}
+I de følgende afsnit beskrives de anvendte udviklingsmetoder i projektforløbet.
 
 \subsection{ASE-modellen}
 Til dette projekt er der brugt en iterativ udviklingsproces. Det er gjort da en iterativ proces er særligt velegnet til projekter, hvor kendskabet til domænet kan være begrænset. 
@@ -12,14 +13,14 @@ Der er taget udgangspunkt i den generelle ASE udviklingsmodel~\cite{udviklingspr
 	\caption{ASE model med fokus på iterativ proces}
 	\label{fig:ASE}
 \end{figure}  
-I begyndelsen hvor produktet bliver specificeret med krav, har det ikke været så iterativt som de efterfølgende faser. Det skyldes at oplægget er kommet fra Terma, som har været med til at specificere kravene, og de har derfor ligget forholdsvis fast. Der har været få ændringer løbende, men det er begrænset.
+\noindent I begyndelsen hvor produktet bliver specificeret med krav, har det ikke været så iterativt som de efterfølgende faser. Det skyldes at oplægget er kommet fra Terma, som har været med til at specificere kravene, og de har derfor ligget forholdsvis fast. Der har været få ændringer løbende, men det er begrænset.
 
-Til gengæld har især design-, implementerings- og testfasen fungeret iterativt. Her er produktet blevet forbedret i små bider. Inden hver iteration begyndes gøres det klart, hvad der skal ske og hvad der skal opfyldes, inden næste iteration kan påbegyndes. 
+Til gengæld har især design-, implementerings- og testfasen fungeret iterativt. Her er produktet blevet forbedret i små bider. Inden hver iteration begyndes, gøres det klart hvad der skal laves og hvad succeskriteriet er, inden næste iteration kan påbegyndes. 
 
 \subsection{SysML}
-Til at udarbejde systemarkitektur og design af systemet er der benyttet SysML. De anvendte SysML metoder for projektet har været block definitions diagrammer (BDD) og interne blok diagrammer (IBD). BDD'et er brugt til at nedbryde systemerne i mindre blokke, som dermed skal give et bedre overblik over systemets dele, og funktionen af disse. IBD'et viser den hardwaremæssige sammenhæng blokkene imellem.    
+Til at udarbejde systemarkitekturen for systemet er der benyttet SysML. De anvendte SysML metoder for projektet har været block definitions diagrammer (BDD) og interne blok diagrammer (IBD). BDD'et er brugt til at nedbryde systemerne i mindre blokke, som dermed skal give et bedre overblik over systemets dele, og funktionen af disse. IBD'et viser den hardwaremæssige sammenhæng blokkene imellem.    
 
-Ved at bruge er det nemmere for andre udviklere at sætte sig ind i systemet, og samtidig gør det designfasen nemmere, når systemets virkemåde er fastlagt forinden.
+\noindent Ved at bruge det, er det nemmere for andre udviklere at sætte sig ind i systemet, og samtidig gør det designfasen nemmere, når systemets virkemåde er fastlagt forinden.
 
 \subsection{UML}
 Ofte benyttes UML mest til analyse og udarbejdelse af softwarearkitekturen. I dette projekt er UML metoden flowdiagram istedet brugt til at give et overblik over systemets ønskede virkemåde. Flow diagrammer giver et overblik over de valg, systemet gennemgår når det er aktivt.   
@@ -33,16 +34,16 @@ Som beskrevet tidligere har udviklingsprocessen fungeret iterativt. Til at imple
 
 Til de daglige møder tages arbejdet fra dagen før op. Her forklares det, om man har været i stand til at udføre sine opgaver, og hvis ikke, hvilke problematikker det skyldes. Yderligere planlægges det, hvad der skal ske til næste gang. De daglige møder sørger for, at der bliver reflekteret over arbejdet løbende, hvilket sørger for at valgene der tages er gennemtænkt. 
 
-Hver fase fra ASE modellen er blevet anset som iterationer, og har fået et taskboard hver. Hver enkelt iteration er delt op i mindre opgaver, der er lagt ind som backlog items på deres respektive taskboards. Design, implementerings og test iterationen er yderligere delt op i 3 faser for at bevare overblikket. På figur~\ref{fig:Taskboard} ses et øjebliksbillede af taskboardet for 3. iteration af design, implementerings og test.
+Hver fase fra ASE modellen er blevet anset som iterationer, og har fået et taskboard hver. Hver enkelt iteration er delt op i mindre opgaver, der er lagt ind som backlog items på deres respektive taskboards. Design, implementerings og test iterationen er yderligere delt op i 3 iterationer for at bevare overblikket. På figur~\ref{fig:Taskboard} ses et øjebliksbillede af taskboardet for 3. iteration af design, implementerings og test.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.9\linewidth]{/tex/Metodeproces/Billeder/Scrumtask.png}
 	\caption{Scrum taskboard}
 	\label{fig:Taskboard}
 \end{figure}        
-Taskboardet sørger for at give et overblik over hvilke opgaver, der er påbegyndt og hvilke der mangles at blive lavet. På denne måde sikres det, at der ikke sidder to med samme opgave, og der er ikke opgaver, som bliver forsømt.
+\noindent Taskboardet sørger for at give et overblik over hvilke opgaver, der er påbegyndt og hvilke der mangles at blive lavet. På denne måde sikres det, at der ikke sidder to med samme opgave, og der er ikke opgaver, som bliver forsømt.
 
-Til konfigurationsstyring er der benyttet et repository over Github~\cite{Github}. Det er brugt til deling af dokumenter og versionshistorik af disse. Yderligere er rapport, dokumentation og procesbeskrivelse skrevet i programmet LaTeX~\cite{Latex}. Kombinationen mellem LaTeX og Github gør det nemt at merge ændringer i dokumenterne. Det giver mulighed for at ændre i dokumenterne samtidigt, uden det skaber problemer. Samtlige dokumenter og bilag, som er vedlagt, har være administreret over Github.
+Til konfigurationsstyring er der benyttet et repository over Github~\cite{Github}. Det er brugt til deling af dokumenter og versionshistorik af disse. Yderligere er rapport, dokumentation og procesbeskrivelse skrevet i programmet LaTeX~\cite{Latex}. Kombinationen mellem LaTeX og Github gør det nemt at merge ændringer i dokumenterne. Det giver mulighed for at ændre i dokumenterne samtidigt, uden det skaber problemer. Samtlige dokumenter og bilag, som er vedlagt, har været administreret over Github.
 Den interne kommunikation i gruppen er foregået over facebook. Det omhandler mødetidspunkter, spørgsmål og generelle informationer. Den eksterne kommunikation med vejleder og kontaktpersoner fra Terma er foregået over mail.  
 
 Der har i projektperioden været afholdt 3 forskellige slags møder. De interne daglige møder, vejledermøde med Arne Justesen og eksterne møder med kontaktpersonerne fra Terma, Johnny Laursen og Hans Jensen. 

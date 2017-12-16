@@ -1,16 +1,16 @@
 \section{Anden iteration}
 
 \subsection{Transformator}
-Figur~\ref{fig: Primarinduktans} viser induktansen målt i transformatorens primærvikling, ved et frekvenssweep $100Hz$ til $1MHz$.. 
+Figur~\ref{fig: Primarinduktans} viser induktansen målt i transformatorens primærvikling, ved et frekvenssweep $100Hz$ til $1MHz$. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Primarinduktans.png}
 	\caption{Målt induktans i primær vikling}
 	\label{fig: Primarinduktans}
 \end{figure}
-Ud fra de præcise værdier, som er vedlagt i bilagsmappen, findes induktansen ved 100kHz til $57.7\micro H$
+\noindent Ud fra de præcise værdier, som er vedlagt i bilagsmappen, findes induktansen ved 100kHz til $57.7\micro H$
 
-Figur~\ref{fig: leakageinductance} viser spredningsselvinduktansen målt i transformatoren, ved et frekvenssweep på $100Hz$ til $1MHz$.
+Figur~\ref{fig: leakageinductance} viser spredningsselvinduktionen i transformatoren, målt til $152nH$, ved et frekvens-sweep på $100Hz$ til $1MHz$.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Spredningsselvinduktion.png}
@@ -18,27 +18,27 @@ Figur~\ref{fig: leakageinductance} viser spredningsselvinduktansen målt i trans
 	\label{fig: leakageinductance}
 \end{figure}
 
-\subsection{Integrationtest - Constant load}
+\subsection{Integrationstest - Constant-load}
 
 \subsubsection{Udgang}
-Figur~\ref{fig: Out26V} viser det realiserede spændingsoutput ved 26V. Kanal et viser spændingsoutputtet, mens kanal to viser gate spændingen for MOSFET'en. Kanal to er brugt til at trigge på, ved alle constant load målingerne. 
+\noindent Figur~\ref{fig: Out26V} viser det realiserede spændingsoutput ved 26V. Kanal et viser spændingsoutputtet, mens kanal to viser gate spændingen for MOSFET'en. Kanal to er brugt til at trigge på, ved alle constant-load målingerne. 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Realisering/udgang_f_filter_2iteration.png}
 	\caption{Spændingsoutput ved 26V}
 	\label{fig: Out26V}
 \end{figure}
-Spændingen aflæses til at ligge på 20.97V. Yderligere observeres det, at der er swithing spikes på omkring 3.48V pk-pk.
+\noindent Spændingen aflæses til at ligge på 20.97V. Yderligere observeres det, at der er swithing-spikes på omkring 3.48V pk-pk.
 
 \subsubsection{MOSFET og diode}
-Figur~\ref{fig: privolt} viser drain spændingen for MOSFET'en på kanal et, som også svarer til spændingen over den primære vikling i transformatoren.
+\noindent Figur~\ref{fig: privolt} viser drain spændingen for MOSFET'en på kanal et, som også svarer til spændingen over den primære vikling i transformatoren.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Realisering/Transformator_Primar.png}
 	\caption{Primær spænding}
 	\label{fig: privolt}
 \end{figure}
-Spændingen over den primære vikling aflæses til en peak på 80V. Derudover aflæses den stationære spænding at ligge på 47V. 
+\noindent Spændingen over den primære vikling aflæses til en peak på 80V. Derudover aflæses den stationære spænding at ligge på 47V. 
 På figur~\ref{fig: prizoom} er der zoomet ind på svingningerne omkring peakspændingen, som observeres ovenfor.
 \begin{figure}[H]
 	\center
@@ -46,16 +46,16 @@ På figur~\ref{fig: prizoom} er der zoomet ind på svingningerne omkring peaksp�
 	\caption{Zoomet på primær peak}
 	\label{fig: prizoom}
 \end{figure}
-Svingningen for en periode aflæses til 40ns. Det svarer til en frekvens på $25MHz$
+\noindent Svingningen for en periode aflæses til 40ns. Det svarer til en frekvens på $25MHz$.
 
-På figur~\ref{fig:sek} ses spændingen på anoden af dioden på kanal et, som også svarer til spændingen over den sekundære vikling.
+\noindent På figur~\ref{fig:sek} ses spændingen på anoden af dioden på kanal et, som også svarer til spændingen over den sekundære vikling.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Realisering/Transformator_sekundar.png}
 	\caption{Sekundær spænding}
 	\label{fig:sek}
 \end{figure}
-Spændingen over den sekundære vikling aflæses til at have en peakspænding på ca. 60V. Herudover en stationær spænding på ca. 45V. 
+\noindent Spændingen over den sekundære vikling aflæses til at have en peakspænding på ca. 60V. Herudover en stationær spænding på ca. 45V. 
 På figur~\ref{fig:sekzoom} zoomes der igen ind på svingningerne der opstår efter peaken.
 \begin{figure}[H]
 	\center
@@ -63,9 +63,9 @@ På figur~\ref{fig:sekzoom} zoomes der igen ind på svingningerne der opstår ef
 	\caption{Zoomet på sekundær peak}
 	\label{fig:sekzoom}
 \end{figure}
-Svingningen for en periode aflæses til 35ns, hvilket svarer til en frekvens på $28.57MHz$
+\noindent Svingningen for en periode aflæses til 35ns, hvilket svarer til en frekvens på $28.57MHz$
 
-I tabel~\ref{tab:MOSDIODE} ses sammenhængen mellem simulering og realisering for dioden og MOSFET'en.
+\noindent I tabel~\ref{tab:MOSDIODE} ses sammenhængen mellem simulering og realisering for dioden og MOSFET'en.
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|l|l|l|l|}
@@ -81,7 +81,7 @@ I tabel~\ref{tab:MOSDIODE} ses sammenhængen mellem simulering og realisering fo
 \end{table}
 
 \subsubsection{PWM-controller}
-Tabel~\ref{tab:resultat_PWM} viser analyse-, simulering- og realiseringsresultaterne for de centrale dele af PWM-controlleren. Det indebærer switch-frekvens($f_s$), switch-tid($T_{ch})$ og stigetiden på filtret til current-sense kredsløbet($T_r$)
+\noindent Tabel~\ref{tab:resultat_PWM} viser analyse-, simulering- og realiseringsresultaterne for de centrale dele af PWM-controlleren. Det indebærer switch-frekvens($f_s$), switch-tid($T_{ch})$ og stigetiden på filtret til current-sense kredsløbet($T_r$)
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|c|c|c|}
@@ -123,7 +123,6 @@ Tabel~\ref{tab:realisering_tab} giver et overblik over sammenhængen i mellem de
 \end{table}
 
 \subsection{Integrationstest - Gain-fase måling}
-
 Figur~\ref{fig:realisering_gain_fase_power} viser det realiserede bode plot for powermodulet sammen med det analyserede.
 \begin{figure}[H]
 	\center
@@ -131,7 +130,7 @@ Figur~\ref{fig:realisering_gain_fase_power} viser det realiserede bode plot for 
 	\caption{Realiseret og analytisk gain-fase for power modul}
 	\label{fig:realisering_gain_fase_power}
 \end{figure}
-Den blå linje er fasen for det realiserede, mens gain er den røde linje. Den grønne stiplede linje stammer fra den analyserede fase og den lila stiplede er det analyserede gain. Båndbredden aflæses for begge dele til $1400Hz$, med et DC-gain på omkring $20.3dB$
+\noindent Den blå linje er fasen for det realiserede, mens gain er den røde linje. Den grønne stiplede linje stammer fra den analyserede fase og den lila stiplede er det analyserede gain. Båndbredden aflæses for begge dele til $1400Hz$, med et DC-gain på omkring $20.3dB$
 
 Figur~\ref{fig:realisering_gain_fase_tot} viser et bode plot af den realiserede gain-fase for hele systemet sammen med det analyserede.
 \begin{figure}[H]
@@ -140,19 +139,19 @@ Figur~\ref{fig:realisering_gain_fase_tot} viser et bode plot af den realiserede 
 	\caption{Realiseret og analytisk gain-fase for hele systemet}
 	\label{fig:realisering_gain_fase_tot}
 \end{figure}
-Farverne på linjerne er det samme som ved figur~\ref{fig:realisering_gain_fase_power}. Båndbredden for både analyse og fase aflæses til ca. $900Hz$. For det realiserede aflæses fase-marginen til ca. $62^\circ$ og gain-marginen til ca. $24dB$. Den analyserede fase-margin kan aflæses til $74.3^\circ$ med samme gain-margin som det realiserede.
+\noindent Farverne på linjerne er det samme som ved figur~\ref{fig:realisering_gain_fase_power}. Båndbredden for både analyse og fase aflæses til ca. $900Hz$. For det realiserede aflæses fase-marginen til ca. $62^\circ$ og gain-marginen til ca. $24dB$. Den analyserede fase-margin kan aflæses til $74.3^\circ$ med samme gain-margin som det realiserede.
 
-\subsection{Load step}
-Figur~\ref{fig:belastningsamlet} viser det realiserede load step.
+\subsection{Load-step}
+Figur~\ref{fig:belastningsamlet} viser det realiserede load-step.
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/2iteration/billeder/Realisering/belastningsamlet.png}
-	\caption{Realisering af load step}
+	\caption{Realisering af load-step}
 	\label{fig:belastningsamlet}
 \end{figure}
-Dety aflæses at spændingen falder med ca. 700mV ved overgangen til $10\ohm$. Det tager ca. $1.5ms$ at regulere ind til den stationære værdi. Ved overgangen tilbage til $20\ohm$ stiger spændingen ca. $600mV$, og bruger igen $1.5ms$ på at regulere ind igen.
+\noindent Det aflæses at spændingen falder med ca. 700mV ved overgangen til $10\ohm$. Det tager ca. $1.5ms$ at regulere ind til den stationære værdi. Ved overgangen tilbage til $20\ohm$ stiger spændingen ca. $600mV$, og bruger igen $1.5ms$ på at regulere ind.
 
-Tabel~\ref{tab:Loadstep} vises det hvor godt simuleringen og de realiserede målinger stemmer overens.
+\noindent Tabel~\ref{tab:Loadstep} vises det hvor godt de simulerede og realiserede målinger stemmer overens.
 \begin{table}[H] 			
 	\centering
 	\begin{tabularx}{\textwidth}{|X|l|l|l|l|}
@@ -162,6 +161,6 @@ Tabel~\ref{tab:Loadstep} vises det hvor godt simuleringen og de realiserede mål
 		Overshoot & $650mV$ & $700mV$ & $700mV$ & $600mV$  \\ \hline
 		Reguleringstid & $1.6ms$ & $1.6ms$ & $1.5ms$ & $1.5ms$ \\ \hline
 	\end{tabularx}
-	\caption{Simulering og realisering af load step}
+	\caption{Simulering og realisering af load-step}
 	\label{tab:Loadstep}
 \end{table}

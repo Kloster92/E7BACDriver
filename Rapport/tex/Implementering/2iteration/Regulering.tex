@@ -9,7 +9,7 @@ Figur~\ref{fig:blokdiagram_regulering} viser et blok diagram for det samlede sp�
 	\label{fig:blokdiagram_regulering}
 \end{figure}
 
-Der blev først opstillet en overføringsfunktion for power-modulet\cite{UCC1801}. Den indeholder en DC-forstærkning, et nulpunkt fra kondensatorens ESR-modstand og converterens højre halv-plans nulpunkt, samt en pol for belastningen og for switch-frekvensen. 
+\noindent Der blev først opstillet en overføringsfunktion for power-modulet\cite{UCC1801}. Den indeholder en DC-forstærkning, et nulpunkt fra kondensatorens ESR-modstand og converterens højre halv-plans nulpunkt, samt en pol for belastningen og for switch-frekvensen. 
 
 \begin{equation} \label{H_Power}
 G_{pwr}(s) = G_0 \cdot \frac{(1+\frac{s}{2\pi \cdot f_{ESRz}}) \cdot (1-\frac{s}{2\pi \cdot f_{RHPz}})}{1+\frac{s}{2\pi \cdot f_{p1}}} \cdot \frac{1}{1 + \frac{s}{2\pi \cdot f_{p2}} + \frac{s^2}{(2\pi \cdot f_{p2})^2}}
@@ -17,7 +17,7 @@ G_{pwr}(s) = G_0 \cdot \frac{(1+\frac{s}{2\pi \cdot f_{ESRz}}) \cdot (1-\frac{s}
 
 Der blev genereret et bode plot ud fra overføringsfunktionen, hvilket lagde til grundlag for design af fejlforstærkerens kompensationsnetværk. Det blev besluttet, at det skulle bidrage med en forstærkning på $-5.4\decibel$ med en knækfrekvens på ca. $300\hertz$, for at sikre en stabil converter. Med dette ville der opnås en gain-margin på $24\decibel$, en fasemargin på $74.3^\circ$, og en båndbredde på $810\hertz$.
 
-Dette blev implementeret ved en integrator, der bidrager med en stort DC-forstærkning, og en konstant forstærkning ved frekvenser over knækfrekvensen. 
+Dette blev implementeret ved en integrator, der bidrager med en stor DC-forstærkning, og en konstant forstærkning ved frekvenser over knækfrekvensen. 
 
 Overføringsfunktionen for fejlforstærkeren er opstillet ud fra den ønskede knækfrekvens og samlede forstærkning for tilbagekoblingen. Denne forstærkning er et produkt mellem forstærkningen i spændingsdeleren og fejlforstærkeren. 
 
@@ -25,9 +25,10 @@ Overføringsfunktionen for fejlforstærkeren er opstillet ud fra den ønskede kn
 G_{err}(s) = \left(\frac{f_0 \cdot 2\cdot\pi}{s} + 1\right)  \cdot g_{tot}
 \end{equation}
 
-Testen af dette blev udført ved, at bruge en Network Analyzer. Den indførte en fejlspænding i tilbagekoblingen, og målte ændringer i udgangssignalet. Det blev brugt til, at foretage gain-fase målinger for begge overføringsfunktioner, og det samlede system. 
+Det er testet ved en integrationstest, der er forklaret i afsnit~\ref{Integrationstest}.
 
-For en mere detaljeret gennemgang af overføringsfunktionernes indhold, og deres bode plots, henvises til dokumentationens afsnit 5.2 og 5.9.4.
+For en mere detaljeret gennemgang af overføringsfunktionernes indhold, og deres bode plots, henvises til dokumentationens afsnit 5.2 og 5.9.4.\fxnote{Indsæt bode plots, beskriv noget med poler og nulpunkter}
+\fxnote{Forklar problematikker ved regulering}
 
 
 

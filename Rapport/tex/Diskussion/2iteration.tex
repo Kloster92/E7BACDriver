@@ -2,7 +2,7 @@
 \section{Anden iteration}
 I 2. iteration blev den første version af converteren implementeret.
 
-Der blev viklet en transformator med en selvinduktion på $57.7\micro H$, hvor der blev designet efter en induktion på $57.76\micro H$. Denne afvigelse vurderes ubetydelig, og derfor godtages dette. Yderligere blev spredningsselvinduktionen målt til $152nH$. Dette giver en kobling i transformatoren på $99.73\percent$. Denne kobling vurderes tilfredsstillende, og derfor vurderes transformatoren samlet som godkendt. 
+\noindent Der blev viklet en transformator med en selvinduktion på $57.7\micro H$, hvor der blev designet efter en induktion på $57.76\micro H$. Denne afvigelse vurderes ubetydelig, og derfor godtages dette. Yderligere blev spredningsselvinduktionen målt til $152nH$. Dette giver en kobling i transformatoren på $99.73\percent$. Denne kobling vurderes tilfredsstillende, og derfor vurderes transformatoren samlet som godkendt. 
 
 På udgangen af converteren blev en DC-spænding på $20.97V$. Dette er indenfor kravet for en afvigelse på $21V \pm2\percent$, derfor godkendes dette. Der blev tilgengæld målt switching-spikes på udgangen på omkring $3.5V$ pk-pk. Dette opfylder ikke kravet på $100mV$ pk-pk, og derfor blev dette optimeret i 3. iteration. 
 
@@ -10,7 +10,7 @@ Den stationære drain-spænding over MOSFET'en blev målt til lidt over $47V$. M
 
 Der blev dog observeret, at der blev anslået svingninger på spændingerne over MOSFET og diode. Derfor blev det valgt at udvikle snubber-kredsløb, til dæmpning af disse svingninger. 
 
-Switch-frekvensen i PWM-controlleren blev målt til $95.8k\hertz$, og blev designet efter $100k\hertz$. Ved tolerancer i komponenter og controller, godtages denne afvigelse. Switch-tiden i MOSFET'en blev målt til $120ns$, og blev designet efter $138.7ns$. Stigetiden i current-sense filteret blev målt til $350ns$, som blev designet efter $300ns$. Switch-tiden og stigetiden blev designet langsomt, således der blev sikret en stabil funktionalitet, derfor blev det valgt at optimere disse i 3. iteration. 
+Switch-frekvensen i PWM-controlleren blev målt til $95.8k\hertz$, og blev designet efter $100k\hertz$. Ved tolerancer i komponenter og controller, godtages denne afvigelse. Switch-tiden i MOSFET'en blev målt til $120ns$, og blev designet efter $138.7ns$. Stigetiden i current-sense filteret blev målt til $350ns$, som blev designet efter $300ns$. Switch-tiden og stigetiden blev designet langsomt, således der blev sikret en stabil funktionalitet, og derfor blev det valgt at optimere disse i 3. iteration. 
 
 Båndbredden i controlleren blev målt til $900\hertz$, ved en gain-margin på $24\decibel$ og en fasemargin på $74.3^\circ$. Da båndbredden blev designet lav for at sikre en stabil funktionalitet, og der blev opnået en stor margin til reguleringskravene, blev det valgt at optimere converterens båndbredde i 3. iteration. 
 

@@ -1,12 +1,12 @@
 
 \section{Tredje iteration}
-I 3. iteration blev den anden version af converteren implementeret. Her blev der især lagt vægt på manglerne fundet efter 2. iteration. 
+I 3. iteration blev den anden version af converteren implementeret. Her blev der især lagt vægt på manglerne fundet i 2. iteration. 
 
 Efter udgangen blev flyttet, blev der målt switching-spikes på udgangssignalet op mod $920mV$ pk-pk. Det er stadig større end kravet på $100mV$ pk-pk, og det skal derfor optimeres yderligere i en senere iteration. Ripple-spændingen på udgangssignalet blev målt til $50mV$ pk-pk, hvilket overholder kravet, og derfor godtages.
 
 Efter tilføjelse af snubber-kredsløb, blev det observeret at svingningerne efter spændings-peaken er blevet fjernet. Desuden blev tabet i de to kredsløb vurderet minimalt ift. de dominerende tab. Derfor blev de implementerede snubbere godtaget.
 
-Switch-tiden i MOSFET'en blev målt til $40ns$, hvor der var designet efter $37.2ns$. Denne switch tid medførte et nyt samlet tab i MOSFET'en på $2.3W$. Det er stadig en stor del af det samlede tab, og skal derfor overvejes andre muligheder fremadrettet. Stigetiden i current-sense filteret blev målt til $100ns$, hvilket der også blev designet efter. Den hurtigere stigetid medførte nogle hurtige flanker på current-sense signalet, som kan godkendes.
+Switch-tiden i MOSFET'en blev målt til $40ns$, hvor der var designet efter $37.2ns$. Denne switch tid medførte et nyt samlet tab i MOSFET'en på $2.3W$. Det er stadig en stor del af det samlede tab, og skal derfor overvejes andre muligheder fremadrettet. Stigetiden i current-sense filteret blev målt til $100ns$, hvilket der også blev designet efter. Den hurtigere stigetid medførte hurtige flanker på current-sense signalet, som kan godkendes.
 
 Converterens båndbredde blev målt til $3.86k\hertz$, ved en gain-margin på $14.5\decibel$ og en fasemargin på $69.8^\circ$. Dette er stadig med en margin til de opstillede krav, men det blev valgt, at der ikke vil blive optimeret yderligere på båndbredden. 
 
