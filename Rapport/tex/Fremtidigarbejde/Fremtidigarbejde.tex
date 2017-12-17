@@ -10,5 +10,5 @@ Fra overblikket over det samlede tab efter 3. iteration, kan det ses at tabet i 
 
 Udover det ovenstående er der to punkter i accepttesten, som endnu ikke er udført. Det indebærer temperaturintervallet, converteren skal operere indenfor, samt converterens samlede dimensioner. Begge dele er krav, der i løbet af designet er taget højde for. Da det ikke er et færdigt layout, men en prototype, kan testenene endnu ikke foretages. Med hensyn til temperaturen, er der brugt komponenter, som i følge databladene bør overholde temperaturkravene. Ved komponenternes størrelser, er det sikret, at finde komponenter der, ikke er højere end det tilladte.    
 
-\fxnote{Beskriv PWM-forsyning}
+Indtil nu har PWM-controlleren været forsynet af en ekstern 12V spænding. Inden printet skal lægges endeligt ud, skal dette laves om. Der vil blive lavet en preregulator, som sikrer at PWN-controlleren forsynes. Når converteren er oppe at køre vil PWM-controlleren få sin forsyning fra udgangen. Det kan ikke lade sig gøre under opstart. Derfor skal det implementeres sådan, at controlleren i begyndelsen får sin VCC fra indgangsspændingen og herefter fra udgangen. 
 

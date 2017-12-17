@@ -506,8 +506,8 @@ Det kan efter 2. iteration konkluderes, at der er realiseret en converter, som f
 \subsection{Transformator}
 Der er i 2. iteration designet og viklet en transformator. Der blev viklet efter en selvinduktion på $57.7\micro H$ hvilket er præcis den selvinduktion der blev målt i testen. Derudover blev spredningsselvinduktion målt til $152nH$. Dette giver en kobling på $99.73\percent$, hvilket er acceptabelt og vil derfor ikke blive yderligere optimeret i 3. iteration. 
 
-\subsection{Constant load}
-Ved constant load er det på udgangen konkluderes at den ved en load på $8.4\ohm$ er $21V$. Det giver samtidig en strøm på $2.5A$. Der ses dog switching transienter der ligger på ca. 4.56V pk-pk. Kravet for disse switching spikes er på 100mV pk-pk, hvilket er langt under det nuværende. Dette vil derfor blive undersøgt nærmere i 3. iteration.
+\subsection{Constant-load}
+Ved constant-load er det på udgangen konkluderes at den ved en load på $8.4\ohm$ er $21V$. Det giver samtidig en strøm på $2.5A$. Der ses dog switching transienter der ligger på ca. 4.56V pk-pk. Kravet for disse switching spikes er på 100mV pk-pk, hvilket er langt under det nuværende. Dette vil derfor blive undersøgt nærmere i 3. iteration.
 
 
 Derudover blev der set på primær- og sekundærsidernes spikes. Det er forventet, at spredningsselvinduktionen sammen med dioden og MOSFET'ens parasit kapaciteter vil give spikes ved switching. Svingninger der kommer efterfølgende med en frekvens på $25M\hertz$ for MOSFET og $28.57M\hertz$ for dioden kan dog ikke ignoreres. Disse skal fjernes i 3. iteration. Udover dette ser signalet ud som forventet fra analyse og simulering. Dette betyder samtidig, at de worst-case spændinger og strømme, som diode og MOSFET er designet til, bliver overholdt.
@@ -522,8 +522,8 @@ Current-sense kredsløbet er testet og det kan konkluderes , at det indsatte fil
 \subsection{Gain-fase}
 Ved Gain-fase målingen kan det konkluderes at analyse, simulering og realisering stemmer godt overens. Der er realiseret en fasemargin på $62^\circ$ og gain margen på $24dB.$ Kravene på $50^\circ$ og $10dB$ er derfor længe overholdt. Resultatet af det, er en båndbredde på $900\hertz$. Båndbredden bør derfor gøres større da der er masser af fase- og gainmargin at tage af. Dette vil også give et forbedret load step. Det bliver derfor også en del af 3. iteration at lave den optimering.  
 
-\subsection{Load step}
-Ved load steppet stemmer simulering og realisering igen fint overens. Der ses et overshoot på $600-700mV$ samt en reguleringstid på $1.5ms$.
+\subsection{Load-step}
+Ved load-steppet stemmer simulering og realisering igen fint overens. Der ses et overshoot på $600-700mV$ samt en reguleringstid på $1.5ms$.
  
   
 \subsection{Tab}

@@ -6,7 +6,7 @@
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
 	Converteren skal kunne operere med en inputspænding mellem 26-50V & Indgangs-spændingen måles med et voltmeter med en load på $8.4\ohm$ Der indsættes voltmeter og amperemeter på udgangen & Indgangs-spændingen er mellem 26-50V og outputspænding ligger på 21V med en strøm på 2.5A & Indgangs-spændingen er mellem 26-50V og outputspænding ligger på 21V med en strøm på 2.5A & Godkendt\\ \hline
 	Converteren skal opretholde en outputspænding på 21V $\pm$2\% ved 2,5A $\pm$5\% & Der indsættes en load på 8.4\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 21V $\pm$2\% og strømmen på 2,5A $\pm$5\% & Spændingen ligger på 21V $\pm$2\% og strømmen på 2,5A $\pm$5\% & Godkendt \\ \hline
-	Converteren skal opretholde en outputstrøm op til 5A $\pm$5\% ved 15V $\pm$2\% & Der indsættes en load på 3\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 15V $\pm$2\% og strømmen på 3A $\pm$5\% && NA \\ \hline
+	Converteren skal opretholde en outputstrøm op til 5A $\pm$5\% ved 15V $\pm$2\% & Der indsættes en load på 3\ohm\ og udgangs-strøm og -spænding måles med oscilloskop & Spændingen ligger på 15V $\pm$2\% og strømmen på 3A $\pm$5\% & Load ikke implementeret, og derfor ikke testet & Ikke godkendt \\ \hline
 	Converteren må maksimalt have en output ripple-spænding på 50mV pk-pk & Der indsættes en load på 8.4\ohm\ og pk-pk ripple spænding aflæses med oscilloskop over udgangsloaden & Ripple-spændingen på udgangen er under 50mV pk-pk & Ripple-spændingen på udgangen er under 50mV pk-pk & Godkendt \\ \hline
 \end{tabularx}
 
@@ -15,9 +15,9 @@
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Converteren må maksimalt have switching spikes på 100mV pk-pk & Der indsættes en load på 8.4\ohm\ og pk-pk switching spikes aflæses med oscilloskop over udgangsloaden & Switching spikes aflæses til maksimum 100mV pk-pk && NA \\ \hline
-	Converteren skal kunne omsætte op til 75W & Der indsættes en load på 3\ohm\ og der måles på oscilloskopet om der holdes en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% & Der måles en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% hvilket giver 75W && NA \\ \hline
-	Converteren skal operere med et tab på maksimalt 5W & Der indsættes en load på 8.4\ohm\ Indgangs-spænding og strøm måles og omregnes til effekt. Det samme gøres for udgangs-spænding og -strøm. & De 2 effekter trukket fra hinanden giver maksimalt 5W && NA \\ \hline 
+	Converteren må maksimalt have switching spikes på 100mV pk-pk & Der indsættes en load på 8.4\ohm\ og pk-pk switching spikes aflæses med oscilloskop over udgangsloaden & Switching spikes aflæses til maksimum 100mV pk-pk & Switching spikes aflæses til 920mV & Ikke godkendt \\ \hline
+	Converteren skal kunne omsætte op til 75W & Der indsættes en load på 3\ohm\ og der måles på oscilloskopet om der holdes en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% & Der måles en spænding på 15V $\pm$2\% samt en strøm på 5A $\pm$5\% hvilket giver 75W & Load ikke implementeret, og derfor ikke testet & Ikke godkendt \\ \hline
+	Converteren skal operere med et tab på maksimalt 5W & Der indsættes en load på 8.4\ohm\ Indgangs-spænding og strøm måles og omregnes til effekt. Det samme gøres for udgangs-spænding og -strøm. & De to effekter trukket fra hinanden giver maksimalt 5W & De to effekter trukket fra hinanden giver 5.9W & Ikke godkendt \\ \hline 
 	Converteren skal implementeres i et volumen mindre end 17x75x100mm på forsiden af PCB'et, samt 3x75x100mm på bagsiden af PCB'et & Med målebånd måles dimensionerne af PCB'et først på forsiden og derefter på bagsiden. & Dimensionerne overskrider ikke 17x75x100mm på forsiden af PCB'et og 3x75x100mm på bagsiden af PCB'et && NA \\ \hline
 	
 \end{tabularx}
@@ -37,7 +37,7 @@
 \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 	\hline
 	\textbf{Krav} & \textbf{Test} & \textbf{Forventet resultat} & \textbf{Resultat} & \textbf{Vurdering} \\ \hline
-	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 5A/3\ohm ved en indgangsspænding på 50V & Indgangs-spændingen indstilles til 50V og vha. en network analyser genereres et bodeplot ved at måle over loaden.& På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 50V && Ikke testet\\ \hline
+	Converteren skal have stabil regulering med minimum 10dB gain og 50 graders fasemargin ved 5A/3\ohm ved en indgangsspænding på 50V & Indgangs-spændingen indstilles til 50V og vha. en network analyser genereres et bodeplot ved at måle over loaden.& På bode plottet ses en stabil regulering med 10dB gain og 50 graders fase margin for 50V & Load ikke implementeret, og derfor ikke testet & Ikke godkendt\\ \hline
 	Reguleringen skal have en risetime på maksimalt 0,5ms & Ved en load på 8.4\ohm, udgangsstrøm på 2.5A $\pm$5\% og udgangs-spænding på 21V $\pm$2\% måles risetime med et oscilloskop på udgangen ved et step på indgangen & Der måles en risetime på maksimalt 0,5ms & Der måles en risetime på 2ms & Ikke godkendt \\ \hline
 	Reguleringen skal have et overshoot på maksimalt 5\% & Ved en load på 8.4\ohm, udgangsstrøm på 2.5A $\pm$5\% og udgangs-spænding på 21V $\pm$2\% måles overshoot med et oscilloskop på udgangen ved et step på indgangen & Der måles et overshoot på maksimalt 5\% & Der måles et overshoot på ca. 1.43\percent & Godkendt \\ \hline
 \end{tabularx}
