@@ -27,9 +27,9 @@ sys4 = (sys * ((132.8*2*pi)/s+1))*2.674;
 % w = bode(sys);
 % w_v = logspace(0,5,150)*2*pi;
 % 
-% figure(1)
-% bode(sys)
-% margin(sys)
+figure(1)
+bode(sys)
+margin(sys)
 % 
 % figure(2)
 % bode(sys1)

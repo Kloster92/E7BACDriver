@@ -11,6 +11,15 @@ Buck converteren er en af mere simple converter topologier, da den består af re
 En stor ulempe ved buck converteren er at switch-komponenten, ofte en MOSFET, er placeret i den positive forsyningslinje. Det giver komplikationer ift. at drive MOSFET'en. Det vil kræve flere komponenter, og derfor også et mere kompliceret kredsløb. Af denne grund er buck converteren blevet fravalgt\cite{buck-converter}.
 
 \subsection{Push-pull converter}
+Push-pull converteren er en mere avanceret converter topologi. Det er en transformator baseret converter, som giver en ekstra mulighed for effektoverførsel. Den består af to switch-grene på både primær- og sekundærsiden af transformatoren. Det vil sige den har to primære- og to sekundære viklinger, samt to switch-elementer og to dioder. Den kræver derfor flere komponenter end andre topologier. 
+
+En ulempe ved, at have to switch-grene er uligheder i dem. Tolerancer i komponenterne vil få kernematerialet til at drive mod mætning, hvis der ikke tages højde for dette i reguleringen. Derfor er det utilstrækkeligt, udelukkende at regulere efter spændingen i en push-pull converter. En anden konsekvens ved brug af to switch-grene er død-tid i transformatoren. Dette skal indføres for at sikre der ikke sker en kortslutning af primærviklingen, ved begge switch-elementer er ON på samme tid. Desuden skal de valgte PWM-controller understøtte switching af to switch-elementer. 
+
+En fordel ved push-pull converteren er en bedre udnyttelse af kernematerialet, da det vil blive drevet i måde 1. og 3. kvadrant af hysteressekurven. 
+
+På grund af kompleksiteten, og mængden af komponenter, er push-pull converteren blevet fravalgt. 
+
+
 
 \subsection{Flyback converter}
 Flyback converteren er en videreudvikling af buck converteren. Det er en transformator baseret topologi, som derfor giver et ekstra mulighed for effektoverførsel. Transformatoren erstatter spolen i buck converteren og derfor består de af det samme antal komponenter. Transformatoren giver desuden muligheden for sikre galvanisk adskillelse mellem indgangen og udgangen. 

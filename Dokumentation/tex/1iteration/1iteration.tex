@@ -53,8 +53,32 @@ Converteren skal kunne opretholde en outputspænding på $21V$, ved en inputspæ
 En af fordelene ved buck converteren, er at der altid løber en strøm i spolen. Dette gør, at der kan opnås en lille ripple-strøm i filteret, og derved også et mindre tab, både i spolen og kondensatoren. 
 En af ulemperne, er at transistoren sidder i den positive forsyningslinje. Dette kan give komplikationer ved switching af transistoren. Hvis der vælges en p-kanals MOSFET, skal der vælges en PWM-controller der kan håndtere switching af denne. Hvis der vælges en n-kanals MOSFET, skal gate signalet være større end forsyningen, før MOSFET'en er helt ON. Dette kræver flere komponenter, og vil derfor helst undgås. På grund af dette problem undersøges der en converter topologi, hvor MOSFET'en ikke sidder i den positive forsyningslinje.
 
+
+\section{Push-pull converter}
+Push-pull converteren, er en transformator baseret topologi. Man deler converteren op i to dele: Primær- og sekundærsiden. Primærsiden består af to primærviklinger, og to transistorer, hvor transistoren fungerer som en switch. Sekundærsiden består af to sekundærviklinger, to dioder, et udgangsfilter i form af en spole og en kondensator, samt udgangsbelastningen. En skites af dette er vist på figur~\ref{fig:push_pull_ideal}. Der er flere ulemper ved push-pull converteren. En er det store antal komponenter ift. andre topologier. En anden er kompleksiteten i at drive den. På grund af tolerancer i komponenterne, skal converteren reguleres efter strømmen, da den ellers vil drive mod mætning. Derudover skal den valgt PWM-controller understøtte switching af to kontakter. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.9\linewidth]{/tex/1iteration/billeder/push_pull_diagram.PNG}
+	\caption{Ideelt diagram af flyback converteren
+		\cite{SMPS-topologies}}
+	\label{fig:push_pull_ideal}
+\end{figure} 
+
+\noindent Converteren fungerer ved skiftevis, at aktivere $T_1$ og $T_2$. Når $T_1$ er ON, vil der løbe en strøm i den øverste primærvikling. Det vil transformere en spænding over på sekundærsiden, med et positivt potentiale ved $D_1$ ift. GND. Derved vil $D_1$ led den strøm der bliver transformeret over på sekundærsiden. Når $T_2$ er ON vil strømmen i stedet løbe i den nederste switch-gren, og dermed vil det også være $D_2$ der leder strømmen på sekundærsiden. I den periode en af dioderne leder en strøm vil der være et positivt potentiale over spolen på $\frac{N_s}{N_p} \cdot V_{in} - V_{out}$, og vil derfor oplade strømmen i spolen. I den periode ingen af dioderne leder en strøm, vil der være et negativt potentiale over spolen på $-V_{out}$, og derved aflade strømmen i den. Det vil generer en ripple-strøm på udgangen, hvor udgangsstrømmen vil blive set som en gennemsnitsværdi. 
+
+Teoretisk er den maksimale duty-cycle for hver kontakt $50\percent$. I praksis skal der dog indføres en død-tid i converteren hvor begge kontakter er OFF. Dette vil sikre primærviklingen ikke bliver kortsluttet. Denne død-tid sikre samtidig afladningstiden for udgangsspolen. Både strøm og spændingskurver er vist på figur~\ref{fig:push_pull_current}. Her ses den føromtalte funktion af død-tiden i converteren. 
+
+\begin{figure}[H]
+	\center
+	\includegraphics[max width=0.9\linewidth]{/tex/1iteration/billeder/push_pull_current.PNG}
+	\caption{Ideelt diagram af flyback converteren
+		\cite{SMPS-topologies}}
+	\label{fig:push_pull_current}
+\end{figure} 
+
 \section{Flyback Converter}
-Flyback converteren, er en transformator baseret topologi. Man deler converteren op i to dele: Primær- og sekundærsiden. Primærsiden består af primærviklingen af transformatoren og en transistor, hvor transistoren fungerer som en switch. Sekundærsiden består af sekundærviklingen, en diode, en udgangskondensator og belastningen. Dette er vist på figur~\ref{fig:flyback_ideal}. En af fordelene ved, at bruge flyback converteren, er at der kan opnås galvanisk adskillelse mellem primær- og sekundærsiden af transformatoren, samt MOSFET'ens source er forbundet til GND. Derudover bruges der det samme antal komponenter, som ved buck converteren. Ved andre transformator baserede topologier vil antallet af komponenter være højere. 
+Flyback converteren, er også en transformator baseret topologi. Primærsiden består af primærviklingen af transformatoren og en transistor, hvor transistoren fungerer som en switch. Sekundærsiden består af sekundærviklingen, en diode, en udgangskondensator og belastningen. Dette er vist på figur~\ref{fig:flyback_ideal}. En af fordelene ved, at bruge flyback converteren, er at der kan opnås galvanisk adskillelse mellem primær- og sekundærsiden af transformatoren, samt MOSFET'ens source er forbundet til GND. Derudover bruges der det samme antal komponenter, som ved buck converteren. Ved andre transformator baserede topologier vil antallet af komponenter være højere. 
 
 \begin{figure}[H]
 	\center
