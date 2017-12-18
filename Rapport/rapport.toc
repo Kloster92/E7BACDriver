@@ -8,7 +8,7 @@
 \select@language {danish}
 \contentsline {chapter}{Indhold}{2}{section*.2}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Opgaveformulering}{5}{section.1.1}
+\contentsline {section}{\numberline {1.1}Opgaveformulering}{6}{section.1.1}
 \contentsline {section}{\numberline {1.2}Ordliste}{7}{section.1.2}
 \contentsline {chapter}{\chapternumberline {2}Krav}{8}{chapter.2}
 \contentsline {section}{\numberline {2.1}Kravspecifikation}{8}{section.2.1}
@@ -52,36 +52,36 @@
 \contentsline {section}{\numberline {8.3}Integrationstest}{31}{section.8.3}
 \contentsline {subsection}{\numberline {8.3.1}Constant-load}{31}{subsection.8.3.1}
 \contentsline {subsection}{\numberline {8.3.2}Gain-fase m\IeC {\r a}ling}{31}{subsection.8.3.2}
-\contentsline {subsection}{\numberline {8.3.3}Load-step}{31}{subsection.8.3.3}
-\contentsline {section}{\numberline {8.4}Tredje iteration}{32}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Switch-tid}{32}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Current-sense filter}{32}{subsection.8.4.2}
-\contentsline {subsection}{\numberline {8.4.3}Snubber-kredsl\IeC {\o }b}{32}{subsection.8.4.3}
-\contentsline {subsection}{\numberline {8.4.4}Udgangsfilter}{33}{subsection.8.4.4}
-\contentsline {subsection}{\numberline {8.4.5}Regulering}{34}{subsection.8.4.5}
-\contentsline {subsection}{\numberline {8.4.6}Tab}{34}{subsection.8.4.6}
-\contentsline {subsubsection}{\numberline {8.4.6.1}MOSFET}{34}{subsubsection.8.4.6.1}
-\contentsline {subsubsection}{\numberline {8.4.6.2}Snubber-kredsl\IeC {\o }b}{34}{subsubsection.8.4.6.2}
-\contentsline {subsection}{\numberline {8.4.7}Integrationstest}{34}{subsection.8.4.7}
-\contentsline {chapter}{\chapternumberline {9}Resultater}{35}{chapter.9}
-\contentsline {section}{\numberline {9.1}F\IeC {\o }rste iteration}{35}{section.9.1}
-\contentsline {section}{\numberline {9.2}Anden iteration}{35}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Integrationstest - Constant-load}{35}{subsection.9.2.1}
-\contentsline {subsubsection}{\numberline {9.2.1.1}Udgang}{35}{subsubsection.9.2.1.1}
-\contentsline {subsubsection}{\numberline {9.2.1.2}MOSFET og diode}{36}{subsubsection.9.2.1.2}
-\contentsline {subsection}{\numberline {9.2.2}Integrationstest - Gain-fase m\IeC {\r a}ling}{38}{subsection.9.2.2}
-\contentsline {subsection}{\numberline {9.2.3}Load-step}{38}{subsection.9.2.3}
-\contentsline {section}{\numberline {9.3}Tredje iteration}{39}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Integrationstest - Constant load}{39}{subsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.1.1}Udgang}{39}{subsubsection.9.3.1.1}
-\contentsline {subsubsection}{\numberline {9.3.1.2}MOSFET}{40}{subsubsection.9.3.1.2}
-\contentsline {subsection}{\numberline {9.3.2}Tab}{40}{subsection.9.3.2}
-\contentsline {subsection}{\numberline {9.3.3}Integrationstest - Gain-fase m\IeC {\r a}ling}{41}{subsection.9.3.3}
-\contentsline {subsection}{\numberline {9.3.4}Load-step}{42}{subsection.9.3.4}
-\contentsline {chapter}{\chapternumberline {10}Diskussion af resultater}{43}{chapter.10}
-\contentsline {section}{\numberline {10.1}F\IeC {\o }rste iteration}{43}{section.10.1}
-\contentsline {section}{\numberline {10.2}Anden iteration}{43}{section.10.2}
-\contentsline {section}{\numberline {10.3}Tredje iteration}{44}{section.10.3}
-\contentsline {chapter}{\chapternumberline {11}Fremtidig arbejde}{46}{chapter.11}
-\contentsline {chapter}{\chapternumberline {12}Konklusion}{48}{chapter.12}
-\contentsline {chapter}{Litteraturliste}{49}{section*.37}
+\contentsline {subsection}{\numberline {8.3.3}Load-step}{32}{subsection.8.3.3}
+\contentsline {section}{\numberline {8.4}Tredje iteration}{33}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Switch-tid}{33}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Current-sense filter}{33}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Snubber-kredsl\IeC {\o }b}{33}{subsection.8.4.3}
+\contentsline {subsection}{\numberline {8.4.4}Udgangsfilter}{34}{subsection.8.4.4}
+\contentsline {subsection}{\numberline {8.4.5}Regulering}{35}{subsection.8.4.5}
+\contentsline {subsection}{\numberline {8.4.6}Tab}{35}{subsection.8.4.6}
+\contentsline {subsubsection}{\numberline {8.4.6.1}MOSFET}{35}{subsubsection.8.4.6.1}
+\contentsline {subsubsection}{\numberline {8.4.6.2}Snubber-kredsl\IeC {\o }b}{35}{subsubsection.8.4.6.2}
+\contentsline {subsection}{\numberline {8.4.7}Integrationstest}{36}{subsection.8.4.7}
+\contentsline {chapter}{\chapternumberline {9}Resultater}{37}{chapter.9}
+\contentsline {section}{\numberline {9.1}F\IeC {\o }rste iteration}{37}{section.9.1}
+\contentsline {section}{\numberline {9.2}Anden iteration}{37}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Integrationstest - Constant-load}{37}{subsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.1.1}Udgang}{37}{subsubsection.9.2.1.1}
+\contentsline {subsubsection}{\numberline {9.2.1.2}MOSFET og diode}{38}{subsubsection.9.2.1.2}
+\contentsline {subsection}{\numberline {9.2.2}Integrationstest - Gain-fase m\IeC {\r a}ling}{40}{subsection.9.2.2}
+\contentsline {subsection}{\numberline {9.2.3}Load-step}{40}{subsection.9.2.3}
+\contentsline {section}{\numberline {9.3}Tredje iteration}{41}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Integrationstest - Constant load}{41}{subsection.9.3.1}
+\contentsline {subsubsection}{\numberline {9.3.1.1}Udgang}{41}{subsubsection.9.3.1.1}
+\contentsline {subsubsection}{\numberline {9.3.1.2}MOSFET}{42}{subsubsection.9.3.1.2}
+\contentsline {subsection}{\numberline {9.3.2}Tab}{42}{subsection.9.3.2}
+\contentsline {subsection}{\numberline {9.3.3}Integrationstest - Gain-fase m\IeC {\r a}ling}{43}{subsection.9.3.3}
+\contentsline {subsection}{\numberline {9.3.4}Load-step}{44}{subsection.9.3.4}
+\contentsline {chapter}{\chapternumberline {10}Diskussion af resultater}{45}{chapter.10}
+\contentsline {section}{\numberline {10.1}F\IeC {\o }rste iteration}{45}{section.10.1}
+\contentsline {section}{\numberline {10.2}Anden iteration}{45}{section.10.2}
+\contentsline {section}{\numberline {10.3}Tredje iteration}{46}{section.10.3}
+\contentsline {chapter}{\chapternumberline {11}Fremtidig arbejde}{48}{chapter.11}
+\contentsline {chapter}{\chapternumberline {12}Konklusion}{50}{chapter.12}
+\contentsline {chapter}{Litteraturliste}{51}{section*.39}

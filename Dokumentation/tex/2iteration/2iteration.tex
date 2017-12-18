@@ -25,13 +25,13 @@ Effektiviteten i transformatoren betegens, ved koblingen mellem primær- og seku
 
 
 \subsection{Design}
-Først og fremmest skal ripplestrømmen, som der løber i transformatoren bestemmes. Dette er gjort i 1. iteration, hvor ripplestrømmen blev bestemt til $I_{ripple} = 2.13A$.
+Først og fremmest skal ripplestrømmen, som der løber i transformatoren bestemmes. Dette er gjort i 1. iteration, hvor ripplestrømmen blev bestemt til $I_{ripple} = 1.67A$.
 
 Dernæst skal den nødvendige induktion det kræver for, at transformatoren kan rampe op til den nødvendige strøm, inden for duty-cyclen udregnes. Dette er også gjort i 1. iteration hvor $L=69.43\micro H$.
 
 Som beskrevet tidligere skal kernen kunne opbevare den energi som kommer fra primær viklingen, når transistoren er on, for at undgå mætning. Mængden af energi i primærviklingen udregnes ved:
 \begin{equation} \label{Primary_energy}
-E = \frac{1} {2} \cdot L \cdot {I_{pk}}^2 = 1.083\milli J
+E = \frac{1} {2} \cdot L \cdot {I_{pk}}^2 = 0.996\milli J
 \end{equation}
 
 For at beregne den tilladelige mængde energi der kan oplagres i transformatoren, skal kernen og kernematerialet kendes. Valget er her faldet på en RM8 kerne\cite{RM8} og materialet 3f3\cite{3f3}. RM8 kernens mål gør, at den lige akkurat kan være på printet højdemæssigt. Derudover har Terma tidligere brugt RM8 kerner med 3f3 og har nogle mere præcise mål på $A_L$ og luftgab, end det oplyste i datasheets’ne. Det er essentielt for præcisionen af en fremtidig simulering, at det korrekte luftgab bruges, for at kunne sammenholde simulering og realisering.
@@ -44,17 +44,17 @@ E_{kerne} = \frac{1} {2} \cdot \frac{1}{\micro_e} \cdot B^2 \cdot V_e = 53\pico 
 
 Det er tydeligt at den nødvendige energi på ingen måde kan opbevares i kernen. Da ferrit kan opbevare så lidt energi som det er tilfældet, kan det estimeres at al energien vil blive opbevaret i det luftgap, der designes. Derfor kan permeabiliteten ses som $\micro_0$ i den nye beregning. Den effektive volumen deles op i luftgab og $A_L$, så luftgabet kan isoleres. Med dette kan luftgabet beregnes: 
 \begin{equation} \label{Airgap}
-l_g = \frac{L \cdot {I_{pk}}^2 \cdot \micro_0}{B^2 \cdot A_0} = 690.98\micro m
+l_g = \frac{L \cdot {I_{pk}}^2 \cdot \micro_0}{B^2 \cdot A_0} = 635.6\micro m
 \end{equation}
 
-Med den ripplestrøm der i første omgang er benyttet, skal der bruges et luftgab på ca. $691\micro m$. Den nærmeste luftgab værdi for 3f3 ligger på $488\micro m$ hvilket giver en $A_L$ på $160\nano H$. (Dette er ikke databladets værdi, men en værdi der er blevet givet fra Terma, som har testet databladets værdier til ikke at være korrekte.) Med det udregnede luftgab, beregnes den tilhørende induktion i transformatoren. 
+Med den ripplestrøm der i første omgang er benyttet, skal der bruges et luftgab på ca. $635.6\micro m$. Den nærmeste luftgab værdi for 3f3 ligger på $488\micro m$ hvilket giver en $A_L$ på $160\nano H$. (Dette er ikke databladets værdi, men en værdi der er blevet givet fra Terma, som har testet databladets værdier til ikke at være korrekte.) Med det udregnede luftgab, beregnes den tilhørende induktion i transformatoren. 
 \begin{equation}
-L_1 = \frac{l_g \cdot B^2 \cdot A_0}{{I_{pk}}^2 \cdot \micro_0} = 49.035\micro H
+L_1 = \frac{l_g \cdot B^2 \cdot A_0}{{I_{pk}}^2 \cdot \micro_0} = 53.3\micro H
 \end{equation}
 
 \noindent Med kendt $A_L$ og induktion kan vindingstallet beregnes. Da der i 2. iteration bruges en 1:1 transformator er dette både for primær- og sekundærvikling:
 \begin{equation} \label{N}
-N = \sqrt{\frac{L_1}{A_L}} = 17.5 \approx 18
+N = \sqrt{\frac{L_1}{A_L}} = 18.25 \approx 18
 \end{equation}
 Det passer fint med 18 viklinger på hver side, hvor induktansen igen bliver lidt anderledes når vindingstallet rundes op. 
 \begin{equation} \label{L1}

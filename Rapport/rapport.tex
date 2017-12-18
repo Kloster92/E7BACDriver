@@ -182,7 +182,7 @@
 				\vspace{10pt}
 				\begin{figure}[H]
 					\centering
-					%\includegraphics[max width=0.9\linewidth]{forside.png}
+					\includegraphics[max width=0.9\linewidth]{converter.jpg}
 				\end{figure}
 				\vspace{50pt}
 				\begin{minipage}{0.25\linewidth}
@@ -209,11 +209,22 @@
 		
 		\selectlanguage{danish}
 		\begin{abstract}
+			\noindent Denne rapport beskriver udviklingen af et 7. semesters bachelorprojekt på IHA. Problemstillingen indeholder design og implementering af en DC-DC converter, med en dynamisk udgangsbelastning.
+			 
+			Der er udviklet en flyback converter til formålet. Den består af et velfungerende powermodul, til én bestemt udgangsbelastning, med en variabel indgangsspænding. Converteren indeholder stabil regulering ved brug af en PWM-controller. Designet er udført med tabsberegninger, for at holde det samlede effekttab lavt. Desuden er converteren designet med komponenter, der senere kan omsættes til EEE-komponenter. Med converteren er der lavet et solidt udgangspunkt, i bestræbelsen på en converter konvertibel til en dynamisk belastning.
+			Yderligere er der opbygget en p-spice model for converteren, med simuleringer passende til det realiserede.   
 			
+			Udviklingsprocessen har båret præg af en iterativ tilgang. Det er gjort med ASE-modellen og Scrum, som de overordnede værktøjer. Ved brug af den iterative model, er der opnået et succesfuldt projektforløb. 
 		\end{abstract}
 		
 		\selectlanguage{english} 
 		\begin{abstract}
+			\noindent This paper describes the development of a 7th semester bachelor project at IHA. The paper concerns the design and development of a DC-DC converter with a dynamic load.
+			
+			For this purpose a flyback converter has been developed. It consists of a functioning power module for a specific load with a varying input voltage. The converter has a stabil regulation using a PWM-controller. The design is developed focusing on loss calculations to keep the powerloss to a minimum. Furthermore the design consists of components which later on can be replaced by EEE components. With the converter, a solid foundation has been made, in the effort of a converter convertible to a dynamic load.
+			In addition, a p-spice model for the converter has been created, with simulations that matches the measured. 
+			
+			The process has been characterized by an iterative approach. It has been done with the ASE model and Scrum as the overall tools. Using the iterative model, a successful project process has been achieved.
 			
 		\end{abstract}
 		
@@ -257,7 +268,7 @@
 	% Referencer
 	
 	%\include{<sti/filnavn>}
-	
+
 	\include{tex/Indledning/Indledning}
 	
 	\include{tex/Krav/Krav}
