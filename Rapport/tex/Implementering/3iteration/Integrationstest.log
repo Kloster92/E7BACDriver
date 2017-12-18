@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.12.13)  18 DEC 2017 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.2.10)  18 DEC 2017 19:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./Integrationstest.tex
 (./Integrationstest.tex
-LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2016/02/01>
+Babel <3.9o> and hyphenation patterns for 80 language(s) loaded.
 ! Undefined control sequence.
 l.3 \subsection
                {Integrationstest}
@@ -338,7 +338,7 @@ Overfull \hbox (10.86105pt too wide) in paragraph at lines 6--8
 
 ! Undefined control sequence.
 l.9 	\includegraphics
-                     [max width=1.1\linewidth]{../dokumentation/tex/3iterati...
+                     [max width=1.3\linewidth]{../dokumentation/tex/3iterati...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -357,11 +357,11 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 ! Missing number, treated as zero.
 <to be read again> 
                    ]
-l.9 	\includegraphics[max width=1.1\linewidth]
+l.9 	\includegraphics[max width=1.3\linewidth]
                                               {../dokumentation/tex/3iterati...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -370,7 +370,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    ]
-l.9 	\includegraphics[max width=1.1\linewidth]
+l.9 	\includegraphics[max width=1.3\linewidth]
                                               {../dokumentation/tex/3iterati...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -515,10 +515,10 @@ my insertion and my current dilemma will both disappear.
 
  
 Here is how much of TeX's memory you used:
- 14 strings out of 492985
- 278 string characters out of 6136283
- 54187 words of memory out of 5000000
- 3676 multiletter control sequences out of 15000+600000
+ 14 strings out of 493042
+ 278 string characters out of 6138227
+ 53459 words of memory out of 5000000
+ 3648 multiletter control sequences out of 15000+600000
  3948 words of font info for 15 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  19i,2n,19p,230b,97s stack positions out of 5000i,500n,10000p,200000b,80000s

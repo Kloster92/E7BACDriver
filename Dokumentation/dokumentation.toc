@@ -17,120 +17,121 @@
 \contentsline {chapter}{\chapternumberline {4}F\IeC {\o }rste Iteration}{16}{chapter.4}
 \contentsline {section}{\numberline {4.1}Switch Mode Power-Supply}{16}{section.4.1}
 \contentsline {section}{\numberline {4.2}Buck Converter}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Flyback Converter}{18}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Continuous Conduction Mode}{19}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Discontinuous Conduction Mode}{20}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Ideel transformator}{20}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}CCM}{20}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}DCM}{21}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Udgangskondensator}{22}{section.4.5}
-\contentsline {section}{\numberline {4.6}Simulering}{22}{section.4.6}
-\contentsline {section}{\numberline {4.7}Opsummering}{25}{section.4.7}
-\contentsline {chapter}{\chapternumberline {5}Anden Iteration}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Transformator}{26}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Design}{27}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Simulering}{28}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Vikling af transformator}{31}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Realisering}{32}{subsection.5.1.4}
-\contentsline {subsubsection}{\numberline {5.1.4.1}Endelig induktans}{33}{subsubsection.5.1.4.1}
-\contentsline {subsection}{\numberline {5.1.5}Test af transformator}{33}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}PWM-controller}{36}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Under Voltage LockOut}{38}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Switch-frekvens}{38}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Current sense kredsl\IeC {\o }b}{39}{subsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.3.1}Filtrering}{39}{subsubsection.5.2.3.1}
-\contentsline {subsubsection}{\numberline {5.2.3.2}Overstr\IeC {\o }msbeskyttelse}{40}{subsubsection.5.2.3.2}
-\contentsline {subsection}{\numberline {5.2.4}Sp\IeC {\ae }ndingsregulering}{41}{subsection.5.2.4}
-\contentsline {subsubsection}{\numberline {5.2.4.1}Sp\IeC {\ae }ndingsdeler}{41}{subsubsection.5.2.4.1}
-\contentsline {subsubsection}{\numberline {5.2.4.2}Fejlforst\IeC {\ae }rker}{42}{subsubsection.5.2.4.2}
-\contentsline {section}{\numberline {5.3}MOSFET}{46}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Switch-tid}{47}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Diode}{48}{section.5.4}
-\contentsline {section}{\numberline {5.5}Udgangskondensator}{49}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Test af kondensator}{49}{subsection.5.5.1}
-\contentsline {section}{\numberline {5.6}Indgangsfilter}{51}{section.5.6}
-\contentsline {section}{\numberline {5.7}Tab}{53}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Transformatortab}{53}{subsection.5.7.1}
-\contentsline {subsubsection}{\numberline {5.7.1.1}Kernetab}{53}{subsubsection.5.7.1.1}
-\contentsline {subsubsection}{\numberline {5.7.1.2}Kobbertab}{54}{subsubsection.5.7.1.2}
-\contentsline {paragraph}{\numberline {5.7.1.2.1}AC-modstand}{54}{paragraph.5.7.1.2.1}
-\contentsline {paragraph}{\numberline {5.7.1.2.2}DC-modstand}{55}{paragraph.5.7.1.2.2}
-\contentsline {subsection}{\numberline {5.7.2}MOSFET}{56}{subsection.5.7.2}
-\contentsline {subsubsection}{\numberline {5.7.2.1}Conduction tab}{56}{subsubsection.5.7.2.1}
-\contentsline {subsubsection}{\numberline {5.7.2.2}Switchtab}{56}{subsubsection.5.7.2.2}
-\contentsline {subsection}{\numberline {5.7.3}Diode}{57}{subsection.5.7.3}
-\contentsline {subsubsection}{\numberline {5.7.3.1}Kondensator}{57}{subsubsection.5.7.3.1}
-\contentsline {subsubsection}{\numberline {5.7.3.2}Current-sense tab}{57}{subsubsection.5.7.3.2}
-\contentsline {subsection}{\numberline {5.7.4}Oversigt over analyseret tab}{58}{subsection.5.7.4}
-\contentsline {section}{\numberline {5.8}Simulering}{58}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Constant load}{59}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}PWM-controller}{61}{subsection.5.8.2}
-\contentsline {subsubsection}{\numberline {5.8.2.1}Switch-frekvens}{62}{subsubsection.5.8.2.1}
-\contentsline {subsubsection}{\numberline {5.8.2.2}Switch-tid}{63}{subsubsection.5.8.2.2}
-\contentsline {subsubsection}{\numberline {5.8.2.3}Current-sense}{63}{subsubsection.5.8.2.3}
-\contentsline {subsection}{\numberline {5.8.3}Sp\IeC {\ae }ndingsdeler}{64}{subsection.5.8.3}
-\contentsline {subsection}{\numberline {5.8.4}Gain-fase}{65}{subsection.5.8.4}
-\contentsline {subsection}{\numberline {5.8.5}Load step}{68}{subsection.5.8.5}
-\contentsline {subsection}{\numberline {5.8.6}Tab}{69}{subsection.5.8.6}
-\contentsline {subsubsection}{\numberline {5.8.6.1}Transformator}{69}{subsubsection.5.8.6.1}
-\contentsline {subsubsection}{\numberline {5.8.6.2}MOSFET}{70}{subsubsection.5.8.6.2}
-\contentsline {subsubsection}{\numberline {5.8.6.3}Diode}{71}{subsubsection.5.8.6.3}
-\contentsline {subsubsection}{\numberline {5.8.6.4}CS modstands tab}{72}{subsubsection.5.8.6.4}
-\contentsline {subsubsection}{\numberline {5.8.6.5}Samlet tab}{72}{subsubsection.5.8.6.5}
-\contentsline {section}{\numberline {5.9}Realisering}{74}{section.5.9}
-\contentsline {subsection}{\numberline {5.9.1}Constant load}{75}{subsection.5.9.1}
-\contentsline {subsection}{\numberline {5.9.2}PWM-controller}{78}{subsection.5.9.2}
-\contentsline {subsubsection}{\numberline {5.9.2.1}Switch-frekvens}{79}{subsubsection.5.9.2.1}
-\contentsline {subsubsection}{\numberline {5.9.2.2}Switch-tid}{80}{subsubsection.5.9.2.2}
-\contentsline {subsubsection}{\numberline {5.9.2.3}Current-sense kredsl\IeC {\o }b}{81}{subsubsection.5.9.2.3}
-\contentsline {subsection}{\numberline {5.9.3}Sp\IeC {\ae }ndingsdeler}{82}{subsection.5.9.3}
-\contentsline {subsection}{\numberline {5.9.4}Gain-fase m\IeC {\r a}ling}{83}{subsection.5.9.4}
-\contentsline {subsubsection}{\numberline {5.9.4.1}Load step}{85}{subsubsection.5.9.4.1}
-\contentsline {subsection}{\numberline {5.9.5}Tab}{87}{subsection.5.9.5}
-\contentsline {section}{\numberline {5.10}Opsummering}{90}{section.5.10}
-\contentsline {subsection}{\numberline {5.10.1}Transformator}{90}{subsection.5.10.1}
-\contentsline {subsection}{\numberline {5.10.2}Constant load}{90}{subsection.5.10.2}
-\contentsline {subsection}{\numberline {5.10.3}PWM controller}{91}{subsection.5.10.3}
-\contentsline {subsection}{\numberline {5.10.4}Gain-fase}{91}{subsection.5.10.4}
-\contentsline {subsection}{\numberline {5.10.5}Load step}{91}{subsection.5.10.5}
-\contentsline {subsection}{\numberline {5.10.6}Tab}{91}{subsection.5.10.6}
-\contentsline {chapter}{\chapternumberline {6}Tredje Iteration}{92}{chapter.6}
-\contentsline {section}{\numberline {6.1}Switch-tid}{92}{section.6.1}
-\contentsline {section}{\numberline {6.2}Current-sense filter}{92}{section.6.2}
-\contentsline {section}{\numberline {6.3}Snubber-kredsl\IeC {\o }b}{93}{section.6.3}
-\contentsline {section}{\numberline {6.4}Udgangsfilter}{96}{section.6.4}
-\contentsline {section}{\numberline {6.5}Gain-fase}{97}{section.6.5}
-\contentsline {section}{\numberline {6.6}Tab}{100}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}MOSFET}{100}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Snubber-kredsl\IeC {\o }b}{100}{subsection.6.6.2}
-\contentsline {subsection}{\numberline {6.6.3}Oversigt over simuleret tab}{101}{subsection.6.6.3}
-\contentsline {section}{\numberline {6.7}Simulering}{102}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Switch-tid}{102}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Current-sense filter}{103}{subsection.6.7.2}
-\contentsline {subsection}{\numberline {6.7.3}Snubber-kredsl\IeC {\o }b}{104}{subsection.6.7.3}
-\contentsline {subsection}{\numberline {6.7.4}Udgangsfilter}{105}{subsection.6.7.4}
-\contentsline {subsection}{\numberline {6.7.5}Gain-fase}{107}{subsection.6.7.5}
-\contentsline {subsection}{\numberline {6.7.6}Load step}{108}{subsection.6.7.6}
-\contentsline {subsection}{\numberline {6.7.7}Tab}{109}{subsection.6.7.7}
-\contentsline {subsubsection}{\numberline {6.7.7.1}MOSFET}{109}{subsubsection.6.7.7.1}
-\contentsline {subsubsection}{\numberline {6.7.7.2}Snubber-kredsl\IeC {\o }b}{109}{subsubsection.6.7.7.2}
-\contentsline {subsubsection}{\numberline {6.7.7.3}Oversigt over simuleret tab}{110}{subsubsection.6.7.7.3}
-\contentsline {section}{\numberline {6.8}Realisering}{112}{section.6.8}
-\contentsline {subsection}{\numberline {6.8.1}Switch-tid}{113}{subsection.6.8.1}
-\contentsline {subsection}{\numberline {6.8.2}Current-sense filter}{114}{subsection.6.8.2}
-\contentsline {subsection}{\numberline {6.8.3}Snubber-kredsl\IeC {\o }b}{115}{subsection.6.8.3}
-\contentsline {subsection}{\numberline {6.8.4}Udgangsfilter}{116}{subsection.6.8.4}
-\contentsline {subsection}{\numberline {6.8.5}Gain-fase}{118}{subsection.6.8.5}
-\contentsline {subsection}{\numberline {6.8.6}Load step}{119}{subsection.6.8.6}
-\contentsline {subsection}{\numberline {6.8.7}Tab}{121}{subsection.6.8.7}
-\contentsline {section}{\numberline {6.9}Opsummering}{124}{section.6.9}
-\contentsline {subsection}{\numberline {6.9.1}Switch-tid}{124}{subsection.6.9.1}
-\contentsline {subsection}{\numberline {6.9.2}Current-sense filter}{124}{subsection.6.9.2}
-\contentsline {subsection}{\numberline {6.9.3}Snubber-kredsl\IeC {\o }b}{124}{subsection.6.9.3}
-\contentsline {subsection}{\numberline {6.9.4}Udgangsfilter}{124}{subsection.6.9.4}
-\contentsline {subsection}{\numberline {6.9.5}Regulering}{124}{subsection.6.9.5}
-\contentsline {subsection}{\numberline {6.9.6}Tab}{125}{subsection.6.9.6}
-\contentsline {subsection}{\numberline {6.9.7}Videreudvikling}{125}{subsection.6.9.7}
-\contentsline {chapter}{\chapternumberline {7}Udf\IeC {\o }rt accepttest}{126}{chapter.7}
-\contentsline {section}{\numberline {7.1}Test af ikke-funktionelle krav}{126}{section.7.1}
-\contentsline {chapter}{Litteraturliste}{130}{section*.158}
+\contentsline {section}{\numberline {4.3}Push-pull converter}{18}{section.4.3}
+\contentsline {section}{\numberline {4.4}Flyback Converter}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Continuous Conduction Mode}{20}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Discontinuous Conduction Mode}{21}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Ideel transformator}{22}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}CCM}{22}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}DCM}{23}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Udgangskondensator}{23}{section.4.6}
+\contentsline {section}{\numberline {4.7}Simulering}{24}{section.4.7}
+\contentsline {section}{\numberline {4.8}Opsummering}{27}{section.4.8}
+\contentsline {chapter}{\chapternumberline {5}Anden Iteration}{28}{chapter.5}
+\contentsline {section}{\numberline {5.1}Transformator}{28}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Design}{29}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Simulering}{30}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Vikling af transformator}{33}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Realisering}{35}{subsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.4.1}Endelig induktans}{35}{subsubsection.5.1.4.1}
+\contentsline {subsection}{\numberline {5.1.5}Test af transformator}{36}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}PWM-controller}{38}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Under Voltage LockOut}{40}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Switch-frekvens}{41}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Current sense kredsl\IeC {\o }b}{42}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Filtrering}{42}{subsubsection.5.2.3.1}
+\contentsline {subsubsection}{\numberline {5.2.3.2}Overstr\IeC {\o }msbeskyttelse}{43}{subsubsection.5.2.3.2}
+\contentsline {subsection}{\numberline {5.2.4}Sp\IeC {\ae }ndingsregulering}{44}{subsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.4.1}Sp\IeC {\ae }ndingsdeler}{44}{subsubsection.5.2.4.1}
+\contentsline {subsubsection}{\numberline {5.2.4.2}Fejlforst\IeC {\ae }rker}{45}{subsubsection.5.2.4.2}
+\contentsline {section}{\numberline {5.3}MOSFET}{49}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Switch-tid}{50}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Diode}{51}{section.5.4}
+\contentsline {section}{\numberline {5.5}Udgangskondensator}{52}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Test af kondensator}{52}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Indgangsfilter}{55}{section.5.6}
+\contentsline {section}{\numberline {5.7}Tab}{56}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Transformatortab}{56}{subsection.5.7.1}
+\contentsline {subsubsection}{\numberline {5.7.1.1}Kernetab}{56}{subsubsection.5.7.1.1}
+\contentsline {subsubsection}{\numberline {5.7.1.2}Kobbertab}{57}{subsubsection.5.7.1.2}
+\contentsline {paragraph}{\numberline {5.7.1.2.1}AC-modstand}{58}{paragraph.5.7.1.2.1}
+\contentsline {paragraph}{\numberline {5.7.1.2.2}DC-modstand}{58}{paragraph.5.7.1.2.2}
+\contentsline {subsection}{\numberline {5.7.2}MOSFET}{59}{subsection.5.7.2}
+\contentsline {subsubsection}{\numberline {5.7.2.1}Conduction tab}{59}{subsubsection.5.7.2.1}
+\contentsline {subsubsection}{\numberline {5.7.2.2}Switchtab}{60}{subsubsection.5.7.2.2}
+\contentsline {subsection}{\numberline {5.7.3}Diode}{60}{subsection.5.7.3}
+\contentsline {subsubsection}{\numberline {5.7.3.1}Kondensator}{60}{subsubsection.5.7.3.1}
+\contentsline {subsubsection}{\numberline {5.7.3.2}Current-sense tab}{61}{subsubsection.5.7.3.2}
+\contentsline {subsection}{\numberline {5.7.4}Oversigt over analyseret tab}{61}{subsection.5.7.4}
+\contentsline {section}{\numberline {5.8}Simulering}{61}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Constant load}{63}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}PWM-controller}{66}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}Switch-frekvens}{66}{subsubsection.5.8.2.1}
+\contentsline {subsubsection}{\numberline {5.8.2.2}Switch-tid}{67}{subsubsection.5.8.2.2}
+\contentsline {subsubsection}{\numberline {5.8.2.3}Current-sense}{68}{subsubsection.5.8.2.3}
+\contentsline {subsection}{\numberline {5.8.3}Sp\IeC {\ae }ndingsdeler}{69}{subsection.5.8.3}
+\contentsline {subsection}{\numberline {5.8.4}Gain-fase}{70}{subsection.5.8.4}
+\contentsline {subsection}{\numberline {5.8.5}Load-step}{74}{subsection.5.8.5}
+\contentsline {subsection}{\numberline {5.8.6}Tab}{75}{subsection.5.8.6}
+\contentsline {subsubsection}{\numberline {5.8.6.1}Transformator}{75}{subsubsection.5.8.6.1}
+\contentsline {subsubsection}{\numberline {5.8.6.2}MOSFET}{76}{subsubsection.5.8.6.2}
+\contentsline {subsubsection}{\numberline {5.8.6.3}Diode}{77}{subsubsection.5.8.6.3}
+\contentsline {subsubsection}{\numberline {5.8.6.4}CS modstands tab}{78}{subsubsection.5.8.6.4}
+\contentsline {subsubsection}{\numberline {5.8.6.5}Samlet tab}{79}{subsubsection.5.8.6.5}
+\contentsline {section}{\numberline {5.9}Realisering}{81}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Constant-load}{82}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}PWM-controller}{85}{subsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.2.1}Switch-frekvens}{86}{subsubsection.5.9.2.1}
+\contentsline {subsubsection}{\numberline {5.9.2.2}Switch-tid}{87}{subsubsection.5.9.2.2}
+\contentsline {subsubsection}{\numberline {5.9.2.3}Current-sense kredsl\IeC {\o }b}{88}{subsubsection.5.9.2.3}
+\contentsline {subsection}{\numberline {5.9.3}Sp\IeC {\ae }ndingsdeler}{89}{subsection.5.9.3}
+\contentsline {subsection}{\numberline {5.9.4}Gain-fase m\IeC {\r a}ling}{90}{subsection.5.9.4}
+\contentsline {subsubsection}{\numberline {5.9.4.1}Load-step}{92}{subsubsection.5.9.4.1}
+\contentsline {subsection}{\numberline {5.9.5}Tab}{94}{subsection.5.9.5}
+\contentsline {section}{\numberline {5.10}Opsummering}{98}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Transformator}{98}{subsection.5.10.1}
+\contentsline {subsection}{\numberline {5.10.2}Constant-load}{98}{subsection.5.10.2}
+\contentsline {subsection}{\numberline {5.10.3}PWM controller}{99}{subsection.5.10.3}
+\contentsline {subsection}{\numberline {5.10.4}Gain-fase}{99}{subsection.5.10.4}
+\contentsline {subsection}{\numberline {5.10.5}Load-step}{99}{subsection.5.10.5}
+\contentsline {subsection}{\numberline {5.10.6}Tab}{99}{subsection.5.10.6}
+\contentsline {chapter}{\chapternumberline {6}Tredje Iteration}{100}{chapter.6}
+\contentsline {section}{\numberline {6.1}Switch-tid}{100}{section.6.1}
+\contentsline {section}{\numberline {6.2}Current-sense filter}{100}{section.6.2}
+\contentsline {section}{\numberline {6.3}Snubber-kredsl\IeC {\o }b}{101}{section.6.3}
+\contentsline {section}{\numberline {6.4}Udgangsfilter}{104}{section.6.4}
+\contentsline {section}{\numberline {6.5}Gain-fase}{105}{section.6.5}
+\contentsline {section}{\numberline {6.6}Tab}{108}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}MOSFET}{108}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Snubber-kredsl\IeC {\o }b}{108}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Oversigt over analyserede tab}{109}{subsection.6.6.3}
+\contentsline {section}{\numberline {6.7}Simulering}{110}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Switch-tid}{110}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Current-sense filter}{111}{subsection.6.7.2}
+\contentsline {subsection}{\numberline {6.7.3}Snubber-kredsl\IeC {\o }b}{112}{subsection.6.7.3}
+\contentsline {subsection}{\numberline {6.7.4}Udgangsfilter}{114}{subsection.6.7.4}
+\contentsline {subsection}{\numberline {6.7.5}Gain-fase}{116}{subsection.6.7.5}
+\contentsline {subsection}{\numberline {6.7.6}Load-step}{117}{subsection.6.7.6}
+\contentsline {subsection}{\numberline {6.7.7}Tab}{118}{subsection.6.7.7}
+\contentsline {subsubsection}{\numberline {6.7.7.1}MOSFET}{118}{subsubsection.6.7.7.1}
+\contentsline {subsubsection}{\numberline {6.7.7.2}Snubber-kredsl\IeC {\o }b}{118}{subsubsection.6.7.7.2}
+\contentsline {subsubsection}{\numberline {6.7.7.3}Oversigt over simuleret tab}{120}{subsubsection.6.7.7.3}
+\contentsline {section}{\numberline {6.8}Realisering}{122}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}Switch-tid}{123}{subsection.6.8.1}
+\contentsline {subsection}{\numberline {6.8.2}Current-sense filter}{124}{subsection.6.8.2}
+\contentsline {subsection}{\numberline {6.8.3}Snubber-kredsl\IeC {\o }b}{125}{subsection.6.8.3}
+\contentsline {subsection}{\numberline {6.8.4}Udgangsfilter}{126}{subsection.6.8.4}
+\contentsline {subsection}{\numberline {6.8.5}Gain-fase}{128}{subsection.6.8.5}
+\contentsline {subsection}{\numberline {6.8.6}Load-step}{130}{subsection.6.8.6}
+\contentsline {subsection}{\numberline {6.8.7}Tab}{131}{subsection.6.8.7}
+\contentsline {section}{\numberline {6.9}Opsummering}{134}{section.6.9}
+\contentsline {subsection}{\numberline {6.9.1}Switch-tid}{134}{subsection.6.9.1}
+\contentsline {subsection}{\numberline {6.9.2}Current-sense filter}{134}{subsection.6.9.2}
+\contentsline {subsection}{\numberline {6.9.3}Snubber-kredsl\IeC {\o }b}{134}{subsection.6.9.3}
+\contentsline {subsection}{\numberline {6.9.4}Udgangsfilter}{134}{subsection.6.9.4}
+\contentsline {subsection}{\numberline {6.9.5}Regulering}{134}{subsection.6.9.5}
+\contentsline {subsection}{\numberline {6.9.6}Tab}{135}{subsection.6.9.6}
+\contentsline {subsection}{\numberline {6.9.7}Videreudvikling}{135}{subsection.6.9.7}
+\contentsline {chapter}{\chapternumberline {7}Udf\IeC {\o }rt accepttest}{136}{chapter.7}
+\contentsline {section}{\numberline {7.1}Test af ikke-funktionelle krav}{136}{section.7.1}
+\contentsline {chapter}{Litteraturliste}{140}{section*.160}
