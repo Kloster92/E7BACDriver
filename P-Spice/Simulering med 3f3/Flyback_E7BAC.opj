@@ -79,8 +79,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 26 843 26 361")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Scroll "681 76")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "C:\USERS\NICOLAI FRANSEN\DOCUMENTS\GITHUB\E7BACDRIVER\P-SPICE\SIMULERING MED 3F3\FLYBACK_E7BAC.DSN")
