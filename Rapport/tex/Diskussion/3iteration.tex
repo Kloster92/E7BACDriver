@@ -4,9 +4,9 @@ I 3. iteration blev den anden version af converteren implementeret. Her blev der
 
 Efter udgangen blev flyttet, blev der målt switching-spikes på udgangssignalet op mod $920mV$ pk-pk. Det er stadig større end kravet på $100mV$ pk-pk, og det skal derfor optimeres yderligere i en senere iteration. Ripple-spændingen på udgangssignalet blev målt til $50mV$ pk-pk, hvilket overholder kravet, og derfor godtages.
 
-Efter tilføjelse af snubber-kredsløb, blev det observeret at svingningerne efter spændings-peaken er blevet fjernet. Desuden blev tabet i de to kredsløb vurderet minimalt ift. de dominerende tab. Derfor blev de implementerede snubbere godtaget.
+Efter tilføjelse af snubber-kredsløb, blev det observeret at svingningerne efter spændings-peaken er blevet fjernet. Desuden blev tabet i de to kredsløb vurderet minimalt ift. de dominerende tab. Derfor blev de implementerede snubbere godtaget (Dokumentationen, afsnit 6.8.3, figur: 6.32).
 
-Switch-tiden i MOSFET'en blev målt til $40ns$, hvor der var designet efter $37.2ns$. Denne switch tid medførte et nyt samlet tab i MOSFET'en på $2.3W$. Det er stadig en stor del af det samlede tab, og skal derfor overvejes andre muligheder fremadrettet. Stigetiden i current-sense filteret blev målt til $100ns$, hvilket der også blev designet efter. Den hurtigere stigetid medførte hurtige flanker på current-sense signalet, som kan godkendes.
+Switch-tiden i MOSFET'en blev målt til $40ns$, hvor der var designet efter $37.2ns$. Denne switch tid medførte et nyt samlet tab i MOSFET'en på $2.3W$. Det er stadig en stor del af det samlede tab, og der skal derfor overvejes andre muligheder fremadrettet (Dokumentationen, afsnit 6.8.1, tabel: 6.3). Stigetiden i current-sense filteret blev målt til $100ns$, hvilket der også blev designet efter. Den hurtigere stigetid medførte hurtige flanker på current-sense signalet, som kan godkendes (Dokumentationen, afsnit 6.8.2, tabel: 6.4).
 
 Converterens båndbredde blev målt til $3.86k\hertz$, ved en gain-margin på $14.5\decibel$ og en fasemargin på $69.8^\circ$. Dette er stadig med en margin til de opstillede krav, men det blev valgt, at der ikke vil blive optimeret yderligere på båndbredden. 
 
@@ -14,5 +14,5 @@ Ved et load-step på converterens udgang, blev der målt et udfald på udgangssp
 
 Det samlede tab i converteren blev målt til $5.9W$. Det var stadig større end kravet på et maksimalt effekttab på $5W$. Derfor blev det valgt, at undersøge yderligere metoder til optimering af effekttabet, for opnåelse af kravet. 
 
-Desuden er der blevet opstillet en tilfredsstillende p-spice model for converteren. Denne model kan bruges til en præcis efterligning af den endelige converters funktionalitet. Der er dog nogle simuleringsresultater der ikke er som forventet, da der ikke kunne skaffes en model for den ønskede MOSFET. 
+Desuden er der blevet opstillet en tilfredsstillende p-spice model for converteren. Denne model kan bruges til en præcis efterligning af den endelige converters funktionalitet. Der er dog nogle simuleringsresultater, der ikke er som forventet, da der ikke kunne skaffes en model for den ønskede MOSFET. 
 

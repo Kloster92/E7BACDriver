@@ -1,12 +1,12 @@
 \chapter{Design, implementering og test}
-I det følgende afsnit vil der blive gjort redde for designprocessen i projektforløbet. Her vil de meste essentielle dele for produktet blive beskrevet, mens en yderligere beskrivelse kan findes i dokumentationens afsnit 4-6.
+I det følgende afsnit vil der blive redegjort for design, implementerings- og testfasen i projektforløbet. Her vil de mest essentielle dele for produktet blive beskrevet, mens en yderligere beskrivelse kan findes i dokumentationen, afsnit 4-6.
 
-Designprocessen blev delt op i tre overordnede iteration. I det følgende afsnit vil det derfor tydeliggøres, hvad der blev designet i den gældende iteration. 
+Processen er delt op i tre overordnede iterationer. I det følgende afsnit vil det derfor tydeliggøres, hvad der blev designet i hver iteration. 
 
 
 \section{Første iteration}
 Målet med 1. iteration var undersøgelse og valg af converter topologi. Herefter blev der opstillet en ideel simuleringsmodel for converteren, således analyse og simulering kunne sammenholdes. 
-Kravet for at gå videre til 2. iteration, var opnåelse af en simulering der stemte overens med teorien. 
+Kravet for at gå videre til 2. iteration, var opnåelse af en simulering, der stemte overens med teorien. 
 
 
 \input{tex/Implementering/1iteration/converter}
@@ -14,8 +14,8 @@ Kravet for at gå videre til 2. iteration, var opnåelse af en simulering der st
 
 
 \section{Anden iteration}
-Målet for 2. iteration var, at indsætte ikke-ideele komponenter ind i modellen fra første iteration. Herudover skulle modellen implementeres for første gang. 
-Kravet for at gå videre til 3. iteration var en funktionsdygtig implementeret converter. 
+Målet for 2. iteration var, at indsætte ikke-ideele komponenter ind i modellen fra 1. iteration. Herudover skulle modellen implementeres for første gang. 
+Kravet for at gå videre til 3. iteration var en funktionsdygtig converter. 
 I dette afsnit beskrives hvordan nøglekomponenterne i konverteren er designet, og første implementering af converteren.
 
 \input{tex/Implementering/2iteration/Transformer}
@@ -34,8 +34,8 @@ I dette afsnit beskrives hvordan nøglekomponenterne i konverteren er designet, 
 \clearpage
 
 \section{Tredje iteration}
-Målet for 3. iteration var, at optimere på converterens effekttab, båndbredde og udgangsens switching-spikes. Desuden blev det prioriteret at fjerne ringninger på drain- og anode spændinger, ifm. switching. Disse optimeringer er foretaget på baggrund af de diskuterede resultater fra 2. iteration i afsnit~\ref{diskussion}.
-Kravet for at gå videre til 4. iteration var opnåelse af et tilfredsstillende resultat ifm. disse optimeringer.
+Målet for 3. iteration var, at optimere på converterens effekttab, båndbredde og udgangens switching-spikes. Desuden blev det prioriteret, at fjerne ringninger på drain- og anode spændinger, ifm. switching. Disse optimeringer er foretaget på baggrund af de diskuterede resultater fra 2. iteration i afsnit~\ref{diskussion}.
+Kravet for at gå videre til 4. iteration, var opnåelse af et tilfredsstillende resultat ifm. disse optimeringer.
 
 \input{tex/Implementering/3iteration/MOSFET_gate}
 
