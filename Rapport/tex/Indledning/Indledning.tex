@@ -1,33 +1,37 @@
 
-\chapter*{Forord} \fxnote{Skriv det}
+\chapter*{Forord}
 
-Kilder er refereret som en numerisk reference indrammet af firkantede parenteser, f.eks. [8]. Listen over kilder der refereres til, er samlet under afsnittet \textit{Litteraturliste}, hvor \textit{forfatter}, \textit{titel}, \textit{årstal}, og evt. \textit{link} er angivet. Refereres der til en bestemt side, anføres det ved [8, p.32]. Referencer internet i projektrapporten er anvist som \textit{Type af reference} + \textit{afsnit.nummer}, f.eks. \textit{figur 8.32}. Henvisninger til projektdokumentationen er gøres ved  angivelsen \textit{ses i dokumentationen, afsnit...}, samt angivelse af afsnittets navn. Samtlige referencer der henvises til findes i bilagsmappen. 
+Denne rapport omfatter projektarbejdet for bachelorgruppen fra elektroningeniørstudiet 7. semester, bestående af Nicolai Fransen og Jesper Kloster. Det beskriver de essentielle dele fra projektarbejdet, i perioden fra projektstart d. 21. august til projektaflevering den 19. december. Vejlederen til projektet har været Arne Justesen fra Aarhus Universitet. Projektet stammer fra et projektoplæg, leveret af Terma, som har stillet kontaktpersonerne Hans Jensen og Johnny Laursen til rådighed for assistance.
+
+Dokumentet indeholder en gennemgang af produktudviklingen samt processen, der har lagt til grund for udviklingen. For mere detaljerede gennemgange, henvises til "Dokumentationen" og "Procesbeskrivelsen" i bilagsmappen.   
+
+Kilder er refereret som en numerisk reference indrammet af firkantede parenteser, f.eks. [8]. Listen over kilder der refereres til, er samlet under afsnittet \textit{Litteraturliste}, hvor \textit{forfatter}, \textit{titel}, \textit{årstal}, og evt. \textit{link} er angivet. Refereres der til en bestemt side, anføres det ved [8, p.32]. Referencer internet i projektrapporten er anvist som \textit{Type af reference} + \textit{afsnit.nummer}, f.eks. \textit{figur 8.32}. Henvisninger til projektdokumentationen gøres ved  angivelsen \textit{ses i dokumentationen, afsnit...}, samt angivelse af afsnittets navn. Samtlige referencer der henvises til findes i bilagsmappen. 
 
 
 {\let\clearpage\relax \chapter{Indledning}}
-\noindent Til rumfart anvendes flere forskellige mekanismer, til frigørelse af udvendige, bevægelige dele på satellitten. Det indebærer bl.a. solpaneler, antenner, varmeskjold og mange andre. Disse mekanismer har indtil nu typisk haft brug for hver deres unikke aktiveringskredsløb. Ved udvikling af et universelt aktiveringskredsløb, kan det derfor opnås en effektivisering af pladsforbruget for disse aktiveringsmoduler. Derudover vil det også skabe et mere overskueligt system, fra forsyningskilde til udgangsbelastning. 
+\noindent Til rumfart anvendes flere forskellige mekanismer, til frigørelse af udvendige bevægelige dele på satellitten. Det indebærer bl.a. solpaneler, antenner, varmeskjold og mange andre. Disse mekanismer har indtil nu, typisk haft brug for hver deres unikke aktiveringskredsløb. Ved udvikling af et universelt aktiveringskredsløb, kan der derfor opnås en effektivisering af pladsforbruget for disse aktiveringsmoduler. Derudover vil det skabe et mere overskueligt system, fra forsyningskilde til udgangsbelastning. 
 
-Fordi aktiveringskredsløbet skal bruges til rumfart, hvor afledning af varme er begrænset, er effektiviteten af effektoverførelsen fra kilde til belastning essentiel. Denne effektivitet skal optimeres for opnåelse af minimal afkølingstid, og dermed også spildtid, for effektivisering af udfoldelse af de udvendige mekanismer\cite{projekt-oplag}. 
+Idet aktiveringskredsløbet skal bruges til rumfart, hvor afledning af varme er begrænset, er effektiviteten af effektoverførelsen fra kilde til belastning essentiel. Denne effektivitet skal optimeres for opnåelse af minimal afkølingstid, og dermed også spildtid. Det effektiviserer udfoldelsen af de udvendige mekanismer\cite{projekt-oplag}. 
 
-Målet for dette bachelorprojekt er at udvikle en DC/DC converter, der kan programmeres til to forskellige foruddefinerede udgangsbelastninger. Som et fremadrettet mål, ønskes det at udgangen skal kunne programmeres til enhver ønsket belastning, indenfor en vis grænse. 
+Målet for dette bachelorprojekt er, at udvikle en DC/DC converter, der kan programmeres til to forskellige foruddefinerede udgangsbelastninger. Som et fremadrettet mål, ønskes det at udgangen skal kunne programmeres til enhver ønsket belastning, indenfor en vis grænse. 
 
-Hele aktiveringskredsløbet består af fire overordnede funktionaliteter. Terma har tidligere udviklet variationer af fulde aktiveringskredsløb. Derfor er de omkringliggende kredsløb allerede udviklet, og det vil kun være aktuator modulet der vil være en del af dette bachelorprojekt.
+Hele aktiveringskredsløbet består af fire overordnede funktionaliteter. Terma har tidligere udviklet variationer af fulde aktiveringskredsløb. Derfor er de omkringliggende kredsløb allerede udviklet, og det vil kun være aktuatormodulet, der vil være en del af dette bachelorprojekt.
 \begin{itemize}
-	\item Armeringskredsløb, der fungerer som en hovedafbryder
-	\item Aktuator modul
+	\item Armeringskredsløb, der fungerer som hovedafbryder
+	\item Aktuatormodul
 	\item Aktuator-vælger, der består af et switch array til aktivering af aktuatoren
 	\item CM-bus interface, som er et digitalt og analogt kommando interface
 \end{itemize}
 
-\noindent En oversigt over det samlede system er givet på figur~\ref{fig:system_overblik}. Dette viser de fire førnævnte blokke - armeringskredsløb, aktuator modul(converter), aktuator-vælger og CM-bus interface. Armeringskredsløbet fungerer, som en sikkerhedsanordning i det samlede kredsløb, ved først at forsyne aktuator modulet når kredsløbet er blevet armeret. Det skal forhindre aktiveringer på uønskede tidspunkter. 
+\noindent En oversigt over det samlede system er givet på figur~\ref{fig:system_overblik}. Det viser de fire førnævnte blokke - armeringskredsløb, aktuatormodul(converter), aktuator-vælger og CM-bus interface. Armeringskredsløbet fungerer som en sikkerhedsanordning i det samlede kredsløb. Det sker ved først at forsyne aktuatormodulet, når kredsløbet er blevet armeret, og forhindrer aktiveringer på uønskede tidspunkter. 
 
-Aktuator modulet er converteren der ønskes designet. Den skal sætte en firkantet I/V karakteristik for aktiveringskredsløbet, der er unik for hver load type. Til dette er der to analoge signaler tilrådighed, der skal bruges som referenceværdier. Derudover er der et digitalt signal til aktivering af aktiveringskredsløbet. Det vil fungere som det endelige aktiveringssignal, der slutter den sidste kontakt til forsyningen. 
+Aktuatormodulet er converteren, der ønskes designet. Den skal sætte en firkantet I/V karakteristik for aktiveringskredsløbet, der er unik for hver load type. Til dette er der to analoge signaler til rådighed, der skal bruges som referenceværdier. Derudover er der et digitalt signal, til aktivering af aktiveringskredsløbet. Det vil fungere, som det endelige aktiveringssignal, der forbinder converteren til forsyningen. 
 
-Aktuator-vælgeren består af et switch-array. Det slutter forbindelsen til den valgte load. Loaden vil blive valgt ud fra en række digitale signaler, der aktiverer kontakten til den ønskede load.
+Aktuator-vælgeren består af et switch-array. Det forbinder udgangen til den valgte belastning. Den vil blive valgt ud fra en række digitale signaler, der aktiverer kontakten til den ønskede belastning.
 
 CM-bus interface'et består af et kommunikationsinterface for analoge og digitale signaler. Det bruges til kommunikation mellem et kontrolcenter og fartøjets elektriske moduler. Derudover fungerer det også som indgangskilde til aktiveringsmodulet. 
 
-Diagrammet viser projektets to primære load typer - \textit{Pyro load} og \textit{Thermal Knife load}. Selvom det fremadrettede mål er udvikling af en converter der kan programmeres til enhver ønsket udgangsbelastning, vil der i dette projekt kun blive designet efter de førnævnte load typer.
+Diagrammet viser projektets to primære belastningstyper - \textit{Pyro load} og \textit{Thermal Knife load}. Det fremadrettede mål er udvikling af en converter, der kan programmeres til enhver ønsket udgangsbelastning. I projektet vil der udelukkende blive designet efter de førnævnte belastningstyper.
 
 \begin{figure}[H]
 	\center
@@ -36,7 +40,7 @@ Diagrammet viser projektets to primære load typer - \textit{Pyro load} og \text
 	\label{fig:system_overblik}
 \end{figure}
 
-\noindent Projektet er udarbejdet som en iterativ udviklingsproces, hvor der hele tiden vurderes på funktionaliteten af det udviklede, og nødvendigheden for optimering. I projektet er der gennemført tre design iterationer, men flere er planlagt som videreudvikling. 
+\noindent Projektet er udarbejdet som en iterativ udviklingsproces. Der vurderes hele tiden på funktionaliteten af det udviklede, og nødvendigheden for optimering. I projektet er der gennemført tre design-iterationer, men flere er planlagt som videreudvikling. 
 
 
 %%%%%%% Input af opgaveformuleirngen %%%%%%% 
@@ -56,7 +60,7 @@ I nedenstående tabel ses en ordliste, der forklarer begreber og forkortelser, s
 		B-felt & Magnetisk fluxtæthed \\ \hline
 		CCM & Continious conduction mode \\ \hline
 		DCM & Discontinoius conduction mode \\ \hline
-		EEE komponenter & Komponenter der er testet og verificeret til brug i rummet \\ \hline
+		EEE komponenter & Komponenter, der er testet og verificeret til brug i rummet \\ \hline
 		EMI & Elektromagnetisk interferens \\ \hline
 		H-felt & Magnetisk feltstyrke \\ \hline
 		IBD & Internal Block Diagram \\ \hline

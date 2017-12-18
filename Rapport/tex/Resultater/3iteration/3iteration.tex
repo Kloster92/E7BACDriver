@@ -20,7 +20,7 @@ Der er zoomet ind på udgangssignalet på figur~\ref{fig:realisering_udgang_e_fi
 \end{figure}
 
 \subsubsection{MOSFET}
-\noindent Efter snubber kredsløbene er indsat, kan den nye realiserede drain spænding ses på figur~\ref{fig:realiseirng_snubber_MOSFET_3} 
+\noindent Efter snubber-kredsløbene er indsat, kan den nye realiserede drain spænding ses på figur~\ref{fig:realiseirng_snubber_MOSFET_3} 
 \begin{figure}[H]
 	\center
 	\includegraphics[max width=0.7\linewidth]{../dokumentation/tex/3iteration/billeder/Realisering/Realisering_switch_tid.PNG}
@@ -28,21 +28,6 @@ Der er zoomet ind på udgangssignalet på figur~\ref{fig:realisering_udgang_e_fi
 	\label{fig:realiseirng_snubber_MOSFET_3}
 \end{figure} 
 \noindent Der observeres ingen svingninger efter peaken.
-
-\subsubsection{PWM-controller}
-\noindent Tabel~\ref{tab:resultat_klkl} viser ændrede analyse-, simulerings- og realiseringsresultater for PWM-controlleren. Det drejer sig om switch-tid og current-sense filterets stigetid.
-\begin{table}[H] 			
-	\centering
-	\begin{tabularx}{\textwidth}{|X|c|c|c|}
-		\hline
-		\textbf{Frekvens} & \multicolumn{3}{|c|}{\textbf{Resultat}} 		\\ \hline
-		& A & S & R 									\\ \hline 
-		$T_{ch}$ & $37.2ns$ & $29.4ns$ & $40ns$ 									\\ \hline
-		$T_r$ & $100ns$ & $85ns$ & $100ns$					\\  \hline
-	\end{tabularx}
-	\caption{Resultater for analyse, simulering og realisering af switch-tid og current-sense filter stigetid}
-	\label{tab:resultat_klkl}
-\end{table}
 
 \subsection{Tab}
 Tabel~\ref{tab:realisering_tab_3} giver et overblik over sammenhængen imellem det analyserede, simulerede og realiserede tab for 3. iteration.
