@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 2.9 $
+% $ biblatex bbl format version 2.5 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,511 +18,318 @@
 
 
 \refsection{0}
-  \datalist[entry]{none/global//global/global}
+  \sortlist{none}{none}
     \entry{projekt-oplag}{article}{}
       \name{author}{1}{}{%
-        {{hash=b9da99b828982a11646f808757334224}{%
-           family={Jensen},
-           familyi={J\bibinitperiod},
-           given={Hans},
-           giveni={H\bibinitperiod}}}%
+        {{hash=b9da99b828982a11646f808757334224}{Jensen}{J\bibinitperiod}{Hans}{H\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{b9da99b828982a11646f808757334224}
       \strng{fullhash}{b9da99b828982a11646f808757334224}
-      \strng{bibnamehash}{b9da99b828982a11646f808757334224}
-      \strng{authorbibnamehash}{b9da99b828982a11646f808757334224}
-      \strng{authornamehash}{b9da99b828982a11646f808757334224}
-      \strng{authorfullhash}{b9da99b828982a11646f808757334224}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Universal Actuator Drive.pdf}
       \field{year}{2017}
-      \field{dateera}{ce}
     \endentry
     \entry{MoSCoW}{online}{}
       \name{author}{1}{}{%
-        {{hash=7da7354b731c67017fe190f1f25245b6}{%
-           family={DSDM},
-           familyi={D\bibinitperiod}}}%
+        {{hash=7da7354b731c67017fe190f1f25245b6}{DSDM}{D\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{7da7354b731c67017fe190f1f25245b6}
       \strng{fullhash}{7da7354b731c67017fe190f1f25245b6}
-      \strng{bibnamehash}{7da7354b731c67017fe190f1f25245b6}
-      \strng{authorbibnamehash}{7da7354b731c67017fe190f1f25245b6}
-      \strng{authornamehash}{7da7354b731c67017fe190f1f25245b6}
-      \strng{authorfullhash}{7da7354b731c67017fe190f1f25245b6}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{25}
-      \field{month}{5}
+      \field{month}{05}
       \field{title}{MoSCoW Prioritisation}
       \field{year}{2016}
-      \field{dateera}{ce}
-      \verb{urlraw}
-      \verb https://www.dsdm.org/content/moscow-prioritisation
-      \endverb
       \verb{url}
       \verb https://www.dsdm.org/content/moscow-prioritisation
       \endverb
     \endentry
     \entry{udviklingsproces}{manual}{}
       \name{author}{1}{}{%
-        {{hash=f1ce1b65c636eb4e369b11aef55c373d}{%
-           family={Mikkelsen},
-           familyi={M\bibinitperiod},
-           given={Peter\bibnamedelima Høgh},
-           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=f1ce1b65c636eb4e369b11aef55c373d}{Mikkelsen}{M\bibinitperiod}{Peter\bibnamedelima Høgh}{P\bibinitperiod\bibinitdelim H\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{f1ce1b65c636eb4e369b11aef55c373d}
       \strng{fullhash}{f1ce1b65c636eb4e369b11aef55c373d}
-      \strng{bibnamehash}{f1ce1b65c636eb4e369b11aef55c373d}
-      \strng{authorbibnamehash}{f1ce1b65c636eb4e369b11aef55c373d}
-      \strng{authornamehash}{f1ce1b65c636eb4e369b11aef55c373d}
-      \strng{authorfullhash}{f1ce1b65c636eb4e369b11aef55c373d}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Vejledning-til-udviklingsprocessen-for-semesterprojekt-3-V1-10.pdf}
       \field{year}{2015}
-      \field{dateera}{ce}
     \endentry
     \entry{Scrum}{article}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{9c677286866aad38f8e9b660f5411814}
       \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Scrum}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/Scrum_%28software_development%29
-      \endverb
+      \field{urlday}{12}
+      \field{urlmonth}{13}
+      \field{urlyear}{2017}
       \verb{url}
       \verb https://en.wikipedia.org/wiki/Scrum_%28software_development%29
       \endverb
-      \warn{\item Entry 'Scrum' (../referencer.bib): Invalid format '2017-13-12' of date field 'urldate' - ignoring}
     \endentry
     \entry{Github}{article}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{9c677286866aad38f8e9b660f5411814}
       \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Github}
       \field{urlday}{12}
-      \field{urlmonth}{1}
+      \field{urlmonth}{01}
       \field{urlyear}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://en.wikipedia.org/wiki/GitHub
-      \endverb
       \verb{url}
       \verb https://en.wikipedia.org/wiki/GitHub
       \endverb
     \endentry
     \entry{Latex}{article}{}
       \name{author}{1}{}{%
-        {{hash=9c677286866aad38f8e9b660f5411814}{%
-           family={Wikipedia},
-           familyi={W\bibinitperiod}}}%
+        {{hash=9c677286866aad38f8e9b660f5411814}{Wikipedia}{W\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{9c677286866aad38f8e9b660f5411814}
       \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
-      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
-      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{LaTeX}
       \field{urlday}{12}
-      \field{urlmonth}{5}
+      \field{urlmonth}{05}
       \field{urlyear}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://da.wikipedia.org/wiki/LaTeX
-      \endverb
       \verb{url}
       \verb https://da.wikipedia.org/wiki/LaTeX
       \endverb
     \endentry
     \entry{buck-converter}{article}{}
       \name{author}{1}{}{%
-        {{hash=ebbc247abc12b8e770d40008618ffc04}{%
-           family={Team},
-           familyi={T\bibinitperiod},
-           given={Editorial},
-           giveni={E\bibinitperiod}}}%
+        {{hash=ebbc247abc12b8e770d40008618ffc04}{Team}{T\bibinitperiod}{Editorial}{E\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{ebbc247abc12b8e770d40008618ffc04}
       \strng{fullhash}{ebbc247abc12b8e770d40008618ffc04}
-      \strng{bibnamehash}{ebbc247abc12b8e770d40008618ffc04}
-      \strng{authorbibnamehash}{ebbc247abc12b8e770d40008618ffc04}
-      \strng{authornamehash}{ebbc247abc12b8e770d40008618ffc04}
-      \strng{authorfullhash}{ebbc247abc12b8e770d40008618ffc04}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
       \field{journaltitle}{All About Circuits}
-      \field{month}{6}
+      \field{month}{06}
       \field{title}{Discontinuous Conduction Mode of Simple Converters}
       \field{urlday}{19}
       \field{urlmonth}{11}
       \field{urlyear}{2017}
       \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.allaboutcircuits.com/technical-articles/discontinuous-conduction-mode-of-simple-converters/
-      \endverb
       \verb{url}
       \verb https://www.allaboutcircuits.com/technical-articles/discontinuous-conduction-mode-of-simple-converters/
       \endverb
     \endentry
     \entry{SMPS-topologies}{manual}{}
       \name{author}{1}{}{%
-        {{hash=d0e85d1b5d6d8716747a84cabe81511f}{%
-           family={Wuidart},
-           familyi={W\bibinitperiod},
-           given={L.},
-           giveni={L\bibinitperiod}}}%
+        {{hash=d0e85d1b5d6d8716747a84cabe81511f}{Wuidart}{W\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{d0e85d1b5d6d8716747a84cabe81511f}
       \strng{fullhash}{d0e85d1b5d6d8716747a84cabe81511f}
-      \strng{bibnamehash}{d0e85d1b5d6d8716747a84cabe81511f}
-      \strng{authorbibnamehash}{d0e85d1b5d6d8716747a84cabe81511f}
-      \strng{authornamehash}{d0e85d1b5d6d8716747a84cabe81511f}
-      \strng{authorfullhash}{d0e85d1b5d6d8716747a84cabe81511f}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Topologies for Switch Mode Power Supplies.pdf}
       \field{urlday}{18}
       \field{urlmonth}{10}
       \field{urlyear}{2017}
-      \field{urldateera}{ce}
     \endentry
     \entry{UCC1801}{manual}{}
       \name{author}{1}{}{%
-        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
-           family={Instruments},
-           familyi={I\bibinitperiod},
-           given={Texas},
-           giveni={T\bibinitperiod}}}%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
       \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{ucc1801.pdf}
       \field{year}{2016}
-      \field{dateera}{ce}
     \endentry
     \entry{epcos-cores}{manual}{}
       \name{author}{1}{}{%
-        {{hash=00531de2c9f2752cf536aad51b8a23b8}{%
-           family={EPCOS},
-           familyi={E\bibinitperiod}}}%
+        {{hash=00531de2c9f2752cf536aad51b8a23b8}{EPCOS}{E\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{00531de2c9f2752cf536aad51b8a23b8}
       \strng{fullhash}{00531de2c9f2752cf536aad51b8a23b8}
-      \strng{bibnamehash}{00531de2c9f2752cf536aad51b8a23b8}
-      \strng{authorbibnamehash}{00531de2c9f2752cf536aad51b8a23b8}
-      \strng{authornamehash}{00531de2c9f2752cf536aad51b8a23b8}
-      \strng{authorfullhash}{00531de2c9f2752cf536aad51b8a23b8}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{EPCOS kerner.pdf}
       \field{year}{2006}
-      \field{dateera}{ce}
     \endentry
     \entry{RM8}{manual}{}
       \name{author}{1}{}{%
-        {{hash=ad611a3893edcf12cf994a51128e2584}{%
-           family={Ferroxcube},
-           familyi={F\bibinitperiod}}}%
+        {{hash=ad611a3893edcf12cf994a51128e2584}{Ferroxcube}{F\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{ad611a3893edcf12cf994a51128e2584}
       \strng{fullhash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{bibnamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authorbibnamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authornamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authorfullhash}{ad611a3893edcf12cf994a51128e2584}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{rm8i.pdf}
       \field{year}{2008}
-      \field{dateera}{ce}
     \endentry
     \entry{3f3}{manual}{}
       \name{author}{1}{}{%
-        {{hash=ad611a3893edcf12cf994a51128e2584}{%
-           family={Ferroxcube},
-           familyi={F\bibinitperiod}}}%
+        {{hash=ad611a3893edcf12cf994a51128e2584}{Ferroxcube}{F\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{ad611a3893edcf12cf994a51128e2584}
       \strng{fullhash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{bibnamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authorbibnamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authornamehash}{ad611a3893edcf12cf994a51128e2584}
-      \strng{authorfullhash}{ad611a3893edcf12cf994a51128e2584}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{3f3.pdf}
       \field{year}{2008}
-      \field{dateera}{ce}
     \endentry
     \entry{SMPS-topologies2}{manual}{}
       \name{author}{1}{}{%
-        {{hash=5998bf99c9f587bb0118404bcf82b0b7}{%
-           family={Technology},
-           familyi={T\bibinitperiod},
-           given={Microchip},
-           giveni={M\bibinitperiod}}}%
+        {{hash=5998bf99c9f587bb0118404bcf82b0b7}{Technology}{T\bibinitperiod}{Microchip}{M\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{5998bf99c9f587bb0118404bcf82b0b7}
       \strng{fullhash}{5998bf99c9f587bb0118404bcf82b0b7}
-      \strng{bibnamehash}{5998bf99c9f587bb0118404bcf82b0b7}
-      \strng{authorbibnamehash}{5998bf99c9f587bb0118404bcf82b0b7}
-      \strng{authornamehash}{5998bf99c9f587bb0118404bcf82b0b7}
-      \strng{authorfullhash}{5998bf99c9f587bb0118404bcf82b0b7}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Switch Mode Power Supplies(SMPS) Topologies.pdf}
       \field{year}{2007}
-      \field{dateera}{ce}
     \endentry
     \entry{flyback-formler}{manual}{}
       \name{author}{1}{}{%
-        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
-           family={Instruments},
-           familyi={I\bibinitperiod},
-           given={Texas},
-           giveni={T\bibinitperiod}}}%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
       \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Isolated Continuous Conduction Mode Flyback.pdf}
       \field{year}{2013}
-      \field{dateera}{ce}
     \endentry
     \entry{ucc1801-pspice}{article}{}
       \name{author}{1}{}{%
-        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
-           family={Instruments},
-           familyi={I\bibinitperiod},
-           given={Texas},
-           giveni={T\bibinitperiod}}}%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{Instruments}{I\bibinitperiod}{Texas}{T\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
       \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{UCCx801 and UCCx813-1 Unencrypted PSpice Transient Model}
       \field{urlday}{10}
       \field{urlmonth}{12}
       \field{urlyear}{2017}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb http://www.ti.com/product/UCC1801/toolssoftware
-      \endverb
       \verb{url}
       \verb http://www.ti.com/product/UCC1801/toolssoftware
       \endverb
     \endentry
     \entry{IRFB23N15}{manual}{}
       \name{author}{1}{}{%
-        {{hash=5745774cc9fc64cc054d1af58afa7c87}{%
-           family={Rectifier},
-           familyi={R\bibinitperiod},
-           given={International},
-           giveni={I\bibinitperiod}}}%
+        {{hash=5745774cc9fc64cc054d1af58afa7c87}{Rectifier}{R\bibinitperiod}{International}{I\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{5745774cc9fc64cc054d1af58afa7c87}
       \strng{fullhash}{5745774cc9fc64cc054d1af58afa7c87}
-      \strng{bibnamehash}{5745774cc9fc64cc054d1af58afa7c87}
-      \strng{authorbibnamehash}{5745774cc9fc64cc054d1af58afa7c87}
-      \strng{authornamehash}{5745774cc9fc64cc054d1af58afa7c87}
-      \strng{authorfullhash}{5745774cc9fc64cc054d1af58afa7c87}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{IRFB23N15.pdf}
       \field{year}{2000}
-      \field{dateera}{ce}
     \endentry
     \entry{NTSV30120}{manual}{}
       \name{author}{1}{}{%
-        {{hash=f50ffd6a590ec3946c122f340c694e54}{%
-           family={Semiconductor},
-           familyi={S\bibinitperiod},
-           given={ON},
-           giveni={O\bibinitperiod}}}%
+        {{hash=f50ffd6a590ec3946c122f340c694e54}{Semiconductor}{S\bibinitperiod}{ON}{O\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{f50ffd6a590ec3946c122f340c694e54}
       \strng{fullhash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{bibnamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authorbibnamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authornamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authorfullhash}{f50ffd6a590ec3946c122f340c694e54}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{NTSV30120CT-D.pdf}
       \field{year}{2014}
-      \field{dateera}{ce}
     \endentry
     \entry{Kondensator}{manual}{}
       \name{author}{1}{}{%
-        {{hash=45b2032ba698ea2dbd06517108fe399a}{%
-           family={TDK},
-           familyi={T\bibinitperiod}}}%
+        {{hash=45b2032ba698ea2dbd06517108fe399a}{TDK}{T\bibinitperiod}{}{}{}{}{}{}}%
       }
       \strng{namehash}{45b2032ba698ea2dbd06517108fe399a}
       \strng{fullhash}{45b2032ba698ea2dbd06517108fe399a}
-      \strng{bibnamehash}{45b2032ba698ea2dbd06517108fe399a}
-      \strng{authorbibnamehash}{45b2032ba698ea2dbd06517108fe399a}
-      \strng{authornamehash}{45b2032ba698ea2dbd06517108fe399a}
-      \strng{authorfullhash}{45b2032ba698ea2dbd06517108fe399a}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{PET-B32526-56uF.pdf}
       \field{year}{2015}
-      \field{dateera}{ce}
     \endentry
     \entry{hp4194}{manual}{}
       \name{author}{1}{}{%
-        {{hash=7d695cff25f0ba3849bbcac5b70acec2}{%
-           family={Packard},
-           familyi={P\bibinitperiod},
-           given={Hewlett},
-           giveni={H\bibinitperiod}}}%
+        {{hash=7d695cff25f0ba3849bbcac5b70acec2}{Packard}{P\bibinitperiod}{Hewlett}{H\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{7d695cff25f0ba3849bbcac5b70acec2}
       \strng{fullhash}{7d695cff25f0ba3849bbcac5b70acec2}
-      \strng{bibnamehash}{7d695cff25f0ba3849bbcac5b70acec2}
-      \strng{authorbibnamehash}{7d695cff25f0ba3849bbcac5b70acec2}
-      \strng{authornamehash}{7d695cff25f0ba3849bbcac5b70acec2}
-      \strng{authorfullhash}{7d695cff25f0ba3849bbcac5b70acec2}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{HP4194A-Manual.pdf}
       \field{year}{1996}
-      \field{dateera}{ce}
     \endentry
     \entry{snubber_design}{article}{}
       \name{author}{1}{}{%
-        {{hash=f50ffd6a590ec3946c122f340c694e54}{%
-           family={Semiconductor},
-           familyi={S\bibinitperiod},
-           given={ON},
-           giveni={O\bibinitperiod}}}%
+        {{hash=f50ffd6a590ec3946c122f340c694e54}{Semiconductor}{S\bibinitperiod}{ON}{O\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{f50ffd6a590ec3946c122f340c694e54}
       \strng{fullhash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{bibnamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authorbibnamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authornamehash}{f50ffd6a590ec3946c122f340c694e54}
-      \strng{authorfullhash}{f50ffd6a590ec3946c122f340c694e54}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Design Guideline for Flyback Charger Using FAN104WMX.pdf}
       \field{year}{2012}
-      \field{dateera}{ce}
     \endentry
     \entry{rule_of_thumb}{book}{}
       \name{author}{2}{}{%
-        {{hash=0ea138b81cd15c0a1081231fedfaf445}{%
-           family={Dally},
-           familyi={D\bibinitperiod},
-           given={William\bibnamedelima J.},
-           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=e2e3e6bb1c0cc5f2237a12bb3bae683c}{%
-           family={Poulton},
-           familyi={P\bibinitperiod},
-           given={John\bibnamedelima W.},
-           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=0ea138b81cd15c0a1081231fedfaf445}{Dally}{D\bibinitperiod}{William\bibnamedelima J.}{W\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+        {{hash=e2e3e6bb1c0cc5f2237a12bb3bae683c}{Poulton}{P\bibinitperiod}{John\bibnamedelima W.}{J\bibinitperiod\bibinitdelim W\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{8dc987ba1fba07888304460a7bee0eee}
       \strng{fullhash}{8dc987ba1fba07888304460a7bee0eee}
-      \strng{bibnamehash}{8dc987ba1fba07888304460a7bee0eee}
-      \strng{authorbibnamehash}{8dc987ba1fba07888304460a7bee0eee}
-      \strng{authornamehash}{8dc987ba1fba07888304460a7bee0eee}
-      \strng{authorfullhash}{8dc987ba1fba07888304460a7bee0eee}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Digital Systems Engineering}
       \field{year}{1998}
-      \field{dateera}{ce}
     \endentry
-  \enddatalist
+  \endsortlist
 \endrefsection
 \endinput
 
